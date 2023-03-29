@@ -1,0 +1,119 @@
+* Inputs                                                           :noexport:
+** Transactions
+#+name: transactions
+#+begin_src ledger :eval never
+  2023-04-01 * Kass Property Management
+      Expenses:Housing:Rent                 $ 1,328.95
+      Assets:Checking:Northwoods           $ -1,328.95
+
+  2023-04-01 * Huntington
+      Liabilities:RE:Condo:Mortgage           $ 229.07
+      Expenses:RE:Condo:Interest              $ 428.55
+      Assets:Checking:RipCo                  $ -657.62
+
+  2023-04-01 * Chase
+      Liabilities:RE:Cottage:Mortgage         $ 614.45
+      Expenses:RE:Cottage:Interest          $ 1,026.81
+      Expenses:RE:Cottage:Escrow              $ 882.36
+      Assets:Checking:Northwoods           $ -2,523.62
+
+  2023-04-01 * 2672 N Halsted HOA
+      Expenses:RE:Condo:HOA                   $ 132.34
+      Assets:Checking:RipCo                  $ -132.34
+
+  2023-04-01 * Zenlord Pro
+      Income:RE:Condo:Rent                 $ -1,250.00
+      Assets:Checking:RipCo                 $ 1,250.00
+
+  2023-04-02 * Visible
+      Expenses:Personal                        $ 35.00
+      Assets:Checking:Northwoods              $ -35.00
+#+end_src
+** Initial Balance
+#+name: opening_balance
+#+begin_src ledger :eval never
+  2023-04-01 * Initial Balance
+      Assets:Checking:Northwoods            $ 9,500.00
+      Assets:Checking:RipCo                 $ 3,250.00
+      Assets:Savings:Northwoods             $ 5,000.00
+      Assets:Savings:RipCo                  $ 2,000.00
+      Assets:Savings:UFB                   $ 12,000.00
+      Assets:Investments:401K                   351.35 FSPSX
+      Assets:Investments:401K                  436.063 FXAIX
+      Assets:Investments:HSA                    77.626 FXAIX  ; still needs updating
+      Assets:Investments:IRA                   528.079 VTIAX
+      Assets:Investments:IRA                   675.302 VTSAX
+      Assets:RE:Condo                              1.0 CONDO
+      Assets:RE:Cottage                            1.0 COTTA
+      Liabilities:RE:Condo:Mortgage      $ -137,137.20
+      Liabilities:RE:Cottage:Mortgage    $ -352,049.77
+      Equity:OpeningBalance
+#+end_src
+* Money
+** Net Worth
+#+begin_src ledger :noweb yes :cmdline bal ^Assets ^Liabilities --cleared :exports results
+  <<opening_balance>>
+  <<transactions>>
+#+end_src
+#+results:
+#+begin_example
+         $ 28,322.47
+           1.0 CONDO
+           1.0 COTTA
+        351.35 FSPSX
+       513.689 FXAIX
+       528.079 VTIAX
+       675.302 VTSAX  Assets
+          $ 9,322.47    Checking
+          $ 5,612.43      Northwoods
+          $ 3,710.04      RipCo
+        351.35 FSPSX
+       513.689 FXAIX
+       528.079 VTIAX
+       675.302 VTSAX    Investments
+        351.35 FSPSX
+       436.063 FXAIX      401K
+        77.626 FXAIX      HSA
+       528.079 VTIAX
+       675.302 VTSAX      IRA
+           1.0 CONDO
+           1.0 COTTA    RE
+           1.0 CONDO      Condo
+           1.0 COTTA      Cottage
+         $ 19,000.00    Savings
+          $ 5,000.00      Northwoods
+          $ 2,000.00      RipCo
+         $ 12,000.00      UFB
+       $ -488,343.45  Liabilities:RE
+       $ -136,908.13    Condo:Mortgage
+       $ -351,435.32    Cottage:Mortgage
+--------------------
+       $ -460,020.98
+           1.0 CONDO
+           1.0 COTTA
+        351.35 FSPSX
+       513.689 FXAIX
+       528.079 VTIAX
+       675.302 VTSAX
+#+end_example
+** Spending
+*** Monthly Spending
+#+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-15(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
+  <<opening_balance>>
+  <<transactions>>
+#+end_src
+#+results:
+: April 2023      $ 3,834.01
+*** Transactions
+#+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-30(payee)%-30(account)%(amount)\n" :noweb yes :exports results
+  <<opening_balance>>
+  <<transactions>>
+#+end_src
+#+results:
+: April 02 2023  Visible                       Expenses:Personal             $ 35.00
+: April 01 2023  Kass Property Management      Expenses:Housing:Rent         $ 1,328.95
+: April 01 2023  Huntington                    Expenses:RE:Condo:Interest    $ 428.55
+: April 01 2023  Chase                         Expenses:RE:Cottage:Interest  $ 1,026.81
+: April 01 2023  Chase                         Expenses:RE:Cottage:Escrow    $ 882.36
+: April 01 2023  2672 N Halsted HOA            Expenses:RE:Condo:HOA         $ 132.34
+: April 01 2023  Zenlord Pro                   Income:RE:Condo:Rent          $ -1,250.00
