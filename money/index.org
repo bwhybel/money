@@ -33,14 +33,14 @@
 #+name: opening_balance
 #+begin_src ledger :eval never
   2023-04-01 * Initial Balance
-      Assets:Checking:Northwoods            $ 9,500.00
+      Assets:Checking:Northwoods            $ 9,501.38
       Assets:Checking:RipCo                 $ 3,250.00
       Assets:Savings:Northwoods             $ 5,000.00
-      Assets:Savings:RipCo                  $ 2,000.00
+      Assets:Savings:RipCo                  $ 2,000.40
       Assets:Savings:UFB                   $ 12,000.00
-      Assets:Investments:401K                   351.35 FSPSX
-      Assets:Investments:401K                  436.063 FXAIX
-      Assets:Investments:HSA                    77.626 FXAIX  ; still needs updating
+      Assets:Investments:401K                  354.536 FSPSX
+      Assets:Investments:401K                  441.706 FXAIX
+      Assets:Investments:HSA                    79.982 FXAIX
       Assets:Investments:IRA                   528.079 VTIAX
       Assets:Investments:IRA                   675.302 VTSAX
       Assets:RE:Condo                              1.0 CONDO
@@ -57,42 +57,42 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 28,322.47
+         $ 28,324.25
            1.0 CONDO
            1.0 COTTA
-        351.35 FSPSX
-       513.689 FXAIX
+       354.536 FSPSX
+       521.688 FXAIX
        528.079 VTIAX
        675.302 VTSAX  Assets
-          $ 9,322.47    Checking
-          $ 5,612.43      Northwoods
+          $ 9,323.85    Checking
+          $ 5,613.81      Northwoods
           $ 3,710.04      RipCo
-        351.35 FSPSX
-       513.689 FXAIX
+       354.536 FSPSX
+       521.688 FXAIX
        528.079 VTIAX
        675.302 VTSAX    Investments
-        351.35 FSPSX
-       436.063 FXAIX      401K
-        77.626 FXAIX      HSA
+       354.536 FSPSX
+       441.706 FXAIX      401K
+        79.982 FXAIX      HSA
        528.079 VTIAX
        675.302 VTSAX      IRA
            1.0 CONDO
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 19,000.00    Savings
+         $ 19,000.40    Savings
           $ 5,000.00      Northwoods
-          $ 2,000.00      RipCo
+          $ 2,000.40      RipCo
          $ 12,000.00      UFB
        $ -488,343.45  Liabilities:RE
        $ -136,908.13    Condo:Mortgage
        $ -351,435.32    Cottage:Mortgage
 --------------------
-       $ -460,020.98
+       $ -460,019.20
            1.0 CONDO
            1.0 COTTA
-        351.35 FSPSX
-       513.689 FXAIX
+       354.536 FSPSX
+       521.688 FXAIX
        528.079 VTIAX
        675.302 VTSAX
 #+end_example
