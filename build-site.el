@@ -25,6 +25,7 @@
 	     :publishing-directory "./public"
 	     :publishing-function 'org-html-publish-to-html
 	     :with-author nil
+	     :with-title nil
 	     :with-creator nil
 	     :with-toc nil
 	     :html-validation-link nil
