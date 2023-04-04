@@ -28,15 +28,19 @@
   2023-04-02 * Visible
       Expenses:Personal                        $ 35.00
       Assets:Checking:Northwoods              $ -35.00
+
+  2023-04-04 * Transfer
+      Assets:Checking:RipCo                  $ -460.04
+      Assets:Savings:RipCo                    $ 460.04
 #+end_src
 ** Initial Balance
 #+name: opening_balance
 #+begin_src ledger :eval never
   2023-04-01 * Initial Balance
-      Assets:Checking:Northwoods            $ 9,501.38
+      Assets:Checking:Northwoods            $ 9,500.85
       Assets:Checking:RipCo                 $ 3,250.00
       Assets:Savings:Northwoods             $ 5,000.00
-      Assets:Savings:RipCo                  $ 2,000.40
+      Assets:Savings:RipCo                  $ 1,999.99
       Assets:Savings:UFB                   $ 12,000.00
       Assets:Investments:401K                  354.536 FSPSX
       Assets:Investments:401K                  441.706 FXAIX
@@ -57,16 +61,16 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 28,324.25
+         $ 28,323.31
            1.0 CONDO
            1.0 COTTA
        354.536 FSPSX
        521.688 FXAIX
        528.079 VTIAX
        675.302 VTSAX  Assets
-          $ 9,323.85    Checking
-          $ 5,613.81      Northwoods
-          $ 3,710.04      RipCo
+          $ 8,863.28    Checking
+          $ 5,613.28      Northwoods
+          $ 3,250.00      RipCo
        354.536 FSPSX
        521.688 FXAIX
        528.079 VTIAX
@@ -80,15 +84,15 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 19,000.40    Savings
+         $ 19,460.03    Savings
           $ 5,000.00      Northwoods
-          $ 2,000.40      RipCo
+          $ 2,460.03      RipCo
          $ 12,000.00      UFB
        $ -488,343.45  Liabilities:RE
        $ -136,908.13    Condo:Mortgage
        $ -351,435.32    Cottage:Mortgage
 --------------------
-       $ -460,019.20
+       $ -460,020.14
            1.0 CONDO
            1.0 COTTA
        354.536 FSPSX
