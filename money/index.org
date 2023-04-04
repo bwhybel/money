@@ -27,8 +27,24 @@
       Assets:Checking:RipCo                 $ 1,250.00
 
   2023-04-02 * Visible
-      Expenses:Personal                        $ 35.00
+      Expenses:Personal:Communication          $ 35.00
       Assets:Checking:Northwoods              $ -35.00
+
+  2023-04-02 * Target
+      Expenses:Food:Groceries                  $ 67.17
+      Liabilities:Credit Card:Covantage       $ -67.17
+
+  2023-04-02 * Mariano's
+      Expenses:Food:Groceries                   $ 6.37
+      Liabilities:Credit Card:Covantage        $ -6.37
+
+  2023-04-02 * Jewel
+      Expenses:Food:Groceries                  $ 11.31
+      Liabilities:Credit Card:Covantage       $ -11.31
+
+  2023-04-03 * PayRange
+      Expenses:Personal:Laundry                $ 25.00
+      Liabilities:Credit Card:Covantage       $ -25.00
 
   2023-04-04 * Transfer
       Assets:Checking:RipCo                  $ -460.04
@@ -89,11 +105,13 @@
           $ 5,000.00      Northwoods
           $ 2,460.03      RipCo
          $ 12,000.00      UFB
-       $ -488,343.45  Liabilities:RE
-       $ -136,908.13    Condo:Mortgage
-       $ -351,435.32    Cottage:Mortgage
+       $ -488,453.30  Liabilities
+           $ -109.85    Credit Card:Covantage
+       $ -488,343.45    RE
+       $ -136,908.13      Condo:Mortgage
+       $ -351,435.32      Cottage:Mortgage
 --------------------
-       $ -460,020.14
+       $ -460,129.99
            1.0 CONDO
            1.0 COTTA
        354.536 FSPSX
@@ -108,17 +126,23 @@
   <<transactions>>
 #+end_src
 #+results:
-: April 2023      $ 3,834.01
+: April 2023      $ 3,943.86
 *** Transactions
-#+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-30(payee)%-30(account)%(amount)\n" :noweb yes :exports results
+#+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
   <<transactions>>
 #+end_src
 #+results:
-: April 02 2023  Visible                       Expenses:Personal             $ 35.00
-: April 01 2023  Kass Property Management      Expenses:Housing:Rent         $ 1,328.95
-: April 01 2023  Huntington                    Expenses:RE:Condo:Interest    $ 428.55
-: April 01 2023  Chase                         Expenses:RE:Cottage:Interest  $ 1,026.81
-: April 01 2023  Chase                         Expenses:RE:Cottage:Escrow    $ 882.36
-: April 01 2023  2672 N Halsted HOA            Expenses:RE:Condo:HOA         $ 132.34
-: April 01 2023  Zenlord Pro                   Income:RE:Condo:Rent          $ -1,250.00
+#+begin_example
+April 03 2023  PayRange                         Expenses:Personal:Laundry        $ 25.00
+April 02 2023  Visible                          Expenses:Personal:Communication  $ 35.00
+April 02 2023  Target                           Expenses:Food:Groceries          $ 67.17
+April 02 2023  Mariano's                        Expenses:Food:Groceries          $ 6.37
+April 02 2023  Jewel                            Expenses:Food:Groceries          $ 11.31
+April 01 2023  Kass Property Management         Expenses:Housing:Rent            $ 1,328.95
+April 01 2023  Huntington                       Expenses:RE:Condo:Interest       $ 428.55
+April 01 2023  Chase                            Expenses:RE:Cottage:Interest     $ 1,026.81
+April 01 2023  Chase                            Expenses:RE:Cottage:Escrow       $ 882.36
+April 01 2023  2672 N Halsted HOA               Expenses:RE:Condo:HOA            $ 132.34
+April 01 2023  Zenlord Pro                      Income:RE:Condo:Rent             $ -1,250.00
+#+end_example
