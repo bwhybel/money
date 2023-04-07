@@ -49,6 +49,10 @@
   2023-04-04 * Transfer
       Assets:Checking:RipCo                  $ -460.04
       Assets:Savings:RipCo                    $ 460.04
+
+  2023-04-06 * Divvy Bikes
+      Liabilities:Credit Card:Covantage      $ -119.00
+      Expenses:Transportation:Biking          $ 119.00
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -105,13 +109,13 @@
           $ 5,000.00      Northwoods
           $ 2,460.03      RipCo
          $ 12,000.00      UFB
-       $ -488,453.30  Liabilities
-           $ -109.85    Credit Card:Covantage
+       $ -488,572.30  Liabilities
+           $ -228.85    Credit Card:Covantage
        $ -488,343.45    RE
        $ -136,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-       $ -460,129.99
+       $ -460,248.99
            1.0 CONDO
            1.0 COTTA
        354.536 FSPSX
@@ -126,7 +130,7 @@
   <<transactions>>
 #+end_src
 #+results:
-: April 2023      $ 3,943.86
+: April 2023      $ 4,062.86
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -134,6 +138,7 @@
 #+end_src
 #+results:
 #+begin_example
+April 06 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 119.00
 April 03 2023  PayRange                         Expenses:Personal:Laundry        $ 25.00
 April 02 2023  Visible                          Expenses:Personal:Communication  $ 35.00
 April 02 2023  Target                           Expenses:Food:Groceries          $ 67.17
