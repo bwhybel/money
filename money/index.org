@@ -1,5 +1,55 @@
 #+TITLE: Brendan's Money
 * Inputs                                                           :noexport:
+** Prices
+#+begin_src python :eval never
+  import requests
+  from datetime import date
+  url = "https://alpha-vantage.p.rapidapi.com/query"
+  stocks = [
+    "VTSAX",
+    "VTIAX",
+    "FSPSX",
+    "FXAIX"
+  ]
+
+  return_string = "#+name: prices\n#+begin_src ledger :eval never\n"
+  for stock in stocks:
+    querystring = {
+      "function":"GLOBAL_QUOTE",
+      "symbol":stock,
+      "datatype":"csv"
+    }
+    headers = {
+      "X-RapidAPI-Key": "564c0a0170msh3fd497e8a66d18ep198c0cjsn39ae206902f1",
+      "X-RapidAPI-Host": "alpha-vantage.p.rapidapi.com"
+    }
+    response = requests.request("GET", url, headers=headers, params=querystring)
+    csv_text = response.text.split('\r\n')
+    headers = csv_text[0].split(',')
+    values = csv_text[1].split(',')
+
+    index = -1
+    for i, header in enumerate(headers):
+      if header == 'price':
+	index = i
+
+    return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), stock, values[index]) + "\n"
+  return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "CONDO", "250,000.00") + "\n"
+  return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "COTTA", "400,000.00") + "\n"
+  return_string = return_string + "#+end_src"
+  return return_string
+#+end_src
+
+#+name: prices
+#+begin_src ledger :eval never
+  P 04/14/2023 00:00:00 VTSAX $98.7900
+  P 04/14/2023 00:00:00 VTIAX $29.9400
+  P 04/14/2023 00:00:00 FSPSX $45.3800
+  P 04/14/2023 00:00:00 FXAIX $142.0200
+  P 04/14/2023 00:00:00 CONDO $250,000.00
+  P 04/14/2023 00:00:00 COTTA $400,000.00
+#+end_src
+
 ** Transactions
 #+name: transactions
 #+begin_src ledger :eval never
@@ -65,16 +115,40 @@
   2023-04-11 * 7/11
       Expenses:Food:Snacks                      $ 4.20
       Liabilities:Credit Card:Covantage        $ -4.20
+
+  2023-04-13 * Transfer
+      Assets:Savings:Northwoods             $ 3,790.00
+      Assets:Checking:Northwoods           $ -3,790.00
+
+  2023-04-13 * Spectrum
+      Expenses:RE:Cottage:Utilities            $ 69.99
+      Assets:Checking:Northwoods              $ -69.99
+
+  2023-04-13 * Wisconsin Public Services
+      Expenses:RE:Cottage:Utilities           $ 162.00
+      Assets:Checking:Northwoods             $ -162.00
+
+  2023-04-13 * Huntington
+      Liabilities:RE:Condo:Mortgage        $ 10,000.00
+      Assets:Savings:UFB                  $ -10,000.00
+
+  2023-04-13 * Transfer
+      Assets:Savings:RipCo                  $ 2,000.93
+      Assets:Savings:UFB                   $ -2,000.93
+
+  2023-04-13 * Transfer
+      Assets:Savings:RipCo                  $ 1,400.00
+      Assets:Checking:RipCo                $ -1,400.00
 #+end_src
 ** Initial Balance
 #+name: opening_balance
 #+begin_src ledger :eval never
   2023-04-01 * Initial Balance
-      Assets:Checking:Northwoods            $ 9,500.85
+      Assets:Checking:Northwoods            $ 9,495.85
       Assets:Checking:RipCo                 $ 3,250.00
       Assets:Savings:Northwoods             $ 5,000.00
       Assets:Savings:RipCo                  $ 1,999.99
-      Assets:Savings:UFB                   $ 12,000.00
+      Assets:Savings:UFB                   $ 12,000.93
       Assets:Investments:401K                  354.536 FSPSX
       Assets:Investments:401K                  441.706 FXAIX
       Assets:Investments:HSA                    79.982 FXAIX
@@ -88,22 +162,23 @@
 #+end_src
 * Money
 ** Net Worth
+*** Assets
 #+begin_src ledger :noweb yes :cmdline bal ^Assets ^Liabilities --cleared :exports results
   <<opening_balance>>
   <<transactions>>
 #+end_src
 #+results:
 #+begin_example
-         $ 28,323.31
+         $ 18,087.25
            1.0 CONDO
            1.0 COTTA
        354.536 FSPSX
        521.688 FXAIX
        528.079 VTIAX
        675.302 VTSAX  Assets
-          $ 8,863.28    Checking
-          $ 5,613.28      Northwoods
-          $ 3,250.00      RipCo
+          $ 3,436.29    Checking
+          $ 1,586.29      Northwoods
+          $ 1,850.00      RipCo
        354.536 FSPSX
        521.688 FXAIX
        528.079 VTIAX
@@ -117,23 +192,52 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 19,460.03    Savings
-          $ 5,000.00      Northwoods
-          $ 2,460.03      RipCo
-         $ 12,000.00      UFB
-       $ -488,614.88  Liabilities
+         $ 14,650.96    Savings
+          $ 8,790.00      Northwoods
+          $ 5,860.96      RipCo
+       $ -478,614.88  Liabilities
            $ -271.43    Credit Card:Covantage
-       $ -488,343.45    RE
-       $ -136,908.13      Condo:Mortgage
+       $ -478,343.45    RE
+       $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-       $ -460,291.57
+       $ -460,527.63
            1.0 CONDO
            1.0 COTTA
        354.536 FSPSX
        521.688 FXAIX
        528.079 VTIAX
        675.302 VTSAX
+#+end_example
+*** Value
+#+begin_src ledger :noweb yes :cmdline bal ^Assets ^Liabilities --cleared --market :exports results
+  <<prices>>
+  <<opening_balance>>
+  <<transactions>>
+#+end_src
+#+RESULTS:
+#+begin_example
+        $ 840,789.99  Assets
+          $ 3,436.29    Checking
+          $ 1,586.29      Northwoods
+          $ 1,850.00      RipCo
+        $ 172,702.74    Investments
+         $ 78,819.93      401K
+         $ 11,359.04      HSA
+         $ 82,523.77      IRA
+        $ 650,000.00    RE
+        $ 250,000.00      Condo
+        $ 400,000.00      Cottage
+         $ 14,650.96    Savings
+          $ 8,790.00      Northwoods
+          $ 5,860.96      RipCo
+       $ -478,614.88  Liabilities
+           $ -271.43    Credit Card:Covantage
+       $ -478,343.45    RE
+       $ -126,908.13      Condo:Mortgage
+       $ -351,435.32      Cottage:Mortgage
+--------------------
+        $ 362,175.11
 #+end_example
 ** Spending
 *** Monthly Spending
@@ -142,7 +246,7 @@
   <<transactions>>
 #+end_src
 #+results:
-: April 2023      $ 4,105.44
+: April 2023      $ 4,337.43
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -150,6 +254,8 @@
 #+end_src
 #+results:
 #+begin_example
+April 13 2023  Spectrum                         Expenses:RE:Cottage:Utilities    $ 69.99
+April 13 2023  Wisconsin Public Services        Expenses:RE:Cottage:Utilities    $ 162.00
 April 11 2023  7/11                             Expenses:Food:Snacks             $ 4.20
 April 10 2023  Noodles & Company                Expenses:Food:Fast Food          $ 8.38
 April 09 2023  7/11                             Expenses:Food:Snacks             $ 30.00
