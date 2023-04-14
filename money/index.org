@@ -107,6 +107,7 @@
 
   2023-04-05 * Dividend
       Assets:Investments:401K                    1.674 FXAIX
+      Assets:Investments:HSA                     0.303 FXAIX
       Income:Extra
 
   2023-04-06 * Divvy Bikes
@@ -220,7 +221,7 @@
            1.0 CONDO
            1.0 COTTA
        354.536 FSPSX
-       523.362 FXAIX
+       523.665 FXAIX
        528.079 VTIAX
        675.302 VTSAX  Assets
           $ 4,868.15    Checking
@@ -229,14 +230,14 @@
           $ 2,250.00      RipCo
           $ 1,270.90
        354.536 FSPSX
-       523.362 FXAIX
+       523.665 FXAIX
        528.079 VTIAX
        675.302 VTSAX    Investments
             $ 950.07
        354.536 FSPSX
        443.380 FXAIX      401K
             $ 320.83
-        79.982 FXAIX      HSA
+        80.285 FXAIX      HSA
        528.079 VTIAX
        675.302 VTSAX      IRA
            1.0 CONDO
@@ -257,7 +258,7 @@
            1.0 CONDO
            1.0 COTTA
        354.536 FSPSX
-       523.362 FXAIX
+       523.665 FXAIX
        528.079 VTIAX
        675.302 VTSAX
 #+end_example
@@ -269,14 +270,14 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 845,709.08  Assets
+        $ 845,752.12  Assets
           $ 4,868.15    Checking
             $ 118.15      Covantage
           $ 2,500.00      Northwoods
           $ 2,250.00      RipCo
-        $ 174,211.38    Investments
+        $ 174,254.42    Investments
          $ 80,007.74      401K
-         $ 11,679.87      HSA
+         $ 11,722.91      HSA
          $ 82,523.77      IRA
         $ 650,000.00    RE
         $ 250,000.00      Condo
@@ -291,7 +292,7 @@
        $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-        $ 367,104.20
+        $ 367,147.24
 #+end_example
 ** Spending
 *** Monthly Spending
@@ -327,7 +328,7 @@ April 11 2023  7/11                             Expenses:Food:Snacks            
 April 10 2023  Noodles & Company                Expenses:Food:Fast Food          $ 8.38
 April 09 2023  7/11                             Expenses:Food:Snacks             $ 30.00
 April 06 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 119.00
-April 05 2023  Dividend                         Income:Extra                     -1.674 FXAIX
+April 05 2023  Dividend                         Income:Extra                     -1.977 FXAIX
 April 03 2023  PayRange                         Expenses:Personal:Laundry        $ 25.00
 April 02 2023  Visible                          Expenses:Personal:Communication  $ 35.00
 April 02 2023  Target                           Expenses:Food:Groceries          $ 67.17
