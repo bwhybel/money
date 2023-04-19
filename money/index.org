@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/14/2023 00:00:00 VTSAX $98.7900
-  P 04/14/2023 00:00:00 VTIAX $29.9400
-  P 04/14/2023 00:00:00 FSPSX $45.3800
-  P 04/14/2023 00:00:00 FXAIX $142.0200
-  P 04/14/2023 00:00:00 CONDO $250,000.00
-  P 04/14/2023 00:00:00 COTTA $400,000.00
+  P 04/19/2023 00:00:00 VTSAX $100.2300
+  P 04/19/2023 00:00:00 VTIAX $30.2400
+  P 04/19/2023 00:00:00 FSPSX $45.6900
+  P 04/19/2023 00:00:00 FXAIX $144.1100
+  P 04/19/2023 00:00:00 CONDO $250,000.00
+  P 04/19/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -187,6 +187,28 @@
   2023-04-14 * Cash Back
       Income:Extra                            $ -10.00
       Liabilities:Credit Card:Covantage        $ 10.00
+
+  2023-04-14 * Payoff
+      Liabilities:Credit Card:Covantage       $ 118.15
+      Assets:Checking:Covantage              $ -118.15
+
+  2023-04-18 * TurboTax
+      Expenses:Taxes:Tools                    $ 297.57
+      Liabilities:Credit Card:Covantage      $ -297.57
+
+  2023-04-18 * DoorDash
+      Expenses:Food:Fast Food                  $ 14.99
+      Liabilities:Credit Card:Covantage       $ -14.99
+
+  2023-04-19 * Transfer
+      Assets:Checking:Park City             $ 1,540.00
+      Assets:Checking:Park City             $ 1,000.00
+      Assets:Checking:Park City               $ 628.59
+      Assets:Savings:Covantage             $ -3,168.59
+
+  2023-04-19 * Federal Income Taxes
+      Expenses:Taxes:Federal                $ 2,208.00
+      Assets:Savings:Northwoods
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -217,16 +239,16 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 22,768.60
+         $ 20,442.45
            1.0 CONDO
            1.0 COTTA
        354.536 FSPSX
        523.665 FXAIX
        528.079 VTIAX
        675.302 VTSAX  Assets
-          $ 4,868.15    Checking
-            $ 118.15      Covantage
+          $ 7,918.59    Checking
           $ 2,500.00      Northwoods
+          $ 3,168.59      Park City
           $ 2,250.00      RipCo
           $ 1,270.90
        354.536 FSPSX
@@ -244,17 +266,16 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 16,629.55    Savings
-          $ 3,168.59      Covantage
-          $ 9,000.00      Northwoods
+         $ 11,252.96    Savings
+          $ 6,792.00      Northwoods
           $ 4,460.96      RipCo
-       $ -478,604.88  Liabilities
-           $ -261.43    Credit Card:Covantage
+       $ -478,799.29  Liabilities
+           $ -455.84    Credit Card:Covantage
        $ -478,343.45    RE
        $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-       $ -455,836.28
+       $ -458,356.84
            1.0 CONDO
            1.0 COTTA
        354.536 FSPSX
@@ -270,29 +291,28 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 845,752.12  Assets
-          $ 4,868.15    Checking
-            $ 118.15      Covantage
+        $ 845,761.19  Assets
+          $ 7,918.59    Checking
           $ 2,500.00      Northwoods
+          $ 3,168.59      Park City
           $ 2,250.00      RipCo
-        $ 174,254.42    Investments
-         $ 80,007.74      401K
-         $ 11,722.91      HSA
-         $ 82,523.77      IRA
+        $ 176,589.64    Investments
+         $ 81,044.31      401K
+         $ 11,890.70      HSA
+         $ 83,654.63      IRA
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
-         $ 16,629.55    Savings
-          $ 3,168.59      Covantage
-          $ 9,000.00      Northwoods
+         $ 11,252.96    Savings
+          $ 6,792.00      Northwoods
           $ 4,460.96      RipCo
-       $ -478,604.88  Liabilities
-           $ -261.43    Credit Card:Covantage
+       $ -478,799.29  Liabilities
+           $ -455.84    Credit Card:Covantage
        $ -478,343.45    RE
        $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-        $ 367,147.24
+        $ 366,961.90
 #+end_example
 ** Spending
 *** Monthly Spending
@@ -301,7 +321,7 @@
   <<transactions>>
 #+end_src
 #+results:
-: April 2023      $ 4,337.43
+: April 2023      $ 4,352.42
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -309,6 +329,9 @@
 #+end_src
 #+results:
 #+begin_example
+April 19 2023  Federal Income Taxes             Expenses:Taxes:Federal           $ 2,208.00
+April 18 2023  TurboTax                         Expenses:Taxes:Tools             $ 297.57
+April 18 2023  DoorDash                         Expenses:Food:Fast Food          $ 14.99
 April 14 2023  Stripe                           Income:Stripe:Paycheck           $ -6,333.77
 April 14 2023  Stripe                           Income:Stripe:Wireless           $ -50.00
 April 14 2023  Stripe                           Income:Stripe:Wellness           $ -51.02
