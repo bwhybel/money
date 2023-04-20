@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/19/2023 00:00:00 VTSAX $100.2300
-  P 04/19/2023 00:00:00 VTIAX $30.2400
-  P 04/19/2023 00:00:00 FSPSX $45.6900
-  P 04/19/2023 00:00:00 FXAIX $144.1100
-  P 04/19/2023 00:00:00 CONDO $250,000.00
-  P 04/19/2023 00:00:00 COTTA $400,000.00
+  P 04/20/2023 00:00:00 VTSAX $100.2900
+  P 04/20/2023 00:00:00 VTIAX $30.3400
+  P 04/20/2023 00:00:00 FSPSX $45.9700
+  P 04/20/2023 00:00:00 FXAIX $144.2300
+  P 04/20/2023 00:00:00 CONDO $250,000.00
+  P 04/20/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -208,7 +208,28 @@
 
   2023-04-19 * Federal Income Taxes
       Expenses:Taxes:Federal                $ 2,208.00
-      Assets:Savings:Northwoods
+      Assets:Savings:Northwoods            $ -2,208.00
+
+  2023-04-19 ! Broken Barrel
+      Expenses:Food:Restaurants                 $ 9.00
+      Expenses:Food:Restaurants                $ 20.00
+      Liabilities:Credit Card:Covantage       $ -29.00
+
+  2023-04-19 * Jewel
+      Expenses:Food:Groceries                  $ 34.28
+      Liabilities:Credit Card:Covantage       $ -34.28
+
+  2023-04-19 * Taco Bell
+      Expenses:Food:Fast Food                   $ 2.45
+      Liabilities:Credit Card:Covantage        $ -2.45
+
+  2023-04-19 * Away Luggage
+      Expenses:Gifts                          $ 303.19
+      Liabilities:Credit Card:Covantage      $ -303.19
+
+  2023-04-19 * Lyft
+      Expenses:Transportation:Divvy             $ 0.34
+      Liabilities:Credit Card:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -269,13 +290,13 @@
          $ 11,252.96    Savings
           $ 6,792.00      Northwoods
           $ 4,460.96      RipCo
-       $ -478,799.29  Liabilities
-           $ -455.84    Credit Card:Covantage
+       $ -479,139.55  Liabilities
+           $ -796.10    Credit Card:Covantage
        $ -478,343.45    RE
        $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-       $ -458,356.84
+       $ -458,697.10
            1.0 CONDO
            1.0 COTTA
        354.536 FSPSX
@@ -291,28 +312,28 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 845,761.19  Assets
+        $ 846,016.63  Assets
           $ 7,918.59    Checking
           $ 2,500.00      Northwoods
           $ 3,168.59      Park City
           $ 2,250.00      RipCo
-        $ 176,589.64    Investments
-         $ 81,044.31      401K
-         $ 11,890.70      HSA
-         $ 83,654.63      IRA
+        $ 176,845.08    Investments
+         $ 81,196.79      401K
+         $ 11,900.34      HSA
+         $ 83,747.95      IRA
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
          $ 11,252.96    Savings
           $ 6,792.00      Northwoods
           $ 4,460.96      RipCo
-       $ -478,799.29  Liabilities
-           $ -455.84    Credit Card:Covantage
+       $ -479,139.55  Liabilities
+           $ -796.10    Credit Card:Covantage
        $ -478,343.45    RE
        $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-        $ 366,961.90
+        $ 366,877.08
 #+end_example
 ** Spending
 *** Monthly Spending
@@ -321,7 +342,7 @@
   <<transactions>>
 #+end_src
 #+results:
-: April 2023      $ 4,352.42
+: April 2023      $ 4,721.68
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -330,6 +351,12 @@
 #+results:
 #+begin_example
 April 19 2023  Federal Income Taxes             Expenses:Taxes:Federal           $ 2,208.00
+April 19 2023  Broken Barrel                    Expenses:Food:Restaurants        $ 9.00
+April 19 2023  Broken Barrel                    Expenses:Food:Restaurants        $ 20.00
+April 19 2023  Jewel                            Expenses:Food:Groceries          $ 34.28
+April 19 2023  Taco Bell                        Expenses:Food:Fast Food          $ 2.45
+April 19 2023  Away Luggage                     Expenses:Gifts                   $ 303.19
+April 19 2023  Lyft                             Expenses:Transportation:Divvy    $ 0.34
 April 18 2023  TurboTax                         Expenses:Taxes:Tools             $ 297.57
 April 18 2023  DoorDash                         Expenses:Food:Fast Food          $ 14.99
 April 14 2023  Stripe                           Income:Stripe:Paycheck           $ -6,333.77
