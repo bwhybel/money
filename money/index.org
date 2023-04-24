@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/20/2023 00:00:00 VTSAX $100.2900
-  P 04/20/2023 00:00:00 VTIAX $30.3400
-  P 04/20/2023 00:00:00 FSPSX $45.9700
-  P 04/20/2023 00:00:00 FXAIX $144.2300
-  P 04/20/2023 00:00:00 CONDO $250,000.00
-  P 04/20/2023 00:00:00 COTTA $400,000.00
+  P 04/24/2023 00:00:00 VTSAX $99.7100
+  P 04/24/2023 00:00:00 VTIAX $30.1400
+  P 04/24/2023 00:00:00 FSPSX $45.8400
+  P 04/24/2023 00:00:00 FXAIX $143.3700
+  P 04/24/2023 00:00:00 CONDO $250,000.00
+  P 04/24/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -210,10 +210,10 @@
       Expenses:Taxes:Federal                $ 2,208.00
       Assets:Savings:Northwoods            $ -2,208.00
 
-  2023-04-19 ! Broken Barrel
-      Expenses:Food:Restaurants                 $ 9.00
-      Expenses:Food:Restaurants                $ 20.00
-      Liabilities:Credit Card:Covantage       $ -29.00
+  2023-04-19 * Broken Barrel
+      Expenses:Food:Restaurants                 $ 9.04
+      Expenses:Food:Restaurants                $ 19.58
+      Liabilities:Credit Card:Covantage       $ -28.62
 
   2023-04-19 * Jewel
       Expenses:Food:Groceries                  $ 34.28
@@ -229,6 +229,27 @@
 
   2023-04-19 * Lyft
       Expenses:Transportation:Divvy             $ 0.34
+      Liabilities:Credit Card:Covantage
+
+  2023-04-23 * Dollar Tree
+      Expenses:Personal:Household               $ 9.65
+      Liabilities:Credit Card:Covantage
+
+  2023-04-23 * Panera Bread
+      Expenses:Food:Fast Food                   $ 3.65
+      Liabilities:Credit Card:Covantage
+
+  2023-04-23 * Stratechery
+      Expenses:Personal:Learning              $ 120.00
+      Liabilities:Credit Card:Covantage
+
+  2023-04-23 * PayRange
+      Expenses:Personal:Laundry                $ 25.00
+      Liabilities:Credit Card:Covantage       $ -25.00
+
+  2023-04-23 * Divvy Bikes
+      Expenses:Transportation:Divvy             $ 1.18
+      Expenses:Transportation:Divvy             $ 3.53
       Liabilities:Credit Card:Covantage
 #+end_src
 ** Initial Balance
@@ -290,13 +311,13 @@
          $ 11,252.96    Savings
           $ 6,792.00      Northwoods
           $ 4,460.96      RipCo
-       $ -479,139.55  Liabilities
-           $ -796.10    Credit Card:Covantage
+       $ -479,331.18  Liabilities
+           $ -987.73    Credit Card:Covantage
        $ -478,343.45    RE
        $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-       $ -458,697.10
+       $ -458,888.73
            1.0 CONDO
            1.0 COTTA
        354.536 FSPSX
@@ -312,28 +333,28 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 846,016.63  Assets
+        $ 845,022.89  Assets
           $ 7,918.59    Checking
           $ 2,500.00      Northwoods
           $ 3,168.59      Park City
           $ 2,250.00      RipCo
-        $ 176,845.08    Investments
-         $ 81,196.79      401K
-         $ 11,900.34      HSA
-         $ 83,747.95      IRA
+        $ 175,851.34    Investments
+         $ 80,769.39      401K
+         $ 11,831.29      HSA
+         $ 83,250.66      IRA
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
          $ 11,252.96    Savings
           $ 6,792.00      Northwoods
           $ 4,460.96      RipCo
-       $ -479,139.55  Liabilities
-           $ -796.10    Credit Card:Covantage
+       $ -479,331.18  Liabilities
+           $ -987.73    Credit Card:Covantage
        $ -478,343.45    RE
        $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-        $ 366,877.08
+        $ 365,691.71
 #+end_example
 ** Spending
 *** Monthly Spending
@@ -342,7 +363,7 @@
   <<transactions>>
 #+end_src
 #+results:
-: April 2023      $ 4,721.68
+: April 2023      $ 4,884.31
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -350,9 +371,15 @@
 #+end_src
 #+results:
 #+begin_example
+April 23 2023  Dollar Tree                      Expenses:Personal:Household      $ 9.65
+April 23 2023  Panera Bread                     Expenses:Food:Fast Food          $ 3.65
+April 23 2023  Stratechery                      Expenses:Personal:Learning       $ 120.00
+April 23 2023  PayRange                         Expenses:Personal:Laundry        $ 25.00
+April 23 2023  Divvy Bikes                      Expenses:Transportation:Divvy    $ 1.18
+April 23 2023  Divvy Bikes                      Expenses:Transportation:Divvy    $ 3.53
 April 19 2023  Federal Income Taxes             Expenses:Taxes:Federal           $ 2,208.00
-April 19 2023  Broken Barrel                    Expenses:Food:Restaurants        $ 9.00
-April 19 2023  Broken Barrel                    Expenses:Food:Restaurants        $ 20.00
+April 19 2023  Broken Barrel                    Expenses:Food:Restaurants        $ 9.04
+April 19 2023  Broken Barrel                    Expenses:Food:Restaurants        $ 19.58
 April 19 2023  Jewel                            Expenses:Food:Groceries          $ 34.28
 April 19 2023  Taco Bell                        Expenses:Food:Fast Food          $ 2.45
 April 19 2023  Away Luggage                     Expenses:Gifts                   $ 303.19
