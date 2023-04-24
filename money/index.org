@@ -154,14 +154,14 @@
       Income:Stripe:Paycheck               $ -6,333.77
       Income:Stripe:Wireless                  $ -50.00
       Income:Stripe:Wellness                  $ -51.02
-      Assets:Investments:HSA                  $ 220.83
       Expenses:Taxes:Federal                $ 1,161.43
       Expenses:Taxes:Social Security          $ 398.65
       Expenses:Taxes:Medicare                  $ 93.24
       Expenses:Taxes:Illinois                 $ 318.27
-      Assets:Investments:401K                 $ 950.07
+      Assets:Investments:401K                    5.623 FXAIX @ $ 143.62
+      Assets:Investments:401K                     3.11 FSPSX @ $ 45.83
       Income:Stripe:HSA                      $ -100.00
-      Assets:Investments:HSA                  $ 100.00
+      Assets:Investments:HSA                     2.226 FXAIX @ $ 144.11
       Assets:Savings:Covantage              $ 1,042.30
       Assets:Savings:Northwoods             $ 2,250.00
 
@@ -231,6 +231,10 @@
       Expenses:Transportation:Divvy             $ 0.34
       Liabilities:Credit Card:Covantage
 
+  2023-04-21 * Crandon Water & Sewer
+      Expenses:RE:Cottage:Utilities            $ 91.18
+      Assets:Checking:Northwoods
+
   2023-04-23 * Dollar Tree
       Expenses:Personal:Household               $ 9.65
       Liabilities:Credit Card:Covantage
@@ -251,6 +255,26 @@
       Expenses:Transportation:Divvy             $ 1.18
       Expenses:Transportation:Divvy             $ 3.53
       Liabilities:Credit Card:Covantage
+
+  2023-04-23 * 7/11
+      Expenses:Food:Snacks                      $ 3.54
+      Assets:Checking:RipCo
+
+  2023-04-23 * Walgreens
+      Expenses:Food:Snacks                      $ 1.31
+      Assets:Checking:RipCo
+
+  2023-04-23 * Cash
+      Expenses:Personal:Household             $ 183.25
+      Assets:Checking:RipCo
+
+  2023-04-23 * Aldi
+      Expenses:Food:Groceries                  $ 23.32
+      Liabilities:Credit Card:Northwoods
+
+  2023-04-23 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 96.52
+      Liabilities:Credit Card:Northwoods
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -281,27 +305,24 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 20,442.45
+         $ 18,892.27
            1.0 CONDO
            1.0 COTTA
-       354.536 FSPSX
-       523.665 FXAIX
+       357.646 FSPSX
+       531.514 FXAIX
        528.079 VTIAX
        675.302 VTSAX  Assets
-          $ 7,918.59    Checking
-          $ 2,500.00      Northwoods
+          $ 7,639.31    Checking
+          $ 2,408.82      Northwoods
           $ 3,168.59      Park City
-          $ 2,250.00      RipCo
-          $ 1,270.90
-       354.536 FSPSX
-       523.665 FXAIX
+          $ 2,061.90      RipCo
+       357.646 FSPSX
+       531.514 FXAIX
        528.079 VTIAX
        675.302 VTSAX    Investments
-            $ 950.07
-       354.536 FSPSX
-       443.380 FXAIX      401K
-            $ 320.83
-        80.285 FXAIX      HSA
+       357.646 FSPSX
+       449.003 FXAIX      401K
+        82.511 FXAIX      HSA
        528.079 VTIAX
        675.302 VTSAX      IRA
            1.0 CONDO
@@ -311,17 +332,19 @@
          $ 11,252.96    Savings
           $ 6,792.00      Northwoods
           $ 4,460.96      RipCo
-       $ -479,331.18  Liabilities
-           $ -987.73    Credit Card:Covantage
+       $ -479,451.02  Liabilities
+         $ -1,107.57    Credit Card
+           $ -987.73      Covantage
+           $ -119.84      Northwoods
        $ -478,343.45    RE
        $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-       $ -458,888.73
+       $ -460,558.75
            1.0 CONDO
            1.0 COTTA
-       354.536 FSPSX
-       523.665 FXAIX
+       357.646 FSPSX
+       531.514 FXAIX
        528.079 VTIAX
        675.302 VTSAX
 #+end_example
@@ -333,14 +356,14 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 845,022.89  Assets
-          $ 7,918.59    Checking
-          $ 2,500.00      Northwoods
+        $ 844,740.59  Assets
+          $ 7,639.31    Checking
+          $ 2,408.82      Northwoods
           $ 3,168.59      Park City
-          $ 2,250.00      RipCo
-        $ 175,851.34    Investments
-         $ 80,769.39      401K
-         $ 11,831.29      HSA
+          $ 2,061.90      RipCo
+        $ 175,848.32    Investments
+         $ 80,768.05      401K
+         $ 11,829.60      HSA
          $ 83,250.66      IRA
         $ 650,000.00    RE
         $ 250,000.00      Condo
@@ -348,13 +371,15 @@
          $ 11,252.96    Savings
           $ 6,792.00      Northwoods
           $ 4,460.96      RipCo
-       $ -479,331.18  Liabilities
-           $ -987.73    Credit Card:Covantage
+       $ -479,451.02  Liabilities
+         $ -1,107.57    Credit Card
+           $ -987.73      Covantage
+           $ -119.84      Northwoods
        $ -478,343.45    RE
        $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-        $ 365,691.71
+        $ 365,289.57
 #+end_example
 ** Spending
 *** Monthly Spending
@@ -363,7 +388,7 @@
   <<transactions>>
 #+end_src
 #+results:
-: April 2023      $ 4,884.31
+: April 2023      $ 5,283.43
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -377,6 +402,12 @@ April 23 2023  Stratechery                      Expenses:Personal:Learning      
 April 23 2023  PayRange                         Expenses:Personal:Laundry        $ 25.00
 April 23 2023  Divvy Bikes                      Expenses:Transportation:Divvy    $ 1.18
 April 23 2023  Divvy Bikes                      Expenses:Transportation:Divvy    $ 3.53
+April 23 2023  7/11                             Expenses:Food:Snacks             $ 3.54
+April 23 2023  Walgreens                        Expenses:Food:Snacks             $ 1.31
+April 23 2023  Cash                             Expenses:Personal:Household      $ 183.25
+April 23 2023  Aldi                             Expenses:Food:Groceries          $ 23.32
+April 23 2023  Home Depot                       Expenses:RE:Condo:Repairs        $ 96.52
+April 21 2023  Crandon Water & Sewer            Expenses:RE:Cottage:Utilities    $ 91.18
 April 19 2023  Federal Income Taxes             Expenses:Taxes:Federal           $ 2,208.00
 April 19 2023  Broken Barrel                    Expenses:Food:Restaurants        $ 9.04
 April 19 2023  Broken Barrel                    Expenses:Food:Restaurants        $ 19.58
