@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/24/2023 00:00:00 VTSAX $99.7100
-  P 04/24/2023 00:00:00 VTIAX $30.1400
-  P 04/24/2023 00:00:00 FSPSX $45.8400
-  P 04/24/2023 00:00:00 FXAIX $143.3700
-  P 04/24/2023 00:00:00 CONDO $250,000.00
-  P 04/24/2023 00:00:00 COTTA $400,000.00
+  P 04/25/2023 00:00:00 VTSAX $99.7900
+  P 04/25/2023 00:00:00 VTIAX $30.1500
+  P 04/25/2023 00:00:00 FSPSX $46.0300
+  P 04/25/2023 00:00:00 FXAIX $143.5100
+  P 04/25/2023 00:00:00 CONDO $250,000.00
+  P 04/25/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -275,6 +275,30 @@
   2023-04-23 * Home Depot
       Expenses:RE:Condo:Repairs                $ 96.52
       Liabilities:Credit Card:Northwoods
+
+  2023-04-24 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 16.79
+      Liabilities:Credit Card:Covantage
+
+  2023-04-24 * Divvy Bikes
+      Expenses:Transportation:Divvy             $ 2.06
+      Liabilities:Credit Card:Covantage
+
+  2023-04-24 * McDonalds
+      Expenses:Food:Fast Food                   $ 5.63
+      Liabilities:Credit Card:Covantage
+
+  2023-04-24 * 7/11
+      Expenses:Food:Snacks                      $ 6.25
+      Liabilities:Credit Card:Covantage
+
+  2023-04-24 * Panera Bread
+      Expenses:Food:Fast Food                   $ 3.65
+      Liabilities:Credit Card:Covantage
+
+  2023-04-24 * Dollar Tree
+      Expenses:Food:Snacks                     $ 11.03
+      Liabilities:Credit Card:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -332,15 +356,15 @@
          $ 11,252.96    Savings
           $ 6,792.00      Northwoods
           $ 4,460.96      RipCo
-       $ -479,451.02  Liabilities
-         $ -1,107.57    Credit Card
-           $ -987.73      Covantage
+       $ -479,496.43  Liabilities
+         $ -1,152.98    Credit Card
+         $ -1,033.14      Covantage
            $ -119.84      Northwoods
        $ -478,343.45    RE
        $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-       $ -460,558.75
+       $ -460,604.16
            1.0 CONDO
            1.0 COTTA
        357.646 FSPSX
@@ -356,30 +380,30 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 844,740.59  Assets
+        $ 844,942.26  Assets
           $ 7,639.31    Checking
           $ 2,408.82      Northwoods
           $ 3,168.59      Park City
           $ 2,061.90      RipCo
-        $ 175,848.32    Investments
-         $ 80,768.05      401K
-         $ 11,829.60      HSA
-         $ 83,250.66      IRA
+        $ 176,049.99    Investments
+         $ 80,898.87      401K
+         $ 11,841.15      HSA
+         $ 83,309.97      IRA
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
          $ 11,252.96    Savings
           $ 6,792.00      Northwoods
           $ 4,460.96      RipCo
-       $ -479,451.02  Liabilities
-         $ -1,107.57    Credit Card
-           $ -987.73      Covantage
+       $ -479,496.43  Liabilities
+         $ -1,152.98    Credit Card
+         $ -1,033.14      Covantage
            $ -119.84      Northwoods
        $ -478,343.45    RE
        $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-        $ 365,289.57
+        $ 365,445.83
 #+end_example
 ** Spending
 *** Monthly Spending
@@ -388,7 +412,7 @@
   <<transactions>>
 #+end_src
 #+results:
-: April 2023      $ 5,283.43
+: April 2023      $ 5,328.84
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -396,6 +420,12 @@
 #+end_src
 #+results:
 #+begin_example
+April 24 2023  Home Depot                       Expenses:RE:Condo:Repairs        $ 16.79
+April 24 2023  Divvy Bikes                      Expenses:Transportation:Divvy    $ 2.06
+April 24 2023  McDonalds                        Expenses:Food:Fast Food          $ 5.63
+April 24 2023  7/11                             Expenses:Food:Snacks             $ 6.25
+April 24 2023  Panera Bread                     Expenses:Food:Fast Food          $ 3.65
+April 24 2023  Dollar Tree                      Expenses:Food:Snacks             $ 11.03
 April 23 2023  Dollar Tree                      Expenses:Personal:Household      $ 9.65
 April 23 2023  Panera Bread                     Expenses:Food:Fast Food          $ 3.65
 April 23 2023  Stratechery                      Expenses:Personal:Learning       $ 120.00
