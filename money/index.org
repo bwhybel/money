@@ -228,7 +228,7 @@
       Liabilities:Credit Card:Covantage      $ -303.19
 
   2023-04-19 * Lyft
-      Expenses:Transportation:Divvy             $ 0.34
+      Expenses:Transportation:Biking            $ 0.34
       Liabilities:Credit Card:Covantage
 
   2023-04-21 * Crandon Water & Sewer
@@ -252,8 +252,8 @@
       Liabilities:Credit Card:Covantage       $ -25.00
 
   2023-04-23 * Divvy Bikes
-      Expenses:Transportation:Divvy             $ 1.18
-      Expenses:Transportation:Divvy             $ 3.53
+      Expenses:Transportation:Biking            $ 1.18
+      Expenses:Transportation:Biking            $ 3.53
       Liabilities:Credit Card:Covantage
 
   2023-04-23 * 7/11
@@ -281,7 +281,7 @@
       Liabilities:Credit Card:Covantage
 
   2023-04-24 * Divvy Bikes
-      Expenses:Transportation:Divvy             $ 2.06
+      Expenses:Transportation:Biking            $ 2.06
       Liabilities:Credit Card:Covantage
 
   2023-04-24 * McDonalds
@@ -298,6 +298,19 @@
 
   2023-04-24 * Dollar Tree
       Expenses:Food:Snacks                     $ 11.03
+      Liabilities:Credit Card:Covantage
+
+  2023-04-25 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 4.86
+      Liabilities:Credit Card:Covantage
+
+  2023-04-25 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 11.85
+      Expenses:RE:Condo:Repairs                $ 25.32
+      Liabilities:Credit Card:Covantage
+
+  2023-04-25 * Citgo
+      Expenses:Transportation:Gas              $ 20.98
       Liabilities:Credit Card:Covantage
 #+end_src
 ** Initial Balance
@@ -356,15 +369,15 @@
          $ 11,252.96    Savings
           $ 6,792.00      Northwoods
           $ 4,460.96      RipCo
-       $ -479,496.43  Liabilities
-         $ -1,152.98    Credit Card
-         $ -1,033.14      Covantage
+       $ -479,559.44  Liabilities
+         $ -1,215.99    Credit Card
+         $ -1,096.15      Covantage
            $ -119.84      Northwoods
        $ -478,343.45    RE
        $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-       $ -460,604.16
+       $ -460,667.17
            1.0 CONDO
            1.0 COTTA
        357.646 FSPSX
@@ -395,15 +408,15 @@
          $ 11,252.96    Savings
           $ 6,792.00      Northwoods
           $ 4,460.96      RipCo
-       $ -479,496.43  Liabilities
-         $ -1,152.98    Credit Card
-         $ -1,033.14      Covantage
+       $ -479,559.44  Liabilities
+         $ -1,215.99    Credit Card
+         $ -1,096.15      Covantage
            $ -119.84      Northwoods
        $ -478,343.45    RE
        $ -126,908.13      Condo:Mortgage
        $ -351,435.32      Cottage:Mortgage
 --------------------
-        $ 365,445.83
+        $ 365,382.82
 #+end_example
 ** Spending
 *** Monthly Spending
@@ -412,7 +425,7 @@
   <<transactions>>
 #+end_src
 #+results:
-: April 2023      $ 5,328.84
+: April 2023      $ 5,391.85
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -420,8 +433,12 @@
 #+end_src
 #+results:
 #+begin_example
+April 25 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 4.86
+April 25 2023  Home Depot                       Expenses:RE:Condo:Repairs        $ 11.85
+April 25 2023  Home Depot                       Expenses:RE:Condo:Repairs        $ 25.32
+April 25 2023  Citgo                            Expenses:Transportation:Gas      $ 20.98
 April 24 2023  Home Depot                       Expenses:RE:Condo:Repairs        $ 16.79
-April 24 2023  Divvy Bikes                      Expenses:Transportation:Divvy    $ 2.06
+April 24 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 2.06
 April 24 2023  McDonalds                        Expenses:Food:Fast Food          $ 5.63
 April 24 2023  7/11                             Expenses:Food:Snacks             $ 6.25
 April 24 2023  Panera Bread                     Expenses:Food:Fast Food          $ 3.65
@@ -430,8 +447,8 @@ April 23 2023  Dollar Tree                      Expenses:Personal:Household     
 April 23 2023  Panera Bread                     Expenses:Food:Fast Food          $ 3.65
 April 23 2023  Stratechery                      Expenses:Personal:Learning       $ 120.00
 April 23 2023  PayRange                         Expenses:Personal:Laundry        $ 25.00
-April 23 2023  Divvy Bikes                      Expenses:Transportation:Divvy    $ 1.18
-April 23 2023  Divvy Bikes                      Expenses:Transportation:Divvy    $ 3.53
+April 23 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 1.18
+April 23 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 3.53
 April 23 2023  7/11                             Expenses:Food:Snacks             $ 3.54
 April 23 2023  Walgreens                        Expenses:Food:Snacks             $ 1.31
 April 23 2023  Cash                             Expenses:Personal:Household      $ 183.25
@@ -444,7 +461,7 @@ April 19 2023  Broken Barrel                    Expenses:Food:Restaurants       
 April 19 2023  Jewel                            Expenses:Food:Groceries          $ 34.28
 April 19 2023  Taco Bell                        Expenses:Food:Fast Food          $ 2.45
 April 19 2023  Away Luggage                     Expenses:Gifts                   $ 303.19
-April 19 2023  Lyft                             Expenses:Transportation:Divvy    $ 0.34
+April 19 2023  Lyft                             Expenses:Transportation:Biking   $ 0.34
 April 18 2023  TurboTax                         Expenses:Taxes:Tools             $ 297.57
 April 18 2023  DoorDash                         Expenses:Food:Fast Food          $ 14.99
 April 14 2023  Stripe                           Income:Stripe:Paycheck           $ -6,333.77
