@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/28/2023 00:00:00 VTSAX $99.5700
-  P 04/28/2023 00:00:00 VTIAX $30.1100
-  P 04/28/2023 00:00:00 FSPSX $45.9700
-  P 04/28/2023 00:00:00 FXAIX $143.5800
-  P 04/28/2023 00:00:00 CONDO $250,000.00
-  P 04/28/2023 00:00:00 COTTA $400,000.00
+  P 05/11/2023 00:00:00 VTSAX $99.3200
+  P 05/11/2023 00:00:00 VTIAX $30.2200
+  P 05/11/2023 00:00:00 FSPSX $45.9900
+  P 05/11/2023 00:00:00 FXAIX $143.0700
+  P 05/11/2023 00:00:00 CONDO $250,000.00
+  P 05/11/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -327,7 +327,8 @@
       Expenses:Taxes:Social Security           $ 19.77
       Expenses:Taxes:Medicare                  $ 91.84
       Expenses:Taxes:Illinois                 $ 313.52
-      Assets:Investments:401K                 $ 950.07
+      Assets:Investments:401K                    5.578 FXAIX @ $ 144.776
+      Assets:Investments:401K                    3.101 FSPSX @ $ 45.956
       Assets:Checking:Northwoods            $ 1,500.00
       Assets:Savings:Park City                $ 900.00
       Assets:Checking:RipCo                 $ 1,420.16
@@ -347,10 +348,161 @@
       Liabilities:Credit Card:Covantage       $ 300.64
       Assets:Checking:Covantage
 
-  2023-04-28 * Divvy
+  2023-04-28 * Divvy Bikes
       Expenses:Transportation:Biking            $ 0.56
       Expenses:Transportation:Biking            $ 1.11
       Liabilities:Credit Card:Covantage
+
+  2023-04-30 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.79
+      Liabilities:Credit Card:Covantage
+
+  2023-04-30 * UFB Direct
+      Assets:Savings:UFB                       $ 15.38
+      Income:Extra
+
+  2023-05-01 * Rent
+      Assets:Savings:RipCo                    $ 900.00
+      Income:RE:Condo:Rent
+
+  2023-05-01 * Transfer
+      Assets:Checking:Covantage             $ 1,232.06
+      Assets:Checking:RipCo
+
+  2023-05-01 * Huntington
+      Liabilities:RE:Condo:Mortgage           $ 261.03
+      Expenses:RE:Condo:Interest              $ 396.59
+      Assets:Checking:RipCo                  $ -657.62
+
+  2023-05-01 * Transfer
+      Assets:Checking:Capital One             $ 100.00
+      Assets:Checking:RipCo
+
+  2023-05-01 * Transfer
+      Assets:Checking:Northwoods            $ 1,400.00
+      Assets:Savings:Northwoods
+
+  2023-05-01 * Visible
+      Expenses:Personal:Communication          $ 35.00
+      Assets:Checking:Northwoods
+
+  2023-05-01 * Transfer
+      Liabilities:Credit Card:Northwoods      $ 119.84
+      Assets:Checking:Northwoods
+
+  2023-05-01 * Chase
+      Liabilities:RE:Cottage:Mortgage         $ 616.24
+      Expenses:RE:Cottage:Interest          $ 1,025.02
+      Expenses:RE:Cottage:Escrow              $ 864.60
+      Assets:Checking:Northwoods           $ -2,505.86
+
+  2023-05-01 * Doordash
+      Expenses:Food:Fast Food                   $ 7.70
+      Expenses:Food:Fast Food                  $ 40.16
+      Expenses:Food:Fast Food                  $ 11.61
+      Assets:Checking:Northwoods
+
+  2023-05-02 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 8.20
+      Liabilities:Credit Card:Covantage
+
+  2023-05-03 * Yardi Penny Test
+      Assets:Checking:Park City                 $ 0.08
+      Assets:Savings:RipCo                      $ 0.41
+      Income:Extra
+
+  2023-05-03 * Comed
+      Expenses:Housing:Utilities               $ 60.00
+      Assets:Checking:Northwoods
+
+  2023-05-03 * Kass Property Management
+      Expenses:Housing:Rent                 $ 1,328.95
+      Assets:Checking:Northwoods
+
+  2023-05-03 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 3.15
+      Liabilities:Credit Card:Covantage
+
+  2023-05-04 * Molly's Cupcake
+      Expenses:Food:Snacks                      $ 8.90
+      Liabilities:Credit Card:Covantage
+
+  2023-05-05 * State of Illinois
+      Assets:Savings:Northwoods                $ 66.00
+      Expenses:Taxes:Illinois
+
+  2023-05-05 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.30
+      Liabilities:Credit Card:Covantage
+
+  2023-05-07 * Chick-Fil-A
+      Expenses:Food:Fast Food                   $ 8.84
+      Liabilities:Credit Card:Covantage
+
+  2023-05-07 * 7/11
+      Expenses:Food:Snacks                      $ 1.51
+      Liabilities:Credit Card:Covantage
+
+  2023-05-07 * 7/11
+      Expenses:Food:Snacks                      $ 3.30
+      Liabilities:Credit Card:Covantage
+
+  2023-05-07 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.11
+      Liabilities:Credit Card:Covantage
+
+  2023-05-07 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 0.88
+      Liabilities:Credit Card:Covantage
+
+  2023-05-07 * Home Depot
+      Expenses:RE:Condo:Repairs                 $ 9.13
+      Expenses:RE:Condo:Repairs                $ 38.55
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-08 * Lotters
+      Expenses:Food:Snacks                     $ 21.71
+      Liabilities:Credit Card:Covantage
+
+  2023-05-08 * Kwik Trip
+      Expenses:Transportation:Gas              $ 35.41
+      Liabilities:Credit Card:Covantage
+
+  2023-05-08 * Conway True Value
+      Expenses:RE:Cottage:Repairs              $ 37.93
+      Liabilities:Credit Card:Covantage
+
+  2023-05-08 * Kwik Trip
+      Expenses:Food:Snacks                     $ 11.66
+      Liabilities:Credit Card:Covantage
+
+  2023-05-08 * Amazon
+      Expenses:Personal:Household              $ 47.38
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-09 * Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 176.00
+      Assets:Checking:Northwoods
+
+  2023-05-11 * Shell
+      Expenses:Food:Fast Food                  $ 10.94
+      Liabilities:Credit Card:Covantage
+
+  2023-05-11 * Krist Oil
+      Expenses:Transportation:Gas              $ 31.37
+      Liabilities:Credit Card:Covantage
+
+  2023-05-11 * Krist Oil
+      Expenses:Food:Snacks                      $ 5.15
+      Liabilities:Credit Card:Covantage
+
+  2023-05-11 * Transfer
+      Liabilities:Credit Card:Covantage       $ 990.33
+      Assets:Checking:Covantage
+
+  2023-05-11 * 7/11
+      Expenses:Food:Snacks                      $ 5.96
+      Liabilities:Credit Card:RipCo
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -381,25 +533,25 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 23,602.98
+         $ 17,701.71
            1.0 CONDO
            1.0 COTTA
-       357.646 FSPSX
-       531.514 FXAIX
+       360.747 FSPSX
+       537.092 FXAIX
        528.079 VTIAX
        675.302 VTSAX  Assets
-         $ 10,130.55    Checking
-          $ 3,848.49      Northwoods
-          $ 2,800.00      Park City
-          $ 3,482.06      RipCo
-            $ 950.07
-       357.646 FSPSX
-       531.514 FXAIX
+          $ 5,597.56    Checking
+            $ 100.00      Capital One
+            $ 241.73      Covantage
+            $ 963.37      Northwoods
+          $ 2,800.08      Park City
+          $ 1,492.38      RipCo
+       360.747 FSPSX
+       537.092 FXAIX
        528.079 VTIAX
        675.302 VTSAX    Investments
-            $ 950.07
-       357.646 FSPSX
-       449.003 FXAIX      401K
+       360.747 FSPSX
+       454.581 FXAIX      401K
         82.511 FXAIX      HSA
        528.079 VTIAX
        675.302 VTSAX      IRA
@@ -407,23 +559,24 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 12,522.36    Savings
-          $ 6,792.81      Northwoods
+         $ 12,104.15    Savings
+          $ 5,458.81      Northwoods
           $ 1,268.59      Park City
-          $ 4,460.96      RipCo
-       $ -479,260.47  Liabilities
-           $ -917.02    Credit Card
-           $ -797.18      Covantage
-           $ -119.84      Northwoods
-       $ -478,343.45    RE
-       $ -126,908.13      Condo:Mortgage
-       $ -351,435.32      Cottage:Mortgage
+          $ 5,361.37      RipCo
+             $ 15.38      UFB
+       $ -477,567.20  Liabilities
+           $ -101.02    Credit Card
+            $ -95.06      Northwoods
+             $ -5.96      RipCo
+       $ -477,466.18    RE
+       $ -126,647.10      Condo:Mortgage
+       $ -350,819.08      Cottage:Mortgage
 --------------------
-       $ -455,657.49
+       $ -459,865.49
            1.0 CONDO
            1.0 COTTA
-       357.646 FSPSX
-       531.514 FXAIX
+       360.747 FSPSX
+       537.092 FXAIX
        528.079 VTIAX
        675.302 VTSAX
 #+end_example
@@ -435,31 +588,34 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 849,499.03  Assets
-         $ 10,130.55    Checking
-          $ 3,848.49      Northwoods
-          $ 2,800.00      Park City
-          $ 3,482.06      RipCo
-        $ 176,846.12    Investments
-         $ 81,858.91      401K
-         $ 11,846.93      HSA
-         $ 83,140.28      IRA
+        $ 844,163.76  Assets
+          $ 5,597.56    Checking
+            $ 100.00      Capital One
+            $ 241.73      Covantage
+            $ 963.37      Northwoods
+          $ 2,800.08      Park City
+          $ 1,492.38      RipCo
+        $ 176,462.05    Investments
+         $ 81,627.66      401K
+         $ 11,804.85      HSA
+         $ 83,029.54      IRA
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
-         $ 12,522.36    Savings
-          $ 6,792.81      Northwoods
+         $ 12,104.15    Savings
+          $ 5,458.81      Northwoods
           $ 1,268.59      Park City
-          $ 4,460.96      RipCo
-       $ -479,260.47  Liabilities
-           $ -917.02    Credit Card
-           $ -797.18      Covantage
-           $ -119.84      Northwoods
-       $ -478,343.45    RE
-       $ -126,908.13      Condo:Mortgage
-       $ -351,435.32      Cottage:Mortgage
+          $ 5,361.37      RipCo
+             $ 15.38      UFB
+       $ -477,567.20  Liabilities
+           $ -101.02    Credit Card
+            $ -95.06      Northwoods
+             $ -5.96      RipCo
+       $ -477,466.18    RE
+       $ -126,647.10      Condo:Mortgage
+       $ -350,819.08      Cottage:Mortgage
 --------------------
-        $ 370,238.56
+        $ 366,596.56
 #+end_example
 ** Spending
 *** Monthly Spending
@@ -468,7 +624,8 @@
   <<transactions>>
 #+end_src
 #+results:
-: April 2023      $ 5,453.85
+: April 2023      $ 5,455.64
+: May 2023        $ 4,238.01
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -476,6 +633,41 @@
 #+end_src
 #+results:
 #+begin_example
+May 11 2023    Shell                            Expenses:Food:Fast Food          $ 10.94
+May 11 2023    Krist Oil                        Expenses:Transportation:Gas      $ 31.37
+May 11 2023    Krist Oil                        Expenses:Food:Snacks             $ 5.15
+May 11 2023    7/11                             Expenses:Food:Snacks             $ 5.96
+May 09 2023    Wisconsin Public Service         Expenses:RE:Cottage:Utilities    $ 176.00
+May 08 2023    Lotters                          Expenses:Food:Snacks             $ 21.71
+May 08 2023    Kwik Trip                        Expenses:Transportation:Gas      $ 35.41
+May 08 2023    Conway True Value                Expenses:RE:Cottage:Repairs      $ 37.93
+May 08 2023    Kwik Trip                        Expenses:Food:Snacks             $ 11.66
+May 08 2023    Amazon                           Expenses:Personal:Household      $ 47.38
+May 07 2023    Chick-Fil-A                      Expenses:Food:Fast Food          $ 8.84
+May 07 2023    7/11                             Expenses:Food:Snacks             $ 1.51
+May 07 2023    7/11                             Expenses:Food:Snacks             $ 3.30
+May 07 2023    Divvy Bikes                      Expenses:Transportation:Biking   $ 1.11
+May 07 2023    Divvy Bikes                      Expenses:Transportation:Biking   $ 0.88
+May 07 2023    Home Depot                       Expenses:RE:Condo:Repairs        $ 9.13
+May 07 2023    Home Depot                       Expenses:RE:Condo:Repairs        $ 38.55
+May 05 2023    State of Illinois                Expenses:Taxes:Illinois          $ -66.00
+May 05 2023    Divvy Bikes                      Expenses:Transportation:Biking   $ 1.30
+May 04 2023    Molly's Cupcake                  Expenses:Food:Snacks             $ 8.90
+May 03 2023    Yardi Penny Test                 Income:Extra                     $ -0.49
+May 03 2023    Comed                            Expenses:Housing:Utilities       $ 60.00
+May 03 2023    Kass Property Management         Expenses:Housing:Rent            $ 1,328.95
+May 03 2023    Divvy Bikes                      Expenses:Transportation:Biking   $ 3.15
+May 02 2023    Divvy Bikes                      Expenses:Transportation:Biking   $ 8.20
+May 01 2023    Rent                             Income:RE:Condo:Rent             $ -900.00
+May 01 2023    Huntington                       Expenses:RE:Condo:Interest       $ 396.59
+May 01 2023    Visible                          Expenses:Personal:Communication  $ 35.00
+May 01 2023    Chase                            Expenses:RE:Cottage:Interest     $ 1,025.02
+May 01 2023    Chase                            Expenses:RE:Cottage:Escrow       $ 864.60
+May 01 2023    Doordash                         Expenses:Food:Fast Food          $ 7.70
+May 01 2023    Doordash                         Expenses:Food:Fast Food          $ 40.16
+May 01 2023    Doordash                         Expenses:Food:Fast Food          $ 11.61
+April 30 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 1.79
+April 30 2023  UFB Direct                       Income:Extra                     $ -15.38
 April 28 2023  Interest                         Income:Extra:Interest            $ -0.81
 April 28 2023  Stripe                           Income:Stripe:Paycheck           $ -6,333.77
 April 28 2023  Stripe                           Expenses:Taxes:Federal           $ 1,138.41
@@ -486,8 +678,8 @@ April 28 2023  SWAQ                             Income:SWAQ:Paycheck            
 April 28 2023  SWAQ                             Expenses:Taxes:Medicare          $ 4.98
 April 28 2023  SWAQ                             Expenses:Taxes:Social Security   $ 21.33
 April 28 2023  SWAQ                             Expenses:Taxes:Illinois          $ 17.03
-April 28 2023  Divvy                            Expenses:Transportation:Biking   $ 0.56
-April 28 2023  Divvy                            Expenses:Transportation:Biking   $ 1.11
+April 28 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 0.56
+April 28 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 1.11
 April 26 2023  Xfinity                          Expenses:Housing:Utilities       $ 60.33
 April 25 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 4.86
 April 25 2023  Home Depot                       Expenses:RE:Condo:Repairs        $ 11.85
