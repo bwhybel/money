@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 05/11/2023 00:00:00 VTSAX $99.3200
-  P 05/11/2023 00:00:00 VTIAX $30.2200
-  P 05/11/2023 00:00:00 FSPSX $45.9900
-  P 05/11/2023 00:00:00 FXAIX $143.0700
-  P 05/11/2023 00:00:00 CONDO $250,000.00
-  P 05/11/2023 00:00:00 COTTA $400,000.00
+  P 05/12/2023 00:00:00 VTSAX $99.7700
+  P 05/12/2023 00:00:00 VTIAX $30.2100
+  P 05/12/2023 00:00:00 FSPSX $45.9900
+  P 05/12/2023 00:00:00 FXAIX $143.7200
+  P 05/12/2023 00:00:00 CONDO $250,000.00
+  P 05/12/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -98,7 +98,7 @@
       Liabilities:Credit Card:Covantage       $ -11.31
 
   2023-04-03 * PayRange
-      Expenses:Personal:Laundry                $ 25.00
+      Expenses:Personal:Household              $ 25.00
       Liabilities:Credit Card:Covantage       $ -25.00
 
   2023-04-04 * Transfer
@@ -248,7 +248,7 @@
       Liabilities:Credit Card:Covantage
 
   2023-04-23 * PayRange
-      Expenses:Personal:Laundry                $ 25.00
+      Expenses:Personal:Household              $ 25.00
       Liabilities:Credit Card:Covantage       $ -25.00
 
   2023-04-23 * Divvy Bikes
@@ -503,6 +503,36 @@
   2023-05-11 * 7/11
       Expenses:Food:Snacks                      $ 5.96
       Liabilities:Credit Card:RipCo
+
+  2023-05-12 * SWAQ
+      Income:SWAQ:Paycheck                   $ -568.44
+      Expenses:Taxes:Medicare                   $ 8.25
+      Expenses:Taxes:Social Security           $ 35.24
+      Expenses:Taxes:Illinois                  $ 28.14
+      Expenses:Taxes:Federal                    $ 3.57
+      Assets:Checking:Covantage               $ 493.24
+
+  2023-05-12 * Transfer
+      Assets:Checking:Covantage                 $ 7.17
+      Assets:Checking:Capital One              $ -7.17
+
+  2023-05-12 * 7/11
+      Expenses:Food:Snacks                     $ 92.83
+      Assets:Checking:Capital One
+
+  2023-05-12 * Stripe
+      Income:Stripe:Paycheck               $ -6,333.77
+      Income:Stripe:Wireless                  $ -50.00
+      Income:Stripe:Wellness                 $ -156.01
+      Expenses:Taxes:Federal                $ 1,161.43
+      Expenses:Taxes:Medicare                  $ 93.23
+      Expenses:Taxes:Illinois                 $ 318.27
+      Assets:Investments:401K                 $ 950.07
+      Income:Stripe:HSA                      $ -100.00
+      Assets:Investments:HSA                  $ 320.83
+      Assets:Checking:Park City               $ 900.00
+      Assets:Checking:Northwoods            $ 1,500.00
+      Assets:Checking:RipCo                 $ 1,395.95
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -533,25 +563,27 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 17,701.71
+         $ 23,168.97
            1.0 CONDO
            1.0 COTTA
        360.747 FSPSX
        537.092 FXAIX
        528.079 VTIAX
        675.302 VTSAX  Assets
-          $ 5,597.56    Checking
-            $ 100.00      Capital One
-            $ 241.73      Covantage
-            $ 963.37      Northwoods
-          $ 2,800.08      Park City
-          $ 1,492.38      RipCo
+          $ 9,793.92    Checking
+            $ 742.14      Covantage
+          $ 2,463.37      Northwoods
+          $ 3,700.08      Park City
+          $ 2,888.33      RipCo
+          $ 1,270.90
        360.747 FSPSX
        537.092 FXAIX
        528.079 VTIAX
        675.302 VTSAX    Investments
+            $ 950.07
        360.747 FSPSX
        454.581 FXAIX      401K
+            $ 320.83
         82.511 FXAIX      HSA
        528.079 VTIAX
        675.302 VTSAX      IRA
@@ -572,7 +604,7 @@
        $ -126,647.10      Condo:Mortgage
        $ -350,819.08      Cottage:Mortgage
 --------------------
-       $ -459,865.49
+       $ -454,398.23
            1.0 CONDO
            1.0 COTTA
        360.747 FSPSX
@@ -588,17 +620,16 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 844,163.76  Assets
-          $ 5,597.56    Checking
-            $ 100.00      Capital One
-            $ 241.73      Covantage
-            $ 963.37      Northwoods
-          $ 2,800.08      Park City
-          $ 1,492.38      RipCo
-        $ 176,462.05    Investments
-         $ 81,627.66      401K
-         $ 11,804.85      HSA
-         $ 83,029.54      IRA
+        $ 850,278.73  Assets
+          $ 9,793.92    Checking
+            $ 742.14      Covantage
+          $ 2,463.37      Northwoods
+          $ 3,700.08      Park City
+          $ 2,888.33      RipCo
+        $ 178,380.66    Investments
+         $ 82,873.21      401K
+         $ 12,179.31      HSA
+         $ 83,328.15      IRA
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
@@ -615,7 +646,7 @@
        $ -126,647.10      Condo:Mortgage
        $ -350,819.08      Cottage:Mortgage
 --------------------
-        $ 366,596.56
+        $ 372,711.53
 #+end_example
 ** Spending
 *** Monthly Spending
@@ -625,7 +656,7 @@
 #+end_src
 #+results:
 : April 2023      $ 5,455.64
-: May 2023        $ 4,238.01
+: May 2023        $ 4,330.84
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -633,6 +664,19 @@
 #+end_src
 #+results:
 #+begin_example
+May 12 2023    SWAQ                             Income:SWAQ:Paycheck             $ -568.44
+May 12 2023    SWAQ                             Expenses:Taxes:Medicare          $ 8.25
+May 12 2023    SWAQ                             Expenses:Taxes:Social Security   $ 35.24
+May 12 2023    SWAQ                             Expenses:Taxes:Illinois          $ 28.14
+May 12 2023    SWAQ                             Expenses:Taxes:Federal           $ 3.57
+May 12 2023    7/11                             Expenses:Food:Snacks             $ 92.83
+May 12 2023    Stripe                           Income:Stripe:Paycheck           $ -6,333.77
+May 12 2023    Stripe                           Income:Stripe:Wireless           $ -50.00
+May 12 2023    Stripe                           Income:Stripe:Wellness           $ -156.01
+May 12 2023    Stripe                           Expenses:Taxes:Federal           $ 1,161.43
+May 12 2023    Stripe                           Expenses:Taxes:Medicare          $ 93.23
+May 12 2023    Stripe                           Expenses:Taxes:Illinois          $ 318.27
+May 12 2023    Stripe                           Income:Stripe:HSA                $ -100.00
 May 11 2023    Shell                            Expenses:Food:Fast Food          $ 10.94
 May 11 2023    Krist Oil                        Expenses:Transportation:Gas      $ 31.37
 May 11 2023    Krist Oil                        Expenses:Food:Snacks             $ 5.15
@@ -694,7 +738,7 @@ April 24 2023  Dollar Tree                      Expenses:Food:Snacks            
 April 23 2023  Dollar Tree                      Expenses:Personal:Household      $ 9.65
 April 23 2023  Panera Bread                     Expenses:Food:Fast Food          $ 3.65
 April 23 2023  Stratechery                      Expenses:Personal:Learning       $ 120.00
-April 23 2023  PayRange                         Expenses:Personal:Laundry        $ 25.00
+April 23 2023  PayRange                         Expenses:Personal:Household      $ 25.00
 April 23 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 1.18
 April 23 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 3.53
 April 23 2023  7/11                             Expenses:Food:Snacks             $ 3.54
@@ -732,7 +776,7 @@ April 10 2023  Noodles & Company                Expenses:Food:Fast Food         
 April 09 2023  7/11                             Expenses:Food:Snacks             $ 30.00
 April 06 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 119.00
 April 05 2023  Dividend                         Income:Extra                     -1.977 FXAIX
-April 03 2023  PayRange                         Expenses:Personal:Laundry        $ 25.00
+April 03 2023  PayRange                         Expenses:Personal:Household      $ 25.00
 April 02 2023  Visible                          Expenses:Personal:Communication  $ 35.00
 April 02 2023  Target                           Expenses:Food:Groceries          $ 67.17
 April 02 2023  Mariano's                        Expenses:Food:Groceries          $ 6.37
