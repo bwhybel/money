@@ -504,6 +504,14 @@
       Expenses:Food:Snacks                      $ 5.96
       Liabilities:Credit Card:RipCo
 
+  2023-05-11 * Chick-Fil-A
+      Expenses:Food:Fast Food                   $ 8.84
+      Liabilities:Credit Card:RipCo
+
+  2023-05-11 * Shell
+      Expenses:Transportation:Gas              $ 34.43
+      Liabilities:Credit Card:RipCo
+
   2023-05-12 * SWAQ
       Income:SWAQ:Paycheck                   $ -568.44
       Expenses:Taxes:Medicare                   $ 8.25
@@ -596,15 +604,15 @@
           $ 1,268.59      Park City
           $ 5,361.37      RipCo
              $ 15.38      UFB
-       $ -477,567.20  Liabilities
-           $ -101.02    Credit Card
+       $ -477,610.47  Liabilities
+           $ -144.29    Credit Card
             $ -95.06      Northwoods
-             $ -5.96      RipCo
+            $ -49.23      RipCo
        $ -477,466.18    RE
        $ -126,647.10      Condo:Mortgage
        $ -350,819.08      Cottage:Mortgage
 --------------------
-       $ -454,398.23
+       $ -454,441.50
            1.0 CONDO
            1.0 COTTA
        360.747 FSPSX
@@ -638,17 +646,66 @@
           $ 1,268.59      Park City
           $ 5,361.37      RipCo
              $ 15.38      UFB
-       $ -477,567.20  Liabilities
-           $ -101.02    Credit Card
+       $ -477,610.47  Liabilities
+           $ -144.29    Credit Card
             $ -95.06      Northwoods
-             $ -5.96      RipCo
+            $ -49.23      RipCo
        $ -477,466.18    RE
        $ -126,647.10      Condo:Mortgage
        $ -350,819.08      Cottage:Mortgage
 --------------------
-        $ 372,711.53
+        $ 372,668.26
 #+end_example
 ** Spending
+*** Category Spending
+#+begin_src ledger :cmdline reg ^Expenses --monthly --format "%-15(format_date(date, '%B %d %Y'))%-33(account)%(amount)\n" :noweb yes :exports results
+  <<opening_balance>>
+  <<transactions>>
+#+end_src
+#+results:
+#+begin_example
+April 01 2023  Expenses:Food:Fast Food          $ 38.75
+April 01 2023  Expenses:Food:Groceries          $ 142.45
+April 01 2023  Expenses:Food:Restaurants        $ 28.62
+April 01 2023  Expenses:Food:Snacks             $ 56.33
+April 01 2023  Expenses:Gifts                   $ 303.19
+April 01 2023  Expenses:Housing:Rent            $ 1,328.95
+April 01 2023  Expenses:Housing:Utilities       $ 60.33
+April 01 2023  Expenses:Personal:Communication  $ 35.00
+April 01 2023  Expenses:Personal:Household      $ 242.90
+April 01 2023  Expenses:Personal:Learning       $ 120.00
+April 01 2023  Expenses:RE:Condo:HOA            $ 132.34
+April 01 2023  Expenses:RE:Condo:Interest       $ 428.55
+April 01 2023  Expenses:RE:Condo:Repairs        $ 150.48
+April 01 2023  Expenses:RE:Cottage:Escrow       $ 882.36
+April 01 2023  Expenses:RE:Cottage:Interest     $ 1,026.81
+April 01 2023  Expenses:RE:Cottage:Utilities    $ 323.17
+April 01 2023  Expenses:Taxes:Federal           $ 4,507.84
+April 01 2023  Expenses:Taxes:Illinois          $ 655.51
+April 01 2023  Expenses:Taxes:Medicare          $ 192.02
+April 01 2023  Expenses:Taxes:Social Security   $ 448.13
+April 01 2023  Expenses:Taxes:Tools             $ 297.57
+April 01 2023  Expenses:Transportation:Biking   $ 134.43
+April 01 2023  Expenses:Transportation:Gas      $ 20.98
+May 01 2023    Expenses:Food:Fast Food          $ 88.09
+May 01 2023    Expenses:Food:Snacks             $ 151.02
+May 01 2023    Expenses:Housing:Rent            $ 1,328.95
+May 01 2023    Expenses:Housing:Utilities       $ 60.00
+May 01 2023    Expenses:Personal:Communication  $ 35.00
+May 01 2023    Expenses:Personal:Household      $ 47.38
+May 01 2023    Expenses:RE:Condo:Interest       $ 396.59
+May 01 2023    Expenses:RE:Condo:Repairs        $ 47.68
+May 01 2023    Expenses:RE:Cottage:Escrow       $ 864.60
+May 01 2023    Expenses:RE:Cottage:Interest     $ 1,025.02
+May 01 2023    Expenses:RE:Cottage:Repairs      $ 37.93
+May 01 2023    Expenses:RE:Cottage:Utilities    $ 176.00
+May 01 2023    Expenses:Taxes:Federal           $ 1,165.00
+May 01 2023    Expenses:Taxes:Illinois          $ 280.41
+May 01 2023    Expenses:Taxes:Medicare          $ 101.48
+May 01 2023    Expenses:Taxes:Social Security   $ 35.24
+May 01 2023    Expenses:Transportation:Biking   $ 14.64
+May 01 2023    Expenses:Transportation:Gas      $ 101.21
+#+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-15(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -656,7 +713,7 @@
 #+end_src
 #+results:
 : April 2023      $ 5,455.64
-: May 2023        $ 4,330.84
+: May 2023        $ 4,374.11
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -681,6 +738,8 @@ May 11 2023    Shell                            Expenses:Food:Fast Food         
 May 11 2023    Krist Oil                        Expenses:Transportation:Gas      $ 31.37
 May 11 2023    Krist Oil                        Expenses:Food:Snacks             $ 5.15
 May 11 2023    7/11                             Expenses:Food:Snacks             $ 5.96
+May 11 2023    Chick-Fil-A                      Expenses:Food:Fast Food          $ 8.84
+May 11 2023    Shell                            Expenses:Transportation:Gas      $ 34.43
 May 09 2023    Wisconsin Public Service         Expenses:RE:Cottage:Utilities    $ 176.00
 May 08 2023    Lotters                          Expenses:Food:Snacks             $ 21.71
 May 08 2023    Kwik Trip                        Expenses:Transportation:Gas      $ 35.41
