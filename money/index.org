@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 05/12/2023 00:00:00 VTSAX $99.7700
-  P 05/12/2023 00:00:00 VTIAX $30.2100
-  P 05/12/2023 00:00:00 FSPSX $45.9900
-  P 05/12/2023 00:00:00 FXAIX $143.7200
-  P 05/12/2023 00:00:00 CONDO $250,000.00
-  P 05/12/2023 00:00:00 COTTA $400,000.00
+  P 05/17/2023 00:00:00 VTSAX $99.8300
+  P 05/17/2023 00:00:00 VTIAX $30.2200
+  P 05/17/2023 00:00:00 FSPSX $46.0400
+  P 05/17/2023 00:00:00 FXAIX $143.7500
+  P 05/17/2023 00:00:00 CONDO $250,000.00
+  P 05/17/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -535,12 +535,70 @@
       Expenses:Taxes:Federal                $ 1,161.43
       Expenses:Taxes:Medicare                  $ 93.23
       Expenses:Taxes:Illinois                 $ 318.27
-      Assets:Investments:401K                 $ 950.07
+      Assets:Investments:401K                    5.635 FXAIX @ $ 143.309
+      Assets:Investments:401K                    3.118 FSPSX @ $ 45.71
       Income:Stripe:HSA                      $ -100.00
-      Assets:Investments:HSA                  $ 320.83
+      Assets:Investments:HSA                     2.232 FXAIX @ $ 143.741
       Assets:Checking:Park City               $ 900.00
       Assets:Checking:Northwoods            $ 1,500.00
       Assets:Checking:RipCo                 $ 1,395.95
+
+  2023-05-12 * Amazon
+      Liabilities:Credit Card:Northwoods       $ 37.47
+      Expenses:Personal:Household
+
+  2023-05-13 * iPhone
+      Expenses:Personal:Electronics           $ 400.00
+      Assets:Checking:Covantage
+
+  2023-05-13 * 7/11
+      Expenses:Food:Snacks                      $ 2.01
+      Assets:Checking:Covantage
+
+  2023-05-13 * Armitage Mayfest
+      Expenses:Food:Fast Food                  $ 14.69
+      Assets:Checking:Covantage
+
+  2023-05-13 * 7/11
+      Expenses:Food:Snacks                      $ 5.96
+      Assets:Checking:Covantage
+
+  2023-05-13 * Target
+      Expenses:Food:Snacks                      $ 4.83
+      Assets:Checking:Covantage
+
+  2023-05-13 * Krispy Krunchy
+      Expenses:Food:Fast Food                   $ 9.79
+      Assets:Checking:Covantage
+
+  2023-05-15 * 7/11
+      Expenses:Food:Snacks                      $ 5.64
+      Liabilities:Credit Card:Covantage
+
+  2023-05-15 * Road Ranger
+      Expenses:Transportation:Gas              $ 12.01
+      Liabilities:Credit Card:Covantage
+
+  2023-05-15 * Subway
+      Expenses:Food:Fast Food                   $ 1.10
+      Liabilities:Credit Card:Covantage
+
+  2023-05-15 * Phillips 66
+      Expenses:Food:Snacks                      $ 2.43
+      Expenses:Transportation:Gas              $ 39.17
+      Liabilities:Credit Card:Covantage
+
+  2023-05-15 * DQ
+      Expenses:Food:Fast Food                   $ 4.43
+      Liabilities:Credit Card:Covantage
+
+  2023-05-15 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 2.78
+      Liabilities:Credit Card:Covantage
+
+  2023-05-15 * Cash Back
+      Liabilities:Credit Card:Covantage     $ 10.00
+      Income:Extra
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -571,28 +629,25 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 23,168.97
+         $ 21,460.79
            1.0 CONDO
            1.0 COTTA
-       360.747 FSPSX
-       537.092 FXAIX
+       363.865 FSPSX
+       544.959 FXAIX
        528.079 VTIAX
        675.302 VTSAX  Assets
-          $ 9,793.92    Checking
-            $ 742.14      Covantage
+          $ 9,356.64    Checking
+            $ 304.86      Covantage
           $ 2,463.37      Northwoods
           $ 3,700.08      Park City
           $ 2,888.33      RipCo
-          $ 1,270.90
-       360.747 FSPSX
-       537.092 FXAIX
+       363.865 FSPSX
+       544.959 FXAIX
        528.079 VTIAX
        675.302 VTSAX    Investments
-            $ 950.07
-       360.747 FSPSX
-       454.581 FXAIX      401K
-            $ 320.83
-        82.511 FXAIX      HSA
+       363.865 FSPSX
+       460.216 FXAIX      401K
+        84.743 FXAIX      HSA
        528.079 VTIAX
        675.302 VTSAX      IRA
            1.0 CONDO
@@ -604,19 +659,20 @@
           $ 1,268.59      Park City
           $ 5,361.37      RipCo
              $ 15.38      UFB
-       $ -477,610.47  Liabilities
-           $ -144.29    Credit Card
-            $ -95.06      Northwoods
+       $ -477,630.56  Liabilities
+           $ -164.38    Credit Card
+            $ -57.56      Covantage
+            $ -57.59      Northwoods
             $ -49.23      RipCo
        $ -477,466.18    RE
        $ -126,647.10      Condo:Mortgage
        $ -350,819.08      Cottage:Mortgage
 --------------------
-       $ -454,441.50
+       $ -456,169.77
            1.0 CONDO
            1.0 COTTA
-       360.747 FSPSX
-       537.092 FXAIX
+       363.865 FSPSX
+       544.959 FXAIX
        528.079 VTIAX
        675.302 VTSAX
 #+end_example
@@ -628,16 +684,16 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 850,278.73  Assets
-          $ 9,793.92    Checking
-            $ 742.14      Covantage
+        $ 849,924.94  Assets
+          $ 9,356.64    Checking
+            $ 304.86      Covantage
           $ 2,463.37      Northwoods
           $ 3,700.08      Park City
           $ 2,888.33      RipCo
-        $ 178,380.66    Investments
-         $ 82,873.21      401K
-         $ 12,179.31      HSA
-         $ 83,328.15      IRA
+        $ 178,464.15    Investments
+         $ 82,908.39      401K
+         $ 12,181.81      HSA
+         $ 83,373.95      IRA
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
@@ -646,15 +702,16 @@
           $ 1,268.59      Park City
           $ 5,361.37      RipCo
              $ 15.38      UFB
-       $ -477,610.47  Liabilities
-           $ -144.29    Credit Card
-            $ -95.06      Northwoods
+       $ -477,630.56  Liabilities
+           $ -164.38    Credit Card
+            $ -57.56      Covantage
+            $ -57.59      Northwoods
             $ -49.23      RipCo
        $ -477,466.18    RE
        $ -126,647.10      Condo:Mortgage
        $ -350,819.08      Cottage:Mortgage
 --------------------
-        $ 372,668.26
+        $ 372,294.38
 #+end_example
 ** Spending
 *** Category Spending
@@ -687,12 +744,13 @@ April 01 2023  Expenses:Taxes:Social Security   $ 448.13
 April 01 2023  Expenses:Taxes:Tools             $ 297.57
 April 01 2023  Expenses:Transportation:Biking   $ 134.43
 April 01 2023  Expenses:Transportation:Gas      $ 20.98
-May 01 2023    Expenses:Food:Fast Food          $ 88.09
-May 01 2023    Expenses:Food:Snacks             $ 151.02
+May 01 2023    Expenses:Food:Fast Food          $ 118.10
+May 01 2023    Expenses:Food:Snacks             $ 171.89
 May 01 2023    Expenses:Housing:Rent            $ 1,328.95
 May 01 2023    Expenses:Housing:Utilities       $ 60.00
 May 01 2023    Expenses:Personal:Communication  $ 35.00
-May 01 2023    Expenses:Personal:Household      $ 47.38
+May 01 2023    Expenses:Personal:Electronics    $ 400.00
+May 01 2023    Expenses:Personal:Household      $ 9.91
 May 01 2023    Expenses:RE:Condo:Interest       $ 396.59
 May 01 2023    Expenses:RE:Condo:Repairs        $ 47.68
 May 01 2023    Expenses:RE:Cottage:Escrow       $ 864.60
@@ -703,8 +761,8 @@ May 01 2023    Expenses:Taxes:Federal           $ 1,165.00
 May 01 2023    Expenses:Taxes:Illinois          $ 280.41
 May 01 2023    Expenses:Taxes:Medicare          $ 101.48
 May 01 2023    Expenses:Taxes:Social Security   $ 35.24
-May 01 2023    Expenses:Transportation:Biking   $ 14.64
-May 01 2023    Expenses:Transportation:Gas      $ 101.21
+May 01 2023    Expenses:Transportation:Biking   $ 17.42
+May 01 2023    Expenses:Transportation:Gas      $ 152.39
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-15(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -713,7 +771,7 @@ May 01 2023    Expenses:Transportation:Gas      $ 101.21
 #+end_src
 #+results:
 : April 2023      $ 5,455.64
-: May 2023        $ 4,374.11
+: May 2023        $ 4,841.48
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -721,6 +779,20 @@ May 01 2023    Expenses:Transportation:Gas      $ 101.21
 #+end_src
 #+results:
 #+begin_example
+May 15 2023    7/11                             Expenses:Food:Snacks             $ 5.64
+May 15 2023    Road Ranger                      Expenses:Transportation:Gas      $ 12.01
+May 15 2023    Subway                           Expenses:Food:Fast Food          $ 1.10
+May 15 2023    Phillips 66                      Expenses:Food:Snacks             $ 2.43
+May 15 2023    Phillips 66                      Expenses:Transportation:Gas      $ 39.17
+May 15 2023    DQ                               Expenses:Food:Fast Food          $ 4.43
+May 15 2023    Divvy Bikes                      Expenses:Transportation:Biking   $ 2.78
+May 15 2023    Cash Back                        Income:Extra                     $ -10.00
+May 13 2023    iPhone                           Expenses:Personal:Electronics    $ 400.00
+May 13 2023    7/11                             Expenses:Food:Snacks             $ 2.01
+May 13 2023    Armitage Mayfest                 Expenses:Food:Fast Food          $ 14.69
+May 13 2023    7/11                             Expenses:Food:Snacks             $ 5.96
+May 13 2023    Target                           Expenses:Food:Snacks             $ 4.83
+May 13 2023    Krispy Krunchy                   Expenses:Food:Fast Food          $ 9.79
 May 12 2023    SWAQ                             Income:SWAQ:Paycheck             $ -568.44
 May 12 2023    SWAQ                             Expenses:Taxes:Medicare          $ 8.25
 May 12 2023    SWAQ                             Expenses:Taxes:Social Security   $ 35.24
@@ -734,6 +806,7 @@ May 12 2023    Stripe                           Expenses:Taxes:Federal          
 May 12 2023    Stripe                           Expenses:Taxes:Medicare          $ 93.23
 May 12 2023    Stripe                           Expenses:Taxes:Illinois          $ 318.27
 May 12 2023    Stripe                           Income:Stripe:HSA                $ -100.00
+May 12 2023    Amazon                           Expenses:Personal:Household      $ -37.47
 May 11 2023    Shell                            Expenses:Food:Fast Food          $ 10.94
 May 11 2023    Krist Oil                        Expenses:Transportation:Gas      $ 31.37
 May 11 2023    Krist Oil                        Expenses:Food:Snacks             $ 5.15
