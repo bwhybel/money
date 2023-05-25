@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 05/17/2023 00:00:00 VTSAX $99.8300
-  P 05/17/2023 00:00:00 VTIAX $30.2200
-  P 05/17/2023 00:00:00 FSPSX $46.0400
-  P 05/17/2023 00:00:00 FXAIX $143.7500
-  P 05/17/2023 00:00:00 CONDO $250,000.00
-  P 05/17/2023 00:00:00 COTTA $400,000.00
+  P 05/25/2023 00:00:00 VTSAX $100.1800
+  P 05/25/2023 00:00:00 VTIAX $29.8300
+  P 05/25/2023 00:00:00 FSPSX $45.5500
+  P 05/25/2023 00:00:00 FXAIX $144.1600
+  P 05/25/2023 00:00:00 CONDO $250,000.00
+  P 05/25/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -571,6 +571,10 @@
       Expenses:Food:Fast Food                   $ 9.79
       Assets:Checking:Covantage
 
+  2023-05-14 * 7/11
+      Expenses:Food:Snacks                      $ 5.96
+      Liabilities:Credit Card:Northwoods
+
   2023-05-15 * 7/11
       Expenses:Food:Snacks                      $ 5.64
       Liabilities:Credit Card:Covantage
@@ -608,9 +612,177 @@
       Expenses:RE:Cottage:Utilities            $ 69.99
       Assets:Checking:Northwoods
 
-  2023-05-14 * 7/11
-      Expenses:Food:Snacks                      $ 5.96
+  2023-05-17 * 7/11
+      Expenses:Food:Snacks                      $ 6.08
       Liabilities:Credit Card:Northwoods
+
+  2023-05-17 * Buona Beef
+      Expenses:Food:Fast Food                   $ 5.49
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-17 * Auntie Anne's
+      Expenses:Food:Fast Food                   $ 8.71
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-17 * Panera Bread
+      Expenses:Food:Fast Food                   $ 3.65
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-17 * Walgreens
+      Expenses:Food:Snacks                      $ 3.56
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-18 * 7/11
+      Expenses:Food:Snacks                      $ 5.38
+      Liabilities:Credit Card:Covantage
+
+  2023-05-18 * 7/11
+      Expenses:Food:Snacks                      $ 5.17
+      Liabilities:Credit Card:Covantage
+
+  2023-05-18 * Divvy Bikes
+      Expenses:Transpotation:Biking            $ 12.09
+      Liabilities:Credit Card:Covantage
+
+  2023-05-18 * Transfer
+      Assets:Savings:UFB                    $ 4,000.00
+      Assets:Savings:RipCo
+
+  2023-05-18 * Transfer
+      Assets:Savings:UFB                    $ 4,000.00
+      Assets:Savings:Northwoods
+
+  2023-05-18 * Adams Mobile Marine
+      Expenses:Personal:Boat                  $ 150.34
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-18 * Kwik Trip
+      Expenses:Food:Snacks                      $ 7.71
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-18 * Culver's
+      Expenses:Food:Fast Food                  $ 10.96
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-18 * BP
+      Expenses:Food:Snacks                      $ 5.94
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-18 * Popeye's
+      Expenses:Food:Fast Food                   $ 6.12
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-18 * Panera Bread
+      Expenses:Food:Fast Food                   $ 3.65
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-18 * 7/11
+      Expenses:Food:Snacks                     $ 32.01
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-19 * Mom
+      Assets:Checking:Covantage               $ 105.09
+      Expenses:Transpotation:Gas
+
+  2023-05-19 * Gas
+      Expenses:Transportation:Gas              $ 26.71
+      Liabilities:Credit Card:RipCo
+
+  2023-05-19 * Dollar General
+      Expenses:Food:Snacks                     $ 10.39
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-20 * XSport
+      Expenses:Personal:Health                $ 499.00
+      Liabilities:Credit Card:Northwoods
+
+  2023-05-21 * Krist Oil
+      Expenses:Transpotation:Gas               $ 92.85
+      Liabilities:Credit Card:Covantage
+
+  2023-05-21 * Geico
+      Expenses:Transpotation:Insurance        $ 438.47
+      Liabilities:Credit Card:Covantage
+
+  2023-05-22 * Dollar General
+      Expenses:Food:Snacks                      $ 6.00
+      Liabilities:Credit Card:Covantage
+
+  2023-05-22 * Culver's
+      Expenses:Food:Fast Food                  $ 11.49
+      Liabilities:Credit Card:Covantage
+
+  2023-05-22 * Corcoran's
+      Expenses:Food:Drinks                     $ 16.00
+      Liabilities:Credit Card:Covantage
+
+  2023-05-23 * Walgreens
+      Expenses:Transportation:Gas             $ 107.13
+      Liabilities:Credit Card:Covantage
+
+  2023-05-23 * Milito's
+      Expenses:Transportation:Gas              $ 44.84
+      Liabilities:Credit Card:Covantage
+
+  2023-05-23 * Shell
+      Expenses:Transportation:Gas              $ 33.79
+      Liabilities:Credit Card:Covantage
+
+  2023-05-23 * Shell
+      Expenses:Food:Snacks                      $ 8.01
+      Liabilities:Credit Card:Covantage
+
+  2023-05-23 * Jewel Osco
+      Expenses:Food:Groceries                  $ 25.37
+      Liabilities:Credit Card:Covantage
+
+  2023-05-23 * Taco Bell
+      Expenses:Food:Fast Food                  $ 12.15
+      Liabilities:Credit Card:Covantage
+
+  2023-05-23 * Transfer
+      Assets:Savings:Northwoods               $ 963.37
+      Assets:Checking:Northwoods
+
+  2023-05-24 * 7/11
+      Expenses:Food:Snacks                      $ 3.92
+      Liabilities:Credit Card:Covantage
+
+  2023-05-24 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 0.88
+      Liabilities:Credit Card:Covantage
+
+  2023-05-24 * Transfer
+      Assets:Savings:Park City              $ 2,800.08
+      Assets:Checking:Park City
+
+  2023-05-24 * Transfer
+      Assets:Savings:RipCo                  $ 2,230.00
+      Assets:Checking:RipCo
+
+  2023-05-24 * Transfer
+      Assets:Savings:UFB                    $ 2,515.43
+      Assets:Savings:RipCo
+
+  2023-05-24 * Transfer
+      Liabilities:Credit Card:RipCo            $ 75.94
+      Assets:Savings:RipCo
+
+  2023-05-25 * Dividend
+      Assets:Checking:Covantage                 $ 0.10
+      Income:Extra
+
+  2023-05-25 * Dividend
+      Assets:Savings:Park City                  $ 0.80
+      Income:Extra
+
+  2023-05-25 * Xfinity
+      Expenses:Housing:Utilities               $ 70.00
+      Assets:Checking:Northwoods
+
+  2023-05-25 * Transfer
+      Assets:Savings:UFB                    $ 1,422.18
+      Assets:Savings:Northwoods
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -641,18 +813,18 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 21,202.80
+         $ 21,162.85
            1.0 CONDO
            1.0 COTTA
        363.865 FSPSX
        544.959 FXAIX
        528.079 VTIAX
        675.302 VTSAX  Assets
-          $ 9,098.65    Checking
-            $ 304.86      Covantage
-          $ 2,205.38      Northwoods
-          $ 3,700.08      Park City
-          $ 2,888.33      RipCo
+          $ 3,140.39    Checking
+            $ 410.05      Covantage
+          $ 1,172.01      Northwoods
+            $ 900.00      Park City
+            $ 658.33      RipCo
        363.865 FSPSX
        544.959 FXAIX
        528.079 VTIAX
@@ -666,21 +838,20 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 12,104.15    Savings
-          $ 5,458.81      Northwoods
-          $ 1,268.59      Park City
-          $ 5,361.37      RipCo
-             $ 15.38      UFB
-       $ -477,636.52  Liabilities
-           $ -170.34    Credit Card
-            $ -57.56      Covantage
-            $ -63.55      Northwoods
-            $ -49.23      RipCo
+         $ 18,022.46    Savings
+          $ 1,000.00      Northwoods
+          $ 4,069.47      Park City
+          $ 1,000.00      RipCo
+         $ 11,952.99      UFB
+       $ -479,164.44  Liabilities
+         $ -1,698.26    Credit Card
+           $ -881.10      Covantage
+           $ -817.16      Northwoods
        $ -477,466.18    RE
        $ -126,647.10      Condo:Mortgage
        $ -350,819.08      Cottage:Mortgage
 --------------------
-       $ -456,433.72
+       $ -458,001.59
            1.0 CONDO
            1.0 COTTA
        363.865 FSPSX
@@ -696,34 +867,33 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 849,666.95  Assets
-          $ 9,098.65    Checking
-            $ 304.86      Covantage
-          $ 2,205.38      Northwoods
-          $ 3,700.08      Park City
-          $ 2,888.33      RipCo
-        $ 178,464.15    Investments
-         $ 82,908.39      401K
-         $ 12,181.81      HSA
-         $ 83,373.95      IRA
+        $ 849,702.54  Assets
+          $ 3,140.39    Checking
+            $ 410.05      Covantage
+          $ 1,172.01      Northwoods
+            $ 900.00      Park City
+            $ 658.33      RipCo
+        $ 178,539.69    Investments
+         $ 82,918.79      401K
+         $ 12,216.55      HSA
+         $ 83,404.35      IRA
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
-         $ 12,104.15    Savings
-          $ 5,458.81      Northwoods
-          $ 1,268.59      Park City
-          $ 5,361.37      RipCo
-             $ 15.38      UFB
-       $ -477,636.52  Liabilities
-           $ -170.34    Credit Card
-            $ -57.56      Covantage
-            $ -63.55      Northwoods
-            $ -49.23      RipCo
+         $ 18,022.46    Savings
+          $ 1,000.00      Northwoods
+          $ 4,069.47      Park City
+          $ 1,000.00      RipCo
+         $ 11,952.99      UFB
+       $ -479,164.44  Liabilities
+         $ -1,698.26    Credit Card
+           $ -881.10      Covantage
+           $ -817.16      Northwoods
        $ -477,466.18    RE
        $ -126,647.10      Condo:Mortgage
        $ -350,819.08      Cottage:Mortgage
 --------------------
-        $ 372,030.43
+        $ 370,538.10
 #+end_example
 ** Spending
 *** Category Spending
@@ -756,12 +926,16 @@ April 01 2023  Expenses:Taxes:Social Security   $ 448.13
 April 01 2023  Expenses:Taxes:Tools             $ 297.57
 April 01 2023  Expenses:Transportation:Biking   $ 134.43
 April 01 2023  Expenses:Transportation:Gas      $ 20.98
-May 01 2023    Expenses:Food:Fast Food          $ 118.10
-May 01 2023    Expenses:Food:Snacks             $ 177.85
+May 01 2023    Expenses:Food:Drinks             $ 16.00
+May 01 2023    Expenses:Food:Fast Food          $ 180.32
+May 01 2023    Expenses:Food:Groceries          $ 25.37
+May 01 2023    Expenses:Food:Snacks             $ 272.02
 May 01 2023    Expenses:Housing:Rent            $ 1,328.95
-May 01 2023    Expenses:Housing:Utilities       $ 248.00
+May 01 2023    Expenses:Housing:Utilities       $ 318.00
+May 01 2023    Expenses:Personal:Boat           $ 150.34
 May 01 2023    Expenses:Personal:Communication  $ 35.00
 May 01 2023    Expenses:Personal:Electronics    $ 400.00
+May 01 2023    Expenses:Personal:Health         $ 499.00
 May 01 2023    Expenses:Personal:Household      $ 9.91
 May 01 2023    Expenses:RE:Condo:Interest       $ 396.59
 May 01 2023    Expenses:RE:Condo:Repairs        $ 47.68
@@ -773,8 +947,11 @@ May 01 2023    Expenses:Taxes:Federal           $ 1,165.00
 May 01 2023    Expenses:Taxes:Illinois          $ 280.41
 May 01 2023    Expenses:Taxes:Medicare          $ 101.48
 May 01 2023    Expenses:Taxes:Social Security   $ 35.24
-May 01 2023    Expenses:Transportation:Biking   $ 17.42
-May 01 2023    Expenses:Transportation:Gas      $ 152.39
+May 01 2023    Expenses:Transportation:Biking   $ 18.30
+May 01 2023    Expenses:Transportation:Gas      $ 364.86
+May 01 2023    Expenses:Transpotation:Biking    $ 12.09
+May 01 2023    Expenses:Transpotation:Gas       $ -12.24
+May 01 2023    Expenses:Transpotation:Insurance $ 438.47
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-15(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -783,7 +960,7 @@ May 01 2023    Expenses:Transportation:Gas      $ 152.39
 #+end_src
 #+results:
 : April 2023      $ 5,455.64
-: May 2023        $ 5,105.43
+: May 2023        $ 6,674.20
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -791,6 +968,41 @@ May 01 2023    Expenses:Transportation:Gas      $ 152.39
 #+end_src
 #+results:
 #+begin_example
+May 25 2023    Dividend                         Income:Extra                     $ -0.10
+May 25 2023    Dividend                         Income:Extra                     $ -0.80
+May 25 2023    Xfinity                          Expenses:Housing:Utilities       $ 70.00
+May 24 2023    7/11                             Expenses:Food:Snacks             $ 3.92
+May 24 2023    Divvy Bikes                      Expenses:Transportation:Biking   $ 0.88
+May 23 2023    Walgreens                        Expenses:Transportation:Gas      $ 107.13
+May 23 2023    Milito's                         Expenses:Transportation:Gas      $ 44.84
+May 23 2023    Shell                            Expenses:Transportation:Gas      $ 33.79
+May 23 2023    Shell                            Expenses:Food:Snacks             $ 8.01
+May 23 2023    Jewel Osco                       Expenses:Food:Groceries          $ 25.37
+May 23 2023    Taco Bell                        Expenses:Food:Fast Food          $ 12.15
+May 22 2023    Dollar General                   Expenses:Food:Snacks             $ 6.00
+May 22 2023    Culver's                         Expenses:Food:Fast Food          $ 11.49
+May 22 2023    Corcoran's                       Expenses:Food:Drinks             $ 16.00
+May 21 2023    Krist Oil                        Expenses:Transpotation:Gas       $ 92.85
+May 21 2023    Geico                            Expenses:Transpotation:Insurance $ 438.47
+May 20 2023    XSport                           Expenses:Personal:Health         $ 499.00
+May 19 2023    Mom                              Expenses:Transpotation:Gas       $ -105.09
+May 19 2023    Gas                              Expenses:Transportation:Gas      $ 26.71
+May 19 2023    Dollar General                   Expenses:Food:Snacks             $ 10.39
+May 18 2023    7/11                             Expenses:Food:Snacks             $ 5.38
+May 18 2023    7/11                             Expenses:Food:Snacks             $ 5.17
+May 18 2023    Divvy Bikes                      Expenses:Transpotation:Biking    $ 12.09
+May 18 2023    Adams Mobile Marine              Expenses:Personal:Boat           $ 150.34
+May 18 2023    Kwik Trip                        Expenses:Food:Snacks             $ 7.71
+May 18 2023    Culver's                         Expenses:Food:Fast Food          $ 10.96
+May 18 2023    BP                               Expenses:Food:Snacks             $ 5.94
+May 18 2023    Popeye's                         Expenses:Food:Fast Food          $ 6.12
+May 18 2023    Panera Bread                     Expenses:Food:Fast Food          $ 3.65
+May 18 2023    7/11                             Expenses:Food:Snacks             $ 32.01
+May 17 2023    7/11                             Expenses:Food:Snacks             $ 6.08
+May 17 2023    Buona Beef                       Expenses:Food:Fast Food          $ 5.49
+May 17 2023    Auntie Anne's                    Expenses:Food:Fast Food          $ 8.71
+May 17 2023    Panera Bread                     Expenses:Food:Fast Food          $ 3.65
+May 17 2023    Walgreens                        Expenses:Food:Snacks             $ 3.56
 May 15 2023    7/11                             Expenses:Food:Snacks             $ 5.64
 May 15 2023    Road Ranger                      Expenses:Transportation:Gas      $ 12.01
 May 15 2023    Subway                           Expenses:Food:Fast Food          $ 1.10
