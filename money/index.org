@@ -47,17 +47,25 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 05/25/2023 00:00:00 VTSAX $100.1800
-  P 05/25/2023 00:00:00 VTIAX $29.8300
-  P 05/25/2023 00:00:00 FSPSX $45.5500
-  P 05/25/2023 00:00:00 FXAIX $144.1600
-  P 05/25/2023 00:00:00 CONDO $250,000.00
-  P 05/25/2023 00:00:00 COTTA $400,000.00
+  P 05/26/2023 00:00:00 VTSAX $99.4300
+  P 05/26/2023 00:00:00 VTIAX $29.4600
+  P 05/26/2023 00:00:00 FSPSX $44.8300
+  P 05/26/2023 00:00:00 FXAIX $143.1100
+  P 05/26/2023 00:00:00 CONDO $250,000.00
+  P 05/26/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
 #+name: transactions
 #+begin_src ledger :eval never
+  2023-03-31 * Stripe
+      Income:Stripe:RSU                   $ -93,946.71
+      Expenses:Taxes:Federal               $ 20,692.80
+      Expenses:Taxes:Social Security        $ 5,824.69
+      Expenses:Taxes:Medicare               $ 1,362.22
+      Expenses:Taxes:Illinois               $ 4,650.37
+      Assets:Investments:RSU                   3,051.0 STRIP @ $ 20.13
+
   2023-04-01 * Kass Property Management
       Expenses:Housing:Rent                 $ 1,328.95
       Assets:Checking:Northwoods           $ -1,328.95
@@ -612,6 +620,13 @@
       Expenses:RE:Cottage:Utilities            $ 69.99
       Assets:Checking:Northwoods
 
+  2023-05-15 * Stripe
+      Income:Stripe:RSU                   $ -22,565.73
+      Expenses:Taxes:Federal                $ 4,977.27
+      Expenses:Taxes:Medicare                 $ 327.20
+      Expenses:Taxes:Illinois               $ 1,117.00
+      Assets:Investments:RSU                     802.0 STRIP @ $ 20.13
+
   2023-05-17 * 7/11
       Expenses:Food:Snacks                      $ 6.08
       Liabilities:Credit Card:Northwoods
@@ -783,6 +798,35 @@
   2023-05-25 * Transfer
       Assets:Savings:UFB                    $ 1,422.18
       Assets:Savings:Northwoods
+
+  2023-05-26 * SWAQ
+      Income:SWAQ:Paycheck                   $ -273.06
+      Expenses:Taxes:Medicare                   $ 3.96
+      Expenses:Taxes:Social Security           $ 16.93
+      Expenses:Taxes:Illinois                  $ 13.52
+      Assets:Checking:Covantage               $ 238.65
+
+  2023-05-26 * Stripe
+      Income:Stripe:Paycheck               $ -6,333.78
+      Expenses:Taxes:Federal                $ 1,138.41
+      Expenses:Taxes:Medicare                 $ 105.74
+      Expenses:Taxes:Illinois                 $ 313.52
+      Assets:Investments:401K                 $ 950.07
+      Assets:Checking:Park City               $ 900.00
+      Assets:Checking:Northwoods            $ 1,500.00
+      Assets:Checking:RipCo                 $ 1,426.04
+
+  2023-05-26 * Transfer
+      Assets:Checking:Northwoods               $ 10.05
+      Assets:Checking:Covantage
+
+  2023-05-26 * Transfer
+      Assets:Savings:UFB                    $ 1,600.00
+      Assets:Savings:Park City
+
+  2023-05-26 * Shareworks
+      Assets:Savings:UFB                   $ 62,584.17
+      Assets:Investments:RSU                  -3,109.0 STRIP @ $ 20.13
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -798,6 +842,7 @@
       Assets:Investments:HSA                    79.982 FXAIX
       Assets:Investments:IRA                   528.079 VTIAX
       Assets:Investments:IRA                   675.302 VTSAX
+      Assets:Investments:RSU                      58.0 STRIP
       Assets:RE:Condo                              1.0 CONDO
       Assets:RE:Cottage                            1.0 COTTA
       Liabilities:RE:Condo:Mortgage      $ -137,137.20
@@ -813,36 +858,41 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 21,162.85
+         $ 88,761.78
            1.0 CONDO
            1.0 COTTA
        363.865 FSPSX
        544.959 FXAIX
+         802.0 STRIP
        528.079 VTIAX
        675.302 VTSAX  Assets
-          $ 3,140.39    Checking
-            $ 410.05      Covantage
-          $ 1,172.01      Northwoods
-            $ 900.00      Park City
-            $ 658.33      RipCo
+          $ 7,205.08    Checking
+            $ 638.65      Covantage
+          $ 2,682.06      Northwoods
+          $ 1,800.00      Park City
+          $ 2,084.37      RipCo
+            $ 950.07
        363.865 FSPSX
        544.959 FXAIX
+         802.0 STRIP
        528.079 VTIAX
        675.302 VTSAX    Investments
+            $ 950.07
        363.865 FSPSX
        460.216 FXAIX      401K
         84.743 FXAIX      HSA
        528.079 VTIAX
        675.302 VTSAX      IRA
+         802.0 STRIP      RSU
            1.0 CONDO
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 18,022.46    Savings
+         $ 80,606.63    Savings
           $ 1,000.00      Northwoods
-          $ 4,069.47      Park City
+          $ 2,469.47      Park City
           $ 1,000.00      RipCo
-         $ 11,952.99      UFB
+         $ 76,137.16      UFB
        $ -479,164.44  Liabilities
          $ -1,698.26    Credit Card
            $ -881.10      Covantage
@@ -851,11 +901,12 @@
        $ -126,647.10      Condo:Mortgage
        $ -350,819.08      Cottage:Mortgage
 --------------------
-       $ -458,001.59
+       $ -390,402.66
            1.0 CONDO
            1.0 COTTA
        363.865 FSPSX
        544.959 FXAIX
+         802.0 STRIP
        528.079 VTIAX
        675.302 VTSAX
 #+end_example
@@ -867,24 +918,25 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 849,702.54  Assets
-          $ 3,140.39    Checking
-            $ 410.05      Covantage
-          $ 1,172.01      Northwoods
-            $ 900.00      Park City
-            $ 658.33      RipCo
-        $ 178,539.69    Investments
-         $ 82,918.79      401K
-         $ 12,216.55      HSA
-         $ 83,404.35      IRA
+        $ 931,909.68  Assets
+          $ 7,205.08    Checking
+            $ 638.65      Covantage
+          $ 2,682.06      Northwoods
+          $ 1,800.00      Park City
+          $ 2,084.37      RipCo
+        $ 194,097.97    Investments
+         $ 83,123.65      401K
+         $ 12,127.57      HSA
+         $ 82,702.49      IRA
+         $ 16,144.26      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
-         $ 18,022.46    Savings
+         $ 80,606.63    Savings
           $ 1,000.00      Northwoods
-          $ 4,069.47      Park City
+          $ 2,469.47      Park City
           $ 1,000.00      RipCo
-         $ 11,952.99      UFB
+         $ 76,137.16      UFB
        $ -479,164.44  Liabilities
          $ -1,698.26    Credit Card
            $ -881.10      Covantage
@@ -893,7 +945,7 @@
        $ -126,647.10      Condo:Mortgage
        $ -350,819.08      Cottage:Mortgage
 --------------------
-        $ 370,538.10
+        $ 452,745.24
 #+end_example
 ** Spending
 *** Category Spending
@@ -903,6 +955,10 @@
 #+end_src
 #+results:
 #+begin_example
+March 01 2023  Expenses:Taxes:Federal           $ 20,692.80
+March 01 2023  Expenses:Taxes:Illinois          $ 4,650.37
+March 01 2023  Expenses:Taxes:Medicare          $ 1,362.22
+March 01 2023  Expenses:Taxes:Social Security   $ 5,824.69
 April 01 2023  Expenses:Food:Fast Food          $ 38.75
 April 01 2023  Expenses:Food:Groceries          $ 142.45
 April 01 2023  Expenses:Food:Restaurants        $ 28.62
@@ -943,10 +999,10 @@ May 01 2023    Expenses:RE:Cottage:Escrow       $ 864.60
 May 01 2023    Expenses:RE:Cottage:Interest     $ 1,025.02
 May 01 2023    Expenses:RE:Cottage:Repairs      $ 37.93
 May 01 2023    Expenses:RE:Cottage:Utilities    $ 245.99
-May 01 2023    Expenses:Taxes:Federal           $ 1,165.00
-May 01 2023    Expenses:Taxes:Illinois          $ 280.41
-May 01 2023    Expenses:Taxes:Medicare          $ 101.48
-May 01 2023    Expenses:Taxes:Social Security   $ 35.24
+May 01 2023    Expenses:Taxes:Federal           $ 7,280.68
+May 01 2023    Expenses:Taxes:Illinois          $ 1,724.45
+May 01 2023    Expenses:Taxes:Medicare          $ 538.38
+May 01 2023    Expenses:Taxes:Social Security   $ 52.17
 May 01 2023    Expenses:Transportation:Biking   $ 18.30
 May 01 2023    Expenses:Transportation:Gas      $ 364.86
 May 01 2023    Expenses:Transpotation:Biking    $ 12.09
@@ -968,6 +1024,14 @@ May 01 2023    Expenses:Transpotation:Insurance $ 438.47
 #+end_src
 #+results:
 #+begin_example
+May 26 2023    SWAQ                             Income:SWAQ:Paycheck             $ -273.06
+May 26 2023    SWAQ                             Expenses:Taxes:Medicare          $ 3.96
+May 26 2023    SWAQ                             Expenses:Taxes:Social Security   $ 16.93
+May 26 2023    SWAQ                             Expenses:Taxes:Illinois          $ 13.52
+May 26 2023    Stripe                           Income:Stripe:Paycheck           $ -6,333.78
+May 26 2023    Stripe                           Expenses:Taxes:Federal           $ 1,138.41
+May 26 2023    Stripe                           Expenses:Taxes:Medicare          $ 105.74
+May 26 2023    Stripe                           Expenses:Taxes:Illinois          $ 313.52
 May 25 2023    Dividend                         Income:Extra                     $ -0.10
 May 25 2023    Dividend                         Income:Extra                     $ -0.80
 May 25 2023    Xfinity                          Expenses:Housing:Utilities       $ 70.00
@@ -1013,6 +1077,10 @@ May 15 2023    Divvy Bikes                      Expenses:Transportation:Biking  
 May 15 2023    Cash Back                        Income:Extra                     $ -10.00
 May 15 2023    Peoples Gas                      Expenses:Housing:Utilities       $ 188.00
 May 15 2023    Spectrum                         Expenses:RE:Cottage:Utilities    $ 69.99
+May 15 2023    Stripe                           Income:Stripe:RSU                $ -22,565.73
+May 15 2023    Stripe                           Expenses:Taxes:Federal           $ 4,977.27
+May 15 2023    Stripe                           Expenses:Taxes:Medicare          $ 327.20
+May 15 2023    Stripe                           Expenses:Taxes:Illinois          $ 1,117.00
 May 14 2023    7/11                             Expenses:Food:Snacks             $ 5.96
 May 13 2023    iPhone                           Expenses:Personal:Electronics    $ 400.00
 May 13 2023    7/11                             Expenses:Food:Snacks             $ 2.01
@@ -1146,4 +1214,9 @@ April 01 2023  Chase                            Expenses:RE:Cottage:Interest    
 April 01 2023  Chase                            Expenses:RE:Cottage:Escrow       $ 882.36
 April 01 2023  2672 N Halsted HOA               Expenses:RE:Condo:HOA            $ 132.34
 April 01 2023  Zenlord Pro                      Income:RE:Condo:Rent             $ -1,250.00
+March 31 2023  Stripe                           Income:Stripe:RSU                $ -93,946.71
+March 31 2023  Stripe                           Expenses:Taxes:Federal           $ 20,692.80
+March 31 2023  Stripe                           Expenses:Taxes:Social Security   $ 5,824.69
+March 31 2023  Stripe                           Expenses:Taxes:Medicare          $ 1,362.22
+March 31 2023  Stripe                           Expenses:Taxes:Illinois          $ 4,650.37
 #+end_example
