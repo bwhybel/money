@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 05/26/2023 00:00:00 VTSAX $99.4300
-  P 05/26/2023 00:00:00 VTIAX $29.4600
-  P 05/26/2023 00:00:00 FSPSX $44.8300
-  P 05/26/2023 00:00:00 FXAIX $143.1100
-  P 05/26/2023 00:00:00 CONDO $250,000.00
-  P 05/26/2023 00:00:00 COTTA $400,000.00
+  P 05/30/2023 00:00:00 VTSAX $101.4100
+  P 05/30/2023 00:00:00 VTIAX $29.6800
+  P 05/30/2023 00:00:00 FSPSX $45.0600
+  P 05/30/2023 00:00:00 FXAIX $146.2600
+  P 05/30/2023 00:00:00 CONDO $250,000.00
+  P 05/30/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -811,7 +811,8 @@
       Expenses:Taxes:Federal                $ 1,138.41
       Expenses:Taxes:Medicare                 $ 105.74
       Expenses:Taxes:Illinois                 $ 313.52
-      Assets:Investments:401K                 $ 950.07
+      Assets:Investments:401K                    3.163 FSPSX @ $ 45.055
+      Assets:Investments:401K                    5.521 FXAIX @ $ 146.27
       Assets:Checking:Park City               $ 900.00
       Assets:Checking:Northwoods            $ 1,500.00
       Assets:Checking:RipCo                 $ 1,426.04
@@ -868,8 +869,20 @@
       Assets:Savings:Park City
 
   2023-05-26 * Adam Marvin
-      Expenses:RE:Cottage:Repairs           $ 1,425.00
+      Expenses:RE:Cottage:Repairs           $ 1,517.00
       Assets:Checking:RipCo
+
+  2023-05-30 * Rent
+      Assets:Checking:RipCo                   $ 117.66
+      Income:RE:Condo:Rent
+
+  2023-05-30 * Shell
+      Expenses:Transportation:Gas             $ 371.03
+      Assets:Savings:Park City
+
+  2023-05-30 * Transfer
+      Assets:Investments:IRA                $ 6,500.00
+      Assets:Savings:UFB
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -901,28 +914,28 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 85,634.69
+         $ 84,339.25
            1.0 CONDO
            1.0 COTTA
-       363.865 FSPSX
-       544.959 FXAIX
+       367.028 FSPSX
+       550.480 FXAIX
          802.0 STRIP
        528.079 VTIAX
        675.302 VTSAX  Assets
-          $ 5,176.43    Checking
+          $ 5,202.09    Checking
           $ 2,717.06      Northwoods
           $ 1,800.00      Park City
-            $ 659.37      RipCo
-            $ 950.07
-       363.865 FSPSX
-       544.959 FXAIX
+            $ 685.03      RipCo
+          $ 6,500.00
+       367.028 FSPSX
+       550.480 FXAIX
          802.0 STRIP
        528.079 VTIAX
        675.302 VTSAX    Investments
-            $ 950.07
-       363.865 FSPSX
-       460.216 FXAIX      401K
+       367.028 FSPSX
+       465.737 FXAIX      401K
         84.743 FXAIX      HSA
+          $ 6,500.00
        528.079 VTIAX
        675.302 VTSAX      IRA
          802.0 STRIP      RSU
@@ -930,20 +943,20 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 79,508.19    Savings
+         $ 72,637.16    Savings
           $ 1,000.00      Northwoods
-          $ 1,371.03      Park City
+          $ 1,000.00      Park City
           $ 1,000.00      RipCo
-         $ 76,137.16      UFB
+         $ 69,637.16      UFB
        $ -477,466.18  Liabilities:RE
        $ -126,647.10    Condo:Mortgage
        $ -350,819.08    Cottage:Mortgage
 --------------------
-       $ -391,831.49
+       $ -393,126.93
            1.0 CONDO
            1.0 COTTA
-       363.865 FSPSX
-       544.959 FXAIX
+       367.028 FSPSX
+       550.480 FXAIX
          802.0 STRIP
        528.079 VTIAX
        675.302 VTSAX
@@ -956,29 +969,29 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 928,782.59  Assets
-          $ 5,176.43    Checking
+        $ 931,690.76  Assets
+          $ 5,202.09    Checking
           $ 2,717.06      Northwoods
           $ 1,800.00      Park City
-            $ 659.37      RipCo
-        $ 194,097.97    Investments
-         $ 83,123.65      401K
-         $ 12,127.57      HSA
-         $ 82,702.49      IRA
+            $ 685.03      RipCo
+        $ 203,851.51    Investments
+         $ 84,656.98      401K
+         $ 12,394.51      HSA
+         $ 90,655.76      IRA
          $ 16,144.26      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
-         $ 79,508.19    Savings
+         $ 72,637.16    Savings
           $ 1,000.00      Northwoods
-          $ 1,371.03      Park City
+          $ 1,000.00      Park City
           $ 1,000.00      RipCo
-         $ 76,137.16      UFB
+         $ 69,637.16      UFB
        $ -477,466.18  Liabilities:RE
        $ -126,647.10    Condo:Mortgage
        $ -350,819.08    Cottage:Mortgage
 --------------------
-        $ 451,316.41
+        $ 454,224.58
 #+end_example
 ** Spending
 *** Category Spending
@@ -1030,14 +1043,14 @@ May 01 2023    Expenses:RE:Condo:Interest       $ 396.59
 May 01 2023    Expenses:RE:Condo:Repairs        $ 47.68
 May 01 2023    Expenses:RE:Cottage:Escrow       $ 864.60
 May 01 2023    Expenses:RE:Cottage:Interest     $ 1,025.02
-May 01 2023    Expenses:RE:Cottage:Repairs      $ 1,462.93
+May 01 2023    Expenses:RE:Cottage:Repairs      $ 1,554.93
 May 01 2023    Expenses:RE:Cottage:Utilities    $ 245.99
 May 01 2023    Expenses:Taxes:Federal           $ 7,280.68
 May 01 2023    Expenses:Taxes:Illinois          $ 1,724.45
 May 01 2023    Expenses:Taxes:Medicare          $ 538.38
 May 01 2023    Expenses:Taxes:Social Security   $ 52.17
 May 01 2023    Expenses:Transportation:Biking   $ 18.30
-May 01 2023    Expenses:Transportation:Gas      $ 364.86
+May 01 2023    Expenses:Transportation:Gas      $ 735.89
 May 01 2023    Expenses:Transpotation:Biking    $ 15.92
 May 01 2023    Expenses:Transpotation:Gas       $ -12.24
 May 01 2023    Expenses:Transpotation:Insurance $ 438.47
@@ -1049,7 +1062,7 @@ May 01 2023    Expenses:Transpotation:Insurance $ 438.47
 #+end_src
 #+results:
 : April 2023      $ 5,455.64
-: May 2023        $ 8,128.03
+: May 2023        $ 8,591.06
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -1057,6 +1070,8 @@ May 01 2023    Expenses:Transpotation:Insurance $ 438.47
 #+end_src
 #+results:
 #+begin_example
+May 30 2023    Rent                             Income:RE:Condo:Rent             $ -117.66
+May 30 2023    Shell                            Expenses:Transportation:Gas      $ 371.03
 May 26 2023    SWAQ                             Income:SWAQ:Paycheck             $ -273.06
 May 26 2023    SWAQ                             Expenses:Taxes:Medicare          $ 3.96
 May 26 2023    SWAQ                             Expenses:Taxes:Social Security   $ 16.93
@@ -1066,7 +1081,7 @@ May 26 2023    Stripe                           Expenses:Taxes:Federal          
 May 26 2023    Stripe                           Expenses:Taxes:Medicare          $ 105.74
 May 26 2023    Stripe                           Expenses:Taxes:Illinois          $ 313.52
 May 26 2023    Income                           Income:Extra                     $ -25.00
-May 26 2023    Adam Marvin                      Expenses:RE:Cottage:Repairs      $ 1,425.00
+May 26 2023    Adam Marvin                      Expenses:RE:Cottage:Repairs      $ 1,517.00
 May 25 2023    Dividend                         Income:Extra                     $ -0.10
 May 25 2023    Dividend                         Income:Extra                     $ -0.80
 May 25 2023    Xfinity                          Expenses:Housing:Utilities       $ 70.00
