@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 05/30/2023 00:00:00 VTSAX $101.4100
-  P 05/30/2023 00:00:00 VTIAX $29.6800
-  P 05/30/2023 00:00:00 FSPSX $45.0600
-  P 05/30/2023 00:00:00 FXAIX $146.2600
-  P 05/30/2023 00:00:00 CONDO $250,000.00
-  P 05/30/2023 00:00:00 COTTA $400,000.00
+  P 05/31/2023 00:00:00 VTSAX $101.4100
+  P 05/31/2023 00:00:00 VTIAX $29.6800
+  P 05/31/2023 00:00:00 FSPSX $45.0600
+  P 05/31/2023 00:00:00 FXAIX $146.2600
+  P 05/31/2023 00:00:00 CONDO $250,000.00
+  P 05/31/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -787,10 +787,6 @@
       Assets:Checking:Covantage                 $ 0.10
       Income:Extra
 
-  2023-05-25 * Dividend
-      Assets:Savings:Park City                  $ 0.80
-      Income:Extra
-
   2023-05-25 * Xfinity
       Expenses:Housing:Utilities               $ 70.00
       Assets:Checking:Northwoods
@@ -865,7 +861,7 @@
   2023-05-26 * Transfer
       Assets:Checking:Park City               $ 842.16
       Assets:Checking:Park City               $ 221.28
-      Assets:Checking:Park City                $ 35.00
+      Assets:Checking:Park City                $ 34.20
       Assets:Savings:Park City
 
   2023-05-26 * Adam Marvin
@@ -914,7 +910,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 84,339.25
+         $ 84,338.45
            1.0 CONDO
            1.0 COTTA
        367.028 FSPSX
@@ -922,9 +918,9 @@
          802.0 STRIP
        528.079 VTIAX
        675.302 VTSAX  Assets
-          $ 5,202.09    Checking
+          $ 5,201.29    Checking
           $ 2,717.06      Northwoods
-          $ 1,800.00      Park City
+          $ 1,799.20      Park City
             $ 685.03      RipCo
           $ 6,500.00
        367.028 FSPSX
@@ -952,7 +948,7 @@
        $ -126,647.10    Condo:Mortgage
        $ -350,819.08    Cottage:Mortgage
 --------------------
-       $ -393,126.93
+       $ -393,127.73
            1.0 CONDO
            1.0 COTTA
        367.028 FSPSX
@@ -969,10 +965,10 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 931,690.76  Assets
-          $ 5,202.09    Checking
+        $ 931,689.96  Assets
+          $ 5,201.29    Checking
           $ 2,717.06      Northwoods
-          $ 1,800.00      Park City
+          $ 1,799.20      Park City
             $ 685.03      RipCo
         $ 203,851.51    Investments
          $ 84,656.98      401K
@@ -991,7 +987,7 @@
        $ -126,647.10    Condo:Mortgage
        $ -350,819.08    Cottage:Mortgage
 --------------------
-        $ 454,224.58
+        $ 454,223.78
 #+end_example
 ** Spending
 *** Category Spending
@@ -1083,7 +1079,6 @@ May 26 2023    Stripe                           Expenses:Taxes:Illinois         
 May 26 2023    Income                           Income:Extra                     $ -25.00
 May 26 2023    Adam Marvin                      Expenses:RE:Cottage:Repairs      $ 1,517.00
 May 25 2023    Dividend                         Income:Extra                     $ -0.10
-May 25 2023    Dividend                         Income:Extra                     $ -0.80
 May 25 2023    Xfinity                          Expenses:Housing:Utilities       $ 70.00
 May 25 2023    Panera Bread                     Expenses:Food:Fast Food          $ 25.00
 May 25 2023    Divvy Bikes                      Expenses:Transpotation:Biking    $ 3.83
