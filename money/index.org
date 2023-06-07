@@ -327,7 +327,7 @@
 
   2023-04-28 * Interest
       Assets:Savings:Northwoods                 $ 0.81
-      Income:Extra:Interest
+      Income:Extra
 
   2023-04-28 * Stripe
       Income:Stripe:Paycheck               $ -6,333.77
@@ -1323,7 +1323,7 @@ May 01 2023    Doordash                         Expenses:Food:Fast Food         
 May 01 2023    Doordash                         Expenses:Food:Fast Food          $ 11.61
 April 30 2023  Divvy Bikes                      Expenses:Transportation:Biking   $ 1.79
 April 30 2023  UFB Direct                       Income:Extra                     $ -15.38
-April 28 2023  Interest                         Income:Extra:Interest            $ -0.81
+April 28 2023  Interest                         Income:Extra                     $ -0.81
 April 28 2023  Stripe                           Income:Stripe:Paycheck           $ -6,333.77
 April 28 2023  Stripe                           Expenses:Taxes:Federal           $ 1,138.41
 April 28 2023  Stripe                           Expenses:Taxes:Social Security   $ 19.77
