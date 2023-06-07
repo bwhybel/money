@@ -881,8 +881,8 @@
       Assets:Savings:UFB
 
   2023-06-01 * Huntington
-      Liabilities:RE:Condo:Mortgage           $ 261.03
-      Expenses:RE:Condo:Interest              $ 396.59
+      Liabilities:RE:Condo:Mortgage           $ 261.85
+      Expenses:RE:Condo:Interest              $ 395.77
       Assets:Checking:RipCo                  $ -657.62
 
   2023-06-01 * Transfer
@@ -902,7 +902,9 @@
       Assets:Checking:Park City
 
   2023-06-01 * Chase
-      Expenses:RE:Cottage:Interest          $ 2,505.86
+      Liabilities:RE:Cottage:Mortgage         $ 618.04
+      Expenses:RE:Cottage:Interest          $ 1,023.22
+      Expenses:RE:Cottage:Escrow              $ 864.60
       Assets:Checking:Northwoods
 
   2023-06-01 * Visible
@@ -941,6 +943,42 @@
       Assets:Investments:IRA                    50.069 VTIAX @ $ 29.9589
       Assets:Investments:IRA                    48.286 VTSAX @ $ 103.5494
       Assets:Investments:IRA               $ -6,500.00
+
+  2023-06-04 * Panera Bread
+      Expenses:Food:Fast Food                   $ 3.71
+      Liabilities:Credit Card:Covantage
+
+  2023-06-04 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 4.42
+      Liabilities:Credit Card:Covantage
+
+  2023-06-04 * Panera Bread
+      Expenses:Food:Fast Food                   $ 3.71
+      Liabilities:Credit Card:Covantage
+
+  2023-06-04 * Jeni's
+      Expenses:Food:Fast Food                   $ 7.76
+      Liabilities:Credit Card:Covantage
+
+  2023-06-05 * Target
+      Expenses:Food:Groceries                  $ 38.90
+      Liabilities:Credit Card:Covantage
+
+  2023-06-06 * Divvy Bikes
+      Expenses:Transportation:Biking           $ 12.34
+      Liabilities:Credit Card:Covantage
+
+  2023-06-06 * Barnes & Noble
+      Expenses:Personal:Learning               $ 11.02
+      Liabilities:Credit Card:Covantage
+
+  2023-06-06 * USPS
+      Expenses:Personal:Health                  $ 0.63
+      Liabilities:Credit Card:Covantage
+
+  2023-06-06 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.67
+      Liabilities:Credit Card:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -1005,11 +1043,13 @@
           $ 1,000.00      Park City
          $ 27,845.70      RipCo
          $ 43,264.75      UFB
-       $ -477,205.15  Liabilities:RE
-       $ -126,386.07    Condo:Mortgage
-       $ -350,819.08    Cottage:Mortgage
+       $ -476,670.45  Liabilities
+            $ -84.16    Credit Card:Covantage
+       $ -476,586.29    RE
+       $ -126,385.25      Condo:Mortgage
+       $ -350,201.04      Cottage:Mortgage
 --------------------
-       $ -403,140.68
+       $ -402,605.98
            1.0 CONDO
            1.0 COTTA
        367.028 FSPSX
@@ -1045,11 +1085,13 @@
           $ 1,000.00      Park City
          $ 27,845.70      RipCo
          $ 43,264.75      UFB
-       $ -477,205.15  Liabilities:RE
-       $ -126,386.07    Condo:Mortgage
-       $ -350,819.08    Cottage:Mortgage
+       $ -476,670.45  Liabilities
+            $ -84.16    Credit Card:Covantage
+       $ -476,586.29    RE
+       $ -126,385.25      Condo:Mortgage
+       $ -350,201.04      Cottage:Mortgage
 --------------------
-        $ 453,728.60
+        $ 454,263.30
 #+end_example
 ** Spending
 *** Category Spending
@@ -1112,14 +1154,19 @@ May 01 2023    Expenses:Transportation:Gas      $ 735.89
 May 01 2023    Expenses:Transpotation:Biking    $ 15.92
 May 01 2023    Expenses:Transpotation:Gas       $ -12.24
 May 01 2023    Expenses:Transpotation:Insurance $ 438.47
-June 01 2023   Expenses:Food:Groceries          $ 73.70
+June 01 2023   Expenses:Food:Fast Food          $ 15.18
+June 01 2023   Expenses:Food:Groceries          $ 112.60
 June 01 2023   Expenses:Housing:Rent            $ 1,409.45
 June 01 2023   Expenses:Housing:Utilities       $ 71.00
 June 01 2023   Expenses:Personal:Communication  $ 35.00
-June 01 2023   Expenses:RE:Condo:Interest       $ 396.59
-June 01 2023   Expenses:RE:Cottage:Interest     $ 2,505.86
+June 01 2023   Expenses:Personal:Health         $ 0.63
+June 01 2023   Expenses:Personal:Learning       $ 11.02
+June 01 2023   Expenses:RE:Condo:Interest       $ 395.77
+June 01 2023   Expenses:RE:Cottage:Escrow       $ 864.60
+June 01 2023   Expenses:RE:Cottage:Interest     $ 1,023.22
 June 01 2023   Expenses:RE:Cottage:Lawncare     $ 50.00
 June 01 2023   Expenses:RE:Cottage:Utilities    $ 176.00
+June 01 2023   Expenses:Transportation:Biking   $ 18.43
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-15(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -1129,7 +1176,7 @@ June 01 2023   Expenses:RE:Cottage:Utilities    $ 176.00
 #+results:
 : April 2023      $ 5,455.64
 : May 2023        $ 8,591.06
-: June 2023       $ 4,717.60
+: June 2023       $ 4,182.90
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -1137,16 +1184,26 @@ June 01 2023   Expenses:RE:Cottage:Utilities    $ 176.00
 #+end_src
 #+results:
 #+begin_example
+June 06 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 12.34
+June 06 2023   Barnes & Noble                   Expenses:Personal:Learning       $ 11.02
+June 06 2023   USPS                             Expenses:Personal:Health         $ 0.63
+June 06 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 1.67
 June 05 2023   Mariano's                        Expenses:Food:Groceries          $ 73.70
 June 05 2023   Comed                            Expenses:Housing:Utilities       $ 71.00
 June 05 2023   Ricky                            Expenses:RE:Cottage:Lawncare     $ 50.00
 June 05 2023   Wisconsin Public Service         Expenses:RE:Cottage:Utilities    $ 176.00
 June 05 2023   Interest                         Income:Extra                     $ -0.45
-June 01 2023   Huntington                       Expenses:RE:Condo:Interest       $ 396.59
+June 05 2023   Target                           Expenses:Food:Groceries          $ 38.90
+June 04 2023   Panera Bread                     Expenses:Food:Fast Food          $ 3.71
+June 04 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 4.42
+June 04 2023   Panera Bread                     Expenses:Food:Fast Food          $ 3.71
+June 04 2023   Jeni's                           Expenses:Food:Fast Food          $ 7.76
+June 01 2023   Huntington                       Expenses:RE:Condo:Interest       $ 395.77
 June 01 2023   Rent                             Income:RE:Condo:Rent             $ -1,117.66
 June 01 2023   Interest                         Income:Extra                     $ -86.54
 June 01 2023   Kass Property Management         Expenses:Housing:Rent            $ 1,409.45
-June 01 2023   Chase                            Expenses:RE:Cottage:Interest     $ 2,505.86
+June 01 2023   Chase                            Expenses:RE:Cottage:Interest     $ 1,023.22
+June 01 2023   Chase                            Expenses:RE:Cottage:Escrow       $ 864.60
 June 01 2023   Visible                          Expenses:Personal:Communication  $ 35.00
 May 30 2023    Rent                             Income:RE:Condo:Rent             $ -117.66
 May 30 2023    Shell                            Expenses:Transportation:Gas      $ 371.03
