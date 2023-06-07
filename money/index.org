@@ -656,7 +656,7 @@
       Liabilities:Credit Card:Covantage
 
   2023-05-18 * Divvy Bikes
-      Expenses:Transpotation:Biking            $ 12.09
+      Expenses:Transportation:Biking           $ 12.09
       Liabilities:Credit Card:Covantage
 
   2023-05-18 * Transfer
@@ -697,7 +697,7 @@
 
   2023-05-19 * Mom
       Assets:Checking:Covantage               $ 105.09
-      Expenses:Transpotation:Gas
+      Expenses:Transportation:Gas
 
   2023-05-19 * Gas
       Expenses:Transportation:Gas              $ 26.71
@@ -712,11 +712,11 @@
       Liabilities:Credit Card:Northwoods
 
   2023-05-21 * Krist Oil
-      Expenses:Transpotation:Gas               $ 92.85
+      Expenses:Transportation:Gas              $ 92.85
       Liabilities:Credit Card:Covantage
 
   2023-05-21 * Geico
-      Expenses:Transpotation:Insurance        $ 438.47
+      Expenses:Transportation:Insurance       $ 438.47
       Liabilities:Credit Card:Covantage
 
   2023-05-22 * Dollar General
@@ -800,7 +800,7 @@
       Liabilities:Credit Card:Northwoods
 
   2023-05-25 * Divvy Bikes
-      Expenses:Transpotation:Biking             $ 3.83
+      Expenses:Transportation:Biking            $ 3.83
       Liabilities:Credit Card:Covantage
 
   2023-05-26 * SWAQ
@@ -1149,11 +1149,9 @@ May 01 2023    Expenses:Taxes:Federal           $ 7,280.68
 May 01 2023    Expenses:Taxes:Illinois          $ 1,724.45
 May 01 2023    Expenses:Taxes:Medicare          $ 538.38
 May 01 2023    Expenses:Taxes:Social Security   $ 52.17
-May 01 2023    Expenses:Transportation:Biking   $ 18.30
-May 01 2023    Expenses:Transportation:Gas      $ 735.89
-May 01 2023    Expenses:Transpotation:Biking    $ 15.92
-May 01 2023    Expenses:Transpotation:Gas       $ -12.24
-May 01 2023    Expenses:Transpotation:Insurance $ 438.47
+May 01 2023    Expenses:Transportation:Biking   $ 34.22
+May 01 2023    Expenses:Transportation:Gas      $ 723.65
+May 01 2023    Expenses:Transportation:Insurance$ 438.47
 June 01 2023   Expenses:Food:Fast Food          $ 15.18
 June 01 2023   Expenses:Food:Groceries          $ 112.60
 June 01 2023   Expenses:Housing:Rent            $ 1,409.45
@@ -1220,7 +1218,7 @@ May 26 2023    Adam Marvin                      Expenses:RE:Cottage:Repairs     
 May 25 2023    Dividend                         Income:Extra                     $ -0.10
 May 25 2023    Xfinity                          Expenses:Housing:Utilities       $ 70.00
 May 25 2023    Panera Bread                     Expenses:Food:Fast Food          $ 25.00
-May 25 2023    Divvy Bikes                      Expenses:Transpotation:Biking    $ 3.83
+May 25 2023    Divvy Bikes                      Expenses:Transportation:Biking   $ 3.83
 May 24 2023    7/11                             Expenses:Food:Snacks             $ 3.92
 May 24 2023    Divvy Bikes                      Expenses:Transportation:Biking   $ 0.88
 May 23 2023    Walgreens                        Expenses:Transportation:Gas      $ 107.13
@@ -1232,15 +1230,15 @@ May 23 2023    Taco Bell                        Expenses:Food:Fast Food         
 May 22 2023    Dollar General                   Expenses:Food:Snacks             $ 6.00
 May 22 2023    Culver's                         Expenses:Food:Fast Food          $ 11.49
 May 22 2023    Corcoran's                       Expenses:Food:Drinks             $ 16.00
-May 21 2023    Krist Oil                        Expenses:Transpotation:Gas       $ 92.85
-May 21 2023    Geico                            Expenses:Transpotation:Insurance $ 438.47
+May 21 2023    Krist Oil                        Expenses:Transportation:Gas      $ 92.85
+May 21 2023    Geico                            Expenses:Transportation:Insurance$ 438.47
 May 20 2023    XSport                           Expenses:Personal:Health         $ 499.00
-May 19 2023    Mom                              Expenses:Transpotation:Gas       $ -105.09
+May 19 2023    Mom                              Expenses:Transportation:Gas      $ -105.09
 May 19 2023    Gas                              Expenses:Transportation:Gas      $ 26.71
 May 19 2023    Dollar General                   Expenses:Food:Snacks             $ 10.39
 May 18 2023    7/11                             Expenses:Food:Snacks             $ 5.38
 May 18 2023    7/11                             Expenses:Food:Snacks             $ 5.17
-May 18 2023    Divvy Bikes                      Expenses:Transpotation:Biking    $ 12.09
+May 18 2023    Divvy Bikes                      Expenses:Transportation:Biking   $ 12.09
 May 18 2023    Adams Mobile Marine              Expenses:Personal:Boat           $ 150.34
 May 18 2023    Kwik Trip                        Expenses:Food:Snacks             $ 7.71
 May 18 2023    Culver's                         Expenses:Food:Fast Food          $ 10.96
