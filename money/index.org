@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 06/09/2023 00:00:00 VTSAX $103.5000
-  P 06/09/2023 00:00:00 VTIAX $29.9300
-  P 06/09/2023 00:00:00 FSPSX $45.1400
-  P 06/09/2023 00:00:00 FXAIX $148.5000
-  P 06/09/2023 00:00:00 CONDO $250,000.00
-  P 06/09/2023 00:00:00 COTTA $400,000.00
+  P 06/11/2023 00:00:00 VTSAX $104.0500
+  P 06/11/2023 00:00:00 VTIAX $30.1600
+  P 06/11/2023 00:00:00 FSPSX $45.5900
+  P 06/11/2023 00:00:00 FXAIX $149.4400
+  P 06/11/2023 00:00:00 CONDO $250,000.00
+  P 06/11/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -1035,7 +1035,8 @@
       Expenses:Taxes:Federal                $ 1,122.98
       Expenses:Taxes:Medicare                 $ 147.33
       Expenses:Taxes:Illinois                 $ 310.34
-      Assets:Investments:401K                 $ 950.07
+      Assets:Investments:401K                    3.131 FSPSX @ $ 45.518
+      Assets:Investments:401K                    5.397 FXAIX @ $ 149.63
       Income:Stripe:HSA                      $ -100.00
       Assets:Investments:HSA                  $ 320.83
       Assets:Savings:UFB                    $ 1,547.00
@@ -1059,6 +1060,22 @@
 
   2023-06-09 * Brooke Janicki
       Expenses:RE:Cottage:Cleaning            $ 140.00
+      Assets:Checking:Covantage
+
+  2023-06-11 * Transfer
+      Assets:Checking:RipCo                 $ 5,560.20
+      Assets:Savings:UFB
+
+  2023-06-11 * Over/Under
+      Expenses:Food:Drinks                    $ 150.00
+      Assets:Checking:Park City
+
+  2023-06-11 * Transfer
+      Liabilities:RE:Condo:Mortgage          $ 5560.20
+      Assets:Checking:RipCo
+
+  2023-06-11 * Transfer
+      Assets:Checking:Northwoods               $ 50.00
       Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
@@ -1091,28 +1108,27 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 49,145.08
+         $ 42,484.81
            1.0 CONDO
            1.0 COTTA
-       367.028 FSPSX
-       550.480 FXAIX
+       370.159 FSPSX
+       555.877 FXAIX
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 3,313.98    Checking
-            $ 136.96      Covantage
-          $ 1,350.65      Northwoods
-          $ 1,168.75      Park City
+          $ 3,163.98    Checking
+             $ 86.96      Covantage
+          $ 1,400.65      Northwoods
+          $ 1,018.75      Park City
             $ 657.62      RipCo
-          $ 1,270.90
-       367.028 FSPSX
-       550.480 FXAIX
+            $ 320.83
+       370.159 FSPSX
+       555.877 FXAIX
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX    Investments
-            $ 950.07
-       367.028 FSPSX
-       465.737 FXAIX      401K
+       370.159 FSPSX
+       471.134 FXAIX      401K
             $ 320.83
         84.743 FXAIX      HSA
        578.148 VTIAX
@@ -1122,20 +1138,20 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 44,560.20    Savings
+         $ 39,000.00    Savings
           $ 1,000.00      Northwoods
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
-         $ 41,560.20      UFB
-       $ -446,510.84  Liabilities:RE
-        $ -96,309.80    Condo:Mortgage
+         $ 36,000.00      UFB
+       $ -440,950.64  Liabilities:RE
+        $ -90,749.60    Condo:Mortgage
        $ -350,201.04    Cottage:Mortgage
 --------------------
-       $ -397,365.76
+       $ -398,465.83
            1.0 CONDO
            1.0 COTTA
-       367.028 FSPSX
-       550.480 FXAIX
+       370.159 FSPSX
+       555.877 FXAIX
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX
@@ -1148,30 +1164,30 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 905,798.59  Assets
-          $ 3,313.98    Checking
-            $ 136.96      Covantage
-          $ 1,350.65      Northwoods
-          $ 1,168.75      Park City
+        $ 901,301.15  Assets
+          $ 3,163.98    Checking
+             $ 86.96      Covantage
+          $ 1,400.65      Northwoods
+          $ 1,018.75      Park City
             $ 657.62      RipCo
-        $ 207,924.41    Investments
-         $ 86,679.66      401K
-         $ 12,905.17      HSA
-         $ 92,195.33      IRA
+        $ 209,137.17    Investments
+         $ 87,281.81      401K
+         $ 12,984.82      HSA
+         $ 92,726.28      IRA
          $ 16,144.26      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
-         $ 44,560.20    Savings
+         $ 39,000.00    Savings
           $ 1,000.00      Northwoods
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
-         $ 41,560.20      UFB
-       $ -446,510.84  Liabilities:RE
-        $ -96,309.80    Condo:Mortgage
+         $ 36,000.00      UFB
+       $ -440,950.64  Liabilities:RE
+        $ -90,749.60    Condo:Mortgage
        $ -350,201.04    Cottage:Mortgage
 --------------------
-        $ 459,287.75
+        $ 460,350.51
 #+end_example
 ** Spending
 *** Category Spending
@@ -1232,6 +1248,7 @@ May 01 2023    Expenses:Taxes:Social Security   $ 52.17
 May 01 2023    Expenses:Transportation:Biking   $ 34.22
 May 01 2023    Expenses:Transportation:Gas      $ 723.65
 May 01 2023    Expenses:Transportation:Insurance$ 438.47
+June 01 2023   Expenses:Food:Drinks             $ 150.00
 June 01 2023   Expenses:Food:Fast Food          $ 36.98
 June 01 2023   Expenses:Food:Groceries          $ 112.60
 June 01 2023   Expenses:Food:Snacks             $ 9.80
@@ -1260,7 +1277,7 @@ June 01 2023   Expenses:Transportation:Biking   $ 29.00
 #+results:
 : April 2023      $ 5,455.64
 : May 2023        $ 8,591.06
-: June 2023       $ 4,365.07
+: June 2023       $ 4,515.07
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -1268,6 +1285,7 @@ June 01 2023   Expenses:Transportation:Biking   $ 29.00
 #+end_src
 #+results:
 #+begin_example
+June 11 2023   Over/Under                       Expenses:Food:Drinks             $ 150.00
 June 09 2023   Stripe                           Income:Stripe:Paycheck           $ -6,333.77
 June 09 2023   Stripe                           Income:Stripe:Wireless           $ -50.00
 June 09 2023   Stripe                           Income:Stripe:Wellness           $ -164.78
