@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 06/12/2023 00:00:00 VTSAX $104.0500
-  P 06/12/2023 00:00:00 VTIAX $30.1600
-  P 06/12/2023 00:00:00 FSPSX $45.5900
-  P 06/12/2023 00:00:00 FXAIX $149.4400
-  P 06/12/2023 00:00:00 CONDO $250,000.00
-  P 06/12/2023 00:00:00 COTTA $400,000.00
+  P 06/13/2023 00:00:00 VTSAX $104.0900
+  P 06/13/2023 00:00:00 VTIAX $30.1800
+  P 06/13/2023 00:00:00 FSPSX $45.5200
+  P 06/13/2023 00:00:00 FXAIX $149.6300
+  P 06/13/2023 00:00:00 CONDO $250,000.00
+  P 06/13/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -1038,7 +1038,7 @@
       Assets:Investments:401K                    3.131 FSPSX @ $ 45.518
       Assets:Investments:401K                    5.397 FXAIX @ $ 149.63
       Income:Stripe:HSA                      $ -100.00
-      Assets:Investments:HSA                     2.125 FXAIX @ $ 151.51
+      Assets:Investments:HSA                     2.125 FXAIX @ $ 150.98
       Assets:Savings:UFB                    $ 1,547.00
       Assets:Checking:Northwoods            $ 1,400.00
       Assets:Checking:Park City               $ 850.00
@@ -1081,6 +1081,78 @@
   2023-06-12 * Mariano's
       Expenses:Food:Groceries                 $ 168.75
       Assets:Checking:Park City
+
+  2023-06-13 * Spectrum
+      Expenses:RE:Cottage:Utilities            $ 69.99
+      Assets:Checking:Northwoods
+
+  2023-06-09 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 4.39
+      Liabilities:Credit Card:Covantage
+
+  2023-06-11 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.18
+      Liabilities:Credit Card:Covantage
+
+  2023-06-11 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 3.24
+      Liabilities:Credit Card:Covantage
+
+  2023-06-12 * Mariano's
+      Expenses:Food:Groceries                  $ 19.26
+      Liabilities:Credit Card:Covantage
+
+  2023-06-12 * Dollar Tree
+      Expenses:Food:Snacks                      $ 5.51
+      Liabilities:Credit Card:Covantage
+
+  2023-06-12 * McDonalds
+      Expenses:Food:Fast Food                   $ 6.63
+      Liabilities:Credit Card:Covantage
+
+  2023-06-12 * McDonalds
+      Expenses:Food:Fast Food                   $ 3.87
+      Liabilities:Credit Card:Covantage
+
+  2023-06-12 * Dunkin Donuts
+      Expenses:Food:Fast Food                   $ 1.65
+      Liabilities:Credit Card:Covantage
+
+  2023-06-12 * Lyft
+      Expenses:Transportation:Ride Share       $ 17.61
+      Liabilities:Credit Card:Covantage
+
+  2023-06-12 * Culver's
+      Expenses:Food:Fast Food                  $ 13.00
+      Liabilities:Credit Card:Covantage
+
+  2023-06-12 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.67
+      Liabilities:Credit Card:Covantage
+
+  2023-06-10 * TimeCave
+      Expenses:Personal:Electronics            $ 25.00
+      Liabilities:Credit Card:RipCo
+
+  2023-06-11 * Target
+      Expenses:Food:Groceries                  $ 31.58
+      Liabilities:Credit Card:RipCo
+
+  2023-06-11 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 11.64
+      Liabilities:Credit Card:RipCo
+
+  2023-06-11 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 42.08
+      Liabilities:Credit Card:RipCo
+
+  2023-06-11 * Chick Fil A
+      Expenses:Food:Fast Food                   $ 8.84
+      Liabilities:Credit Card:RipCo
+
+  2023-06-01 * Interest
+      Liabilities:Credit Card:RipCo             $ 0.76
+      Income:Extra
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -1112,29 +1184,27 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 42,324.81
+         $ 41,925.24
            1.0 CONDO
            1.0 COTTA
        370.159 FSPSX
-       555.877 FXAIX
+       558.002 FXAIX
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 3,003.98    Checking
+          $ 2,925.24    Checking
              $ 86.96      Covantage
-          $ 1,400.65      Northwoods
-            $ 858.75      Park City
+          $ 1,330.66      Northwoods
+            $ 850.00      Park City
             $ 657.62      RipCo
-            $ 320.83
        370.159 FSPSX
-       555.877 FXAIX
+       558.002 FXAIX
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX    Investments
        370.159 FSPSX
        471.134 FXAIX      401K
-            $ 320.83
-        84.743 FXAIX      HSA
+        86.868 FXAIX      HSA
        578.148 VTIAX
        723.588 VTSAX      IRA
          802.0 STRIP      RSU
@@ -1147,15 +1217,19 @@
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
          $ 36,000.00      UFB
-       $ -440,950.64  Liabilities:RE
-        $ -90,749.60    Condo:Mortgage
-       $ -350,201.04    Cottage:Mortgage
+       $ -441,147.03  Liabilities
+           $ -196.39    Credit Card
+            $ -78.01      Covantage
+           $ -118.38      RipCo
+       $ -440,950.64    RE
+        $ -90,749.60      Condo:Mortgage
+       $ -350,201.04      Cottage:Mortgage
 --------------------
-       $ -398,625.83
+       $ -399,221.79
            1.0 CONDO
            1.0 COTTA
        370.159 FSPSX
-       555.877 FXAIX
+       558.002 FXAIX
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX
@@ -1168,16 +1242,16 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 901,141.15  Assets
-          $ 3,003.98    Checking
+        $ 901,179.76  Assets
+          $ 2,925.24    Checking
              $ 86.96      Covantage
-          $ 1,400.65      Northwoods
-            $ 858.75      Park City
+          $ 1,330.66      Northwoods
+            $ 850.00      Park City
             $ 657.62      RipCo
-        $ 209,137.17    Investments
-         $ 87,281.81      401K
-         $ 12,984.82      HSA
-         $ 92,726.28      IRA
+        $ 209,254.52    Investments
+         $ 87,345.42      401K
+         $ 12,998.06      HSA
+         $ 92,766.78      IRA
          $ 16,144.26      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
@@ -1187,11 +1261,15 @@
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
          $ 36,000.00      UFB
-       $ -440,950.64  Liabilities:RE
-        $ -90,749.60    Condo:Mortgage
-       $ -350,201.04    Cottage:Mortgage
+       $ -441,147.03  Liabilities
+           $ -196.39    Credit Card
+            $ -78.01      Covantage
+           $ -118.38      RipCo
+       $ -440,950.64    RE
+        $ -90,749.60      Condo:Mortgage
+       $ -350,201.04      Cottage:Mortgage
 --------------------
-        $ 460,190.51
+        $ 460,032.73
 #+end_example
 ** Spending
 *** Category Spending
@@ -1253,25 +1331,28 @@ May 01 2023    Expenses:Transportation:Biking   $ 34.22
 May 01 2023    Expenses:Transportation:Gas      $ 723.65
 May 01 2023    Expenses:Transportation:Insurance$ 438.47
 June 01 2023   Expenses:Food:Drinks             $ 150.00
-June 01 2023   Expenses:Food:Fast Food          $ 36.98
-June 01 2023   Expenses:Food:Groceries          $ 272.60
-June 01 2023   Expenses:Food:Snacks             $ 9.80
+June 01 2023   Expenses:Food:Fast Food          $ 70.97
+June 01 2023   Expenses:Food:Groceries          $ 332.19
+June 01 2023   Expenses:Food:Snacks             $ 15.31
 June 01 2023   Expenses:Housing:Rent            $ 1,409.45
 June 01 2023   Expenses:Housing:Utilities       $ 71.00
 June 01 2023   Expenses:Personal:Communication  $ 35.00
+June 01 2023   Expenses:Personal:Electronics    $ 25.00
 June 01 2023   Expenses:Personal:Health         $ 0.63
 June 01 2023   Expenses:Personal:Learning       $ 11.02
 June 01 2023   Expenses:RE:Condo:Interest       $ 395.77
+June 01 2023   Expenses:RE:Condo:Repairs        $ 53.72
 June 01 2023   Expenses:RE:Cottage:Cleaning     $ 140.00
 June 01 2023   Expenses:RE:Cottage:Escrow       $ 864.60
 June 01 2023   Expenses:RE:Cottage:Interest     $ 1,023.22
 June 01 2023   Expenses:RE:Cottage:Lawncare     $ 50.00
-June 01 2023   Expenses:RE:Cottage:Utilities    $ 176.00
+June 01 2023   Expenses:RE:Cottage:Utilities    $ 245.99
 June 01 2023   Expenses:Taxes:Federal           $ 1,122.98
 June 01 2023   Expenses:Taxes:Illinois          $ 330.41
 June 01 2023   Expenses:Taxes:Medicare          $ 153.21
 June 01 2023   Expenses:Taxes:Social Security   $ 25.14
-June 01 2023   Expenses:Transportation:Biking   $ 29.00
+June 01 2023   Expenses:Transportation:Biking   $ 39.48
+June 01 2023   Expenses:Transportation:Ride Share$ 17.61
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-15(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -1281,7 +1362,7 @@ June 01 2023   Expenses:Transportation:Biking   $ 29.00
 #+results:
 : April 2023      $ 5,455.64
 : May 2023        $ 8,591.06
-: June 2023       $ 4,675.07
+: June 2023       $ 4,950.96
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -1289,8 +1370,24 @@ June 01 2023   Expenses:Transportation:Biking   $ 29.00
 #+end_src
 #+results:
 #+begin_example
-June 12 2023   Mariano's                        Expenses:Food:Groceries          $ 160.00
+June 13 2023   Spectrum                         Expenses:RE:Cottage:Utilities    $ 69.99
+June 12 2023   Mariano's                        Expenses:Food:Groceries          $ 168.75
+June 12 2023   Mariano's                        Expenses:Food:Groceries          $ 19.26
+June 12 2023   Dollar Tree                      Expenses:Food:Snacks             $ 5.51
+June 12 2023   McDonalds                        Expenses:Food:Fast Food          $ 6.63
+June 12 2023   McDonalds                        Expenses:Food:Fast Food          $ 3.87
+June 12 2023   Dunkin Donuts                    Expenses:Food:Fast Food          $ 1.65
+June 12 2023   Lyft                             Expenses:Transportation:Ride Share$ 17.61
+June 12 2023   Culver's                         Expenses:Food:Fast Food          $ 13.00
+June 12 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 1.67
 June 11 2023   Over/Under                       Expenses:Food:Drinks             $ 150.00
+June 11 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 1.18
+June 11 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 3.24
+June 11 2023   Target                           Expenses:Food:Groceries          $ 31.58
+June 11 2023   Home Depot                       Expenses:RE:Condo:Repairs        $ 11.64
+June 11 2023   Home Depot                       Expenses:RE:Condo:Repairs        $ 42.08
+June 11 2023   Chick Fil A                      Expenses:Food:Fast Food          $ 8.84
+June 10 2023   TimeCave                         Expenses:Personal:Electronics    $ 25.00
 June 09 2023   Stripe                           Income:Stripe:Paycheck           $ -6,333.77
 June 09 2023   Stripe                           Income:Stripe:Wireless           $ -50.00
 June 09 2023   Stripe                           Income:Stripe:Wellness           $ -164.78
@@ -1303,6 +1400,7 @@ June 09 2023   SWAQ                             Expenses:Taxes:Medicare         
 June 09 2023   SWAQ                             Expenses:Taxes:Social Security   $ 25.14
 June 09 2023   SWAQ                             Income:SWAQ:Paycheck             $ -405.54
 June 09 2023   Brooke Janicki                   Expenses:RE:Cottage:Cleaning     $ 140.00
+June 09 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 4.39
 June 08 2023   7/11                             Expenses:Food:Snacks             $ 4.42
 June 08 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 3.26
 June 08 2023   Panera Bread                     Expenses:Food:Fast Food          $ 21.80
@@ -1331,6 +1429,7 @@ June 01 2023   Chase                            Expenses:RE:Cottage:Interest    
 June 01 2023   Chase                            Expenses:RE:Cottage:Escrow       $ 864.60
 June 01 2023   Visible                          Expenses:Personal:Communication  $ 35.00
 June 01 2023   Interest                         Income:Extra                     $ -0.04
+June 01 2023   Interest                         Income:Extra                     $ -0.76
 May 30 2023    Rent                             Income:RE:Condo:Rent             $ -117.66
 May 30 2023    Shell                            Expenses:Transportation:Gas      $ 371.03
 May 26 2023    SWAQ                             Income:SWAQ:Paycheck             $ -273.06
