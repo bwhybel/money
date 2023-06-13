@@ -609,7 +609,7 @@
       Liabilities:Credit Card:Covantage
 
   2023-05-15 * Cash Back
-      Liabilities:Credit Card:Covantage     $ 10.00
+      Liabilities:Credit Card:Covantage        $ 10.00
       Income:Extra
 
   2023-05-15 * Peoples Gas
@@ -911,6 +911,30 @@
       Expenses:Personal:Communication          $ 35.00
       Assets:Checking:Northwoods
 
+  2023-06-01 * Interest
+      Assets:Checking:Covantage                 $ 0.04
+      Income:Extra
+
+  2023-06-01 * Interest
+      Liabilities:Credit Card:RipCo             $ 0.76
+      Income:Extra
+
+  2023-06-04 * Panera Bread
+      Expenses:Food:Fast Food                   $ 3.71
+      Liabilities:Credit Card:Covantage
+
+  2023-06-04 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 4.42
+      Liabilities:Credit Card:Covantage
+
+  2023-06-04 * Panera Bread
+      Expenses:Food:Fast Food                   $ 3.71
+      Liabilities:Credit Card:Covantage
+
+  2023-06-04 * Jeni's
+      Expenses:Food:Fast Food                   $ 7.76
+      Liabilities:Credit Card:Covantage
+
   2023-06-05 * Transfer
       Assets:Savings:RipCo                    $ 460.45
       Assets:Checking:RipCo
@@ -935,31 +959,6 @@
       Assets:Checking:Northwoods                $ 0.45
       Income:Extra
 
-  2023-06-07 * Transfer
-      Assets:Savings:RipCo                 $ 26,385.25
-      Assets:Savings:UFB
-
-  2023-06-07 * Vanguard
-      Assets:Investments:IRA                    50.069 VTIAX @ $ 29.9589
-      Assets:Investments:IRA                    48.286 VTSAX @ $ 103.5494
-      Assets:Investments:IRA               $ -6,500.00
-
-  2023-06-04 * Panera Bread
-      Expenses:Food:Fast Food                   $ 3.71
-      Liabilities:Credit Card:Covantage
-
-  2023-06-04 * Divvy Bikes
-      Expenses:Transportation:Biking            $ 4.42
-      Liabilities:Credit Card:Covantage
-
-  2023-06-04 * Panera Bread
-      Expenses:Food:Fast Food                   $ 3.71
-      Liabilities:Credit Card:Covantage
-
-  2023-06-04 * Jeni's
-      Expenses:Food:Fast Food                   $ 7.76
-      Liabilities:Credit Card:Covantage
-
   2023-06-05 * Target
       Expenses:Food:Groceries                  $ 38.90
       Liabilities:Credit Card:Covantage
@@ -980,9 +979,14 @@
       Expenses:Transportation:Biking            $ 1.67
       Liabilities:Credit Card:Covantage
 
-  2023-06-01 * Interest
-      Assets:Checking:Covantage                 $ 0.04
-      Income:Extra
+  2023-06-07 * Transfer
+      Assets:Savings:RipCo                 $ 26,385.25
+      Assets:Savings:UFB
+
+  2023-06-07 * Vanguard
+      Assets:Investments:IRA                    50.069 VTIAX @ $ 29.9589
+      Assets:Investments:IRA                    48.286 VTSAX @ $ 103.5494
+      Assets:Investments:IRA               $ -6,500.00
 
   2023-06-07 * Divvy Bikes
       Expenses:Transportation:Biking            $ 4.26
@@ -1020,13 +1024,13 @@
       Liabilities:RE:Condo:Mortgage        $ 11,503.32
       Assets:Checking:RipCo
 
-  2023-06-09 * Transfer
-      Liabilities:RE:Condo:Mortgage         $ 3,572.13
-      Assets:Checking:RipCo
-
   2023-06-08 * Panera Bread
       Expenses:Food:Fast Food                  $ 21.80
       Assets:Savings:UFB
+
+  2023-06-09 * Transfer
+      Liabilities:RE:Condo:Mortgage         $ 3,572.13
+      Assets:Checking:RipCo
 
   2023-06-09 * Stripe
       Income:Stripe:Paycheck               $ -6,333.77
@@ -1062,6 +1066,14 @@
       Expenses:RE:Cottage:Cleaning            $ 140.00
       Assets:Checking:Covantage
 
+  2023-06-09 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 4.39
+      Liabilities:Credit Card:Covantage
+
+  2023-06-10 * TimeCave
+      Expenses:Personal:Electronics            $ 25.00
+      Liabilities:Credit Card:RipCo
+
   2023-06-11 * Transfer
       Assets:Checking:RipCo                 $ 5,560.20
       Assets:Savings:UFB
@@ -1078,18 +1090,6 @@
       Assets:Checking:Northwoods               $ 50.00
       Assets:Checking:Covantage
 
-  2023-06-12 * Mariano's
-      Expenses:Food:Groceries                 $ 168.75
-      Assets:Checking:Park City
-
-  2023-06-13 * Spectrum
-      Expenses:RE:Cottage:Utilities            $ 69.99
-      Assets:Checking:Northwoods
-
-  2023-06-09 * Divvy Bikes
-      Expenses:Transportation:Biking            $ 4.39
-      Liabilities:Credit Card:Covantage
-
   2023-06-11 * Divvy Bikes
       Expenses:Transportation:Biking            $ 1.18
       Liabilities:Credit Card:Covantage
@@ -1097,6 +1097,26 @@
   2023-06-11 * Divvy Bikes
       Expenses:Transportation:Biking            $ 3.24
       Liabilities:Credit Card:Covantage
+
+  2023-06-11 * Target
+      Expenses:Food:Groceries                  $ 31.58
+      Liabilities:Credit Card:RipCo
+
+  2023-06-11 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 11.64
+      Liabilities:Credit Card:RipCo
+
+  2023-06-11 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 42.08
+      Liabilities:Credit Card:RipCo
+
+  2023-06-11 * Chick Fil A
+      Expenses:Food:Fast Food                   $ 8.84
+      Liabilities:Credit Card:RipCo
+
+  2023-06-12 * Mariano's
+      Expenses:Food:Groceries                 $ 168.75
+      Assets:Checking:Park City
 
   2023-06-12 * Mariano's
       Expenses:Food:Groceries                  $ 19.26
@@ -1130,29 +1150,37 @@
       Expenses:Transportation:Biking            $ 1.67
       Liabilities:Credit Card:Covantage
 
-  2023-06-10 * TimeCave
-      Expenses:Personal:Electronics            $ 25.00
+  2023-06-13 * Spectrum
+      Expenses:RE:Cottage:Utilities            $ 69.99
+      Assets:Checking:Northwoods
+
+  2023-06-13 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 11.91
+      Liabilities:Credit Card:Covantage
+
+  2023-06-13 * Home Depot
+      Expenses:RE:Condo:Repairs                 $ 6.03
       Liabilities:Credit Card:RipCo
 
-  2023-06-11 * Target
-      Expenses:Food:Groceries                  $ 31.58
-      Liabilities:Credit Card:RipCo
+  2023-06-13 * Home Depot
+      Expenses:Gifts                          $ 335.68
+      Liabilities:Credit Card:Covantage
 
-  2023-06-11 * Home Depot
-      Expenses:RE:Condo:Repairs                $ 11.64
-      Liabilities:Credit Card:RipCo
+  2023-06-13 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 3.15
+      Liabilities:Credit Card:Covantage
 
-  2023-06-11 * Home Depot
-      Expenses:RE:Condo:Repairs                $ 42.08
-      Liabilities:Credit Card:RipCo
+  2023-06-13 * 7/11
+      Expenses:Foods:Snacks                     $ 2.72
+      Liabilities:Credit Card:Covantage
 
-  2023-06-11 * Chick Fil A
-      Expenses:Food:Fast Food                   $ 8.84
-      Liabilities:Credit Card:RipCo
+  2023-06-13 * 7/11
+      Expenses:Foods:Snacks                    $ 10.16
+      Liabilities:Credit Card:Covantage
 
-  2023-06-01 * Interest
-      Liabilities:Credit Card:RipCo             $ 0.76
-      Income:Extra
+  2023-06-13 * Transfer
+      Liabilities:Credit Card:Covantage        $ 86.96
+      Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -1184,7 +1212,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 41,925.24
+         $ 41,838.28
            1.0 CONDO
            1.0 COTTA
        370.159 FSPSX
@@ -1192,8 +1220,7 @@
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 2,925.24    Checking
-             $ 86.96      Covantage
+          $ 2,838.28    Checking
           $ 1,330.66      Northwoods
             $ 850.00      Park City
             $ 657.62      RipCo
@@ -1217,15 +1244,15 @@
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
          $ 36,000.00      UFB
-       $ -441,147.03  Liabilities
-           $ -196.39    Credit Card
-            $ -78.01      Covantage
-           $ -118.38      RipCo
+       $ -441,429.72  Liabilities
+           $ -479.08    Credit Card
+           $ -354.67      Covantage
+           $ -124.41      RipCo
        $ -440,950.64    RE
         $ -90,749.60      Condo:Mortgage
        $ -350,201.04      Cottage:Mortgage
 --------------------
-       $ -399,221.79
+       $ -399,591.44
            1.0 CONDO
            1.0 COTTA
        370.159 FSPSX
@@ -1242,9 +1269,8 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 901,179.76  Assets
-          $ 2,925.24    Checking
-             $ 86.96      Covantage
+        $ 901,092.80  Assets
+          $ 2,838.28    Checking
           $ 1,330.66      Northwoods
             $ 850.00      Park City
             $ 657.62      RipCo
@@ -1261,15 +1287,15 @@
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
          $ 36,000.00      UFB
-       $ -441,147.03  Liabilities
-           $ -196.39    Credit Card
-            $ -78.01      Covantage
-           $ -118.38      RipCo
+       $ -441,429.72  Liabilities
+           $ -479.08    Credit Card
+           $ -354.67      Covantage
+           $ -124.41      RipCo
        $ -440,950.64    RE
         $ -90,749.60      Condo:Mortgage
        $ -350,201.04      Cottage:Mortgage
 --------------------
-        $ 460,032.73
+        $ 459,663.08
 #+end_example
 ** Spending
 *** Category Spending
@@ -1334,6 +1360,8 @@ June 01 2023   Expenses:Food:Drinks             $ 150.00
 June 01 2023   Expenses:Food:Fast Food          $ 70.97
 June 01 2023   Expenses:Food:Groceries          $ 332.19
 June 01 2023   Expenses:Food:Snacks             $ 15.31
+June 01 2023   Expenses:Foods:Snacks            $ 12.88
+June 01 2023   Expenses:Gifts                   $ 335.68
 June 01 2023   Expenses:Housing:Rent            $ 1,409.45
 June 01 2023   Expenses:Housing:Utilities       $ 71.00
 June 01 2023   Expenses:Personal:Communication  $ 35.00
@@ -1341,7 +1369,7 @@ June 01 2023   Expenses:Personal:Electronics    $ 25.00
 June 01 2023   Expenses:Personal:Health         $ 0.63
 June 01 2023   Expenses:Personal:Learning       $ 11.02
 June 01 2023   Expenses:RE:Condo:Interest       $ 395.77
-June 01 2023   Expenses:RE:Condo:Repairs        $ 53.72
+June 01 2023   Expenses:RE:Condo:Repairs        $ 71.66
 June 01 2023   Expenses:RE:Cottage:Cleaning     $ 140.00
 June 01 2023   Expenses:RE:Cottage:Escrow       $ 864.60
 June 01 2023   Expenses:RE:Cottage:Interest     $ 1,023.22
@@ -1351,7 +1379,7 @@ June 01 2023   Expenses:Taxes:Federal           $ 1,122.98
 June 01 2023   Expenses:Taxes:Illinois          $ 330.41
 June 01 2023   Expenses:Taxes:Medicare          $ 153.21
 June 01 2023   Expenses:Taxes:Social Security   $ 25.14
-June 01 2023   Expenses:Transportation:Biking   $ 39.48
+June 01 2023   Expenses:Transportation:Biking   $ 42.63
 June 01 2023   Expenses:Transportation:Ride Share$ 17.61
 #+end_example
 *** Monthly Spending
@@ -1362,7 +1390,7 @@ June 01 2023   Expenses:Transportation:Ride Share$ 17.61
 #+results:
 : April 2023      $ 5,455.64
 : May 2023        $ 8,591.06
-: June 2023       $ 4,950.96
+: June 2023       $ 5,320.61
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -1371,6 +1399,12 @@ June 01 2023   Expenses:Transportation:Ride Share$ 17.61
 #+results:
 #+begin_example
 June 13 2023   Spectrum                         Expenses:RE:Cottage:Utilities    $ 69.99
+June 13 2023   Home Depot                       Expenses:RE:Condo:Repairs        $ 11.91
+June 13 2023   Home Depot                       Expenses:RE:Condo:Repairs        $ 6.03
+June 13 2023   Home Depot                       Expenses:Gifts                   $ 335.68
+June 13 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 3.15
+June 13 2023   7/11                             Expenses:Foods:Snacks            $ 2.72
+June 13 2023   7/11                             Expenses:Foods:Snacks            $ 10.16
 June 12 2023   Mariano's                        Expenses:Food:Groceries          $ 168.75
 June 12 2023   Mariano's                        Expenses:Food:Groceries          $ 19.26
 June 12 2023   Dollar Tree                      Expenses:Food:Snacks             $ 5.51
