@@ -1038,7 +1038,7 @@
       Assets:Investments:401K                    3.131 FSPSX @ $ 45.518
       Assets:Investments:401K                    5.397 FXAIX @ $ 149.63
       Income:Stripe:HSA                      $ -100.00
-      Assets:Investments:HSA                  $ 320.83
+      Assets:Investments:HSA                     2.125 FXAIX @ $ 151.51
       Assets:Savings:UFB                    $ 1,547.00
       Assets:Checking:Northwoods            $ 1,400.00
       Assets:Checking:Park City               $ 850.00
@@ -1079,7 +1079,7 @@
       Assets:Checking:Covantage
 
   2023-06-12 * Mariano's
-      Expenses:Food:Groceries                 $ 160.00
+      Expenses:Food:Groceries                 $ 168.75
       Assets:Checking:Park City
 #+end_src
 ** Initial Balance
