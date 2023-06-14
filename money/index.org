@@ -47,10 +47,10 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 06/13/2023 00:00:00 VTSAX $104.0900
-  P 06/13/2023 00:00:00 VTIAX $30.1800
-  P 06/13/2023 00:00:00 FSPSX $45.5200
-  P 06/13/2023 00:00:00 FXAIX $149.6300
+  P 06/13/2023 00:00:00 VTSAX $105.0300
+  P 06/13/2023 00:00:00 VTIAX $30.3100
+  P 06/13/2023 00:00:00 FSPSX $45.7400
+  P 06/13/2023 00:00:00 FXAIX $151.0100
   P 06/13/2023 00:00:00 CONDO $250,000.00
   P 06/13/2023 00:00:00 COTTA $400,000.00
 #+end_src
@@ -1181,6 +1181,26 @@
   2023-06-13 * Transfer
       Liabilities:Credit Card:Covantage        $ 86.96
       Assets:Checking:Covantage
+
+  2023-06-13 * Sure-Dry
+      Liabilities:Credit Card:Covantage     $ 2,263.93
+      Income:Extra
+
+  2023-06-13 * Transfer
+      Assets:Checking:RipCo                 $ 1,909.26
+      Liabilities:Credit Card:Covantage
+
+  2023-06-13 * Transfer
+      Liabilities:Credit Card:RipCo           $ 124.41
+      Assets:Checking:RipCo
+
+  2023-06-13 * Transfer
+      Liabilities:RE:Condo:Mortgage         $ 1,749.60
+      Assets:Checking:RipCo
+
+  2023-06-13 * Transfer
+      Assets:Checking:Covantage                $ 35.00
+      Assets:Checking:RipCo
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -1212,7 +1232,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 41,838.28
+         $ 41,873.53
            1.0 CONDO
            1.0 COTTA
        370.159 FSPSX
@@ -1220,10 +1240,11 @@
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 2,838.28    Checking
+          $ 2,873.53    Checking
+             $ 35.00      Covantage
           $ 1,330.66      Northwoods
             $ 850.00      Park City
-            $ 657.62      RipCo
+            $ 657.87      RipCo
        370.159 FSPSX
        558.002 FXAIX
          802.0 STRIP
@@ -1244,15 +1265,11 @@
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
          $ 36,000.00      UFB
-       $ -441,429.72  Liabilities
-           $ -479.08    Credit Card
-           $ -354.67      Covantage
-           $ -124.41      RipCo
-       $ -440,950.64    RE
-        $ -90,749.60      Condo:Mortgage
-       $ -350,201.04      Cottage:Mortgage
+       $ -439,201.04  Liabilities:RE
+        $ -89,000.00    Condo:Mortgage
+       $ -350,201.04    Cottage:Mortgage
 --------------------
-       $ -399,591.44
+       $ -397,327.51
            1.0 CONDO
            1.0 COTTA
        370.159 FSPSX
@@ -1269,15 +1286,16 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 901,092.80  Assets
-          $ 2,838.28    Checking
+        $ 902,734.86  Assets
+          $ 2,873.53    Checking
+             $ 35.00      Covantage
           $ 1,330.66      Northwoods
             $ 850.00      Park City
-            $ 657.62      RipCo
-        $ 209,254.52    Investments
-         $ 87,345.42      401K
-         $ 12,998.06      HSA
-         $ 92,766.78      IRA
+            $ 657.87      RipCo
+        $ 210,861.33    Investments
+         $ 88,077.02      401K
+         $ 13,117.94      HSA
+         $ 93,522.11      IRA
          $ 16,144.26      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
@@ -1287,15 +1305,11 @@
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
          $ 36,000.00      UFB
-       $ -441,429.72  Liabilities
-           $ -479.08    Credit Card
-           $ -354.67      Covantage
-           $ -124.41      RipCo
-       $ -440,950.64    RE
-        $ -90,749.60      Condo:Mortgage
-       $ -350,201.04      Cottage:Mortgage
+       $ -439,201.04  Liabilities:RE
+        $ -89,000.00    Condo:Mortgage
+       $ -350,201.04    Cottage:Mortgage
 --------------------
-        $ 459,663.08
+        $ 463,533.82
 #+end_example
 ** Spending
 *** Category Spending
@@ -1405,6 +1419,7 @@ June 13 2023   Home Depot                       Expenses:Gifts                  
 June 13 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 3.15
 June 13 2023   7/11                             Expenses:Foods:Snacks            $ 2.72
 June 13 2023   7/11                             Expenses:Foods:Snacks            $ 10.16
+June 13 2023   Sure-Dry                         Income:Extra                     $ -2,263.93
 June 12 2023   Mariano's                        Expenses:Food:Groceries          $ 168.75
 June 12 2023   Mariano's                        Expenses:Food:Groceries          $ 19.26
 June 12 2023   Dollar Tree                      Expenses:Food:Snacks             $ 5.51
