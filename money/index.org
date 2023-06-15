@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 06/13/2023 00:00:00 VTSAX $105.0300
-  P 06/13/2023 00:00:00 VTIAX $30.3100
-  P 06/13/2023 00:00:00 FSPSX $45.7400
-  P 06/13/2023 00:00:00 FXAIX $151.0100
-  P 06/13/2023 00:00:00 CONDO $250,000.00
-  P 06/13/2023 00:00:00 COTTA $400,000.00
+  P 06/14/2023 00:00:00 VTSAX $105.8400
+  P 06/14/2023 00:00:00 VTIAX $30.5500
+  P 06/14/2023 00:00:00 FSPSX $46.1400
+  P 06/14/2023 00:00:00 FXAIX $152.0600
+  P 06/14/2023 00:00:00 CONDO $250,000.00
+  P 06/14/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -1201,6 +1201,22 @@
   2023-06-13 * Transfer
       Assets:Checking:Covantage                $ 35.00
       Assets:Checking:RipCo
+
+  2023-06-14 * VRBO
+      Assets:Savings:Northwoods             $ 1,196.26
+      Income:RE:Cottage:Rent
+
+  2023-06-14 * Transfer
+      Assets:Savings:UFB                    $ 1,196.26
+      Assets:Savings:Northwoods
+
+  2023-06-15 * Transfer
+      Liabilities:RE:Condo:Mortgage         $ 1,000.00
+      Assets:Savings:UFB
+
+  2023-06-15 * Transfer
+      Assets:Checking:Covantage               $ 196.26
+      Assets:Savings:UFB
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -1232,7 +1248,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 41,873.53
+         $ 42,069.79
            1.0 CONDO
            1.0 COTTA
        370.159 FSPSX
@@ -1240,8 +1256,8 @@
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 2,873.53    Checking
-             $ 35.00      Covantage
+          $ 3,069.79    Checking
+            $ 231.26      Covantage
           $ 1,330.66      Northwoods
             $ 850.00      Park City
             $ 657.87      RipCo
@@ -1265,11 +1281,11 @@
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
          $ 36,000.00      UFB
-       $ -439,201.04  Liabilities:RE
-        $ -89,000.00    Condo:Mortgage
+       $ -438,201.04  Liabilities:RE
+        $ -88,000.00    Condo:Mortgage
        $ -350,201.04    Cottage:Mortgage
 --------------------
-       $ -397,327.51
+       $ -396,131.25
            1.0 CONDO
            1.0 COTTA
        370.159 FSPSX
@@ -1286,16 +1302,16 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 902,734.86  Assets
-          $ 2,873.53    Checking
-             $ 35.00      Covantage
+        $ 904,389.95  Assets
+          $ 3,069.79    Checking
+            $ 231.26      Covantage
           $ 1,330.66      Northwoods
             $ 850.00      Park City
             $ 657.87      RipCo
-        $ 210,861.33    Investments
-         $ 88,077.02      401K
-         $ 13,117.94      HSA
-         $ 93,522.11      IRA
+        $ 212,320.16    Investments
+         $ 88,719.77      401K
+         $ 13,209.15      HSA
+         $ 94,246.98      IRA
          $ 16,144.26      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
@@ -1305,11 +1321,11 @@
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
          $ 36,000.00      UFB
-       $ -439,201.04  Liabilities:RE
-        $ -89,000.00    Condo:Mortgage
+       $ -438,201.04  Liabilities:RE
+        $ -88,000.00    Condo:Mortgage
        $ -350,201.04    Cottage:Mortgage
 --------------------
-        $ 463,533.82
+        $ 466,188.91
 #+end_example
 ** Spending
 *** Category Spending
@@ -1412,6 +1428,7 @@ June 01 2023   Expenses:Transportation:Ride Share$ 17.61
 #+end_src
 #+results:
 #+begin_example
+June 14 2023   VRBO                             Income:RE:Cottage:Rent           $ -1,196.26
 June 13 2023   Spectrum                         Expenses:RE:Cottage:Utilities    $ 69.99
 June 13 2023   Home Depot                       Expenses:RE:Condo:Repairs        $ 11.91
 June 13 2023   Home Depot                       Expenses:RE:Condo:Repairs        $ 6.03
