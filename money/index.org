@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 06/14/2023 00:00:00 VTSAX $105.8400
-  P 06/14/2023 00:00:00 VTIAX $30.5500
-  P 06/14/2023 00:00:00 FSPSX $46.1400
-  P 06/14/2023 00:00:00 FXAIX $152.0600
-  P 06/14/2023 00:00:00 CONDO $250,000.00
-  P 06/14/2023 00:00:00 COTTA $400,000.00
+  P 06/16/2023 00:00:00 VTSAX $105.8400
+  P 06/16/2023 00:00:00 VTIAX $30.6800
+  P 06/16/2023 00:00:00 FSPSX $46.3600
+  P 06/16/2023 00:00:00 FXAIX $152.2200
+  P 06/16/2023 00:00:00 CONDO $250,000.00
+  P 06/16/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -1217,6 +1217,22 @@
   2023-06-15 * Transfer
       Assets:Checking:Covantage               $ 196.26
       Assets:Savings:UFB
+
+  2023-06-16 * Transfer
+      Assets:Checking:Covantage                 $ 0.25
+      Assets:Checking:RipCo
+
+  2023-06-16 * Taco Bell
+      Expenses:Food:Groceries                  $ 25.00
+      Assets:Checking:Covantage
+
+  2023-06-16 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.18
+      Assets:Checking:Covantage
+
+  2023-06-16 * Interest
+      Assets:Savings:UFB                        $ 0.09
+      Income:Extra
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -1248,7 +1264,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 42,069.79
+         $ 42,043.70
            1.0 CONDO
            1.0 COTTA
        370.159 FSPSX
@@ -1256,11 +1272,11 @@
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 3,069.79    Checking
-            $ 231.26      Covantage
+          $ 3,043.61    Checking
+            $ 205.33      Covantage
           $ 1,330.66      Northwoods
             $ 850.00      Park City
-            $ 657.87      RipCo
+            $ 657.62      RipCo
        370.159 FSPSX
        558.002 FXAIX
          802.0 STRIP
@@ -1276,16 +1292,16 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 39,000.00    Savings
+         $ 39,000.09    Savings
           $ 1,000.00      Northwoods
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
-         $ 36,000.00      UFB
+         $ 36,000.09      UFB
        $ -438,201.04  Liabilities:RE
         $ -88,000.00    Condo:Mortgage
        $ -350,201.04    Cottage:Mortgage
 --------------------
-       $ -396,131.25
+       $ -396,157.34
            1.0 CONDO
            1.0 COTTA
        370.159 FSPSX
@@ -1302,30 +1318,30 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 904,389.95  Assets
-          $ 3,069.79    Checking
-            $ 231.26      Covantage
+        $ 904,609.73  Assets
+          $ 3,043.61    Checking
+            $ 205.33      Covantage
           $ 1,330.66      Northwoods
             $ 850.00      Park City
-            $ 657.87      RipCo
-        $ 212,320.16    Investments
-         $ 88,719.77      401K
-         $ 13,209.15      HSA
-         $ 94,246.98      IRA
+            $ 657.62      RipCo
+        $ 212,566.03    Investments
+         $ 88,876.59      401K
+         $ 13,223.05      HSA
+         $ 94,322.13      IRA
          $ 16,144.26      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
-         $ 39,000.00    Savings
+         $ 39,000.09    Savings
           $ 1,000.00      Northwoods
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
-         $ 36,000.00      UFB
+         $ 36,000.09      UFB
        $ -438,201.04  Liabilities:RE
         $ -88,000.00    Condo:Mortgage
        $ -350,201.04    Cottage:Mortgage
 --------------------
-        $ 466,188.91
+        $ 466,408.69
 #+end_example
 ** Spending
 *** Category Spending
@@ -1388,7 +1404,7 @@ May 01 2023    Expenses:Transportation:Gas      $ 723.65
 May 01 2023    Expenses:Transportation:Insurance$ 438.47
 June 01 2023   Expenses:Food:Drinks             $ 150.00
 June 01 2023   Expenses:Food:Fast Food          $ 70.97
-June 01 2023   Expenses:Food:Groceries          $ 332.19
+June 01 2023   Expenses:Food:Groceries          $ 357.19
 June 01 2023   Expenses:Food:Snacks             $ 15.31
 June 01 2023   Expenses:Foods:Snacks            $ 12.88
 June 01 2023   Expenses:Gifts                   $ 335.68
@@ -1409,7 +1425,7 @@ June 01 2023   Expenses:Taxes:Federal           $ 1,122.98
 June 01 2023   Expenses:Taxes:Illinois          $ 330.41
 June 01 2023   Expenses:Taxes:Medicare          $ 153.21
 June 01 2023   Expenses:Taxes:Social Security   $ 25.14
-June 01 2023   Expenses:Transportation:Biking   $ 42.63
+June 01 2023   Expenses:Transportation:Biking   $ 43.81
 June 01 2023   Expenses:Transportation:Ride Share$ 17.61
 #+end_example
 *** Monthly Spending
@@ -1420,7 +1436,7 @@ June 01 2023   Expenses:Transportation:Ride Share$ 17.61
 #+results:
 : April 2023      $ 5,455.64
 : May 2023        $ 8,591.06
-: June 2023       $ 5,320.61
+: June 2023       $ 5,346.79
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -1428,6 +1444,9 @@ June 01 2023   Expenses:Transportation:Ride Share$ 17.61
 #+end_src
 #+results:
 #+begin_example
+June 16 2023   Taco Bell                        Expenses:Food:Groceries          $ 25.00
+June 16 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 1.18
+June 16 2023   Interest                         Income:Extra                     $ -0.09
 June 14 2023   VRBO                             Income:RE:Cottage:Rent           $ -1,196.26
 June 13 2023   Spectrum                         Expenses:RE:Cottage:Utilities    $ 69.99
 June 13 2023   Home Depot                       Expenses:RE:Condo:Repairs        $ 11.91
