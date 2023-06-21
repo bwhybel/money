@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 06/19/2023 00:00:00 VTSAX $107.1400
-  P 06/19/2023 00:00:00 VTIAX $30.9800
-  P 06/19/2023 00:00:00 FSPSX $46.8300
-  P 06/19/2023 00:00:00 FXAIX $154.1000
-  P 06/19/2023 00:00:00 CONDO $250,000.00
-  P 06/19/2023 00:00:00 COTTA $400,000.00
+  P 06/20/2023 00:00:00 VTSAX $106.7100
+  P 06/20/2023 00:00:00 VTIAX $30.6000
+  P 06/20/2023 00:00:00 FSPSX $46.7800
+  P 06/20/2023 00:00:00 FXAIX $153.5400
+  P 06/20/2023 00:00:00 CONDO $250,000.00
+  P 06/20/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -1313,6 +1313,10 @@
   2023-06-19 * Divvy Bikes
       Expenses:Transportation:Biking            $ 8.52
       Liabilities:Credit Card:Covantage
+
+  2023-06-20 * Transfer
+      Liabilities:Credit Card:Covantage         $ 2.75
+      Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -1344,7 +1348,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 41,841.12
+         $ 41,838.37
            1.0 CONDO
            1.0 COTTA
        370.159 FSPSX
@@ -1352,8 +1356,7 @@
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 2,841.03    Checking
-              $ 2.75      Covantage
+          $ 2,838.28    Checking
           $ 1,330.66      Northwoods
             $ 850.00      Park City
             $ 657.62      RipCo
@@ -1377,8 +1380,8 @@
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
          $ 36,000.09      UFB
-       $ -438,635.14  Liabilities
-           $ -434.10    Credit Card:Covantage
+       $ -438,632.39  Liabilities
+           $ -431.35    Credit Card:Covantage
        $ -438,201.04    RE
         $ -88,000.00      Condo:Mortgage
        $ -350,201.04      Cottage:Mortgage
@@ -1400,16 +1403,15 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 906,744.28  Assets
-          $ 2,841.03    Checking
-              $ 2.75      Covantage
+        $ 905,879.70  Assets
+          $ 2,838.28    Checking
           $ 1,330.66      Northwoods
             $ 850.00      Park City
             $ 657.62      RipCo
-        $ 214,903.16    Investments
-         $ 89,936.30      401K
-         $ 13,386.36      HSA
-         $ 95,436.24      IRA
+        $ 214,041.33    Investments
+         $ 89,653.95      401K
+         $ 13,337.71      HSA
+         $ 94,905.40      IRA
          $ 16,144.26      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
@@ -1419,13 +1421,13 @@
           $ 1,000.00      Park City
           $ 1,000.00      RipCo
          $ 36,000.09      UFB
-       $ -438,635.14  Liabilities
-           $ -434.10    Credit Card:Covantage
+       $ -438,632.39  Liabilities
+           $ -431.35    Credit Card:Covantage
        $ -438,201.04    RE
         $ -88,000.00      Condo:Mortgage
        $ -350,201.04      Cottage:Mortgage
 --------------------
-        $ 468,109.14
+        $ 467,247.31
 #+end_example
 ** Spending
 *** Category Spending
