@@ -1534,6 +1534,10 @@
       Assets:Savings:Covantage              $ 1,379.49
       Income:RE:Cottage:Rent
 
+  2023-06-26 * Brooke Janicki
+      Expenses:RE:Cottage:Cleaning            $ 140.00
+      Assets:Checking:Covantage
+
   2023-06-27 * Transfer
       Assets:Savings:Covantage                $ 940.00
       Assets:Checking:Park City
@@ -1589,7 +1593,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 39,228.13
+         $ 39,088.13
            1.0 CONDO
            1.0 COTTA
        373.308 FSPSX
@@ -1597,7 +1601,8 @@
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 2,801.66    Checking
+          $ 2,661.66    Checking
+           $ -140.00      Covantage
           $ 2,730.66      Northwoods
              $ 71.00      Park City
        373.308 FSPSX
@@ -1622,7 +1627,7 @@
         $ -84,000.00    Condo:Mortgage
        $ -350,201.04    Cottage:Mortgage
 --------------------
-       $ -394,972.91
+       $ -395,112.91
            1.0 CONDO
            1.0 COTTA
        373.308 FSPSX
@@ -1639,8 +1644,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 900,371.74  Assets
-          $ 2,801.66    Checking
+        $ 900,231.74  Assets
+          $ 2,661.66    Checking
+           $ -140.00      Covantage
           $ 2,730.66      Northwoods
              $ 71.00      Park City
         $ 211,143.61    Investments
@@ -1658,7 +1664,7 @@
         $ -84,000.00    Condo:Mortgage
        $ -350,201.04    Cottage:Mortgage
 --------------------
-        $ 466,170.70
+        $ 466,030.70
 #+end_example
 ** Spending
 *** Category Spending
@@ -1736,7 +1742,7 @@ June 01 2023   Expenses:Personal:Hygeine        $ 34.73
 June 01 2023   Expenses:Personal:Learning       $ 117.43
 June 01 2023   Expenses:RE:Condo:Interest       $ 395.77
 June 01 2023   Expenses:RE:Condo:Repairs        $ 71.66
-June 01 2023   Expenses:RE:Cottage:Cleaning     $ 224.87
+June 01 2023   Expenses:RE:Cottage:Cleaning     $ 364.87
 June 01 2023   Expenses:RE:Cottage:Escrow       $ 864.60
 June 01 2023   Expenses:RE:Cottage:Interest     $ 1,023.22
 June 01 2023   Expenses:RE:Cottage:Lakefront    $ 378.00
@@ -1760,7 +1766,7 @@ July 01 2023   Expenses:RE:Condo:Interest       $ 275.00
 #+results:
 : April 2023      $ 5,455.64
 : May 2023        $ 8,591.06
-: June 2023       $ 9,431.43
+: June 2023       $ 9,571.43
 : July 2023       $ 275.00
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
@@ -1773,6 +1779,7 @@ July 01 2023   Huntington                       Expenses:RE:Condo:Interest      
 June 26 2023   Xfinity                          Expenses:Housing:Utilities       $ 70.00
 June 26 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 1.30
 June 26 2023   VRBO                             Income:RE:Cottage:Rent           $ -1,379.49
+June 26 2023   Brooke Janicki                   Expenses:RE:Cottage:Cleaning     $ 140.00
 June 25 2023   Walgreens                        Expenses:Food:Snacks             $ 1.31
 June 25 2023   Athletic Greens                  Expenses:Food:Groceries          $ 88.00
 June 25 2023   McDonald's                       Expenses:Food:Fast Food          $ 7.83
