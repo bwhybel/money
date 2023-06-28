@@ -1482,9 +1482,9 @@
       Expenses:RE:Cottage:Lakefront           $ 378.00
       Assets:Checking:Covantage
 
-  2023-06-24 * Patagonia
-      Expenses:Personal:Clothes                $ 80.70
-      Liabilities:Credit Card:Covantage
+  ; 2023-06-24 * Patagonia
+  ;     Expenses:Personal:Clothes                $ 80.70
+  ;     Liabilities:Credit Card:Covantage
 
   2023-06-24 * State Street Barber
       Expenses:Personal:Health                 $ 45.00
@@ -1530,50 +1530,58 @@
       Expenses:Transportation:Biking            $ 1.30
       Liabilities:Credit Card:Covantage
 
-  2023-06-26 * VRBO
-      Assets:Savings:Covantage              $ 1,379.49
-      Income:RE:Cottage:Rent
+  ; 2023-06-26 * VRBO
+  ;     Assets:Savings:Covantage              $ 1,379.49
+  ;     Income:RE:Cottage:Rent
 
   2023-06-26 * Brooke Janicki
       Expenses:RE:Cottage:Cleaning            $ 140.00
       Assets:Savings:Covantage
 
-  2023-06-27 * Transfer
-      Assets:Savings:Covantage                $ 940.00
-      Assets:Checking:Park City
-
-  2023-06-27 * Transfer
-      Assets:Savings:Covantage              $ 1,533.02
-      Assets:Savings:UFB
+  2023-06-28 * Transfer
+      Liabilities:Credit Card:Covantage     $ 1,728.40
+      Assets:Savings:Covantage
 
   2023-06-28 * Transfer
-      Assets:Checking:Covantage               $ 286.47
+      Assets:Checking:Covantage               $ 131.60
       Assets:Savings:Covantage
+
+  ; 2023-06-27 * Transfer
+  ;     Assets:Savings:Covantage                $ 940.00
+  ;     Assets:Checking:Park City
+
+  ; 2023-06-27 * Transfer
+  ;     Assets:Savings:Covantage              $ 1,533.02
+  ;     Assets:Savings:UFB
+
+  ; 2023-06-28 * Transfer
+  ;     Assets:Checking:Covantage               $ 286.47
+  ;     Assets:Savings:Covantage
 
   2023-06-29 * VRBO
-      Assets:Savings:Covantage                $ 915.86
+      Assets:Savings:Northwoods               $ 915.86
       Income:RE:Cottage:Rent
 
-  2023-07-01 * Interest
-      Assets:Savings:Covantage                 $ 84.14
-      Income:Extra
+  2023-06-29 * Transfer
+      Liabilities:Credit Card:Northwoods      $ 915.86
+      Assets:Savings:Northwoods
 
-  2023-07-01 * Huntington
-      Liabilities:RE:Condo:Mortgage           $ 382.62
-      Expenses:RE:Condo:Interest              $ 275.00
-      Assets:Checking:RipCo
+  ; 2023-07-01 * Interest
+  ;     Assets:Savings:Covantage                 $ 84.14
+  ;     Income:Extra
 
-  2023-07-03 * Transfer
-      Liabilities:RE:Condo:Mortgage         $ 3,617.38
-      Assets:Savings:Covantage
+  ; 2023-07-01 * Huntington
+  ;     Liabilities:RE:Condo:Mortgage           $ 382.62
+  ;     Expenses:RE:Condo:Interest              $ 275.00
+  ;     Assets:Checking:RipCo
 
-  2023-07-03 * Transfer
-      Liabilities:Credit Card:Covantage     $ 1,809.10
-      Assets:Savings:Covantage
+  ; 2023-07-03 * Transfer
+  ;     Liabilities:RE:Condo:Mortgage         $ 4,617.38
+  ;     Assets:Savings:Covantage
 
-  2023-07-03 * Transfer
-      Liabilities:Credit Card:Northwoods      $ 999.56
-      Assets:Savings:Covantage
+  ; 2023-07-03 * Transfer
+  ;     Liabilities:Credit Card:Covantage     $ 1,809.10
+  ;     Assets:Savings:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -1605,7 +1613,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 40,088.13
+         $ 43,063.90
            1.0 CONDO
            1.0 COTTA
        373.308 FSPSX
@@ -1613,10 +1621,11 @@
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 3,088.13    Checking
-            $ 286.47      Covantage
+          $ 4,530.88    Checking
+            $ 131.60      Covantage
           $ 2,730.66      Northwoods
-             $ 71.00      Park City
+          $ 1,011.00      Park City
+            $ 657.62      RipCo
        373.308 FSPSX
        563.335 FXAIX
          802.0 STRIP
@@ -1632,14 +1641,16 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 37,000.00    Savings
+         $ 38,533.02    Savings
           $ 1,000.00      Covantage
-         $ 36,000.00      UFB
-       $ -434,201.04  Liabilities:RE
-        $ -84,000.00    Condo:Mortgage
-       $ -350,201.04    Cottage:Mortgage
+         $ 37,533.02      UFB
+       $ -438,284.74  Liabilities
+            $ -83.70    Credit Card:Northwoods
+       $ -438,201.04    RE
+        $ -88,000.00      Condo:Mortgage
+       $ -350,201.04      Cottage:Mortgage
 --------------------
-       $ -394,112.91
+       $ -395,220.84
            1.0 CONDO
            1.0 COTTA
        373.308 FSPSX
@@ -1656,11 +1667,12 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 900,626.46  Assets
-          $ 3,088.13    Checking
-            $ 286.47      Covantage
+        $ 903,602.23  Assets
+          $ 4,530.88    Checking
+            $ 131.60      Covantage
           $ 2,730.66      Northwoods
-             $ 71.00      Park City
+          $ 1,011.00      Park City
+            $ 657.62      RipCo
         $ 210,538.33    Investments
          $ 88,731.82      401K
          $ 13,096.22      HSA
@@ -1669,14 +1681,16 @@
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
-         $ 37,000.00    Savings
+         $ 38,533.02    Savings
           $ 1,000.00      Covantage
-         $ 36,000.00      UFB
-       $ -434,201.04  Liabilities:RE
-        $ -84,000.00    Condo:Mortgage
-       $ -350,201.04    Cottage:Mortgage
+         $ 37,533.02      UFB
+       $ -438,284.74  Liabilities
+            $ -83.70    Credit Card:Northwoods
+       $ -438,201.04    RE
+        $ -88,000.00      Condo:Mortgage
+       $ -350,201.04      Cottage:Mortgage
 --------------------
-        $ 466,425.42
+        $ 465,317.49
 #+end_example
 ** Spending
 *** Category Spending
@@ -1745,7 +1759,7 @@ June 01 2023   Expenses:Foods:Snacks            $ 12.88
 June 01 2023   Expenses:Gifts                   $ 575.68
 June 01 2023   Expenses:Housing:Rent            $ 2,852.14
 June 01 2023   Expenses:Housing:Utilities       $ 235.00
-June 01 2023   Expenses:Personal:Clothes        $ 108.47
+June 01 2023   Expenses:Personal:Clothes        $ 27.77
 June 01 2023   Expenses:Personal:Communication  $ 144.01
 June 01 2023   Expenses:Personal:Electronics    $ 25.00
 June 01 2023   Expenses:Personal:Health         $ 45.63
@@ -1768,7 +1782,6 @@ June 01 2023   Expenses:Transportation:Biking   $ 70.96
 June 01 2023   Expenses:Transportation:Gas      $ 65.02
 June 01 2023   Expenses:Transportation:Repairs  $ 751.78
 June 01 2023   Expenses:Transportation:Ride Share$ 17.61
-July 01 2023   Expenses:RE:Condo:Interest       $ 275.00
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-15(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -1778,8 +1791,7 @@ July 01 2023   Expenses:RE:Condo:Interest       $ 275.00
 #+results:
 : April 2023      $ 5,455.64
 : May 2023        $ 8,591.06
-: June 2023       $ 9,571.43
-: July 2023       $ 275.00
+: June 2023       $ 9,490.73
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -1787,12 +1799,9 @@ July 01 2023   Expenses:RE:Condo:Interest       $ 275.00
 #+end_src
 #+results:
 #+begin_example
-July 01 2023   Interest                         Income:Extra                     $ -84.14
-July 01 2023   Huntington                       Expenses:RE:Condo:Interest       $ 275.00
 June 29 2023   VRBO                             Income:RE:Cottage:Rent           $ -915.86
 June 26 2023   Xfinity                          Expenses:Housing:Utilities       $ 70.00
 June 26 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 1.30
-June 26 2023   VRBO                             Income:RE:Cottage:Rent           $ -1,379.49
 June 26 2023   Brooke Janicki                   Expenses:RE:Cottage:Cleaning     $ 140.00
 June 25 2023   Walgreens                        Expenses:Food:Snacks             $ 1.31
 June 25 2023   Athletic Greens                  Expenses:Food:Groceries          $ 88.00
@@ -1812,7 +1821,6 @@ June 24 2023   Walgreens                        Expenses:Food:Snacks            
 June 24 2023   Brooke Janicki                   Expenses:RE:Cottage:Cleaning     $ 84.87
 June 24 2023   Ricky                            Expenses:RE:Cottage:Lawncare     $ 50.00
 June 24 2023   Dan's Docks                      Expenses:RE:Cottage:Lakefront    $ 378.00
-June 24 2023   Patagonia                        Expenses:Personal:Clothes        $ 80.70
 June 24 2023   State Street Barber              Expenses:Personal:Health         $ 45.00
 June 23 2023   Stripe                           Income:Stripe:Paycheck           $ -6,333.77
 June 23 2023   Stripe                           Expenses:Taxes:Federal           $ 1,138.41
