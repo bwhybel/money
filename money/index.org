@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 06/27/2023 00:00:00 VTSAX $104.6200
-  P 06/27/2023 00:00:00 VTIAX $29.5700
-  P 06/27/2023 00:00:00 FSPSX $45.2600
-  P 06/27/2023 00:00:00 FXAIX $151.4300
-  P 06/27/2023 00:00:00 CONDO $250,000.00
-  P 06/27/2023 00:00:00 COTTA $400,000.00
+  P 06/28/2023 00:00:00 VTSAX $104.2600
+  P 06/28/2023 00:00:00 VTIAX $29.6200
+  P 06/28/2023 00:00:00 FSPSX $45.2700
+  P 06/28/2023 00:00:00 FXAIX $150.7600
+  P 06/28/2023 00:00:00 CONDO $250,000.00
+  P 06/28/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -1536,7 +1536,7 @@
 
   2023-06-26 * Brooke Janicki
       Expenses:RE:Cottage:Cleaning            $ 140.00
-      Assets:Checking:Covantage
+      Assets:Savings:Covantage
 
   2023-06-27 * Transfer
       Assets:Savings:Covantage                $ 940.00
@@ -1545,6 +1545,18 @@
   2023-06-27 * Transfer
       Assets:Savings:Covantage              $ 1,533.02
       Assets:Savings:UFB
+
+  2023-06-28 * Transfer
+      Assets:Checking:Covantage               $ 286.47
+      Assets:Savings:Covantage
+
+  2023-06-29 * VRBO
+      Assets:Savings:Covantage                $ 915.86
+      Income:RE:Cottage:Rent
+
+  2023-07-01 * Interest
+      Assets:Savings:Covantage                 $ 84.14
+      Income:Extra
 
   2023-07-01 * Huntington
       Liabilities:RE:Condo:Mortgage           $ 382.62
@@ -1593,7 +1605,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 39,088.13
+         $ 40,088.13
            1.0 CONDO
            1.0 COTTA
        373.308 FSPSX
@@ -1601,8 +1613,8 @@
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 2,661.66    Checking
-           $ -140.00      Covantage
+          $ 3,088.13    Checking
+            $ 286.47      Covantage
           $ 2,730.66      Northwoods
              $ 71.00      Park City
        373.308 FSPSX
@@ -1620,14 +1632,14 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 36,426.47    Savings
-            $ 426.47      Covantage
+         $ 37,000.00    Savings
+          $ 1,000.00      Covantage
          $ 36,000.00      UFB
        $ -434,201.04  Liabilities:RE
         $ -84,000.00    Condo:Mortgage
        $ -350,201.04    Cottage:Mortgage
 --------------------
-       $ -395,112.91
+       $ -394,112.91
            1.0 CONDO
            1.0 COTTA
        373.308 FSPSX
@@ -1644,27 +1656,27 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 900,231.74  Assets
-          $ 2,661.66    Checking
-           $ -140.00      Covantage
+        $ 900,626.46  Assets
+          $ 3,088.13    Checking
+            $ 286.47      Covantage
           $ 2,730.66      Northwoods
              $ 71.00      Park City
-        $ 211,143.61    Investments
-         $ 89,047.32      401K
-         $ 13,154.42      HSA
-         $ 92,797.61      IRA
+        $ 210,538.33    Investments
+         $ 88,731.82      401K
+         $ 13,096.22      HSA
+         $ 92,566.03      IRA
          $ 16,144.26      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
-         $ 36,426.47    Savings
-            $ 426.47      Covantage
+         $ 37,000.00    Savings
+          $ 1,000.00      Covantage
          $ 36,000.00      UFB
        $ -434,201.04  Liabilities:RE
         $ -84,000.00    Condo:Mortgage
        $ -350,201.04    Cottage:Mortgage
 --------------------
-        $ 466,030.70
+        $ 466,425.42
 #+end_example
 ** Spending
 *** Category Spending
@@ -1775,7 +1787,9 @@ July 01 2023   Expenses:RE:Condo:Interest       $ 275.00
 #+end_src
 #+results:
 #+begin_example
+July 01 2023   Interest                         Income:Extra                     $ -84.14
 July 01 2023   Huntington                       Expenses:RE:Condo:Interest       $ 275.00
+June 29 2023   VRBO                             Income:RE:Cottage:Rent           $ -915.86
 June 26 2023   Xfinity                          Expenses:Housing:Utilities       $ 70.00
 June 26 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 1.30
 June 26 2023   VRBO                             Income:RE:Cottage:Rent           $ -1,379.49
