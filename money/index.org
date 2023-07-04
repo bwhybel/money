@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 07/03/2023 00:00:00 VTSAX $106.1000
-  P 07/03/2023 00:00:00 VTIAX $29.7800
-  P 07/03/2023 00:00:00 FSPSX $45.6100
-  P 07/03/2023 00:00:00 FXAIX $153.1300
-  P 07/03/2023 00:00:00 CONDO $250,000.00
-  P 07/03/2023 00:00:00 COTTA $400,000.00
+  P 07/04/2023 00:00:00 VTSAX $107.3200
+  P 07/04/2023 00:00:00 VTIAX $30.1000
+  P 07/04/2023 00:00:00 FSPSX $46.1600
+  P 07/04/2023 00:00:00 FXAIX $155.0100
+  P 07/04/2023 00:00:00 CONDO $250,000.00
+  P 07/04/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -1657,25 +1657,9 @@
       Expenses:Personal:Learning              $ 129.72
       Liabilities:Credit Card:Covantage
 
-  2023-07-05 * Transfer  ;; still unconfirmed
-      Liabilities:RE:Condo:Mortgage         $ 1,461.35
+  2023-07-04 * Transfer
+      Assets:Checking:Covantage             $ 2,193.48
       Assets:Savings:Covantage
-
-  2023-07-05 * Transfer  ;; still unconfirmed
-      Assets:Checking:Covantage               $ 100.00
-      Assets:Savings:Covantage
-
-  2023-07-05 * Patagonia  ;; still unconfirmed from erik
-      Assets:Savings:Covantage                $ 136.80
-      Expenses:Personal:Clothes
-
-  2023-07-05 * Transfer  ;; still unconfirmed
-      Liabilities:Credit Card:Covantage       $ 768.93
-      Assets:Savings:Covantage
-
-  2023-07-05 * Transfer  ;; still unconfirmed
-      Liabilities:RE:Condo:Mortgage           $ 184.94
-      Assets:Savings:UFB
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -1707,7 +1691,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 36,324.80
+         $ 38,603.22
            1.0 CONDO
            1.0 COTTA
        373.308 FSPSX
@@ -1715,8 +1699,8 @@
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-            $ 324.80    Checking
-            $ 100.00      Covantage
+          $ 2,418.28    Checking
+          $ 2,193.48      Covantage
             $ 224.80      Northwoods
        373.308 FSPSX
        563.335 FXAIX
@@ -1733,12 +1717,14 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 36,000.00    Savings:UFB
-       $ -433,165.36  Liabilities:RE
-        $ -83,584.16    Condo:Mortgage
-       $ -349,581.20    Cottage:Mortgage
+         $ 36,184.94    Savings:UFB
+       $ -435,580.58  Liabilities
+           $ -768.93    Credit Card:Covantage
+       $ -434,811.65    RE
+        $ -85,230.45      Condo:Mortgage
+       $ -349,581.20      Cottage:Mortgage
 --------------------
-       $ -396,840.56
+       $ -396,977.36
            1.0 CONDO
            1.0 COTTA
        373.308 FSPSX
@@ -1755,24 +1741,26 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 899,749.06  Assets
-            $ 324.80    Checking
-            $ 100.00      Covantage
+        $ 904,359.65  Assets
+          $ 2,418.28    Checking
+          $ 2,193.48      Covantage
             $ 224.80      Northwoods
-        $ 213,424.26    Investments
-         $ 89,987.97      401K
-         $ 13,302.10      HSA
-         $ 93,989.93      IRA
+        $ 215,756.43    Investments
+         $ 91,089.05      401K
+         $ 13,465.41      HSA
+         $ 95,057.72      IRA
          $ 16,144.26      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
-         $ 36,000.00    Savings:UFB
-       $ -433,165.36  Liabilities:RE
-        $ -83,584.16    Condo:Mortgage
-       $ -349,581.20    Cottage:Mortgage
+         $ 36,184.94    Savings:UFB
+       $ -435,580.58  Liabilities
+           $ -768.93    Credit Card:Covantage
+       $ -434,811.65    RE
+        $ -85,230.45      Condo:Mortgage
+       $ -349,581.20      Cottage:Mortgage
 --------------------
-        $ 466,583.70
+        $ 468,779.07
 #+end_example
 ** Spending
 *** Category Spending
@@ -1865,7 +1853,7 @@ June 01 2023   Expenses:Transportation:Gas      $ 81.32
 June 01 2023   Expenses:Transportation:Repairs  $ 756.78
 June 01 2023   Expenses:Transportation:Ride Share$ 17.61
 July 01 2023   Expenses:Food:Fast Food          $ 16.33
-July 01 2023   Expenses:Personal:Clothes        $ 254.94
+July 01 2023   Expenses:Personal:Clothes        $ 391.74
 July 01 2023   Expenses:Personal:Communication  $ 35.00
 July 01 2023   Expenses:Personal:Learning       $ 129.72
 July 01 2023   Expenses:RE:Condo:Interest       $ 267.56
@@ -1884,7 +1872,7 @@ July 01 2023   Expenses:Transportation:Parking  $ 11.00
 : April 2023      $ 5,455.64
 : May 2023        $ 8,591.06
 : June 2023       $ 9,673.92
-: July 2023       $ 3,001.16
+: July 2023       $ 3,137.96
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -1892,7 +1880,6 @@ July 01 2023   Expenses:Transportation:Parking  $ 11.00
 #+end_src
 #+results:
 #+begin_example
-July 05 2023   Patagonia                        Expenses:Personal:Clothes        $ -136.80
 July 03 2023   Patagonia                        Expenses:Personal:Clothes        $ 566.10
 July 03 2023   IHSA Coaching                    Expenses:Personal:Learning       $ 129.72
 July 02 2023   Divvy                            Expenses:Transportation:Biking   $ 0.59
