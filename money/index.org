@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 07/04/2023 00:00:00 VTSAX $107.3200
-  P 07/04/2023 00:00:00 VTIAX $30.1000
-  P 07/04/2023 00:00:00 FSPSX $46.1600
-  P 07/04/2023 00:00:00 FXAIX $155.0100
-  P 07/04/2023 00:00:00 CONDO $250,000.00
-  P 07/04/2023 00:00:00 COTTA $400,000.00
+  P 07/05/2023 00:00:00 VTSAX $107.5000
+  P 07/05/2023 00:00:00 VTIAX $30.1900
+  P 07/05/2023 00:00:00 FSPSX $46.1800
+  P 07/05/2023 00:00:00 FXAIX $155.2000
+  P 07/05/2023 00:00:00 CONDO $250,000.00
+  P 07/05/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -1660,6 +1660,14 @@
   2023-07-04 * Transfer
       Assets:Checking:Covantage             $ 2,193.48
       Assets:Savings:Covantage
+
+  2023-07-04 * Transfer
+      Liabilities:Credit Card:Covantage       $ 193.48
+      Assets:Checking:Covantage
+
+  2023-07-05 * VRBO
+      Assets:Checking:Northwoods            $ 1,012.91
+      Income:RE:Cottage:Rent
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -1691,7 +1699,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 38,603.22
+         $ 39,422.65
            1.0 CONDO
            1.0 COTTA
        373.308 FSPSX
@@ -1699,9 +1707,9 @@
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 2,418.28    Checking
-          $ 2,193.48      Covantage
-            $ 224.80      Northwoods
+          $ 3,237.71    Checking
+          $ 2,000.00      Covantage
+          $ 1,237.71      Northwoods
        373.308 FSPSX
        563.335 FXAIX
          802.0 STRIP
@@ -1718,13 +1726,13 @@
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
          $ 36,184.94    Savings:UFB
-       $ -435,580.58  Liabilities
-           $ -768.93    Credit Card:Covantage
+       $ -435,387.10  Liabilities
+           $ -575.45    Credit Card:Covantage
        $ -434,811.65    RE
         $ -85,230.45      Condo:Mortgage
        $ -349,581.20      Cottage:Mortgage
 --------------------
-       $ -396,977.36
+       $ -395,964.45
            1.0 CONDO
            1.0 COTTA
        373.308 FSPSX
@@ -1741,26 +1749,26 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 904,359.65  Assets
-          $ 2,418.28    Checking
-          $ 2,193.48      Covantage
-            $ 224.80      Northwoods
-        $ 215,756.43    Investments
-         $ 91,089.05      401K
-         $ 13,465.41      HSA
-         $ 95,057.72      IRA
+        $ 905,475.86  Assets
+          $ 3,237.71    Checking
+          $ 2,000.00      Covantage
+          $ 1,237.71      Northwoods
+        $ 216,053.21    Investments
+         $ 91,187.04      401K
+         $ 13,481.91      HSA
+         $ 95,240.00      IRA
          $ 16,144.26      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
          $ 36,184.94    Savings:UFB
-       $ -435,580.58  Liabilities
-           $ -768.93    Credit Card:Covantage
+       $ -435,387.10  Liabilities
+           $ -575.45    Credit Card:Covantage
        $ -434,811.65    RE
         $ -85,230.45      Condo:Mortgage
        $ -349,581.20      Cottage:Mortgage
 --------------------
-        $ 468,779.07
+        $ 470,088.76
 #+end_example
 ** Spending
 *** Category Spending
@@ -1880,6 +1888,7 @@ July 01 2023   Expenses:Transportation:Parking  $ 11.00
 #+end_src
 #+results:
 #+begin_example
+July 05 2023   VRBO                             Income:RE:Cottage:Rent           $ -1,012.91
 July 03 2023   Patagonia                        Expenses:Personal:Clothes        $ 566.10
 July 03 2023   IHSA Coaching                    Expenses:Personal:Learning       $ 129.72
 July 02 2023   Divvy                            Expenses:Transportation:Biking   $ 0.59
