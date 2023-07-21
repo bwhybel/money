@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 07/19/2023 00:00:00 VTSAX $110.2800
-  P 07/19/2023 00:00:00 VTIAX $30.9400
-  P 07/19/2023 00:00:00 FSPSX $47.3300
-  P 07/19/2023 00:00:00 FXAIX $158.1300
-  P 07/19/2023 00:00:00 CONDO $250,000.00
-  P 07/19/2023 00:00:00 COTTA $400,000.00
+  P 07/21/2023 00:00:00 VTSAX $110.5700
+  P 07/21/2023 00:00:00 VTIAX $30.9400
+  P 07/21/2023 00:00:00 FSPSX $47.3000
+  P 07/21/2023 00:00:00 FXAIX $158.5000
+  P 07/21/2023 00:00:00 CONDO $250,000.00
+  P 07/21/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -2003,6 +2003,56 @@
   2023-07-19 * VRBO
       Assets:Checking:Northwoods            $ 1,379.63
       Income:RE:Cottage:Rent
+
+  2023-07-21 * Jet Ski Lift
+      Expenses:Personal:Boat                  $ 115.00
+      Assets:Checking:Covantage
+
+  2023-07-21 * SWAQ
+      Income:SWAQ:Paycheck                   $ -405.54
+      Expenses:Taxes:Medicare                   $ 5.88
+      Expenses:Taxes:Social Security           $ 25.15
+      Expenses:Taxes:Illinois                  $ 20.07
+      Assets:Checking:Covantage               $ 354.44
+
+  2023-07-21 * Stripe
+      Income:Stripe:Paycheck               $ -6,333.77
+      Expenses:Taxes:Federal                $ 1,138.41
+      Expenses:Taxes:Medicare                 $ 148.84
+      Expenses:Taxes:Illinois                 $ 313.52
+      Assets:Investments:401K                 $ 950.07
+      Assets:Savings:UFB                    $ 1,532.93
+      Assets:Checking:Northwoods            $ 1,400.00
+      Assets:Checking:Park City               $ 850.00
+
+  2023-07-21 * Transfer
+      Assets:Checking:Northwoods               $ 50.00
+      Assets:Checking:Covantage
+
+  2023-07-21 * VRBO
+      Assets:Checking:Covantage             $ 1,379.63
+      Assets:Checking:Northwoods
+
+  2023-07-21 * Aaron Jet Ski
+      Expenses:Personal:Boat                $ 2,000.00
+      Assets:Checking:Covantage
+
+  2023-07-21 * Expensify
+      Assets:Checking:Covantage             $ 1,063.68
+      Expenses:Travel:Lodging                $ -917.07
+      Expenses:Transportation:Ride Share     $ -146.61
+
+  2023-07-17 * Walgreens
+      Expenses:Personal:Health                 $ 25.49
+      Liabilities:Credit Card:Northwoods
+
+  2023-07-17 * Dunkin Donuts
+      Expenses:Food:Fast Food                   $ 1.77
+      Liabilities:Credit Card:Northwoods
+
+  2023-07-20 * Chick-fil-a
+      Expenses:Food:Fast Food                   $ 8.84
+      Liabilities:Credit Card:Northwoods
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -2034,7 +2084,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 41,811.19
+         $ 45,847.31
            1.0 CONDO
            1.0 COTTA
        376.464 FSPSX
@@ -2042,16 +2092,18 @@
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 5,804.87    Checking
-          $ 2,045.76      Covantage
-          $ 2,435.49      Northwoods
-            $ 666.00      Park City
+          $ 7,357.99    Checking
+          $ 2,678.51      Covantage
+          $ 2,505.86      Northwoods
+          $ 1,516.00      Park City
             $ 657.62      RipCo
+            $ 950.07
        376.464 FSPSX
        572.940 FXAIX
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX    Investments
+            $ 950.07
        376.464 FSPSX
        483.634 FXAIX      401K
         89.306 FXAIX      HSA
@@ -2062,17 +2114,18 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 36,006.32    Savings:UFB
-       $ -434,377.77  Liabilities
-         $ -2,296.57    Credit Card
+         $ 37,539.25    Savings:UFB
+       $ -434,413.87  Liabilities
+         $ -2,332.67    Credit Card
          $ -1,817.66      Covantage
+            $ -36.10      Northwoods
            $ -205.33      Park City
            $ -273.58      RipCo
        $ -432,081.20    RE
         $ -82,500.00      Condo:Mortgage
        $ -349,581.20      Cottage:Mortgage
 --------------------
-       $ -392,566.58
+       $ -388,566.56
            1.0 CONDO
            1.0 COTTA
        376.464 FSPSX
@@ -2089,31 +2142,32 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 914,057.68  Assets
-          $ 5,804.87    Checking
-          $ 2,045.76      Covantage
-          $ 2,435.49      Northwoods
-            $ 666.00      Park City
+        $ 918,504.33  Assets
+          $ 7,357.99    Checking
+          $ 2,678.51      Covantage
+          $ 2,505.86      Northwoods
+          $ 1,516.00      Park City
             $ 657.62      RipCo
-        $ 222,246.49    Investments
-         $ 94,295.09      401K
-         $ 14,121.96      HSA
-         $ 97,685.18      IRA
+        $ 223,607.09    Investments
+         $ 95,412.81      401K
+         $ 14,155.00      HSA
+         $ 97,895.02      IRA
          $ 16,144.26      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
-         $ 36,006.32    Savings:UFB
-       $ -434,377.77  Liabilities
-         $ -2,296.57    Credit Card
+         $ 37,539.25    Savings:UFB
+       $ -434,413.87  Liabilities
+         $ -2,332.67    Credit Card
          $ -1,817.66      Covantage
+            $ -36.10      Northwoods
            $ -205.33      Park City
            $ -273.58      RipCo
        $ -432,081.20    RE
         $ -82,500.00      Condo:Mortgage
        $ -349,581.20      Cottage:Mortgage
 --------------------
-        $ 479,679.91
+        $ 484,090.46
 #+end_example
 ** Spending
 *** Category Spending
@@ -2206,15 +2260,16 @@ June 01 2023   Expenses:Transportation:Gas      $ 81.32
 June 01 2023   Expenses:Transportation:Repairs  $ 756.78
 June 01 2023   Expenses:Transportation:Ride Share$ 17.61
 July 01 2023   Expenses:Food:Drinks             $ 170.77
-July 01 2023   Expenses:Food:Fast Food          $ 71.53
+July 01 2023   Expenses:Food:Fast Food          $ 82.14
 July 01 2023   Expenses:Food:Groceries          $ 48.00
 July 01 2023   Expenses:Food:Restaurants        $ 179.39
 July 01 2023   Expenses:Food:Snacks             $ 79.35
 July 01 2023   Expenses:Gifts                   $ 196.45
+July 01 2023   Expenses:Personal:Boat           $ 2,115.00
 July 01 2023   Expenses:Personal:Clothes        $ 386.62
 July 01 2023   Expenses:Personal:Communication  $ 35.00
 July 01 2023   Expenses:Personal:Entertainment  $ 59.19
-July 01 2023   Expenses:Personal:Health         $ 428.72
+July 01 2023   Expenses:Personal:Health         $ 454.21
 July 01 2023   Expenses:Personal:Learning       $ 522.27
 July 01 2023   Expenses:RE:Condo:Interest       $ 267.56
 July 01 2023   Expenses:RE:Cottage:Cleaning     $ 120.00
@@ -2222,16 +2277,14 @@ July 01 2023   Expenses:RE:Cottage:Escrow       $ 864.60
 July 01 2023   Expenses:RE:Cottage:Interest     $ 1,021.42
 July 01 2023   Expenses:RE:Cottage:Repairs      $ 22.63
 July 01 2023   Expenses:RE:Cottage:Utilities    $ 348.54
-July 01 2023   Expenses:Taxes:Federal           $ 1,150.68
-July 01 2023   Expenses:Taxes:Illinois          $ 339.67
-July 01 2023   Expenses:Taxes:Medicare          $ 156.97
-July 01 2023   Expenses:Taxes:Social Security   $ 29.58
+July 01 2023   Expenses:Taxes:Federal           $ 2,289.09
+July 01 2023   Expenses:Taxes:Illinois          $ 673.26
+July 01 2023   Expenses:Taxes:Medicare          $ 311.69
+July 01 2023   Expenses:Taxes:Social Security   $ 54.73
 July 01 2023   Expenses:Transportation:Biking   $ 24.58
 July 01 2023   Expenses:Transportation:Gas      $ 484.42
 July 01 2023   Expenses:Transportation:Parking  $ 11.00
 July 01 2023   Expenses:Transportation:Repairs  $ 56.95
-July 01 2023   Expenses:Transportation:Ride Share$ 146.61
-July 01 2023   Expenses:Travel:Lodging          $ 917.07
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-15(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -2242,7 +2295,7 @@ July 01 2023   Expenses:Travel:Lodging          $ 917.07
 : April 2023      $ 5,455.64
 : May 2023        $ 8,591.06
 : June 2023       $ 9,673.92
-: July 2023       $ 6,462.67
+: July 2023       $ 7,550.09
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -2250,6 +2303,19 @@ July 01 2023   Expenses:Travel:Lodging          $ 917.07
 #+end_src
 #+results:
 #+begin_example
+July 21 2023   Jet Ski Lift                     Expenses:Personal:Boat           $ 115.00
+July 21 2023   SWAQ                             Income:SWAQ:Paycheck             $ -405.54
+July 21 2023   SWAQ                             Expenses:Taxes:Medicare          $ 5.88
+July 21 2023   SWAQ                             Expenses:Taxes:Social Security   $ 25.15
+July 21 2023   SWAQ                             Expenses:Taxes:Illinois          $ 20.07
+July 21 2023   Stripe                           Income:Stripe:Paycheck           $ -6,333.77
+July 21 2023   Stripe                           Expenses:Taxes:Federal           $ 1,138.41
+July 21 2023   Stripe                           Expenses:Taxes:Medicare          $ 148.84
+July 21 2023   Stripe                           Expenses:Taxes:Illinois          $ 313.52
+July 21 2023   Aaron Jet Ski                    Expenses:Personal:Boat           $ 2,000.00
+July 21 2023   Expensify                        Expenses:Travel:Lodging          $ -917.07
+July 21 2023   Expensify                        Expenses:Transportation:Ride Share$ -146.61
+July 20 2023   Chick-fil-a                      Expenses:Food:Fast Food          $ 8.84
 July 19 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 3.05
 July 19 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 3.61
 July 19 2023   McDonald's                       Expenses:Food:Fast Food          $ 8.39
@@ -2263,6 +2329,8 @@ July 17 2023   Paulie Gees                      Expenses:Food:Drinks            
 July 17 2023   Taco & Burrito Express           Expenses:Food:Drinks             $ 21.00
 July 17 2023   Emporium                         Expenses:Food:Drinks             $ 30.00
 July 17 2023   Dental Salon                     Expenses:Personal:Health         $ 393.72
+July 17 2023   Walgreens                        Expenses:Personal:Health         $ 25.49
+July 17 2023   Dunkin Donuts                    Expenses:Food:Fast Food          $ 1.77
 July 16 2023   Glascotts                        Expenses:Food:Drinks             $ 27.49
 July 16 2023   Dollar Tree                      Expenses:Food:Snacks             $ 2.76
 July 16 2023   Lyft                             Expenses:Transportation:Ride Share$ 46.86
