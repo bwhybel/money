@@ -1610,6 +1610,10 @@
       Expenses:Transportation:Biking            $ 5.93
       Liabilities:Credit Card:Covantage
 
+  2023-06-30 * Cash Back
+      Liabilities:Credit Card:RipCo             $ 1.25
+      Income:Extra
+
   2023-07-01 * Patagonia
       Assets:Savings:Covantage                $ 174.36
       Expenses:Personal:Clothes
@@ -1631,6 +1635,14 @@
 
   2023-07-01 * UFB Direct
       Assets:Savings:UFB                      $ 184.94
+      Income:Extra
+
+  2023-07-01 * Rent
+      Assets:Checking:RipCo                 $ 1,117.66
+      Income:RE:Condo:Rent
+
+  2023-07-01 * Interest
+      Assets:Checking:RipCo                     $ 0.66
       Income:Extra
 
   2023-07-02 * Divvy
@@ -1669,6 +1681,18 @@
       Assets:Checking:Northwoods            $ 1,012.91
       Income:RE:Cottage:Rent
 
+  2023-07-06 * DW
+      Assets:Checking:Park City                $ 25.00
+      Income:Extra
+
+  2023-07-06 * New Life Leatherworks
+      Expenses:Personal:Clothes               $ 120.50
+      Liabilities:Credit Card:Park City
+
+  2023-07-06 * Transfer
+      Liabilities:RE:Condo:Mortgage           $ 184.94
+      Assets:Savings:UFB
+
   2023-07-07 * SWAQ
       Income:SWAQ:Paycheck                   $ -477.18
       Expenses:Taxes:Medicare                   $ 6.92
@@ -1684,170 +1708,6 @@
       Expenses:Transportation:Biking            $ 0.47
       Liabilities:Credit Card:Covantage
 
-  2023-07-08 * Extra
-      Liabilities:Credit Card:Covantage        $ 25.00
-      Income:Extra
-
-  2023-07-08 * Duane Reade
-      Expenses:Food:Snacks                      $ 7.14
-      Liabilities:Credit Card:Covantage
-
-  2023-07-11 * Divvy Bikes
-      Expenses:Transportation:Biking            $ 5.18
-      Liabilities:Credit Card:Covantage
-
-  2023-07-12 * Dunkin Donuts
-      Expenses:Food:Fast Food                   $ 2.00
-      Liabilities:Credit Card:Covantage
-
-  2023-07-12 * Lyft
-      Expenses:Transportation:Ride Share       $ 99.75
-      Liabilities:Credit Card:Covantage
-
-  2023-07-16 * Glascotts
-      Expenses:Food:Drinks                     $ 27.49
-      Liabilities:Credit Card:Covantage
-
-  2023-07-16 * Dollar Tree
-      Expenses:Food:Snacks                      $ 2.76
-      Liabilities:Credit Card:Covantage
-
-  2023-07-16 * Lyft
-      Expenses:Transportation:Ride Share       $ 46.86
-      Liabilities:Credit Card:Covantage
-
-  2023-07-16 * Fairfield Inn & Suites
-      Expenses:Travel:Lodging                 $ 917.07
-      Liabilities:Credit Card:Covantage
-
-  2023-07-16 * 7/11
-      Expenses:Food:Snacks                      $ 5.57
-      Liabilities:Credit Card:Covantage
-
-  2023-07-16 * Citibike
-      Expenses:Transportation:Biking           $ 11.68
-      Liabilities:Credit Card:Covantage
-
-  2023-07-17 * Easy Does It
-      Expenses:Food:Drinks                      $ 5.41
-      Liabilities:Credit Card:Covantage
-
-  2023-07-17 * Pilot Project
-      Expenses:Food:Drinks                     $ 19.94
-      Liabilities:Credit Card:Covantage
-
-  2023-07-17 * Paulie Gees
-      Expenses:Food:Drinks                      $ 9.63
-      Liabilities:Credit Card:Covantage
-
-  2023-07-17 * Taco & Burrito Express
-      Expenses:Food:Drinks                     $ 21.00
-      Liabilities:Credit Card:Covantage
-
-  2023-07-17 * Emporium
-      Expenses:Food:Drinks                     $ 30.00
-      Liabilities:Credit Card:Covantage
-
-  2023-07-17 * Dental Salon
-      Expenses:Personal:Health                $ 393.72
-      Liabilities:Credit Card:Covantage
-
-  2023-07-18 * Target
-      Expenses:Food:Snacks                      $ 5.76
-      Liabilities:Credit Card:Covantage
-
-  2023-07-19 * Divvy Bikes
-      Expenses:Transportation:Biking            $ 3.05
-      Liabilities:Credit Card:Covantage
-
-  2023-07-19 * Divvy Bikes
-      Expenses:Transportation:Biking            $ 3.61
-      Liabilities:Credit Card:Covantage
-
-  2023-07-19 * McDonald's
-      Expenses:Food:Fast Food                   $ 8.39
-      Liabilities:Credit Card:Covantage
-
-  2023-07-16 * 7/11
-      Expenses:Food:Snacks                      $ 7.79
-      Liabilities:Credit Card:Covantage
-
-  2023-07-08 * Dollar Tree
-      Expenses:Food:Snacks                     $ 11.07
-      Assets:Checking:Covantage
-
-  2023-07-09 * Yeti's
-      Expenses:Food:Fast Food                   $ 7.00
-      Assets:Checking:Covantage
-
-  2023-07-09 * IGA Gas
-      Expenses:Food:Snacks                      $ 6.68
-      Assets:Checking:Covantage
-
-  2023-07-09 * Microcenter
-      Expenses:Personal:Learning               $ 38.55
-      Assets:Checking:Covantage
-
-  2023-07-09 * Walgreens
-      Expenses:Food:Snacks                      $ 2.62
-      Assets:Checking:Covantage
-
-  2023-07-09 * Yeti's
-      Expenses:Food:Fast Food                   $ 0.87
-      Assets:Checking:Covantage
-
-  2023-07-09 * McDonald's
-      Expenses:Food:Fast Food                   $ 9.23
-      Assets:Checking:Covantage
-
-  2023-07-09 * Take 5
-      Expenses:Transportation:Repairs          $ 56.95
-      Assets:Checking:Covantage
-
-  2023-07-10 * Patagonia
-      Assets:Checking:Covantage               $ 125.62
-      Expenses:Personal:Clothes
-
-  2023-07-11 * GasBuddy
-      Expenses:Transportation:Gas              $ 13.43
-      Assets:Checking:Covantage
-
-  2023-07-11 * GasBuddy
-      Expenses:Transportation:Gas              $ 34.15
-      Assets:Checking:Covantage
-
-  2023-07-14 * Transfer
-      Assets:Checking:Covantage                $ 48.05
-      Assets:Checking:RipCo
-
-  2023-07-11 * Transfer
-      Assets:Checking:Park City                $ 48.05
-      Assets:Checking:Covantage
-
-  2023-07-12 * Transfer
-      Assets:Checking:Covantage               $ 187.80
-      Assets:Checking:Northwoods
-
-  2023-07-14 * Transfer
-      Assets:Checking:Covantage                 $ 4.93
-      Assets:Checking:RipCo
-
-  2023-07-14 * Transfer
-      Assets:Checking:Covantage               $ 198.18
-      Assets:Checking:RipCo
-
-  2023-07-15 * Brooke Janicki
-      Expenses:RE:Cottage:Cleaning            $ 120.00
-      Assets:Checking:Covantage
-
-  2023-07-19 * Transfer
-      Assets:Checking:RipCo                   $ 220.22
-      Assets:Checking:Covantage
-
-  2023-06-30 * Cash Back
-      Liabilities:Credit Card:RipCo             $ 1.25
-      Income:Extra
-
   2023-07-07 * Krist
       Expenses:Food:Snacks                      $ 4.79
       Liabilities:Credit Card:RipCo
@@ -1855,46 +1715,6 @@
   2023-07-07 * Dollar General
       Expenses:Food:Snacks                      $ 1.75
       Liabilities:Credit Card:RipCo
-
-  2023-07-08 * Krunchy Krispy
-      Expenses:Food:Fast Food                  $ 13.17
-      Liabilities:Credit Card:RipCo
-
-  2023-07-09 * Tin Lizzie's
-      Expenses:Food:Drinks                     $ 27.35
-      Liabilities:Credit Card:RipCo
-
-  2023-07-09 * Murphy's
-      Expenses:Food:Drinks                     $ 29.95
-      Liabilities:Credit Card:RipCo
-
-  2023-07-11 * Transfer
-      Liabilities:Credit Card:RipCo            $ 75.76
-      Assets:Checking:RipCo
-
-  2023-07-14 * Regal Cinemas
-      Expenses:Personal:Entertainment          $ 59.19
-      Liabilities:Credit Card:RipCo
-
-  2023-07-14 * Maison Pickle
-      Expenses:Food:Restaurants               $ 179.39
-      Liabilities:Credit Card:RipCo
-
-  2023-07-15 * Concentra
-      Expenses:Personal:Health                 $ 35.00
-      Liabilities:Credit Card:RipCo
-
-  2023-07-01 * Rent
-      Assets:Checking:RipCo                 $ 1,117.66
-      Income:RE:Condo:Rent
-
-  2023-07-01 * Interest
-      Assets:Checking:RipCo                     $ 0.66
-      Income:Extra
-
-  2023-07-16 * Amazon
-      Expenses:Personal:Learning              $ 354.00
-      Assets:Checking:RipCo
 
   2023-07-07 * Dividend
       Assets:Investments:HSA                     0.342 FXAIX @ $ 152.68
@@ -1924,22 +1744,6 @@
       Liabilities:Credit Card:Park City        $ 25.00
       Assets:Checking:Park City
 
-  2023-07-11 * Transfer
-      Liabilities:Credit Card:Park City       $ 184.00
-      Assets:Checking:Park City
-
-  2023-07-12 * Transfer
-      Liabilities:Credit Card:Park City        $ 48.05
-      Assets:Checking:Park City
-
-  2023-07-06 * DW
-      Assets:Checking:Park City                $ 25.00
-      Income:Extra
-
-  2023-07-06 * New Life Leatherworks
-      Expenses:Personal:Clothes               $ 120.50
-      Liabilities:Credit Card:Park City
-
   2023-07-07 * Walmart
       Expenses:Food:Groceries                  $ 48.00
       Liabilities:Credit Card:Park City
@@ -1960,6 +1764,66 @@
       Expenses:RE:Cottage:Repairs              $ 22.63
       Liabilities:Credit Card:Park City
 
+  2023-07-07 * Transfer
+      Liabilities:RE:Condo:Mortgage         $ 1,045.51
+      Assets:Checking:Northwoods
+
+  2023-07-08 * Extra
+      Liabilities:Credit Card:Covantage        $ 25.00
+      Income:Extra
+
+  2023-07-08 * Duane Reade
+      Expenses:Food:Snacks                      $ 7.14
+      Liabilities:Credit Card:Covantage
+
+  2023-07-08 * Dollar Tree
+      Expenses:Food:Snacks                     $ 11.07
+      Assets:Checking:Covantage
+
+  2023-07-08 * Krunchy Krispy
+      Expenses:Food:Fast Food                  $ 13.17
+      Liabilities:Credit Card:RipCo
+
+  2023-07-09 * Yeti's
+      Expenses:Food:Fast Food                   $ 7.00
+      Assets:Checking:Covantage
+
+  2023-07-09 * IGA Gas
+      Expenses:Food:Snacks                      $ 6.68
+      Assets:Checking:Covantage
+
+  2023-07-09 * Microcenter
+      Expenses:Personal:Learning               $ 38.55
+      Assets:Checking:Covantage
+
+  2023-07-09 * Walgreens
+      Expenses:Food:Snacks                      $ 2.62
+      Assets:Checking:Covantage
+
+  2023-07-09 * Yeti's
+      Expenses:Food:Fast Food                   $ 0.87
+      Assets:Checking:Covantage
+
+  2023-07-09 * McDonald's
+      Expenses:Food:Fast Food                   $ 9.23
+      Assets:Checking:Covantage
+
+  2023-07-09 * Take 5
+      Expenses:Transportation:Repairs          $ 56.95
+      Assets:Checking:Covantage
+
+  2023-07-09 * Tin Lizzie's
+      Expenses:Food:Drinks                     $ 27.35
+      Liabilities:Credit Card:RipCo
+
+  2023-07-09 * Murphy's
+      Expenses:Food:Drinks                     $ 29.95
+      Liabilities:Credit Card:RipCo
+
+  2023-07-10 * Patagonia
+      Assets:Checking:Covantage               $ 125.62
+      Expenses:Personal:Clothes
+
   2023-07-10 * BP
       Expenses:Transportation:Gas              $ 36.84
       Liabilities:Credit Card:Park City
@@ -1968,17 +1832,49 @@
       Expenses:Food:Fast Food                  $ 14.54
       Liabilities:Credit Card:Park City
 
-  2023-07-18 * FlexiSpot
-      Expenses:Gifts                          $ 196.45
-      Liabilities:Credit Card:Park City
-
-  2023-07-19 * 7/11
-      Expenses:Food:Snacks                      $ 8.88
-      Liabilities:Credit Card:Park City
-
   2023-07-10 * Crandon Water & Sewer
       Expenses:RE:Cottage:Utilities           $ 102.55
       Assets:Checking:Northwoods
+
+  2023-07-11 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 5.18
+      Liabilities:Credit Card:Covantage
+
+  2023-07-11 * GasBuddy
+      Expenses:Transportation:Gas              $ 13.43
+      Assets:Checking:Covantage
+
+  2023-07-11 * GasBuddy
+      Expenses:Transportation:Gas              $ 34.15
+      Assets:Checking:Covantage
+
+  2023-07-11 * Transfer
+      Assets:Checking:Park City                $ 48.05
+      Assets:Checking:Covantage
+
+  2023-07-11 * Transfer
+      Liabilities:Credit Card:RipCo            $ 75.76
+      Assets:Checking:RipCo
+
+  2023-07-11 * Transfer
+      Liabilities:Credit Card:Park City       $ 184.00
+      Assets:Checking:Park City
+
+  2023-07-12 * Dunkin Donuts
+      Expenses:Food:Fast Food                   $ 2.00
+      Liabilities:Credit Card:Covantage
+
+  2023-07-12 * Lyft
+      Expenses:Transportation:Ride Share       $ 99.75
+      Liabilities:Credit Card:Covantage
+
+  2023-07-12 * Transfer
+      Assets:Checking:Covantage               $ 187.80
+      Assets:Checking:Northwoods
+
+  2023-07-12 * Transfer
+      Liabilities:Credit Card:Park City        $ 48.05
+      Assets:Checking:Park City
 
   2023-07-13 * Spectrum
       Expenses:RE:Cottage:Utilities            $ 69.99
@@ -1988,21 +1884,137 @@
       Expenses:RE:Cottage:Utilities           $ 176.00
       Assets:Checking:Northwoods
 
-  2023-07-07 * Transfer
-      Liabilities:RE:Condo:Mortgage         $ 1,045.51
-      Assets:Checking:Northwoods
-
-  2023-07-06 * Transfer
-      Liabilities:RE:Condo:Mortgage           $ 184.94
-      Assets:Savings:UFB
-
   2023-07-13 * Transfer
       Liabilities:RE:Condo:Mortgage         $ 1,500.00
       Assets:Savings:UFB
 
+  2023-07-14 * Transfer
+      Assets:Checking:Covantage                $ 48.05
+      Assets:Checking:RipCo
+
+  2023-07-14 * Transfer
+      Assets:Checking:Covantage                 $ 4.93
+      Assets:Checking:RipCo
+
+  2023-07-14 * Transfer
+      Assets:Checking:Covantage               $ 198.18
+      Assets:Checking:RipCo
+
+  2023-07-14 * Regal Cinemas
+      Expenses:Personal:Entertainment          $ 59.19
+      Liabilities:Credit Card:RipCo
+
+  2023-07-14 * Maison Pickle
+      Expenses:Food:Restaurants               $ 179.39
+      Liabilities:Credit Card:RipCo
+
+  2023-07-15 * Brooke Janicki
+      Expenses:RE:Cottage:Cleaning            $ 120.00
+      Assets:Checking:Covantage
+
+  2023-07-15 * Concentra
+      Expenses:Personal:Health                 $ 35.00
+      Liabilities:Credit Card:RipCo
+
+  2023-07-16 * Glascotts
+      Expenses:Food:Drinks                     $ 27.49
+      Liabilities:Credit Card:Covantage
+
+  2023-07-16 * Dollar Tree
+      Expenses:Food:Snacks                      $ 2.76
+      Liabilities:Credit Card:Covantage
+
+  2023-07-16 * Lyft
+      Expenses:Transportation:Ride Share       $ 46.86
+      Liabilities:Credit Card:Covantage
+
+  2023-07-16 * Fairfield Inn & Suites
+      Expenses:Travel:Lodging                 $ 917.07
+      Liabilities:Credit Card:Covantage
+
+  2023-07-16 * 7/11
+      Expenses:Food:Snacks                      $ 5.57
+      Liabilities:Credit Card:Covantage
+
+  2023-07-16 * Citibike
+      Expenses:Transportation:Biking           $ 11.68
+      Liabilities:Credit Card:Covantage
+
+  2023-07-16 * 7/11
+      Expenses:Food:Snacks                      $ 7.79
+      Liabilities:Credit Card:Covantage
+
+  2023-07-16 * Amazon
+      Expenses:Personal:Learning              $ 354.00
+      Assets:Checking:RipCo
+
+  2023-07-17 * Easy Does It
+      Expenses:Food:Drinks                      $ 5.41
+      Liabilities:Credit Card:Covantage
+
+  2023-07-17 * Pilot Project
+      Expenses:Food:Drinks                     $ 19.94
+      Liabilities:Credit Card:Covantage
+
+  2023-07-17 * Paulie Gees
+      Expenses:Food:Drinks                      $ 9.63
+      Liabilities:Credit Card:Covantage
+
+  2023-07-17 * Taco & Burrito Express
+      Expenses:Food:Drinks                     $ 21.00
+      Liabilities:Credit Card:Covantage
+
+  2023-07-17 * Emporium
+      Expenses:Food:Drinks                     $ 30.00
+      Liabilities:Credit Card:Covantage
+
+  2023-07-17 * Dental Salon
+      Expenses:Personal:Health                $ 393.72
+      Liabilities:Credit Card:Covantage
+
+  2023-07-17 * Walgreens
+      Expenses:Personal:Health                 $ 25.49
+      Liabilities:Credit Card:Northwoods
+
+  2023-07-17 * Dunkin Donuts
+      Expenses:Food:Fast Food                   $ 1.77
+      Liabilities:Credit Card:Northwoods
+
+  2023-07-18 * Target
+      Expenses:Food:Snacks                      $ 5.76
+      Liabilities:Credit Card:Covantage
+
+  2023-07-18 * FlexiSpot
+      Expenses:Gifts                          $ 196.45
+      Liabilities:Credit Card:Park City
+
+  2023-07-19 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 3.05
+      Liabilities:Credit Card:Covantage
+
+  2023-07-19 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 3.61
+      Liabilities:Credit Card:Covantage
+
+  2023-07-19 * McDonald's
+      Expenses:Food:Fast Food                   $ 8.39
+      Liabilities:Credit Card:Covantage
+
+  2023-07-19 * Transfer
+      Assets:Checking:RipCo                   $ 220.22
+      Assets:Checking:Covantage
+
+  2023-07-19 * 7/11
+      Expenses:Food:Snacks                      $ 8.88
+      Liabilities:Credit Card:Park City
+
   2023-07-19 * VRBO
       Assets:Checking:Northwoods            $ 1,379.63
       Income:RE:Cottage:Rent
+
+  2023-07-20 * Chick-fil-a
+      Expenses:Food:Fast Food                   $ 8.84
+      Liabilities:Credit Card:Northwoods
 
   2023-07-21 * Jet Ski Lift
       Expenses:Personal:Boat                  $ 115.00
@@ -2043,17 +2055,17 @@
       Expenses:Travel:Lodging                $ -917.07
       Expenses:Transportation:Ride Share     $ -146.61
 
-  2023-07-17 * Walgreens
-      Expenses:Personal:Health                 $ 25.49
-      Liabilities:Credit Card:Northwoods
+  2023-07-21 * Emerald Loop
+      Expenses:Food:Restaurants               $ 115.28
+      Liabilities:Credit Card:Covantage
 
-  2023-07-17 * Dunkin Donuts
-      Expenses:Food:Fast Food                   $ 1.77
-      Liabilities:Credit Card:Northwoods
+  2023-07-21 * 7/11
+      Expenses:Food:Snacks                      $ 9.80
+      Liabilities:Credit Card:Covantage
 
-  2023-07-20 * Chick-fil-a
-      Expenses:Food:Fast Food                   $ 8.84
-      Liabilities:Credit Card:Northwoods
+  2023-07-22 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 5.00
+      Liabilities:Credit Card:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -2114,9 +2126,9 @@
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
          $ 37,539.25    Savings:UFB
-       $ -434,413.87  Liabilities
-         $ -2,332.67    Credit Card
-         $ -1,817.66      Covantage
+       $ -434,543.95  Liabilities
+         $ -2,462.75    Credit Card
+         $ -1,947.74      Covantage
             $ -36.10      Northwoods
            $ -205.33      Park City
            $ -273.58      RipCo
@@ -2124,7 +2136,7 @@
         $ -82,500.00      Condo:Mortgage
        $ -349,581.20      Cottage:Mortgage
 --------------------
-       $ -389,516.63
+       $ -389,646.71
            1.0 CONDO
            1.0 COTTA
        379.487 FSPSX
@@ -2156,9 +2168,9 @@
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
          $ 37,539.25    Savings:UFB
-       $ -434,413.87  Liabilities
-         $ -2,332.67    Credit Card
-         $ -1,817.66      Covantage
+       $ -434,543.95  Liabilities
+         $ -2,462.75    Credit Card
+         $ -1,947.74      Covantage
             $ -36.10      Northwoods
            $ -205.33      Park City
            $ -273.58      RipCo
@@ -2166,7 +2178,7 @@
         $ -82,500.00      Condo:Mortgage
        $ -349,581.20      Cottage:Mortgage
 --------------------
-        $ 482,732.19
+        $ 482,602.11
 #+end_example
 ** Spending
 *** Category Spending
@@ -2261,8 +2273,8 @@ June 01 2023   Expenses:Transportation:Ride Share$ 17.61
 July 01 2023   Expenses:Food:Drinks             $ 170.77
 July 01 2023   Expenses:Food:Fast Food          $ 82.14
 July 01 2023   Expenses:Food:Groceries          $ 48.00
-July 01 2023   Expenses:Food:Restaurants        $ 179.39
-July 01 2023   Expenses:Food:Snacks             $ 79.35
+July 01 2023   Expenses:Food:Restaurants        $ 294.67
+July 01 2023   Expenses:Food:Snacks             $ 89.15
 July 01 2023   Expenses:Gifts                   $ 196.45
 July 01 2023   Expenses:Personal:Boat           $ 2,115.00
 July 01 2023   Expenses:Personal:Clothes        $ 386.62
@@ -2280,7 +2292,7 @@ July 01 2023   Expenses:Taxes:Federal           $ 2,289.09
 July 01 2023   Expenses:Taxes:Illinois          $ 673.26
 July 01 2023   Expenses:Taxes:Medicare          $ 311.69
 July 01 2023   Expenses:Taxes:Social Security   $ 54.73
-July 01 2023   Expenses:Transportation:Biking   $ 24.58
+July 01 2023   Expenses:Transportation:Biking   $ 29.58
 July 01 2023   Expenses:Transportation:Gas      $ 484.42
 July 01 2023   Expenses:Transportation:Parking  $ 11.00
 July 01 2023   Expenses:Transportation:Repairs  $ 56.95
@@ -2294,7 +2306,7 @@ July 01 2023   Expenses:Transportation:Repairs  $ 56.95
 : April 2023      $ 5,455.64
 : May 2023        $ 8,591.06
 : June 2023       $ 9,673.92
-: July 2023       $ 7,550.09
+: July 2023       $ 7,680.17
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -2302,6 +2314,7 @@ July 01 2023   Expenses:Transportation:Repairs  $ 56.95
 #+end_src
 #+results:
 #+begin_example
+July 22 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 5.00
 July 21 2023   Jet Ski Lift                     Expenses:Personal:Boat           $ 115.00
 July 21 2023   SWAQ                             Income:SWAQ:Paycheck             $ -405.54
 July 21 2023   SWAQ                             Expenses:Taxes:Medicare          $ 5.88
@@ -2314,6 +2327,8 @@ July 21 2023   Stripe                           Expenses:Taxes:Illinois         
 July 21 2023   Aaron Jet Ski                    Expenses:Personal:Boat           $ 2,000.00
 July 21 2023   Expensify                        Expenses:Travel:Lodging          $ -917.07
 July 21 2023   Expensify                        Expenses:Transportation:Ride Share$ -146.61
+July 21 2023   Emerald Loop                     Expenses:Food:Restaurants        $ 115.28
+July 21 2023   7/11                             Expenses:Food:Snacks             $ 9.80
 July 20 2023   Chick-fil-a                      Expenses:Food:Fast Food          $ 8.84
 July 19 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 3.05
 July 19 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 3.61
