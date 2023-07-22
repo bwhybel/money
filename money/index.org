@@ -2016,6 +2016,10 @@
       Expenses:Food:Fast Food                   $ 8.84
       Liabilities:Credit Card:Northwoods
 
+  2023-07-20 * Parking
+      Expenses:Transportation:Parking           $ 7.00
+      Liabilities:Credit Card:Covantage
+
   2023-07-21 * Jet Ski Lift
       Expenses:Personal:Boat                  $ 115.00
       Assets:Checking:Covantage
@@ -2061,6 +2065,10 @@
 
   2023-07-21 * 7/11
       Expenses:Food:Snacks                      $ 9.80
+      Liabilities:Credit Card:Covantage
+
+  2023-07-21 * Regal Webster
+      Expenses:Food:Snacks                     $ 11.16
       Liabilities:Credit Card:Covantage
 
   2023-07-22 * Divvy Bikes
@@ -2126,9 +2134,9 @@
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
          $ 37,539.25    Savings:UFB
-       $ -434,543.95  Liabilities
-         $ -2,462.75    Credit Card
-         $ -1,947.74      Covantage
+       $ -434,562.11  Liabilities
+         $ -2,480.91    Credit Card
+         $ -1,965.90      Covantage
             $ -36.10      Northwoods
            $ -205.33      Park City
            $ -273.58      RipCo
@@ -2136,7 +2144,7 @@
         $ -82,500.00      Condo:Mortgage
        $ -349,581.20      Cottage:Mortgage
 --------------------
-       $ -389,646.71
+       $ -389,664.87
            1.0 CONDO
            1.0 COTTA
        379.487 FSPSX
@@ -2168,9 +2176,9 @@
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
          $ 37,539.25    Savings:UFB
-       $ -434,543.95  Liabilities
-         $ -2,462.75    Credit Card
-         $ -1,947.74      Covantage
+       $ -434,562.11  Liabilities
+         $ -2,480.91    Credit Card
+         $ -1,965.90      Covantage
             $ -36.10      Northwoods
            $ -205.33      Park City
            $ -273.58      RipCo
@@ -2178,7 +2186,7 @@
         $ -82,500.00      Condo:Mortgage
        $ -349,581.20      Cottage:Mortgage
 --------------------
-        $ 482,602.11
+        $ 482,583.95
 #+end_example
 ** Spending
 *** Category Spending
@@ -2274,7 +2282,7 @@ July 01 2023   Expenses:Food:Drinks             $ 170.77
 July 01 2023   Expenses:Food:Fast Food          $ 82.14
 July 01 2023   Expenses:Food:Groceries          $ 48.00
 July 01 2023   Expenses:Food:Restaurants        $ 294.67
-July 01 2023   Expenses:Food:Snacks             $ 89.15
+July 01 2023   Expenses:Food:Snacks             $ 100.31
 July 01 2023   Expenses:Gifts                   $ 196.45
 July 01 2023   Expenses:Personal:Boat           $ 2,115.00
 July 01 2023   Expenses:Personal:Clothes        $ 386.62
@@ -2294,7 +2302,7 @@ July 01 2023   Expenses:Taxes:Medicare          $ 311.69
 July 01 2023   Expenses:Taxes:Social Security   $ 54.73
 July 01 2023   Expenses:Transportation:Biking   $ 29.58
 July 01 2023   Expenses:Transportation:Gas      $ 484.42
-July 01 2023   Expenses:Transportation:Parking  $ 11.00
+July 01 2023   Expenses:Transportation:Parking  $ 18.00
 July 01 2023   Expenses:Transportation:Repairs  $ 56.95
 #+end_example
 *** Monthly Spending
@@ -2306,7 +2314,7 @@ July 01 2023   Expenses:Transportation:Repairs  $ 56.95
 : April 2023      $ 5,455.64
 : May 2023        $ 8,591.06
 : June 2023       $ 9,673.92
-: July 2023       $ 7,680.17
+: July 2023       $ 7,698.33
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -2329,7 +2337,9 @@ July 21 2023   Expensify                        Expenses:Travel:Lodging         
 July 21 2023   Expensify                        Expenses:Transportation:Ride Share$ -146.61
 July 21 2023   Emerald Loop                     Expenses:Food:Restaurants        $ 115.28
 July 21 2023   7/11                             Expenses:Food:Snacks             $ 9.80
+July 21 2023   Regal Webster                    Expenses:Food:Snacks             $ 11.16
 July 20 2023   Chick-fil-a                      Expenses:Food:Fast Food          $ 8.84
+July 20 2023   Parking                          Expenses:Transportation:Parking  $ 7.00
 July 19 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 3.05
 July 19 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 3.61
 July 19 2023   McDonald's                       Expenses:Food:Fast Food          $ 8.39
