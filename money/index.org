@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 07/22/2023 00:00:00 VTSAX $109.7700
-  P 07/22/2023 00:00:00 VTIAX $30.7700
-  P 07/22/2023 00:00:00 FSPSX $47.0900
-  P 07/22/2023 00:00:00 FXAIX $157.4500
-  P 07/22/2023 00:00:00 CONDO $250,000.00
-  P 07/22/2023 00:00:00 COTTA $400,000.00
+  P 08/09/2023 00:00:00 VTSAX $108.8200
+  P 08/09/2023 00:00:00 VTIAX $30.2500
+  P 08/09/2023 00:00:00 FSPSX $46.1300
+  P 08/09/2023 00:00:00 FXAIX $156.2800
+  P 08/09/2023 00:00:00 CONDO $250,000.00
+  P 08/09/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -2083,9 +2083,283 @@
       Expenses:Food:Fast Food                   $ 0.14
       Liabilities:Credit Card:Covantage
 
+  2023-07-24 * Transfer
+      Liabilities:RE:Condo:Mortgage         $ 1,539.25
+      Assets:Savings:UFB
+
   2023-07-25 * Bike
       Expenses:Transportation:Biking           $ 22.00
       Assets:Checking:Park City
+
+  2023-07-25 * Xfinity
+      Expenses:Housing:Utilities               $ 65.00
+      Assets:Checking:Park City
+
+  2023-07-26 * Transfer
+      Liabilities:Credit Card:Covantage     $ 1,967.22
+      Assets:Checking:Covantage
+
+  2023-07-26 * Boat Registration
+      Expenses:Personal:Boat                  $ 135.75
+      Expenses:Personal:Boat                    $ 2.72
+      Liabilities:Credit Card:Covantage
+
+  2023-07-26 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 3.83
+      Liabilities:Credit Card:Covantage
+
+  2023-07-27 * Transfer
+      Liabilities:Credit Card:Park City        $ 19.00
+      Assets:Checking:Park City
+
+  2023-07-28 * Culver's
+      Expenses:Food:Fast Food                  $ 13.73
+      Liabilities:Credit Card:Park City
+
+  2023-07-28 * 7/11
+      Expenses:Food:Snacks                      $ 7.90
+      Liabilities:Credit Card:Park City
+
+  2023-07-28 * Ducks Pizza
+      Expenses:Food:Restaurants                $ 36.88
+      Liabilities:Credit Card:Park City
+
+  2023-07-29 * Schaefer's IGA
+      Expenses:Food:Groceries                  $ 10.55
+      Assets:Checking:Covantage
+
+  2023-07-29 * BP
+      Expenses:Transporation:Gas               $ 25.39
+      Assets:Checking:Covantage
+
+  2023-07-29 * Dollar General
+      Expenses:Food:Snacks                     $ 12.19
+      Liabilities:Credit Card:Park City
+
+  2023-07-29 * Schaefer's IGA
+      Expenses:Food:Snacks                      $ 3.28
+      Liabilities:Credit Card:Park City
+
+  2023-07-29 * Schaefer's IGA
+      Expenses:Food:Groceries                  $ 71.32
+      Liabilities:Credit Card:Park City
+
+  2023-07-31 * VRBO
+      Assets:Checking:Covantage               $ 646.21
+      Income:RE:Cottage:Rent
+
+  2023-07-31 * Schaefer's IGA
+      Expenses:Food:Groceries                  $ 17.77
+      Assets:Checking:Covantage
+
+  2023-07-31 * Conway True Value
+      Expenses:RE:Cottage:Repairs              $ 17.40
+      Assets:Checking:Covantage
+
+  2023-07-31 * Transfer
+      Liabilities:Credit Card:Covantage       $ 231.18
+      Assets:Checking:Covantage
+
+  2023-07-31 * Interest
+      Assets:Checking:Covantage                 $ 0.17
+      Income:Extra
+
+  2023-07-31 * Athletic Greens
+      Expenses:Food:Groceries                  $ 88.88
+      Liabilities:Credit Card:Covantage
+
+  2023-08-01 * Transfer
+      Assets:Checking:Northwoods               $ 36.10
+      Assets:Checking:Covantage
+
+  2023-08-01 * Yeti's
+      Expenses:Food:Fast Food                  $ 22.84
+      Assets:Checking:Covantage
+
+  2023-08-01 * Jet Ski Lift
+      Expenses:Personal:Boat                  $ 585.00
+      Assets:Checking:Covantage
+
+  2023-08-01 * Transfer
+      Assets:Checking:Park City               $ 366.63
+      Assets:Checking:Covantage
+
+  2023-08-01 * Dollar General
+      Expenses:Food:Snacks                      $ 3.62
+      Assets:Checking:Covantage
+
+  2023-08-01 * Dollar General
+      Expenses:Food:Snacks                      $ 2.11
+      Assets:Checking:Covantage
+
+  2023-08-01 * Schaefer's IGA
+      Expenses:Food:Snacks                     $ 21.73
+      Assets:Checking:Covantage
+
+  2023-08-01 * Schaefer's IGA
+      Expenses:Food:Snacks                      $ 4.16
+      Assets:Checking:Covantage
+
+  2023-08-01 * Visible
+      Expenses:Personal:Communication          $ 35.00
+      Liabilities:Credit Card:Park City
+
+  2023-08-01 * Kass Property Management
+      Expenses:Housing:Rent                 $ 1,409.45
+      Assets:Checking:Park City
+
+  2023-08-01 * Comed
+      Expenses:Housing:Utilities               $ 71.00
+      Assets:Checking:Park City
+
+  2023-08-01 * Chase
+      Liabilities:RE:Cottage:Mortgage         $ 621.65
+      Expenses:RE:Cottage:Interest          $ 1,019.61
+      Expenses:RE:Cottage:Escrow              $ 864.60
+      Assets:Checking:Northwoods
+
+  2023-08-01 * Huntington
+      Liabilities:RE:Condo:Mortgage           $ 404.62
+      Expenses:RE:Condo:Interest              $ 253.00
+      Assets:Checking:RipCo
+
+  2023-08-01 * Rent
+      Assets:Checking:RipCo                 $ 1,142.66
+      Income:RE:Condo:Rent
+
+  2023-08-01 * Interest
+      Liabilities:Credit Card:RipCo             $ 3.51
+      Income:Extra
+
+  2023-08-02 * Dollar General
+      Expenses:Food:Snacks                      $ 2.74
+      Assets:Checking:Covantage
+
+  2023-08-02 * Geico
+      Expenses:RE:Condo:Insurance             $ 743.00
+      Liabilities:Credit Card:RipCo
+
+  2023-08-03 * Transfer
+      Liabilities:Credit Card:Northwoods       $ 36.10
+      Assets:Checking:Northwoods
+
+  2023-08-04 * SWAQ
+      Income:SWAQ:Paycheck                    $ -42.84
+      Expenses:Taxes:Medicare                   $ 0.62
+      Expenses:Taxes:Social Security            $ 2.65
+      Expenses:Taxes:Illinois                   $ 2.12
+      Assets:Checking:Covantage                $ 37.45
+
+  2023-08-04 * Krist Oil
+      Expenses:Food:Snacks                      $ 6.88
+      Assets:Checking:Covantage
+
+  2023-08-04 * Conway True Value
+      Expenses:Food:Snacks                      $ 7.06
+      Liabilities:Credit Card:Park City
+
+  2023-08-04 * Transfer
+      Liabilities:Credit Card:Park City       $ 296.18
+      Assets:Checking:Park City
+
+  2023-08-04 * Schaefer's IGA
+      Expenses:Food:Snacks                      $ 5.38
+      Liabilities:Credit Card:Park City
+
+  2023-08-04 * Stripe
+      Income:Stripe:Paycheck               $ -6,333.77
+      Expenses:Taxes:Federal                $ 1,138.41
+      Expenses:Taxes:Medicare                 $ 148.85
+      Expenses:Taxes:Illinois                 $ 313.52
+      Assets:Investments:401K                    3.091 FSPSX @ $ 46.1048204465
+      Assets:Investments:401K                    5.192 FXAIX @ $ 155.5392912173
+      Assets:Savings:UFB                    $ 1,532.92
+      Assets:Checking:Northwoods            $ 1,400.00
+      Assets:Checking:Park City               $ 850.00
+
+  2023-08-04 * Transfer
+      Liabilities:Credit Card:RipCo           $ 485.04
+      Assets:Checking:RipCo
+
+  2023-08-05 * Dollar General
+      Expenses:Food:Snacks                      $ 5.38
+      Assets:Checking:Covantage
+
+  2023-08-05 * Schaefer's IGA Gas
+      Expenses:Personal:Boat                   $ 23.46
+      Liabilities:Credit Card:Park City
+
+  2023-08-05 * Schaefer's IGA Gas
+      Expenses:Personal:Boat                   $ 18.98
+      Liabilities:Credit Card:Park City
+
+  2023-08-06 * 7/11
+      Expenses:Food:Snacks                      $ 5.61
+      Assets:Checking:Covantage
+
+  2023-08-06 * Conway True Value
+      Expenses:RE:Cottage:Repairs              $ 45.87
+      Liabilities:Credit Card:Park City
+
+  2023-08-06 * Schaefer's IGA
+      Expenses:Food:Snacks                      $ 1.61
+      Liabilities:Credit Card:Park City
+
+  2023-08-07 * Cleaning
+      Assets:Checking:Covantage               $ 100.00
+      Expenses:RE:Cottage:Cleaning
+
+  2023-08-07 * Interest
+      Assets:Checking:Covantage               $ 142.54
+      Income:Extra
+
+  2023-08-07 * 7/11
+      Expenses:Food:Snacks                      $ 4.63
+      Assets:Checking:Covantage
+
+  2023-08-07 * Transfer
+      Liabilities:RE:Condo:Mortgage           $ 556.13
+      Assets:Savings:UFB
+
+  2023-08-08 * Home Depot
+      Expenses:Food:Snacks                      $ 6.06
+      Assets:Checking:Covantage
+
+  2023-08-08 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 25.12
+      Assets:Checking:Covantage
+
+  2023-08-08 * 7/11
+      Expenses:Food:Snacks                      $ 3.31
+      Assets:Checking:Covantage
+
+  2023-08-08 * 7/11
+      Expenses:Food:Snacks                      $ 7.01
+      Assets:Checking:Covantage
+
+  2023-08-08 * Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 176.00
+      Assets:Checking:Northwoods
+
+  2023-08-09 * 7/11
+      Expenses:Food:Snacks                      $ 8.88
+      Assets:Checking:Covantage
+
+  2023-08-09 * Walgreens
+      Expenses:Food:Snacks                      $ 8.21
+      Assets:Checking:Covantage
+
+  2023-08-09 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 5.61
+      Assets:Checking:Covantage
+
+  2023-08-09 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.77
+      Assets:Checking:Covantage
+
+  2023-08-09 * StopAlong
+      Expenses:Food:Restaurants                $ 30.00
+      Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -2117,26 +2391,26 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 44,875.24
+         $ 39,880.38
            1.0 CONDO
            1.0 COTTA
-       379.487 FSPSX
-       578.067 FXAIX
+       382.578 FSPSX
+       583.259 FXAIX
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 7,335.99    Checking
-          $ 2,678.51      Covantage
-          $ 2,505.86      Northwoods
-          $ 1,494.00      Park City
+          $ 2,903.59    Checking
+            $ 171.97      Covantage
+          $ 1,224.00      Northwoods
+            $ 850.00      Park City
             $ 657.62      RipCo
-       379.487 FSPSX
-       578.067 FXAIX
+       382.578 FSPSX
+       583.259 FXAIX
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX    Investments
-       379.487 FSPSX
-       488.761 FXAIX      401K
+       382.578 FSPSX
+       493.953 FXAIX      401K
         89.306 FXAIX      HSA
        578.148 VTIAX
        723.588 VTSAX      IRA
@@ -2145,22 +2419,20 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 37,539.25    Savings:UFB
-       $ -434,563.43  Liabilities
-         $ -2,482.23    Credit Card
-         $ -1,967.22      Covantage
-            $ -36.10      Northwoods
-           $ -205.33      Park City
-           $ -273.58      RipCo
-       $ -432,081.20    RE
-        $ -82,500.00      Condo:Mortgage
-       $ -349,581.20      Cottage:Mortgage
+         $ 36,976.79    Savings:UFB
+       $ -429,660.39  Liabilities
+           $ -700.84    Credit Card
+           $ -172.81      Park City
+           $ -528.03      RipCo
+       $ -428,959.55    RE
+        $ -80,000.00      Condo:Mortgage
+       $ -348,959.55      Cottage:Mortgage
 --------------------
-       $ -389,688.19
+       $ -389,780.01
            1.0 CONDO
            1.0 COTTA
-       379.487 FSPSX
-       578.067 FXAIX
+       382.578 FSPSX
+       583.259 FXAIX
          802.0 STRIP
        578.148 VTIAX
        723.588 VTSAX
@@ -2173,32 +2445,30 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 917,124.06  Assets
-          $ 7,335.99    Checking
-          $ 2,678.51      Covantage
-          $ 2,505.86      Northwoods
-          $ 1,494.00      Park City
+        $ 911,054.50  Assets
+          $ 2,903.59    Checking
+            $ 171.97      Covantage
+          $ 1,224.00      Northwoods
+            $ 850.00      Park City
             $ 657.62      RipCo
-        $ 222,248.82    Investments
-         $ 94,825.46      401K
-         $ 14,061.23      HSA
-         $ 97,217.87      IRA
+        $ 221,174.12    Investments
+         $ 94,843.30      401K
+         $ 13,956.74      HSA
+         $ 96,229.82      IRA
          $ 16,144.26      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
-         $ 37,539.25    Savings:UFB
-       $ -434,563.43  Liabilities
-         $ -2,482.23    Credit Card
-         $ -1,967.22      Covantage
-            $ -36.10      Northwoods
-           $ -205.33      Park City
-           $ -273.58      RipCo
-       $ -432,081.20    RE
-        $ -82,500.00      Condo:Mortgage
-       $ -349,581.20      Cottage:Mortgage
+         $ 36,976.79    Savings:UFB
+       $ -429,660.39  Liabilities
+           $ -700.84    Credit Card
+           $ -172.81      Park City
+           $ -528.03      RipCo
+       $ -428,959.55    RE
+        $ -80,000.00      Condo:Mortgage
+       $ -348,959.55      Cottage:Mortgage
 --------------------
-        $ 482,560.63
+        $ 481,394.11
 #+end_example
 ** Spending
 *** Category Spending
@@ -2291,12 +2561,13 @@ June 01 2023   Expenses:Transportation:Gas      $ 81.32
 June 01 2023   Expenses:Transportation:Repairs  $ 756.78
 June 01 2023   Expenses:Transportation:Ride Share$ 17.61
 July 01 2023   Expenses:Food:Drinks             $ 170.77
-July 01 2023   Expenses:Food:Fast Food          $ 82.28
-July 01 2023   Expenses:Food:Groceries          $ 48.00
-July 01 2023   Expenses:Food:Restaurants        $ 294.67
-July 01 2023   Expenses:Food:Snacks             $ 100.31
+July 01 2023   Expenses:Food:Fast Food          $ 96.01
+July 01 2023   Expenses:Food:Groceries          $ 236.52
+July 01 2023   Expenses:Food:Restaurants        $ 331.55
+July 01 2023   Expenses:Food:Snacks             $ 123.68
 July 01 2023   Expenses:Gifts                   $ 196.45
-July 01 2023   Expenses:Personal:Boat           $ 2,115.00
+July 01 2023   Expenses:Housing:Utilities       $ 65.00
+July 01 2023   Expenses:Personal:Boat           $ 2,253.47
 July 01 2023   Expenses:Personal:Clothes        $ 386.62
 July 01 2023   Expenses:Personal:Communication  $ 35.00
 July 01 2023   Expenses:Personal:Entertainment  $ 59.19
@@ -2306,16 +2577,37 @@ July 01 2023   Expenses:RE:Condo:Interest       $ 267.56
 July 01 2023   Expenses:RE:Cottage:Cleaning     $ 120.00
 July 01 2023   Expenses:RE:Cottage:Escrow       $ 864.60
 July 01 2023   Expenses:RE:Cottage:Interest     $ 1,021.42
-July 01 2023   Expenses:RE:Cottage:Repairs      $ 22.63
+July 01 2023   Expenses:RE:Cottage:Repairs      $ 40.03
 July 01 2023   Expenses:RE:Cottage:Utilities    $ 348.54
 July 01 2023   Expenses:Taxes:Federal           $ 2,289.09
 July 01 2023   Expenses:Taxes:Illinois          $ 673.26
 July 01 2023   Expenses:Taxes:Medicare          $ 311.69
 July 01 2023   Expenses:Taxes:Social Security   $ 54.73
-July 01 2023   Expenses:Transportation:Biking   $ 52.76
+July 01 2023   Expenses:Transporation:Gas       $ 25.39
+July 01 2023   Expenses:Transportation:Biking   $ 56.59
 July 01 2023   Expenses:Transportation:Gas      $ 484.42
 July 01 2023   Expenses:Transportation:Parking  $ 18.00
 July 01 2023   Expenses:Transportation:Repairs  $ 56.95
+August 01 2023 Expenses:Food:Fast Food          $ 22.84
+August 01 2023 Expenses:Food:Restaurants        $ 30.00
+August 01 2023 Expenses:Food:Snacks             $ 104.38
+August 01 2023 Expenses:Housing:Rent            $ 1,409.45
+August 01 2023 Expenses:Housing:Utilities       $ 71.00
+August 01 2023 Expenses:Personal:Boat           $ 627.44
+August 01 2023 Expenses:Personal:Communication  $ 35.00
+August 01 2023 Expenses:RE:Condo:Insurance      $ 743.00
+August 01 2023 Expenses:RE:Condo:Interest       $ 253.00
+August 01 2023 Expenses:RE:Condo:Repairs        $ 25.12
+August 01 2023 Expenses:RE:Cottage:Cleaning     $ -100.00
+August 01 2023 Expenses:RE:Cottage:Escrow       $ 864.60
+August 01 2023 Expenses:RE:Cottage:Interest     $ 1,019.61
+August 01 2023 Expenses:RE:Cottage:Repairs      $ 45.87
+August 01 2023 Expenses:RE:Cottage:Utilities    $ 176.00
+August 01 2023 Expenses:Taxes:Federal           $ 1,138.41
+August 01 2023 Expenses:Taxes:Illinois          $ 315.64
+August 01 2023 Expenses:Taxes:Medicare          $ 149.47
+August 01 2023 Expenses:Taxes:Social Security   $ 2.65
+August 01 2023 Expenses:Transportation:Biking   $ 7.38
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-15(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -2326,7 +2618,8 @@ July 01 2023   Expenses:Transportation:Repairs  $ 56.95
 : April 2023      $ 5,455.64
 : May 2023        $ 8,591.06
 : June 2023       $ 9,673.92
-: July 2023       $ 7,721.65
+: July 2023       $ 8,234.24
+: August 2023     $ 5,334.69
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -2334,7 +2627,70 @@ July 01 2023   Expenses:Transportation:Repairs  $ 56.95
 #+end_src
 #+results:
 #+begin_example
+August 09 2023 7/11                             Expenses:Food:Snacks             $ 8.88
+August 09 2023 Walgreens                        Expenses:Food:Snacks             $ 8.21
+August 09 2023 Divvy Bikes                      Expenses:Transportation:Biking   $ 5.61
+August 09 2023 Divvy Bikes                      Expenses:Transportation:Biking   $ 1.77
+August 09 2023 StopAlong                        Expenses:Food:Restaurants        $ 30.00
+August 08 2023 Home Depot                       Expenses:Food:Snacks             $ 6.06
+August 08 2023 Home Depot                       Expenses:RE:Condo:Repairs        $ 25.12
+August 08 2023 7/11                             Expenses:Food:Snacks             $ 3.31
+August 08 2023 7/11                             Expenses:Food:Snacks             $ 7.01
+August 08 2023 Wisconsin Public Service         Expenses:RE:Cottage:Utilities    $ 176.00
+August 07 2023 Cleaning                         Expenses:RE:Cottage:Cleaning     $ -100.00
+August 07 2023 Interest                         Income:Extra                     $ -142.54
+August 07 2023 7/11                             Expenses:Food:Snacks             $ 4.63
+August 06 2023 7/11                             Expenses:Food:Snacks             $ 5.61
+August 06 2023 Conway True Value                Expenses:RE:Cottage:Repairs      $ 45.87
+August 06 2023 Schaefer's IGA                   Expenses:Food:Snacks             $ 1.61
+August 05 2023 Dollar General                   Expenses:Food:Snacks             $ 5.38
+August 05 2023 Schaefer's IGA Gas               Expenses:Personal:Boat           $ 23.46
+August 05 2023 Schaefer's IGA Gas               Expenses:Personal:Boat           $ 18.98
+August 04 2023 SWAQ                             Income:SWAQ:Paycheck             $ -42.84
+August 04 2023 SWAQ                             Expenses:Taxes:Medicare          $ 0.62
+August 04 2023 SWAQ                             Expenses:Taxes:Social Security   $ 2.65
+August 04 2023 SWAQ                             Expenses:Taxes:Illinois          $ 2.12
+August 04 2023 Krist Oil                        Expenses:Food:Snacks             $ 6.88
+August 04 2023 Conway True Value                Expenses:Food:Snacks             $ 7.06
+August 04 2023 Schaefer's IGA                   Expenses:Food:Snacks             $ 5.38
+August 04 2023 Stripe                           Income:Stripe:Paycheck           $ -6,333.77
+August 04 2023 Stripe                           Expenses:Taxes:Federal           $ 1,138.41
+August 04 2023 Stripe                           Expenses:Taxes:Medicare          $ 148.85
+August 04 2023 Stripe                           Expenses:Taxes:Illinois          $ 313.52
+August 02 2023 Dollar General                   Expenses:Food:Snacks             $ 2.74
+August 02 2023 Geico                            Expenses:RE:Condo:Insurance      $ 743.00
+August 01 2023 Yeti's                           Expenses:Food:Fast Food          $ 22.84
+August 01 2023 Jet Ski Lift                     Expenses:Personal:Boat           $ 585.00
+August 01 2023 Dollar General                   Expenses:Food:Snacks             $ 3.62
+August 01 2023 Dollar General                   Expenses:Food:Snacks             $ 2.11
+August 01 2023 Schaefer's IGA                   Expenses:Food:Snacks             $ 21.73
+August 01 2023 Schaefer's IGA                   Expenses:Food:Snacks             $ 4.16
+August 01 2023 Visible                          Expenses:Personal:Communication  $ 35.00
+August 01 2023 Kass Property Management         Expenses:Housing:Rent            $ 1,409.45
+August 01 2023 Comed                            Expenses:Housing:Utilities       $ 71.00
+August 01 2023 Chase                            Expenses:RE:Cottage:Interest     $ 1,019.61
+August 01 2023 Chase                            Expenses:RE:Cottage:Escrow       $ 864.60
+August 01 2023 Huntington                       Expenses:RE:Condo:Interest       $ 253.00
+August 01 2023 Rent                             Income:RE:Condo:Rent             $ -1,142.66
+August 01 2023 Interest                         Income:Extra                     $ -3.51
+July 31 2023   VRBO                             Income:RE:Cottage:Rent           $ -646.21
+July 31 2023   Schaefer's IGA                   Expenses:Food:Groceries          $ 17.77
+July 31 2023   Conway True Value                Expenses:RE:Cottage:Repairs      $ 17.40
+July 31 2023   Interest                         Income:Extra                     $ -0.17
+July 31 2023   Athletic Greens                  Expenses:Food:Groceries          $ 88.88
+July 29 2023   Schaefer's IGA                   Expenses:Food:Groceries          $ 10.55
+July 29 2023   BP                               Expenses:Transporation:Gas       $ 25.39
+July 29 2023   Dollar General                   Expenses:Food:Snacks             $ 12.19
+July 29 2023   Schaefer's IGA                   Expenses:Food:Snacks             $ 3.28
+July 29 2023   Schaefer's IGA                   Expenses:Food:Groceries          $ 71.32
+July 28 2023   Culver's                         Expenses:Food:Fast Food          $ 13.73
+July 28 2023   7/11                             Expenses:Food:Snacks             $ 7.90
+July 28 2023   Ducks Pizza                      Expenses:Food:Restaurants        $ 36.88
+July 26 2023   Boat Registration                Expenses:Personal:Boat           $ 135.75
+July 26 2023   Boat Registration                Expenses:Personal:Boat           $ 2.72
+July 26 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 3.83
 July 25 2023   Bike                             Expenses:Transportation:Biking   $ 22.00
+July 25 2023   Xfinity                          Expenses:Housing:Utilities       $ 65.00
 July 23 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 1.18
 July 23 2023   Chick-fil-a                      Expenses:Food:Fast Food          $ 0.14
 July 22 2023   Divvy Bikes                      Expenses:Transportation:Biking   $ 5.00
