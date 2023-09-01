@@ -2421,6 +2421,13 @@
       Expenses:Food:Fast Food                  $ 24.00
       Assets:Checking:Northwoods
 
+  2023-08-15 * Stripe
+      Income:Stripe:RSU                   $ -25,967.70
+      Expenses:Taxes:Federal                $ 5,733.63
+      Expenses:Taxes:Medicare                 $ 610.24
+      Expenses:Taxes:Illinois               $ 1,285.40
+      Assets:Investments:RSU                     911.0 STRIP @ $ 20.13
+
   2023-08-16 * VRBO
       Assets:Checking:Northwoods              $ 875.34
       Income:RE:Cottage:Rent
@@ -2602,6 +2609,18 @@
       Expenses:Housing:Utilities               $ 52.00
       Assets:Checking:Park City
 
+  2023-08-31 * Interest
+      Assets:Savings:UFB                      $ 147.01
+      Income:Extra
+
+  2023-08-31 * 7/11
+      Expenses:Food:Snacks                    $ 100.00
+      Assets:Savings:UFB
+
+  2023-08-31 * Transfer
+      Assets:Savings:Park City             $ 17,900.00
+      Assets:Savings:UFB
+
   2023-09-01 * Stripe
       Income:Stripe:Paycheck               $ -5,700.39
       Income:Stripe:Paycheck                 $ -633.38
@@ -2628,20 +2647,8 @@
       Assets:Checking:Northwoods            $ 3,395.92
       Income:RE:Cottage:Rent
 
-  2023-08-31 * Interest
-      Assets:Savings:UFB                      $ 147.01
-      Income:Extra
-
-  2023-08-31 * 7/11
-      Expenses:Food:Snacks                    $ 100.00
-      Assets:Savings:UFB
-
   2023-09-01 * Transfer
       Assets:Savings:Park City             $ 18,000.00
-      Assets:Savings:UFB
-
-  2023-08-31 * Transfer
-      Assets:Savings:Park City             $ 17,900.00
       Assets:Savings:UFB
 
   2023-09-01 * Transfer
@@ -2683,7 +2690,7 @@
            1.0 COTTA
        385.777 FSPSX
        590.671 FXAIX
-         802.0 STRIP
+       1,713.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
           $ 8,106.55    Checking
@@ -2693,7 +2700,7 @@
             $ 950.07
        385.777 FSPSX
        590.671 FXAIX
-         802.0 STRIP
+       1,713.0 STRIP
        578.148 VTIAX
        723.588 VTSAX    Investments
             $ 950.07
@@ -2702,7 +2709,7 @@
         91.403 FXAIX      HSA
        578.148 VTIAX
        723.588 VTSAX      IRA
-         802.0 STRIP      RSU
+       1,713.0 STRIP      RSU
            1.0 CONDO
            1.0 COTTA    RE
            1.0 CONDO      Condo
@@ -2719,7 +2726,7 @@
            1.0 COTTA
        385.777 FSPSX
        590.671 FXAIX
-         802.0 STRIP
+       1,713.0 STRIP
        578.148 VTIAX
        723.588 VTSAX
 #+end_example
@@ -2731,16 +2738,16 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 919,636.99  Assets
+        $ 937,975.42  Assets
           $ 8,106.55    Checking
             $ 899.94      Covantage
           $ 4,920.17      Northwoods
           $ 2,286.44      Park City
-        $ 223,850.50    Investments
+        $ 242,188.93    Investments
          $ 97,033.69      401K
          $ 14,355.76      HSA
          $ 96,316.80      IRA
-         $ 16,144.26      RSU
+         $ 34,482.69      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
@@ -2751,7 +2758,7 @@
         $ -78,589.25    Condo:Mortgage
        $ -348,336.09    Cottage:Mortgage
 --------------------
-        $ 492,711.65
+        $ 511,050.08
 #+end_example
 ** Spending
 *** Category Spending
@@ -2890,9 +2897,9 @@ August 01 2023 Expenses:RE:Cottage:Interest     $ 1,019.61
 August 01 2023 Expenses:RE:Cottage:Lawncare     $ 50.00
 August 01 2023 Expenses:RE:Cottage:Repairs      $ 45.87
 August 01 2023 Expenses:RE:Cottage:Utilities    $ 260.99
-August 01 2023 Expenses:Taxes:Federal           $ 2,335.61
-August 01 2023 Expenses:Taxes:Illinois          $ 641.29
-August 01 2023 Expenses:Taxes:Medicare          $ 304.07
+August 01 2023 Expenses:Taxes:Federal           $ 8,069.24
+August 01 2023 Expenses:Taxes:Illinois          $ 1,926.69
+August 01 2023 Expenses:Taxes:Medicare          $ 914.31
 August 01 2023 Expenses:Taxes:Social Security   $ 2.65
 August 01 2023 Expenses:Transportation:Biking   $ 90.04
 August 01 2023 Expenses:Transportation:Gas      $ 38.40
@@ -2981,6 +2988,10 @@ August 18 2023 Stripe                           Income:Stripe:HSA               
 August 16 2023 VRBO                             Income:RE:Cottage:Rent           $ -875.34
 August 16 2023 Peoples Gas                      Expenses:Housing:Utilities       $ 46.56
 August 16 2023 Xfinity                          Expenses:Housing:Utilities       $ 65.00
+August 15 2023 Stripe                           Income:Stripe:RSU                $ -25,967.70
+August 15 2023 Stripe                           Expenses:Taxes:Federal           $ 5,733.63
+August 15 2023 Stripe                           Expenses:Taxes:Medicare          $ 610.24
+August 15 2023 Stripe                           Expenses:Taxes:Illinois          $ 1,285.40
 August 14 2023 Spectrum                         Expenses:RE:Cottage:Utilities    $ 84.99
 August 14 2023 One                              Expenses:Food:Fast Food          $ 24.00
 August 13 2023 Venmo                            Expenses:Food:Snacks             $ 55.00
