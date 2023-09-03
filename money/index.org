@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 09/01/2023 00:00:00 VTSAX $109.1000
-  P 09/01/2023 00:00:00 VTIAX $30.0500
-  P 09/01/2023 00:00:00 FSPSX $45.8000
-  P 09/01/2023 00:00:00 FXAIX $157.0600
-  P 09/01/2023 00:00:00 CONDO $250,000.00
-  P 09/01/2023 00:00:00 COTTA $400,000.00
+  P 09/03/2023 00:00:00 VTSAX $109.0000
+  P 09/03/2023 00:00:00 VTIAX $29.8800
+  P 09/03/2023 00:00:00 FSPSX $45.6400
+  P 09/03/2023 00:00:00 FXAIX $156.8400
+  P 09/03/2023 00:00:00 CONDO $250,000.00
+  P 09/03/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -2630,7 +2630,8 @@
       Assets:Savings:UFB                    $ 1,532.93
       Assets:Checking:Northwoods            $ 1,400.00
       Assets:Checking:Park City               $ 850.00
-      Assets:Investments:401K                 $ 950.07
+      Assets:Investments:401K                    3.129 FSPSX @ $ 45.5449025248
+      Assets:Investments:401K                    5.139 FXAIX @ $ 157.1434131154
 
   2023-09-01 * Huntington
       Liabilities:RE:Condo:Mortgage           $ 410.75
@@ -2654,6 +2655,30 @@
   2023-09-01 * Transfer
       Assets:Savings:Park City                $ 100.00
       Assets:Checking:Park City
+
+  2023-09-01 * 7/11
+      Expenses:Food:Snacks                     $ 12.21
+      Assets:Checking:Covantage
+
+  2023-09-01 * Apple Cash
+      Expenses:Food:Snacks                     $ 50.00
+      Assets:Checking:Covantage
+
+  2023-09-01 * Cubs
+      Expenses:Personal:Entertainment          $ 46.57
+      Assets:Checking:Covantage
+
+  2023-09-01 * Sure Dry
+      Expenses:RE:Cottage:Repairs             $ 159.00
+      Assets:Checking:Covantage
+
+  2023-09-01 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 5.87
+      Assets:Checking:Covantage
+
+  2023-09-02 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 9.58
+      Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -2685,27 +2710,25 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 46,736.56
+         $ 45,503.26
            1.0 CONDO
            1.0 COTTA
-       385.777 FSPSX
-       590.671 FXAIX
+       388.906 FSPSX
+       595.810 FXAIX
        1,713.0 STRIP
        578.148 VTIAX
        723.588 VTSAX  Assets
-          $ 8,106.55    Checking
-            $ 899.94      Covantage
+          $ 7,823.32    Checking
+            $ 616.71      Covantage
           $ 4,920.17      Northwoods
           $ 2,286.44      Park City
-            $ 950.07
-       385.777 FSPSX
-       590.671 FXAIX
+       388.906 FSPSX
+       595.810 FXAIX
        1,713.0 STRIP
        578.148 VTIAX
        723.588 VTSAX    Investments
-            $ 950.07
-       385.777 FSPSX
-       499.268 FXAIX      401K
+       388.906 FSPSX
+       504.407 FXAIX      401K
         91.403 FXAIX      HSA
        578.148 VTIAX
        723.588 VTSAX      IRA
@@ -2721,11 +2744,11 @@
         $ -78,589.25    Condo:Mortgage
        $ -348,336.09    Cottage:Mortgage
 --------------------
-       $ -380,188.78
+       $ -381,422.08
            1.0 CONDO
            1.0 COTTA
-       385.777 FSPSX
-       590.671 FXAIX
+       388.906 FSPSX
+       595.810 FXAIX
        1,713.0 STRIP
        578.148 VTIAX
        723.588 VTSAX
@@ -2738,15 +2761,15 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 937,975.42  Assets
-          $ 8,106.55    Checking
-            $ 899.94      Covantage
+        $ 937,328.61  Assets
+          $ 7,823.32    Checking
+            $ 616.71      Covantage
           $ 4,920.17      Northwoods
           $ 2,286.44      Park City
-        $ 242,188.93    Investments
-         $ 97,033.69      401K
-         $ 14,355.76      HSA
-         $ 96,316.80      IRA
+        $ 241,825.35    Investments
+         $ 96,860.86      401K
+         $ 14,335.65      HSA
+         $ 96,146.15      IRA
          $ 34,482.69      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
@@ -2758,7 +2781,7 @@
         $ -78,589.25    Condo:Mortgage
        $ -348,336.09    Cottage:Mortgage
 --------------------
-        $ 511,050.08
+        $ 510,403.27
 #+end_example
 ** Spending
 *** Category Spending
@@ -2904,12 +2927,16 @@ August 01 2023 Expenses:Taxes:Social Security   $ 2.65
 August 01 2023 Expenses:Transportation:Biking   $ 90.04
 August 01 2023 Expenses:Transportation:Gas      $ 38.40
 August 01 2023 Expenses:Transportation:Parking  $ 300.00
+September 01 2023Expenses:Food:Snacks             $ 62.21
+September 01 2023Expenses:Personal:Entertainment  $ 46.57
 September 01 2023Expenses:RE:Condo:Interest       $ 246.87
 September 01 2023Expenses:RE:Cottage:Escrow       $ 864.60
 September 01 2023Expenses:RE:Cottage:Interest     $ 1,017.80
+September 01 2023Expenses:RE:Cottage:Repairs      $ 159.00
 September 01 2023Expenses:Taxes:Federal           $ 1,138.41
 September 01 2023Expenses:Taxes:Illinois          $ 313.52
 September 01 2023Expenses:Taxes:Medicare          $ 148.84
+September 01 2023Expenses:Transportation:Biking   $ 15.45
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-15(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -2922,7 +2949,7 @@ September 01 2023Expenses:Taxes:Medicare          $ 148.84
 : June 2023       $ 9,673.92
 : July 2023       $ 8,234.24
 : August 2023     $ 7,336.03
-: September 2023  $ 2,129.27
+: September 2023  $ 2,412.50
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -2930,6 +2957,7 @@ September 01 2023Expenses:Taxes:Medicare          $ 148.84
 #+end_src
 #+results:
 #+begin_example
+September 02 2023Divvy Bikes                      Expenses:Transportation:Biking   $ 9.58
 September 01 2023Stripe                           Income:Stripe:Paycheck           $ -5,700.39
 September 01 2023Stripe                           Income:Stripe:Paycheck           $ -633.38
 September 01 2023Stripe                           Expenses:Taxes:Federal           $ 1,138.41
@@ -2939,6 +2967,11 @@ September 01 2023Huntington                       Expenses:RE:Condo:Interest    
 September 01 2023Chase                            Expenses:RE:Cottage:Interest     $ 1,017.80
 September 01 2023Chase                            Expenses:RE:Cottage:Escrow       $ 864.60
 September 01 2023VRBO                             Income:RE:Cottage:Rent           $ -3,395.92
+September 01 20237/11                             Expenses:Food:Snacks             $ 12.21
+September 01 2023Apple Cash                       Expenses:Food:Snacks             $ 50.00
+September 01 2023Cubs                             Expenses:Personal:Entertainment  $ 46.57
+September 01 2023Sure Dry                         Expenses:RE:Cottage:Repairs      $ 159.00
+September 01 2023Divvy Bikes                      Expenses:Transportation:Biking   $ 5.87
 August 31 2023 Divvy Bikes                      Expenses:Transportation:Biking   $ 9.73
 August 31 2023 Divvy Bikes                      Expenses:Transportation:Biking   $ 3.34
 August 31 2023 Divvy Bikes                      Expenses:Transportation:Biking   $ 1.75
