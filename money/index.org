@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 09/08/2023 00:00:00 VTSAX $108.0100
-  P 09/08/2023 00:00:00 VTIAX $29.6800
-  P 09/08/2023 00:00:00 FSPSX $45.1300
-  P 09/08/2023 00:00:00 FXAIX $155.3900
-  P 09/08/2023 00:00:00 CONDO $250,000.00
-  P 09/08/2023 00:00:00 COTTA $400,000.00
+  P 09/09/2023 00:00:00 VTSAX $107.6300
+  P 09/09/2023 00:00:00 VTIAX $29.5000
+  P 09/09/2023 00:00:00 FSPSX $44.9900
+  P 09/09/2023 00:00:00 FXAIX $154.9200
+  P 09/09/2023 00:00:00 CONDO $250,000.00
+  P 09/09/2023 00:00:00 COTTA $400,000.00
 #+end_src
 
 ** Transactions
@@ -2784,6 +2784,26 @@
   2023-09-08 * Divvy Bikes
       Expenses:Transportation:Biking            $ 4.72
       Assets:Checking:Covantage
+
+  2023-09-08 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 3.81
+      Assets:Checking:Covantage
+
+  2023-09-09 * Transfer
+      Liabilities:RE:Condo:Mortgage           $ 460.04
+      Assets:Checking:RipCo
+
+  2023-09-09 * Brooke Janicki
+      Expenses:RE:Cottage:Cleaning            $ 360.00
+      Assets:Checking:Covantage
+
+  2023-09-09 * Transfer
+      Assets:Savings:Covantage                 $ 50.00
+      Assets:Checking:Covantage
+
+  2023-09-09 * Food
+      Assets:Checking:Covantage                $ 39.73
+      Expenses:Food:Snacks
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -2815,7 +2835,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 41,339.97
+         $ 40,555.85
            1.0 CONDO
            1.0 COTTA
        388.906 FSPSX
@@ -2823,11 +2843,11 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 5,339.97    Checking
-          $ 2,001.28      Covantage
+          $ 4,505.85    Checking
+          $ 1,627.20      Covantage
           $ 1,379.04      Northwoods
             $ 841.99      Park City
-          $ 1,117.66      RipCo
+            $ 657.62      RipCo
        388.906 FSPSX
        595.810 FXAIX
        1,713.0 STRIP
@@ -2843,12 +2863,14 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 36,000.00    Savings:Park City
-       $ -423,836.09  Liabilities:RE
-        $ -75,500.00    Condo:Mortgage
+         $ 36,050.00    Savings
+             $ 50.00      Covantage
+         $ 36,000.00      Park City
+       $ -423,376.05  Liabilities:RE
+        $ -75,039.96    Condo:Mortgage
        $ -348,336.09    Cottage:Mortgage
 --------------------
-       $ -382,496.12
+       $ -382,820.20
            1.0 CONDO
            1.0 COTTA
        388.906 FSPSX
@@ -2865,26 +2887,28 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 931,751.97  Assets
-          $ 5,339.97    Checking
-          $ 2,001.28      Covantage
+        $ 930,252.18  Assets
+          $ 4,505.85    Checking
+          $ 1,627.20      Covantage
           $ 1,379.04      Northwoods
             $ 841.99      Park City
-          $ 1,117.66      RipCo
-        $ 240,412.00    Investments
-         $ 95,931.13      401K
-         $ 14,203.11      HSA
-         $ 95,795.06      IRA
+            $ 657.62      RipCo
+        $ 239,696.33    Investments
+         $ 95,639.61      401K
+         $ 14,160.15      HSA
+         $ 95,413.87      IRA
          $ 34,482.69      RSU
         $ 650,000.00    RE
         $ 250,000.00      Condo
         $ 400,000.00      Cottage
-         $ 36,000.00    Savings:Park City
-       $ -423,836.09  Liabilities:RE
-        $ -75,500.00    Condo:Mortgage
+         $ 36,050.00    Savings
+             $ 50.00      Covantage
+         $ 36,000.00      Park City
+       $ -423,376.05  Liabilities:RE
+        $ -75,039.96    Condo:Mortgage
        $ -348,336.09    Cottage:Mortgage
 --------------------
-        $ 507,915.88
+        $ 506,876.13
 #+end_example
 ** Spending
 *** Category Spending
@@ -3031,11 +3055,12 @@ August 01 2023 Expenses:Transportation:Biking   $ 90.04
 August 01 2023 Expenses:Transportation:Gas      $ 38.40
 August 01 2023 Expenses:Transportation:Parking  $ 300.00
 September 01 2023Expenses:Food:Restaurants        $ 20.00
-September 01 2023Expenses:Food:Snacks             $ 281.59
+September 01 2023Expenses:Food:Snacks             $ 241.86
 September 01 2023Expenses:Housing:Rent            $ 1,409.45
 September 01 2023Expenses:Personal:Communication  $ 35.00
 September 01 2023Expenses:Personal:Entertainment  $ 46.57
 September 01 2023Expenses:RE:Condo:Interest       $ 246.88
+September 01 2023Expenses:RE:Cottage:Cleaning     $ 360.00
 September 01 2023Expenses:RE:Cottage:Escrow       $ 864.60
 September 01 2023Expenses:RE:Cottage:Interest     $ 1,017.80
 September 01 2023Expenses:RE:Cottage:Repairs      $ 1,493.58
@@ -3043,7 +3068,7 @@ September 01 2023Expenses:RE:Cottage:Utilities    $ 176.00
 September 01 2023Expenses:Taxes:Federal           $ 1,138.41
 September 01 2023Expenses:Taxes:Illinois          $ 313.52
 September 01 2023Expenses:Taxes:Medicare          $ 148.84
-September 01 2023Expenses:Transportation:Biking   $ 63.79
+September 01 2023Expenses:Transportation:Biking   $ 67.60
 September 01 2023Expenses:Transportation:Ride Share$ 7.65
 #+end_example
 *** Monthly Spending
@@ -3057,7 +3082,7 @@ September 01 2023Expenses:Transportation:Ride Share$ 7.65
 : June 2023       $ 9,673.92
 : July 2023       $ 8,234.24
 : August 2023     $ 7,336.03
-: September 2023  $ 5,662.91
+: September 2023  $ 5,986.99
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-15(format_date(date, '%B %d %Y'))%-33(payee)%-33(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -3065,7 +3090,10 @@ September 01 2023Expenses:Transportation:Ride Share$ 7.65
 #+end_src
 #+results:
 #+begin_example
+September 09 2023Brooke Janicki                   Expenses:RE:Cottage:Cleaning     $ 360.00
+September 09 2023Food                             Expenses:Food:Snacks             $ -39.73
 September 08 2023Divvy Bikes                      Expenses:Transportation:Biking   $ 4.72
+September 08 2023Divvy Bikes                      Expenses:Transportation:Biking   $ 3.81
 September 07 2023Divvy Bikes                      Expenses:Transportation:Ride Share$ 7.65
 September 07 2023Wisconsin Public Service         Expenses:RE:Cottage:Utilities    $ 176.00
 September 06 20237/11                             Expenses:Food:Snacks             $ 4.34
