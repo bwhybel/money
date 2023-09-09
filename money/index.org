@@ -2804,6 +2804,10 @@
   2023-09-09 * Food
       Assets:Checking:Covantage                $ 39.73
       Expenses:Food:Snacks
+
+  2023-09-09 * Transfer
+      Liabilities:RE:Condo:Mortgage         $ 1,039.96
+      Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -2835,7 +2839,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 40,555.85
+         $ 39,515.89
            1.0 CONDO
            1.0 COTTA
        388.906 FSPSX
@@ -2843,8 +2847,8 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 4,505.85    Checking
-          $ 1,627.20      Covantage
+          $ 3,465.89    Checking
+            $ 587.24      Covantage
           $ 1,379.04      Northwoods
             $ 841.99      Park City
             $ 657.62      RipCo
@@ -2866,8 +2870,8 @@
          $ 36,050.00    Savings
              $ 50.00      Covantage
          $ 36,000.00      Park City
-       $ -423,376.05  Liabilities:RE
-        $ -75,039.96    Condo:Mortgage
+       $ -422,336.09  Liabilities:RE
+        $ -74,000.00    Condo:Mortgage
        $ -348,336.09    Cottage:Mortgage
 --------------------
        $ -382,820.20
@@ -2887,9 +2891,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 930,252.18  Assets
-          $ 4,505.85    Checking
-          $ 1,627.20      Covantage
+        $ 929,212.22  Assets
+          $ 3,465.89    Checking
+            $ 587.24      Covantage
           $ 1,379.04      Northwoods
             $ 841.99      Park City
             $ 657.62      RipCo
@@ -2904,8 +2908,8 @@
          $ 36,050.00    Savings
              $ 50.00      Covantage
          $ 36,000.00      Park City
-       $ -423,376.05  Liabilities:RE
-        $ -75,039.96    Condo:Mortgage
+       $ -422,336.09  Liabilities:RE
+        $ -74,000.00    Condo:Mortgage
        $ -348,336.09    Cottage:Mortgage
 --------------------
         $ 506,876.13
