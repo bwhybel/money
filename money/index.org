@@ -2813,6 +2813,10 @@
       Expenses:Food:Snacks                      $ 4.34
       Assets:Checking:Covantage
 
+  2023-09-10 * 7/11
+      Expenses:Food:Snacks                      $ 6.95
+      Assets:Checking:Covantage
+
   2023-09-10 * Northwoods
       Expenses:Food:Drinks                     $ 10.00
       Assets:Checking:Covantage
@@ -2822,16 +2826,11 @@
       Assets:Checking:Covantage
 
   2023-09-09 * Will's
-      Expenses:Food:Drinks                     $ 10.00
-      Expenses:Food:Drinks                     $ 15.00
-      Expenses:Food:Drinks                     $ 24.00
-      Expenses:Food:Drinks                     $ 40.00
+      Expenses:Food:Drinks                     $ 27.25
       Assets:Checking:Covantage
 
-  2023-09-10 * Divvy Bikes  ; GOT TO CONFIRM THESE NUMBERS
-      Expenses:Transportation:Biking            $ 3.72
+  2023-09-10 * Divvy Bikes
       Expenses:Transportation:Biking            $ 2.65
-      Expenses:Transportation:Biking            $ 2.06
       Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
@@ -2864,7 +2863,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 39,399.95
+         $ 39,460.53
            1.0 CONDO
            1.0 COTTA
        388.906 FSPSX
@@ -2872,8 +2871,8 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 3,349.95    Checking
-            $ 471.30      Covantage
+          $ 3,410.53    Checking
+            $ 531.88      Covantage
           $ 1,379.04      Northwoods
             $ 841.99      Park City
             $ 657.62      RipCo
@@ -2899,7 +2898,7 @@
         $ -74,000.00    Condo:Mortgage
        $ -348,336.09    Cottage:Mortgage
 --------------------
-       $ -382,936.14
+       $ -382,875.56
            1.0 CONDO
            1.0 COTTA
        388.906 FSPSX
@@ -2916,9 +2915,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 929,096.28  Assets
-          $ 3,349.95    Checking
-            $ 471.30      Covantage
+        $ 929,156.86  Assets
+          $ 3,410.53    Checking
+            $ 531.88      Covantage
           $ 1,379.04      Northwoods
             $ 841.99      Park City
             $ 657.62      RipCo
@@ -2937,7 +2936,7 @@
         $ -74,000.00    Condo:Mortgage
        $ -348,336.09    Cottage:Mortgage
 --------------------
-        $ 506,760.19
+        $ 506,820.77
 #+end_example
 ** Spending
 *** Category Spending
@@ -3083,9 +3082,9 @@ August 01 2023      Expenses:Taxes:Social Security        $ 2.65
 August 01 2023      Expenses:Transportation:Biking        $ 90.04
 August 01 2023      Expenses:Transportation:Gas           $ 38.40
 August 01 2023      Expenses:Transportation:Parking       $ 300.00
-September 01 2023   Expenses:Food:Drinks                  $ 99.00
+September 01 2023   Expenses:Food:Drinks                  $ 37.25
 September 01 2023   Expenses:Food:Restaurants             $ 20.00
-September 01 2023   Expenses:Food:Snacks                  $ 250.37
+September 01 2023   Expenses:Food:Snacks                  $ 257.32
 September 01 2023   Expenses:Housing:Rent                 $ 1,409.45
 September 01 2023   Expenses:Personal:Communication       $ 35.00
 September 01 2023   Expenses:Personal:Entertainment       $ 46.57
@@ -3098,7 +3097,7 @@ September 01 2023   Expenses:RE:Cottage:Utilities         $ 176.00
 September 01 2023   Expenses:Taxes:Federal                $ 1,138.41
 September 01 2023   Expenses:Taxes:Illinois               $ 313.52
 September 01 2023   Expenses:Taxes:Medicare               $ 148.84
-September 01 2023   Expenses:Transportation:Biking        $ 76.03
+September 01 2023   Expenses:Transportation:Biking        $ 70.25
 September 01 2023   Expenses:Transportation:Ride Share    $ 7.65
 #+end_example
 *** Monthly Spending
@@ -3112,7 +3111,7 @@ September 01 2023   Expenses:Transportation:Ride Share    $ 7.65
 : June 2023            $ 9,673.92
 : July 2023            $ 8,234.24
 : August 2023          $ 7,336.03
-: September 2023       $ 6,102.93
+: September 2023       $ 6,042.35
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -3120,18 +3119,14 @@ September 01 2023   Expenses:Transportation:Ride Share    $ 7.65
 #+end_src
 #+results:
 #+begin_example
+September 10 2023   7/11                        Expenses:Food:Snacks                  $ 6.95
 September 10 2023   Northwoods                  Expenses:Food:Drinks                  $ 10.00
 September 10 2023   7/11                        Expenses:Food:Snacks                  $ 4.17
-September 10 2023   Divvy Bikes                 Expenses:Transportation:Biking        $ 3.72
 September 10 2023   Divvy Bikes                 Expenses:Transportation:Biking        $ 2.65
-September 10 2023   Divvy Bikes                 Expenses:Transportation:Biking        $ 2.06
 September 09 2023   Brooke Janicki              Expenses:RE:Cottage:Cleaning          $ 360.00
 September 09 2023   Food                        Expenses:Food:Snacks                  $ -39.73
 September 09 2023   7/11                        Expenses:Food:Snacks                  $ 4.34
-September 09 2023   Will's                      Expenses:Food:Drinks                  $ 10.00
-September 09 2023   Will's                      Expenses:Food:Drinks                  $ 15.00
-September 09 2023   Will's                      Expenses:Food:Drinks                  $ 24.00
-September 09 2023   Will's                      Expenses:Food:Drinks                  $ 40.00
+September 09 2023   Will's                      Expenses:Food:Drinks                  $ 27.25
 September 08 2023   Divvy Bikes                 Expenses:Transportation:Biking        $ 4.72
 September 08 2023   Divvy Bikes                 Expenses:Transportation:Biking        $ 3.81
 September 07 2023   Divvy Bikes                 Expenses:Transportation:Ride Share    $ 7.65
