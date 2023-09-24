@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 09/21/2023 00:00:00 VTSAX $107.3200
-  P 09/21/2023 00:00:00 VTIAX $29.6100
-  P 09/21/2023 00:00:00 FSPSX $45.4200
-  P 09/21/2023 00:00:00 FXAIX $154.7300
-  P 09/21/2023 00:00:00 CONDO $250,000.00
-  P 09/21/2023 00:00:00 COTTA $450,000.00
+  P 09/24/2023 00:00:00 VTSAX $104.1800
+  P 09/24/2023 00:00:00 VTIAX $29.0700
+  P 09/24/2023 00:00:00 FSPSX $44.6900
+  P 09/24/2023 00:00:00 FXAIX $150.7800
+  P 09/24/2023 00:00:00 CONDO $250,000.00
+  P 09/24/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -3043,6 +3043,22 @@
   2023-09-20 * Panera Bread
       Expenses:Food:Fast Food                   $ 3.69
       Assets:Checking:Covantage
+
+  2023-09-21 * 7/11
+      Expenses:Food:Snacks                      $ 6.18
+      Assets:Checking:Covantage
+
+  2023-09-24 * Transfer
+      Assets:Checking:Covantage                $ 30.00
+      Assets:Checking:Park City
+
+  2023-09-24 * Wisconsin Public Service
+      Assets:Checking:Covantage               $ 176.00
+      Assets:Checking:Northwoods
+
+  2023-09-23 * Chick-fil-a
+      Expenses:Food:Fast Food                   $ 8.51
+      Liabilities:Credit Card:Park City
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -3074,7 +3090,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 37,159.22
+         $ 37,153.04
            1.0 CONDO
            1.0 COTTA
        392.034 FSPSX
@@ -3082,10 +3098,10 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-            $ 409.22    Checking
-              $ 6.91      Covantage
-            $ 213.77      Northwoods
-            $ 188.54      Park City
+            $ 403.04    Checking
+            $ 206.73      Covantage
+             $ 37.77      Northwoods
+            $ 158.54      Park City
        392.034 FSPSX
        603.091 FXAIX
        1,713.0 STRIP
@@ -3102,11 +3118,13 @@
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
          $ 36,750.00    Savings:Barclays
-       $ -419,710.81  Liabilities:RE
-        $ -72,000.00    Condo:Mortgage
-       $ -347,710.81    Cottage:Mortgage
+       $ -419,719.32  Liabilities
+             $ -8.51    Credit Card:Park City
+       $ -419,710.81    RE
+        $ -72,000.00      Condo:Mortgage
+       $ -347,710.81      Cottage:Mortgage
 --------------------
-       $ -382,551.59
+       $ -382,566.28
            1.0 CONDO
            1.0 COTTA
        392.034 FSPSX
@@ -3123,25 +3141,27 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 978,017.36  Assets
-            $ 409.22    Checking
-              $ 6.91      Covantage
-            $ 213.77      Northwoods
-            $ 188.54      Park City
-        $ 240,858.14    Investments
-         $ 96,659.53      401K
-         $ 14,462.92      HSA
-         $ 95,252.99      IRA
+        $ 972,746.54  Assets
+            $ 403.04    Checking
+            $ 206.73      Covantage
+             $ 37.77      Northwoods
+            $ 158.54      Park City
+        $ 235,593.50    Investments
+         $ 94,360.35      401K
+         $ 14,093.71      HSA
+         $ 92,656.75      IRA
          $ 34,482.69      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
          $ 36,750.00    Savings:Barclays
-       $ -419,710.81  Liabilities:RE
-        $ -72,000.00    Condo:Mortgage
-       $ -347,710.81    Cottage:Mortgage
+       $ -419,719.32  Liabilities
+             $ -8.51    Credit Card:Park City
+       $ -419,710.81    RE
+        $ -72,000.00      Condo:Mortgage
+       $ -347,710.81      Cottage:Mortgage
 --------------------
-        $ 558,306.55
+        $ 553,027.22
 #+end_example
 ** Spending
 *** Category Spending
@@ -3288,10 +3308,10 @@ August 01 2023      Expenses:Transportation:Biking        $ 90.04
 August 01 2023      Expenses:Transportation:Gas           $ 38.40
 August 01 2023      Expenses:Transportation:Parking       $ 300.00
 September 01 2023   Expenses:Food:Drinks                  $ 102.25
-September 01 2023   Expenses:Food:Fast Food               $ 73.92
+September 01 2023   Expenses:Food:Fast Food               $ 82.43
 September 01 2023   Expenses:Food:Groceries               $ 31.23
 September 01 2023   Expenses:Food:Restaurants             $ 20.00
-September 01 2023   Expenses:Food:Snacks                  $ 573.79
+September 01 2023   Expenses:Food:Snacks                  $ 579.97
 September 01 2023   Expenses:Housing:Rent                 $ 2,818.90
 September 01 2023   Expenses:Housing:Utilities            $ 94.00
 September 01 2023   Expenses:Personal:Clothes             $ 34.72
@@ -3321,7 +3341,7 @@ September 01 2023   Expenses:Transportation:Ride Share    $ 7.65
 : June 2023            $ 9,673.92
 : July 2023            $ 8,234.24
 : August 2023          $ 7,336.03
-: September 2023       $ 10,315.75
+: September 2023       $ 10,330.44
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -3329,6 +3349,8 @@ September 01 2023   Expenses:Transportation:Ride Share    $ 7.65
 #+end_src
 #+results:
 #+begin_example
+September 23 2023   Chick-fil-a                 Expenses:Food:Fast Food               $ 8.51
+September 21 2023   7/11                        Expenses:Food:Snacks                  $ 6.18
 September 20 2023   Panera Bread                Expenses:Food:Fast Food               $ 3.98
 September 20 2023   Food                        Expenses:Food:Snacks                  $ 20.00
 September 20 2023   Panera Bread                Expenses:Food:Fast Food               $ 3.69
