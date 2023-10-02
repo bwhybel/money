@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 09/26/2023 00:00:00 VTSAX $103.9600
-  P 09/26/2023 00:00:00 VTIAX $29.1300
-  P 09/26/2023 00:00:00 FSPSX $44.6600
-  P 09/26/2023 00:00:00 FXAIX $150.4400
-  P 09/26/2023 00:00:00 CONDO $250,000.00
-  P 09/26/2023 00:00:00 COTTA $450,000.00
+  P 10/02/2023 00:00:00 VTSAX $103.6700
+  P 10/02/2023 00:00:00 VTIAX $28.7700
+  P 10/02/2023 00:00:00 FSPSX $44.0800
+  P 10/02/2023 00:00:00 FXAIX $149.7600
+  P 10/02/2023 00:00:00 CONDO $250,000.00
+  P 10/02/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -3119,6 +3119,85 @@
   2023-09-27 * Mariano's
       Expenses:Food:Groceries                  $ 47.95
       Liabilities:Credit Card:Park City
+
+  2023-09-29 * Stripe
+      Income:Stripe:Paycheck               $ -6,333.77
+      Expenses:Taxes:Federal                $ 1,138.41
+      Expenses:Taxes:Medicare                 $ 148.84
+      Expenses:Taxes:Illinois                 $ 313.52
+      Assets:Savings:Barclays               $ 1,532.93
+      Assets:Checking:Northwoods            $ 1,400.00
+      Assets:Checking:Park City               $ 850.00
+      Assets:Investments:401K                    5.407 FXAIX @ $ 149.3545404106
+      Assets:Investments:401K                    3.239 FSPSX @ $ 43.9981475764
+
+  2023-09-30 * Transfer
+      Liabilities:Credit Card:Park City       $ 113.68
+      Assets:Checking:Park City
+
+  2023-09-26 * Marianos
+      Expenses:Food:Groceries                  $ 16.33
+      Assets:Checking:Covantage
+
+  2023-09-28 * Transfer
+      Assets:Checking:Covantage                $ 60.00
+      Assets:Savings:Barclays
+
+  2023-09-28 * Chick-fil-a
+      Expenses:Food:Fast Food                  $ 11.51
+      Assets:Checking:Covantage
+
+  2023-09-28 * Snacks
+      Expenses:Food:Snacks                     $ 54.35
+      Assets:Checking:Covantage
+
+  2023-09-28 * Marianos
+      Expenses:Food:Groceries                  $ 22.26
+      Assets:Checking:Covantage
+
+  2023-09-29 * 7/11
+      Expenses:Food:Snacks                      $ 2.95
+      Assets:Checking:Covantage
+
+  2023-09-29 * Big City Bikes
+      Expenses:Transportation:Biking           $ 11.03
+      Assets:Checking:Covantage
+
+  2023-09-29 * Walgreens
+      Expenses:Food:Snacks                      $ 3.35
+      Assets:Checking:Covantage
+
+  2023-09-29 * Subway
+      Expenses:Food:Subway                      $ 0.87
+      Assets:Checking:Covantage
+
+  2023-09-29 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.41
+      Assets:Checking:Covantage
+
+  2023-09-29 * Marianos
+      Expenses:Food:Groceries                   $ 6.41
+      Assets:Checking:Covantage
+
+  2023-09-29 * Panera Bread
+      Expenses:Food:Fast Food                   $ 3.69
+      Assets:Checking:Covantage
+
+  2023-09-30 * 7/11
+      Expenses:Food:Snacks                      $ 1.52
+      Assets:Checking:Covantage
+
+  2023-09-30 * 7/11
+      Expenses:Food:Snacks                      $ 1.52
+      Assets:Checking:Covantage
+
+  2023-09-30 * Jewel
+      Expenses:Food:Groceries                   $ 3.68
+      Assets:Checking:Covantage
+
+  2023-09-30 * Dividend
+      Assets:Checking:Covantage                 $ 0.06
+      Income:Extra
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -3150,25 +3229,25 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 36,728.50
+         $ 40,256.93
            1.0 CONDO
            1.0 COTTA
-       392.034 FSPSX
-       603.091 FXAIX
+       395.273 FSPSX
+       608.498 FXAIX
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-             $ 80.50    Checking
-             $ 82.19      Covantage
-             $ 37.77      Northwoods
-            $ -39.46      Park City
-       392.034 FSPSX
-       603.091 FXAIX
+          $ 2,136.00    Checking
+              $ 1.37      Covantage
+          $ 1,437.77      Northwoods
+            $ 696.86      Park City
+       395.273 FSPSX
+       608.498 FXAIX
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX    Investments
-       392.034 FSPSX
-       509.619 FXAIX      401K
+       395.273 FSPSX
+       515.026 FXAIX      401K
         93.472 FXAIX      HSA
        584.372 VTIAX
        726.330 VTSAX      IRA
@@ -3177,18 +3256,16 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 36,648.00    Savings:Barclays
-       $ -419,824.49  Liabilities
-           $ -113.68    Credit Card:Park City
-       $ -419,710.81    RE
-        $ -72,000.00      Condo:Mortgage
-       $ -347,710.81      Cottage:Mortgage
+         $ 38,120.93    Savings:Barclays
+       $ -419,710.81  Liabilities:RE
+        $ -72,000.00    Condo:Mortgage
+       $ -347,710.81    Cottage:Mortgage
 --------------------
-       $ -383,095.99
+       $ -379,453.88
            1.0 CONDO
            1.0 COTTA
-       392.034 FSPSX
-       603.091 FXAIX
+       395.273 FSPSX
+       608.498 FXAIX
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX
@@ -3201,27 +3278,25 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 971,980.46  Assets
-             $ 80.50    Checking
-             $ 82.19      Covantage
-             $ 37.77      Northwoods
-            $ -39.46      Park City
-        $ 235,251.96    Investments
-         $ 94,175.32      401K
-         $ 14,061.93      HSA
-         $ 92,532.02      IRA
+        $ 975,402.93  Assets
+          $ 2,136.00    Checking
+              $ 1.37      Covantage
+          $ 1,437.77      Northwoods
+            $ 696.86      Park City
+        $ 235,146.00    Investments
+         $ 94,553.93      401K
+         $ 13,998.37      HSA
+         $ 92,111.01      IRA
          $ 34,482.69      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-         $ 36,648.00    Savings:Barclays
-       $ -419,824.49  Liabilities
-           $ -113.68    Credit Card:Park City
-       $ -419,710.81    RE
-        $ -72,000.00      Condo:Mortgage
-       $ -347,710.81      Cottage:Mortgage
+         $ 38,120.93    Savings:Barclays
+       $ -419,710.81  Liabilities:RE
+        $ -72,000.00    Condo:Mortgage
+       $ -347,710.81    Cottage:Mortgage
 --------------------
-        $ 552,155.97
+        $ 555,692.12
 #+end_example
 ** Spending
 *** Category Spending
@@ -3368,10 +3443,11 @@ August 01 2023      Expenses:Transportation:Biking        $ 90.04
 August 01 2023      Expenses:Transportation:Gas           $ 38.40
 August 01 2023      Expenses:Transportation:Parking       $ 300.00
 September 01 2023   Expenses:Food:Drinks                  $ 102.25
-September 01 2023   Expenses:Food:Fast Food               $ 130.86
-September 01 2023   Expenses:Food:Groceries               $ 79.18
+September 01 2023   Expenses:Food:Fast Food               $ 146.06
+September 01 2023   Expenses:Food:Groceries               $ 127.86
 September 01 2023   Expenses:Food:Restaurants             $ 20.00
-September 01 2023   Expenses:Food:Snacks                  $ 588.76
+September 01 2023   Expenses:Food:Snacks                  $ 652.45
+September 01 2023   Expenses:Food:Subway                  $ 0.87
 September 01 2023   Expenses:Housing:Rent                 $ 2,818.90
 September 01 2023   Expenses:Housing:Utilities            $ 310.00
 September 01 2023   Expenses:Personal:Clothes             $ 34.72
@@ -3384,10 +3460,10 @@ September 01 2023   Expenses:RE:Cottage:Escrow            $ 1,729.20
 September 01 2023   Expenses:RE:Cottage:Interest          $ 2,033.78
 September 01 2023   Expenses:RE:Cottage:Repairs           $ 1,493.58
 September 01 2023   Expenses:RE:Cottage:Utilities         $ 421.99
-September 01 2023   Expenses:Taxes:Federal                $ 2,296.24
-September 01 2023   Expenses:Taxes:Illinois               $ 631.05
-September 01 2023   Expenses:Taxes:Medicare               $ 299.58
-September 01 2023   Expenses:Transportation:Biking        $ 87.49
+September 01 2023   Expenses:Taxes:Federal                $ 3,434.65
+September 01 2023   Expenses:Taxes:Illinois               $ 944.57
+September 01 2023   Expenses:Taxes:Medicare               $ 448.42
+September 01 2023   Expenses:Transportation:Biking        $ 99.93
 September 01 2023   Expenses:Transportation:Gas           $ 49.55
 September 01 2023   Expenses:Transportation:Ride Share    $ 7.65
 #+end_example
@@ -3402,7 +3478,7 @@ September 01 2023   Expenses:Transportation:Ride Share    $ 7.65
 : June 2023            $ 9,673.92
 : July 2023            $ 8,234.24
 : August 2023          $ 7,336.03
-: September 2023       $ 10,861.61
+: September 2023       $ 11,002.49
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -3410,6 +3486,24 @@ September 01 2023   Expenses:Transportation:Ride Share    $ 7.65
 #+end_src
 #+results:
 #+begin_example
+September 30 2023   7/11                        Expenses:Food:Snacks                  $ 1.52
+September 30 2023   7/11                        Expenses:Food:Snacks                  $ 1.52
+September 30 2023   Jewel                       Expenses:Food:Groceries               $ 3.68
+September 30 2023   Dividend                    Income:Extra                          $ -0.06
+September 29 2023   Stripe                      Income:Stripe:Paycheck                $ -6,333.77
+September 29 2023   Stripe                      Expenses:Taxes:Federal                $ 1,138.41
+September 29 2023   Stripe                      Expenses:Taxes:Medicare               $ 148.84
+September 29 2023   Stripe                      Expenses:Taxes:Illinois               $ 313.52
+September 29 2023   7/11                        Expenses:Food:Snacks                  $ 2.95
+September 29 2023   Big City Bikes              Expenses:Transportation:Biking        $ 11.03
+September 29 2023   Walgreens                   Expenses:Food:Snacks                  $ 3.35
+September 29 2023   Subway                      Expenses:Food:Subway                  $ 0.87
+September 29 2023   Divvy Bikes                 Expenses:Transportation:Biking        $ 1.41
+September 29 2023   Marianos                    Expenses:Food:Groceries               $ 6.41
+September 29 2023   Panera Bread                Expenses:Food:Fast Food               $ 3.69
+September 28 2023   Chick-fil-a                 Expenses:Food:Fast Food               $ 11.51
+September 28 2023   Snacks                      Expenses:Food:Snacks                  $ 54.35
+September 28 2023   Marianos                    Expenses:Food:Groceries               $ 22.26
 September 27 2023   Chick-fil-a                 Expenses:Food:Fast Food               $ 11.51
 September 27 2023   7/11                        Expenses:Food:Snacks                  $ 1.02
 September 27 2023   7/11                        Expenses:Food:Snacks                  $ 7.77
@@ -3417,6 +3511,7 @@ September 27 2023   Mariano's                   Expenses:Food:Groceries         
 September 26 2023   Comed                       Expenses:Housing:Utilities            $ 52.00
 September 26 2023   Interest                    Income:Extra                          $ -1.46
 September 26 2023   McDonald's                  Expenses:Food:Fast Food               $ 5.86
+September 26 2023   Marianos                    Expenses:Food:Groceries               $ 16.33
 September 25 2023   Peoples Gas Delivery        Expenses:Housing:Utilities            $ 94.00
 September 25 2023   Xfinity                     Expenses:Housing:Utilities            $ 70.00
 September 25 2023   Fees                        Expenses:Personal:Household           $ 34.00
