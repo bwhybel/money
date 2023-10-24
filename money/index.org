@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 10/15/2023 00:00:00 VTSAX $104.5200
-  P 10/15/2023 00:00:00 VTIAX $28.7700
-  P 10/15/2023 00:00:00 FSPSX $44.1300
-  P 10/15/2023 00:00:00 FXAIX $151.0300
-  P 10/15/2023 00:00:00 CONDO $250,000.00
-  P 10/15/2023 00:00:00 COTTA $450,000.00
+  P 10/24/2023 00:00:00 VTSAX $101.4800
+  P 10/24/2023 00:00:00 VTIAX $27.7500
+  P 10/24/2023 00:00:00 FSPSX $42.5000
+  P 10/24/2023 00:00:00 FXAIX $146.7000
+  P 10/24/2023 00:00:00 CONDO $250,000.00
+  P 10/24/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -3215,6 +3215,10 @@
       Expenses:Personal:Communication          $ 35.00
       Liabilities:Credit Card:Park City
 
+  2023-10-01 * RipCo
+      Liabilities:Credit Card:RipCo             $ 7.43
+      Income:Extra
+
   2023-10-02 * Spectrum
       Expenses:RE:Cottage:Utilities            $ 69.99
       Assets:Checking:Northwoods
@@ -3360,6 +3364,11 @@
       Expenses:RE:Condo:Interest              $ 225.00
       Assets:Checking:RipCo
 
+  2023-10-06 * Dividend
+      Assets:Investments:HSA                     0.349 FXAIX
+      Assets:Investments:401K                    1.926 FXAIX
+      Income:Extra
+
   2023-10-07 * Divvy Bikes
       Expenses:Transportation:Biking            $ 2.68
       Assets:Checking:RipCo
@@ -3417,6 +3426,18 @@
       Expenses:Food:Snacks                      $ 2.25
       Assets:Checking:RipCo
 
+  2023-10-09 * Family Dollar
+      Expenses:Food:Snacks                      $ 6.37
+      Liabilities:Credit Card:RipCo
+
+  2023-10-10 * Conway
+      Expenses:RE:Cottage:Repairs               $ 8.19
+      Liabilities:Credit Card:RipCo
+
+  2023-10-10 * IGA Gas
+      Expenses:Transportation:Gas              $ 25.85
+      Liabilities:Credit Card:RipCo
+
   2023-10-11 * Transfer
       Assets:Checking:Park City            $ 18,182.01
       Assets:Savings:Barclays
@@ -3454,7 +3475,7 @@
       Assets:Investments:401K                    5.374 FXAIX @ $ 150.2716784518
       Assets:Investments:401K                    3.262 FSPSX @ $ 43.6879215205
       Income:Stripe:HSA                      $ -100.00
-      Assets:Investments:HSA                  $ 320.83
+      Assets:Investments:HSA                     2.113 FXAIX @ $ 151.8362517747
 
   2023-10-13 * Chase
       Expenses:RE:Cottage:Escrow            $ 1,252.93
@@ -3471,6 +3492,142 @@
   2023-10-13 * Transfer
       Assets:Checking:Park City             $ 1,501.87
       Assets:Savings:Barclays
+
+  2023-10-18 * Comed
+      Expenses:Housing:Utilities               $ 52.00
+      Assets:Checking:Park City
+
+  2023-10-18 * VRBO
+      Assets:Checking:Northwoods              $ 646.22
+      Income:RE:Cottage:Rent
+
+  2023-10-19 * Transfer
+      Liabilities:RE:Condo:Mortgage           $ 567.38
+      Assets:Checking:Northwoods
+
+  2023-10-19 * 7/11
+      Expenses:Food:Snacks                      $ 1.02
+      Assets:Checking:Covantage
+
+  2023-10-19 * Walgreens
+      Expenses:Food:Snacks                      $ 5.48
+      Assets:Checking:Covantage
+
+  2023-10-19 * Fees
+      Expenses:Personal:Household              $ 10.00
+      Assets:Checking:Covantage
+
+  2023-10-20 * Transfer
+      Assets:Checking:Covantage               $ 123.23
+      Assets:Checking:Park City
+
+  2023-10-20 * Cook County
+      Expenses:RE:Condo:Taxes                $ 2377.01
+      Assets:Checking:Park City
+
+  2023-10-20 * Transfer
+      Assets:Checking:Covantage               $ 150.00
+      Assets:Checking:Northwoods
+
+  2023-10-20 * Fees
+      Expenses:Personal:Household              $ 30.00
+      Assets:Checking:Northwoods
+
+  2023-10-20 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.22
+      Assets:Checking:Covantage
+
+  2023-10-20 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 0.67
+      Assets:Checking:Covantage
+
+  2023-10-20 * Chick-Fil-A
+      Expenses:Food:Fast Food                  $ 13.71
+      Assets:Checking:Covantage
+
+  2023-10-20 * 7/11
+      Expenses:Food:Snacks                      $ 3.45
+      Assets:Checking:Covantage
+
+  2023-10-20 * Dollar Tree
+      Expenses:Food:Snacks                      $ 5.51
+      Assets:Checking:Covantage
+
+  2023-10-21 * 7/11
+      Expenses:Food:Snacks                      $ 1.73
+      Assets:Checking:Covantage
+
+  2023-10-21 * Dom's
+      Expenses:Food:Drinks                      $ 8.27
+      Assets:Checking:Covantage
+
+  2023-10-22 * Homegoods
+      Expenses:Food:Snacks                      $ 5.50
+      Assets:Checking:Covantage
+
+  2023-10-22 * Chick-Fil-A
+      Expenses:Food:Fast Food                  $ 11.51
+      Assets:Checking:Covantage
+
+  2023-10-22 * Walgreens
+      Expenses:Food:Snacks                      $ 1.31
+      Assets:Checking:Covantage
+
+  2023-10-22 * Walgreens
+      Expenses:Food:Snacks                      $ 1.32
+      Assets:Checking:Covantage
+
+  2023-10-22 * Dunkin
+      Expenses:Food:Fast Food                   $ 1.87
+      Assets:Checking:Covantage
+
+  2023-10-22 * Subway
+      Expenses:Food:Fast Food                   $ 1.75
+      Assets:Checking:Covantage
+
+  2023-10-22 * 7/11
+      Expenses:Food:Snacks                      $ 3.45
+      Assets:Checking:Covantage
+
+  2023-10-22 * 7/11
+      Expenses:Food:Snacks                      $ 8.02
+      Assets:Checking:Covantage
+
+  2023-10-22 * CVS
+      Expenses:Food:Snacks                      $ 6.82
+      Assets:Checking:Covantage
+
+  2023-10-22 * Whole Foods
+      Expenses:Food:Drinks                      $ 8.82
+      Assets:Checking:Covantage
+
+  2023-10-22 * Whole Foods
+      Expenses:Food:Drinks                     $ 13.00
+      Assets:Checking:Covantage
+
+  2023-10-23 * Geico
+      Expenses:Transportation:Insurance       $ 429.31
+      Assets:Checking:Park City
+
+  2023-10-23 * Apple Card
+      Liabilities:Credit Card:Apple           $ 449.53
+      Assets:Checking:Park City
+
+  2023-10-23 * CVS
+      Expenses:Food:Snacks                      $ 3.88
+      Assets:Checking:Covantage
+
+  2023-10-23 * Corcoran's
+      Expenses:Food:Drinks                     $ 38.83
+      Assets:Checking:Covantage
+
+  2023-10-23 * Dunkin
+      Expenses:Food:Fast Food                   $ 1.78
+      Assets:Checking:Covantage
+
+  2023-10-23 * PayRange
+      Expenses:Personal:Household              $ 20.00
+      Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -3502,29 +3659,27 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 7,122.31
+          $ 3,363.55
            1.0 CONDO
            1.0 COTTA
        398.535 FSPSX
-       613.872 FXAIX
+       618.260 FXAIX
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 6,801.48    Checking
-             $ 30.12      Covantage
-            $ 147.07      Northwoods
-          $ 6,654.54      Park City
+          $ 3,363.55    Checking
+            $ 124.43      Covantage
+             $ 45.91      Northwoods
+          $ 3,223.46      Park City
             $ -30.25      RipCo
-            $ 320.83
        398.535 FSPSX
-       613.872 FXAIX
+       618.260 FXAIX
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX    Investments
        398.535 FSPSX
-       520.400 FXAIX      401K
-            $ 320.83
-        93.472 FXAIX      HSA
+       522.326 FXAIX      401K
+        95.934 FXAIX      HSA
        584.372 VTIAX
        726.330 VTSAX      IRA
        1,713.0 STRIP      RSU
@@ -3532,15 +3687,19 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -404,278.19  Liabilities:RE
-        $ -56,567.38    Condo:Mortgage
-       $ -347,710.81    Cottage:Mortgage
+       $ -403,294.26  Liabilities
+            $ 416.55    Credit Card
+            $ 449.53      Apple
+            $ -32.98      RipCo
+       $ -403,710.81    RE
+        $ -56,000.00      Condo:Mortgage
+       $ -347,710.81      Cottage:Mortgage
 --------------------
-       $ -397,155.88
+       $ -399,930.71
            1.0 CONDO
            1.0 COTTA
        398.535 FSPSX
-       613.872 FXAIX
+       618.260 FXAIX
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX
@@ -3553,25 +3712,29 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 944,633.83  Assets
-          $ 6,801.48    Checking
-             $ 30.12      Covantage
-            $ 147.07      Northwoods
-          $ 6,654.54      Park City
+        $ 935,407.01  Assets
+          $ 3,363.55    Checking
+            $ 124.43      Covantage
+             $ 45.91      Northwoods
+          $ 3,223.46      Park City
             $ -30.25      RipCo
-        $ 237,832.35    Investments
-         $ 96,183.36      401K
-         $ 14,437.91      HSA
-         $ 92,728.39      IRA
+        $ 232,043.46    Investments
+         $ 93,562.96      401K
+         $ 14,073.52      HSA
+         $ 89,924.29      IRA
          $ 34,482.69      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -404,278.19  Liabilities:RE
-        $ -56,567.38    Condo:Mortgage
-       $ -347,710.81    Cottage:Mortgage
+       $ -403,294.26  Liabilities
+            $ 416.55    Credit Card
+            $ 449.53      Apple
+            $ -32.98      RipCo
+       $ -403,710.81    RE
+        $ -56,000.00      Condo:Mortgage
+       $ -347,710.81      Cottage:Mortgage
 --------------------
-        $ 540,355.64
+        $ 532,112.75
 #+end_example
 ** Spending
 *** Category Spending
@@ -3741,24 +3904,28 @@ September 01 2023   Expenses:Taxes:Medicare               $ 448.42
 September 01 2023   Expenses:Transportation:Biking        $ 99.93
 September 01 2023   Expenses:Transportation:Gas           $ 49.55
 September 01 2023   Expenses:Transportation:Ride Share    $ 7.65
-October 01 2023     Expenses:Food:Fast Food               $ 57.27
-October 01 2023     Expenses:Food:Snacks                  $ 301.96
-October 01 2023     Expenses:Housing:Utilities            $ 70.00
+October 01 2023     Expenses:Food:Drinks                  $ 68.92
+October 01 2023     Expenses:Food:Fast Food               $ 87.89
+October 01 2023     Expenses:Food:Snacks                  $ 355.82
+October 01 2023     Expenses:Housing:Utilities            $ 122.00
 October 01 2023     Expenses:Personal:Boat                $ 64.68
 October 01 2023     Expenses:Personal:Clothes             $ 50.00
 October 01 2023     Expenses:Personal:Communication       $ 35.00
 October 01 2023     Expenses:Personal:Electronics         $ 5.26
-October 01 2023     Expenses:Personal:Household           $ 82.03
+October 01 2023     Expenses:Personal:Household           $ 142.03
 October 01 2023     Expenses:RE:Condo:Interest            $ 225.00
+October 01 2023     Expenses:RE:Condo:Taxes               $ 2,377.01
 October 01 2023     Expenses:RE:Cottage:Cleaning          $ 60.00
 October 01 2023     Expenses:RE:Cottage:Escrow            $ 1,252.93
 October 01 2023     Expenses:RE:Cottage:Lakefront         $ 425.00
+October 01 2023     Expenses:RE:Cottage:Repairs           $ 8.19
 October 01 2023     Expenses:RE:Cottage:Utilities         $ 185.71
 October 01 2023     Expenses:Taxes:Federal                $ 1,185.03
 October 01 2023     Expenses:Taxes:Illinois               $ 323.14
 October 01 2023     Expenses:Taxes:Medicare               $ 153.42
-October 01 2023     Expenses:Transportation:Biking        $ 25.89
-October 01 2023     Expenses:Transportation:Gas           $ 72.71
+October 01 2023     Expenses:Transportation:Biking        $ 27.78
+October 01 2023     Expenses:Transportation:Gas           $ 98.56
+October 01 2023     Expenses:Transportation:Insurance     $ 429.31
 October 01 2023     Expenses:Transportation:Repairs       $ 40.00
 #+end_example
 *** Monthly Spending
@@ -3773,7 +3940,7 @@ October 01 2023     Expenses:Transportation:Repairs       $ 40.00
 : July 2023            $ 8,234.24
 : August 2023          $ 7,336.03
 : September 2023       $ 11,002.49
-: October 2023         $ 2,953.44
+: October 2023         $ 3,684.08
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -3781,6 +3948,36 @@ October 01 2023     Expenses:Transportation:Repairs       $ 40.00
 #+end_src
 #+results:
 #+begin_example
+October 23 2023     Geico                       Expenses:Transportation:Insurance     $ 429.31
+October 23 2023     CVS                         Expenses:Food:Snacks                  $ 3.88
+October 23 2023     Corcoran's                  Expenses:Food:Drinks                  $ 38.83
+October 23 2023     Dunkin                      Expenses:Food:Fast Food               $ 1.78
+October 23 2023     PayRange                    Expenses:Personal:Household           $ 20.00
+October 22 2023     Homegoods                   Expenses:Food:Snacks                  $ 5.50
+October 22 2023     Chick-Fil-A                 Expenses:Food:Fast Food               $ 11.51
+October 22 2023     Walgreens                   Expenses:Food:Snacks                  $ 1.31
+October 22 2023     Walgreens                   Expenses:Food:Snacks                  $ 1.32
+October 22 2023     Dunkin                      Expenses:Food:Fast Food               $ 1.87
+October 22 2023     Subway                      Expenses:Food:Fast Food               $ 1.75
+October 22 2023     7/11                        Expenses:Food:Snacks                  $ 3.45
+October 22 2023     7/11                        Expenses:Food:Snacks                  $ 8.02
+October 22 2023     CVS                         Expenses:Food:Snacks                  $ 6.82
+October 22 2023     Whole Foods                 Expenses:Food:Drinks                  $ 8.82
+October 22 2023     Whole Foods                 Expenses:Food:Drinks                  $ 13.00
+October 21 2023     7/11                        Expenses:Food:Snacks                  $ 1.73
+October 21 2023     Dom's                       Expenses:Food:Drinks                  $ 8.27
+October 20 2023     Cook County                 Expenses:RE:Condo:Taxes               $ 2,377.01
+October 20 2023     Fees                        Expenses:Personal:Household           $ 30.00
+October 20 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 1.22
+October 20 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 0.67
+October 20 2023     Chick-Fil-A                 Expenses:Food:Fast Food               $ 13.71
+October 20 2023     7/11                        Expenses:Food:Snacks                  $ 3.45
+October 20 2023     Dollar Tree                 Expenses:Food:Snacks                  $ 5.51
+October 19 2023     7/11                        Expenses:Food:Snacks                  $ 1.02
+October 19 2023     Walgreens                   Expenses:Food:Snacks                  $ 5.48
+October 19 2023     Fees                        Expenses:Personal:Household           $ 10.00
+October 18 2023     Comed                       Expenses:Housing:Utilities            $ 52.00
+October 18 2023     VRBO                        Income:RE:Cottage:Rent                $ -646.22
 October 13 2023     Stripe                      Income:Stripe:Paycheck                $ -6,333.77
 October 13 2023     Stripe                      Income:Stripe:Wireless                $ -50.00
 October 13 2023     Stripe                      Income:Stripe:Wellness                $ -200.59
@@ -3795,7 +3992,10 @@ October 12 2023     Divvy Bikes                 Expenses:Transportation:Biking  
 October 12 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 3.04
 October 12 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 1.68
 October 12 2023     Fees                        Expenses:Personal:Household           $ 30.00
+October 10 2023     Conway                      Expenses:RE:Cottage:Repairs           $ 8.19
+October 10 2023     IGA Gas                     Expenses:Transportation:Gas           $ 25.85
 October 09 2023     Schaefers IGA               Expenses:Food:Snacks                  $ 2.25
+October 09 2023     Family Dollar               Expenses:Food:Snacks                  $ 6.37
 October 08 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 0.15
 October 08 2023     7/11                        Expenses:Food:Snacks                  $ 9.21
 October 08 2023     Walgreens                   Expenses:Food:Snacks                  $ 0.50
@@ -3815,6 +4015,7 @@ October 06 2023     Dan's Docks                 Expenses:RE:Cottage:Lakefront   
 October 06 2023     Jewel                       Expenses:Food:Snacks                  $ 4.30
 October 06 2023     7/11                        Expenses:Food:Snacks                  $ 5.56
 October 06 2023     Huntington                  Expenses:RE:Condo:Interest            $ 225.00
+October 06 2023     Dividend                    Income:Extra                          -2.275 FXAIX
 October 05 2023     Fees                        Expenses:Personal:Household           $ 34.00
 October 05 2023     Xfinity                     Expenses:Housing:Utilities            $ 70.00
 October 05 2023     Taco Bell                   Expenses:Food:Fast Food               $ 2.56
@@ -3844,6 +4045,7 @@ October 02 2023     Panera Bread                Expenses:Food:Fast Food         
 October 02 2023     Uber Eats                   Expenses:Food:Snacks                  $ 9.66
 October 01 2023     Rent                        Income:RE:Condo:Rent                  $ -1,117.66
 October 01 2023     Visible                     Expenses:Personal:Communication       $ 35.00
+October 01 2023     RipCo                       Income:Extra                          $ -7.43
 September 30 2023   7/11                        Expenses:Food:Snacks                  $ 1.52
 September 30 2023   7/11                        Expenses:Food:Snacks                  $ 1.52
 September 30 2023   Jewel                       Expenses:Food:Groceries               $ 3.68
