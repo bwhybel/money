@@ -3709,7 +3709,7 @@
 * Money
 ** Budget
 *** This Month
-#+begin_src ledger :noweb yes :cmdline budget ^Expenses -p "this month"
+#+begin_src ledger :noweb yes :cmdline budget ^Expenses -p "this month" :exports results
   <<opening_balance>>
   <<budget>>
   <<transactions>>
@@ -3723,7 +3723,7 @@
 : ------------ ------------ ------------ -----
 :     $ 307.71   $ 1,872.00  $ -1,564.29   16%
 *** Last month
-#+begin_src ledger :noweb yes :cmdline budget ^Expenses -p "last month"
+#+begin_src ledger :noweb yes :cmdline budget ^Expenses -p "last month" :exports results
   <<opening_balance>>
   <<budget>>
   <<transactions>>
