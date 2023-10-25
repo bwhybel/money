@@ -3683,6 +3683,11 @@
       Expenses:Housing:Utilities               $ 70.00  ; Xfinity
       Expenses:RE:Cottage:Utilities           $ 176.00  ; Wisconsin Public Service
       Expenses:RE:Cottage:Utilities            $ 70.00  ; Spectrum
+      Expenses:Personal:Communication          $ 25.00  ; Visible
+      Expenses:Food:Groceries                 $ 100.00
+      Expenses:Transportation:Gas              $ 50.00
+      Expenses:Food:Snacks                    $ 100.00
+      Expenses:Food:Fast Food                 $ 100.00
       Assets
 #+end_src
 ** Initial Balance
@@ -3715,13 +3720,21 @@
   <<transactions>>
 #+end_src
 #+RESULTS:
-:     $ 307.71   $ 1,872.00  $ -1,564.29   16%  Expenses
-:     $ 122.00   $ 1,626.00  $ -1,504.00    8%    Housing
-:            0   $ 1,410.00  $ -1,410.00     0      Rent
-:     $ 122.00     $ 216.00     $ -94.00   56%      Utilities
-:     $ 185.71     $ 246.00     $ -60.29   75%    RE:Cottage:Utilities
-: ------------ ------------ ------------ -----
-:     $ 307.71   $ 1,872.00  $ -1,564.29   16%
+#+begin_example
+    $ 953.97   $ 2,247.00  $ -1,293.03   42%  Expenses
+    $ 460.61     $ 300.00     $ 160.61  154%    Food
+    $ 102.16     $ 100.00       $ 2.16  102%      Fast Food
+           0     $ 100.00    $ -100.00     0      Groceries
+    $ 358.45     $ 100.00     $ 258.45  358%      Snacks
+    $ 122.00   $ 1,626.00  $ -1,504.00    8%    Housing
+           0   $ 1,410.00  $ -1,410.00     0      Rent
+    $ 122.00     $ 216.00     $ -94.00   56%      Utilities
+     $ 35.00      $ 25.00      $ 10.00  140%    Personal:Communication
+    $ 185.71     $ 246.00     $ -60.29   75%    RE:Cottage:Utilities
+    $ 150.65      $ 50.00     $ 100.65  301%    Transportation:Gas
+------------ ------------ ------------ -----
+    $ 953.97   $ 2,247.00  $ -1,293.03   42%
+#+end_example
 *** Last month
 #+begin_src ledger :noweb yes :cmdline budget ^Expenses -p "last month" :exports results
   <<opening_balance>>
@@ -3729,13 +3742,21 @@
   <<transactions>>
 #+end_src
 #+RESULTS:
-:   $ 3,550.89   $ 1,872.00   $ 1,678.89  190%  Expenses
-:   $ 3,128.90   $ 1,626.00   $ 1,502.90  192%    Housing
-:   $ 2,818.90   $ 1,410.00   $ 1,408.90  200%      Rent
-:     $ 310.00     $ 216.00      $ 94.00  144%      Utilities
-:     $ 421.99     $ 246.00     $ 175.99  172%    RE:Cottage:Utilities
-: ------------ ------------ ------------ -----
-:   $ 3,550.89   $ 1,872.00   $ 1,678.89  190%
+#+begin_example
+  $ 4,561.81   $ 2,247.00   $ 2,314.81  203%  Expenses
+    $ 926.37     $ 300.00     $ 626.37  309%    Food
+    $ 146.06     $ 100.00      $ 46.06  146%      Fast Food
+    $ 127.86     $ 100.00      $ 27.86  128%      Groceries
+    $ 652.45     $ 100.00     $ 552.45  652%      Snacks
+  $ 3,128.90   $ 1,626.00   $ 1,502.90  192%    Housing
+  $ 2,818.90   $ 1,410.00   $ 1,408.90  200%      Rent
+    $ 310.00     $ 216.00      $ 94.00  144%      Utilities
+     $ 35.00      $ 25.00      $ 10.00  140%    Personal:Communication
+    $ 421.99     $ 246.00     $ 175.99  172%    RE:Cottage:Utilities
+     $ 49.55      $ 50.00      $ -0.45   99%    Transportation:Gas
+------------ ------------ ------------ -----
+  $ 4,561.81   $ 2,247.00   $ 2,314.81  203%
+#+end_example
 ** Net Worth
 *** Assets
 #+begin_src ledger :noweb yes :cmdline bal ^Assets ^Liabilities --cleared :exports results
