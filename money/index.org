@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 10/24/2023 00:00:00 VTSAX $101.4800
-  P 10/24/2023 00:00:00 VTIAX $27.7500
-  P 10/24/2023 00:00:00 FSPSX $42.5000
-  P 10/24/2023 00:00:00 FXAIX $146.7000
-  P 10/24/2023 00:00:00 CONDO $250,000.00
-  P 10/24/2023 00:00:00 COTTA $450,000.00
+  P 10/25/2023 00:00:00 VTSAX $101.2200
+  P 10/25/2023 00:00:00 VTIAX $27.7300
+  P 10/25/2023 00:00:00 FSPSX $42.6100
+  P 10/25/2023 00:00:00 FXAIX $146.4500
+  P 10/25/2023 00:00:00 CONDO $250,000.00
+  P 10/25/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -3628,6 +3628,62 @@
   2023-10-23 * PayRange
       Expenses:Personal:Household              $ 20.00
       Assets:Checking:Covantage
+
+  2023-10-24 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 0.88
+      Assets:Checking:Covantage
+
+  2023-10-24 * Marshalls
+      Expenses:Food:Snacks                      $ 1.53
+      Assets:Checking:Covantage
+
+  2023-10-24 * Jewel
+      Expenses:Food:Snacks                      $ 1.10
+      Assets:Checking:Covantage
+
+  2023-10-24 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.82
+      Assets:Checking:Covantage
+
+  2023-10-24 * Chick-Fil-A
+      Expenses:Food:Fast Food                  $ 11.51
+      Assets:Checking:Covantage
+
+  2023-10-24 * Transfer
+      Assets:Checking:RipCo                    $ 50.00
+      Assets:Checking:Covantage
+
+  2023-10-24 * McDonald's
+      Expenses:Food:Fast Food                   $ 2.76
+      Assets:Checking:Covantage
+
+  2023-10-24 * Amazon
+      Expenses:Personal:Household              $ 66.14
+      Assets:Checking:Park City
+
+  2023-10-25 * GasBuddy
+      Expenses:Transportation:Gas              $ 52.09
+      Assets:Checking:Covantage
+
+  2023-10-25 * Transfer
+      Liabilities:Credit Card:RipCo            $ 19.75
+      Assets:Checking:RipCo
+
+  2023-10-25 * VRBO
+      Assets:Checking:Northwoods              $ 646.26
+      Income:RE:Cottage:Rent
+#+end_src
+** Budget
+#+name: budget
+#+begin_src ledger :eval never
+  ~ Monthly
+      Expenses:Housing:Rent                  $ 1410.00
+      Expenses:Housing:Utilities               $ 94.00  ; Peoples Gas Delivery
+      Expenses:Housing:Utilities               $ 52.00  ; ComEd
+      Expenses:Housing:Utilities               $ 70.00  ; Xfinity
+      Expenses:RE:Cottage:Utilities           $ 176.00  ; Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities            $ 70.00  ; Spectrum
+      Assets
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -3651,6 +3707,35 @@
       Equity:OpeningBalance
 #+end_src
 * Money
+** Budget
+*** This Month
+#+begin_src ledger :noweb yes :cmdline budget ^Expenses -p "this month"
+  <<opening_balance>>
+  <<budget>>
+  <<transactions>>
+#+end_src
+#+RESULTS:
+:     $ 307.71   $ 1,872.00  $ -1,564.29   16%  Expenses
+:     $ 122.00   $ 1,626.00  $ -1,504.00    8%    Housing
+:            0   $ 1,410.00  $ -1,410.00     0      Rent
+:     $ 122.00     $ 216.00     $ -94.00   56%      Utilities
+:     $ 185.71     $ 246.00     $ -60.29   75%    RE:Cottage:Utilities
+: ------------ ------------ ------------ -----
+:     $ 307.71   $ 1,872.00  $ -1,564.29   16%
+*** Last month
+#+begin_src ledger :noweb yes :cmdline budget ^Expenses -p "last month"
+  <<opening_balance>>
+  <<budget>>
+  <<transactions>>
+#+end_src
+#+RESULTS:
+:   $ 3,550.89   $ 1,872.00   $ 1,678.89  190%  Expenses
+:   $ 3,128.90   $ 1,626.00   $ 1,502.90  192%    Housing
+:   $ 2,818.90   $ 1,410.00   $ 1,408.90  200%      Rent
+:     $ 310.00     $ 216.00      $ 94.00  144%      Utilities
+:     $ 421.99     $ 246.00     $ 175.99  172%    RE:Cottage:Utilities
+: ------------ ------------ ------------ -----
+:   $ 3,550.89   $ 1,872.00   $ 1,678.89  190%
 ** Net Worth
 *** Assets
 #+begin_src ledger :noweb yes :cmdline bal ^Assets ^Liabilities --cleared :exports results
@@ -3659,7 +3744,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 3,363.55
+          $ 3,852.23
            1.0 CONDO
            1.0 COTTA
        398.535 FSPSX
@@ -3667,11 +3752,10 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 3,363.55    Checking
-            $ 124.43      Covantage
-             $ 45.91      Northwoods
-          $ 3,223.46      Park City
-            $ -30.25      RipCo
+          $ 3,852.23    Checking
+              $ 2.74      Covantage
+            $ 692.17      Northwoods
+          $ 3,157.32      Park City
        398.535 FSPSX
        618.260 FXAIX
        1,713.0 STRIP
@@ -3687,15 +3771,15 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -403,294.26  Liabilities
-            $ 416.55    Credit Card
+       $ -403,274.51  Liabilities
+            $ 436.30    Credit Card
             $ 449.53      Apple
-            $ -32.98      RipCo
+            $ -13.23      RipCo
        $ -403,710.81    RE
         $ -56,000.00      Condo:Mortgage
        $ -347,710.81      Cottage:Mortgage
 --------------------
-       $ -399,930.71
+       $ -399,422.28
            1.0 CONDO
            1.0 COTTA
        398.535 FSPSX
@@ -3712,29 +3796,28 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 935,407.01  Assets
-          $ 3,363.55    Checking
-            $ 124.43      Covantage
-             $ 45.91      Northwoods
-          $ 3,223.46      Park City
-            $ -30.25      RipCo
-        $ 232,043.46    Investments
-         $ 93,562.96      401K
-         $ 14,073.52      HSA
-         $ 89,924.29      IRA
+        $ 935,584.43  Assets
+          $ 3,852.23    Checking
+              $ 2.74      Covantage
+            $ 692.17      Northwoods
+          $ 3,157.32      Park City
+        $ 231,732.20    Investments
+         $ 93,476.22      401K
+         $ 14,049.53      HSA
+         $ 89,723.76      IRA
          $ 34,482.69      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -403,294.26  Liabilities
-            $ 416.55    Credit Card
+       $ -403,274.51  Liabilities
+            $ 436.30    Credit Card
             $ 449.53      Apple
-            $ -32.98      RipCo
+            $ -13.23      RipCo
        $ -403,710.81    RE
         $ -56,000.00      Condo:Mortgage
        $ -347,710.81      Cottage:Mortgage
 --------------------
-        $ 532,112.75
+        $ 532,309.92
 #+end_example
 ** Spending
 *** Category Spending
@@ -3905,14 +3988,14 @@ September 01 2023   Expenses:Transportation:Biking        $ 99.93
 September 01 2023   Expenses:Transportation:Gas           $ 49.55
 September 01 2023   Expenses:Transportation:Ride Share    $ 7.65
 October 01 2023     Expenses:Food:Drinks                  $ 68.92
-October 01 2023     Expenses:Food:Fast Food               $ 87.89
-October 01 2023     Expenses:Food:Snacks                  $ 355.82
+October 01 2023     Expenses:Food:Fast Food               $ 102.16
+October 01 2023     Expenses:Food:Snacks                  $ 358.45
 October 01 2023     Expenses:Housing:Utilities            $ 122.00
 October 01 2023     Expenses:Personal:Boat                $ 64.68
 October 01 2023     Expenses:Personal:Clothes             $ 50.00
 October 01 2023     Expenses:Personal:Communication       $ 35.00
 October 01 2023     Expenses:Personal:Electronics         $ 5.26
-October 01 2023     Expenses:Personal:Household           $ 142.03
+October 01 2023     Expenses:Personal:Household           $ 208.17
 October 01 2023     Expenses:RE:Condo:Interest            $ 225.00
 October 01 2023     Expenses:RE:Condo:Taxes               $ 2,377.01
 October 01 2023     Expenses:RE:Cottage:Cleaning          $ 60.00
@@ -3923,8 +4006,8 @@ October 01 2023     Expenses:RE:Cottage:Utilities         $ 185.71
 October 01 2023     Expenses:Taxes:Federal                $ 1,185.03
 October 01 2023     Expenses:Taxes:Illinois               $ 323.14
 October 01 2023     Expenses:Taxes:Medicare               $ 153.42
-October 01 2023     Expenses:Transportation:Biking        $ 27.78
-October 01 2023     Expenses:Transportation:Gas           $ 98.56
+October 01 2023     Expenses:Transportation:Biking        $ 30.48
+October 01 2023     Expenses:Transportation:Gas           $ 150.65
 October 01 2023     Expenses:Transportation:Insurance     $ 429.31
 October 01 2023     Expenses:Transportation:Repairs       $ 40.00
 #+end_example
@@ -3940,7 +4023,7 @@ October 01 2023     Expenses:Transportation:Repairs       $ 40.00
 : July 2023            $ 8,234.24
 : August 2023          $ 7,336.03
 : September 2023       $ 11,002.49
-: October 2023         $ 3,684.08
+: October 2023         $ 3,821.91
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -3948,6 +4031,15 @@ October 01 2023     Expenses:Transportation:Repairs       $ 40.00
 #+end_src
 #+results:
 #+begin_example
+October 25 2023     GasBuddy                    Expenses:Transportation:Gas           $ 52.09
+October 25 2023     VRBO                        Income:RE:Cottage:Rent                $ -646.26
+October 24 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 0.88
+October 24 2023     Marshalls                   Expenses:Food:Snacks                  $ 1.53
+October 24 2023     Jewel                       Expenses:Food:Snacks                  $ 1.10
+October 24 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 1.82
+October 24 2023     Chick-Fil-A                 Expenses:Food:Fast Food               $ 11.51
+October 24 2023     McDonald's                  Expenses:Food:Fast Food               $ 2.76
+October 24 2023     Amazon                      Expenses:Personal:Household           $ 66.14
 October 23 2023     Geico                       Expenses:Transportation:Insurance     $ 429.31
 October 23 2023     CVS                         Expenses:Food:Snacks                  $ 3.88
 October 23 2023     Corcoran's                  Expenses:Food:Drinks                  $ 38.83
