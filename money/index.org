@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 10/27/2023 00:00:00 VTSAX $100.4300
-  P 10/27/2023 00:00:00 VTIAX $27.6500
-  P 10/27/2023 00:00:00 FSPSX $42.4500
-  P 10/27/2023 00:00:00 FXAIX $145.4100
-  P 10/27/2023 00:00:00 CONDO $250,000.00
-  P 10/27/2023 00:00:00 COTTA $450,000.00
+  P 10/30/2023 00:00:00 VTSAX $99.4000
+  P 10/30/2023 00:00:00 VTIAX $27.4800
+  P 10/30/2023 00:00:00 FSPSX $42.1900
+  P 10/30/2023 00:00:00 FXAIX $143.6900
+  P 10/30/2023 00:00:00 CONDO $250,000.00
+  P 10/30/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -3742,7 +3742,8 @@
       Assets:Checking:Northwoods            $ 2,832.93
       Assets:Checking:Park City               $ 850.00
       Assets:Checking:Covantage               $ 100.00
-      Assets:Investments:401K                 $ 950.07
+      Assets:Investments:401K                    5.647 FXAIX @ $ 143.006906321941
+      Assets:Investments:401K                     3.39 FSPSX @ $ 42.0383480826
 
   2023-10-27 * Chase
       Expenses:RE:Cottage:Escrow            $ 1,252.93
@@ -3767,6 +3768,22 @@
   2023-10-27 * Kass Property Management
       Expenses:Housing:Rent                 $ 1,409.45
       Assets:Checking:Park City
+
+  2023-10-29 * Brooke Janicki
+      Expenses:RE:Cottage:Cleaning            $ 340.00
+      Assets:Checking:Covantage
+
+  2023-10-29 * Interest
+      Assets:Checking:Park City                 $ 0.14
+      Income:Extra
+
+  2023-10-29 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 7.23
+      Assets:Checking:Covantage
+
+  2023-10-29 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 2.41
+      Assets:Checking:Covantage
 #+end_src
 ** Budget
 #+name: budget
@@ -3891,27 +3908,25 @@ $ -13,018.13 $ -11,000.00  $ -2,018.13  118%    Stripe
 #+end_src
 #+results:
 #+begin_example
-          $ 5,006.80
+          $ 3,707.23
            1.0 CONDO
            1.0 COTTA
-       398.535 FSPSX
-       618.260 FXAIX
+       401.925 FSPSX
+       623.907 FXAIX
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 4,056.73    Checking
-            $ 706.68      Covantage
+          $ 3,707.23    Checking
+            $ 357.04      Covantage
           $ 1,352.18      Northwoods
-          $ 1,997.87      Park City
-            $ 950.07
-       398.535 FSPSX
-       618.260 FXAIX
+          $ 1,998.01      Park City
+       401.925 FSPSX
+       623.907 FXAIX
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX    Investments
-            $ 950.07
-       398.535 FSPSX
-       522.326 FXAIX      401K
+       401.925 FSPSX
+       527.973 FXAIX      401K
         95.934 FXAIX      HSA
        584.372 VTIAX
        726.330 VTSAX      IRA
@@ -3926,11 +3941,11 @@ $ -13,018.13 $ -11,000.00  $ -2,018.13  118%    Stripe
         $ -56,000.00      Condo:Mortgage
        $ -347,710.81      Cottage:Mortgage
 --------------------
-       $ -398,717.24
+       $ -400,016.81
            1.0 CONDO
            1.0 COTTA
-       398.535 FSPSX
-       618.260 FXAIX
+       401.925 FSPSX
+       623.907 FXAIX
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX
@@ -3943,15 +3958,15 @@ $ -13,018.13 $ -11,000.00  $ -2,018.13  118%    Stripe
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 935,411.70  Assets
-          $ 4,056.73    Checking
-            $ 706.68      Covantage
+        $ 933,052.08  Assets
+          $ 3,707.23    Checking
+            $ 357.04      Covantage
           $ 1,352.18      Northwoods
-          $ 1,997.87      Park City
-        $ 231,354.97    Investments
-         $ 93,819.30      401K
-         $ 13,949.76      HSA
-         $ 89,103.21      IRA
+          $ 1,998.01      Park City
+        $ 229,344.85    Investments
+         $ 92,821.66      401K
+         $ 13,784.76      HSA
+         $ 88,255.74      IRA
          $ 34,482.69      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
@@ -3962,7 +3977,7 @@ $ -13,018.13 $ -11,000.00  $ -2,018.13  118%    Stripe
         $ -56,000.00      Condo:Mortgage
        $ -347,710.81      Cottage:Mortgage
 --------------------
-        $ 531,687.66
+        $ 529,328.04
 #+end_example
 ** Spending
 *** Category Spending
@@ -4144,7 +4159,7 @@ October 01 2023     Expenses:Personal:Electronics         $ 5.26
 October 01 2023     Expenses:Personal:Household           $ 248.17
 October 01 2023     Expenses:RE:Condo:Interest            $ 225.00
 October 01 2023     Expenses:RE:Condo:Taxes               $ 2,377.01
-October 01 2023     Expenses:RE:Cottage:Cleaning          $ 60.00
+October 01 2023     Expenses:RE:Cottage:Cleaning          $ 400.00
 October 01 2023     Expenses:RE:Cottage:Escrow            $ 2,505.86
 October 01 2023     Expenses:RE:Cottage:Lakefront         $ 425.00
 October 01 2023     Expenses:RE:Cottage:Repairs           $ 8.19
@@ -4152,7 +4167,7 @@ October 01 2023     Expenses:RE:Cottage:Utilities         $ 431.70
 October 01 2023     Expenses:Taxes:Federal                $ 2,323.44
 October 01 2023     Expenses:Taxes:Illinois               $ 636.66
 October 01 2023     Expenses:Taxes:Medicare               $ 302.26
-October 01 2023     Expenses:Transportation:Biking        $ 33.16
+October 01 2023     Expenses:Transportation:Biking        $ 42.80
 October 01 2023     Expenses:Transportation:Gas           $ 150.65
 October 01 2023     Expenses:Transportation:Insurance     $ 429.31
 October 01 2023     Expenses:Transportation:Repairs       $ 40.00
@@ -4170,7 +4185,7 @@ October 01 2023     Expenses:Travel:Air                   $ 925.93
 : July 2023            $ 8,234.24
 : August 2023          $ 7,336.03
 : September 2023       $ 11,002.49
-: October 2023         $ 7,849.87
+: October 2023         $ 8,199.51
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -4178,6 +4193,10 @@ October 01 2023     Expenses:Travel:Air                   $ 925.93
 #+end_src
 #+results:
 #+begin_example
+October 29 2023     Brooke Janicki              Expenses:RE:Cottage:Cleaning          $ 340.00
+October 29 2023     Interest                    Income:Extra                          $ -0.14
+October 29 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 7.23
+October 29 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 2.41
 October 27 2023     Stripe                      Income:Stripe:Paycheck                $ -6,333.77
 October 27 2023     Stripe                      Expenses:Taxes:Federal                $ 1,138.41
 October 27 2023     Stripe                      Expenses:Taxes:Medicare               $ 148.84
