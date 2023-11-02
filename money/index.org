@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 11/01/2023 00:00:00 VTSAX $100.0000
-  P 11/01/2023 00:00:00 VTIAX $27.7200
-  P 11/01/2023 00:00:00 FSPSX $42.4800
-  P 11/01/2023 00:00:00 FXAIX $144.7300
-  P 11/01/2023 00:00:00 CONDO $250,000.00
-  P 11/01/2023 00:00:00 COTTA $450,000.00
+  P 11/02/2023 00:00:00 VTSAX $100.6900
+  P 11/02/2023 00:00:00 VTIAX $27.7200
+  P 11/02/2023 00:00:00 FSPSX $42.5800
+  P 11/02/2023 00:00:00 FXAIX $145.6800
+  P 11/02/2023 00:00:00 CONDO $250,000.00
+  P 11/02/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -3812,6 +3812,70 @@
       Liabilities:RE:Cottage:Mortgage         $ 627.10
       Expenses:RE:Cottage:Interest          $ 1,014.16
       Expenses:RE:Cottage:Escrow
+
+  2023-10-31 * Xfinity
+      Expenses:Housing:Utilities               $ 70.00
+      Assets:Checking:Park City
+
+  2023-11-01 * 7/11
+      Expenses:Food:Snacks                      $ 6.68
+      Assets:Checking:Covantage
+
+  2023-11-01 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 2.31
+      Assets:Checking:Covantage
+
+  2023-11-01 * 7/11
+      Expenses:Food:Snacks                      $ 7.56
+      Assets:Checking:Covantage
+
+  2023-11-01 * Subway
+      Expenses:Food:Fast Food                   $ 0.87
+      Assets:Checking:Covantage
+
+  2023-11-01 * Jewel
+      Expenses:Food:Snacks                      $ 8.64
+      Assets:Checking:Covantage
+
+  2023-11-01 * Amazon
+      Expenses:Gifts                          $ 122.58
+      Assets:Checking:Covantage
+
+  2023-11-01 * Amazon
+      Expenses:Gifts                           $ 83.67
+      Assets:Checking:Covantage
+
+  2023-11-01 * Bombas
+      Expenses:Personal:Clothes                $ 30.60
+      Assets:Checking:Covantage
+
+  2023-11-01 * Xfinity
+      Expenses:Housing:Utilities               $ 70.00
+      Assets:Checking:Park City
+
+  2023-11-02 * 7/11
+      Expenses:Food:Snacks                      $ 8.04
+      Assets:Checking:Covantage
+
+  2023-11-02 * Visible
+      Expenses:Personal:Communication          $ 25.00
+      Assets:Checking:Covantage
+
+  2023-11-02 * Chipotle
+      Expenses:Food:Fast Food                  $ 30.00
+      Assets:Checking:Covantage
+
+  2023-11-02 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 3.24
+      Assets:Checking:Covantage
+
+  2023-11-02 * Transfer
+      Liabilities:RE:Condo:Mortgage           $ 176.00
+      Assets:Checking:Northwoods
+
+  2023-11-02 * Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 176.00
+      Assets:Checking:Northwoods
 #+end_src
 ** Budget
 #+name: budget
@@ -3824,11 +3888,12 @@
       Expenses:RE:Cottage:Utilities           $ 176.00  ; Wisconsin Public Service
       Expenses:RE:Cottage:Utilities            $ 69.99  ; Spectrum
       Expenses:Personal:Communication          $ 25.00  ; Visible
+      Expenses                                $ 200.00  ; Miscellaneous
       Expenses:Food:Groceries                 $ 120.41
       Expenses:Food:Snacks                    $ 100.00
       Expenses:Food:Fast Food                 $ 100.00
-      Expenses:Transportation:Gas             $ 100.00
-      Liabilities:RE:Condo:Mortgage         $ 3,000.00
+      Expenses:Transportation                 $ 100.00
+      Liabilities:RE:Condo:Mortgage         $ 2,800.00
       Expenses:RE:Condo:Interest              $ 260.00
       Expenses:RE:Condo:HOA                   $ 135.00
       Expenses:RE:Condo:Taxes                 $ 450.00
@@ -3873,35 +3938,35 @@
 #+RESULTS:
 #+begin_example
            0   $ 1,900.14  $ -1,900.14     0  Assets:Investments:401K:Cash
-           0   $ 8,377.40  $ -8,377.40     0  Expenses
-           0     $ 320.41    $ -320.41     0    Food
-           0     $ 100.00    $ -100.00     0      Fast Food
+    $ 575.19   $ 8,577.40  $ -8,002.21    7%  Expenses
+     $ 61.79     $ 320.41    $ -258.62   19%    Food
+     $ 30.87     $ 100.00     $ -69.13   31%      Fast Food
            0     $ 120.41    $ -120.41     0      Groceries
-           0     $ 100.00    $ -100.00     0      Snacks
-           0   $ 1,626.00  $ -1,626.00     0    Housing
+     $ 30.92     $ 100.00     $ -69.08   31%      Snacks
+     $ 70.00   $ 1,626.00  $ -1,556.00    4%    Housing
            0   $ 1,410.00  $ -1,410.00     0      Rent
-           0     $ 216.00    $ -216.00     0      Utilities
-           0      $ 25.00     $ -25.00     0    Personal:Communication
-           0   $ 3,005.99  $ -3,005.99     0    RE
+     $ 70.00     $ 216.00    $ -146.00   32%      Utilities
+     $ 25.00      $ 25.00            0  100%    Personal:Communication
+    $ 176.00   $ 3,005.99  $ -2,829.99    6%    RE
            0     $ 895.00    $ -895.00     0      Condo
            0     $ 135.00    $ -135.00     0        HOA
            0      $ 50.00     $ -50.00     0        Insurance
            0     $ 260.00    $ -260.00     0        Interest
            0     $ 450.00    $ -450.00     0        Taxes
-           0   $ 2,110.99  $ -2,110.99     0      Cottage
+    $ 176.00   $ 2,110.99  $ -1,934.99    8%      Cottage
            0     $ 865.00    $ -865.00     0        Escrow
            0   $ 1,000.00  $ -1,000.00     0        Interest
-           0     $ 245.99    $ -245.99     0        Utilities
+    $ 176.00     $ 245.99     $ -69.99   72%        Utilities
            0   $ 3,300.00  $ -3,300.00     0    Taxes
-           0     $ 100.00    $ -100.00     0    Transportation:Gas
+           0     $ 100.00    $ -100.00     0    Transportation
            0 $ -13,917.54  $ 13,917.54     0  Income
            0  $ -1,250.00   $ 1,250.00     0    RE:Condo
            0 $ -12,667.54  $ 12,667.54     0    Stripe
-           0   $ 3,640.00  $ -3,640.00     0  Liabilities:RE
-           0   $ 3,000.00  $ -3,000.00     0    Condo:Mortgage
+    $ 176.00   $ 3,440.00  $ -3,264.00    5%  Liabilities:RE
+    $ 176.00   $ 2,800.00  $ -2,624.00    6%    Condo:Mortgage
            0     $ 640.00    $ -640.00     0    Cottage:Mortgage
 ------------ ------------ ------------ -----
-           0            0            0     0
+    $ 751.19            0     $ 751.19     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -3911,7 +3976,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 2,607.71
+          $ 1,786.52
            1.0 CONDO
            1.0 COTTA
        401.925 FSPSX
@@ -3919,10 +3984,10 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 2,607.71    Checking
-            $ 337.52      Covantage
-            $ 352.18      Northwoods
-          $ 1,918.01      Park City
+          $ 1,786.52    Checking
+              $ 8.33      Covantage
+              $ 0.18      Northwoods
+          $ 1,778.01      Park City
        401.925 FSPSX
        623.907 FXAIX
        1,713.0 STRIP
@@ -3938,11 +4003,11 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -402,083.71  Liabilities:RE
-        $ -55,000.00    Condo:Mortgage
+       $ -401,907.71  Liabilities:RE
+        $ -54,824.00    Condo:Mortgage
        $ -347,083.71    Cottage:Mortgage
 --------------------
-       $ -399,476.00
+       $ -400,121.19
            1.0 CONDO
            1.0 COTTA
        401.925 FSPSX
@@ -3959,24 +4024,24 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 933,294.03  Assets
-          $ 2,607.71    Checking
-            $ 337.52      Covantage
-            $ 352.18      Northwoods
-          $ 1,918.01      Park City
-        $ 230,686.32    Investments
-         $ 93,487.31      401K
-         $ 13,884.53      HSA
-         $ 88,831.79      IRA
+        $ 933,606.91  Assets
+          $ 1,786.52    Checking
+              $ 8.33      Covantage
+              $ 0.18      Northwoods
+          $ 1,778.01      Park City
+        $ 231,820.39    Investments
+         $ 94,029.07      401K
+         $ 13,975.67      HSA
+         $ 89,332.96      IRA
          $ 34,482.69      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -402,083.71  Liabilities:RE
-        $ -55,000.00    Condo:Mortgage
+       $ -401,907.71  Liabilities:RE
+        $ -54,824.00    Condo:Mortgage
        $ -347,083.71    Cottage:Mortgage
 --------------------
-        $ 531,210.32
+        $ 531,699.20
 #+end_example
 ** Spending
 *** Category Spending
@@ -4150,7 +4215,7 @@ October 01 2023     Expenses:Food:Drinks                  $ 68.92
 October 01 2023     Expenses:Food:Fast Food               $ 202.51
 October 01 2023     Expenses:Food:Snacks                  $ 395.08
 October 01 2023     Expenses:Housing:Rent                 $ 1,409.45
-October 01 2023     Expenses:Housing:Utilities            $ 216.00
+October 01 2023     Expenses:Housing:Utilities            $ 286.00
 October 01 2023     Expenses:Personal:Boat                $ 64.68
 October 01 2023     Expenses:Personal:Clothes             $ 50.00
 October 01 2023     Expenses:Personal:Communication       $ 35.00
@@ -4172,6 +4237,14 @@ October 01 2023     Expenses:Transportation:Gas           $ 150.65
 October 01 2023     Expenses:Transportation:Insurance     $ 429.31
 October 01 2023     Expenses:Transportation:Repairs       $ 40.00
 October 01 2023     Expenses:Travel:Air                   $ 925.93
+November 01 2023    Expenses:Food:Fast Food               $ 30.87
+November 01 2023    Expenses:Food:Snacks                  $ 30.92
+November 01 2023    Expenses:Gifts                        $ 206.25
+November 01 2023    Expenses:Housing:Utilities            $ 70.00
+November 01 2023    Expenses:Personal:Clothes             $ 30.60
+November 01 2023    Expenses:Personal:Communication       $ 25.00
+November 01 2023    Expenses:RE:Cottage:Utilities         $ 176.00
+November 01 2023    Expenses:Transportation:Biking        $ 5.55
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -4185,7 +4258,8 @@ October 01 2023     Expenses:Travel:Air                   $ 925.93
 : July 2023            $ 8,234.24
 : August 2023          $ 7,336.03
 : September 2023       $ 11,002.49
-: October 2023         $ 7,658.70
+: October 2023         $ 7,728.70
+: November 2023        $ 575.19
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -4193,6 +4267,20 @@ October 01 2023     Expenses:Travel:Air                   $ 925.93
 #+end_src
 #+results:
 #+begin_example
+November 02 2023    7/11                        Expenses:Food:Snacks                  $ 8.04
+November 02 2023    Visible                     Expenses:Personal:Communication       $ 25.00
+November 02 2023    Chipotle                    Expenses:Food:Fast Food               $ 30.00
+November 02 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 3.24
+November 02 2023    Wisconsin Public Service    Expenses:RE:Cottage:Utilities         $ 176.00
+November 01 2023    7/11                        Expenses:Food:Snacks                  $ 6.68
+November 01 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 2.31
+November 01 2023    7/11                        Expenses:Food:Snacks                  $ 7.56
+November 01 2023    Subway                      Expenses:Food:Fast Food               $ 0.87
+November 01 2023    Jewel                       Expenses:Food:Snacks                  $ 8.64
+November 01 2023    Amazon                      Expenses:Gifts                        $ 122.58
+November 01 2023    Amazon                      Expenses:Gifts                        $ 83.67
+November 01 2023    Bombas                      Expenses:Personal:Clothes             $ 30.60
+November 01 2023    Xfinity                     Expenses:Housing:Utilities            $ 70.00
 October 31 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 3.84
 October 31 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 0.59
 October 31 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 0.56
@@ -4200,6 +4288,7 @@ October 31 2023     Divvy Bikes                 Expenses:Transportation:Biking  
 October 31 2023     Fast Food                   Expenses:Food:Fast Food               $ 80.00
 October 31 2023     Transfer                    Expenses:RE:Cottage:Interest          $ 1,014.16
 October 31 2023     Transfer                    Expenses:RE:Cottage:Escrow            $ -1,641.26
+October 31 2023     Xfinity                     Expenses:Housing:Utilities            $ 70.00
 October 29 2023     Brooke Janicki              Expenses:RE:Cottage:Cleaning          $ 340.00
 October 29 2023     Interest                    Income:Extra                          $ -0.14
 October 29 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 7.23
