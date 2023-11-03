@@ -49,7 +49,7 @@
 #+begin_src ledger :eval never
   P 11/03/2023 00:00:00 VTSAX $101.6800
   P 11/03/2023 00:00:00 VTIAX $27.9900
-  P 11/03/2023 00:00:00 FSPSX $43.8700
+  P 11/03/2023 00:00:00 FSPSX $43.0600
   P 11/03/2023 00:00:00 FXAIX $147.2100
   P 11/03/2023 00:00:00 CONDO $250,000.00
   P 11/03/2023 00:00:00 COTTA $450,000.00
@@ -3884,6 +3884,11 @@
   2023-11-02 * Divvy Bikes
       Expenses:Transportation:Biking            $ 1.11
       Assets:Checking:Covantage
+
+  2023-11-01 * Rent
+      Expenses:RE:Condo:HOA                   $ 132.34
+      Income:RE:Condo:Rent                 $ -1,250.00
+      Assets:Checking:RipCo
 #+end_src
 ** Budget
 #+name: budget
@@ -3897,13 +3902,13 @@
       Expenses:RE:Cottage:Utilities            $ 69.99  ; Spectrum
       Expenses:Personal:Communication          $ 25.00  ; Visible
       Expenses                                $ 200.00  ; Miscellaneous
-      Expenses:Food:Groceries                 $ 120.41
+      Expenses:Food:Groceries                 $ 123.07
       Expenses:Food:Snacks                    $ 100.00
       Expenses:Food:Fast Food                 $ 100.00
       Expenses:Transportation                 $ 100.00
       Liabilities:RE:Condo:Mortgage         $ 2,800.00
       Expenses:RE:Condo:Interest              $ 260.00
-      Expenses:RE:Condo:HOA                   $ 135.00
+      Expenses:RE:Condo:HOA                   $ 132.34
       Expenses:RE:Condo:Taxes                 $ 450.00
       Expenses:RE:Condo:Insurance              $ 50.00
       Liabilities:RE:Cottage:Mortgage         $ 640.00
@@ -3946,18 +3951,18 @@
 #+RESULTS:
 #+begin_example
            0   $ 1,900.14  $ -1,900.14     0  Assets:Investments:401K:Cash
-    $ 578.71   $ 8,577.40  $ -7,998.69    7%  Expenses
-     $ 61.79     $ 320.41    $ -258.62   19%    Food
+    $ 711.05   $ 8,577.40  $ -7,866.35    8%  Expenses
+     $ 61.79     $ 323.07    $ -261.28   19%    Food
      $ 30.87     $ 100.00     $ -69.13   31%      Fast Food
-           0     $ 120.41    $ -120.41     0      Groceries
+           0     $ 123.07    $ -123.07     0      Groceries
      $ 30.92     $ 100.00     $ -69.08   31%      Snacks
      $ 70.00   $ 1,626.00  $ -1,556.00    4%    Housing
            0   $ 1,410.00  $ -1,410.00     0      Rent
      $ 70.00     $ 216.00    $ -146.00   32%      Utilities
      $ 25.00      $ 25.00            0  100%    Personal:Communication
-    $ 176.00   $ 3,005.99  $ -2,829.99    6%    RE
-           0     $ 895.00    $ -895.00     0      Condo
-           0     $ 135.00    $ -135.00     0        HOA
+    $ 308.34   $ 3,003.33  $ -2,694.99   10%    RE
+    $ 132.34     $ 892.34    $ -760.00   15%      Condo
+    $ 132.34     $ 132.34            0  100%        HOA
            0      $ 50.00     $ -50.00     0        Insurance
            0     $ 260.00    $ -260.00     0        Interest
            0     $ 450.00    $ -450.00     0        Taxes
@@ -3967,14 +3972,14 @@
     $ 176.00     $ 245.99     $ -69.99   72%        Utilities
            0   $ 3,300.00  $ -3,300.00     0    Taxes
            0     $ 100.00    $ -100.00     0    Transportation
-           0 $ -13,917.54  $ 13,917.54     0  Income
-           0  $ -1,250.00   $ 1,250.00     0    RE:Condo
+ $ -1,250.00 $ -13,917.54  $ 12,667.54    9%  Income
+ $ -1,250.00  $ -1,250.00            0  100%    RE:Condo
            0 $ -12,667.54  $ 12,667.54     0    Stripe
     $ 176.00   $ 3,440.00  $ -3,264.00    5%  Liabilities:RE
     $ 176.00   $ 2,800.00  $ -2,624.00    6%    Condo:Mortgage
            0     $ 640.00    $ -640.00     0    Cottage:Mortgage
 ------------ ------------ ------------ -----
-    $ 754.71            0     $ 754.71     0
+   $ -362.95            0    $ -362.95     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -3984,7 +3989,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 1,783.00
+          $ 2,900.66
            1.0 CONDO
            1.0 COTTA
        401.925 FSPSX
@@ -3992,10 +3997,11 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 1,783.00    Checking
+          $ 2,900.66    Checking
               $ 4.81      Covantage
               $ 0.18      Northwoods
           $ 1,778.01      Park City
+          $ 1,117.66      RipCo
        401.925 FSPSX
        623.907 FXAIX
        1,713.0 STRIP
@@ -4015,7 +4021,7 @@
         $ -54,824.00    Condo:Mortgage
        $ -347,083.71    Cottage:Mortgage
 --------------------
-       $ -400,124.71
+       $ -399,007.05
            1.0 CONDO
            1.0 COTTA
        401.925 FSPSX
@@ -4032,13 +4038,14 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 935,953.30  Assets
-          $ 1,783.00    Checking
+        $ 936,745.40  Assets
+          $ 2,900.66    Checking
               $ 4.81      Covantage
               $ 0.18      Northwoods
           $ 1,778.01      Park City
-        $ 234,170.30    Investments
-         $ 95,355.36      401K
+          $ 1,117.66      RipCo
+        $ 233,844.74    Investments
+         $ 95,029.80      401K
          $ 14,122.44      HSA
          $ 90,209.81      IRA
          $ 34,482.69      RSU
@@ -4049,7 +4056,7 @@
         $ -54,824.00    Condo:Mortgage
        $ -347,083.71    Cottage:Mortgage
 --------------------
-        $ 534,045.59
+        $ 534,837.69
 #+end_example
 ** Spending
 *** Category Spending
@@ -4251,6 +4258,7 @@ November 01 2023    Expenses:Gifts                        $ 206.25
 November 01 2023    Expenses:Housing:Utilities            $ 70.00
 November 01 2023    Expenses:Personal:Clothes             $ 30.60
 November 01 2023    Expenses:Personal:Communication       $ 25.00
+November 01 2023    Expenses:RE:Condo:HOA                 $ 132.34
 November 01 2023    Expenses:RE:Cottage:Utilities         $ 176.00
 November 01 2023    Expenses:Transportation:Biking        $ 9.07
 #+end_example
@@ -4267,7 +4275,7 @@ November 01 2023    Expenses:Transportation:Biking        $ 9.07
 : August 2023          $ 7,336.03
 : September 2023       $ 11,002.49
 : October 2023         $ 7,728.70
-: November 2023        $ 578.71
+: November 2023        $ 711.05
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -4291,6 +4299,8 @@ November 01 2023    Amazon                      Expenses:Gifts                  
 November 01 2023    Amazon                      Expenses:Gifts                        $ 83.67
 November 01 2023    Bombas                      Expenses:Personal:Clothes             $ 30.60
 November 01 2023    Xfinity                     Expenses:Housing:Utilities            $ 70.00
+November 01 2023    Rent                        Expenses:RE:Condo:HOA                 $ 132.34
+November 01 2023    Rent                        Income:RE:Condo:Rent                  $ -1,250.00
 October 31 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 3.84
 October 31 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 0.59
 October 31 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 0.56
