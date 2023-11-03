@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 11/02/2023 00:00:00 VTSAX $100.6900
-  P 11/02/2023 00:00:00 VTIAX $27.7200
-  P 11/02/2023 00:00:00 FSPSX $42.5800
-  P 11/02/2023 00:00:00 FXAIX $145.6800
-  P 11/02/2023 00:00:00 CONDO $250,000.00
-  P 11/02/2023 00:00:00 COTTA $450,000.00
+  P 11/03/2023 00:00:00 VTSAX $101.6800
+  P 11/03/2023 00:00:00 VTIAX $27.9900
+  P 11/03/2023 00:00:00 FSPSX $43.8700
+  P 11/03/2023 00:00:00 FXAIX $147.2100
+  P 11/03/2023 00:00:00 CONDO $250,000.00
+  P 11/03/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -3876,6 +3876,14 @@
   2023-11-02 * Wisconsin Public Service
       Expenses:RE:Cottage:Utilities           $ 176.00
       Assets:Checking:Northwoods
+
+  2023-11-02 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 2.41
+      Assets:Checking:Covantage
+
+  2023-11-02 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.11
+      Assets:Checking:Covantage
 #+end_src
 ** Budget
 #+name: budget
@@ -3938,7 +3946,7 @@
 #+RESULTS:
 #+begin_example
            0   $ 1,900.14  $ -1,900.14     0  Assets:Investments:401K:Cash
-    $ 575.19   $ 8,577.40  $ -8,002.21    7%  Expenses
+    $ 578.71   $ 8,577.40  $ -7,998.69    7%  Expenses
      $ 61.79     $ 320.41    $ -258.62   19%    Food
      $ 30.87     $ 100.00     $ -69.13   31%      Fast Food
            0     $ 120.41    $ -120.41     0      Groceries
@@ -3966,7 +3974,7 @@
     $ 176.00   $ 2,800.00  $ -2,624.00    6%    Condo:Mortgage
            0     $ 640.00    $ -640.00     0    Cottage:Mortgage
 ------------ ------------ ------------ -----
-    $ 751.19            0     $ 751.19     0
+    $ 754.71            0     $ 754.71     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -3976,7 +3984,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 1,786.52
+          $ 1,783.00
            1.0 CONDO
            1.0 COTTA
        401.925 FSPSX
@@ -3984,8 +3992,8 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 1,786.52    Checking
-              $ 8.33      Covantage
+          $ 1,783.00    Checking
+              $ 4.81      Covantage
               $ 0.18      Northwoods
           $ 1,778.01      Park City
        401.925 FSPSX
@@ -4007,7 +4015,7 @@
         $ -54,824.00    Condo:Mortgage
        $ -347,083.71    Cottage:Mortgage
 --------------------
-       $ -400,121.19
+       $ -400,124.71
            1.0 CONDO
            1.0 COTTA
        401.925 FSPSX
@@ -4024,15 +4032,15 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 933,606.91  Assets
-          $ 1,786.52    Checking
-              $ 8.33      Covantage
+        $ 935,953.30  Assets
+          $ 1,783.00    Checking
+              $ 4.81      Covantage
               $ 0.18      Northwoods
           $ 1,778.01      Park City
-        $ 231,820.39    Investments
-         $ 94,029.07      401K
-         $ 13,975.67      HSA
-         $ 89,332.96      IRA
+        $ 234,170.30    Investments
+         $ 95,355.36      401K
+         $ 14,122.44      HSA
+         $ 90,209.81      IRA
          $ 34,482.69      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
@@ -4041,7 +4049,7 @@
         $ -54,824.00    Condo:Mortgage
        $ -347,083.71    Cottage:Mortgage
 --------------------
-        $ 531,699.20
+        $ 534,045.59
 #+end_example
 ** Spending
 *** Category Spending
@@ -4244,7 +4252,7 @@ November 01 2023    Expenses:Housing:Utilities            $ 70.00
 November 01 2023    Expenses:Personal:Clothes             $ 30.60
 November 01 2023    Expenses:Personal:Communication       $ 25.00
 November 01 2023    Expenses:RE:Cottage:Utilities         $ 176.00
-November 01 2023    Expenses:Transportation:Biking        $ 5.55
+November 01 2023    Expenses:Transportation:Biking        $ 9.07
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -4259,7 +4267,7 @@ November 01 2023    Expenses:Transportation:Biking        $ 5.55
 : August 2023          $ 7,336.03
 : September 2023       $ 11,002.49
 : October 2023         $ 7,728.70
-: November 2023        $ 575.19
+: November 2023        $ 578.71
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -4272,6 +4280,8 @@ November 02 2023    Visible                     Expenses:Personal:Communication 
 November 02 2023    Chipotle                    Expenses:Food:Fast Food               $ 30.00
 November 02 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 3.24
 November 02 2023    Wisconsin Public Service    Expenses:RE:Cottage:Utilities         $ 176.00
+November 02 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 2.41
+November 02 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 1.11
 November 01 2023    7/11                        Expenses:Food:Snacks                  $ 6.68
 November 01 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 2.31
 November 01 2023    7/11                        Expenses:Food:Snacks                  $ 7.56
