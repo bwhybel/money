@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 11/07/2023 00:00:00 VTSAX $104.8600
-  P 11/07/2023 00:00:00 VTIAX $28.9500
-  P 11/07/2023 00:00:00 FSPSX $44.2400
-  P 11/07/2023 00:00:00 FXAIX $151.6800
-  P 11/07/2023 00:00:00 CONDO $250,000.00
-  P 11/07/2023 00:00:00 COTTA $450,000.00
+  P 11/09/2023 00:00:00 VTSAX $105.1800
+  P 11/09/2023 00:00:00 VTIAX $28.7900
+  P 11/09/2023 00:00:00 FSPSX $43.9700
+  P 11/09/2023 00:00:00 FXAIX $152.1100
+  P 11/09/2023 00:00:00 CONDO $250,000.00
+  P 11/09/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -3914,6 +3914,23 @@
       Liabilities:RE:Condo:Mortgage           $ 486.29
       Expenses:RE:Condo:Interest              $ 171.33
       Assets:Checking:RipCo
+
+  2023-11-08 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.30
+      Assets:Checking:Covantage
+
+  2023-11-09 * Halsted Taxes and Insurance
+      Expenses:RE:Condo:Taxes                 $ 400.00
+      Expenses:RE:Condo:Insurance              $ 50.00
+      Assets:Checking:RipCo
+
+  2023-11-09 * Transfer
+      Assets:Checking:Covantage               $ 500.00
+      Assets:Checking:Park City
+
+  2023-11-09 * Affirm
+      Expenses:Gifts                           $ 86.92
+      Assets:Checking:Park City
 #+end_src
 ** Budget
 #+name: budget
@@ -3976,7 +3993,7 @@
 #+RESULTS:
 #+begin_example
            0   $ 1,900.14  $ -1,900.14     0  Assets:Investments:401K:Cash
-    $ 738.09   $ 8,577.40  $ -7,839.31    9%  Expenses
+  $ 1,276.31   $ 8,577.40  $ -7,301.09   15%  Expenses
      $ 61.79     $ 323.07    $ -261.28   19%    Food
      $ 30.87     $ 100.00     $ -69.13   31%      Fast Food
            0     $ 123.07    $ -123.07     0      Groceries
@@ -3985,12 +4002,12 @@
            0   $ 1,410.00  $ -1,410.00     0      Rent
      $ 70.00     $ 216.00    $ -146.00   32%      Utilities
      $ 25.00      $ 25.00            0  100%    Personal:Communication
-    $ 479.67   $ 3,003.33  $ -2,523.66   16%    RE
-    $ 303.67     $ 892.34    $ -588.67   34%      Condo
+    $ 929.67   $ 3,003.33  $ -2,073.66   31%    RE
+    $ 753.67     $ 892.34    $ -138.67   84%      Condo
     $ 132.34     $ 132.34            0  100%        HOA
-           0      $ 50.00     $ -50.00     0        Insurance
+     $ 50.00      $ 50.00            0  100%        Insurance
     $ 171.33     $ 260.00     $ -88.67   66%        Interest
-           0     $ 450.00    $ -450.00     0        Taxes
+    $ 400.00     $ 450.00     $ -50.00   89%        Taxes
     $ 176.00   $ 2,110.99  $ -1,934.99    8%      Cottage
            0     $ 865.00    $ -865.00     0        Escrow
            0   $ 1,000.00  $ -1,000.00     0        Interest
@@ -4004,7 +4021,7 @@
     $ 662.29   $ 2,800.00  $ -2,137.71   24%    Condo:Mortgage
            0     $ 640.00    $ -640.00     0    Cottage:Mortgage
 ------------ ------------ ------------ -----
-    $ 150.38            0     $ 150.38     0
+    $ 688.60            0     $ 688.60     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -4014,7 +4031,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 2,387.33
+          $ 1,849.11
            1.0 CONDO
            1.0 COTTA
        401.925 FSPSX
@@ -4022,11 +4039,11 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 2,387.33    Checking
-            $ 149.10      Covantage
+          $ 1,849.11    Checking
+            $ 647.80      Covantage
               $ 0.18      Northwoods
-          $ 1,778.01      Park City
-            $ 460.04      RipCo
+          $ 1,191.09      Park City
+             $ 10.04      RipCo
        401.925 FSPSX
        623.907 FXAIX
        1,713.0 STRIP
@@ -4046,7 +4063,7 @@
         $ -54,337.71    Condo:Mortgage
        $ -347,083.71    Cottage:Mortgage
 --------------------
-       $ -399,034.09
+       $ -399,572.31
            1.0 CONDO
            1.0 COTTA
        401.925 FSPSX
@@ -4063,16 +4080,16 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 942,365.93  Assets
-          $ 2,387.33    Checking
-            $ 149.10      Covantage
+        $ 942,126.40  Assets
+          $ 1,849.11    Checking
+            $ 647.80      Covantage
               $ 0.18      Northwoods
-          $ 1,778.01      Park City
-            $ 460.04      RipCo
-        $ 239,978.60    Investments
-         $ 97,864.11      401K
-         $ 14,551.27      HSA
-         $ 93,080.53      IRA
+          $ 1,191.09      Park City
+             $ 10.04      RipCo
+        $ 240,277.29    Investments
+         $ 97,982.62      401K
+         $ 14,592.52      HSA
+         $ 93,219.46      IRA
          $ 34,482.69      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
@@ -4081,7 +4098,7 @@
         $ -54,337.71    Condo:Mortgage
        $ -347,083.71    Cottage:Mortgage
 --------------------
-        $ 540,944.51
+        $ 540,704.98
 #+end_example
 ** Spending
 *** Category Spending
@@ -4279,15 +4296,17 @@ October 01 2023     Expenses:Transportation:Repairs       $ 40.00
 October 01 2023     Expenses:Travel:Air                   $ 925.93
 November 01 2023    Expenses:Food:Fast Food               $ 30.87
 November 01 2023    Expenses:Food:Snacks                  $ 30.92
-November 01 2023    Expenses:Gifts                        $ 42.58
+November 01 2023    Expenses:Gifts                        $ 129.50
 November 01 2023    Expenses:Housing:Utilities            $ 70.00
 November 01 2023    Expenses:Personal:Clothes             $ 30.60
 November 01 2023    Expenses:Personal:Communication       $ 25.00
 November 01 2023    Expenses:Personal:Household           $ 10.00
 November 01 2023    Expenses:RE:Condo:HOA                 $ 132.34
+November 01 2023    Expenses:RE:Condo:Insurance           $ 50.00
 November 01 2023    Expenses:RE:Condo:Interest            $ 171.33
+November 01 2023    Expenses:RE:Condo:Taxes               $ 400.00
 November 01 2023    Expenses:RE:Cottage:Utilities         $ 176.00
-November 01 2023    Expenses:Transportation:Biking        $ 18.45
+November 01 2023    Expenses:Transportation:Biking        $ 19.75
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -4302,7 +4321,7 @@ November 01 2023    Expenses:Transportation:Biking        $ 18.45
 : August 2023          $ 7,336.03
 : September 2023       $ 11,002.49
 : October 2023         $ 7,728.70
-: November 2023        $ 738.09
+: November 2023        $ 876.31
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -4310,6 +4329,10 @@ November 01 2023    Expenses:Transportation:Biking        $ 18.45
 #+end_src
 #+results:
 #+begin_example
+November 09 2023    Halsted Taxes and Insurance Expenses:RE:Condo:Taxes               $ 400.00
+November 09 2023    Halsted Taxes and Insurance Expenses:RE:Condo:Insurance           $ 50.00
+November 09 2023    Affirm                      Expenses:Gifts                        $ 86.92
+November 08 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 1.30
 November 07 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 0.74
 November 07 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 1.85
 November 07 2023    Huntington                  Expenses:RE:Condo:Interest            $ 171.33
