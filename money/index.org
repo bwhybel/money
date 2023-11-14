@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 11/09/2023 00:00:00 VTSAX $105.1800
-  P 11/09/2023 00:00:00 VTIAX $28.7900
-  P 11/09/2023 00:00:00 FSPSX $43.9700
-  P 11/09/2023 00:00:00 FXAIX $152.1100
-  P 11/09/2023 00:00:00 CONDO $250,000.00
-  P 11/09/2023 00:00:00 COTTA $450,000.00
+  P 11/14/2023 00:00:00 VTSAX $105.8600
+  P 11/14/2023 00:00:00 VTIAX $28.7800
+  P 11/14/2023 00:00:00 FSPSX $44.0800
+  P 11/14/2023 00:00:00 FXAIX $153.4500
+  P 11/14/2023 00:00:00 CONDO $250,000.00
+  P 11/14/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -3734,6 +3734,10 @@
       Expenses:Travel:Air                     $ 449.53
       Liabilities:Credit Card:Apple
 
+  2023-10-27 * TAP Refund
+      Assets:Checking:Covantage               $ 271.25
+      Expenses:Travel:Air
+
   2023-10-27 * Stripe
       Income:Stripe:Paycheck               $ -6,333.77
       Expenses:Taxes:Federal                $ 1,138.41
@@ -3849,6 +3853,11 @@
       Expenses:Housing:Utilities               $ 70.00
       Assets:Checking:Park City
 
+  2023-11-01 * Rent
+      Expenses:RE:Condo:HOA                   $ 132.34
+      Income:RE:Condo:Rent                 $ -1,250.00
+      Assets:Checking:RipCo
+
   2023-11-02 * 7/11
       Expenses:Food:Snacks                      $ 8.04
       Assets:Checking:Covantage
@@ -3880,11 +3889,6 @@
   2023-11-02 * Divvy Bikes
       Expenses:Transportation:Biking            $ 1.11
       Assets:Checking:Covantage
-
-  2023-11-01 * Rent
-      Expenses:RE:Condo:HOA                   $ 132.34
-      Income:RE:Condo:Rent                 $ -1,250.00
-      Assets:Checking:RipCo
 
   2023-11-05 * Divvy Bikes
       Expenses:Transportation:Biking            $ 2.06
@@ -3919,6 +3923,10 @@
       Expenses:Transportation:Biking            $ 1.30
       Assets:Checking:Covantage
 
+  2023-11-09 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.85
+      Assets:Checking:Covantage
+
   2023-11-09 * Halsted Taxes and Insurance
       Expenses:RE:Condo:Taxes                 $ 400.00
       Expenses:RE:Condo:Insurance              $ 50.00
@@ -3931,6 +3939,92 @@
   2023-11-09 * Affirm
       Expenses:Gifts                           $ 86.92
       Assets:Checking:Park City
+
+  2023-11-09 * Mariano's
+      Expenses:Food:Snacks                      $ 6.63
+      Assets:Checking:Covantage
+
+  2023-11-10 * Stripe
+      Income:Stripe:Paycheck               $ -6,333.77
+      Income:Stripe:Wireless                  $ -50.00
+      Income:Stripe:Wellness                   $ -6.76
+      Expenses:Taxes:Federal                $ 1,103.05
+      Expenses:Taxes:Medicare                 $ 145.38
+      Expenses:Taxes:Illinois                 $ 306.23
+      Assets:Checking:Northwoods            $ 1,260.00
+      Assets:Checking:Covantage               $ 100.00
+      Assets:Checking:Park City             $ 2,304.97
+      Assets:Investments:401K:Cash            $ 950.07
+      Income:Stripe:HSA                      $ -100.00
+      Assets:Investments:HSA                  $ 320.83
+
+  2023-11-10 * Chase
+      Expenses:RE:Cottage:Escrow            $ 1,252.93
+      Assets:Checking:Northwoods
+
+  2023-11-10 * Dollar Tree
+      Expenses:Personal:Household               $ 1.38
+      Assets:Checking:Covantage
+
+  2023-11-10 * American Red Cross
+      Expenses:Personal:Learning               $ 25.00
+      Assets:Checking:Covantage
+
+  2023-11-10 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.67
+      Assets:Checking:Covantage
+
+  2023-11-10 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 2.31
+      Assets:Checking:Covantage
+
+  2023-11-11 * 7/11
+      Expenses:Food:Snacks                      $ 3.39
+      Assets:Checking:Covantage
+
+  2023-11-11 * Mariano's
+      Expenses:Food:Snacks                      $ 6.58
+      Assets:Checking:Covantage
+
+  2023-11-11 * Target
+      Expenses:Personal:Health                 $ 12.67
+      Assets:Checking:Covantage
+
+  2023-11-11 * 7/11
+      Expenses:Food:Drinks                     $ 28.02
+      Assets:Checking:Covantage
+
+  2023-11-12 * Walgreens
+      Expenses:Personal:Household               $ 5.50
+      Assets:Checking:Covantage
+
+  2023-11-12 * 7/11
+      Expenses:Food:Snacks                      $ 4.65
+      Assets:Checking:Covantage
+
+  2023-11-12 * Divvy Bikes
+      Expenses:Transportation:Biking           $ 11.18
+      Assets:Checking:Covantage
+
+  2023-11-12 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 5.65
+      Assets:Checking:Covantage
+
+  2023-11-12 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 4.26
+      Assets:Checking:Covantage
+
+  2023-11-12 * Airbnb
+      Expenses:Travel:Lodging                 $ 160.71
+      Assets:Checking:Covantage
+
+  2023-11-12 * Dunkin
+      Expenses:Food:Fast Food                   $ 1.78
+      Assets:Checking:Covantage
+
+  2023-11-12 * Fedex Office
+      Expenses:Personal:Household               $ 1.87
+      Assets:Checking:Covantage
 #+end_src
 ** Budget
 #+name: budget
@@ -3992,36 +4086,36 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-           0   $ 1,900.14  $ -1,900.14     0  Assets:Investments:401K:Cash
-  $ 1,276.31   $ 8,577.40  $ -7,301.09   15%  Expenses
-     $ 61.79     $ 323.07    $ -261.28   19%    Food
-     $ 30.87     $ 100.00     $ -69.13   31%      Fast Food
+    $ 950.07   $ 1,900.14    $ -950.07   50%  Assets:Investments:401K:Cash
+  $ 4,369.00   $ 8,577.40  $ -4,208.40   51%  Expenses
+     $ 84.82     $ 323.07    $ -238.25   26%    Food
+     $ 32.65     $ 100.00     $ -67.35   33%      Fast Food
            0     $ 123.07    $ -123.07     0      Groceries
-     $ 30.92     $ 100.00     $ -69.08   31%      Snacks
+     $ 52.17     $ 100.00     $ -47.83   52%      Snacks
      $ 70.00   $ 1,626.00  $ -1,556.00    4%    Housing
            0   $ 1,410.00  $ -1,410.00     0      Rent
      $ 70.00     $ 216.00    $ -146.00   32%      Utilities
      $ 25.00      $ 25.00            0  100%    Personal:Communication
-    $ 929.67   $ 3,003.33  $ -2,073.66   31%    RE
+  $ 2,182.60   $ 3,003.33    $ -820.73   73%    RE
     $ 753.67     $ 892.34    $ -138.67   84%      Condo
     $ 132.34     $ 132.34            0  100%        HOA
      $ 50.00      $ 50.00            0  100%        Insurance
     $ 171.33     $ 260.00     $ -88.67   66%        Interest
     $ 400.00     $ 450.00     $ -50.00   89%        Taxes
-    $ 176.00   $ 2,110.99  $ -1,934.99    8%      Cottage
-           0     $ 865.00    $ -865.00     0        Escrow
+  $ 1,428.93   $ 2,110.99    $ -682.06   68%      Cottage
+  $ 1,252.93     $ 865.00     $ 387.93  145%        Escrow
            0   $ 1,000.00  $ -1,000.00     0        Interest
     $ 176.00     $ 245.99     $ -69.99   72%        Utilities
            0   $ 3,300.00  $ -3,300.00     0    Taxes
            0     $ 100.00    $ -100.00     0    Transportation
- $ -1,250.00 $ -13,917.54  $ 12,667.54    9%  Income
+ $ -7,740.53 $ -13,917.54   $ 6,177.01   56%  Income
  $ -1,250.00  $ -1,250.00            0  100%    RE:Condo
-           0 $ -12,667.54  $ 12,667.54     0    Stripe
+ $ -6,490.53 $ -12,667.54   $ 6,177.01   51%    Stripe
     $ 662.29   $ 3,440.00  $ -2,777.71   19%  Liabilities:RE
     $ 662.29   $ 2,800.00  $ -2,137.71   24%    Condo:Mortgage
            0     $ 640.00    $ -640.00     0    Cottage:Mortgage
 ------------ ------------ ------------ -----
-    $ 688.60            0     $ 688.60     0
+ $ -1,759.17            0  $ -1,759.17     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -4031,7 +4125,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 1,849.11
+          $ 5,518.20
            1.0 CONDO
            1.0 COTTA
        401.925 FSPSX
@@ -4039,18 +4133,22 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 1,849.11    Checking
-            $ 647.80      Covantage
-              $ 0.18      Northwoods
-          $ 1,191.09      Park City
+          $ 4,247.30    Checking
+            $ 733.95      Covantage
+              $ 7.25      Northwoods
+          $ 3,496.06      Park City
              $ 10.04      RipCo
+          $ 1,270.90
        401.925 FSPSX
        623.907 FXAIX
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX    Investments
+            $ 950.07
        401.925 FSPSX
        527.973 FXAIX      401K
+            $ 950.07        Cash
+            $ 320.83
         95.934 FXAIX      HSA
        584.372 VTIAX
        726.330 VTSAX      IRA
@@ -4063,7 +4161,7 @@
         $ -54,337.71    Condo:Mortgage
        $ -347,083.71    Cottage:Mortgage
 --------------------
-       $ -399,572.31
+       $ -395,903.22
            1.0 CONDO
            1.0 COTTA
        401.925 FSPSX
@@ -4080,16 +4178,17 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 942,126.40  Assets
-          $ 1,849.11    Checking
-            $ 647.80      Covantage
-              $ 0.18      Northwoods
-          $ 1,191.09      Park City
+        $ 947,163.79  Assets
+          $ 4,247.30    Checking
+            $ 733.95      Covantage
+              $ 7.25      Northwoods
+          $ 3,496.06      Park City
              $ 10.04      RipCo
-        $ 240,277.29    Investments
-         $ 97,982.62      401K
-         $ 14,592.52      HSA
-         $ 93,219.46      IRA
+        $ 242,916.49    Investments
+         $ 99,684.38      401K
+            $ 950.07        Cash
+         $ 15,041.90      HSA
+         $ 93,707.52      IRA
          $ 34,482.69      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
@@ -4098,7 +4197,7 @@
         $ -54,337.71    Condo:Mortgage
        $ -347,083.71    Cottage:Mortgage
 --------------------
-        $ 540,704.98
+        $ 545,742.37
 #+end_example
 ** Spending
 *** Category Spending
@@ -4293,20 +4392,28 @@ October 01 2023     Expenses:Transportation:Biking        $ 49.09
 October 01 2023     Expenses:Transportation:Gas           $ 150.65
 October 01 2023     Expenses:Transportation:Insurance     $ 429.31
 October 01 2023     Expenses:Transportation:Repairs       $ 40.00
-October 01 2023     Expenses:Travel:Air                   $ 925.93
-November 01 2023    Expenses:Food:Fast Food               $ 30.87
-November 01 2023    Expenses:Food:Snacks                  $ 30.92
+October 01 2023     Expenses:Travel:Air                   $ 654.68
+November 01 2023    Expenses:Food:Drinks                  $ 28.02
+November 01 2023    Expenses:Food:Fast Food               $ 32.65
+November 01 2023    Expenses:Food:Snacks                  $ 52.17
 November 01 2023    Expenses:Gifts                        $ 129.50
 November 01 2023    Expenses:Housing:Utilities            $ 70.00
 November 01 2023    Expenses:Personal:Clothes             $ 30.60
 November 01 2023    Expenses:Personal:Communication       $ 25.00
-November 01 2023    Expenses:Personal:Household           $ 10.00
+November 01 2023    Expenses:Personal:Health              $ 12.67
+November 01 2023    Expenses:Personal:Household           $ 18.75
+November 01 2023    Expenses:Personal:Learning            $ 25.00
 November 01 2023    Expenses:RE:Condo:HOA                 $ 132.34
 November 01 2023    Expenses:RE:Condo:Insurance           $ 50.00
 November 01 2023    Expenses:RE:Condo:Interest            $ 171.33
 November 01 2023    Expenses:RE:Condo:Taxes               $ 400.00
+November 01 2023    Expenses:RE:Cottage:Escrow            $ 1,252.93
 November 01 2023    Expenses:RE:Cottage:Utilities         $ 176.00
-November 01 2023    Expenses:Transportation:Biking        $ 19.75
+November 01 2023    Expenses:Taxes:Federal                $ 1,103.05
+November 01 2023    Expenses:Taxes:Illinois               $ 306.23
+November 01 2023    Expenses:Taxes:Medicare               $ 145.38
+November 01 2023    Expenses:Transportation:Biking        $ 46.67
+November 01 2023    Expenses:Travel:Lodging               $ 160.71
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -4320,8 +4427,8 @@ November 01 2023    Expenses:Transportation:Biking        $ 19.75
 : July 2023            $ 8,234.24
 : August 2023          $ 7,336.03
 : September 2023       $ 11,002.49
-: October 2023         $ 7,728.70
-: November 2023        $ 876.31
+: October 2023         $ 7,457.45
+: November 2023        $ 2,414.34
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -4329,9 +4436,35 @@ November 01 2023    Expenses:Transportation:Biking        $ 19.75
 #+end_src
 #+results:
 #+begin_example
+November 12 2023    Walgreens                   Expenses:Personal:Household           $ 5.50
+November 12 2023    7/11                        Expenses:Food:Snacks                  $ 4.65
+November 12 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 11.18
+November 12 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 5.65
+November 12 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 4.26
+November 12 2023    Airbnb                      Expenses:Travel:Lodging               $ 160.71
+November 12 2023    Dunkin                      Expenses:Food:Fast Food               $ 1.78
+November 12 2023    Fedex Office                Expenses:Personal:Household           $ 1.87
+November 11 2023    7/11                        Expenses:Food:Snacks                  $ 3.39
+November 11 2023    Mariano's                   Expenses:Food:Snacks                  $ 6.58
+November 11 2023    Target                      Expenses:Personal:Health              $ 12.67
+November 11 2023    7/11                        Expenses:Food:Drinks                  $ 28.02
+November 10 2023    Stripe                      Income:Stripe:Paycheck                $ -6,333.77
+November 10 2023    Stripe                      Income:Stripe:Wireless                $ -50.00
+November 10 2023    Stripe                      Income:Stripe:Wellness                $ -6.76
+November 10 2023    Stripe                      Expenses:Taxes:Federal                $ 1,103.05
+November 10 2023    Stripe                      Expenses:Taxes:Medicare               $ 145.38
+November 10 2023    Stripe                      Expenses:Taxes:Illinois               $ 306.23
+November 10 2023    Stripe                      Income:Stripe:HSA                     $ -100.00
+November 10 2023    Chase                       Expenses:RE:Cottage:Escrow            $ 1,252.93
+November 10 2023    Dollar Tree                 Expenses:Personal:Household           $ 1.38
+November 10 2023    American Red Cross          Expenses:Personal:Learning            $ 25.00
+November 10 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 1.67
+November 10 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 2.31
+November 09 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 1.85
 November 09 2023    Halsted Taxes and Insurance Expenses:RE:Condo:Taxes               $ 400.00
 November 09 2023    Halsted Taxes and Insurance Expenses:RE:Condo:Insurance           $ 50.00
 November 09 2023    Affirm                      Expenses:Gifts                        $ 86.92
+November 09 2023    Mariano's                   Expenses:Food:Snacks                  $ 6.63
 November 08 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 1.30
 November 07 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 0.74
 November 07 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 1.85
@@ -4369,6 +4502,7 @@ October 29 2023     Brooke Janicki              Expenses:RE:Cottage:Cleaning    
 October 29 2023     Interest                    Income:Extra                          $ -0.14
 October 29 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 7.23
 October 29 2023     Divvy Bikes                 Expenses:Transportation:Biking        $ 2.41
+October 27 2023     TAP Refund                  Expenses:Travel:Air                   $ -271.25
 October 27 2023     Stripe                      Income:Stripe:Paycheck                $ -6,333.77
 October 27 2023     Stripe                      Expenses:Taxes:Federal                $ 1,138.41
 October 27 2023     Stripe                      Expenses:Taxes:Medicare               $ 148.84
