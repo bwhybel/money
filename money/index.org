@@ -1,3 +1,4 @@
+
 #+TITLE: Brendan's Money
 * Inputs                                                           :noexport:
 ** Prices
@@ -47,12 +48,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 11/14/2023 00:00:00 VTSAX $105.8600
-  P 11/14/2023 00:00:00 VTIAX $28.7800
-  P 11/14/2023 00:00:00 FSPSX $44.0800
-  P 11/14/2023 00:00:00 FXAIX $153.4500
-  P 11/14/2023 00:00:00 CONDO $250,000.00
-  P 11/14/2023 00:00:00 COTTA $450,000.00
+  P 11/16/2023 00:00:00 VTSAX $108.1600
+  P 11/16/2023 00:00:00 VTIAX $29.5000
+  P 11/16/2023 00:00:00 FSPSX $45.3500
+  P 11/16/2023 00:00:00 FXAIX $156.2900
+  P 11/16/2023 00:00:00 CONDO $250,000.00
+  P 11/16/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -4025,6 +4026,10 @@
   2023-11-12 * Fedex Office
       Expenses:Personal:Household               $ 1.87
       Assets:Checking:Covantage
+
+  2023-11-16 * Airbnb
+      Expenses:Travel:Loding                  $ 156.89
+      Assets:Checking:Covantage
 #+end_src
 ** Budget
 #+name: budget
@@ -4087,7 +4092,7 @@
 #+RESULTS:
 #+begin_example
     $ 950.07   $ 1,900.14    $ -950.07   50%  Assets:Investments:401K:Cash
-  $ 4,369.00   $ 8,577.40  $ -4,208.40   51%  Expenses
+  $ 4,525.89   $ 8,577.40  $ -4,051.51   53%  Expenses
      $ 84.82     $ 323.07    $ -238.25   26%    Food
      $ 32.65     $ 100.00     $ -67.35   33%      Fast Food
            0     $ 123.07    $ -123.07     0      Groceries
@@ -4115,7 +4120,7 @@
     $ 662.29   $ 2,800.00  $ -2,137.71   24%    Condo:Mortgage
            0     $ 640.00    $ -640.00     0    Cottage:Mortgage
 ------------ ------------ ------------ -----
- $ -1,759.17            0  $ -1,759.17     0
+ $ -1,602.28            0  $ -1,602.28     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -4125,7 +4130,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 5,518.20
+          $ 5,361.31
            1.0 CONDO
            1.0 COTTA
        401.925 FSPSX
@@ -4133,8 +4138,8 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 4,247.30    Checking
-            $ 733.95      Covantage
+          $ 4,090.41    Checking
+            $ 577.06      Covantage
               $ 7.25      Northwoods
           $ 3,496.06      Park City
              $ 10.04      RipCo
@@ -4161,7 +4166,7 @@
         $ -54,337.71    Condo:Mortgage
        $ -347,083.71    Cottage:Mortgage
 --------------------
-       $ -395,903.22
+       $ -396,060.11
            1.0 CONDO
            1.0 COTTA
        401.925 FSPSX
@@ -4178,17 +4183,17 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 947,163.79  Assets
-          $ 4,247.30    Checking
-            $ 733.95      Covantage
+        $ 951,380.55  Assets
+          $ 4,090.41    Checking
+            $ 577.06      Covantage
               $ 7.25      Northwoods
           $ 3,496.06      Park City
              $ 10.04      RipCo
-        $ 242,916.49    Investments
-         $ 99,684.38      401K
+        $ 247,290.14    Investments
+        $ 101,694.27      401K
             $ 950.07        Cash
-         $ 15,041.90      HSA
-         $ 93,707.52      IRA
+         $ 15,314.35      HSA
+         $ 95,798.83      IRA
          $ 34,482.69      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
@@ -4197,7 +4202,7 @@
         $ -54,337.71    Condo:Mortgage
        $ -347,083.71    Cottage:Mortgage
 --------------------
-        $ 545,742.37
+        $ 549,959.13
 #+end_example
 ** Spending
 *** Category Spending
@@ -4414,6 +4419,7 @@ November 01 2023    Expenses:Taxes:Illinois               $ 306.23
 November 01 2023    Expenses:Taxes:Medicare               $ 145.38
 November 01 2023    Expenses:Transportation:Biking        $ 46.67
 November 01 2023    Expenses:Travel:Lodging               $ 160.71
+November 01 2023    Expenses:Travel:Loding                $ 156.89
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not Taxes -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -4428,7 +4434,7 @@ November 01 2023    Expenses:Travel:Lodging               $ 160.71
 : August 2023          $ 7,336.03
 : September 2023       $ 11,002.49
 : October 2023         $ 7,457.45
-: November 2023        $ 2,414.34
+: November 2023        $ 2,571.23
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -4436,6 +4442,7 @@ November 01 2023    Expenses:Travel:Lodging               $ 160.71
 #+end_src
 #+results:
 #+begin_example
+November 16 2023    Airbnb                      Expenses:Travel:Loding                $ 156.89
 November 12 2023    Walgreens                   Expenses:Personal:Household           $ 5.50
 November 12 2023    7/11                        Expenses:Food:Snacks                  $ 4.65
 November 12 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 11.18
