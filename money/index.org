@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 12/03/2023 00:00:00 VTSAX $110.1300
-  P 12/03/2023 00:00:00 VTIAX $30.0700
-  P 12/03/2023 00:00:00 FSPSX $46.2200
-  P 12/03/2023 00:00:00 FXAIX $158.9800
-  P 12/03/2023 00:00:00 CONDO $250,000.00
-  P 12/03/2023 00:00:00 COTTA $450,000.00
+  P 12/04/2023 00:00:00 VTSAX $110.1300
+  P 12/04/2023 00:00:00 VTIAX $30.0700
+  P 12/04/2023 00:00:00 FSPSX $46.2200
+  P 12/04/2023 00:00:00 FXAIX $158.9800
+  P 12/04/2023 00:00:00 CONDO $250,000.00
+  P 12/04/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -4305,10 +4305,6 @@
       Liabilities:RE:Cottage:Mortgage         $ 628.93
       Expenses:RE:Cottage:Escrow
 
-  2023-12-02 * Gifts
-      Expenses:Gifts                          $ 165.00
-      Assets:Checking:RipCo
-
   2023-12-01 * Shell
       Expenses:Food:Fast Food                  $ 10.01
       Liabilities:Credit Card:Covantage
@@ -4340,6 +4336,10 @@
   2023-12-01 * Walmart
       Expenses:Personal:Household              $ 28.80
       Liabilities:Credit Card:Covantage
+
+  2023-12-02 * Gifts
+      Expenses:Gifts                          $ 165.00
+      Assets:Checking:RipCo
 
   2023-12-02 * Krist Oil
       Expenses:Food:Snacks                      $ 2.42
@@ -4377,13 +4377,29 @@
       Expenses:Transportation:Gas              $ 31.01
       Liabilities:Credit Card:Covantage
 
-  2023-12-02 * Schaefer's IGA
-      Expenses:Food:Snacks                      $ 2.19
-      Liabilities:Credit Card:Covantage
-
   2023-12-02 * Whiskey Nick's
       Expenses:Food:Drinks                     $ 37.97
       Liabilities:Credit Card:Covantage
+
+  2023-12-04 * Walgreens
+      Expenses:Food:Snacks                      $ 2.41
+      Liabilities:Credit Card:Covantage
+
+  2023-12-04 * GasBuddy
+      Expenses:Transportation:Gas              $ 25.92
+      Assets:Checking:Covantage
+
+  2023-12-04 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 1.94
+      Assets:Checking:Covantage
+
+  2023-12-04 * McDonald's
+      Expenses:Food:Fast Food                   $ 8.49
+      Liabilities:Credit Card:Covantage
+
+  2023-12-04 * Landmark Barbershop
+      Expenses:Personal:Hygeine               $ 100.00
+      Assets:Checking:RipCo
 #+end_src
 ** Budget
 #+name: budget
@@ -4446,11 +4462,11 @@
 #+RESULTS:
 #+begin_example
            0   $ 1,900.14  $ -1,900.14     0  Assets:Investments:401K:Cash
-      $ 3.84   $ 8,577.40  $ -8,573.56     0  Expenses
-     $ 68.46     $ 323.07    $ -254.61   21%    Food
-     $ 48.61     $ 100.00     $ -51.39   49%      Fast Food
+    $ 140.41   $ 8,577.40  $ -8,436.99    2%  Expenses
+     $ 77.17     $ 323.07    $ -245.90   24%    Food
+     $ 57.10     $ 100.00     $ -42.90   57%      Fast Food
            0     $ 123.07    $ -123.07     0      Groceries
-     $ 19.85     $ 100.00     $ -80.15   20%      Snacks
+     $ 20.07     $ 100.00     $ -79.93   20%      Snacks
            0   $ 1,626.00  $ -1,626.00     0    Housing
            0   $ 1,410.00  $ -1,410.00     0      Rent
            0     $ 216.00    $ -216.00     0      Utilities
@@ -4474,7 +4490,7 @@
            0   $ 2,800.00  $ -2,800.00     0    Condo:Mortgage
     $ 628.93     $ 640.00     $ -11.07   98%    Cottage:Mortgage
 ------------ ------------ ------------ -----
-    $ 632.77            0     $ 632.77     0
+    $ 769.34            0     $ 769.34     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -4484,7 +4500,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,576.84
+          $ 4,448.98
            1.0 CONDO
            1.0 COTTA
        408.246 FSPSX
@@ -4492,11 +4508,11 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 4,576.84    Checking
-             $ 51.43      Covantage
+          $ 4,448.98    Checking
+             $ 23.57      Covantage
              $ 14.32      Northwoods
           $ 3,919.54      Park City
-            $ 591.55      RipCo
+            $ 491.55      RipCo
        408.246 FSPSX
        636.294 FXAIX
        1,713.0 STRIP
@@ -4512,13 +4528,13 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -401,209.76  Liabilities
-           $ -417.27    Credit Card:Covantage
+       $ -401,218.47  Liabilities
+           $ -425.98    Credit Card:Covantage
        $ -400,792.49    RE
         $ -54,337.71      Condo:Mortgage
        $ -346,454.78      Cottage:Mortgage
 --------------------
-       $ -396,632.92
+       $ -396,769.49
            1.0 CONDO
            1.0 COTTA
        408.246 FSPSX
@@ -4535,12 +4551,12 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 956,649.47  Assets
-          $ 4,576.84    Checking
-             $ 51.43      Covantage
+        $ 956,521.61  Assets
+          $ 4,448.98    Checking
+             $ 23.57      Covantage
              $ 14.32      Northwoods
           $ 3,919.54      Park City
-            $ 591.55      RipCo
+            $ 491.55      RipCo
         $ 252,072.63    Investments
         $ 104,453.95      401K
          $ 15,573.20      HSA
@@ -4549,13 +4565,13 @@
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -401,209.76  Liabilities
-           $ -417.27    Credit Card:Covantage
+       $ -401,218.47  Liabilities
+           $ -425.98    Credit Card:Covantage
        $ -400,792.49    RE
         $ -54,337.71      Condo:Mortgage
        $ -346,454.78      Cottage:Mortgage
 --------------------
-        $ 555,439.71
+        $ 555,303.14
 #+end_example
 ** Spending
 *** Category Spending
@@ -4778,14 +4794,16 @@ November 01 2023    Expenses:Transportation:Biking        $ 60.74
 November 01 2023    Expenses:Transportation:Gas           $ 222.84
 November 01 2023    Expenses:Travel:Lodging               $ 416.25
 December 01 2023    Expenses:Food:Drinks                  $ 37.97
-December 01 2023    Expenses:Food:Fast Food               $ 48.61
-December 01 2023    Expenses:Food:Snacks                  $ 19.85
+December 01 2023    Expenses:Food:Fast Food               $ 57.10
+December 01 2023    Expenses:Food:Snacks                  $ 20.07
 December 01 2023    Expenses:Gifts                        $ 200.58
 December 01 2023    Expenses:Personal:Health              $ 53.20
 December 01 2023    Expenses:Personal:Household           $ 204.58
+December 01 2023    Expenses:Personal:Hygeine             $ 100.00
 December 01 2023    Expenses:RE:Cottage:Escrow            $ -1,655.74
 December 01 2023    Expenses:RE:Cottage:Interest          $ 1,026.81
-December 01 2023    Expenses:Transportation:Gas           $ 31.01
+December 01 2023    Expenses:Transportation:Biking        $ 1.94
+December 01 2023    Expenses:Transportation:Gas           $ 56.93
 December 01 2023    Expenses:Transportation:Repairs       $ 36.97
 #+end_example
 *** Monthly Spending
@@ -4802,7 +4820,7 @@ December 01 2023    Expenses:Transportation:Repairs       $ 36.97
 : September 2023       $ 11,002.49
 : October 2023         $ 7,457.45
 : November 2023        $ 6,498.77
-: December 2023        $ 3.84
+: December 2023        $ 140.41
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -4810,6 +4828,11 @@ December 01 2023    Expenses:Transportation:Repairs       $ 36.97
 #+end_src
 #+results:
 #+begin_example
+December 04 2023    Walgreens                   Expenses:Food:Snacks                  $ 2.41
+December 04 2023    GasBuddy                    Expenses:Transportation:Gas           $ 25.92
+December 04 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 1.94
+December 04 2023    McDonald's                  Expenses:Food:Fast Food               $ 8.49
+December 04 2023    Landmark Barbershop         Expenses:Personal:Hygeine             $ 100.00
 December 02 2023    Gifts                       Expenses:Gifts                        $ 165.00
 December 02 2023    Krist Oil                   Expenses:Food:Snacks                  $ 2.42
 December 02 2023    Krist Oil                   Expenses:Food:Snacks                  $ 5.62
@@ -4820,7 +4843,6 @@ December 02 2023    Culver's                    Expenses:Food:Fast Food         
 December 02 2023    Dollar Tree                 Expenses:Food:Snacks                  $ 7.88
 December 02 2023    Walmart                     Expenses:Personal:Household           $ 20.69
 December 02 2023    IGA Gas Depot               Expenses:Transportation:Gas           $ 31.01
-December 02 2023    Schaefer's IGA              Expenses:Food:Snacks                  $ 2.19
 December 02 2023    Whiskey Nick's              Expenses:Food:Drinks                  $ 37.97
 December 01 2023    Transfer                    Expenses:Personal:Household           $ 1.50
 December 01 2023    Transfer                    Income:Extra                          $ -15.00
