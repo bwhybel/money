@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 12/06/2023 00:00:00 VTSAX $110.4200
-  P 12/06/2023 00:00:00 VTIAX $29.9600
-  P 12/06/2023 00:00:00 FSPSX $46.1600
-  P 12/06/2023 00:00:00 FXAIX $158.9800
-  P 12/06/2023 00:00:00 CONDO $250,000.00
-  P 12/06/2023 00:00:00 COTTA $450,000.00
+  P 12/08/2023 00:00:00 VTSAX $110.0100
+  P 12/08/2023 00:00:00 VTIAX $30.0000
+  P 12/08/2023 00:00:00 FSPSX $46.3400
+  P 12/08/2023 00:00:00 FXAIX $158.3600
+  P 12/08/2023 00:00:00 CONDO $250,000.00
+  P 12/08/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -4445,6 +4445,32 @@
   2023-12-05 * Amazon Hygeine
       Expenses:Personal:Hygeine                $ 51.31
       Liabilities:Credit Card:Covantage
+
+  2023-12-08 * Stripe
+      Income:Stripe:Paycheck               $ -1,266.76
+      Income:Stripe:Paycheck               $ -4,433.64
+      Income:Stripe:Paycheck                 $ -633.38
+      Income:Stripe:Wireless                  $ -50.00
+      Expenses:Taxes:Federal                $ 1,228.18
+      Expenses:Taxes:Medicare                 $ 157.63
+      Expenses:Taxes:Illinois                 $ 332.04
+      Assets:Checking:Northwoods            $ 1,260.00
+      Assets:Checking:Covantage               $ 392.00
+      Assets:Checking:Park City             $ 2,492.84
+      Assets:Investments:401K:Cash            $ 300.26
+      Income:Stripe:HSA                      $ -100.00
+      Assets:Investments:HSA                  $ 320.83
+
+  2023-12-08 * SWAQ
+      Income:SWAQ:Paycheck                    $ -50.76
+      Expenses:Taxes:Medicare                   $ 0.74
+      Expenses:Taxes:Social Security            $ 3.15
+      Expenses:Taxes:Illinois                   $ 2.51
+      Assets:Checking:Covantage                $ 44.36
+
+  2023-12-08 * Chase
+      Expenses:RE:Cottage:Escrow            $ 1,252.93
+      Assets:Checking:Northwoods
 #+end_src
 ** Budget
 #+name: budget
@@ -4506,8 +4532,8 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-           0   $ 1,900.14  $ -1,900.14     0  Assets:Investments:401K:Cash
-  $ 1,136.88   $ 8,577.40  $ -7,440.52   13%  Expenses
+    $ 300.26   $ 1,900.14  $ -1,599.88   16%  Assets:Investments:401K:Cash
+  $ 4,114.06   $ 8,577.40  $ -4,463.34   48%  Expenses
     $ 113.45     $ 323.07    $ -209.62   35%    Food
      $ 91.19     $ 100.00      $ -8.81   91%      Fast Food
            0     $ 123.07    $ -123.07     0      Groceries
@@ -4516,26 +4542,26 @@
            0   $ 1,410.00  $ -1,410.00     0      Rent
      $ 94.00     $ 216.00    $ -122.00   44%      Utilities
            0      $ 25.00     $ -25.00     0    Personal:Communication
-   $ -326.78   $ 3,003.33  $ -3,330.11  -11%    RE
+    $ 926.15   $ 3,003.33  $ -2,077.18   31%    RE
     $ 302.15     $ 892.34    $ -590.19   34%      Condo
     $ 132.34     $ 132.34            0  100%        HOA
            0      $ 50.00     $ -50.00     0        Insurance
     $ 169.81     $ 260.00     $ -90.19   65%        Interest
            0     $ 450.00    $ -450.00     0        Taxes
-   $ -628.93   $ 2,110.99  $ -2,739.92  -30%      Cottage
- $ -1,655.74     $ 865.00  $ -2,520.74 -191%        Escrow
+    $ 624.00   $ 2,110.99  $ -1,486.99   30%      Cottage
+   $ -402.81     $ 865.00  $ -1,267.81  -47%        Escrow
   $ 1,026.81   $ 1,000.00      $ 26.81  103%        Interest
            0     $ 245.99    $ -245.99     0        Utilities
            0   $ 3,300.00  $ -3,300.00     0    Taxes
            0     $ 100.00    $ -100.00     0    Transportation
- $ -1,250.00 $ -13,917.54  $ 12,667.54    9%  Income
+ $ -7,733.78 $ -13,917.54   $ 6,183.76   56%  Income
  $ -1,250.00  $ -1,250.00            0  100%    RE:Condo
-           0 $ -12,667.54  $ 12,667.54     0    Stripe
+ $ -6,483.78 $ -12,667.54   $ 6,183.76   51%    Stripe
   $ 1,116.74   $ 3,440.00  $ -2,323.26   32%  Liabilities:RE
     $ 487.81   $ 2,800.00  $ -2,312.19   17%    Condo:Mortgage
     $ 628.93     $ 640.00     $ -11.07   98%    Cottage:Mortgage
 ------------ ------------ ------------ -----
-  $ 1,003.62            0   $ 1,003.62     0
+ $ -2,202.72            0  $ -2,202.72     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -4545,7 +4571,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,476.79
+          $ 8,034.15
            1.0 CONDO
            1.0 COTTA
        408.246 FSPSX
@@ -4553,18 +4579,22 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 4,476.79    Checking
-              $ 3.57      Covantage
-             $ 14.32      Northwoods
-          $ 3,825.54      Park City
+          $ 7,413.06    Checking
+            $ 439.93      Covantage
+             $ 21.39      Northwoods
+          $ 6,318.38      Park City
             $ 633.36      RipCo
+            $ 621.09
        408.246 FSPSX
        636.294 FXAIX
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX    Investments
+            $ 300.26
        408.246 FSPSX
        538.337 FXAIX      401K
+            $ 300.26        Cash
+            $ 320.83
         97.957 FXAIX      HSA
        584.372 VTIAX
        726.330 VTSAX      IRA
@@ -4579,7 +4609,7 @@
         $ -53,849.90      Condo:Mortgage
        $ -346,454.78      Cottage:Mortgage
 --------------------
-       $ -396,515.96
+       $ -392,958.60
            1.0 CONDO
            1.0 COTTA
        408.246 FSPSX
@@ -4596,16 +4626,17 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 956,671.28  Assets
-          $ 4,476.79    Checking
-              $ 3.57      Covantage
-             $ 14.32      Northwoods
-          $ 3,825.54      Park City
+        $ 959,633.20  Assets
+          $ 7,413.06    Checking
+            $ 439.93      Covantage
+             $ 21.39      Northwoods
+          $ 6,318.38      Park City
             $ 633.36      RipCo
-        $ 252,194.49    Investments
-        $ 104,429.45      401K
-         $ 15,573.20      HSA
-         $ 97,709.14      IRA
+        $ 252,220.14    Investments
+        $ 104,469.43      401K
+            $ 300.26        Cash
+         $ 15,833.30      HSA
+         $ 97,434.72      IRA
          $ 34,482.69      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
@@ -4616,7 +4647,7 @@
         $ -53,849.90      Condo:Mortgage
        $ -346,454.78      Cottage:Mortgage
 --------------------
-        $ 555,678.53
+        $ 558,640.45
 #+end_example
 ** Spending
 *** Category Spending
@@ -4849,8 +4880,12 @@ December 01 2023    Expenses:Personal:Hygeine             $ 151.31
 December 01 2023    Expenses:RE:Condo:HOA                 $ 132.34
 December 01 2023    Expenses:RE:Condo:Interest            $ 169.81
 December 01 2023    Expenses:RE:Condo:Repairs             $ 318.23
-December 01 2023    Expenses:RE:Cottage:Escrow            $ -1,655.74
+December 01 2023    Expenses:RE:Cottage:Escrow            $ -402.81
 December 01 2023    Expenses:RE:Cottage:Interest          $ 1,026.81
+December 01 2023    Expenses:Taxes:Federal                $ 1,228.18
+December 01 2023    Expenses:Taxes:Illinois               $ 334.55
+December 01 2023    Expenses:Taxes:Medicare               $ 158.37
+December 01 2023    Expenses:Taxes:Social Security        $ 3.15
 December 01 2023    Expenses:Transportation:Biking        $ 1.94
 December 01 2023    Expenses:Transportation:Gas           $ 56.93
 December 01 2023    Expenses:Transportation:Repairs       $ 36.97
@@ -4869,7 +4904,7 @@ December 01 2023    Expenses:Transportation:Repairs       $ 36.97
 : September 2023       $ 11,002.49
 : October 2023         $ 7,457.45
 : November 2023        $ 6,498.77
-: December 2023        $ 1,136.88
+: December 2023        $ 2,389.81
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -4877,6 +4912,19 @@ December 01 2023    Expenses:Transportation:Repairs       $ 36.97
 #+end_src
 #+results:
 #+begin_example
+December 08 2023    Stripe                      Income:Stripe:Paycheck                $ -1,266.76
+December 08 2023    Stripe                      Income:Stripe:Paycheck                $ -4,433.64
+December 08 2023    Stripe                      Income:Stripe:Paycheck                $ -633.38
+December 08 2023    Stripe                      Income:Stripe:Wireless                $ -50.00
+December 08 2023    Stripe                      Expenses:Taxes:Federal                $ 1,228.18
+December 08 2023    Stripe                      Expenses:Taxes:Medicare               $ 157.63
+December 08 2023    Stripe                      Expenses:Taxes:Illinois               $ 332.04
+December 08 2023    Stripe                      Income:Stripe:HSA                     $ -100.00
+December 08 2023    SWAQ                        Income:SWAQ:Paycheck                  $ -50.76
+December 08 2023    SWAQ                        Expenses:Taxes:Medicare               $ 0.74
+December 08 2023    SWAQ                        Expenses:Taxes:Social Security        $ 3.15
+December 08 2023    SWAQ                        Expenses:Taxes:Illinois               $ 2.51
+December 08 2023    Chase                       Expenses:RE:Cottage:Escrow            $ 1,252.93
 December 05 2023    Huntington                  Expenses:RE:Condo:Interest            $ 169.81
 December 05 2023    McDonalds                   Expenses:Food:Fast Food               $ 20.00
 December 05 2023    Peoples Gas Delivery        Expenses:Housing:Utilities            $ 94.00
