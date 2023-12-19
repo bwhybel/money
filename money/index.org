@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 12/18/2023 00:00:00 VTSAX $114.6900
-  P 12/18/2023 00:00:00 VTIAX $30.9700
-  P 12/18/2023 00:00:00 FSPSX $46.5400
-  P 12/18/2023 00:00:00 FXAIX $164.3600
-  P 12/18/2023 00:00:00 CONDO $250,000.00
-  P 12/18/2023 00:00:00 COTTA $450,000.00
+  P 12/19/2023 00:00:00 VTSAX $114.5800
+  P 12/19/2023 00:00:00 VTIAX $30.3200
+  P 12/19/2023 00:00:00 FSPSX $46.1900
+  P 12/19/2023 00:00:00 FXAIX $163.6600
+  P 12/19/2023 00:00:00 CONDO $250,000.00
+  P 12/19/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -4472,6 +4472,13 @@
       Expenses:RE:Cottage:Escrow            $ 1,252.93
       Assets:Checking:Northwoods
 
+  2023-12-09 * Good Night
+      Expenses:Food:Drinks                     $ 26.78
+      Expenses:Food:Drinks                     $ 18.76
+      Expenses:Food:Drinks                     $ 18.76
+      Expenses:Food:Drinks                     $ 56.22
+      Liabilities:Credit Card:Covantage
+
   2023-12-10 * Brooke Janicki
       Expenses:RE:Cottage:Cleaning             $ 80.00
       Assets:Checking:Covantage
@@ -4489,16 +4496,17 @@
       Expenses:Transportation:Biking            $ 4.22
       Assets:Checking:Covantage
 
-  2023-12-09 * Good Night
-      Expenses:Food:Drinks                     $ 26.78
-      Expenses:Food:Drinks                     $ 18.76
-      Expenses:Food:Drinks                     $ 18.76
-      Expenses:Food:Drinks                     $ 56.22
-      Liabilities:Credit Card:Covantage
-
   2023-12-10 * Shoe Carnival
       Expenses:Personal:Clothes                $ 88.18
       Liabilities:Credit Card:Covantage
+
+  2023-12-11 * Rent
+      Expenses:Housing:Rent                 $ 1,409.45
+      Assets:Checking:Park City
+
+  2023-12-11 * Comed
+      Expenses:Housing:Utilities               $ 52.00
+      Assets:Checking:Park City
 
   2023-12-12 * Lyft
       Expenses:Transportation:Ride Share       $ 29.89
@@ -4507,6 +4515,10 @@
   2023-12-12 * Lyft
       Expenses:Transportation:Ride Share       $ 60.99
       Assets:Checking:Covantage
+
+  2023-12-12 * Walgreens
+      Expenses:Foods:Snacks                     $ 7.09
+      Liabilities:Credit Card:Covantage
 
   2023-12-13 * Citi Bikes
       Expenses:Transportation:Biking            $ 4.89
@@ -4520,6 +4532,10 @@
       Expenses:Transportation:Biking            $ 8.57
       Assets:Checking:Covantage
 
+  2023-12-13 * Chick-fil-a
+      Expenses:Foods:Fast Food                 $ 10.71
+      Liabilities:Credit Card:Covantage
+
   2023-12-14 * Citi Bikes
       Expenses:Transportation:Biking            $ 4.89
       Assets:Checking:Covantage
@@ -4527,6 +4543,10 @@
   2023-12-14 * German Pub
       Expenses:Food:Restaurants                $ 49.12
       Assets:Checking:Covantage
+
+  2023-12-14 * Walgreens
+      Expenses:Foods:Snacks                     $ 4.33
+      Liabilities:Credit Card:Covantage
 
   2023-12-15 * CPS
       Income:CPS:Paycheck                  $ -6,000.00
@@ -4536,6 +4556,27 @@
   2023-12-15 * Transfer
       Assets:Checking:Covantage             $ 1,000.00
       Assets:Checking:Park City
+
+  2023-12-15 * Walgreens
+      Expenses:Foods:Snacks                     $ 8.73
+      Liabilities:Credit Card:Covantage
+
+  2023-12-15 * Walgreens
+      Expenses:Foods:Snacks                     $ 3.07
+      Liabilities:Credit Card:Covantage
+
+  2023-12-15 * The Practical Prep
+      Expenses:Personal:Health                $ 247.00
+      Liabilities:Credit Card:Covantage
+
+  2023-12-15 * VRBO
+      Assets:Checking:RipCo                   $ 462.89
+      Income:RE:Cottage:Rent
+
+  2023-12-16 * T&I Halsted
+      Expenses:RE:Condo:Taxes                 $ 450.00
+      Expenses:RE:Condo:Insurance              $ 50.00
+      Assets:Checking:RipCo
 
   2023-12-17 * Lyft
       Expenses:Transportation:Ride Share      $ 109.99
@@ -4556,30 +4597,6 @@
   2023-12-17 * Aritzia
       Expenses:Gifts                          $ 173.88
       Assets:Checking:Covantage
-
-  2023-12-12 * Walgreens
-      Expenses:Foods:Snacks                     $ 7.09
-      Liabilities:Credit Card:Covantage
-
-  2023-12-14 * Walgreens
-      Expenses:Foods:Snacks                     $ 4.33
-      Liabilities:Credit Card:Covantage
-
-  2023-12-15 * Walgreens
-      Expenses:Foods:Snacks                     $ 8.73
-      Liabilities:Credit Card:Covantage
-
-  2023-12-13 * Chick-fil-a
-      Expenses:Foods:Fast Food                 $ 10.71
-      Liabilities:Credit Card:Covantage
-
-  2023-12-15 * Walgreens
-      Expenses:Foods:Snacks                     $ 3.07
-      Liabilities:Credit Card:Covantage
-
-  2023-12-15 * The Practical Prep
-      Expenses:Personal:Health                $ 247.00
-      Liabilities:Credit Card:Covantage
 
   2023-12-17 * FedEx
       Expenses:Personal:Health                  $ 4.54
@@ -4621,22 +4638,33 @@
       Expenses:Foods:Snacks                     $ 3.85
       Liabilities:Credit Card:Covantage
 
-  2023-12-11 * Rent
-      Expenses:Housing:Rent                 $ 1,409.45
-      Assets:Checking:Park City
+  2023-12-18 * Target
+      Expenses:Food:Groceries                 $ 137.99
+      Liabilities:Credit Card:Covantage
 
-  2023-12-11 * Comed
-      Expenses:Housing:Utilities               $ 52.00
-      Assets:Checking:Park City
+  2023-12-18 * Soderworld
+      Expenses:Gifts                          $ 115.00
+      Liabilities:Credit Card:Covantage
 
-  2023-12-15 * VRBO
-      Assets:Checking:RipCo                   $ 462.89
-      Income:RE:Cottage:Rent
+  2023-12-18 * Michaels
+      Expenses:Gifts                           $ 22.31
+      Liabilities:Credit Card:Covantage
 
-  2023-12-16 * T&I Halsted
-      Expenses:RE:Condo:Taxes                 $ 450.00
-      Expenses:RE:Condo:Insurance              $ 50.00
-      Assets:Checking:RipCo
+  2023-12-18 * Chick-fil-a
+      Expenses:Food:Fast Food                   $ 6.74
+      Liabilities:Credit Card:Covantage
+
+  2023-12-18 * Portillo's
+      Expenses:Food:Fast Food                   $ 13.06
+      Liabilities:Credit Card:Covantage
+
+  2023-12-18 * BP
+      Expenses:Transportation:Gas              $ 36.25
+      Liabilities:Credit Card:Covantage
+
+  2023-12-18 * 7/11
+      Expenses:Food:Snacks                      $ 1.53
+      Liabilities:Credit Card:Covantage
 #+end_src
 ** Budget
 #+name: budget
@@ -4699,11 +4727,11 @@
 #+RESULTS:
 #+begin_example
     $ 300.26   $ 1,900.14  $ -1,599.88   16%  Assets:Investments:401K:Cash
- $ 10,869.47   $ 8,577.40   $ 2,292.07  127%  Expenses
-    $ 122.72     $ 323.07    $ -200.35   38%    Food
-     $ 91.19     $ 100.00      $ -8.81   91%      Fast Food
-           0     $ 123.07    $ -123.07     0      Groceries
-     $ 31.53     $ 100.00     $ -68.47   32%      Snacks
+ $ 11,202.35   $ 8,577.40   $ 2,624.95  131%  Expenses
+    $ 282.04     $ 323.07     $ -41.03   87%    Food
+    $ 110.99     $ 100.00      $ 10.99  111%      Fast Food
+    $ 137.99     $ 123.07      $ 14.92  112%      Groceries
+     $ 33.06     $ 100.00     $ -66.94   33%      Snacks
   $ 1,555.45   $ 1,626.00     $ -70.55   96%    Housing
   $ 1,409.45   $ 1,410.00      $ -0.55  100%      Rent
     $ 146.00     $ 216.00     $ -70.00   68%      Utilities
@@ -4727,7 +4755,7 @@
     $ 487.81   $ 2,800.00  $ -2,312.19   17%    Condo:Mortgage
     $ 628.93     $ 640.00     $ -11.07   98%    Cottage:Mortgage
 ------------ ------------ ------------ -----
-  $ 4,552.69            0   $ 4,552.69     0
+  $ 4,885.57            0   $ 4,885.57     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -4769,13 +4797,13 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -402,905.64  Liabilities
-         $ -2,600.96    Credit Card:Covantage
+       $ -403,238.52  Liabilities
+         $ -2,933.84    Credit Card:Covantage
        $ -400,304.68    RE
         $ -53,849.90      Condo:Mortgage
        $ -346,454.78      Cottage:Mortgage
 --------------------
-       $ -393,251.12
+       $ -393,584.00
            1.0 CONDO
            1.0 COTTA
        408.246 FSPSX
@@ -4792,28 +4820,28 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 969,119.05  Assets
+        $ 968,071.02  Assets
           $ 9,033.43    Checking
           $ 5,058.86      Covantage
              $ 21.39      Northwoods
           $ 3,856.93      Park City
              $ 96.25      RipCo
-        $ 260,085.62    Investments
-        $ 107,781.10      401K
+        $ 259,037.59    Investments
+        $ 107,261.38      401K
             $ 300.26        Cash
-         $ 16,421.04      HSA
-        $ 101,400.79      IRA
+         $ 16,352.47      HSA
+        $ 100,941.05      IRA
          $ 34,482.69      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -402,905.64  Liabilities
-         $ -2,600.96    Credit Card:Covantage
+       $ -403,238.52  Liabilities
+         $ -2,933.84    Credit Card:Covantage
        $ -400,304.68    RE
         $ -53,849.90      Condo:Mortgage
        $ -346,454.78      Cottage:Mortgage
 --------------------
-        $ 566,213.41
+        $ 564,832.50
 #+end_example
 ** Spending
 *** Category Spending
@@ -5036,13 +5064,14 @@ November 01 2023    Expenses:Transportation:Biking        $ 60.74
 November 01 2023    Expenses:Transportation:Gas           $ 222.84
 November 01 2023    Expenses:Travel:Lodging               $ 416.25
 December 01 2023    Expenses:Food:Drinks                  $ 208.32
-December 01 2023    Expenses:Food:Fast Food               $ 91.19
+December 01 2023    Expenses:Food:Fast Food               $ 110.99
 December 01 2023    Expenses:Food:Fastf Food              $ 32.86
+December 01 2023    Expenses:Food:Groceries               $ 137.99
 December 01 2023    Expenses:Food:Restaurants             $ 49.12
-December 01 2023    Expenses:Food:Snacks                  $ 31.53
+December 01 2023    Expenses:Food:Snacks                  $ 33.06
 December 01 2023    Expenses:Foods:Fast Food              $ 10.71
 December 01 2023    Expenses:Foods:Snacks                 $ 31.67
-December 01 2023    Expenses:Gifts                        $ 624.87
+December 01 2023    Expenses:Gifts                        $ 762.18
 December 01 2023    Expenses:Housing:Rent                 $ 1,409.45
 December 01 2023    Expenses:Housing:Utilities            $ 146.00
 December 01 2023    Expenses:Personal:Clothes             $ 88.18
@@ -5063,7 +5092,7 @@ December 01 2023    Expenses:Taxes:Illinois               $ 334.55
 December 01 2023    Expenses:Taxes:Medicare               $ 158.37
 December 01 2023    Expenses:Taxes:Social Security        $ 3.15
 December 01 2023    Expenses:Transportation:Biking        $ 31.96
-December 01 2023    Expenses:Transportation:Gas           $ 56.93
+December 01 2023    Expenses:Transportation:Gas           $ 93.18
 December 01 2023    Expenses:Transportation:Repairs       $ 36.97
 December 01 2023    Expenses:Transportation:Ride Share    $ 200.87
 December 01 2023    Expenses:Travel:Lodging               $ 1,277.41
@@ -5082,7 +5111,7 @@ December 01 2023    Expenses:Travel:Lodging               $ 1,277.41
 : September 2023       $ 11,002.49
 : October 2023         $ 7,457.45
 : November 2023        $ 6,498.77
-: December 2023        $ 6,517.14
+: December 2023        $ 6,850.02
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -5090,6 +5119,13 @@ December 01 2023    Expenses:Travel:Lodging               $ 1,277.41
 #+end_src
 #+results:
 #+begin_example
+December 18 2023    Target                      Expenses:Food:Groceries               $ 137.99
+December 18 2023    Soderworld                  Expenses:Gifts                        $ 115.00
+December 18 2023    Michaels                    Expenses:Gifts                        $ 22.31
+December 18 2023    Chick-fil-a                 Expenses:Food:Fast Food               $ 6.74
+December 18 2023    Portillo's                  Expenses:Food:Fast Food               $ 13.06
+December 18 2023    BP                          Expenses:Transportation:Gas           $ 36.25
+December 18 2023    7/11                        Expenses:Food:Snacks                  $ 1.53
 December 17 2023    Lyft                        Expenses:Transportation:Ride Share    $ 109.99
 December 17 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 1.67
 December 17 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 5.78
