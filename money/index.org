@@ -47,12 +47,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 12/19/2023 00:00:00 VTSAX $114.5800
-  P 12/19/2023 00:00:00 VTIAX $30.3200
-  P 12/19/2023 00:00:00 FSPSX $46.1900
-  P 12/19/2023 00:00:00 FXAIX $163.6600
-  P 12/19/2023 00:00:00 CONDO $250,000.00
-  P 12/19/2023 00:00:00 COTTA $450,000.00
+  P 12/20/2023 00:00:00 VTSAX $115.0500
+  P 12/20/2023 00:00:00 VTIAX $30.3500
+  P 12/20/2023 00:00:00 FSPSX $46.2000
+  P 12/20/2023 00:00:00 FXAIX $164.4000
+  P 12/20/2023 00:00:00 CONDO $250,000.00
+  P 12/20/2023 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -4665,6 +4665,10 @@
   2023-12-18 * 7/11
       Expenses:Food:Snacks                      $ 1.53
       Liabilities:Credit Card:Covantage
+
+  2023-12-18 * Taco Bell
+      Expenses:Food:Fast Food                   $ 4.15
+      Assets:Checking:Park City
 #+end_src
 ** Budget
 #+name: budget
@@ -4727,9 +4731,9 @@
 #+RESULTS:
 #+begin_example
     $ 300.26   $ 1,900.14  $ -1,599.88   16%  Assets:Investments:401K:Cash
- $ 11,202.35   $ 8,577.40   $ 2,624.95  131%  Expenses
-    $ 282.04     $ 323.07     $ -41.03   87%    Food
-    $ 110.99     $ 100.00      $ 10.99  111%      Fast Food
+ $ 11,206.50   $ 8,577.40   $ 2,629.10  131%  Expenses
+    $ 286.19     $ 323.07     $ -36.88   89%    Food
+    $ 115.14     $ 100.00      $ 15.14  115%      Fast Food
     $ 137.99     $ 123.07      $ 14.92  112%      Groceries
      $ 33.06     $ 100.00     $ -66.94   33%      Snacks
   $ 1,555.45   $ 1,626.00     $ -70.55   96%    Housing
@@ -4755,7 +4759,7 @@
     $ 487.81   $ 2,800.00  $ -2,312.19   17%    Condo:Mortgage
     $ 628.93     $ 640.00     $ -11.07   98%    Cottage:Mortgage
 ------------ ------------ ------------ -----
-  $ 4,885.57            0   $ 4,885.57     0
+  $ 4,889.72            0   $ 4,889.72     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -4765,7 +4769,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 9,654.52
+          $ 9,650.37
            1.0 CONDO
            1.0 COTTA
        408.246 FSPSX
@@ -4773,10 +4777,10 @@
        1,713.0 STRIP
        584.372 VTIAX
        726.330 VTSAX  Assets
-          $ 9,033.43    Checking
+          $ 9,029.28    Checking
           $ 5,058.86      Covantage
              $ 21.39      Northwoods
-          $ 3,856.93      Park City
+          $ 3,852.78      Park City
              $ 96.25      RipCo
             $ 621.09
        408.246 FSPSX
@@ -4803,7 +4807,7 @@
         $ -53,849.90      Condo:Mortgage
        $ -346,454.78      Cottage:Mortgage
 --------------------
-       $ -393,584.00
+       $ -393,588.15
            1.0 CONDO
            1.0 COTTA
        408.246 FSPSX
@@ -4820,17 +4824,17 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 968,071.02  Assets
-          $ 9,033.43    Checking
+        $ 968,900.72  Assets
+          $ 9,029.28    Checking
           $ 5,058.86      Covantage
              $ 21.39      Northwoods
-          $ 3,856.93      Park City
+          $ 3,852.78      Park City
              $ 96.25      RipCo
-        $ 259,037.59    Investments
-        $ 107,261.38      401K
+        $ 259,871.44    Investments
+        $ 107,663.83      401K
             $ 300.26        Cash
-         $ 16,352.47      HSA
-        $ 100,941.05      IRA
+         $ 16,424.96      HSA
+        $ 101,299.96      IRA
          $ 34,482.69      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
@@ -4841,7 +4845,7 @@
         $ -53,849.90      Condo:Mortgage
        $ -346,454.78      Cottage:Mortgage
 --------------------
-        $ 564,832.50
+        $ 565,662.20
 #+end_example
 ** Spending
 *** Category Spending
@@ -5064,7 +5068,7 @@ November 01 2023    Expenses:Transportation:Biking        $ 60.74
 November 01 2023    Expenses:Transportation:Gas           $ 222.84
 November 01 2023    Expenses:Travel:Lodging               $ 416.25
 December 01 2023    Expenses:Food:Drinks                  $ 208.32
-December 01 2023    Expenses:Food:Fast Food               $ 110.99
+December 01 2023    Expenses:Food:Fast Food               $ 115.14
 December 01 2023    Expenses:Food:Fastf Food              $ 32.86
 December 01 2023    Expenses:Food:Groceries               $ 137.99
 December 01 2023    Expenses:Food:Restaurants             $ 49.12
@@ -5111,7 +5115,7 @@ December 01 2023    Expenses:Travel:Lodging               $ 1,277.41
 : September 2023       $ 11,002.49
 : October 2023         $ 7,457.45
 : November 2023        $ 6,498.77
-: December 2023        $ 6,850.02
+: December 2023        $ 6,854.17
 *** Transactions
 #+begin_src ledger :cmdline reg ^Expenses ^Income --sort -date --format "%-20(format_date(date, '%B %d %Y'))%-28(payee)%-38(account)%(amount)\n" :noweb yes :exports results
   <<opening_balance>>
@@ -5126,6 +5130,7 @@ December 18 2023    Chick-fil-a                 Expenses:Food:Fast Food         
 December 18 2023    Portillo's                  Expenses:Food:Fast Food               $ 13.06
 December 18 2023    BP                          Expenses:Transportation:Gas           $ 36.25
 December 18 2023    7/11                        Expenses:Food:Snacks                  $ 1.53
+December 18 2023    Taco Bell                   Expenses:Food:Fast Food               $ 4.15
 December 17 2023    Lyft                        Expenses:Transportation:Ride Share    $ 109.99
 December 17 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 1.67
 December 17 2023    Divvy Bikes                 Expenses:Transportation:Biking        $ 5.78
