@@ -48,13 +48,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 01/05/2024 00:00:00 VTSAX $113.5900
-  P 01/05/2024 00:00:00 VTIAX $30.5500
-  P 01/05/2024 00:00:00 FSPSX $46.4300
-  P 01/05/2024 00:00:00 FXAIX $163.2400
-  P 01/05/2024 00:00:00 CONDO $250,000.00
-  P 01/05/2024 00:00:00 COTTA $450,000.00
-  P 01/05/2024 00:00:00 STRIP $21.15
+  P 01/06/2024 00:00:00 VTSAX $113.2700
+  P 01/06/2024 00:00:00 VTIAX $30.6100
+  P 01/06/2024 00:00:00 FSPSX $46.6100
+  P 01/06/2024 00:00:00 FXAIX $162.7100
+  P 01/06/2024 00:00:00 CONDO $250,000.00
+  P 01/06/2024 00:00:00 COTTA $450,000.00
+  P 01/06/2024 00:00:00 STRIP $21.15
 #+end_src
 
 ** Transactions
@@ -4966,25 +4966,9 @@
       Expenses:Personal:Household              $ 14.72
       Liabilities:Credit Card:Covantage
 
-  2024-01-05 * Stripe
-      Assets:Checking:Northwoods            $ 1,260.00
-      Assets:Checking:Covantage               $ 392.00
-      Assets:Checking:Park City             $ 1,815.91
-      Income:Stripe:Paycheck               $ -6,333.77
-      Expenses:Taxes:Social Security          $ 392.69
-      Expenses:Taxes:Medicare                  $ 91.84
-      Expenses:Taxes:Illinois                 $ 313.52
-      Expenses:Taxes:Federal                $ 1,117.74
-      Income:Stripe:Match                    $ -475.04
-      Assets:Investments:401K:Cash          $ 1,425.11
-
-  2024-01-05 * Chase
-      Expenses:RE:Cottage:Escrow            $ 1,252.93
-      Assets:Checking:Northwoods
-
-  2024-01-05 * Transfer
-      Liabilities:Credit Card:Northwoods        $ 7.07
-      Assets:Checking:Northwoods
+  2024-01-01 * Rent
+      Assets:Checking:RipCo                   $ 625.00
+      Income:RE:Condo:Rent
 
   2024-01-02 * Krist Oil
       Expenses:Food:Snacks                      $ 6.26
@@ -5042,6 +5026,26 @@
       Expenses:Food:Snacks                      $ 6.28
       Liabilities:Credit Card:Covantage
 
+  2024-01-05 * Stripe
+      Assets:Checking:Northwoods            $ 1,260.00
+      Assets:Checking:Covantage               $ 392.00
+      Assets:Checking:Park City             $ 1,815.91
+      Income:Stripe:Paycheck               $ -6,333.77
+      Expenses:Taxes:Social Security          $ 392.69
+      Expenses:Taxes:Medicare                  $ 91.84
+      Expenses:Taxes:Illinois                 $ 313.52
+      Expenses:Taxes:Federal                $ 1,117.74
+      Income:Stripe:Match                    $ -475.04
+      Assets:Investments:401K:Cash          $ 1,425.11
+
+  2024-01-05 * Chase
+      Expenses:RE:Cottage:Escrow            $ 1,252.93
+      Assets:Checking:Northwoods
+
+  2024-01-05 * Transfer
+      Liabilities:Credit Card:Northwoods        $ 7.07
+      Assets:Checking:Northwoods
+
   2024-01-05 * Transfer
       Liabilities:Credit Card:Covantage       $ 369.85
       Assets:Checking:Covantage
@@ -5054,9 +5058,111 @@
       Expenses:Transportation:Driving:Tolls    $ 11.14
       Assets:Checking:RipCo
 
-  2024-01-01 * Rent
-      Assets:Checking:RipCo                   $ 625.00
+  2024-01-05 * Spectrum
+      Expenses:RE:Cottage:Utilities            $ 69.99
+      Assets:Checking:RipCo
+
+  2024-01-05 * Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 176.00
+      Assets:Checking:RipCo
+
+  2024-01-05 * Home Depot
+      Liabilities:Credit Card:Covantage        $ 54.38
+      Expenses:RE:Cottage:Repairs
+
+  2024-01-05 * Marianos
+      Expenses:Food:Snacks                      $ 1.01
+      Liabilities:Credit Card:Covantage
+
+  2024-01-05 * Target
+      Expenses:Personal:Hygeine                $ 21.26
+      Liabilities:Credit Card:Covantage
+
+  2024-01-05 * XSport Fitness
+      Expenses:Personal:Health                 $ 42.00
+      Liabilities:Credit Card:Covantage
+
+  2024-01-05 * Fast Mart
+      Expenses:Transportation:Driving:Gas      $ 21.72
+      Liabilities:Credit Card:Covantage
+
+  2024-01-05 * Krist Oil
+      Expenses:Transportation:Driving:Gas      $ 29.93
+      Liabilities:Credit Card:Covantage
+
+  2024-01-05 * Krist Oil
+      Expenses:Food:Drinks                     $ 28.98
+      Liabilities:Credit Card:Covantage
+
+  2024-01-05 * Peoples Gas Delivery
+      Expenses:Housing:Utilities               $ 80.00
+      Assets:Checking:Park City
+
+  2024-01-05 * Comed
+      Expenses:Housing:Utilities               $ 52.00
+      Assets:Checking:Park City
+
+  2024-01-06 * Transfer
+      Liabilities:Credit Card:Covantage        $ 27.86
+      Assets:Checking:Covantage
+
+  2024-01-06 * Rent
+      Expenses:Housing:Rent                 $ 1,409.45
+      Assets:Checking:Park City
+
+  2024-01-08 * Rent
+      Assets:Checking:RipCo                   $ 485.33
+      Expenses:RE:Condo:HOA                   $ 139.67
       Income:RE:Condo:Rent
+
+  2024-01-08 * Huntington
+      Liabilities:RE:Condo:Mortgage           $ 518.87
+      Expenses:RE:Condo:Interest              $ 138.75
+      Assets:Checking:RipCo
+
+  2024-01-05 * Dr Bronners
+      Expenses:Personal:Hygeine                $ 57.07
+      Liabilities:Credit Card:Covantage
+
+  2024-01-05 * Dollar Tree
+      Expenses:Food:Snacks                      $ 5.51
+      Liabilities:Credit Card:Covantage
+
+  2024-01-05 * 7/11
+      Expenses:Food:Snacks                      $ 4.93
+      Liabilities:Credit Card:Covantage
+
+  2024-01-05 * Popeyes
+      Expenses:Food:Fast Food                   $ 6.68
+      Liabilities:Credit Card:Covantage
+
+  2024-01-05 * Marianos
+      Expenses:Food:Groceries                  $ 30.87
+      Liabilities:Credit Card:Covantage
+
+  2024-01-05 * Amazon
+      Expenses:Personal:Household              $ 23.45
+      Liabilities:Credit Card:Covantage
+
+  2024-01-06 * Transfer
+      Assets:Checking:Covantage               $ 200.00
+      Assets:Checking:Park City
+
+  2024-01-06 * Transfer
+      Assets:Checking:Northwoods               $ 20.00
+      Assets:Checking:Park City
+
+  2024-01-08 * Transfer
+      Liabilities:Credit Card:Northwoods       $ 20.00
+      Assets:Checking:Northwoods
+
+  2024-01-06 * Dollar Tree
+      Expenses:Personal:Household               $ 2.76
+      Assets:Checking:Park City
+
+  2024-01-06 * kSafe
+      Expenses:Personal:Household              $ 28.21
+      Assets:Checking:Park City
 #+end_src
 ** Budget
 #+name: budget
@@ -5119,35 +5225,35 @@
 #+RESULTS:
 #+begin_example
   $ 1,425.11   $ 1,900.14    $ -475.03   75%  Assets:Investments:401K:Cash
-  $ 3,589.11   $ 8,577.40  $ -4,988.29   42%  Expenses
-     $ 55.53     $ 323.07    $ -267.54   17%    Food
-     $ 34.53     $ 100.00     $ -65.47   35%      Fast Food
-           0     $ 123.07    $ -123.07     0      Groceries
-     $ 21.00     $ 100.00     $ -79.00   21%      Snacks
-           0   $ 1,626.00  $ -1,626.00     0    Housing
-           0   $ 1,410.00  $ -1,410.00     0      Rent
-           0     $ 216.00    $ -216.00     0      Utilities
+  $ 5,904.97   $ 8,577.40  $ -2,672.43   69%  Expenses
+    $ 104.53     $ 323.07    $ -218.54   32%    Food
+     $ 41.21     $ 100.00     $ -58.79   41%      Fast Food
+     $ 30.87     $ 123.07     $ -92.20   25%      Groceries
+     $ 32.45     $ 100.00     $ -67.55   32%      Snacks
+  $ 1,541.45   $ 1,626.00     $ -84.55   95%    Housing
+  $ 1,409.45   $ 1,410.00      $ -0.55  100%      Rent
+    $ 132.00     $ 216.00     $ -84.00   61%      Utilities
            0      $ 25.00     $ -25.00     0    Personal:Communication
-  $ 1,252.93   $ 3,003.33  $ -1,750.40   42%    RE
-           0     $ 892.34    $ -892.34     0      Condo
-           0     $ 132.34    $ -132.34     0        HOA
+  $ 1,777.34   $ 3,003.33  $ -1,225.99   59%    RE
+    $ 278.42     $ 892.34    $ -613.92   31%      Condo
+    $ 139.67     $ 132.34       $ 7.33  106%        HOA
            0      $ 50.00     $ -50.00     0        Insurance
-           0     $ 260.00    $ -260.00     0        Interest
+    $ 138.75     $ 260.00    $ -121.25   53%        Interest
            0     $ 450.00    $ -450.00     0        Taxes
-  $ 1,252.93   $ 2,110.99    $ -858.06   59%      Cottage
+  $ 1,498.92   $ 2,110.99    $ -612.07   71%      Cottage
   $ 1,252.93     $ 865.00     $ 387.93  145%        Escrow
            0   $ 1,000.00  $ -1,000.00     0        Interest
-           0     $ 245.99    $ -245.99     0        Utilities
+    $ 245.99     $ 245.99            0  100%        Utilities
            0   $ 3,300.00  $ -3,300.00     0    Taxes
            0     $ 100.00    $ -100.00     0    Transportation
- $ -7,433.81 $ -13,917.54   $ 6,483.73   53%  Income
-   $ -625.00  $ -1,250.00     $ 625.00   50%    RE:Condo
+ $ -8,058.81 $ -13,917.54   $ 5,858.73   58%  Income
+ $ -1,250.00  $ -1,250.00            0  100%    RE:Condo
  $ -6,808.81 $ -12,667.54   $ 5,858.73   54%    Stripe
-           0   $ 3,440.00  $ -3,440.00     0  Liabilities:RE
-           0   $ 2,800.00  $ -2,800.00     0    Condo:Mortgage
+    $ 518.87   $ 3,440.00  $ -2,921.13   15%  Liabilities:RE
+    $ 518.87   $ 2,800.00  $ -2,281.13   19%    Condo:Mortgage
            0     $ 640.00    $ -640.00     0    Cottage:Mortgage
 ------------ ------------ ------------ -----
- $ -2,419.59            0  $ -2,419.59     0
+   $ -209.86            0    $ -209.86     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -5157,7 +5263,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,039.62
+          $ 2,001.06
            1.0 CONDO
            1.0 COTTA
        421.145 FSPSX
@@ -5165,10 +5271,10 @@
        2,625.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 2,614.51    Checking
-             $ 27.86      Covantage
-          $ 1,963.48      Park City
-            $ 623.17      RipCo
+            $ 575.95    Checking
+            $ 200.00      Covantage
+            $ 171.06      Park City
+            $ 204.89      RipCo
           $ 1,425.11
        421.145 FSPSX
        642.625 FXAIX
@@ -5187,13 +5293,13 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -390,244.01  Liabilities
-            $ -20.00    Credit Card:Northwoods
-       $ -390,224.01    RE
-        $ -44,400.00      Condo:Mortgage
+       $ -389,896.31  Liabilities
+           $ -191.17    Credit Card:Covantage
+       $ -389,705.14    RE
+        $ -43,881.13      Condo:Mortgage
        $ -345,824.01      Cottage:Mortgage
 --------------------
-       $ -386,204.39
+       $ -387,895.25
            1.0 CONDO
            1.0 COTTA
        421.145 FSPSX
@@ -5210,27 +5316,27 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 985,385.88  Assets
-          $ 2,614.51    Checking
-             $ 27.86      Covantage
-          $ 1,963.48      Park City
-            $ 623.17      RipCo
-        $ 282,771.37    Investments
-        $ 109,494.95      401K
+        $ 982,884.04  Assets
+            $ 575.95    Checking
+            $ 200.00      Covantage
+            $ 171.06      Park City
+            $ 204.89      RipCo
+        $ 282,308.09    Investments
+        $ 109,283.36      401K
           $ 1,425.11        Cash
-         $ 16,386.03      HSA
-        $ 101,371.64      IRA
+         $ 16,332.83      HSA
+        $ 101,173.15      IRA
          $ 55,518.75      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -390,244.01  Liabilities
-            $ -20.00    Credit Card:Northwoods
-       $ -390,224.01    RE
-        $ -44,400.00      Condo:Mortgage
+       $ -389,896.31  Liabilities
+           $ -191.17    Credit Card:Covantage
+       $ -389,705.14    RE
+        $ -43,881.13      Condo:Mortgage
        $ -345,824.01      Cottage:Mortgage
 --------------------
-        $ 595,141.87
+        $ 592,987.73
 #+end_example
 ** Spending
 *** This Month Spending
@@ -5240,26 +5346,40 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 3,589.11  Expenses
-             $ 55.53    Food
-             $ 34.53      Fast Food
-             $ 21.00      Snacks
-             $ 27.27    Personal
+          $ 5,904.97  Expenses
+            $ 133.51    Food
+             $ 28.98      Drinks
+             $ 41.21      Fast Food
+             $ 30.87      Groceries
+             $ 32.45      Snacks
+          $ 1,541.45    Housing
+          $ 1,409.45      Rent
+            $ 132.00      Utilities
+            $ 202.02    Personal
               $ 6.53      Entertainment
-             $ 20.74      Household
-          $ 1,556.43    RE:Cottage
-          $ 1,252.93      Escrow
-            $ 303.50      Repairs
+             $ 42.00      Health
+             $ 75.16      Household
+             $ 78.33      Hygeine
+          $ 2,026.46    RE
+            $ 278.42      Condo
+            $ 139.67        HOA
+            $ 138.75        Interest
+          $ 1,748.04      Cottage
+          $ 1,252.93        Escrow
+            $ 249.12        Repairs
+            $ 245.99        Utilities
           $ 1,915.79    Taxes
           $ 1,117.74      Federal
             $ 313.52      Illinois
              $ 91.84      Medicare
             $ 392.69      Social Security
-             $ 34.09    Transportation
+             $ 85.74    Transportation
               $ 2.95      Biking
-             $ 31.14      Driving:Tolls
+             $ 82.79      Driving
+             $ 51.65        Gas
+             $ 31.14        Tolls
 --------------------
-          $ 3,589.11
+          $ 5,904.97
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --period "last month" :noweb yes :exports results
@@ -5335,5 +5455,5 @@ September 2023       $ 11,002.49
 October 2023         $ 9,834.46
 November 2023        $ 6,948.77
 December 2023        $ 8,470.83
-January 2024         $ 1,673.32
+January 2024         $ 3,989.18
 #+end_example
