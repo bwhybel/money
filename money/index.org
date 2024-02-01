@@ -48,13 +48,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 01/31/2024 00:00:00 VTSAX $118.7600
-  P 01/31/2024 00:00:00 VTIAX $30.7300
-  P 01/31/2024 00:00:00 FSPSX $47.3900
-  P 01/31/2024 00:00:00 FXAIX $171.0200
-  P 01/31/2024 00:00:00 CONDO $250,000.00
-  P 01/31/2024 00:00:00 COTTA $450,000.00
-  P 01/31/2024 00:00:00 STRIP $21.15
+  P 02/01/2024 00:00:00 VTSAX $118.7600
+  P 02/01/2024 00:00:00 VTIAX $30.7300
+  P 02/01/2024 00:00:00 FSPSX $47.3900
+  P 02/01/2024 00:00:00 FXAIX $171.0200
+  P 02/01/2024 00:00:00 CONDO $250,000.00
+  P 02/01/2024 00:00:00 COTTA $450,000.00
+  P 02/01/2024 00:00:00 STRIP $21.15
 #+end_src
 
 ** Transactions
@@ -5462,7 +5462,7 @@
       Assets:Checking:Covantage
 
   2024-01-30 * Transfer
-      Liabilities:Credit Card:RipCo           $ 332.74
+      Liabilities:Credit Card:RipCo             $ 2.65
       Assets:Checking:RipCo
 
   2024-01-30 * Interest
@@ -5522,6 +5522,14 @@
       Expenses:Personal:Communication           $ 8.72
       Expenses:Personal:Communication          $ 10.90
       Liabilities:Credit Card:Northwoods
+
+  2024-01-31 * Interest
+      Liabilities:Credit Card:RipCo            $ 26.65
+      Income:Extra
+
+  2024-02-01 * Payoff
+      Liabilities:Credit Card:RipCo           $ 255.10
+      Assets:Checking:RipCo
 #+end_src
 ** Budget
 #+name: budget
@@ -5584,35 +5592,35 @@
 #+RESULTS:
 #+begin_example
            0   $ 1,900.14  $ -1,900.14     0  Assets:Investments:401K:Cash
- $ 12,839.99   $ 8,577.40   $ 4,262.59  150%  Expenses
-    $ 765.72     $ 323.07     $ 442.65  237%    Food
-    $ 258.54     $ 100.00     $ 158.54  259%      Fast Food
-    $ 335.42     $ 123.07     $ 212.35  273%      Groceries
-    $ 171.76     $ 100.00      $ 71.76  172%      Snacks
-  $ 1,611.45   $ 1,626.00     $ -14.55   99%    Housing
-  $ 1,409.45   $ 1,410.00      $ -0.55  100%      Rent
-    $ 202.00     $ 216.00     $ -14.00   94%      Utilities
-    $ 155.34      $ 25.00     $ 130.34  621%    Personal:Communication
-  $ 2,257.99   $ 3,003.33    $ -745.34   75%    RE
-    $ 138.75     $ 892.34    $ -753.59   16%      Condo
+           0   $ 8,577.40  $ -8,577.40     0  Expenses
+           0     $ 323.07    $ -323.07     0    Food
+           0     $ 100.00    $ -100.00     0      Fast Food
+           0     $ 123.07    $ -123.07     0      Groceries
+           0     $ 100.00    $ -100.00     0      Snacks
+           0   $ 1,626.00  $ -1,626.00     0    Housing
+           0   $ 1,410.00  $ -1,410.00     0      Rent
+           0     $ 216.00    $ -216.00     0      Utilities
+           0      $ 25.00     $ -25.00     0    Personal:Communication
+           0   $ 3,003.33  $ -3,003.33     0    RE
+           0     $ 892.34    $ -892.34     0      Condo
            0     $ 132.34    $ -132.34     0        HOA
            0      $ 50.00     $ -50.00     0        Insurance
-    $ 138.75     $ 260.00    $ -121.25   53%        Interest
+           0     $ 260.00    $ -260.00     0        Interest
            0     $ 450.00    $ -450.00     0        Taxes
-  $ 2,119.24   $ 2,110.99       $ 8.25  100%      Cottage
-    $ 864.60     $ 865.00      $ -0.40  100%        Escrow
-  $ 1,008.65   $ 1,000.00       $ 8.65  101%        Interest
-    $ 245.99     $ 245.99            0  100%        Utilities
+           0   $ 2,110.99  $ -2,110.99     0      Cottage
+           0     $ 865.00    $ -865.00     0        Escrow
+           0   $ 1,000.00  $ -1,000.00     0        Interest
+           0     $ 245.99    $ -245.99     0        Utilities
            0   $ 3,300.00  $ -3,300.00     0    Taxes
            0     $ 100.00    $ -100.00     0    Transportation
-$ -15,257.95 $ -13,917.54  $ -1,340.41  110%  Income
- $ -1,110.33  $ -1,250.00     $ 139.67   89%    RE:Condo
-$ -14,147.62 $ -12,667.54  $ -1,480.08  112%    Stripe
-  $ 1,151.48   $ 3,440.00  $ -2,288.52   33%  Liabilities:RE
-    $ 518.87   $ 2,800.00  $ -2,281.13   19%    Condo:Mortgage
-    $ 632.61     $ 640.00      $ -7.39   99%    Cottage:Mortgage
+           0 $ -13,917.54  $ 13,917.54     0  Income
+           0  $ -1,250.00   $ 1,250.00     0    RE:Condo
+           0 $ -12,667.54  $ 12,667.54     0    Stripe
+           0   $ 3,440.00  $ -3,440.00     0  Liabilities:RE
+           0   $ 2,800.00  $ -2,800.00     0    Condo:Mortgage
+           0     $ 640.00    $ -640.00     0    Cottage:Mortgage
 ------------ ------------ ------------ -----
- $ -1,266.48            0  $ -1,266.48     0
+           0            0            0     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -5622,6 +5630,7 @@ $ -14,147.62 $ -12,667.54  $ -1,480.08  112%    Stripe
 #+end_src
 #+results:
 #+begin_example
+             $ 74.99
            1.0 CONDO
            1.0 COTTA
        430.338 FSPSX
@@ -5629,6 +5638,7 @@ $ -14,147.62 $ -12,667.54  $ -1,480.08  112%    Stripe
        2,625.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
+             $ 74.99    Checking:RipCo
        430.338 FSPSX
        659.306 FXAIX
        2,625.0 STRIP
@@ -5644,13 +5654,15 @@ $ -14,147.62 $ -12,667.54  $ -1,480.08  112%    Stripe
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -389,325.52  Liabilities
-           $ -252.99    Credit Card:Northwoods
+       $ -389,373.86  Liabilities
+           $ -301.33    Credit Card
+           $ -252.99      Northwoods
+            $ -48.34      RipCo
        $ -389,072.53    RE
         $ -43,881.13      Condo:Mortgage
        $ -345,191.40      Cottage:Mortgage
 --------------------
-       $ -389,325.52
+       $ -389,298.87
            1.0 CONDO
            1.0 COTTA
        430.338 FSPSX
@@ -5667,26 +5679,35 @@ $ -14,147.62 $ -12,667.54  $ -1,480.08  112%    Stripe
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 992,196.42  Assets
-        $ 292,196.42    Investments
-        $ 114,101.11      401K
-         $ 17,312.71      HSA
+        $ 994,005.82  Assets
+             $ 74.99    Checking:RipCo
+        $ 293,930.83    Investments
+        $ 115,632.19      401K
+         $ 17,516.04      HSA
         $ 105,263.85      IRA
          $ 55,518.75      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -389,325.52  Liabilities
-           $ -252.99    Credit Card:Northwoods
+       $ -389,373.86  Liabilities
+           $ -301.33    Credit Card
+           $ -252.99      Northwoods
+            $ -48.34      RipCo
        $ -389,072.53    RE
         $ -43,881.13      Condo:Mortgage
        $ -345,191.40      Cottage:Mortgage
 --------------------
-        $ 602,870.90
+        $ 604,631.96
 #+end_example
 ** Spending
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --period "this month" :noweb yes :exports results
+  <<opening_balance>>
+  <<transactions>>
+#+end_src
+#+results:
+*** Last Month Spending
+#+begin_src ledger :cmdline bal ^Expenses --period "last month" :noweb yes :exports results
   <<opening_balance>>
   <<transactions>>
 #+end_src
@@ -5734,61 +5755,6 @@ $ -14,147.62 $ -12,667.54  $ -1,480.08  112%    Stripe
               $ 7.98      Ride Share
 --------------------
          $ 12,839.99
-#+end_example
-*** Last Month Spending
-#+begin_src ledger :cmdline bal ^Expenses --period "last month" :noweb yes :exports results
-  <<opening_balance>>
-  <<transactions>>
-#+end_src
-#+results:
-#+begin_example
-         $ 12,514.55  Expenses
-          $ 1,240.31    Food
-            $ 195.65      Drinks
-            $ 332.73      Fast Food
-             $ 32.86      Fastf Food
-            $ 466.07      Groceries
-            $ 108.58      Restaurants
-            $ 104.42      Snacks
-             $ 42.38    Foods
-             $ 10.71      Fast Food
-             $ 31.67      Snacks
-            $ 757.93    Gifts
-          $ 1,555.45    Housing
-          $ 1,409.45      Rent
-            $ 146.00      Utilities
-          $ 1,414.99    Personal
-            $ 101.58      Clothes
-             $ 30.00      Communication
-            $ 163.30      Electronics
-             $ 60.00      Entertainment
-            $ 616.34      Health
-            $ 292.46      Household
-            $ 151.31      Hygeine
-          $ 2,155.53    RE
-            $ 620.38      Condo
-            $ 132.34        HOA
-            $ 169.81        Interest
-            $ 318.23        Repairs
-          $ 1,535.15      Cottage
-            $ 160.00        Cleaning
-           $ -791.14        Escrow
-          $ 2,037.30        Interest
-            $ 128.99        Utilities
-          $ 5,043.72    Taxes
-          $ 4,087.47      Federal
-            $ 646.59      Illinois
-            $ 306.51      Medicare
-              $ 3.15      Social Security
-            $ 304.24    Transportation
-             $ 44.00      Biking
-            $ 223.27      Driving
-            $ 117.34        Gas
-             $ 35.00        Ticket
-             $ 70.93        Tolls
-             $ 36.97      Repairs
---------------------
-         $ 12,514.55
 #+end_example
 
 *** Monthly Spending
