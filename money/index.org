@@ -48,13 +48,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 02/05/2024 00:00:00 VTSAX $118.2500
-  P 02/05/2024 00:00:00 VTIAX $30.8600
-  P 02/05/2024 00:00:00 FSPSX $47.6000
-  P 02/05/2024 00:00:00 FXAIX $170.3800
-  P 02/05/2024 00:00:00 CONDO $250,000.00
-  P 02/05/2024 00:00:00 COTTA $450,000.00
-  P 02/05/2024 00:00:00 STRIP $21.15
+  P 02/06/2024 00:00:00 VTSAX $119.3700
+  P 02/06/2024 00:00:00 VTIAX $30.6800
+  P 02/06/2024 00:00:00 FSPSX $47.1700
+  P 02/06/2024 00:00:00 FXAIX $172.2100
+  P 02/06/2024 00:00:00 CONDO $250,000.00
+  P 02/06/2024 00:00:00 COTTA $450,000.00
+  P 02/06/2024 00:00:00 STRIP $21.15
 #+end_src
 
 ** Transactions
@@ -5578,6 +5578,60 @@
   2024-02-04 * Hoka's
       Expenses:Personal:Gifts                 $ 100.00
       Liabilities:Credit Card:Northwoods
+
+  2024-02-05 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 4.44
+      Assets:Checking:Covantage
+
+  2024-02-05 * Kass Property Management
+      Expenses:Housing:Rent                   $ 707.50
+      Assets:Checking:Park City
+
+  2024-02-05 * Peoples Gas Delivery
+      Expenses:Housing:Utilities               $ 80.00
+      Assets:Checking:Park City
+
+  2024-02-05 * Park View Grocery
+      Expenses:Food:Snacks                      $ 3.18
+      Liabilities:Credit Card:Northwoods
+
+  2024-02-05 * 7/11
+      Expenses:Food:Snacks                      $ 6.42
+      Expenses:Food:Snacks                      $ 2.24
+      Expenses:Food:Snacks                     $ 13.77
+      Liabilities:Credit Card:Northwoods
+
+  2024-02-05 * CVS
+      Expenses:Personal:Household              $ 21.91
+      Liabilities:Credit Card:Northwoods
+
+  2024-02-05 * Subway
+      Expenses:Food:Fast Food                   $ 3.35
+      Liabilities:Credit Card:Northwoods
+
+  2024-02-05 * Dunkin
+      Expenses:Food:Fast Food                   $ 1.78
+      Liabilities:Credit Card:Northwoods
+
+  2024-02-05 * Mariano's
+      Expenses:Food:Snacks                      $ 4.59
+      Liabilities:Credit Card:Northwoods
+
+  2024-02-05 * Protein Bar
+      Expenses:Food:Fast Food                 $ 100.00
+      Liabilities:Credit Card:Northwoods
+
+  2024-02-05 * Taco Bell
+      Expenses:Food:Fast Food                  $ 15.23
+      Liabilities:Credit Card:Northwoods
+
+  2024-02-05 * 7/11
+      Expenses:Food:Snacks                      $ 3.87
+      Liabilities:Credit Card:Northwoods
+
+  2024-02-06 * Northwoods
+      Liabilities:Credit Card:Northwoods      $ 605.19
+      Assets:Checking:Park City
 #+end_src
 ** Budget
 #+name: budget
@@ -5640,14 +5694,14 @@
 #+RESULTS:
 #+begin_example
   $ 1,425.11   $ 1,900.14    $ -475.03   75%  Assets:Investments:401K:Cash
-  $ 3,353.67   $ 8,577.40  $ -5,223.73   39%  Expenses
-           0     $ 323.07    $ -323.07     0    Food
-           0     $ 100.00    $ -100.00     0      Fast Food
+  $ 4,321.95   $ 8,577.40  $ -4,255.45   50%  Expenses
+    $ 154.43     $ 323.07    $ -168.64   48%    Food
+    $ 120.36     $ 100.00      $ 20.36  120%      Fast Food
            0     $ 123.07    $ -123.07     0      Groceries
-           0     $ 100.00    $ -100.00     0      Snacks
-           0   $ 1,626.00  $ -1,626.00     0    Housing
-           0   $ 1,410.00  $ -1,410.00     0      Rent
-           0     $ 216.00    $ -216.00     0      Utilities
+     $ 34.07     $ 100.00     $ -65.93   34%      Snacks
+    $ 787.50   $ 1,626.00    $ -838.50   48%    Housing
+    $ 707.50   $ 1,410.00    $ -702.50   50%      Rent
+     $ 80.00     $ 216.00    $ -136.00   37%      Utilities
      $ 84.95      $ 25.00      $ 59.95  340%    Personal:Communication
   $ 1,252.93   $ 3,003.33  $ -1,750.40   42%    RE
            0     $ 892.34    $ -892.34     0      Condo
@@ -5668,7 +5722,7 @@
            0   $ 2,800.00  $ -2,800.00     0    Condo:Mortgage
            0     $ 640.00    $ -640.00     0    Cottage:Mortgage
 ------------ ------------ ------------ -----
- $ -2,030.03            0  $ -2,030.03     0
+ $ -1,061.75            0  $ -1,061.75     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -5678,7 +5732,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,129.65
+          $ 2,732.52
            1.0 CONDO
            1.0 COTTA
        430.338 FSPSX
@@ -5686,10 +5740,10 @@
        2,625.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 2,704.54    Checking
-            $ 392.04      Covantage
+          $ 1,307.41    Checking
+            $ 387.60      Covantage
               $ 7.07      Northwoods
-          $ 1,815.91      Park City
+            $ 423.22      Park City
             $ 489.52      RipCo
           $ 1,425.11
        430.338 FSPSX
@@ -5709,13 +5763,13 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -389,520.48  Liabilities
-           $ -447.95    Credit Card:Northwoods
+       $ -389,091.63  Liabilities
+            $ -19.10    Credit Card:Northwoods
        $ -389,072.53    RE
         $ -43,881.13      Condo:Mortgage
        $ -345,191.40      Cottage:Mortgage
 --------------------
-       $ -385,390.83
+       $ -386,359.11
            1.0 CONDO
            1.0 COTTA
        430.338 FSPSX
@@ -5732,28 +5786,28 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 997,433.03  Assets
-          $ 2,704.54    Checking
-            $ 392.04      Covantage
+        $ 997,770.01  Assets
+          $ 1,307.41    Checking
+            $ 387.60      Covantage
               $ 7.07      Northwoods
-          $ 1,815.91      Park City
+            $ 423.22      Park City
             $ 489.52      RipCo
-        $ 294,728.49    Investments
-        $ 116,791.27      401K
+        $ 296,462.60    Investments
+        $ 117,625.32      401K
           $ 1,425.11        Cash
-         $ 17,450.49      HSA
-        $ 104,967.99      IRA
+         $ 17,637.92      HSA
+        $ 105,680.61      IRA
          $ 55,518.75      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -389,520.48  Liabilities
-           $ -447.95    Credit Card:Northwoods
+       $ -389,091.63  Liabilities
+            $ -19.10    Credit Card:Northwoods
        $ -389,072.53    RE
         $ -43,881.13      Condo:Mortgage
        $ -345,191.40      Cottage:Mortgage
 --------------------
-        $ 607,912.55
+        $ 608,678.38
 #+end_example
 ** Spending
 *** This Month Spending
@@ -5763,18 +5817,26 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 3,353.67  Expenses
-            $ 184.95    Personal
+          $ 4,321.95  Expenses
+            $ 154.43    Food
+            $ 120.36      Fast Food
+             $ 34.07      Snacks
+            $ 787.50    Housing
+            $ 707.50      Rent
+             $ 80.00      Utilities
+            $ 206.86    Personal
              $ 84.95      Communication
             $ 100.00      Gifts
+             $ 21.91      Household
           $ 1,252.93    RE:Cottage:Escrow
           $ 1,915.79    Taxes
           $ 1,117.74      Federal
             $ 313.52      Illinois
              $ 91.84      Medicare
             $ 392.69      Social Security
+              $ 4.44    Transportation:Biking
 --------------------
-          $ 3,353.67
+          $ 4,321.95
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --period "last month" :noweb yes :exports results
@@ -5846,5 +5908,5 @@ October 2023         $ 9,834.46
 November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
-February 2024        $ 1,437.88
+February 2024        $ 2,406.16
 #+end_example
