@@ -48,18 +48,26 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 02/06/2024 00:00:00 VTSAX $119.3700
-  P 02/06/2024 00:00:00 VTIAX $30.6800
-  P 02/06/2024 00:00:00 FSPSX $47.1700
-  P 02/06/2024 00:00:00 FXAIX $172.2100
-  P 02/06/2024 00:00:00 CONDO $250,000.00
-  P 02/06/2024 00:00:00 COTTA $450,000.00
-  P 02/06/2024 00:00:00 STRIP $21.15
+  P 02/07/2024 00:00:00 VTSAX $118.8300
+  P 02/07/2024 00:00:00 VTIAX $30.5300
+  P 02/07/2024 00:00:00 FSPSX $46.9800
+  P 02/07/2024 00:00:00 FXAIX $171.6600
+  P 02/07/2024 00:00:00 CONDO $250,000.00
+  P 02/07/2024 00:00:00 COTTA $450,000.00
+  P 02/07/2024 00:00:00 STRIP $21.15
 #+end_src
 
 ** Transactions
 #+name: transactions
 #+begin_src ledger :eval never
+  2023-02-01 * Subway
+      Expenses:Food:Fast Food                   $ 0.77
+      Liabilities:Credit Card:Northwoods
+
+  2023-02-04 * Target
+      Expenses:Personal:Electronics             $ 9.24
+      Liabilities:Credit Card:Northwoods
+
   2023-03-31 * Stripe
       Income:Stripe:RSU                   $ -93,946.71
       Expenses:Taxes:Federal               $ 20,692.80
@@ -5328,6 +5336,7 @@
       Expenses:Food:Groceries                  $ 17.83
       Assets:Checking:Park City
 
+
   2024-01-24 * Tollway
       Expenses:Transportation:Driving:Tolls    $ 18.20
       Liabilities:Credit Card:Northwoods
@@ -5335,7 +5344,6 @@
   2024-01-25 * Transfer
       Liabilities:Credit Card:Covantage     $ 1,575.43
       Assets:Checking:Covantage
-
 
   2024-01-25 * Lincoln Park Auto
       Expenses:Transportation:Driving:Repairs  $ 158.58
@@ -5469,17 +5477,6 @@
       Assets:Savings:Barclays                   $ 0.57
       Income:Extra
 
-  2024-01-31 * Fidelity
-      Assets:Investments:401K                    4.586 FSPSX @ $ 46.6136066289
-      Assets:Investments:401K                    4.607 FSPSX @ $ 46.4011287172
-      Assets:Investments:401K                    7.431 FXAIX @ $ 163.01170771094
-      Assets:Investments:401K                    7.209 FXAIX @ $ 168.03162713275
-      Assets:Investments:401K:Cash         $ -2,850.22
-
-  2024-01-31 * Fidelity
-      Assets:Investments:HSA                     2.041 FXAIX
-      Assets:Investments:HSA                 $ -345.00
-
   2024-01-30 * Electronics
       Expenses:Personal:Communication          $ 49.05
       Liabilities:Credit Card:Northwoods
@@ -5510,6 +5507,17 @@
       Assets:Checking:Covantage               $ -68.22
       Liabilities:Credit Card:Northwoods
 
+  2024-01-31 * Fidelity
+      Assets:Investments:401K                    4.586 FSPSX @ $ 46.6136066289
+      Assets:Investments:401K                    4.607 FSPSX @ $ 46.4011287172
+      Assets:Investments:401K                    7.431 FXAIX @ $ 163.01170771094
+      Assets:Investments:401K                    7.209 FXAIX @ $ 168.03162713275
+      Assets:Investments:401K:Cash         $ -2,850.22
+
+  2024-01-31 * Fidelity
+      Assets:Investments:HSA                     2.041 FXAIX
+      Assets:Investments:HSA                 $ -345.00
+
   2024-01-31 * Kwik Trip
       Expenses:Food:Snacks                      $ 3.24
       Liabilities:Credit Card:Northwoods
@@ -5529,6 +5537,22 @@
 
   2024-02-01 * Payoff
       Liabilities:Credit Card:RipCo           $ 255.10
+      Assets:Checking:RipCo
+
+  2024-02-01 * Income
+      Assets:Checking:Covantage                 $ 0.04
+      Income:Extra
+
+  2024-02-01 * Communication
+      Expenses:Personal:Communication           $ 5.45
+      Expenses:Personal:Communication           $ 5.45
+      Expenses:Personal:Communication          $ 10.90
+      Expenses:Personal:Communication          $ 38.15
+      Expenses:Personal:Communication          $ 25.00
+      Liabilities:Credit Card:Northwoods
+
+  2024-02-01 * HOA
+      Expenses:RE:Condo:HOA                   $ 139.67
       Assets:Checking:RipCo
 
   2024-02-02 * Stripe
@@ -5554,26 +5578,6 @@
   2024-02-02 * Transfer
       Liabilities:Credit Card:RipCo            $ 48.34
       Assets:Checking:RipCo
-
-  2024-02-01 * Income
-      Assets:Checking:Covantage                 $ 0.04
-      Income:Extra
-
-  2024-02-01 * Communication
-      Expenses:Personal:Communication           $ 5.45
-      Expenses:Personal:Communication           $ 5.45
-      Expenses:Personal:Communication          $ 10.90
-      Expenses:Personal:Communication          $ 38.15
-      Expenses:Personal:Communication          $ 25.00
-      Liabilities:Credit Card:Northwoods
-
-  2023-02-01 * Subway
-      Expenses:Food:Fast Food                   $ 0.77
-      Liabilities:Credit Card:Northwoods
-
-  2023-02-04 * Target
-      Expenses:Personal:Electronics             $ 9.24
-      Liabilities:Credit Card:Northwoods
 
   2024-02-04 * Hoka's
       Expenses:Personal:Gifts                 $ 100.00
@@ -5629,9 +5633,21 @@
       Expenses:Food:Snacks                      $ 3.87
       Liabilities:Credit Card:Northwoods
 
-  2024-02-06 * Northwoods
+  2024-02-06 * Transfer
       Liabilities:Credit Card:Northwoods      $ 605.19
       Assets:Checking:Park City
+
+  2024-02-06 * Transfer
+      Liabilities:Credit Card:Northwoods       $ 12.03
+      Assets:Checking:Park City
+
+  2024-02-06 * Transfer
+      Liabilities:Credit Card:Northwoods        $ 7.07
+      Assets:Checking:Northwoods
+
+  2024-02-07 * Rent
+      Assets:Checking:RipCo                 $ 1,250.00
+      Income:RE:Condo:Rent
 #+end_src
 ** Budget
 #+name: budget
@@ -5694,7 +5710,7 @@
 #+RESULTS:
 #+begin_example
   $ 1,425.11   $ 1,900.14    $ -475.03   75%  Assets:Investments:401K:Cash
-  $ 4,321.95   $ 8,577.40  $ -4,255.45   50%  Expenses
+  $ 4,461.62   $ 8,577.40  $ -4,115.78   52%  Expenses
     $ 154.43     $ 323.07    $ -168.64   48%    Food
     $ 120.36     $ 100.00      $ 20.36  120%      Fast Food
            0     $ 123.07    $ -123.07     0      Groceries
@@ -5703,9 +5719,9 @@
     $ 707.50   $ 1,410.00    $ -702.50   50%      Rent
      $ 80.00     $ 216.00    $ -136.00   37%      Utilities
      $ 84.95      $ 25.00      $ 59.95  340%    Personal:Communication
-  $ 1,252.93   $ 3,003.33  $ -1,750.40   42%    RE
-           0     $ 892.34    $ -892.34     0      Condo
-           0     $ 132.34    $ -132.34     0        HOA
+  $ 1,392.60   $ 3,003.33  $ -1,610.73   46%    RE
+    $ 139.67     $ 892.34    $ -752.67   16%      Condo
+    $ 139.67     $ 132.34       $ 7.33  106%        HOA
            0      $ 50.00     $ -50.00     0        Insurance
            0     $ 260.00    $ -260.00     0        Interest
            0     $ 450.00    $ -450.00     0        Taxes
@@ -5715,14 +5731,14 @@
            0     $ 245.99    $ -245.99     0        Utilities
            0   $ 3,300.00  $ -3,300.00     0    Taxes
            0     $ 100.00    $ -100.00     0    Transportation
- $ -6,808.81 $ -13,917.54   $ 7,108.73   49%  Income
-           0  $ -1,250.00   $ 1,250.00     0    RE:Condo
+ $ -8,058.81 $ -13,917.54   $ 5,858.73   58%  Income
+ $ -1,250.00  $ -1,250.00            0  100%    RE:Condo
  $ -6,808.81 $ -12,667.54   $ 5,858.73   54%    Stripe
            0   $ 3,440.00  $ -3,440.00     0  Liabilities:RE
            0   $ 2,800.00  $ -2,800.00     0    Condo:Mortgage
            0     $ 640.00    $ -640.00     0    Cottage:Mortgage
 ------------ ------------ ------------ -----
- $ -1,061.75            0  $ -1,061.75     0
+ $ -2,172.08            0  $ -2,172.08     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -5732,7 +5748,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 2,732.52
+          $ 3,823.75
            1.0 CONDO
            1.0 COTTA
        430.338 FSPSX
@@ -5740,11 +5756,10 @@
        2,625.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 1,307.41    Checking
+          $ 2,398.64    Checking
             $ 387.60      Covantage
-              $ 7.07      Northwoods
-            $ 423.22      Park City
-            $ 489.52      RipCo
+            $ 411.19      Park City
+          $ 1,599.85      RipCo
           $ 1,425.11
        430.338 FSPSX
        659.306 FXAIX
@@ -5763,13 +5778,11 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -389,091.63  Liabilities
-            $ -19.10    Credit Card:Northwoods
-       $ -389,072.53    RE
-        $ -43,881.13      Condo:Mortgage
-       $ -345,191.40      Cottage:Mortgage
+       $ -389,072.53  Liabilities:RE
+        $ -43,881.13    Condo:Mortgage
+       $ -345,191.40    Cottage:Mortgage
 --------------------
-       $ -386,359.11
+       $ -385,248.78
            1.0 CONDO
            1.0 COTTA
        430.338 FSPSX
@@ -5786,28 +5799,25 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 997,770.01  Assets
-          $ 1,307.41    Checking
+        $ 997,932.10  Assets
+          $ 2,398.64    Checking
             $ 387.60      Covantage
-              $ 7.07      Northwoods
-            $ 423.22      Park City
-            $ 489.52      RipCo
-        $ 296,462.60    Investments
-        $ 117,625.32      401K
+            $ 411.19      Park City
+          $ 1,599.85      RipCo
+        $ 295,533.46    Investments
+        $ 117,237.27      401K
           $ 1,425.11        Cash
-         $ 17,637.92      HSA
-        $ 105,680.61      IRA
+         $ 17,581.59      HSA
+        $ 105,195.85      IRA
          $ 55,518.75      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -389,091.63  Liabilities
-            $ -19.10    Credit Card:Northwoods
-       $ -389,072.53    RE
-        $ -43,881.13      Condo:Mortgage
-       $ -345,191.40      Cottage:Mortgage
+       $ -389,072.53  Liabilities:RE
+        $ -43,881.13    Condo:Mortgage
+       $ -345,191.40    Cottage:Mortgage
 --------------------
-        $ 608,678.38
+        $ 608,859.57
 #+end_example
 ** Spending
 *** This Month Spending
@@ -5817,7 +5827,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,321.95  Expenses
+          $ 4,461.62  Expenses
             $ 154.43    Food
             $ 120.36      Fast Food
              $ 34.07      Snacks
@@ -5828,7 +5838,9 @@
              $ 84.95      Communication
             $ 100.00      Gifts
              $ 21.91      Household
-          $ 1,252.93    RE:Cottage:Escrow
+          $ 1,392.60    RE
+            $ 139.67      Condo:HOA
+          $ 1,252.93      Cottage:Escrow
           $ 1,915.79    Taxes
           $ 1,117.74      Federal
             $ 313.52      Illinois
@@ -5836,7 +5848,7 @@
             $ 392.69      Social Security
               $ 4.44    Transportation:Biking
 --------------------
-          $ 4,321.95
+          $ 4,461.62
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --period "last month" :noweb yes :exports results
@@ -5908,5 +5920,5 @@ October 2023         $ 9,834.46
 November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
-February 2024        $ 2,406.16
+February 2024        $ 2,545.83
 #+end_example
