@@ -48,13 +48,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 02/09/2024 00:00:00 VTSAX $120.1200
-  P 02/09/2024 00:00:00 VTIAX $30.8600
-  P 02/09/2024 00:00:00 FSPSX $47.2200
-  P 02/09/2024 00:00:00 FXAIX $173.4800
-  P 02/09/2024 00:00:00 CONDO $250,000.00
-  P 02/09/2024 00:00:00 COTTA $450,000.00
-  P 02/09/2024 00:00:00 STRIP $21.15
+  P 02/13/2024 00:00:00 VTSAX $121.1800
+  P 02/13/2024 00:00:00 VTIAX $30.8700
+  P 02/13/2024 00:00:00 FSPSX $47.2900
+  P 02/13/2024 00:00:00 FXAIX $174.6200
+  P 02/13/2024 00:00:00 CONDO $250,000.00
+  P 02/13/2024 00:00:00 COTTA $450,000.00
+  P 02/13/2024 00:00:00 STRIP $21.15
 #+end_src
 
 ** Transactions
@@ -5714,14 +5714,38 @@
       Assets:Checking:RipCo
 
   2024-02-13 * Huntington
-      Liabilities:RE:Condo:Mortgage           $ 518.87
-      Expenses:RE:Condo:Interest              $ 138.75
+      Liabilities:RE:Condo:Mortgage           $ 520.49
+      Expenses:RE:Condo:Interest              $ 137.13
       Assets:Checking:RipCo
 
   2024-02-13 * Huntington
-      Liabilities:RE:Condo:Mortgage           $ 518.87
-      Expenses:RE:Condo:Interest              $ 138.75
+      Liabilities:RE:Condo:Mortgage           $ 522.12
+      Expenses:RE:Condo:Interest              $ 135.50
       Assets:Checking:RipCo
+
+  2024-02-12 * Transfer
+      Liabilities:Credit Card:Covantage        $ 57.66
+      Assets:Checking:Covantage
+
+  2024-02-12 * Microsoft
+      Expenses:Personal:Electronics           $ 100.00
+      Liabilities:Credit Card:Northwoods
+
+  2024-02-13 * License Plate Renewal
+      Expenses:Transportation:Driving:Registration  $ 151.00
+      Assets:Checking:Covantage
+
+  2024-02-13 * Transfer
+      Liabilities:Credit Card:Northwoods      $ 100.00
+      Assets:Checking:Covantage
+
+  2024-02-13 * Payoff
+      Liabilities:Credit Card:Park City       $ 183.35
+      Assets:Checking:Park City
+
+  2024-02-13 * Comed
+      Expenses:Housing:Utilities               $ 52.00
+      Assets:Checking:Park City
 #+end_src
 ** Budget
 #+name: budget
@@ -5784,20 +5808,20 @@
 #+RESULTS:
 #+begin_example
   $ 1,425.11   $ 1,900.14    $ -475.03   75%  Assets:Investments:401K:Cash
-  $ 5,256.30   $ 8,577.40  $ -3,321.10   61%  Expenses
+  $ 5,554.43   $ 8,577.40  $ -3,022.97   65%  Expenses
     $ 298.37     $ 323.07     $ -24.70   92%    Food
     $ 200.14     $ 100.00     $ 100.14  200%      Fast Food
      $ 42.63     $ 123.07     $ -80.44   35%      Groceries
      $ 55.60     $ 100.00     $ -44.40   56%      Snacks
-    $ 787.50   $ 1,626.00    $ -838.50   48%    Housing
+    $ 839.50   $ 1,626.00    $ -786.50   52%    Housing
     $ 707.50   $ 1,410.00    $ -702.50   50%      Rent
-     $ 80.00     $ 216.00    $ -136.00   37%      Utilities
+    $ 132.00     $ 216.00     $ -84.00   61%      Utilities
     $ 144.36      $ 25.00     $ 119.36  577%    Personal:Communication
-  $ 1,745.09   $ 3,003.33  $ -1,258.24   58%    RE
-    $ 417.17     $ 892.34    $ -475.17   47%      Condo
+  $ 1,740.22   $ 3,003.33  $ -1,263.11   58%    RE
+    $ 412.30     $ 892.34    $ -480.04   46%      Condo
     $ 139.67     $ 132.34       $ 7.33  106%        HOA
            0      $ 50.00     $ -50.00     0        Insurance
-    $ 277.50     $ 260.00      $ 17.50  107%        Interest
+    $ 272.63     $ 260.00      $ 12.63  105%        Interest
            0     $ 450.00    $ -450.00     0        Taxes
   $ 1,327.92   $ 2,110.99    $ -783.07   63%      Cottage
   $ 1,252.93     $ 865.00     $ 387.93  145%        Escrow
@@ -5808,11 +5832,11 @@
  $ -8,058.81 $ -13,917.54   $ 5,858.73   58%  Income
  $ -1,250.00  $ -1,250.00            0  100%    RE:Condo
  $ -6,808.81 $ -12,667.54   $ 5,858.73   54%    Stripe
-  $ 1,037.74   $ 3,440.00  $ -2,402.26   30%  Liabilities:RE
-  $ 1,037.74   $ 2,800.00  $ -1,762.26   37%    Condo:Mortgage
+  $ 1,042.61   $ 3,440.00  $ -2,397.39   30%  Liabilities:RE
+  $ 1,042.61   $ 2,800.00  $ -1,757.39   37%    Condo:Mortgage
            0     $ 640.00    $ -640.00     0    Cottage:Mortgage
 ------------ ------------ ------------ -----
-   $ -339.66            0    $ -339.66     0
+    $ -36.66            0     $ -36.66     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -5822,7 +5846,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 2,232.34
+          $ 1,688.33
            1.0 CONDO
            1.0 COTTA
        430.338 FSPSX
@@ -5830,10 +5854,10 @@
        2,625.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-            $ 807.23    Checking
+            $ 263.22    Checking
              $ 10.00      Capital One
-            $ 376.42      Covantage
-            $ 411.19      Park City
+             $ 67.76      Covantage
+            $ 175.84      Park City
               $ 9.62      RipCo
           $ 1,425.11
        430.338 FSPSX
@@ -5853,15 +5877,11 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -388,275.80  Liabilities
-           $ -241.01    Credit Card
-            $ -57.66      Covantage
-           $ -183.35      Park City
-       $ -388,034.79    RE
-        $ -42,843.39      Condo:Mortgage
-       $ -345,191.40      Cottage:Mortgage
+       $ -388,029.92  Liabilities:RE
+        $ -42,838.52    Condo:Mortgage
+       $ -345,191.40    Cottage:Mortgage
 --------------------
-       $ -386,043.46
+       $ -386,341.59
            1.0 CONDO
            1.0 COTTA
        430.338 FSPSX
@@ -5878,30 +5898,26 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 998,785.05  Assets
-            $ 807.23    Checking
+        $ 999,804.74  Assets
+            $ 263.22    Checking
              $ 10.00      Capital One
-            $ 376.42      Covantage
-            $ 411.19      Park City
+             $ 67.76      Covantage
+            $ 175.84      Park City
               $ 9.62      RipCo
-        $ 297,977.82    Investments
-        $ 118,354.08      401K
+        $ 299,541.52    Investments
+        $ 119,019.05      401K
           $ 1,425.11        Cash
-         $ 17,768.00      HSA
-        $ 106,336.99      IRA
+         $ 17,884.76      HSA
+        $ 107,118.97      IRA
          $ 55,518.75      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -388,275.80  Liabilities
-           $ -241.01    Credit Card
-            $ -57.66      Covantage
-           $ -183.35      Park City
-       $ -388,034.79    RE
-        $ -42,843.39      Condo:Mortgage
-       $ -345,191.40      Cottage:Mortgage
+       $ -388,029.92  Liabilities:RE
+        $ -42,838.52    Condo:Mortgage
+       $ -345,191.40    Cottage:Mortgage
 --------------------
-        $ 610,509.25
+        $ 611,774.82
 #+end_example
 ** Spending
 *** This Month Spending
@@ -5911,24 +5927,24 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 5,256.30  Expenses
+          $ 5,554.43  Expenses
             $ 298.37    Food
             $ 200.14      Fast Food
              $ 42.63      Groceries
              $ 55.60      Snacks
-            $ 787.50    Housing
+            $ 839.50    Housing
             $ 707.50      Rent
-             $ 80.00      Utilities
-            $ 323.93    Personal
+            $ 132.00      Utilities
+            $ 423.93    Personal
             $ 144.36      Communication
-             $ 15.66      Electronics
+            $ 115.66      Electronics
             $ 100.00      Gifts
              $ 42.00      Health
              $ 21.91      Household
-          $ 1,925.09    RE
-            $ 417.17      Condo
+          $ 1,920.22    RE
+            $ 412.30      Condo
             $ 139.67        HOA
-            $ 277.50        Interest
+            $ 272.63        Interest
           $ 1,507.92      Cottage
             $ 180.00        Cleaning
           $ 1,252.93        Escrow
@@ -5938,9 +5954,11 @@
             $ 313.52      Illinois
              $ 91.84      Medicare
             $ 392.69      Social Security
-              $ 5.62    Transportation:Biking
+            $ 156.62    Transportation
+              $ 5.62      Biking
+            $ 151.00      Driving:Registration
 --------------------
-          $ 5,256.30
+          $ 5,554.43
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --period "last month" :noweb yes :exports results
@@ -6012,5 +6030,5 @@ October 2023         $ 9,834.46
 November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
-February 2024        $ 3,340.51
+February 2024        $ 3,638.64
 #+end_example
