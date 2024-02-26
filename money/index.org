@@ -40,7 +40,7 @@
       return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), stock, values[index]) + "\n"
   return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "CONDO", "250,000.00") + "\n"
   return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "COTTA", "450,000.00") + "\n"
-  return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "STRIP", "21.15") + "\n"
+   #return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "STRIP", "21.15") + "\n"
   return_string = return_string + "#+end_src"
   return return_string
 #+end_src
@@ -48,26 +48,17 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 02/13/2024 00:00:00 VTSAX $121.1800
-  P 02/13/2024 00:00:00 VTIAX $30.8700
-  P 02/13/2024 00:00:00 FSPSX $47.2900
-  P 02/13/2024 00:00:00 FXAIX $174.6200
-  P 02/13/2024 00:00:00 CONDO $250,000.00
-  P 02/13/2024 00:00:00 COTTA $450,000.00
-  P 02/13/2024 00:00:00 STRIP $21.15
+  P 02/26/2024 00:00:00 VTSAX $122.5800
+  P 02/26/2024 00:00:00 VTIAX $31.6400
+  P 02/26/2024 00:00:00 FSPSX $48.5400
+  P 02/26/2024 00:00:00 FXAIX $176.8600
+  P 02/26/2024 00:00:00 CONDO $250,000.00
+  P 02/26/2024 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
 #+name: transactions
 #+begin_src ledger :eval never
-  2023-02-01 * Subway
-      Expenses:Food:Fast Food                   $ 0.77
-      Liabilities:Credit Card:Northwoods
-
-  2023-02-04 * Target
-      Expenses:Personal:Electronics             $ 9.24
-      Liabilities:Credit Card:Northwoods
-
   2023-03-31 * Stripe
       Income:Stripe:RSU                   $ -93,946.71
       Expenses:Taxes:Federal               $ 20,692.80
@@ -5336,7 +5327,6 @@
       Expenses:Food:Groceries                  $ 17.83
       Assets:Checking:Park City
 
-
   2024-01-24 * Tollway
       Expenses:Transportation:Driving:Tolls    $ 18.20
       Liabilities:Credit Card:Northwoods
@@ -5344,6 +5334,7 @@
   2024-01-25 * Transfer
       Liabilities:Credit Card:Covantage     $ 1,575.43
       Assets:Checking:Covantage
+
 
   2024-01-25 * Lincoln Park Auto
       Expenses:Transportation:Driving:Repairs  $ 158.58
@@ -5535,6 +5526,10 @@
       Liabilities:Credit Card:RipCo            $ 26.65
       Income:Extra
 
+  2024-02-01 * Subway
+      Expenses:Food:Fast Food                   $ 0.77
+      Liabilities:Credit Card:Northwoods
+
   2024-02-01 * Payoff
       Liabilities:Credit Card:RipCo           $ 255.10
       Assets:Checking:RipCo
@@ -5578,6 +5573,10 @@
   2024-02-02 * Transfer
       Liabilities:Credit Card:RipCo            $ 48.34
       Assets:Checking:RipCo
+
+  2024-02-04 * Target
+      Expenses:Personal:Electronics             $ 9.24
+      Liabilities:Credit Card:Northwoods
 
   2024-02-04 * Hoka's
       Expenses:Personal:Gifts                 $ 100.00
@@ -5713,6 +5712,14 @@
       Expenses:RE:Cottage:Cleaning            $ 120.00
       Assets:Checking:RipCo
 
+  2024-02-12 * Transfer
+      Liabilities:Credit Card:Covantage        $ 57.66
+      Assets:Checking:Covantage
+
+  2024-02-12 * Microsoft
+      Expenses:Personal:Electronics           $ 100.00
+      Liabilities:Credit Card:Northwoods
+
   2024-02-13 * Huntington
       Liabilities:RE:Condo:Mortgage           $ 520.49
       Expenses:RE:Condo:Interest              $ 137.13
@@ -5722,14 +5729,6 @@
       Liabilities:RE:Condo:Mortgage           $ 522.12
       Expenses:RE:Condo:Interest              $ 135.50
       Assets:Checking:RipCo
-
-  2024-02-12 * Transfer
-      Liabilities:Credit Card:Covantage        $ 57.66
-      Assets:Checking:Covantage
-
-  2024-02-12 * Microsoft
-      Expenses:Personal:Electronics           $ 100.00
-      Liabilities:Credit Card:Northwoods
 
   2024-02-13 * License Plate Renewal
       Expenses:Transportation:Driving:Registration  $ 151.00
@@ -5746,6 +5745,168 @@
   2024-02-13 * Comed
       Expenses:Housing:Utilities               $ 52.00
       Assets:Checking:Park City
+
+  2024-02-15 * Stripe
+      Income:Stripe:RSU                   $ -36,999.85
+      Expenses:Taxes:Federal                $ 8,154.83
+      Expenses:Taxes:Social Security        $ 2,293.99
+      Expenses:Taxes:Medicare                 $ 536.49
+      Expenses:Taxes:Illinois               $ 1,831.49
+      Assets:Investments:RSU                   1,117.0 STRIP @ $ 21.65
+
+  2024-02-16 * Stripe
+      Assets:Checking:Covantage               $ 392.00
+      Assets:Checking:Park City             $ 1,518.11
+      Assets:Checking:Northwoods            $ 1,260.00
+      Income:Stripe:Paycheck               $ -5,700.39
+      Income:Stripe:Paycheck                 $ -633.38
+      Income:Stripe:Wireless                  $ -50.00
+      Income:Stripe:Wellness                   $ -9.05
+      Expenses:Taxes:Federal                $ 1,102.56
+      Expenses:Taxes:Social Security          $ 388.77
+      Expenses:Taxes:Medicare                  $ 90.92
+      Expenses:Taxes:Illinois                 $ 310.39
+      Expneses:Transportation:Driving:Parking  $ 85.00
+      Expneses:Transportation:Public           $ 50.00
+      Assets:Investments:401K:Cash            $ 950.07
+      Assets:Investments:401K:Cash            $ 475.04
+      Income:Stripe:Match                    $ -475.04
+      Income:Stripe:HSA                      $ -100.00
+      Assets:Investments:HSA                  $ 345.00
+
+  2024-02-16 * Insurance
+      Assets:Checking:Covantage             $ 2,000.00
+      Expenses:RE:Condo:Repairs
+
+  2024-02-16 * Petro
+      Expenses:Transportation:Driving:Gas      $ 35.65
+      Liabilities:Credit Card:Park City
+
+  2024-02-16 * Culvers
+      Expenses:Food:Fast Food                  $ 11.43
+      Liabilities:Credit Card:RipCo
+
+  2024-02-16 * Chase
+      Expenses:RE:Cottage:Escrow            $ 1,252.93
+      Assets:Checking:Northwoods
+
+  2024-02-17 * Walmart
+      Expenses:Food:Groceries                  $ 44.68
+      Liabilities:Credit Card:RipCo
+
+  2024-02-17 * Family Dollar
+      Expenses:Food:Snacks                      $ 8.02
+      Liabilities:Credit Card:RipCo
+
+  2024-02-17 * Krist Oild
+      Expenses:Transportation:Driving:Gas      $ 36.13
+      Liabilities:Credit Card:RipCo
+
+  2024-02-17 * Schaefer's IGA
+      Expenses:Food:Groceries                  $ 31.05
+      Liabilities:Credit Card:RipCo
+
+  2024-02-17 * Goodwilld
+      Expenses:Personal:Household              $ 14.00
+      Liabilities:Credit Card:RipCo
+
+  2024-02-17 * Forest County Potawatami
+      Expenses:Personal:Health                  $ 7.00
+      Liabilities:Credit Card:RipCo
+
+  2024-02-18 * Family Dollar
+      Expenses:Food:Snacks                      $ 3.98
+      Liabilities:Credit Card:RipCo
+
+  2024-02-18 * Delta
+      Expenses:Travel:Air                      $ 68.10
+      Liabilities:Credit Card:RipCo
+
+  2024-02-18 * Alaska Air
+      Expenses:Travel:Air                      $ 68.10
+      Liabilities:Credit Card:RipCo
+
+  2024-02-18 * Whiskey Nick's
+      Expenses:Food:Drinks                     $ 33.75
+      Liabilities:Credit Card:RipCo
+
+  2024-02-18 * Conway
+      Expenses:Personal:Household              $ 12.11
+      Liabilities:Credit Card:RipCo
+
+  2024-02-18 * Dollar General
+      Expenses:Food:Snacks                      $ 2.42
+      Liabilities:Credit Card:RipCo
+
+  2024-02-18 * Ski Brule
+      Expenses:Personal:Recreation            $ 127.31
+      Liabilities:Credit Card:RipCo
+
+  2024-02-18 * Schaefer's IGA
+      Expenses:Food:Snacks                      $ 3.03
+      Liabilities:Credit Card:RipCo
+
+  2024-02-20 * Whole Food
+      Expenses:Food:Groceries                   $ 5.10
+      Liabilities:Credit Card:Covantage
+
+  2024-02-20 * Chipotle
+      Expenses:Food:Fast Food                  $ 53.52
+      Liabilities:Credit Card:RipCo
+
+  2024-02-20 * Chick-fil-a
+      Expenses:Food:Fast Food                  $ 11.73
+      Liabilities:Credit Card:RipCo
+
+  2024-02-20 * Kwik Trip
+      Expenses:Food:Snacks                      $ 5.99
+      Liabilities:Credit Card:RipCo
+
+  2024-02-21 * GasBuddy
+      Expenses:Transportation:Driving:Gas      $ 28.14
+      Assets:Checking:Covantage
+
+  2024-02-21 * Home Depot
+      Expenses:Personal:Household              $ 29.17
+      Expenses:Personal:Household              $ 19.81
+      Liabilities:Credit Card:Covantage
+
+  2024-02-21 * 7/11
+      Expenses:Food:Snacks                      $ 7.95
+      Liabilities:Credit Card:Covantage
+
+  2024-02-21 * Amazon
+      Expenses:Personal:Household              $ 50.21
+      Assets:Checking:Park City
+
+  2024-02-23 * Transfer
+      Assets:Checking:Covantage               $ 500.00
+      Assets:Checking:Park City
+
+  2024-02-24 * ChatGPT
+      Expenses:Personal:Electronics            $ 20.00
+      Liabilities:Credit Card:RipCo
+
+  2024-02-26 * Cook County
+      Expenses:RE:Condo:Taxes               $ 2,828.03
+      Assets:Checking:Covantage
+
+  2024-02-26 * Divy Bikes
+      Expenses:Transportation:Biking            $ 0.78
+      Assets:Checking:Covantage
+
+  2024-02-26 * Transfer
+      Liabilities:Credit Card:Covantage        $ 62.03
+      Assets:Checking:Covantage
+
+  2024-02-26 * Transfer
+      Liabilities:Credit Card:Park City        $ 35.65
+      Assets:Checking:Park City
+
+  2024-02-29 * Mortgage
+      Expenses:RE:Cottage:Interest          $ 1,006.81
+      Liabilities:RE:Cottage:Mortgage         $ 634.45
+      Expenses:RE:Cottage:Escrow
 #+end_src
 ** Budget
 #+name: budget
@@ -5807,36 +5968,36 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-  $ 1,425.11   $ 1,900.14    $ -475.03   75%  Assets:Investments:401K:Cash
-  $ 5,554.43   $ 8,577.40  $ -3,022.97   65%  Expenses
-    $ 298.37     $ 323.07     $ -24.70   92%    Food
-    $ 200.14     $ 100.00     $ 100.14  200%      Fast Food
-     $ 42.63     $ 123.07     $ -80.44   35%      Groceries
-     $ 55.60     $ 100.00     $ -44.40   56%      Snacks
+  $ 2,850.22   $ 1,900.14     $ 950.08  150%  Assets:Investments:401K:Cash
+ $ 22,459.55   $ 8,577.40  $ 13,882.15  262%  Expenses
+    $ 488.04     $ 323.07     $ 164.97  151%    Food
+    $ 277.59     $ 100.00     $ 177.59  278%      Fast Food
+    $ 123.46     $ 123.07       $ 0.39  100%      Groceries
+     $ 86.99     $ 100.00     $ -13.01   87%      Snacks
     $ 839.50   $ 1,626.00    $ -786.50   52%    Housing
     $ 707.50   $ 1,410.00    $ -702.50   50%      Rent
     $ 132.00     $ 216.00     $ -84.00   61%      Utilities
     $ 144.36      $ 25.00     $ 119.36  577%    Personal:Communication
-  $ 1,740.22   $ 3,003.33  $ -1,263.11   58%    RE
-    $ 412.30     $ 892.34    $ -480.04   46%      Condo
+  $ 5,186.73   $ 3,003.33   $ 2,183.40  173%    RE
+  $ 3,240.33     $ 892.34   $ 2,347.99  363%      Condo
     $ 139.67     $ 132.34       $ 7.33  106%        HOA
            0      $ 50.00     $ -50.00     0        Insurance
     $ 272.63     $ 260.00      $ 12.63  105%        Interest
-           0     $ 450.00    $ -450.00     0        Taxes
-  $ 1,327.92   $ 2,110.99    $ -783.07   63%      Cottage
-  $ 1,252.93     $ 865.00     $ 387.93  145%        Escrow
-           0   $ 1,000.00  $ -1,000.00     0        Interest
+  $ 2,828.03     $ 450.00   $ 2,378.03  628%        Taxes
+  $ 1,946.40   $ 2,110.99    $ -164.59   92%      Cottage
+    $ 864.60     $ 865.00      $ -0.40  100%        Escrow
+  $ 1,006.81   $ 1,000.00       $ 6.81  101%        Interest
      $ 74.99     $ 245.99    $ -171.00   30%        Utilities
            0   $ 3,300.00  $ -3,300.00     0    Taxes
            0     $ 100.00    $ -100.00     0    Transportation
- $ -8,058.81 $ -13,917.54   $ 5,858.73   58%  Income
+$ -52,026.52 $ -13,917.54 $ -38,108.98  374%  Income
  $ -1,250.00  $ -1,250.00            0  100%    RE:Condo
- $ -6,808.81 $ -12,667.54   $ 5,858.73   54%    Stripe
-  $ 1,042.61   $ 3,440.00  $ -2,397.39   30%  Liabilities:RE
+$ -50,776.52 $ -12,667.54 $ -38,108.98  401%    Stripe
+  $ 1,677.06   $ 3,440.00  $ -1,762.94   49%  Liabilities:RE
   $ 1,042.61   $ 2,800.00  $ -1,757.39   37%    Condo:Mortgage
-           0     $ 640.00    $ -640.00     0    Cottage:Mortgage
+    $ 634.45     $ 640.00      $ -5.55   99%    Cottage:Mortgage
 ------------ ------------ ------------ -----
-    $ -36.66            0     $ -36.66     0
+$ -25,039.69            0 $ -25,039.69     0
 #+end_example
 ** Net Worth
 *** Assets
@@ -5846,47 +6007,51 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 1,688.33
+          $ 4,370.78
            1.0 CONDO
            1.0 COTTA
        430.338 FSPSX
        659.306 FXAIX
-       2,625.0 STRIP
+       3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-            $ 263.22    Checking
+          $ 1,175.56    Checking
              $ 10.00      Capital One
-             $ 67.76      Covantage
-            $ 175.84      Park City
+             $ 40.78      Covantage
+              $ 7.07      Northwoods
+          $ 1,108.09      Park City
               $ 9.62      RipCo
-          $ 1,425.11
+          $ 3,195.22
        430.338 FSPSX
        659.306 FXAIX
-       2,625.0 STRIP
+       3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX    Investments
-          $ 1,425.11
+          $ 2,850.22
        430.338 FSPSX
        556.885 FXAIX      401K
-          $ 1,425.11        Cash
+          $ 2,850.22        Cash
+            $ 345.00
        102.421 FXAIX      HSA
        596.199 VTIAX
        732.087 VTSAX      IRA
-       2,625.0 STRIP      RSU
+       3,742.0 STRIP      RSU
            1.0 CONDO
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -388,029.92  Liabilities:RE
-        $ -42,838.52    Condo:Mortgage
-       $ -345,191.40    Cottage:Mortgage
+       $ -387,957.82  Liabilities
+           $ -562.35    Credit Card:RipCo
+       $ -387,395.47    RE
+        $ -42,838.52      Condo:Mortgage
+       $ -344,556.95      Cottage:Mortgage
 --------------------
-       $ -386,341.59
+       $ -383,587.04
            1.0 CONDO
            1.0 COTTA
        430.338 FSPSX
        659.306 FXAIX
-       2,625.0 STRIP
+       3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX
 #+end_example
@@ -5898,26 +6063,29 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 999,804.74  Assets
-            $ 263.22    Checking
+      $ 1,031,481.51  Assets
+          $ 1,175.56    Checking
              $ 10.00      Capital One
-             $ 67.76      Covantage
-            $ 175.84      Park City
+             $ 40.78      Covantage
+              $ 7.07      Northwoods
+          $ 1,108.09      Park City
               $ 9.62      RipCo
-        $ 299,541.52    Investments
-        $ 119,019.05      401K
-          $ 1,425.11        Cash
-         $ 17,884.76      HSA
-        $ 107,118.97      IRA
-         $ 55,518.75      RSU
+        $ 330,305.95    Investments
+        $ 122,229.51      401K
+          $ 2,850.22        Cash
+         $ 18,459.18      HSA
+        $ 108,602.96      IRA
+         $ 81,014.30      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -388,029.92  Liabilities:RE
-        $ -42,838.52    Condo:Mortgage
-       $ -345,191.40    Cottage:Mortgage
+       $ -387,957.82  Liabilities
+           $ -562.35    Credit Card:RipCo
+       $ -387,395.47    RE
+        $ -42,838.52      Condo:Mortgage
+       $ -344,556.95      Cottage:Mortgage
 --------------------
-        $ 611,774.82
+        $ 643,523.69
 #+end_example
 ** Spending
 *** This Month Spending
@@ -5927,38 +6095,46 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 5,554.43  Expenses
-            $ 298.37    Food
-            $ 200.14      Fast Food
-             $ 42.63      Groceries
-             $ 55.60      Snacks
+         $ 22,459.55  Expenses
+            $ 521.79    Food
+             $ 33.75      Drinks
+            $ 277.59      Fast Food
+            $ 123.46      Groceries
+             $ 86.99      Snacks
             $ 839.50    Housing
             $ 707.50      Rent
             $ 132.00      Utilities
-            $ 423.93    Personal
+            $ 712.78    Personal
             $ 144.36      Communication
-            $ 115.66      Electronics
+            $ 144.90      Electronics
             $ 100.00      Gifts
-             $ 42.00      Health
-             $ 21.91      Household
-          $ 1,920.22    RE
-            $ 412.30      Condo
+             $ 49.00      Health
+            $ 147.21      Household
+            $ 127.31      Recreation
+          $ 3,366.73    RE
+          $ 1,240.33      Condo
             $ 139.67        HOA
             $ 272.63        Interest
-          $ 1,507.92      Cottage
+         $ -2,000.00        Repairs
+          $ 2,828.03        Taxes
+          $ 2,126.40      Cottage
             $ 180.00        Cleaning
-          $ 1,252.93        Escrow
+            $ 864.60        Escrow
+          $ 1,006.81        Interest
              $ 74.99        Utilities
-          $ 1,915.79    Taxes
-          $ 1,117.74      Federal
-            $ 313.52      Illinois
-             $ 91.84      Medicare
-            $ 392.69      Social Security
-            $ 156.62    Transportation
-              $ 5.62      Biking
-            $ 151.00      Driving:Registration
+         $ 16,625.23    Taxes
+         $ 10,375.13      Federal
+          $ 2,455.40      Illinois
+            $ 719.25      Medicare
+          $ 3,075.45      Social Security
+            $ 257.32    Transportation
+              $ 6.40      Biking
+            $ 250.92      Driving
+             $ 99.92        Gas
+            $ 151.00        Registration
+            $ 136.20    Travel:Air
 --------------------
-          $ 5,554.43
+         $ 22,459.55
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --period "last month" :noweb yes :exports results
@@ -6018,8 +6194,6 @@
 #+end_src
 #+results:
 #+begin_example
-February 2023        $ 10.01
-March 2023           0
 April 2023           $ 5,455.64
 May 2023             $ 8,591.06
 June 2023            $ 9,673.92
@@ -6030,5 +6204,5 @@ October 2023         $ 9,834.46
 November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
-February 2024        $ 3,638.64
+February 2024        $ 5,834.32
 #+end_example
