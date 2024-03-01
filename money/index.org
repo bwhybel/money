@@ -48,12 +48,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 02/27/2024 00:00:00 VTSAX $122.6600
-  P 02/27/2024 00:00:00 VTIAX $31.6500
-  P 02/27/2024 00:00:00 FSPSX $48.6400
-  P 02/27/2024 00:00:00 FXAIX $176.9300
-  P 02/27/2024 00:00:00 CONDO $250,000.00
-  P 02/27/2024 00:00:00 COTTA $450,000.00
+  P 03/01/2024 00:00:00 VTSAX $122.4200
+  P 03/01/2024 00:00:00 VTIAX $31.4200
+  P 03/01/2024 00:00:00 FSPSX $48.4300
+  P 03/01/2024 00:00:00 FXAIX $176.2900
+  P 03/01/2024 00:00:00 CONDO $250,000.00
+  P 03/01/2024 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -5945,6 +5945,39 @@
   2024-02-26 * Xfinity
       Expenses:Housing:Utilities               $ 70.00
       Assets:Checking:Park City
+
+  2024-02-28 * Amazon
+      Expenses:Personal:Household              $ 40.17
+      Liabilities:Credit Card:RipCo
+
+  2024-02-29 * Cash Back
+      Liabilities:Credit Card:RipCo             $ 6.96
+      Income:Extra
+
+  2024-02-29 * Dividend
+      Assets:Checking:Covantage                 $ 0.08
+      Income:Extra
+
+  2024-03-01 * Stripe
+      Assets:Checking:Covantage               $ 392.00
+      Assets:Checking:Park City             $ 1,815.90
+      Assets:Checking:Northwoods            $ 1,260.00
+      Income:Stripe:Match                     $ -99.84
+      Assets:Investments:401K                 $ 950.07
+      Assets:Investments:401K                  $ 99.84
+      Expenses:Taxes:Federal                 $ 1117.74
+      Expenses:Taxes:Social Security          $ 392.70
+      Expenses:Taxes:Medicare                  $ 91.85
+      Expenses:Taxes:Illinois                 $ 313.52
+      Income:Stripe:Paycheck               $ -6,333.78
+
+  2024-03-01 * Transfer
+      Assets:Checking:Covantage                 $ 7.07
+      Assets:Checking:Northwoods
+
+  2024-03-01 * Chase
+      Expenses:RE:Cottage:Escrow            $ 1,252.93
+      Assets:Checking:Northwoods
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -5968,7 +6001,6 @@
       Equity:OpeningBalance
 #+end_src
 * Money
-** Budget
 ** Net Worth
 *** Assets
 #+begin_src ledger :noweb yes :cmdline bal ^Assets ^Liabilities --cleared :exports results
@@ -5977,7 +6009,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 1,095.56
+          $ 4,360.52
            1.0 CONDO
            1.0 COTTA
        439.324 FSPSX
@@ -5985,16 +6017,18 @@
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 1,095.56    Checking
-             $ 40.78      Covantage
+          $ 3,310.61    Checking
+            $ 439.93      Covantage
               $ 7.07      Northwoods
-          $ 1,038.09      Park City
+          $ 2,853.99      Park City
               $ 9.62      RipCo
+          $ 1,049.91
        439.324 FSPSX
        675.335 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX    Investments
+          $ 1,049.91
        439.324 FSPSX
        570.922 FXAIX      401K
        104.413 FXAIX      HSA
@@ -6005,15 +6039,15 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -388,102.83  Liabilities
-           $ -707.36    Credit Card
+       $ -388,136.04  Liabilities
+           $ -740.57    Credit Card
             $ -51.80      Northwoods
-           $ -655.56      RipCo
+           $ -688.77      RipCo
        $ -387,395.47    RE
         $ -42,838.52      Condo:Mortgage
        $ -344,556.95      Cottage:Mortgage
 --------------------
-       $ -387,007.27
+       $ -383,775.52
            1.0 CONDO
            1.0 COTTA
        439.324 FSPSX
@@ -6030,29 +6064,29 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,031,633.09  Assets
-          $ 1,095.56    Checking
-             $ 40.78      Covantage
+      $ 1,034,060.75  Assets
+          $ 3,310.61    Checking
+            $ 439.93      Covantage
               $ 7.07      Northwoods
-          $ 1,038.09      Park City
+          $ 2,853.99      Park City
               $ 9.62      RipCo
-        $ 330,537.53    Investments
-        $ 122,381.95      401K
-         $ 18,473.79      HSA
-        $ 108,667.49      IRA
+        $ 330,750.14    Investments
+        $ 122,974.21      401K
+         $ 18,406.97      HSA
+        $ 108,354.66      IRA
          $ 81,014.30      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -388,102.83  Liabilities
-           $ -707.36    Credit Card
+       $ -388,136.04  Liabilities
+           $ -740.57    Credit Card
             $ -51.80      Northwoods
-           $ -655.56      RipCo
+           $ -688.77      RipCo
        $ -387,395.47    RE
         $ -42,838.52      Condo:Mortgage
        $ -344,556.95      Cottage:Mortgage
 --------------------
-        $ 643,530.26
+        $ 645,924.71
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6061,8 +6095,23 @@
   <<transactions>>
 #+end_src
 #+results:
+:           $ 3,168.74  Expenses
+:           $ 1,252.93    RE:Cottage:Escrow
+:           $ 1,915.81    Taxes
+:           $ 1,117.74      Federal
+:             $ 313.52      Illinois
+:              $ 91.85      Medicare
+:             $ 392.70      Social Security
+: --------------------
+:           $ 3,168.74
+*** Last Month Spending
+#+begin_src ledger :cmdline bal ^Expenses --period "last month" :noweb yes :exports results
+  <<opening_balance>>
+  <<transactions>>
+#+end_src
+#+results:
 #+begin_example
-         $ 22,684.56  Expenses
+         $ 22,724.73  Expenses
             $ 602.97    Food
              $ 33.75      Drinks
             $ 305.59      Fast Food
@@ -6071,12 +6120,12 @@
             $ 909.50    Housing
             $ 707.50      Rent
             $ 202.00      Utilities
-            $ 786.61    Personal
+            $ 826.78    Personal
             $ 174.36      Communication
             $ 166.70      Electronics
             $ 100.00      Gifts
              $ 49.00      Health
-            $ 169.24      Household
+            $ 209.41      Household
             $ 127.31      Recreation
           $ 3,366.73    RE
           $ 1,240.33      Condo
@@ -6101,57 +6150,7 @@
             $ 151.00        Registration
             $ 136.20    Travel:Air
 --------------------
-         $ 22,684.56
-#+end_example
-*** Last Month Spending
-#+begin_src ledger :cmdline bal ^Expenses --period "last month" :noweb yes :exports results
-  <<opening_balance>>
-  <<transactions>>
-#+end_src
-#+results:
-#+begin_example
-         $ 12,839.99  Expenses
-            $ 819.74    Food
-             $ 54.02      Drinks
-            $ 258.54      Fast Food
-            $ 335.42      Groceries
-            $ 171.76      Snacks
-          $ 1,611.45    Housing
-          $ 1,409.45      Rent
-            $ 202.00      Utilities
-          $ 1,619.16    Personal
-             $ 50.92      Clothes
-            $ 155.34      Communication
-             $ 20.00      Electronics
-              $ 6.53      Entertainment
-          $ 1,117.99      Health
-             $ 75.16      Household
-             $ 78.33      Hygeine
-            $ 114.89      Recreation
-          $ 4,230.23    RE
-          $ 1,552.79      Condo
-            $ 138.75        Interest
-          $ 1,414.04        Repairs
-          $ 2,677.44      Cottage
-             $ 80.00        Cleaning
-            $ 864.60        Escrow
-          $ 1,008.65        Interest
-            $ 478.20        Repairs
-            $ 245.99        Utilities
-          $ 3,871.68    Taxes
-          $ 2,261.77      Federal
-            $ 632.46      Illinois
-            $ 185.27      Medicare
-            $ 792.18      Social Security
-            $ 687.73    Transportation
-             $ 26.78      Biking
-            $ 652.97      Driving
-            $ 174.81        Gas
-            $ 428.82        Repairs
-             $ 49.34        Tolls
-              $ 7.98      Ride Share
---------------------
-         $ 12,839.99
+         $ 22,724.73
 #+end_example
 
 *** Monthly Spending
@@ -6171,5 +6170,6 @@ October 2023         $ 9,834.46
 November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
-February 2024        $ 6,059.33
+February 2024        $ 6,099.50
+March 2024           $ 1,252.93
 #+end_example
