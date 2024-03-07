@@ -6082,29 +6082,11 @@
       Expenses:RE:Condo:HOA                   $ 139.67
       Assets:Checking:RipCo
 
-  2024-03-07 * Assets
-      Transfer:Checking:Covantage                 $ 7.07
+  2024-03-07 * Transfer
+      Assets:Checking:Covantage                 $ 7.07
       Assets:Checking:Northwoods
 
-  2024-03-07 * Wombat's London
-      Expenses:Travel:Lodging                 $ 157.02
-      Expenses:Travel:Lodging                  $ 29.00
-      Assets:Checking:Park City
-
-  2024-03-07 * Jacob's Inn
-      Expenses:Travel:Lodging                 $ 275.69
-      Expenses:Travel:Lodging                  $ 50.90
-      Assets:Checking:Park City
-
-  2024-03-07 * British Airways
-      Expenses:Travel:Air                      $ 75.62
-      Assets:Checking:Park City
-
-  2024-03-07 * AER Lingus
-      Expenses:Travel:Air                     $ 337.74
-      Assets:Checking:Park City
-
-  2024-03-08 ! Stripe
+  2024-03-07 * Stripe
       Income:Stripe:Bonus                 $ -35,938.00
       Expenses:Taxes:Federal                $ 7,906.36
       Expenses:Taxes:Illinois               $ 1,778.93
@@ -6113,11 +6095,11 @@
       Assets:Checking:Covantage            $ 22,628.45
       Assets:Checking:Park City               $ 875.00
 
-  2024-03-11 ! Transfer
+  2024-03-11 * Transfer
       Assets:Savings:Barclays              $ 20,000.00
       Assets:Checking:Covantage
 
-  2024-03-11 ! Spectrum
+  2024-03-11 * Spectrum
       Expenses:RE:Cottage:Utilities            $ 71.99
       Assets:Checking:Park City
 
@@ -6133,23 +6115,23 @@
       Expenses:RE:Cottage:Utilities           $ 125.16
       Assets:Checking:Park City
 
-  2024-03-11 ! Transfer
+  2024-03-11 * Transfer
       Assets:Checking:Covantage             $ 1,705.56
       Assets:Checking:Park City
 
-  2024-03-11 ! Transfer
+  2024-03-11 * Transfer
       Assets:Checking:Covantage               $ 685.33
       Assets:Checking:RipCo
 
-  2024-03-11 ! Transfer
+  2024-03-11 * Transfer
       Assets:Savings:Barclays               $ 3,279.43
       Assets:Checking:Covantage
 
-  2024-04-02 ! Shareworks
+  2024-04-02 * Shareworks
       Assets:Investments:RSU                    -1,713 STRIP @ $ 26.00
       Assets:Savings:Barclays
 
-  2024-04-05 ! Condo Sale
+  2024-04-05 * Condo Sale
       Assets:RE:Condo                             -1.0 CONDO @ $ 265,000.00
       Liabilities:RE:Condo:Mortgage        $ 42,838.52
       Assets:Savings:Barclays
@@ -6178,27 +6160,23 @@
 * Money
 ** Net Worth
 *** Assets
-#+begin_src ledger :noweb yes :cmdline bal ^Assets ^Liabilities --cleared :exports results
-  <<opening_balance>>
+#+begin_src ledger :noweb yes :cmdline bal ^Assets ^Liabilities --cleared :exports opening_balance
+  <<results>>
   <<transactions>>
 #+end_src
 #+results:
 #+begin_example
-            $ 914.93
-           1.0 CONDO
+        $ 291,978.91
            1.0 COTTA
        442.537 FSPSX
        680.330 FXAIX
-       3,742.0 STRIP
+       2,029.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-            $ 914.93    Checking
-            $ 253.02      Covantage
-            $ -23.42      Park City
-            $ 685.33      RipCo
+          $ 2,000.00    Checking:Covantage
        442.537 FSPSX
        680.330 FXAIX
-       3,742.0 STRIP
+       2,029.0 STRIP
        596.199 VTIAX
        732.087 VTSAX    Investments
        442.537 FSPSX
@@ -6206,21 +6184,16 @@
        104.413 FXAIX      HSA
        596.199 VTIAX
        732.087 VTSAX      IRA
-       3,742.0 STRIP      RSU
-           1.0 CONDO
-           1.0 COTTA    RE
-           1.0 CONDO      Condo
-           1.0 COTTA      Cottage
-       $ -386,142.54  Liabilities:RE
-        $ -42,838.52    Condo:Mortgage
-       $ -343,304.02    Cottage:Mortgage
+       2,029.0 STRIP      RSU
+           1.0 COTTA    RE:Cottage
+        $ 289,978.91    Savings:Barclays
+       $ -343,304.02  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -385,227.61
-           1.0 CONDO
+        $ -51,325.11
            1.0 COTTA
        442.537 FSPSX
        680.330 FXAIX
-       3,742.0 STRIP
+       2,029.0 STRIP
        596.199 VTIAX
        732.087 VTSAX
 #+end_example
@@ -6232,24 +6205,21 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,032,364.80  Assets
-            $ 914.93    Checking
-            $ 253.02      Covantage
-            $ -23.42      Park City
+      $ 1,036,342.33  Assets
+          $ 5,279.43    Checking
+          $ 2,888.54      Covantage
+          $ 1,705.56      Park City
             $ 685.33      RipCo
-        $ 331,449.87    Investments
+        $ 294,363.42    Investments
         $ 123,341.73      401K
          $ 18,445.60      HSA
         $ 108,648.24      IRA
-         $ 81,014.30      RSU
-        $ 700,000.00    RE
-        $ 250,000.00      Condo
-        $ 450,000.00      Cottage
-       $ -386,142.54  Liabilities:RE
-        $ -42,838.52    Condo:Mortgage
-       $ -343,304.02    Cottage:Mortgage
+         $ 43,927.85      RSU
+        $ 450,000.00    RE:Cottage
+        $ 286,699.48    Savings:Barclays
+       $ -343,304.02  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 646,222.26
+        $ 693,038.31
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6259,7 +6229,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 16,695.71  Expenses
+         $ 15,769.74  Expenses
              $ 99.33    Food
              $ 23.11      Fast Food
              $ 15.67      Groceries
@@ -6281,11 +6251,8 @@
             $ 612.95      Medicare
           $ 2,620.86      Social Security
              $ 11.23    Transportation:Biking
-            $ 925.97    Travel
-            $ 413.36      Air
-            $ 512.61      Lodging
 --------------------
-         $ 16,695.71
+         $ 15,769.74
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --period "last month" :noweb yes :exports results
@@ -6353,5 +6320,5 @@ November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
-March 2024           $ 2,345.35
+March 2024           $ 1,419.38
 #+end_example
