@@ -48,12 +48,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 03/08/2024 00:00:00 VTSAX $124.5900
-  P 03/08/2024 00:00:00 VTIAX $32.3200
-  P 03/08/2024 00:00:00 FSPSX $49.9700
-  P 03/08/2024 00:00:00 FXAIX $179.4300
-  P 03/08/2024 00:00:00 CONDO $250,000.00
-  P 03/08/2024 00:00:00 COTTA $450,000.00
+  P 03/10/2024 00:00:00 VTSAX $124.5900
+  P 03/10/2024 00:00:00 VTIAX $32.3200
+  P 03/10/2024 00:00:00 FSPSX $49.9700
+  P 03/10/2024 00:00:00 FXAIX $179.4300
+  P 03/10/2024 00:00:00 CONDO $250,000.00
+  P 03/10/2024 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -6142,6 +6142,43 @@
       Assets:Checking:Capital One              $ 20.85
       Expenses:Personal:Entertainment
 
+  2024-03-09 * Walgreens
+      Expenses:Food:Snacks                     $ 14.75
+      Liabilities:Credit Card:Covantage
+
+  2024-03-09 * Walmart
+      Expenses:Food:Snacks                      $ 4.16
+      Liabilities:Credit Card:Covantage
+
+  2024-03-09 * Dunkin
+      Expenses:Food:Fast Food                   $ 1.47
+      Liabilities:Credit Card:Covantage
+
+  2024-03-09 * Shell
+      Expenses:Food:Snacks                     $ 16.68
+      Liabilities:Credit Card:Covantage
+
+  2024-03-09 * Dollar Tree
+      Expenses:Food:Snacks                      $ 7.76
+      Liabilities:Credit Card:Covantage
+
+  2024-03-09 * Shell
+      Expenses:Food:Snacks                      $ 6.38
+      Expenses:Transportation:Driving:Gas      $ 33.09
+      Liabilities:Credit Card:Covantage
+
+  2024-03-09 * Burger King
+      Expenses:Food:Fast Food                   $ 2.64
+      Liabilities:Credit Card:Covantage
+
+  2024-03-09 * Walmart
+      Expenses:Personal:Health                 $ 61.42
+      Liabilities:Credit Card:Covantage
+
+  2024-03-09 * Azure
+      Expenses:Personal:Electronics             $ 8.44
+      Liabilities:Credit Card:Covantage
+
   2024-03-11 * Spectrum
       Expenses:RE:Cottage:Utilities            $ 71.99
       Assets:Checking:Park City
@@ -6165,6 +6202,10 @@
   2024-03-11 * Transfer
       Assets:Checking:Capital One             $ 600.00
       Assets:Checking:RipCo
+
+  2024-03-11 * Biking
+      Expenses:Transportation:Biking           $ 24.59
+      Assets:Checking:Covantage
 
   2024-03-15 ! Transfer
       Assets:Savings:Barclays              $ 22,403.54
@@ -6210,7 +6251,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 24,336.04
+         $ 24,311.45
            1.0 CONDO
            1.0 COTTA
        442.537 FSPSX
@@ -6218,9 +6259,9 @@
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-         $ 24,336.04    Checking
+         $ 24,311.45    Checking
             $ 620.85      Capital One
-         $ 22,403.54      Covantage
+         $ 22,378.95      Covantage
           $ 1,252.93      Northwoods
              $ 22.12      Park City
              $ 36.60      RipCo
@@ -6239,11 +6280,13 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -386,142.54  Liabilities:RE
-        $ -42,838.52    Condo:Mortgage
-       $ -343,304.02    Cottage:Mortgage
+       $ -386,299.33  Liabilities
+           $ -156.79    Credit Card:Covantage
+       $ -386,142.54    RE
+        $ -42,838.52      Condo:Mortgage
+       $ -343,304.02      Cottage:Mortgage
 --------------------
-       $ -361,806.50
+       $ -361,987.88
            1.0 CONDO
            1.0 COTTA
        442.537 FSPSX
@@ -6260,10 +6303,10 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,060,015.40  Assets
-         $ 24,336.04    Checking
+      $ 1,059,990.81  Assets
+         $ 24,311.45    Checking
             $ 620.85      Capital One
-         $ 22,403.54      Covantage
+         $ 22,378.95      Covantage
           $ 1,252.93      Northwoods
              $ 22.12      Park City
              $ 36.60      RipCo
@@ -6275,11 +6318,13 @@
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -386,142.54  Liabilities:RE
-        $ -42,838.52    Condo:Mortgage
-       $ -343,304.02    Cottage:Mortgage
+       $ -386,299.33  Liabilities
+           $ -156.79    Credit Card:Covantage
+       $ -386,142.54    RE
+        $ -42,838.52      Condo:Mortgage
+       $ -343,304.02      Cottage:Mortgage
 --------------------
-        $ 673,872.86
+        $ 673,691.48
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6289,18 +6334,19 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 16,706.06  Expenses
-            $ 124.64    Food
-             $ 23.11      Fast Food
+         $ 16,887.44  Expenses
+            $ 178.48    Food
+             $ 27.22      Fast Food
              $ 15.67      Groceries
              $ 23.28      Restaurants
-             $ 62.58      Snacks
+            $ 112.31      Snacks
             $ 850.00    Housing
             $ 700.00      Rent
             $ 150.00      Utilities
-            $ 101.15    Personal
+            $ 171.01    Personal
+              $ 8.44      Electronics
              $ 49.15      Entertainment
-             $ 42.00      Health
+            $ 103.42      Health
              $ 10.00      Household
             $ 336.82    RE
             $ 139.67      Condo:HOA
@@ -6310,12 +6356,14 @@
           $ 2,092.45      Illinois
             $ 612.95      Medicare
           $ 2,620.86      Social Security
-             $ 11.23    Transportation:Biking
+             $ 68.91    Transportation
+             $ 35.82      Biking
+             $ 33.09      Driving:Gas
             $ 931.86    Travel
             $ 414.12      Air
             $ 517.74      Lodging
 --------------------
-         $ 16,706.06
+         $ 16,887.44
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --period "last month" :noweb yes :exports results
@@ -6383,6 +6431,6 @@ November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
-March 2024           $ 2,355.70
+March 2024           $ 2,537.08
 April 2024           $ 12,985.00
 #+end_example
