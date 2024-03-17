@@ -6404,14 +6404,10 @@
       Expenses:Food:Snacks                      $ 4.15
       Assets:Checking:Capital One
 
-  2024-04-05 ! Condo Sale
+  2024-04-05 * Condo Sale
       Assets:RE:Condo                             -1.0 CONDO @ $ 265,000.00
-      Expenses:RE:Condo:Realtors           $ 12,985.00
+      Expenses:RE:Condo:Realtors           $ 14,000.00
       Liabilities:RE:Condo:Mortgage        $ 42,838.52
-      Assets:Savings:Barclays
-
-  2024-04-11 ! Shareworks
-      Assets:Investments:RSU                    -1,713 STRIP @ $ 26.00
       Assets:Savings:Barclays
 #+end_src
 ** Initial Balance
@@ -6444,8 +6440,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 25,521.32
-           1.0 CONDO
+        $ 233,682.80
            1.0 COTTA
        445.746 FSPSX
        685.383 FXAIX
@@ -6469,17 +6464,11 @@
        596.199 VTIAX
        732.087 VTSAX      IRA
        3,742.0 STRIP      RSU
-           1.0 CONDO
-           1.0 COTTA    RE
-           1.0 CONDO      Condo
-           1.0 COTTA      Cottage
-         $ 22,000.00    Savings:Barclays
-       $ -386,142.54  Liabilities:RE
-        $ -42,838.52    Condo:Mortgage
-       $ -343,304.02    Cottage:Mortgage
+           1.0 COTTA    RE:Cottage
+        $ 230,161.48    Savings:Barclays
+       $ -343,304.02  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -360,621.22
-           1.0 CONDO
+       $ -109,621.22
            1.0 COTTA
        445.746 FSPSX
        685.383 FXAIX
@@ -6495,7 +6484,7 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,061,578.83  Assets
+      $ 1,019,740.31  Assets
           $ 3,176.32    Checking
             $ 247.06      Capital One
           $ 1,914.26      Covantage
@@ -6505,15 +6494,11 @@
          $ 19,062.07      HSA
         $ 110,090.29      IRA
          $ 81,014.30      RSU
-        $ 700,000.00    RE
-        $ 250,000.00      Condo
-        $ 450,000.00      Cottage
-         $ 22,000.00    Savings:Barclays
-       $ -386,142.54  Liabilities:RE
-        $ -42,838.52    Condo:Mortgage
-       $ -343,304.02    Cottage:Mortgage
+        $ 450,000.00    RE:Cottage
+        $ 230,161.48    Savings:Barclays
+       $ -343,304.02  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 675,436.29
+        $ 676,436.29
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6628,4 +6613,5 @@ December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 4,318.87
+April 2024           $ 14,000.00
 #+end_example
