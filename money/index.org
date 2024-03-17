@@ -6057,7 +6057,7 @@
       Assets:Checking:Covantage                 $ 0.01
       Income:Extra
 
-  2024-03-04 * Waveland Ball
+  2024-03-04 * Waveland Bowl
       Expenses:Personal:Entertainment          $ 70.00
       Assets:Checking:Covantage
 
@@ -6082,8 +6082,8 @@
       Expenses:RE:Condo:HOA                   $ 139.67
       Assets:Checking:RipCo
 
-  2024-03-07 * Assets
-      Transfer:Checking:Covantage               $ 7.07
+  2024-03-07 * Transfer
+      Assets:Checking:Covantage                 $ 7.07
       Assets:Checking:Northwoods
 
   2024-03-07 * Wombat's London
@@ -6107,6 +6107,7 @@
 
   2024-03-07 * AER Lingus
       Expenses:Travel:Air                     $ 337.74
+      Expenses:Travel:Air                       $ 3.38
       Assets:Checking:Park City
 
   2024-03-07 * 7/11
@@ -6179,10 +6180,6 @@
       Expenses:Personal:Electronics             $ 8.44
       Liabilities:Credit Card:Covantage
 
-  2024-03-11 * Spectrum
-      Expenses:RE:Cottage:Utilities            $ 71.99
-      Assets:Checking:Park City
-
   2024-03-11 * Xfinity
       Expenses:Housing:Utilities               $ 70.00
       Assets:Checking:Park City
@@ -6207,8 +6204,191 @@
       Expenses:Transportation:Biking           $ 24.59
       Assets:Checking:Covantage
 
-  2024-03-15 ! Transfer
-      Assets:Savings:Barclays              $ 22,403.54
+  2024-03-11 * Family Dollar
+      Expenses:Food:Snacks                     $ 15.22
+      Assets:Checking:Covantage
+
+  2024-03-11 * Waveland
+      Assets:Checking:Covantage                $ 15.00
+      Expenses:Personal:Entertainment
+
+  2024-03-11 * Family Dollar
+      Expenses:Food:Snacks                      $ 7.44
+      Assets:Checking:Covantage
+
+  2024-03-11 * Family Dollar
+      Expenses:Food:Snacks                      $ 2.64
+      Assets:Checking:Covantage
+
+  2024-03-12 * Schaefer's IGA
+      Expenses:Food:Snacks                      $ 6.96
+      Assets:Checking:Covantage
+
+  2024-03-12 * Shell
+      Expenses:Food:Fast Food                  $ 13.36
+      Assets:Checking:Covantage
+
+  2024-03-13 * Shell
+      Expenses:Food:Fast Food                   $ 9.01
+      Assets:Checking:Covantage
+
+  2024-03-12 * Krist
+      Expenses:Food:Snacks                      $ 3.15
+      Assets:Checking:Covantage
+
+  2024-03-13 * Krist
+      Expenses:Food:Snacks                      $ 4.18
+      Assets:Checking:Covantage
+
+  2024-03-13 * Lyft
+      Expenses:Transportation:Biking            $ 3.79
+      Assets:Checking:Covantage
+
+  2024-03-15 * Transfer
+      Assets:Savings:Barclays              $ 22,000.00
+      Assets:Checking:Covantage
+
+  2024-03-13 * Dunkin' Donuts
+      Expenses:Food:Fast Food                   $ 2.11
+      Assets:Checking:Covantage
+
+  2024-03-14 * O'Hare
+      Expenses:Food:Snacks                      $ 7.81
+      Assets:Checking:Covantage
+
+  2024-03-14 * Amazon Go
+      Expenses:Food:Snacks                      $ 7.38
+      Liabilities:Credit Card:Covantage
+
+  2024-03-14 * Brookside
+      Expenses:Food:Snacks                      $ 9.90
+      Liabilities:Credit Card:Covantage
+
+  2024-03-14 * 7/11
+      Expenses:Food:Snacks                      $ 8.96
+      Expenses:Food:Snacks                      $ 3.06
+      Liabilities:Credit Card:Covantage
+
+  2024-03-13 * Krist
+      Expenses:Food:Snacks                      $ 6.92
+      Expenses:Transportation:Driving:Gas      $ 23.43
+      Liabilities:Credit Card:Covantage
+
+  2024-03-13 * Spectrum
+      Expenses:RE:Cottage:Utilities            $ 71.99
+      Expenses:Personal:Household              $ 30.00
+      Assets:Checking:RipCo
+
+  2024-03-15 * Transfer
+      Assets:Checking:RipCo                    $ 65.39
+      Assets:Checking:Covantage
+
+  2024-03-15 * Chase
+      Expenses:RE:Cottage:Escrow            $ 1,217.90
+      Assets:Checking:Northwoods
+
+  2024-03-15 * Stripe
+      Assets:Checking:Covantage               $ 528.45
+      Income:Stripe:Wireless                  $ -50.00
+      Income:Stripe:Paycheck               $ -7,058.08
+      Assets:Checking:Northwoods            $ 1,252.93
+      Assets:Checking:Park City             $ 1,015.00
+      Assets:Investments:401K               $ 1,058.72
+      Assets:Investments:HSA                  $ 345.00
+      Income:Stripe:HSA                      $ -100.00
+      Expenses:Taxes:Federal                $ 2,109.34
+      Expenses:Taxes:Illinois                 $ 353.04
+      Expenses:Taxes:Social Security          $ 442.19
+      Expenses:Taxes:Medicare                 $ 103.41
+
+  2024-03-16 * Transfer
+      Liabilities:Credit Card:Covantage       $ 216.44
+      Assets:Checking:Covantage
+
+  2024-03-19 * Transfer
+      Assets:Checking:Covantage                $ 90.73
+      Assets:Checking:Park City
+
+  2024-03-19 * Transfer
+      Assets:Checking:Covantage             $ 1,287.96
+      Assets:Checking:Northwoods
+
+  2024-03-12 * Frasier's Plumbing
+      Expenses:RE:Cottage:Repairs             $ 208.89
+      Assets:Checking:Capital One
+
+  2024-03-16 * Amazon
+      Expenses:Food:Snacks                      $ 1.28
+      Expenses:Food:Snacks                      $ 4.59
+      Assets:Checking:Capital One
+
+  2024-03-16 * Wombats Vending Machine
+      Expenses:Food:Snacks                      $ 1.53
+      Expenses:Food:Snacks                      $ 1.21
+      Expenses:Food:Snacks                      $ 7.01
+      Expenses:Food:Snacks                      $ 2.04
+      Expenses:Food:Snacks                      $ 2.81
+      Expenses:Food:Snacks                      $ 1.53
+      Expenses:Food:Snacks                      $ 3.96
+      Expenses:Food:Snacks                      $ 1.53
+      Expenses:Food:Snacks                      $ 1.53
+      Expenses:Food:Snacks                      $ 2.17
+      Assets:Checking:Capital One
+
+  2024-03-15 * Transit
+      Expenses:Transportation:Public           $ 18.45
+      Assets:Checking:Capital One
+
+  2024-03-15 * Cycle Hire
+      Expenses:Transportation:Biking            $ 3.83
+      Assets:Checking:Capital One
+
+  2024-03-15 * Airport
+      Expenses:Food:Snacks                      $ 4.38
+      Assets:Checking:Capital One
+
+  2024-03-15 * Poppies Fish n Chips
+      Expenses:Food:Snacks                     $ 27.33
+      Assets:Checking:Capital One
+
+  2024-03-16 * Poppies Fish n Chips
+      Expenses:Food:Snacks                     $ 19.91
+      Expenses:Food:Snacks                      $ 0.64
+      Assets:Checking:Capital One
+
+  2024-03-15 * Amazon
+      Expenses:Food:Snacks                      $ 1.28
+      Expenses:Food:Snacks                     $ 11.54
+      Assets:Checking:Capital One
+
+  2024-03-15 * Wombats Vending Machine
+      Expenses:Food:Snacks                      $ 2.05
+      Expenses:Food:Snacks                      $ 4.55
+      Expenses:Food:Snacks                      $ 1.54
+      Expenses:Food:Snacks                      $ 3.78
+      Expenses:Food:Snacks                      $ 3.90
+      Expenses:Food:Snacks                      $ 2.55
+      Expenses:Food:Snacks                      $ 2.30
+      Assets:Checking:Capital One
+
+  2024-03-15 * Amazon
+      Expenses:Food:Snacks                      $ 3.21
+      Assets:Checking:Capital One
+
+  2024-03-15 * HP Tour
+      Expenses:Personal:Entertainment          $ 12.83
+      Assets:Checking:Capital One
+
+  2024-03-19 * Visible
+      Expenses:Personal:Communication          $ 16.40
+      Liabilities:Credit Card:Northwoods
+
+  2024-03-19 * Tollway
+      Expenses:Transportation:Driving:Tolls    $ 20.00
+      Liabilities:Credit Card:Northwoods
+
+  2024-03-19 * Tollway
+      Liabilities:Credit Card:Northwoods       $ 36.40
       Assets:Checking:Covantage
 
   2024-04-05 ! Condo Sale
@@ -6251,7 +6431,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 24,311.45
+         $ 26,589.68
            1.0 CONDO
            1.0 COTTA
        442.537 FSPSX
@@ -6259,19 +6439,20 @@
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-         $ 24,311.45    Checking
-            $ 620.85      Capital One
-         $ 22,378.95      Covantage
-          $ 1,252.93      Northwoods
-             $ 22.12      Park City
-             $ 36.60      RipCo
+          $ 3,185.96    Checking
+            $ 256.70      Capital One
+          $ 1,914.26      Covantage
+          $ 1,015.00      Park City
+          $ 1,403.72
        442.537 FSPSX
        680.330 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX    Investments
+          $ 1,058.72
        442.537 FSPSX
        575.917 FXAIX      401K
+            $ 345.00
        104.413 FXAIX      HSA
        596.199 VTIAX
        732.087 VTSAX      IRA
@@ -6280,13 +6461,12 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -386,299.33  Liabilities
-           $ -156.79    Credit Card:Covantage
-       $ -386,142.54    RE
-        $ -42,838.52      Condo:Mortgage
-       $ -343,304.02      Cottage:Mortgage
+         $ 22,000.00    Savings:Barclays
+       $ -386,142.54  Liabilities:RE
+        $ -42,838.52    Condo:Mortgage
+       $ -343,304.02    Cottage:Mortgage
 --------------------
-       $ -361,987.88
+       $ -359,552.86
            1.0 CONDO
            1.0 COTTA
        442.537 FSPSX
@@ -6303,70 +6483,74 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,059,990.81  Assets
-         $ 24,311.45    Checking
-            $ 620.85      Capital One
-         $ 22,378.95      Covantage
-          $ 1,252.93      Northwoods
-             $ 22.12      Park City
-             $ 36.60      RipCo
-        $ 335,679.36    Investments
-        $ 125,450.36      401K
-         $ 18,734.82      HSA
+      $ 1,062,269.04  Assets
+          $ 3,185.96    Checking
+            $ 256.70      Capital One
+          $ 1,914.26      Covantage
+          $ 1,015.00      Park City
+        $ 337,083.08    Investments
+        $ 126,509.08      401K
+         $ 19,079.82      HSA
         $ 110,479.87      IRA
          $ 81,014.30      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-       $ -386,299.33  Liabilities
-           $ -156.79    Credit Card:Covantage
-       $ -386,142.54    RE
-        $ -42,838.52      Condo:Mortgage
-       $ -343,304.02      Cottage:Mortgage
+         $ 22,000.00    Savings:Barclays
+       $ -386,142.54  Liabilities:RE
+        $ -42,838.52    Condo:Mortgage
+       $ -343,304.02    Cottage:Mortgage
 --------------------
-        $ 673,691.48
+        $ 676,126.50
 #+end_example
 ** Spending
 *** This Month Spending
-#+begin_src ledger :cmdline bal ^Expenses --period "this month" :noweb yes :exports results
+#+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
   <<transactions>>
 #+end_src
 #+results:
 #+begin_example
-         $ 16,887.44  Expenses
-            $ 178.48    Food
-             $ 27.22      Fast Food
+         $ 21,667.57  Expenses
+            $ 406.73    Food
+             $ 51.70      Fast Food
              $ 15.67      Groceries
              $ 23.28      Restaurants
-            $ 112.31      Snacks
+            $ 316.08      Snacks
             $ 850.00    Housing
             $ 700.00      Rent
             $ 150.00      Utilities
-            $ 171.01    Personal
+            $ 215.24    Personal
+             $ 16.40      Communication
               $ 8.44      Electronics
-             $ 49.15      Entertainment
+             $ 46.98      Entertainment
             $ 103.42      Health
-             $ 10.00      Household
-            $ 336.82    RE
+             $ 40.00      Household
+          $ 1,763.61    RE
             $ 139.67      Condo:HOA
-            $ 197.15      Cottage:Utilities
-         $ 14,350.36    Taxes
-          $ 9,024.10      Federal
-          $ 2,092.45      Illinois
-            $ 612.95      Medicare
-          $ 2,620.86      Social Security
-             $ 68.91    Transportation
-             $ 35.82      Biking
-             $ 33.09      Driving:Gas
-            $ 931.86    Travel
-            $ 414.12      Air
+          $ 1,623.94      Cottage
+          $ 1,217.90        Escrow
+            $ 208.89        Repairs
+            $ 197.15        Utilities
+         $ 17,358.34    Taxes
+         $ 11,133.44      Federal
+          $ 2,445.49      Illinois
+            $ 716.36      Medicare
+          $ 3,063.05      Social Security
+            $ 138.41    Transportation
+             $ 43.44      Biking
+             $ 76.52      Driving
+             $ 56.52        Gas
+             $ 20.00        Tolls
+             $ 18.45      Public
+            $ 935.24    Travel
+            $ 417.50      Air
             $ 517.74      Lodging
 --------------------
-         $ 16,887.44
+         $ 21,667.57
 #+end_example
 *** Last Month Spending
-#+begin_src ledger :cmdline bal ^Expenses --period "last month" :noweb yes :exports results
+#+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
   <<opening_balance>>
   <<transactions>>
 #+end_src
@@ -6414,7 +6598,7 @@
          $ 22,724.73
 #+end_example
 *** Monthly Spending
-#+begin_src ledger :cmdline reg ^Expenses and not ^Expenses:Taxes -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
+#+begin_src ledger :cmdline reg ^Expenses and not ^Expenses:Taxes --cleared -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
   <<opening_balance>>
   <<transactions>>
 #+end_src
@@ -6431,6 +6615,5 @@ November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
-March 2024           $ 2,537.08
-April 2024           $ 12,985.00
+March 2024           $ 4,309.23
 #+end_example
