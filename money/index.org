@@ -48,12 +48,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 03/10/2024 00:00:00 VTSAX $124.5900
-  P 03/10/2024 00:00:00 VTIAX $32.3200
-  P 03/10/2024 00:00:00 FSPSX $49.9700
-  P 03/10/2024 00:00:00 FXAIX $179.4300
-  P 03/10/2024 00:00:00 CONDO $250,000.00
-  P 03/10/2024 00:00:00 COTTA $450,000.00
+  P 03/17/2024 00:00:00 VTSAX $124.1800
+  P 03/17/2024 00:00:00 VTIAX $32.1700
+  P 03/17/2024 00:00:00 FSPSX $49.5600
+  P 03/17/2024 00:00:00 FXAIX $179.2600
+  P 03/17/2024 00:00:00 CONDO $250,000.00
+  P 03/17/2024 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -6293,7 +6293,8 @@
       Income:Stripe:Paycheck               $ -7,058.08
       Assets:Checking:Northwoods            $ 1,252.93
       Assets:Checking:Park City             $ 1,015.00
-      Assets:Investments:401K               $ 1,058.72
+      Assets:Investments:401K                    5.053 FXAIX @ $ 178.09420146448
+      Assets:Investments:401K                    3.209 FSPSX @ $ 49.4889373637
       Assets:Investments:HSA                  $ 345.00
       Income:Stripe:HSA                      $ -100.00
       Expenses:Taxes:Federal                $ 2,109.34
@@ -6387,9 +6388,21 @@
       Expenses:Transportation:Driving:Tolls    $ 20.00
       Liabilities:Credit Card:Northwoods
 
-  2024-03-19 * Tollway
+  2024-03-19 * Transfer
       Liabilities:Credit Card:Northwoods       $ 36.40
       Assets:Checking:Covantage
+
+  2024-03-17 * Underground
+      Expenses:Transportation:Public            $ 4.21
+      Assets:Checking:Capital One
+
+  2024-03-17 * Convenient Shop
+      Expenses:Food:Snacks                      $ 1.28
+      Assets:Checking:Capital One
+
+  2024-03-17 * Convenient Shop
+      Expenses:Food:Snacks                      $ 4.15
+      Assets:Checking:Capital One
 
   2024-04-05 ! Condo Sale
       Assets:RE:Condo                             -1.0 CONDO @ $ 265,000.00
@@ -6431,27 +6444,26 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 26,589.68
+         $ 25,521.32
            1.0 CONDO
            1.0 COTTA
-       442.537 FSPSX
-       680.330 FXAIX
+       445.746 FSPSX
+       685.383 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 3,185.96    Checking
-            $ 256.70      Capital One
+          $ 3,176.32    Checking
+            $ 247.06      Capital One
           $ 1,914.26      Covantage
           $ 1,015.00      Park City
-          $ 1,403.72
-       442.537 FSPSX
-       680.330 FXAIX
+            $ 345.00
+       445.746 FSPSX
+       685.383 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX    Investments
-          $ 1,058.72
-       442.537 FSPSX
-       575.917 FXAIX      401K
+       445.746 FSPSX
+       580.970 FXAIX      401K
             $ 345.00
        104.413 FXAIX      HSA
        596.199 VTIAX
@@ -6466,11 +6478,11 @@
         $ -42,838.52    Condo:Mortgage
        $ -343,304.02    Cottage:Mortgage
 --------------------
-       $ -359,552.86
+       $ -360,621.22
            1.0 CONDO
            1.0 COTTA
-       442.537 FSPSX
-       680.330 FXAIX
+       445.746 FSPSX
+       685.383 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX
@@ -6483,15 +6495,15 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,062,269.04  Assets
-          $ 3,185.96    Checking
-            $ 256.70      Capital One
+      $ 1,061,578.83  Assets
+          $ 3,176.32    Checking
+            $ 247.06      Capital One
           $ 1,914.26      Covantage
           $ 1,015.00      Park City
-        $ 337,083.08    Investments
-        $ 126,509.08      401K
-         $ 19,079.82      HSA
-        $ 110,479.87      IRA
+        $ 336,402.51    Investments
+        $ 126,235.85      401K
+         $ 19,062.07      HSA
+        $ 110,090.29      IRA
          $ 81,014.30      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
@@ -6501,7 +6513,7 @@
         $ -42,838.52    Condo:Mortgage
        $ -343,304.02    Cottage:Mortgage
 --------------------
-        $ 676,126.50
+        $ 675,436.29
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6511,12 +6523,12 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 21,667.57  Expenses
-            $ 406.73    Food
+         $ 21,677.21  Expenses
+            $ 412.16    Food
              $ 51.70      Fast Food
              $ 15.67      Groceries
              $ 23.28      Restaurants
-            $ 316.08      Snacks
+            $ 321.51      Snacks
             $ 850.00    Housing
             $ 700.00      Rent
             $ 150.00      Utilities
@@ -6537,17 +6549,17 @@
           $ 2,445.49      Illinois
             $ 716.36      Medicare
           $ 3,063.05      Social Security
-            $ 138.41    Transportation
+            $ 142.62    Transportation
              $ 43.44      Biking
              $ 76.52      Driving
              $ 56.52        Gas
              $ 20.00        Tolls
-             $ 18.45      Public
+             $ 22.66      Public
             $ 935.24    Travel
             $ 417.50      Air
             $ 517.74      Lodging
 --------------------
-         $ 21,667.57
+         $ 21,677.21
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -6615,5 +6627,5 @@ November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
-March 2024           $ 4,309.23
+March 2024           $ 4,318.87
 #+end_example
