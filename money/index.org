@@ -48,12 +48,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 03/17/2024 00:00:00 VTSAX $124.1800
-  P 03/17/2024 00:00:00 VTIAX $32.1700
-  P 03/17/2024 00:00:00 FSPSX $49.5600
-  P 03/17/2024 00:00:00 FXAIX $179.2600
-  P 03/17/2024 00:00:00 CONDO $250,000.00
-  P 03/17/2024 00:00:00 COTTA $450,000.00
+  P 03/18/2024 00:00:00 VTSAX $124.1800
+  P 03/18/2024 00:00:00 VTIAX $32.1700
+  P 03/18/2024 00:00:00 FSPSX $49.4900
+  P 03/18/2024 00:00:00 FXAIX $179.2600
+  P 03/18/2024 00:00:00 CONDO $250,000.00
+  P 03/18/2024 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -6318,23 +6318,23 @@
       Expenses:RE:Cottage:Repairs             $ 208.89
       Assets:Checking:Capital One
 
-  2024-03-16 * Amazon
-      Expenses:Food:Snacks                      $ 1.28
-      Expenses:Food:Snacks                      $ 4.59
-      Assets:Checking:Capital One
+  ; 2024-03-16 * Amazon
+  ;     Expenses:Food:Snacks                      $ 1.28
+  ;     Expenses:Food:Snacks                      $ 4.59
+  ;     Assets:Checking:Capital One
 
   2024-03-16 * Wombats Vending Machine
       Expenses:Food:Snacks                      $ 1.53
       Expenses:Food:Snacks                      $ 1.21
       Expenses:Food:Snacks                      $ 7.01
       Expenses:Food:Snacks                      $ 2.04
-      Expenses:Food:Snacks                      $ 2.81
       Expenses:Food:Snacks                      $ 1.53
-      Expenses:Food:Snacks                      $ 3.96
-      Expenses:Food:Snacks                      $ 1.53
-      Expenses:Food:Snacks                      $ 1.53
-      Expenses:Food:Snacks                      $ 2.17
       Assets:Checking:Capital One
+  ;     Expenses:Food:Snacks                      $ 2.81
+  ;     Expenses:Food:Snacks                      $ 1.53
+  ;     Expenses:Food:Snacks                      $ 3.96
+  ;     Expenses:Food:Snacks                      $ 1.53
+  ;     Expenses:Food:Snacks                      $ 2.17
 
   2024-03-15 * Transit
       Expenses:Transportation:Public           $ 18.45
@@ -6357,10 +6357,10 @@
       Expenses:Food:Snacks                      $ 0.64
       Assets:Checking:Capital One
 
-  2024-03-15 * Amazon
-      Expenses:Food:Snacks                      $ 1.28
-      Expenses:Food:Snacks                     $ 11.54
-      Assets:Checking:Capital One
+  ; 2024-03-15 * Amazon
+  ;     Expenses:Food:Snacks                      $ 1.28
+  ;     Expenses:Food:Snacks                     $ 11.54
+  ;     Assets:Checking:Capital One
 
   2024-03-15 * Wombats Vending Machine
       Expenses:Food:Snacks                      $ 2.05
@@ -6374,6 +6374,7 @@
 
   2024-03-15 * Amazon
       Expenses:Food:Snacks                      $ 3.21
+      Expenses:Food:Snacks                      $ 5.87
       Assets:Checking:Capital One
 
   2024-03-15 * HP Tour
@@ -6396,19 +6397,27 @@
       Expenses:Transportation:Public            $ 4.21
       Assets:Checking:Capital One
 
-  2024-03-17 * Convenient Shop
-      Expenses:Food:Snacks                      $ 1.28
+  2024-03-17 * Laundry
+      Expenses:Personal:Household              $ 26.11
       Assets:Checking:Capital One
 
-  2024-03-17 * Convenient Shop
-      Expenses:Food:Snacks                      $ 4.15
-      Assets:Checking:Capital One
+  ; 2024-03-17 * Convenient Shop
+  ;     Expenses:Food:Snacks                      $ 1.28
+  ;     Assets:Checking:Capital One
+
+  ; 2024-03-17 * Convenient Shop
+  ;     Expenses:Food:Snacks                      $ 4.15
+  ;     Assets:Checking:Capital One
 
   2024-04-05 * Condo Sale
       Assets:RE:Condo                             -1.0 CONDO @ $ 265,000.00
       Expenses:RE:Condo:Realtors           $ 14,000.00
       Liabilities:RE:Condo:Mortgage        $ 42,838.52
       Assets:Savings:Barclays
+
+  2024-04-05 * Transfer
+      Assets:Savings:Barclays               $ 1,900.00
+      Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -6440,16 +6449,16 @@
 #+end_src
 #+results:
 #+begin_example
-        $ 233,682.80
+        $ 233,686.94
            1.0 COTTA
        445.746 FSPSX
        685.383 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 3,176.32    Checking
-            $ 247.06      Capital One
-          $ 1,914.26      Covantage
+          $ 1,280.46    Checking
+            $ 251.20      Capital One
+             $ 14.26      Covantage
           $ 1,015.00      Park City
             $ 345.00
        445.746 FSPSX
@@ -6465,10 +6474,10 @@
        732.087 VTSAX      IRA
        3,742.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-        $ 230,161.48    Savings:Barclays
+        $ 232,061.48    Savings:Barclays
        $ -343,304.02  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -109,621.22
+       $ -109,617.08
            1.0 COTTA
        445.746 FSPSX
        685.383 FXAIX
@@ -6484,21 +6493,21 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,019,740.31  Assets
-          $ 3,176.32    Checking
-            $ 247.06      Capital One
-          $ 1,914.26      Covantage
+      $ 1,019,713.25  Assets
+          $ 1,280.46    Checking
+            $ 251.20      Capital One
+             $ 14.26      Covantage
           $ 1,015.00      Park City
-        $ 336,402.51    Investments
-        $ 126,235.85      401K
+        $ 336,371.31    Investments
+        $ 126,204.65      401K
          $ 19,062.07      HSA
         $ 110,090.29      IRA
          $ 81,014.30      RSU
         $ 450,000.00    RE:Cottage
-        $ 230,161.48    Savings:Barclays
+        $ 232,061.48    Savings:Barclays
        $ -343,304.02  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 676,436.29
+        $ 676,409.23
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6508,21 +6517,21 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 21,677.21  Expenses
-            $ 412.16    Food
+         $ 21,673.07  Expenses
+            $ 381.91    Food
              $ 51.70      Fast Food
              $ 15.67      Groceries
              $ 23.28      Restaurants
-            $ 321.51      Snacks
+            $ 291.26      Snacks
             $ 850.00    Housing
             $ 700.00      Rent
             $ 150.00      Utilities
-            $ 215.24    Personal
+            $ 241.35    Personal
              $ 16.40      Communication
               $ 8.44      Electronics
              $ 46.98      Entertainment
             $ 103.42      Health
-             $ 40.00      Household
+             $ 66.11      Household
           $ 1,763.61    RE
             $ 139.67      Condo:HOA
           $ 1,623.94      Cottage
@@ -6544,7 +6553,7 @@
             $ 417.50      Air
             $ 517.74      Lodging
 --------------------
-         $ 21,677.21
+         $ 21,673.07
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -6612,6 +6621,6 @@ November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
-March 2024           $ 4,318.87
+March 2024           $ 4,314.73
 April 2024           $ 14,000.00
 #+end_example
