@@ -48,12 +48,12 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 03/19/2024 00:00:00 VTSAX $123.4700
-  P 03/19/2024 00:00:00 VTIAX $31.9700
-  P 03/19/2024 00:00:00 FSPSX $49.5200
-  P 03/19/2024 00:00:00 FXAIX $178.1100
-  P 03/19/2024 00:00:00 CONDO $250,000.00
-  P 03/19/2024 00:00:00 COTTA $450,000.00
+  P 03/20/2024 00:00:00 VTSAX $124.1200
+  P 03/20/2024 00:00:00 VTIAX $32.0100
+  P 03/20/2024 00:00:00 FSPSX $49.6200
+  P 03/20/2024 00:00:00 FXAIX $180.2500
+  P 03/20/2024 00:00:00 CONDO $250,000.00
+  P 03/20/2024 00:00:00 COTTA $450,000.00
 #+end_src
 
 ** Transactions
@@ -6228,12 +6228,16 @@
       Expenses:Food:Fast Food                  $ 13.36
       Assets:Checking:Covantage
 
-  2024-03-13 * Shell
-      Expenses:Food:Fast Food                   $ 9.01
-      Assets:Checking:Covantage
-
   2024-03-12 * Krist
       Expenses:Food:Snacks                      $ 3.15
+      Assets:Checking:Covantage
+
+  2024-03-12 * Frasier's Plumbing
+      Expenses:RE:Cottage:Repairs             $ 208.89
+      Assets:Checking:Capital One
+
+  2024-03-13 * Shell
+      Expenses:Food:Fast Food                   $ 9.01
       Assets:Checking:Covantage
 
   2024-03-13 * Krist
@@ -6244,13 +6248,19 @@
       Expenses:Transportation:Biking            $ 3.79
       Assets:Checking:Covantage
 
-  2024-03-15 * Transfer
-      Assets:Savings:Barclays              $ 22,000.00
-      Assets:Checking:Covantage
-
   2024-03-13 * Dunkin' Donuts
       Expenses:Food:Fast Food                   $ 2.11
       Assets:Checking:Covantage
+
+  2024-03-13 * Krist
+      Expenses:Food:Snacks                      $ 6.92
+      Expenses:Transportation:Driving:Gas      $ 23.43
+      Liabilities:Credit Card:Covantage
+
+  2024-03-13 * Spectrum
+      Expenses:RE:Cottage:Utilities            $ 71.99
+      Expenses:Personal:Household              $ 30.00
+      Assets:Checking:RipCo
 
   2024-03-14 * O'Hare
       Expenses:Food:Snacks                      $ 7.81
@@ -6269,15 +6279,9 @@
       Expenses:Food:Snacks                      $ 3.06
       Liabilities:Credit Card:Covantage
 
-  2024-03-13 * Krist
-      Expenses:Food:Snacks                      $ 6.92
-      Expenses:Transportation:Driving:Gas      $ 23.43
-      Liabilities:Credit Card:Covantage
-
-  2024-03-13 * Spectrum
-      Expenses:RE:Cottage:Utilities            $ 71.99
-      Expenses:Personal:Household              $ 30.00
-      Assets:Checking:RipCo
+  2024-03-15 * Transfer
+      Assets:Savings:Barclays              $ 22,000.00
+      Assets:Checking:Covantage
 
   2024-03-15 * Transfer
       Assets:Checking:RipCo                    $ 65.39
@@ -6302,36 +6306,6 @@
       Expenses:Taxes:Social Security          $ 442.19
       Expenses:Taxes:Medicare                 $ 103.41
 
-  2024-03-16 * Transfer
-      Liabilities:Credit Card:Covantage       $ 216.44
-      Assets:Checking:Covantage
-
-  2024-03-19 * Transfer
-      Assets:Checking:Covantage                $ 90.73
-      Assets:Checking:Park City
-
-  2024-03-19 * Transfer
-      Assets:Checking:Covantage             $ 1,287.96
-      Assets:Checking:Northwoods
-
-  2024-03-12 * Frasier's Plumbing
-      Expenses:RE:Cottage:Repairs             $ 208.89
-      Assets:Checking:Capital One
-
-  2024-03-16 * Wombats Vending Machine
-      Expenses:Food:Snacks                      $ 1.53
-      Expenses:Food:Snacks                      $ 1.21
-      Expenses:Food:Snacks                      $ 7.01
-      Expenses:Food:Snacks                      $ 2.04
-      Expenses:Food:Snacks                      $ 1.53
-      Expenses:Food:Snacks                      $ 2.81
-      Expenses:Food:Snacks                      $ 1.53
-      Expenses:Food:Snacks                      $ 1.74
-      Expenses:Food:Snacks                      $ 3.96
-      Expenses:Food:Snacks                      $ 1.53
-      Expenses:Food:Snacks                      $ 2.17
-      Assets:Checking:Capital One
-
   2024-03-15 * Transit
       Expenses:Transportation:Public           $ 18.45
       Assets:Checking:Capital One
@@ -6346,11 +6320,6 @@
 
   2024-03-15 * Poppies Fish n Chips
       Expenses:Food:Snacks                     $ 27.33
-      Assets:Checking:Capital One
-
-  2024-03-16 * Poppies Fish n Chips
-      Expenses:Food:Snacks                     $ 19.91
-      Expenses:Food:Snacks                      $ 0.64
       Assets:Checking:Capital One
 
   2024-03-15 * Wombats Vending Machine
@@ -6372,24 +6341,27 @@
       Expenses:Personal:Entertainment          $ 12.83
       Assets:Checking:Capital One
 
-  2024-03-19 * Visible
-      Expenses:Personal:Communication          $ 16.40
-      Liabilities:Credit Card:Northwoods
-
-  2024-03-19 * Tollway
-      Expenses:Transportation:Driving:Tolls    $ 20.00
-      Liabilities:Credit Card:Northwoods
-
-  2024-03-19 * Transfer
-      Liabilities:Credit Card:Northwoods       $ 36.40
+  2024-03-16 * Transfer
+      Liabilities:Credit Card:Covantage       $ 216.44
       Assets:Checking:Covantage
 
-  2024-03-17 * Underground
-      Expenses:Transportation:Public            $ 4.21
+  2024-03-16 * Wombats Vending Machine
+      Expenses:Food:Snacks                      $ 1.53
+      Expenses:Food:Snacks                      $ 1.21
+      Expenses:Food:Snacks                      $ 7.01
+      Expenses:Food:Snacks                      $ 2.04
+      Expenses:Food:Snacks                      $ 1.53
+      Expenses:Food:Snacks                      $ 2.81
+      Expenses:Food:Snacks                      $ 1.53
+      Expenses:Food:Snacks                      $ 1.74
+      Expenses:Food:Snacks                      $ 3.96
+      Expenses:Food:Snacks                      $ 1.53
+      Expenses:Food:Snacks                      $ 2.17
       Assets:Checking:Capital One
 
-  2024-03-17 * Laundry
-      Expenses:Personal:Household              $ 26.11
+  2024-03-16 * Poppies Fish n Chips
+      Expenses:Food:Snacks                     $ 19.91
+      Expenses:Food:Snacks                      $ 0.64
       Assets:Checking:Capital One
 
   2024-03-16 * Airport
@@ -6402,6 +6374,14 @@
 
   2024-03-16 * Dublin Express
       Expenses:Transportation:Public           $ 10.90
+      Assets:Checking:Capital One
+
+  2024-03-17 * Underground
+      Expenses:Transportation:Public            $ 4.21
+      Assets:Checking:Capital One
+
+  2024-03-17 * Laundry
+      Expenses:Personal:Household              $ 26.11
       Assets:Checking:Capital One
 
   2024-03-17 * Convenient Shop
@@ -6421,6 +6401,53 @@
       Expenses:Transportation:Biking            $ 1.94
       Assets:Checking:Covantage
 
+  2024-03-19 * Transfer
+      Assets:Checking:Covantage                $ 90.73
+      Assets:Checking:Park City
+
+  2024-03-19 * Transfer
+      Assets:Checking:Covantage             $ 1,287.96
+      Assets:Checking:Northwoods
+
+  2024-03-19 * Visible
+      Expenses:Personal:Communication          $ 16.40
+      Liabilities:Credit Card:Northwoods
+
+  2024-03-19 * Tollway
+      Expenses:Transportation:Driving:Tolls    $ 20.00
+      Liabilities:Credit Card:Northwoods
+
+  2024-03-19 * Transfer
+      Liabilities:Credit Card:Northwoods       $ 36.40
+      Assets:Checking:Covantage
+
+  2024-03-19 * Dublin Express
+      Expenses:Transportation:Public           $ 25.00
+      Assets:Checking:Capital One
+
+  2024-03-19 * Tesco
+      Expenses:Food:Snacks                      $ 6.27
+      Expenses:Food:Snacks                      $ 2.07
+      Expenses:Food:Snacks                      $ 4.15
+      Expenses:Food:Snacks                      $ 3.27
+      Assets:Checking:Capital One
+
+  2024-03-19 * Il Capo
+      Expenses:Food:Fast Food                   $ 4.36
+      Assets:Checking:Capital One
+
+  2024-03-19 * McDonald's
+      Expenses:Food:Fast Food                  $ 13.85
+      Assets:Checking:Capital One
+
+  2024-03-20 * Transfer
+      Assets:Checking:Covantage               $ 122.54
+      Assets:Checking:Capital One
+
+  2024-03-20 * Transfer
+      Assets:Checking:Covantage                 $ 0.88
+      Assets:Checking:Capital One
+
   2024-04-05 * Condo Sale
       Assets:RE:Condo                             -1.0 CONDO @ $ 265,000.00
       Expenses:RE:Condo:Realtors           $ 14,000.00
@@ -6428,7 +6455,7 @@
       Assets:Savings:Barclays
 
   2024-04-05 * Transfer
-      Assets:Savings:Barclays               $ 1,900.00
+      Assets:Savings:Barclays               $ 2,035.74
       Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
@@ -6461,17 +6488,14 @@
 #+end_src
 #+results:
 #+begin_example
-        $ 233,271.19
+        $ 233,212.22
            1.0 COTTA
        445.746 FSPSX
        687.308 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 1,209.71    Checking
-            $ 182.39      Capital One
-             $ 12.32      Covantage
-          $ 1,015.00      Park City
+          $ 1,015.00    Checking:Park City
        445.746 FSPSX
        687.308 FXAIX
        3,742.0 STRIP
@@ -6484,10 +6508,10 @@
        732.087 VTSAX      IRA
        3,742.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-        $ 232,061.48    Savings:Barclays
+        $ 232,197.22    Savings:Barclays
        $ -343,304.02  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -110,032.83
+       $ -110,091.80
            1.0 COTTA
        445.746 FSPSX
        687.308 FXAIX
@@ -6503,21 +6527,18 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,018,226.52  Assets
-          $ 1,209.71    Checking
-            $ 182.39      Capital One
-             $ 12.32      Covantage
-          $ 1,015.00      Park City
-        $ 334,955.33    Investments
-        $ 125,549.91      401K
-         $ 18,939.86      HSA
-        $ 109,451.26      IRA
+      $ 1,020,182.67  Assets
+          $ 1,015.00    Checking:Park City
+        $ 336,970.45    Investments
+        $ 126,837.76      401K
+         $ 19,167.42      HSA
+        $ 109,950.97      IRA
          $ 81,014.30      RSU
         $ 450,000.00    RE:Cottage
-        $ 232,061.48    Savings:Barclays
+        $ 232,197.22    Savings:Barclays
        $ -343,304.02  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 674,922.50
+        $ 676,878.65
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6527,12 +6548,12 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 21,743.82  Expenses
-            $ 437.09    Food
-             $ 79.89      Fast Food
+         $ 21,802.79  Expenses
+            $ 471.06    Food
+             $ 98.10      Fast Food
              $ 15.67      Groceries
              $ 23.28      Restaurants
-            $ 318.25      Snacks
+            $ 334.01      Snacks
             $ 850.00    Housing
             $ 700.00      Rent
             $ 150.00      Utilities
@@ -6553,17 +6574,17 @@
           $ 2,445.49      Illinois
             $ 716.36      Medicare
           $ 3,063.05      Social Security
-            $ 155.46    Transportation
+            $ 180.46    Transportation
              $ 45.38      Biking
              $ 76.52      Driving
              $ 56.52        Gas
              $ 20.00        Tolls
-             $ 33.56      Public
+             $ 58.56      Public
             $ 935.24    Travel
             $ 417.50      Air
             $ 517.74      Lodging
 --------------------
-         $ 21,743.82
+         $ 21,802.79
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -6631,6 +6652,6 @@ November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
-March 2024           $ 4,385.48
+March 2024           $ 4,444.45
 April 2024           $ 14,000.00
 #+end_example
