@@ -40,22 +40,21 @@
       return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), stock, values[index]) + "\n"
   return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "CONDO", "250,000.00") + "\n"
   return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "COTTA", "450,000.00") + "\n"
-   #return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "STRIP", "21.15") + "\n"
+  return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "STRIP", "26.00") + "\n"
   return_string = return_string + "#+end_src"
   return return_string
 #+end_src
-
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
   P 03/20/2024 00:00:00 VTSAX $124.1200
   P 03/20/2024 00:00:00 VTIAX $32.0100
-  P 03/20/2024 00:00:00 FSPSX $49.6200
-  P 03/20/2024 00:00:00 FXAIX $180.2500
+  P 03/20/2024 00:00:00 FSPSX $49.5200
+  P 03/20/2024 00:00:00 FXAIX $179.2300
   P 03/20/2024 00:00:00 CONDO $250,000.00
   P 03/20/2024 00:00:00 COTTA $450,000.00
+  P 03/20/2024 00:00:00 STRIP $26.00
 #+end_src
-
 ** Transactions
 #+name: transactions
 #+begin_src ledger :eval never
@@ -6527,18 +6526,18 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,020,182.67  Assets
+      $ 1,035,714.74  Assets
           $ 1,015.00    Checking:Park City
-        $ 336,970.45    Investments
-        $ 126,837.76      401K
-         $ 19,167.42      HSA
+        $ 352,502.52    Investments
+        $ 126,200.60      401K
+         $ 19,058.96      HSA
         $ 109,950.97      IRA
-         $ 81,014.30      RSU
+         $ 97,292.00      RSU
         $ 450,000.00    RE:Cottage
         $ 232,197.22    Savings:Barclays
        $ -343,304.02  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 676,878.65
+        $ 692,410.72
 #+end_example
 ** Spending
 *** This Month Spending
