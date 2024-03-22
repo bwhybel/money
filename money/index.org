@@ -47,13 +47,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 03/20/2024 00:00:00 VTSAX $124.1200
-  P 03/20/2024 00:00:00 VTIAX $32.0100
-  P 03/20/2024 00:00:00 FSPSX $49.5200
-  P 03/20/2024 00:00:00 FXAIX $179.2300
-  P 03/20/2024 00:00:00 CONDO $250,000.00
-  P 03/20/2024 00:00:00 COTTA $450,000.00
-  P 03/20/2024 00:00:00 STRIP $26.00
+  P 03/22/2024 00:00:00 VTSAX $126.0900
+  P 03/22/2024 00:00:00 VTIAX $32.3100
+  P 03/22/2024 00:00:00 FSPSX $50.1200
+  P 03/22/2024 00:00:00 FXAIX $181.8700
+  P 03/22/2024 00:00:00 CONDO $250,000.00
+  P 03/22/2024 00:00:00 COTTA $450,000.00
+  P 03/22/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -6447,14 +6447,12 @@
       Assets:Checking:Covantage                 $ 0.88
       Assets:Checking:Capital One
 
-  2024-04-05 * Condo Sale
-      Assets:RE:Condo                             -1.0 CONDO @ $ 265,000.00
-      Expenses:RE:Condo:Realtors           $ 14,000.00
-      Liabilities:RE:Condo:Mortgage        $ 42,838.52
-      Assets:Savings:Barclays
+  2024-03-22 * Interest
+      Assets:Savings:Barclays                   $ 0.15
+      Income:Extra
 
-  2024-04-05 * Transfer
-      Assets:Savings:Barclays               $ 2,035.74
+  2024-03-22 * Transfer
+      Assets:Savings:Barclays               $ 1,999.85
       Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
@@ -6487,14 +6485,17 @@
 #+end_src
 #+results:
 #+begin_example
-        $ 233,212.22
+         $ 25,050.89
+           1.0 CONDO
            1.0 COTTA
        445.746 FSPSX
        687.308 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 1,015.00    Checking:Park City
+          $ 1,050.89    Checking
+             $ 35.89      Covantage
+          $ 1,015.00      Park City
        445.746 FSPSX
        687.308 FXAIX
        3,742.0 STRIP
@@ -6506,11 +6507,17 @@
        596.199 VTIAX
        732.087 VTSAX      IRA
        3,742.0 STRIP      RSU
-           1.0 COTTA    RE:Cottage
-        $ 232,197.22    Savings:Barclays
-       $ -343,304.02  Liabilities:RE:Cottage:Mortgage
+           1.0 CONDO
+           1.0 COTTA    RE
+           1.0 CONDO      Condo
+           1.0 COTTA      Cottage
+         $ 24,000.00    Savings:Barclays
+       $ -386,142.54  Liabilities:RE
+        $ -42,838.52    Condo:Mortgage
+       $ -343,304.02    Cottage:Mortgage
 --------------------
-       $ -110,091.80
+       $ -361,091.65
+           1.0 CONDO
            1.0 COTTA
        445.746 FSPSX
        687.308 FXAIX
@@ -6526,18 +6533,24 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,035,714.74  Assets
-          $ 1,015.00    Checking:Park City
-        $ 352,502.52    Investments
-        $ 126,200.60      401K
-         $ 19,058.96      HSA
-        $ 109,950.97      IRA
+      $ 1,081,256.42  Assets
+          $ 1,050.89    Checking
+             $ 35.89      Covantage
+          $ 1,015.00      Park City
+        $ 356,205.54    Investments
+        $ 128,001.80      401K
+         $ 19,339.69      HSA
+        $ 111,572.04      IRA
          $ 97,292.00      RSU
-        $ 450,000.00    RE:Cottage
-        $ 232,197.22    Savings:Barclays
-       $ -343,304.02  Liabilities:RE:Cottage:Mortgage
+        $ 700,000.00    RE
+        $ 250,000.00      Condo
+        $ 450,000.00      Cottage
+         $ 24,000.00    Savings:Barclays
+       $ -386,142.54  Liabilities:RE
+        $ -42,838.52    Condo:Mortgage
+       $ -343,304.02    Cottage:Mortgage
 --------------------
-        $ 692,410.72
+        $ 695,113.88
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6652,5 +6665,4 @@ December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 4,444.45
-April 2024           $ 14,000.00
 #+end_example
