@@ -47,13 +47,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 03/22/2024 00:00:00 VTSAX $126.0900
-  P 03/22/2024 00:00:00 VTIAX $32.3100
-  P 03/22/2024 00:00:00 FSPSX $50.1200
-  P 03/22/2024 00:00:00 FXAIX $181.8700
-  P 03/22/2024 00:00:00 CONDO $250,000.00
-  P 03/22/2024 00:00:00 COTTA $450,000.00
-  P 03/22/2024 00:00:00 STRIP $26.00
+  P 03/29/2024 00:00:00 VTSAX $126.4300
+  P 03/29/2024 00:00:00 VTIAX $32.3900
+  P 03/29/2024 00:00:00 FSPSX $50.2200
+  P 03/29/2024 00:00:00 FXAIX $182.7400
+  P 03/29/2024 00:00:00 CONDO $250,000.00
+  P 03/29/2024 00:00:00 COTTA $450,000.00
+  P 03/29/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -6454,6 +6454,57 @@
   2024-03-22 * Transfer
       Assets:Savings:Barclays               $ 1,999.85
       Assets:Checking:Covantage
+
+  2024-03-24 * Dublin Airport
+      Expenses:Food:Snacks                     $ 10.33
+      Expenses:Food:Snacks                      $ 4.38
+      Liabilities:Credit Card:Covantage
+
+  2024-03-24 * Dublin Express
+      Expenses:Food:Snacks                      $ 6.35
+      Expenses:Food:Snacks                      $ 1.96
+      Liabilities:Credit Card:Covantage
+
+  2024-03-24 * McDonald's
+      Expenses:Food:Fast Food                  $ 10.82
+      Liabilities:Credit Card:Covantage
+
+  2024-03-25 * Lisbon Express
+      Expenses:Food:Snacks                     $ 11.10
+      Expenses:Food:Snacks                      $ 5.65
+      Expenses:Food:Snacks                      $ 3.72
+      Expenses:Food:Snacks                      $ 4.34
+      Liabilities:Credit Card:Covantage
+
+  2024-03-25 * Honorato Burgers
+      Expenses:Food:Restaurants               $ 143.53
+      Liabilities:Credit Card:Covantage
+
+  2024-03-26 * Lisbon Market
+      Expenses:Food:Snacks                      $ 4.13
+      Expenses:Food:Snacks                     $ 16.81
+      Expenses:Food:Snacks                      $ 9.78
+      Expenses:Food:Snacks                      $ 2.12
+      Liabilities:Credit Card:Covantage
+
+  2024-03-29 * Stripe
+      Assets:Checking:Covantage               $ 785.56
+      Assets:Checking:Park City             $ 1,015.00
+      Assets:Checking:Northwoods            $ 1,217.91
+      Assets:Investments:401K               $ 1,058.72
+      Expenses:Taxes:Federal                $ 2,091.57
+      Income:Stripe:Paycheck               $ -7,058.08
+      Expenses:Taxes:Social Security          $ 437.60
+      Expenses:Taxes:Medicare                 $ 102.35
+      Expenses:Taxes:Illinois                 $ 349.37
+
+  2024-03-29 * Chase
+      Expenses:RE:Cottage:Escrow            $ 1,217.91
+      Assets:Checking:Northwoods
+
+  2024-03-29 * Transfer
+      Liabilities:Credit Card:Covantage       $ 235.02
+      Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -6485,7 +6536,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 25,050.89
+         $ 27,675.15
            1.0 CONDO
            1.0 COTTA
        445.746 FSPSX
@@ -6493,14 +6544,16 @@
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 1,050.89    Checking
-             $ 35.89      Covantage
-          $ 1,015.00      Park City
+          $ 2,616.43    Checking
+            $ 586.43      Covantage
+          $ 2,030.00      Park City
+          $ 1,058.72
        445.746 FSPSX
        687.308 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX    Investments
+          $ 1,058.72
        445.746 FSPSX
        580.970 FXAIX      401K
        106.338 FXAIX      HSA
@@ -6516,7 +6569,7 @@
         $ -42,838.52    Condo:Mortgage
        $ -343,304.02    Cottage:Mortgage
 --------------------
-       $ -361,091.65
+       $ -358,467.39
            1.0 CONDO
            1.0 COTTA
        445.746 FSPSX
@@ -6533,14 +6586,14 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,081,256.42  Assets
-          $ 1,050.89    Checking
-             $ 35.89      Covantage
-          $ 1,015.00      Park City
-        $ 356,205.54    Investments
-        $ 128,001.80      401K
-         $ 19,339.69      HSA
-        $ 111,572.04      IRA
+      $ 1,084,819.82  Assets
+          $ 2,616.43    Checking
+            $ 586.43      Covantage
+          $ 2,030.00      Park City
+        $ 358,203.39    Investments
+        $ 129,610.54      401K
+         $ 19,432.21      HSA
+        $ 111,868.65      IRA
          $ 97,292.00      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
@@ -6550,7 +6603,7 @@
         $ -42,838.52    Condo:Mortgage
        $ -343,304.02    Cottage:Mortgage
 --------------------
-        $ 695,113.88
+        $ 698,677.28
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6560,12 +6613,12 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 21,802.79  Expenses
-            $ 471.06    Food
-             $ 98.10      Fast Food
+         $ 26,236.61  Expenses
+            $ 706.08    Food
+            $ 108.92      Fast Food
              $ 15.67      Groceries
-             $ 23.28      Restaurants
-            $ 334.01      Snacks
+            $ 166.81      Restaurants
+            $ 414.68      Snacks
             $ 850.00    Housing
             $ 700.00      Rent
             $ 150.00      Utilities
@@ -6575,17 +6628,17 @@
              $ 46.98      Entertainment
             $ 103.42      Health
              $ 68.84      Household
-          $ 1,763.61    RE
+          $ 2,981.52    RE
             $ 139.67      Condo:HOA
-          $ 1,623.94      Cottage
-          $ 1,217.90        Escrow
+          $ 2,841.85      Cottage
+          $ 2,435.81        Escrow
             $ 208.89        Repairs
             $ 197.15        Utilities
-         $ 17,358.34    Taxes
-         $ 11,133.44      Federal
-          $ 2,445.49      Illinois
-            $ 716.36      Medicare
-          $ 3,063.05      Social Security
+         $ 20,339.23    Taxes
+         $ 13,225.01      Federal
+          $ 2,794.86      Illinois
+            $ 818.71      Medicare
+          $ 3,500.65      Social Security
             $ 180.46    Transportation
              $ 45.38      Biking
              $ 76.52      Driving
@@ -6596,7 +6649,7 @@
             $ 417.50      Air
             $ 517.74      Lodging
 --------------------
-         $ 21,802.79
+         $ 26,236.61
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -6664,5 +6717,5 @@ November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
-March 2024           $ 4,444.45
+March 2024           $ 5,897.38
 #+end_example
