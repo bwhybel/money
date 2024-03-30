@@ -47,13 +47,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 03/29/2024 00:00:00 VTSAX $126.4300
-  P 03/29/2024 00:00:00 VTIAX $32.3900
-  P 03/29/2024 00:00:00 FSPSX $50.2200
-  P 03/29/2024 00:00:00 FXAIX $182.7400
-  P 03/29/2024 00:00:00 CONDO $250,000.00
-  P 03/29/2024 00:00:00 COTTA $450,000.00
-  P 03/29/2024 00:00:00 STRIP $26.00
+  P 03/30/2024 00:00:00 VTSAX $126.4300
+  P 03/30/2024 00:00:00 VTIAX $32.3900
+  P 03/30/2024 00:00:00 FSPSX $50.2200
+  P 03/30/2024 00:00:00 FXAIX $182.7400
+  P 03/30/2024 00:00:00 CONDO $250,000.00
+  P 03/30/2024 00:00:00 COTTA $450,000.00
+  P 03/30/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -6505,6 +6505,11 @@
   2024-03-29 * Transfer
       Liabilities:Credit Card:Covantage       $ 235.02
       Assets:Checking:Covantage
+
+  2024-03-30 * Chase
+      Liabilities:RE:Cottage:Mortgage         $ 639.96
+      Expenses:RE:Cottage:Interest          $ 1,001.30
+      Expenses:RE:Cottage:Escrow
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -6565,11 +6570,11 @@
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
          $ 24,000.00    Savings:Barclays
-       $ -386,142.54  Liabilities:RE
+       $ -385,502.58  Liabilities:RE
         $ -42,838.52    Condo:Mortgage
-       $ -343,304.02    Cottage:Mortgage
+       $ -342,664.06    Cottage:Mortgage
 --------------------
-       $ -358,467.39
+       $ -357,827.43
            1.0 CONDO
            1.0 COTTA
        445.746 FSPSX
@@ -6599,11 +6604,11 @@
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
          $ 24,000.00    Savings:Barclays
-       $ -386,142.54  Liabilities:RE
+       $ -385,502.58  Liabilities:RE
         $ -42,838.52    Condo:Mortgage
-       $ -343,304.02    Cottage:Mortgage
+       $ -342,664.06    Cottage:Mortgage
 --------------------
-        $ 698,677.28
+        $ 699,317.24
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6613,7 +6618,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 26,236.61  Expenses
+         $ 25,596.65  Expenses
             $ 706.08    Food
             $ 108.92      Fast Food
              $ 15.67      Groceries
@@ -6628,10 +6633,11 @@
              $ 46.98      Entertainment
             $ 103.42      Health
              $ 68.84      Household
-          $ 2,981.52    RE
+          $ 2,341.56    RE
             $ 139.67      Condo:HOA
-          $ 2,841.85      Cottage
-          $ 2,435.81        Escrow
+          $ 2,201.89      Cottage
+            $ 794.55        Escrow
+          $ 1,001.30        Interest
             $ 208.89        Repairs
             $ 197.15        Utilities
          $ 20,339.23    Taxes
@@ -6649,7 +6655,7 @@
             $ 417.50      Air
             $ 517.74      Lodging
 --------------------
-         $ 26,236.61
+         $ 25,596.65
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -6717,5 +6723,5 @@ November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
-March 2024           $ 5,897.38
+March 2024           $ 5,257.42
 #+end_example
