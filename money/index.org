@@ -47,13 +47,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 03/30/2024 00:00:00 VTSAX $126.4300
-  P 03/30/2024 00:00:00 VTIAX $32.3900
-  P 03/30/2024 00:00:00 FSPSX $50.2200
-  P 03/30/2024 00:00:00 FXAIX $182.7400
-  P 03/30/2024 00:00:00 CONDO $250,000.00
-  P 03/30/2024 00:00:00 COTTA $450,000.00
-  P 03/30/2024 00:00:00 STRIP $26.00
+  P 03/31/2024 00:00:00 VTSAX $126.4300
+  P 03/31/2024 00:00:00 VTIAX $32.3900
+  P 03/31/2024 00:00:00 FSPSX $50.2200
+  P 03/31/2024 00:00:00 FXAIX $182.7400
+  P 03/31/2024 00:00:00 CONDO $250,000.00
+  P 03/31/2024 00:00:00 COTTA $450,000.00
+  P 03/31/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -6510,6 +6510,33 @@
       Liabilities:RE:Cottage:Mortgage         $ 639.96
       Expenses:RE:Cottage:Interest          $ 1,001.30
       Expenses:RE:Cottage:Escrow
+
+  2024-03-31 * Airbnb
+      Expenses:Travel:Lodging                 $ 190.46
+      Assets:Checking:Covantage
+
+  2024-03-31 * Porto Express
+      Expenses:Food:Snacks                      $ 3.24
+      Assets:Checking:Covantage
+
+  2024-03-31 * Porto Express
+      Expenses:Food:Snacks                      $ 5.06
+      Expenses:Food:Snacks                      $ 2.17
+      Expenses:Food:Snacks                      $ 6.80
+      Expenses:Food:Snacks                      $ 1.72
+      Expenses:Food:Snacks                      $ 0.86
+      Liabilities:Credit Card:Covantage
+
+  2024-04-01 * Transfer
+      Assets:Savings:UFB                   $ 24,000.00
+      Assets:Savings:Barclays
+
+  2024-04-09 * Sell Condo
+      Assets:RE:Condo                             -1.0 CONDO @ $ 265,000.00
+      Expenses:RE:Condo:Sale               $ 12,985.00
+      Expenses:RE:Condo:Sale                  $ 500.00
+      Liabilities:RE:Mortgage:Condo        $ 42,838.52
+      Assets:Savings:UFB
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -6541,16 +6568,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 27,675.15
-           1.0 CONDO
+        $ 236,157.93
            1.0 COTTA
        445.746 FSPSX
        687.308 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 2,616.43    Checking
-            $ 586.43      Covantage
+          $ 2,422.73    Checking
+            $ 392.73      Covantage
           $ 2,030.00      Park City
           $ 1,058.72
        445.746 FSPSX
@@ -6565,17 +6591,16 @@
        596.199 VTIAX
        732.087 VTSAX      IRA
        3,742.0 STRIP      RSU
-           1.0 CONDO
-           1.0 COTTA    RE
-           1.0 CONDO      Condo
-           1.0 COTTA      Cottage
-         $ 24,000.00    Savings:Barclays
-       $ -385,502.58  Liabilities:RE
-        $ -42,838.52    Condo:Mortgage
-       $ -342,664.06    Cottage:Mortgage
+           1.0 COTTA    RE:Cottage
+        $ 232,676.48    Savings:UFB
+       $ -342,680.67  Liabilities
+            $ -16.61    Credit Card:Covantage
+       $ -342,664.06    RE
+        $ -42,838.52      Condo:Mortgage
+       $ -342,664.06      Cottage:Mortgage
+         $ 42,838.52      Mortgage:Condo
 --------------------
-       $ -357,827.43
-           1.0 CONDO
+       $ -106,522.74
            1.0 COTTA
        445.746 FSPSX
        687.308 FXAIX
@@ -6591,24 +6616,25 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,084,819.82  Assets
-          $ 2,616.43    Checking
-            $ 586.43      Covantage
+      $ 1,043,302.60  Assets
+          $ 2,422.73    Checking
+            $ 392.73      Covantage
           $ 2,030.00      Park City
         $ 358,203.39    Investments
         $ 129,610.54      401K
          $ 19,432.21      HSA
         $ 111,868.65      IRA
          $ 97,292.00      RSU
-        $ 700,000.00    RE
-        $ 250,000.00      Condo
-        $ 450,000.00      Cottage
-         $ 24,000.00    Savings:Barclays
-       $ -385,502.58  Liabilities:RE
-        $ -42,838.52    Condo:Mortgage
-       $ -342,664.06    Cottage:Mortgage
+        $ 450,000.00    RE:Cottage
+        $ 232,676.48    Savings:UFB
+       $ -342,680.67  Liabilities
+            $ -16.61    Credit Card:Covantage
+       $ -342,664.06    RE
+        $ -42,838.52      Condo:Mortgage
+       $ -342,664.06      Cottage:Mortgage
+         $ 42,838.52      Mortgage:Condo
 --------------------
-        $ 699,317.24
+        $ 700,621.93
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6618,12 +6644,12 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 25,596.65  Expenses
-            $ 706.08    Food
+         $ 25,806.96  Expenses
+            $ 725.93    Food
             $ 108.92      Fast Food
              $ 15.67      Groceries
             $ 166.81      Restaurants
-            $ 414.68      Snacks
+            $ 434.53      Snacks
             $ 850.00    Housing
             $ 700.00      Rent
             $ 150.00      Utilities
@@ -6651,11 +6677,11 @@
              $ 56.52        Gas
              $ 20.00        Tolls
              $ 58.56      Public
-            $ 935.24    Travel
+          $ 1,125.70    Travel
             $ 417.50      Air
-            $ 517.74      Lodging
+            $ 708.20      Lodging
 --------------------
-         $ 25,596.65
+         $ 25,806.96
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -6723,5 +6749,6 @@ November 2023        $ 6,448.77
 December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
-March 2024           $ 5,257.42
+March 2024           $ 5,467.73
+April 2024           $ 13,485.00
 #+end_example
