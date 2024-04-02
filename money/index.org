@@ -6491,7 +6491,8 @@
       Assets:Checking:Covantage               $ 785.56
       Assets:Checking:Park City             $ 1,015.00
       Assets:Checking:Northwoods            $ 1,217.91
-      Assets:Investments:401K               $ 1,058.72
+      Assets:Investments:401K                    3.192 FSPSX @ $ 49.7525062657
+      Assets:Investments:401K                    4.929 FXAIX @ $ 182.574558734
       Expenses:Taxes:Federal                $ 2,091.57
       Income:Stripe:Paycheck               $ -7,058.08
       Expenses:Taxes:Social Security          $ 437.60
@@ -6527,9 +6528,66 @@
       Expenses:Food:Snacks                      $ 0.86
       Liabilities:Credit Card:Covantage
 
+  2024-04-01 * Crandon Water & Sewer
+      Expenses:RE:Cottage:Utilities           $ 126.86
+      Assets:Checking:Covantage
+
   2024-04-01 * Transfer
       Assets:Savings:UFB                   $ 24,000.00
       Assets:Savings:Barclays
+
+  2024-04-01 * Interest
+      Assets:Checking:Covantage                 $ 0.34
+      Income:Extra
+
+  2024-04-01 * Portugal Express
+      Expenses:Food:Snacks                      $ 6.11
+      Expenses:Food:Snacks                      $ 2.81
+      Assets:Checking:Covantage
+
+  2024-04-01 * Brooke Janicki
+      Expenses:RE:Cottage:Cleaning            $ 120.00
+      Assets:Checking:Covantage
+
+  2024-04-01 * ComEd
+      Expenses:Housing:Utilities               $ 52.00
+      Assets:Checking:Park City
+
+  2024-04-01 * Peoples Gas Delivery
+      Expenses:Housing:Utilities               $ 80.00
+      Assets:Checking:Park City
+
+  2024-04-01 * Xfinity
+      Expenses:Housing:Utilities               $ 70.00
+      Assets:Checking:Park City
+
+  2024-04-01 * Kass Property Management
+      Expenses:Housing:Rent                 $ 1,537.50
+      Assets:Checking:Park City
+
+  2024-04-01 * Visible
+      Expenses:Personal:Communication          $ 30.00
+      Assets:Checking:Park City
+
+  2024-04-01 * Spectrum
+      Expenses:RE:Cottage:Utilities            $ 71.99
+      Assets:Checking:Park City
+
+  2024-04-01 * Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 179.00
+      Assets:Checking:Park City
+
+  2024-04-01 * 7/11
+      Expenses:Food:Snacks                     $ 14.04
+      Liabilities:Credit Card:Covantage
+
+  2024-04-01 * AC Hotel
+      Expenses:Food:Snacks                      $ 4.00
+      Liabilities:Credit Card:Covantage
+
+  2024-04-02 * Nish Nash
+      Expenses:Food:Restaurants                $ 10.89
+      Liabilities:Credit Card:Covantage
 
   2024-04-09 * Sell Condo
       Assets:RE:Condo                             -1.0 CONDO @ $ 265,000.00
@@ -6568,39 +6626,37 @@
 #+end_src
 #+results:
 #+begin_example
-        $ 236,157.93
+        $ 232,823.28
            1.0 COTTA
-       445.746 FSPSX
-       687.308 FXAIX
+       448.938 FSPSX
+       692.237 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 2,422.73    Checking
-            $ 392.73      Covantage
-          $ 2,030.00      Park City
-          $ 1,058.72
-       445.746 FSPSX
-       687.308 FXAIX
+            $ 146.80    Checking
+            $ 137.29      Covantage
+              $ 9.51      Park City
+       448.938 FSPSX
+       692.237 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX    Investments
-          $ 1,058.72
-       445.746 FSPSX
-       580.970 FXAIX      401K
+       448.938 FSPSX
+       585.899 FXAIX      401K
        106.338 FXAIX      HSA
        596.199 VTIAX
        732.087 VTSAX      IRA
        3,742.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
         $ 232,676.48    Savings:UFB
-       $ -342,680.67  Liabilities
-            $ -16.61    Credit Card:Covantage
+       $ -342,709.60  Liabilities
+            $ -45.54    Credit Card:Covantage
        $ -342,664.06    RE:Cottage:Mortgage
 --------------------
-       $ -106,522.74
+       $ -109,886.32
            1.0 COTTA
-       445.746 FSPSX
-       687.308 FXAIX
+       448.938 FSPSX
+       692.237 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX
@@ -6613,22 +6669,22 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,043,495.56  Assets
-          $ 2,422.73    Checking
-            $ 392.73      Covantage
-          $ 2,030.00      Park City
-        $ 358,396.35    Investments
-        $ 129,674.60      401K
+      $ 1,041,222.56  Assets
+            $ 146.80    Checking
+            $ 137.29      Covantage
+              $ 9.51      Park City
+        $ 358,399.28    Investments
+        $ 129,677.53      401K
          $ 19,454.54      HSA
         $ 111,975.21      IRA
          $ 97,292.00      RSU
         $ 450,000.00    RE:Cottage
         $ 232,676.48    Savings:UFB
-       $ -342,680.67  Liabilities
-            $ -16.61    Credit Card:Covantage
+       $ -342,709.60  Liabilities
+            $ -45.54    Credit Card:Covantage
        $ -342,664.06    RE:Cottage:Mortgage
 --------------------
-        $ 700,814.89
+        $ 698,512.96
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6637,7 +6693,23 @@
   <<transactions>>
 #+end_src
 #+results:
-:          $ 13,485.00  Expenses:RE:Condo:Sale
+#+begin_example
+         $ 15,790.20  Expenses
+             $ 37.85    Food
+             $ 10.89      Restaurants
+             $ 26.96      Snacks
+          $ 1,739.50    Housing
+          $ 1,537.50      Rent
+            $ 202.00      Utilities
+             $ 30.00    Personal:Communication
+         $ 13,982.85    RE
+         $ 13,485.00      Condo:Sale
+            $ 497.85      Cottage
+            $ 120.00        Cleaning
+            $ 377.85        Utilities
+--------------------
+         $ 15,790.20
+#+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
   <<opening_balance>>
@@ -6685,7 +6757,7 @@
          $ 25,806.96
 #+end_example
 *** Monthly Spending
-#+begin_src ledger :cmdline reg ^Expenses and not ^Expenses:Taxes --cleared -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
+#+begin_src ledger :cmdline reg ^Expenses and not ^Expenses:Taxes and not ^Expenses:RE:.*:Sale --cleared -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
   <<opening_balance>>
   <<transactions>>
 #+end_src
@@ -6703,5 +6775,5 @@ December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
-April 2024           $ 13,485.00
+April 2024           $ 2,305.20
 #+end_example
