@@ -47,13 +47,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/02/2024 00:00:00 VTSAX $126.6000
-  P 04/02/2024 00:00:00 VTIAX $32.3600
-  P 04/02/2024 00:00:00 FSPSX $50.0900
-  P 04/02/2024 00:00:00 FXAIX $182.9500
-  P 04/02/2024 00:00:00 CONDO $250,000.00
-  P 04/02/2024 00:00:00 COTTA $450,000.00
-  P 04/02/2024 00:00:00 STRIP $26.00
+  P 04/04/2024 00:00:00 VTSAX $125.2000
+  P 04/04/2024 00:00:00 VTIAX $32.1700
+  P 04/04/2024 00:00:00 FSPSX $49.5800
+  P 04/04/2024 00:00:00 FXAIX $181.2600
+  P 04/04/2024 00:00:00 CONDO $250,000.00
+  P 04/04/2024 00:00:00 COTTA $450,000.00
+  P 04/04/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -6577,6 +6577,11 @@
       Expenses:RE:Cottage:Utilities           $ 179.00
       Assets:Checking:Park City
 
+  2024-04-01 * Lisbon Airport
+      Expenses:Food:Snacks                      $ 7.62
+      Expenses:Food:Snacks                      $ 3.46
+      Liabilities:Credit Card:Covantage
+
   2024-04-01 * 7/11
       Expenses:Food:Snacks                     $ 14.04
       Liabilities:Credit Card:Covantage
@@ -6585,9 +6590,30 @@
       Expenses:Food:Snacks                      $ 4.00
       Liabilities:Credit Card:Covantage
 
+  2024-04-02 * Duane Reade
+      Expenses:Food:Snacks                      $ 5.36
+      Liabilities:Credit Card:Covantage
+
   2024-04-02 * Nish Nash
       Expenses:Food:Restaurants                $ 10.89
       Liabilities:Credit Card:Covantage
+
+  2024-04-02 * MTA
+      Expenses:Transportation:Public            $ 2.90
+      Expenses:Transportation:Public            $ 2.90
+      Liabilities:Credit Card:Covantage
+
+  2024-04-03 * AC Hotel
+      Expenses:Food:Snacks                      $ 8.00
+      Liabilities:Credit Card:Covantage
+
+  2024-04-03 * Duane Reade
+      Expenses:Food:Snacks                      $ 5.36
+      Liabilities:Credit Card:Covantage
+
+  2024-04-03 * Transfer
+      Liabilities:Credit Card:Covantage        $ 81.14
+      Assets:Checking:Covantage
 
   2024-04-09 * Sell Condo
       Assets:RE:Condo                             -1.0 CONDO @ $ 265,000.00
@@ -6626,15 +6652,15 @@
 #+end_src
 #+results:
 #+begin_example
-        $ 232,823.28
+        $ 232,742.14
            1.0 COTTA
        448.938 FSPSX
        692.237 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-            $ 146.80    Checking
-            $ 137.29      Covantage
+             $ 65.66    Checking
+             $ 56.15      Covantage
               $ 9.51      Park City
        448.938 FSPSX
        692.237 FXAIX
@@ -6649,11 +6675,9 @@
        3,742.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
         $ 232,676.48    Savings:UFB
-       $ -342,709.60  Liabilities
-            $ -45.54    Credit Card:Covantage
-       $ -342,664.06    RE:Cottage:Mortgage
+       $ -342,664.06  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -109,886.32
+       $ -109,921.92
            1.0 COTTA
        448.938 FSPSX
        692.237 FXAIX
@@ -6669,22 +6693,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,041,222.56  Assets
-            $ 146.80    Checking
-            $ 137.29      Covantage
+      $ 1,038,604.38  Assets
+             $ 65.66    Checking
+             $ 56.15      Covantage
               $ 9.51      Park City
-        $ 358,399.28    Investments
-        $ 129,677.53      401K
-         $ 19,454.54      HSA
-        $ 111,975.21      IRA
+        $ 355,862.24    Investments
+        $ 128,458.40      401K
+         $ 19,274.83      HSA
+        $ 110,837.01      IRA
          $ 97,292.00      RSU
         $ 450,000.00    RE:Cottage
         $ 232,676.48    Savings:UFB
-       $ -342,709.60  Liabilities
-            $ -45.54    Credit Card:Covantage
-       $ -342,664.06    RE:Cottage:Mortgage
+       $ -342,664.06  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 698,512.96
+        $ 695,940.32
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6694,10 +6716,10 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 15,790.20  Expenses
-             $ 37.85    Food
+         $ 15,825.80  Expenses
+             $ 67.65    Food
              $ 10.89      Restaurants
-             $ 26.96      Snacks
+             $ 56.76      Snacks
           $ 1,739.50    Housing
           $ 1,537.50      Rent
             $ 202.00      Utilities
@@ -6707,8 +6729,9 @@
             $ 497.85      Cottage
             $ 120.00        Cleaning
             $ 377.85        Utilities
+              $ 5.80    Transportation:Public
 --------------------
-         $ 15,790.20
+         $ 15,825.80
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -6775,5 +6798,5 @@ December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
-April 2024           $ 2,305.20
+April 2024           $ 2,340.80
 #+end_example
