@@ -47,13 +47,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/08/2024 00:00:00 VTSAX $125.2400
-  P 04/08/2024 00:00:00 VTIAX $32.2500
-  P 04/08/2024 00:00:00 FSPSX $49.6000
-  P 04/08/2024 00:00:00 FXAIX $180.6900
-  P 04/08/2024 00:00:00 CONDO $250,000.00
-  P 04/08/2024 00:00:00 COTTA $450,000.00
-  P 04/08/2024 00:00:00 STRIP $26.00
+  P 04/09/2024 00:00:00 VTSAX $125.2800
+  P 04/09/2024 00:00:00 VTIAX $32.3900
+  P 04/09/2024 00:00:00 FSPSX $49.8400
+  P 04/09/2024 00:00:00 FXAIX $180.6300
+  P 04/09/2024 00:00:00 CONDO $250,000.00
+  P 04/09/2024 00:00:00 COTTA $450,000.00
+  P 04/09/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -6674,6 +6674,48 @@
   2024-04-08 * Divvy Bikes
       Expenses:Transportation:Biking            $ 6.41
       Liabilities:Credit Card:Covantage
+
+  2024-04-09 * Kwik Trip
+      Expenses:Transportation:Driving:Gas      $ 39.74
+      Expenses:Food:Drinks                     $ 35.55
+      Liabilities:Credit Card:Covantage
+
+  2024-04-09 * 7/11
+      Expenses:Transportation:Driving:Gas      $ 22.03
+      Expenses:Food:Snacks                      $ 9.30
+      Liabilities:Credit Card:Covantage
+
+  2024-04-09 * AmFam Field
+      Expenses:Food:Drinks                     $ 14.95
+      Liabilities:Credit Card:Covantage
+
+  2024-04-09 * Lyft
+      Expenses:Transportation:Ride Share       $ 11.99
+      Liabilities:Credit Card:Covantage
+
+  2024-04-11 * Income
+      Assets:Checking:Park City               $ 383.75
+      Expenses:Housing:Rent
+
+  2024-04-11 * Utilities
+      Assets:Checking:Park City                $ 67.00
+      Expenses:Housing:Utilities
+
+  2024-05-01 * Income
+      Assets:Checking:Park City               $ 383.75
+      Expenses:Housing:Rent
+
+  2024-05-01 ! Rent
+      Expenses:Housing:Rent                 $ 1,445.50
+      Assets:Checking:Park City
+
+  2024-06-01 * Income
+      Assets:Checking:Park City               $ 383.75
+      Expenses:Housing:Rent
+
+  2024-07-01 * Income
+      Assets:Checking:Park City               $ 383.75
+      Expenses:Housing:Rent
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -6705,7 +6747,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 24,117.09
+         $ 25,719.09
            1.0 CONDO
            1.0 COTTA
        448.938 FSPSX
@@ -6713,9 +6755,9 @@
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-             $ 65.67    Checking
+          $ 1,667.67    Checking
              $ 56.16      Covantage
-              $ 9.51      Park City
+          $ 1,611.51      Park City
        448.938 FSPSX
        692.237 FXAIX
        3,742.0 STRIP
@@ -6732,13 +6774,13 @@
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
          $ 24,051.42    Savings:UFB
-       $ -385,673.66  Liabilities
-           $ -171.08    Credit Card:Covantage
+       $ -385,807.22  Liabilities
+           $ -304.64    Credit Card:Covantage
        $ -385,502.58    RE
         $ -42,838.52      Condo:Mortgage
        $ -342,664.06      Cottage:Mortgage
 --------------------
-       $ -361,556.57
+       $ -360,088.13
            1.0 CONDO
            1.0 COTTA
        448.938 FSPSX
@@ -6755,26 +6797,26 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,079,670.71  Assets
-             $ 65.67    Checking
+      $ 1,081,451.67  Assets
+          $ 1,667.67    Checking
              $ 56.16      Covantage
-              $ 9.51      Park City
-        $ 355,553.62    Investments
-        $ 128,133.42      401K
-         $ 19,214.21      HSA
-        $ 110,913.99      IRA
+          $ 1,611.51      Park City
+        $ 355,732.58    Investments
+        $ 128,206.01      401K
+         $ 19,207.83      HSA
+        $ 111,026.74      IRA
          $ 97,292.00      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
          $ 24,051.42    Savings:UFB
-       $ -385,673.66  Liabilities
-           $ -171.08    Credit Card:Covantage
+       $ -385,807.22  Liabilities
+           $ -304.64    Credit Card:Covantage
        $ -385,502.58    RE
         $ -42,838.52      Condo:Mortgage
        $ -342,664.06      Cottage:Mortgage
 --------------------
-        $ 693,997.05
+        $ 695,644.45
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6784,26 +6826,28 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 2,511.88  Expenses
-            $ 127.47    Food
+          $ 2,194.69  Expenses
+            $ 187.27    Food
+             $ 50.50      Drinks
              $ 17.85      Fast Food
              $ 10.89      Restaurants
-             $ 98.73      Snacks
-          $ 1,739.50    Housing
-          $ 1,537.50      Rent
-            $ 202.00      Utilities
+            $ 108.03      Snacks
+          $ 1,288.75    Housing
+          $ 1,153.75      Rent
+            $ 135.00      Utilities
             $ 122.00    Personal
              $ 30.00      Communication
              $ 92.00      Entertainment
             $ 497.85    RE:Cottage
             $ 120.00      Cleaning
             $ 377.85      Utilities
-             $ 25.06    Transportation
+             $ 98.82    Transportation
               $ 6.41      Biking
+             $ 61.77      Driving:Gas
               $ 5.80      Public
-             $ 12.85      Ride Share
+             $ 24.84      Ride Share
 --------------------
-          $ 2,511.88
+          $ 2,194.69
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -6852,8 +6896,26 @@
          $ 25,806.96
 #+end_example
 *** Monthly Spending
-#+begin_src ledger :cmdline reg ^Expenses and not ^Expenses:Taxes and not ^Expenses:RE:.*:Sale --cleared -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
+#+begin_src ledger :cmdline reg ^Expenses and not ^Expenses:Taxes --cleared -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
   <<opening_balance>>
   <<transactions>>
 #+end_src
 #+results:
+#+begin_example
+April 2023           $ 5,455.64
+May 2023             $ 8,591.06
+June 2023            $ 9,673.92
+July 2023            $ 8,234.24
+August 2023          $ 7,336.03
+September 2023       $ 11,002.49
+October 2023         $ 9,834.46
+November 2023        $ 6,448.77
+December 2023        $ 7,470.83
+January 2024         $ 8,968.31
+February 2024        $ 6,099.50
+March 2024           $ 5,467.73
+April 2024           $ 2,194.69
+May 2024             $ -383.75
+June 2024            $ -383.75
+July 2024            $ -383.75
+#+end_example
