@@ -6702,11 +6702,11 @@
       Liabilities:Credit Card:Covantage
 
   2024-04-11 * Income
-      Assets:Checking:RipCo                   $ 383.75
+      Assets:Checking:Park City                   $ 383.75
       Expenses:Housing:Rent
 
   2024-04-11 * Utilities
-      Assets:Checking:RipCo                    $ 67.00
+      Assets:Checking:Park City                $ 67.00
       Expenses:Housing:Utilities
 
   2024-04-12 * Stripe
@@ -6728,11 +6728,19 @@
   2024-04-12 * Taxes
       Expenses:Taxes:Illinois                  $ 36.00
       Expenses:Taxes:Federal                $ 1,360.00
-      Expenses:Taxes:Illinois                 $ 108.00  ;; UPDATE THIS
+      Expenses:Taxes:Illinois                  $ 39.15
       Assets:Savings:UFB
 
+  2024-04-12 * Estimated Taxes
+      Expenses:Taxes:Federal                $ 6,000.00
+      Assets:Savings:UFB
+
+  2024-04-12 * Tripoli Tap
+      Expenses:Food:Drinks                     $ 14.59
+      Assets:Checking:Park City
+
   2024-05-01 * Income
-      Assets:Checking:RipCo                   $ 383.75
+      Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
 
   2024-05-01 ! Rent
@@ -6740,11 +6748,11 @@
       Assets:Checking:Park City
 
   2024-06-01 * Income
-      Assets:Checking:RipCo                   $ 383.75
+      Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
 
   2024-07-01 * Income
-      Assets:Checking:RipCo                   $ 383.75
+      Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
 #+end_src
 ** Initial Balance
@@ -6777,7 +6785,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 29,596.82
+         $ 23,651.08
            1.0 CONDO
            1.0 COTTA
        448.938 FSPSX
@@ -6785,10 +6793,9 @@
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 2,882.67    Checking
+          $ 2,868.08    Checking
             $ 256.16      Covantage
-          $ 1,024.51      Park City
-          $ 1,602.00      RipCo
+          $ 2,611.92      Park City
           $ 4,166.73
        448.938 FSPSX
        692.237 FXAIX
@@ -6808,7 +6815,7 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-         $ 22,547.42    Savings:UFB
+         $ 16,616.27    Savings:UFB
        $ -385,825.10  Liabilities
            $ -322.52    Credit Card
            $ -318.42      Covantage
@@ -6817,7 +6824,7 @@
         $ -42,838.52      Condo:Mortgage
        $ -342,664.06      Cottage:Mortgage
 --------------------
-       $ -356,228.28
+       $ -362,174.02
            1.0 CONDO
            1.0 COTTA
        448.938 FSPSX
@@ -6834,11 +6841,10 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,083,042.84  Assets
-          $ 2,882.67    Checking
+      $ 1,077,097.10  Assets
+          $ 2,868.08    Checking
             $ 256.16      Covantage
-          $ 1,024.51      Park City
-          $ 1,602.00      RipCo
+          $ 2,611.92      Park City
         $ 357,612.75    Investments
         $ 128,149.92      401K
           $ 2,763.01      Brokerage
@@ -6848,7 +6854,7 @@
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
-         $ 22,547.42    Savings:UFB
+         $ 16,616.27    Savings:UFB
        $ -385,825.10  Liabilities
            $ -322.52    Credit Card
            $ -318.42      Covantage
@@ -6857,7 +6863,7 @@
         $ -42,838.52      Condo:Mortgage
        $ -342,664.06      Cottage:Mortgage
 --------------------
-        $ 697,217.74
+        $ 691,272.00
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6867,9 +6873,9 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 5,924.55  Expenses
-            $ 187.27    Food
-             $ 50.50      Drinks
+         $ 11,870.29  Expenses
+            $ 201.86    Food
+             $ 65.09      Drinks
              $ 17.85      Fast Food
              $ 10.89      Restaurants
             $ 108.03      Snacks
@@ -6883,9 +6889,9 @@
             $ 497.85    RE:Cottage
             $ 120.00      Cleaning
             $ 377.85      Utilities
-          $ 3,711.98    Taxes
-          $ 2,669.34      Federal
-            $ 497.04      Illinois
+          $ 9,643.13    Taxes
+          $ 8,669.34      Federal
+            $ 428.19      Illinois
             $ 103.41      Medicare
             $ 442.19      Social Security
              $ 98.82    Transportation
@@ -6894,7 +6900,7 @@
               $ 5.80      Public
              $ 24.84      Ride Share
 --------------------
-          $ 5,924.55
+         $ 11,870.29
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -6961,7 +6967,7 @@ December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
-April 2024           $ 2,212.57
+April 2024           $ 2,227.16
 May 2024             $ -383.75
 June 2024            $ -383.75
 July 2024            $ -383.75
