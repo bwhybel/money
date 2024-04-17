@@ -47,13 +47,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/12/2024 00:00:00 VTSAX $124.1300
-  P 04/12/2024 00:00:00 VTIAX $32.0900
-  P 04/12/2024 00:00:00 FSPSX $49.2100
-  P 04/12/2024 00:00:00 FXAIX $179.2100
-  P 04/12/2024 00:00:00 CONDO $250,000.00
-  P 04/12/2024 00:00:00 COTTA $450,000.00
-  P 04/12/2024 00:00:00 STRIP $26.00
+  P 04/17/2024 00:00:00 VTSAX $121.5900
+  P 04/17/2024 00:00:00 VTIAX $31.4600
+  P 04/17/2024 00:00:00 FSPSX $48.2300
+  P 04/17/2024 00:00:00 FXAIX $175.8000
+  P 04/17/2024 00:00:00 CONDO $250,000.00
+  P 04/17/2024 00:00:00 COTTA $450,000.00
+  P 04/17/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -6627,6 +6627,12 @@
       Expenses:Food:Snacks                      $ 9.82
       Liabilities:Credit Card:Covantage
 
+  2024-04-05 * Dividend
+      Assets:Investments:HSA                     0.325 FXAIX @ $ 180.69
+      Assets:Investments:401K                    1.793 FXAIX @ $ 180.69
+      Assets:Investments:401K                    1.652 FSPSX @ $ 48.37
+      Income:Extra
+
   2024-04-07 * Dollar Tree
       Expenses:Food:Snacks                      $ 4.13
       Liabilities:Credit Card:Covantage
@@ -6713,7 +6719,8 @@
       Assets:Checking:Covantage               $ 200.00
       Assets:Checking:Park City             $ 1,015.00
       Assets:Investments:Brokerage          $ 2,763.01
-      Assets:Investments:401K               $ 1,058.72
+      Assets:Investments:401K                    5.057 FXAIX @ $ 177.953332015
+      Assets:Investments:401K                    3.282 FSPSX @ $ 48.3881779403
       Income:Stripe:Paycheck               $ -3,529.04
       Income:Stripe:Paycheck               $ -3,529.04
       Income:Stripe:Wireless                  $ -50.00
@@ -6721,7 +6728,7 @@
       Expenses:Taxes:Social Security          $ 442.19
       Expenses:Taxes:Medicare                 $ 103.41
       Expenses:Taxes:Illinois                 $ 353.04
-      Assets:Investments:HSA                  $ 345.00
+      Assets:Investments:HSA                     1.962 FXAIX @ $ 175.8409785933
       Income:Stripe:HSA                      $ -100.00
       Income:Stripe:Wellness                 $ -381.63
 
@@ -6738,6 +6745,86 @@
   2024-04-12 * Tripoli Tap
       Expenses:Food:Drinks                     $ 14.59
       Assets:Checking:Park City
+
+  2024-04-12 * Target
+      Expenses:Personal:Electronics           $ 100.00
+      Assets:Checking:Covantage
+
+  2024-04-14 * Walgreens
+      Expenses:Food:Snacks                      $ 6.22
+      Liabilities:Credit Card:Covantage
+
+  2024-04-14 * 7/11
+      Expenses:Food:Snacks                      $ 1.02
+      Liabilities:Credit Card:Covantage
+
+  2024-04-14 * Subway
+      Expenses:Food:Fast Food                   $ 1.64
+      Liabilities:Credit Card:Covantage
+
+  2024-04-14 * ORCA
+      Expenses:Transportation:Public           $ 12.00
+      Liabilities:Credit Card:Covantage
+
+  2024-04-14 * ORD Hudson
+      Expenses:Food:Snacks                     $ 12.05
+      Liabilities:Credit Card:Covantage
+
+  2024-04-15 * Fisherman's Restaurant
+      Expenses:Food:Restaurants               $ 138.18
+      Liabilities:Credit Card:Covantage
+
+  2024-04-15 * Target
+      Expenses:Personal:Clothes                 $ 8.24
+      Liabilities:Credit Card:Covantage
+
+  2024-04-15 * Walgreens
+      Expenses:Food:Snacks                     $ 10.67
+      Liabilities:Credit Card:Covantage
+
+  2024-04-15 * Grocery
+      Expenses:Food:Snacks                      $ 6.33
+      Liabilities:Credit Card:Covantage
+
+  2024-04-15 * Lowells
+      Expenses:Food:Restaurants                $ 20.14
+      Liabilities:Credit Card:Covantage
+
+  2024-04-15 * TMobile Park
+      Expenses:Food:Restaurants                $ 55.08
+      Liabilities:Credit Card:Covantage
+
+  2024-04-15 * Subway
+      Expenses:Food:Fast Food                   $ 1.64
+      Liabilities:Credit Card:Covantage
+
+  2024-04-15 * Mariner's Game
+      Expenses:Personal:Entertainment          $ 55.20
+      Liabilities:Credit Card:Covantage
+
+  2024-04-15 * Divvy Bikes
+      Expenses:Transportation:Biking           $ 14.63
+      Liabilities:Credit Card:Covantage
+
+  2024-04-16 * TMobile Park
+      Expenses:Food:Restaurants                $ 15.64
+      Liabilities:Credit Card:Covantage
+
+  2024-04-16 * Grocery
+      Expenses:Food:Snacks                      $ 9.00
+      Liabilities:Credit Card:Covantage
+
+  2024-04-16 * Subway
+      Expenses:Food:Fast Food                   $ 1.64
+      Liabilities:Credit Card:Covantage
+
+  2024-04-16 * Subway
+      Expenses:Food:Fast Food                   $ 5.81
+      Liabilities:Credit Card:Covantage
+
+  2024-04-16 * Lowells
+      Expenses:Food:Restaurants                $ 22.88
+      Liabilities:Credit Card:Covantage
 
   2024-05-01 * Income
       Assets:Checking:Park City               $ 383.75
@@ -6785,29 +6872,27 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 23,651.08
+         $ 22,147.36
            1.0 CONDO
            1.0 COTTA
-       448.938 FSPSX
-       692.237 FXAIX
+       453.872 FSPSX
+       701.374 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 2,868.08    Checking
-            $ 256.16      Covantage
+          $ 2,768.08    Checking
+            $ 156.16      Covantage
           $ 2,611.92      Park City
-          $ 4,166.73
-       448.938 FSPSX
-       692.237 FXAIX
+          $ 2,763.01
+       453.872 FSPSX
+       701.374 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX    Investments
-          $ 1,058.72
-       448.938 FSPSX
-       585.899 FXAIX      401K
+       453.872 FSPSX
+       592.749 FXAIX      401K
           $ 2,763.01      Brokerage
-            $ 345.00
-       106.338 FXAIX      HSA
+       108.625 FXAIX      HSA
        596.199 VTIAX
        732.087 VTSAX      IRA
        3,742.0 STRIP      RSU
@@ -6816,19 +6901,19 @@
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
          $ 16,616.27    Savings:UFB
-       $ -385,825.10  Liabilities
-           $ -322.52    Credit Card
-           $ -318.42      Covantage
+       $ -386,223.11  Liabilities
+           $ -720.53    Credit Card
+           $ -716.43      Covantage
              $ -4.10      Northwoods
        $ -385,502.58    RE
         $ -42,838.52      Condo:Mortgage
        $ -342,664.06      Cottage:Mortgage
 --------------------
-       $ -362,174.02
+       $ -364,075.75
            1.0 CONDO
            1.0 COTTA
-       448.938 FSPSX
-       692.237 FXAIX
+       453.872 FSPSX
+       701.374 FXAIX
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX
@@ -6841,29 +6926,29 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,077,097.10  Assets
-          $ 2,868.08    Checking
-            $ 256.16      Covantage
+      $ 1,072,402.03  Assets
+          $ 2,768.08    Checking
+            $ 156.16      Covantage
           $ 2,611.92      Park City
-        $ 357,612.75    Investments
-        $ 128,149.92      401K
+        $ 353,017.68    Investments
+        $ 126,095.52      401K
           $ 2,763.01      Brokerage
-         $ 19,401.83      HSA
-        $ 110,005.99      IRA
+         $ 19,096.27      HSA
+        $ 107,770.88      IRA
          $ 97,292.00      RSU
         $ 700,000.00    RE
         $ 250,000.00      Condo
         $ 450,000.00      Cottage
          $ 16,616.27    Savings:UFB
-       $ -385,825.10  Liabilities
-           $ -322.52    Credit Card
-           $ -318.42      Covantage
+       $ -386,223.11  Liabilities
+           $ -720.53    Credit Card
+           $ -716.43      Covantage
              $ -4.10      Northwoods
        $ -385,502.58    RE
         $ -42,838.52      Condo:Mortgage
        $ -342,664.06      Cottage:Mortgage
 --------------------
-        $ 691,272.00
+        $ 686,178.92
 #+end_example
 ** Spending
 *** This Month Spending
@@ -6873,19 +6958,20 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 11,870.29  Expenses
-            $ 201.86    Food
+         $ 12,368.30  Expenses
+            $ 509.80    Food
              $ 65.09      Drinks
-             $ 17.85      Fast Food
-             $ 10.89      Restaurants
-            $ 108.03      Snacks
+             $ 28.58      Fast Food
+            $ 262.81      Restaurants
+            $ 153.32      Snacks
           $ 1,288.75    Housing
           $ 1,153.75      Rent
             $ 135.00      Utilities
-            $ 139.88    Personal
+            $ 303.32    Personal
+              $ 8.24      Clothes
              $ 30.00      Communication
-             $ 17.88      Electronics
-             $ 92.00      Entertainment
+            $ 117.88      Electronics
+            $ 147.20      Entertainment
             $ 497.85    RE:Cottage
             $ 120.00      Cleaning
             $ 377.85      Utilities
@@ -6894,13 +6980,13 @@
             $ 428.19      Illinois
             $ 103.41      Medicare
             $ 442.19      Social Security
-             $ 98.82    Transportation
-              $ 6.41      Biking
+            $ 125.45    Transportation
+             $ 21.04      Biking
              $ 61.77      Driving:Gas
-              $ 5.80      Public
+             $ 17.80      Public
              $ 24.84      Ride Share
 --------------------
-         $ 11,870.29
+         $ 12,368.30
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -6967,7 +7053,7 @@ December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
-April 2024           $ 2,227.16
+April 2024           $ 2,725.17
 May 2024             $ -383.75
 June 2024            $ -383.75
 July 2024            $ -383.75
