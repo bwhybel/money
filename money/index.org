@@ -47,13 +47,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/17/2024 00:00:00 VTSAX $121.3100
-  P 04/17/2024 00:00:00 VTIAX $31.1100
-  P 04/17/2024 00:00:00 FSPSX $47.7500
-  P 04/17/2024 00:00:00 FXAIX $175.4400
-  P 04/17/2024 00:00:00 CONDO $250,000.00
-  P 04/17/2024 00:00:00 COTTA $450,000.00
-  P 04/17/2024 00:00:00 STRIP $26.00
+  P 04/18/2024 00:00:00 VTSAX $121.3100
+  P 04/18/2024 00:00:00 VTIAX $31.1100
+  P 04/18/2024 00:00:00 FSPSX $47.6900
+  P 04/18/2024 00:00:00 FXAIX $175.4400
+  P 04/18/2024 00:00:00 CONDO $250,000.00
+  P 04/18/2024 00:00:00 COTTA $450,000.00
+  P 04/18/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -6874,6 +6874,14 @@
       Assets:Investments:IRA                $ 7,000.00
       Assets:Savings:UFB
 
+  2024-04-17 * McDonald's
+      Expenses:Food:Fast Food                   $ 9.05
+      Assets:Checking:Covantage
+
+  2024-04-17 * 7/11
+      Expenses:Food:Snacks                      $ 4.76
+      Assets:Checking:Covantage
+
   2024-05-01 * Income
       Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
@@ -6920,7 +6928,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 22,135.59
+         $ 22,121.78
            1.0 CONDO
            1.0 COTTA
        453.872 FSPSX
@@ -6928,8 +6936,8 @@
        3,742.0 STRIP
        596.199 VTIAX
        732.087 VTSAX  Assets
-          $ 2,737.48    Checking
-            $ 125.56      Covantage
+          $ 2,723.67    Checking
+            $ 111.75      Covantage
           $ 2,611.92      Park City
           $ 9,763.01
        453.872 FSPSX
@@ -6958,7 +6966,7 @@
         $ -42,838.52      Condo:Mortgage
        $ -342,664.06      Cottage:Mortgage
 --------------------
-       $ -364,230.40
+       $ -364,244.21
            1.0 CONDO
            1.0 COTTA
        453.872 FSPSX
@@ -6975,12 +6983,12 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,071,506.26  Assets
-          $ 2,737.48    Checking
-            $ 125.56      Covantage
+      $ 1,071,465.22  Assets
+          $ 2,723.67    Checking
+            $ 111.75      Covantage
           $ 2,611.92      Park City
-        $ 359,133.68    Investments
-        $ 125,664.27      401K
+        $ 359,106.45    Investments
+        $ 125,637.04      401K
           $ 2,763.01      Brokerage
          $ 19,057.17      HSA
         $ 114,357.22      IRA
@@ -6997,7 +7005,7 @@
         $ -42,838.52      Condo:Mortgage
        $ -342,664.06      Cottage:Mortgage
 --------------------
-        $ 685,140.27
+        $ 685,099.23
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7007,12 +7015,12 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 12,522.95  Expenses
-            $ 582.32    Food
+         $ 12,536.76  Expenses
+            $ 596.13    Food
              $ 65.09      Drinks
-             $ 47.58      Fast Food
+             $ 56.63      Fast Food
             $ 288.80      Restaurants
-            $ 180.85      Snacks
+            $ 185.61      Snacks
           $ 1,288.75    Housing
           $ 1,153.75      Rent
             $ 135.00      Utilities
@@ -7035,7 +7043,7 @@
              $ 17.80      Public
              $ 76.14      Ride Share
 --------------------
-         $ 12,522.95
+         $ 12,536.76
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -7102,7 +7110,7 @@ December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
-April 2024           $ 2,898.65
+April 2024           $ 2,912.46
 May 2024             $ -383.75
 June 2024            $ -383.75
 July 2024            $ -383.75
