@@ -47,13 +47,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/22/2024 00:00:00 VTSAX $119.3900
-  P 04/22/2024 00:00:00 VTIAX $31.0200
-  P 04/22/2024 00:00:00 FSPSX $47.5200
-  P 04/22/2024 00:00:00 FXAIX $172.5400
-  P 04/22/2024 00:00:00 CONDO $250,000.00
-  P 04/22/2024 00:00:00 COTTA $450,000.00
-  P 04/22/2024 00:00:00 STRIP $26.00
+  P 04/23/2024 00:00:00 VTSAX $119.3900
+  P 04/23/2024 00:00:00 VTIAX $31.0200
+  P 04/23/2024 00:00:00 FSPSX $47.5200
+  P 04/23/2024 00:00:00 FXAIX $172.5400
+  P 04/23/2024 00:00:00 CONDO $250,000.00
+  P 04/23/2024 00:00:00 COTTA $450,000.00
+  P 04/23/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -6981,20 +6981,44 @@
       Expenses:Food:Groceries                  $ 14.53
       Liabilities:Credit Card:Park City
 
+  2024-04-22 * Subway
+      Expenses:Food:Fast Food                   $ 0.94
+      Liabilities:Credit Card:Park City
+
   2024-04-22 * Family Dollar
       Liabilities:Credit Card:Park City       $ 403.93
       Assets:Checking:Park City
 
   2024-04-22 * Transfer
-      Assets:Checking:Covantage             $ 1,533.54
+      Assets:Checking:Covantage             $ 1,508.54
       Assets:Savings:UFB
+
+  2024-04-23 * Electronics
+      Expenses:Personal:Electronics            $ 19.61
+      Liabilities:Credit Card:Northwoods
+
+  2024-04-23 * IGA Gas
+      Expenses:Personal:Electronics             $ 3.56
+      Liabilities:Credit Card:Park City
+
+  2024-04-23 * Whiskey Nicks
+      Expenses:Food:Drinks                     $ 33.75
+      Liabilities:Credit Card:Park City
+
+  2024-04-23 * Family Dollar
+      Expenses:Food:Snacks                      $ 8.20
+      Liabilities:Credit Card:Park City
+
+  2024-04-23 * Rewards
+      Liabilities:Credit Card:Covantage        $ 25.00
+      Income:Extra
 
   2024-04-23 * GasBuddy
       Expenses:Transportation:Driving:Gas      $ 16.78
       Assets:Checking:Covantage
 
   2024-04-23 * Transfer
-      Liabilities:Credit Card:Northwoods      $ 425.49
+      Liabilities:Credit Card:Northwoods      $ 445.10
       Assets:Checking:Park City
 
   2024-04-23 * Transfer
@@ -7002,7 +7026,7 @@
       Assets:Checking:RipCo
 
   2024-04-23 * Transfer
-      Liabilities:Credit Card:Covantage     $ 2,099.00
+      Liabilities:Credit Card:Covantage     $ 2,074.00
       Assets:Checking:Covantage
 
   2024-04-23 * Real Estate Sale
@@ -7027,6 +7051,10 @@
       Expenses:RE:Condo:Sale                  $ 250.00  ;; Attorney
       Expenses:RE:Condo:Sale                   $ 50.00  ;; Title
       Assets:Savings:UFB                  $ 200,721.94
+
+  2024-04-23 * Transfer
+      Liabilities:Credit Card:Park City        $ 60.98
+      Assets:Checking:Park City
 
   2024-05-01 * Income
       Assets:Checking:Park City               $ 383.75
@@ -7074,14 +7102,14 @@
 #+end_src
 #+results:
 #+begin_example
-        $ 212,676.02
+        $ 212,620.43
            1.0 COTTA
        453.872 FSPSX
        701.374 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-          $ 1,089.51    Checking:Park City
+          $ 1,008.92    Checking:Park City
           $ 2,763.01
        453.872 FSPSX
        701.374 FXAIX
@@ -7096,12 +7124,10 @@
        793.319 VTSAX      IRA
        3,742.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-        $ 208,823.50    Savings:UFB
-       $ -342,678.59  Liabilities
-            $ -14.53    Credit Card:Park City
-       $ -342,664.06    RE:Cottage:Mortgage
+        $ 208,848.50    Savings:UFB
+       $ -342,664.06  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -130,002.57
+       $ -130,043.63
            1.0 COTTA
        453.872 FSPSX
        701.374 FXAIX
@@ -7117,8 +7143,8 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,015,827.22  Assets
-          $ 1,089.51    Checking:Park City
+      $ 1,015,771.63  Assets
+          $ 1,008.92    Checking:Park City
         $ 355,914.21    Investments
         $ 123,840.91      401K
           $ 2,763.01      Brokerage
@@ -7126,12 +7152,10 @@
         $ 113,276.13      IRA
          $ 97,292.00      RSU
         $ 450,000.00    RE:Cottage
-        $ 208,823.50    Savings:UFB
-       $ -342,678.59  Liabilities
-            $ -14.53    Credit Card:Park City
-       $ -342,664.06    RE:Cottage:Mortgage
+        $ 208,848.50    Savings:UFB
+       $ -342,664.06  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 673,148.63
+        $ 673,107.57
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7141,20 +7165,20 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 36,295.24  Expenses
-            $ 695.92    Food
-             $ 65.09      Drinks
-             $ 81.27      Fast Food
+         $ 36,361.30  Expenses
+            $ 738.81    Food
+             $ 98.84      Drinks
+             $ 82.21      Fast Food
              $ 35.37      Groceries
             $ 288.80      Restaurants
-            $ 225.39      Snacks
+            $ 233.59      Snacks
           $ 1,288.75    Housing
           $ 1,153.75      Rent
             $ 135.00      Utilities
-            $ 374.57    Personal
+            $ 397.74    Personal
              $ 57.90      Clothes
              $ 30.00      Communication
-            $ 117.88      Electronics
+            $ 141.05      Electronics
             $ 147.20      Entertainment
              $ 13.59      Health
               $ 8.00      Household
@@ -7180,7 +7204,7 @@
              $ 17.80      Public
              $ 76.14      Ride Share
 --------------------
-         $ 36,295.24
+         $ 36,361.30
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -7247,7 +7271,7 @@ December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
-April 2024           $ 26,670.94
+April 2024           $ 26,737.00
 May 2024             $ -383.75
 June 2024            $ -383.75
 July 2024            $ -383.75
