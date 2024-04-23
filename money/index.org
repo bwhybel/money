@@ -47,10 +47,10 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/22/2024 00:00:00 VTSAX $120.3000
-  P 04/22/2024 00:00:00 VTIAX $31.1200
-  P 04/22/2024 00:00:00 FSPSX $47.6400
-  P 04/22/2024 00:00:00 FXAIX $174.0500
+  P 04/22/2024 00:00:00 VTSAX $119.3900
+  P 04/22/2024 00:00:00 VTIAX $31.0200
+  P 04/22/2024 00:00:00 FSPSX $47.5200
+  P 04/22/2024 00:00:00 FXAIX $172.5400
   P 04/22/2024 00:00:00 CONDO $250,000.00
   P 04/22/2024 00:00:00 COTTA $450,000.00
   P 04/22/2024 00:00:00 STRIP $26.00
@@ -6956,6 +6956,55 @@
       Expenses:RE:Cottage:Repairs             $ 378.75
       Liabilities:Credit Card:Northwoods
 
+  2024-04-22 * UHaul
+      Expenses:RE:Cottage:Lakefront           $ 100.60
+      Liabilities:Credit Card:Covantage
+
+  2024-04-22 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 9.47
+      Liabilities:Credit Card:Covantage
+
+  2024-04-22 * Transfer
+      Liabilities:Credit Card:Covantage        $ 94.97
+      Assets:Checking:Covantage
+
+  2024-04-22 * Transfer
+      Assets:Checking:Park City              $ -114.31
+      Income:Extra                             $ -0.12
+      Assets:Checking:RipCo
+
+  2024-04-22 * Transfer
+      Assets:Checking:Covantage               $ 565.46
+      Assets:Checking:Park City
+
+  2024-04-22 * Family Dollar
+      Expenses:Food:Groceries                  $ 14.53
+      Liabilities:Credit Card:Park City
+
+  2024-04-22 * Family Dollar
+      Liabilities:Credit Card:Park City       $ 403.93
+      Assets:Checking:Park City
+
+  2024-04-22 * Transfer
+      Assets:Checking:Covantage             $ 1,533.54
+      Assets:Savings:UFB
+
+  2024-04-23 * GasBuddy
+      Expenses:Transportation:Driving:Gas      $ 16.78
+      Assets:Checking:Covantage
+
+  2024-04-23 * Transfer
+      Liabilities:Credit Card:Northwoods      $ 425.49
+      Assets:Checking:Park City
+
+  2024-04-23 * Transfer
+      Liabilities:Credit Card:RipCo           $ 114.43
+      Assets:Checking:RipCo
+
+  2024-04-23 * Transfer
+      Liabilities:Credit Card:Covantage     $ 2,099.00
+      Assets:Checking:Covantage
+
   2024-04-23 * Real Estate Sale
       Assets:RE:Condo                             -1.0 CONDO @ $ 265,000.00
       Expenses:RE:Condo:Taxes               $ 1,483.56
@@ -7025,16 +7074,14 @@
 #+end_src
 #+results:
 #+begin_example
-        $ 215,830.50
+        $ 212,676.02
            1.0 COTTA
        453.872 FSPSX
        701.374 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-          $ 2,710.45    Checking
-            $ 111.75      Covantage
-          $ 2,598.70      Park City
+          $ 1,089.51    Checking:Park City
           $ 2,763.01
        453.872 FSPSX
        701.374 FXAIX
@@ -7049,16 +7096,12 @@
        793.319 VTSAX      IRA
        3,742.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-        $ 210,357.04    Savings:UFB
-       $ -345,691.81  Liabilities
-         $ -3,027.75    Credit Card
-         $ -2,083.90      Covantage
-           $ -425.49      Northwoods
-           $ -403.93      Park City
-           $ -114.43      RipCo
+        $ 208,823.50    Savings:UFB
+       $ -342,678.59  Liabilities
+            $ -14.53    Credit Card:Park City
        $ -342,664.06    RE:Cottage:Mortgage
 --------------------
-       $ -129,861.31
+       $ -130,002.57
            1.0 COTTA
        453.872 FSPSX
        701.374 FXAIX
@@ -7074,27 +7117,21 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,020,877.00  Assets
-          $ 2,710.45    Checking
-            $ 111.75      Covantage
-          $ 2,598.70      Park City
-        $ 357,809.51    Investments
-        $ 124,790.43      401K
+      $ 1,015,827.22  Assets
+          $ 1,089.51    Checking:Park City
+        $ 355,914.21    Investments
+        $ 123,840.91      401K
           $ 2,763.01      Brokerage
-         $ 18,906.18      HSA
-        $ 114,057.89      IRA
+         $ 18,742.16      HSA
+        $ 113,276.13      IRA
          $ 97,292.00      RSU
         $ 450,000.00    RE:Cottage
-        $ 210,357.04    Savings:UFB
-       $ -345,691.81  Liabilities
-         $ -3,027.75    Credit Card
-         $ -2,083.90      Covantage
-           $ -425.49      Northwoods
-           $ -403.93      Park City
-           $ -114.43      RipCo
+        $ 208,823.50    Savings:UFB
+       $ -342,678.59  Liabilities
+            $ -14.53    Credit Card:Park City
        $ -342,664.06    RE:Cottage:Mortgage
 --------------------
-        $ 675,185.19
+        $ 673,148.63
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7104,11 +7141,11 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 36,153.86  Expenses
-            $ 681.39    Food
+         $ 36,295.24  Expenses
+            $ 695.92    Food
              $ 65.09      Drinks
              $ 81.27      Fast Food
-             $ 20.84      Groceries
+             $ 35.37      Groceries
             $ 288.80      Restaurants
             $ 225.39      Snacks
           $ 1,288.75    Housing
@@ -7121,15 +7158,15 @@
             $ 147.20      Entertainment
              $ 13.59      Health
               $ 8.00      Household
-         $ 23,971.23    RE
+         $ 24,071.83    RE
          $ 21,439.54      Condo
            $ -116.39        HOA
             $ 223.83        Interest
          $ 15,828.00        Sale
           $ 5,504.10        Taxes
-          $ 2,531.69      Cottage
+          $ 2,632.29      Cottage
             $ 120.00        Cleaning
-          $ 1,626.64        Lakefront
+          $ 1,727.24        Lakefront
             $ 407.20        Repairs
             $ 377.85        Utilities
           $ 9,624.30    Taxes
@@ -7137,13 +7174,13 @@
             $ 409.36      Illinois
             $ 103.41      Medicare
             $ 442.19      Social Security
-            $ 213.62    Transportation
-             $ 21.04      Biking
-             $ 98.64      Driving:Gas
+            $ 239.87    Transportation
+             $ 30.51      Biking
+            $ 115.42      Driving:Gas
              $ 17.80      Public
              $ 76.14      Ride Share
 --------------------
-         $ 36,153.86
+         $ 36,295.24
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -7210,7 +7247,7 @@ December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
-April 2024           $ 26,529.56
+April 2024           $ 26,670.94
 May 2024             $ -383.75
 June 2024            $ -383.75
 July 2024            $ -383.75
