@@ -7053,7 +7053,7 @@
       Assets:Savings:UFB                  $ 200,721.94
 
   2024-04-23 * Transfer
-      Liabilities:Credit Card:Park City        $ 60.98
+      Liabilities:Credit Card:Park City        $ 54.90
       Assets:Checking:Park City
 
   2024-05-01 * Income
@@ -7102,14 +7102,14 @@
 #+end_src
 #+results:
 #+begin_example
-        $ 212,620.43
+        $ 212,626.51
            1.0 COTTA
        453.872 FSPSX
        701.374 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-          $ 1,008.92    Checking:Park City
+          $ 1,015.00    Checking:Park City
           $ 2,763.01
        453.872 FSPSX
        701.374 FXAIX
@@ -7125,7 +7125,9 @@
        3,742.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
         $ 208,848.50    Savings:UFB
-       $ -342,664.06  Liabilities:RE:Cottage:Mortgage
+       $ -342,670.14  Liabilities
+             $ -6.08    Credit Card:Park City
+       $ -342,664.06    RE:Cottage:Mortgage
 --------------------
        $ -130,043.63
            1.0 COTTA
@@ -7143,8 +7145,8 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,015,771.63  Assets
-          $ 1,008.92    Checking:Park City
+      $ 1,015,777.71  Assets
+          $ 1,015.00    Checking:Park City
         $ 355,914.21    Investments
         $ 123,840.91      401K
           $ 2,763.01      Brokerage
@@ -7153,7 +7155,9 @@
          $ 97,292.00      RSU
         $ 450,000.00    RE:Cottage
         $ 208,848.50    Savings:UFB
-       $ -342,664.06  Liabilities:RE:Cottage:Mortgage
+       $ -342,670.14  Liabilities
+             $ -6.08    Credit Card:Park City
+       $ -342,664.06    RE:Cottage:Mortgage
 --------------------
         $ 673,107.57
 #+end_example
