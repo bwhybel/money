@@ -47,13 +47,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/24/2024 00:00:00 VTSAX $120.4500
-  P 04/24/2024 00:00:00 VTIAX $31.3900
-  P 04/24/2024 00:00:00 FSPSX $48.1400
-  P 04/24/2024 00:00:00 FXAIX $174.0400
-  P 04/24/2024 00:00:00 CONDO $250,000.00
-  P 04/24/2024 00:00:00 COTTA $450,000.00
-  P 04/24/2024 00:00:00 STRIP $26.00
+  P 04/26/2024 00:00:00 VTSAX $121.9700
+  P 04/26/2024 00:00:00 VTIAX $31.7000
+  P 04/26/2024 00:00:00 FSPSX $48.6700
+  P 04/26/2024 00:00:00 FXAIX $176.1700
+  P 04/26/2024 00:00:00 CONDO $250,000.00
+  P 04/26/2024 00:00:00 COTTA $450,000.00
+  P 04/26/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -7064,6 +7064,34 @@
       Assets:Checking:Covantage                $ 91.20
       Expenses:RE:Condo:Sale
 
+  2024-04-25 * Best Buy
+      Expenses:Personal:Electronics            $ 98.12
+      Liabilities:Credit Card:Park City
+
+  2024-04-25 * CVS
+      Expenses:Food:Snacks                      $ 3.18
+      Liabilities:Credit Card:Park City
+
+  2024-04-26 * Walgreens
+      Expenses:Food:Snacks                      $ 6.61
+      Liabilities:Credit Card:Park City
+
+  2024-04-25 * 7/11
+      Expenses:Food:Snacks                      $ 1.73
+      Expenses:Food:Snacks                      $ 4.63
+      Liabilities:Credit Card:Park City
+
+  2024-04-26 * Stripe
+      Income:Stripe:Paycheck               $ -7,058.08
+      Expenses:Taxes:Federal                $ 1,291.57
+      Expenses:Taxes:Social Security          $ 437.60
+      Expenses:Taxes:Medicare                 $ 102.34
+      Expenses:Taxes:Illinois                 $ 349.37
+      Assets:Checking:Covantage               $ 200.00
+      Assets:Checking:Park City             $ 1,015.00
+      Assets:Investments:Brokerage          $ 2,603.48
+      Assets:Investments:401K               $ 1,058.72
+
   2024-05-01 * Income
       Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
@@ -7079,6 +7107,23 @@
   2024-07-01 * Income
       Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
+
+  2024-04-26 * 7/11
+      Expenses:Food:Snacks                      $ 8.21
+      Liabilities:Credit Card:Park City
+
+  2024-04-26 * Divison on the Rocks
+      Expenses:Food:Drinks                     $ 25.20
+      Expenses:Food:Drinks                     $ 12.36
+      Liabilities:Credit Card:Park City
+
+  2024-04-26 * Amazon
+      Expenses:Personal:Household              $ 11.90
+      Liabilities:Credit Card:Park City
+
+  2024-04-26 * Transfer
+      Liabilities:Credit Card:Park City       $ 186.74
+      Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -7110,36 +7155,35 @@
 #+end_src
 #+results:
 #+begin_example
-        $ 212,717.71
+        $ 217,408.17
            1.0 COTTA
        453.872 FSPSX
        701.374 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-          $ 1,106.20    Checking
-             $ 91.20      Covantage
-          $ 1,015.00      Park City
-          $ 2,763.01
+          $ 2,134.46    Checking
+            $ 104.46      Covantage
+          $ 2,030.00      Park City
+          $ 6,425.21
        453.872 FSPSX
        701.374 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
        793.319 VTSAX    Investments
+          $ 1,058.72
        453.872 FSPSX
        592.749 FXAIX      401K
-          $ 2,763.01      Brokerage
+          $ 5,366.49      Brokerage
        108.625 FXAIX      HSA
        598.381 VTIAX
        793.319 VTSAX      IRA
        3,742.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
         $ 208,848.50    Savings:UFB
-       $ -342,678.86  Liabilities
-            $ -14.80    Credit Card:Park City
-       $ -342,664.06    RE:Cottage:Mortgage
+       $ -342,664.06  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -129,961.15
+       $ -125,255.89
            1.0 COTTA
        453.872 FSPSX
        701.374 FXAIX
@@ -7155,23 +7199,21 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,018,264.69  Assets
-          $ 1,106.20    Checking
-             $ 91.20      Covantage
-          $ 1,015.00      Park City
-        $ 358,309.99    Investments
-        $ 125,011.43      401K
-          $ 2,763.01      Brokerage
-         $ 18,905.10      HSA
-        $ 114,338.45      IRA
+      $ 1,026,080.97  Assets
+          $ 2,134.46    Checking
+            $ 104.46      Covantage
+          $ 2,030.00      Park City
+        $ 365,098.01    Investments
+        $ 127,573.26      401K
+          $ 5,366.49      Brokerage
+         $ 19,136.47      HSA
+        $ 115,729.80      IRA
          $ 97,292.00      RSU
         $ 450,000.00    RE:Cottage
         $ 208,848.50    Savings:UFB
-       $ -342,678.86  Liabilities
-            $ -14.80    Credit Card:Park City
-       $ -342,664.06    RE:Cottage:Mortgage
+       $ -342,664.06  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 675,585.83
+        $ 683,416.91
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7181,23 +7223,23 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 36,278.82  Expenses
-            $ 747.53    Food
-             $ 98.84      Drinks
+         $ 38,631.64  Expenses
+            $ 809.45    Food
+            $ 136.40      Drinks
              $ 82.21      Fast Food
              $ 35.37      Groceries
             $ 288.80      Restaurants
-            $ 242.31      Snacks
+            $ 266.67      Snacks
           $ 1,288.75    Housing
           $ 1,153.75      Rent
             $ 135.00      Utilities
-            $ 397.74    Personal
+            $ 507.76    Personal
              $ 57.90      Clothes
              $ 30.00      Communication
-            $ 141.05      Electronics
+            $ 239.17      Electronics
             $ 147.20      Entertainment
              $ 13.59      Health
-              $ 8.00      Household
+             $ 19.90      Household
          $ 23,980.63    RE
          $ 21,348.34      Condo
            $ -116.39        HOA
@@ -7209,18 +7251,18 @@
           $ 1,727.24        Lakefront
             $ 407.20        Repairs
             $ 377.85        Utilities
-          $ 9,624.30    Taxes
-          $ 8,669.34      Federal
-            $ 409.36      Illinois
-            $ 103.41      Medicare
-            $ 442.19      Social Security
+         $ 11,805.18    Taxes
+          $ 9,960.91      Federal
+            $ 758.73      Illinois
+            $ 205.75      Medicare
+            $ 879.79      Social Security
             $ 239.87    Transportation
              $ 30.51      Biking
             $ 115.42      Driving:Gas
              $ 17.80      Public
              $ 76.14      Ride Share
 --------------------
-         $ 36,278.82
+         $ 38,631.64
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -7287,7 +7329,7 @@ December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
-April 2024           $ 26,654.52
+April 2024           $ 26,826.46
 May 2024             $ -383.75
 June 2024            $ -383.75
 July 2024            $ -383.75
