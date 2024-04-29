@@ -47,13 +47,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/26/2024 00:00:00 VTSAX $121.9700
-  P 04/26/2024 00:00:00 VTIAX $31.7000
-  P 04/26/2024 00:00:00 FSPSX $48.6700
-  P 04/26/2024 00:00:00 FXAIX $176.1700
-  P 04/26/2024 00:00:00 CONDO $250,000.00
-  P 04/26/2024 00:00:00 COTTA $450,000.00
-  P 04/26/2024 00:00:00 STRIP $26.00
+  P 04/29/2024 00:00:00 VTSAX $121.4000
+  P 04/29/2024 00:00:00 VTIAX $31.6100
+  P 04/29/2024 00:00:00 FSPSX $48.3900
+  P 04/29/2024 00:00:00 FXAIX $175.3600
+  P 04/29/2024 00:00:00 CONDO $250,000.00
+  P 04/29/2024 00:00:00 COTTA $450,000.00
+  P 04/29/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -5579,7 +5579,7 @@
       Liabilities:Credit Card:Northwoods
 
   2024-02-04 * Hoka's
-      Expenses:Personal:Gifts                 $ 100.00
+      Expenses:Gifts                          $ 100.00
       Liabilities:Credit Card:Northwoods
 
   2024-02-05 * Divvy Bikes
@@ -7022,7 +7022,7 @@
       Assets:Checking:Covantage
 
   2024-04-23 * Transfer
-      Liabilities:Credit Card:Northwoods      $ 445.10
+      Liabilities:Credit Card:Northwoods      $ 425.49
       Assets:Checking:Park City
 
   2024-04-23 * Transfer
@@ -7072,13 +7072,13 @@
       Expenses:Food:Snacks                      $ 3.18
       Liabilities:Credit Card:Park City
 
-  2024-04-26 * Walgreens
-      Expenses:Food:Snacks                      $ 6.61
-      Liabilities:Credit Card:Park City
-
   2024-04-25 * 7/11
       Expenses:Food:Snacks                      $ 1.73
       Expenses:Food:Snacks                      $ 4.63
+      Liabilities:Credit Card:Park City
+
+  2024-04-26 * Walgreens
+      Expenses:Food:Snacks                      $ 6.61
       Liabilities:Credit Card:Park City
 
   2024-04-26 * Stripe
@@ -7090,15 +7090,128 @@
       Assets:Checking:Covantage               $ 200.00
       Assets:Checking:Park City             $ 1,015.00
       Assets:Investments:Brokerage          $ 2,603.48
-      Assets:Investments:401K               $ 1,058.72
+      Assets:Investments:401K                    3.262 FSPSX @ $ 48.6848559166
+      Assets:Investments:401K                     5.08 FXAIX @ $ 177.1476377953
+
+  2024-04-26 * 7/11
+      Expenses:Food:Snacks                      $ 8.21
+      Liabilities:Credit Card:Park City
+
+  2024-04-26 * 7/11
+      Expenses:Food:Snacks                      $ 5.64
+      Liabilities:Credit Card:Park City
+
+  2024-04-26 * Dunking
+      Expenses:Food:Fast Food                   $ 1.89
+      Liabilities:Credit Card:Park City
+
+  2024-04-26 * Divison on the Rocks
+      Expenses:Food:Drinks                     $ 25.20
+      Expenses:Food:Drinks                     $ 12.36
+      Liabilities:Credit Card:Park City
+
+  2024-04-28 * Transfer
+      Liabilities:Credit Card:Park City       $ 182.37
+      Assets:Checking:Covantage
+
+  2024-04-28 * Jewel
+      Expenses:Food:Groceries                  $ 28.35
+      Assets:Checking:Covantage
+
+  2024-04-28 * 7/11
+      Expenses:Food:Snacks                      $ 2.24
+      Liabilities:Credit Card:Covantage
+
+  2024-04-28 * Dunkin
+      Expenses:Food:Fast Food                   $ 2.09
+      Liabilities:Credit Card:Covantage
+
+  2024-04-28 * Subway
+      Expenses:Food:Fast Food                   $ 0.88
+      Liabilities:Credit Card:Covantage
+
+  2024-04-28 * Village Cycle Center
+      Expenses:Personal:Health              $ 1,874.24
+      Liabilities:Credit Card:Covantage
+
+  2024-04-28 * Village Cycle Center
+      Expenses:Personal:Health                $ 153.23
+      Liabilities:Credit Card:Covantage
+
+  2024-04-28 * Village Cycle Center
+      Expenses:Personal:Health                $ 144.38
+      Liabilities:Credit Card:Northwoods
+
+  2024-04-28 * Village Cycle Center
+      Expenses:Gifts                          $ 121.26
+      Liabilities:Credit Card:Northwoods
+
+  2024-04-28 * Dunkin
+      Expenses:Personal:Fast Food               $ 4.53
+      Liabilities:Credit Card:Northwoods
+
+  2024-04-28 * Popeyes
+      Expenses:Personal:Fast Food               $ 6.91
+      Liabilities:Credit Card:Northwoods
+
+  2024-04-28 * Walgreens
+      Expenses:Personal:Snacks                  $ 4.58
+      Liabilities:Credit Card:Northwoods
+
+  2024-04-28 * 7/11
+      Expenses:Personal:Snacks                  $ 7.85
+      Liabilities:Credit Card:Northwoods
+
+  2024-04-28 * Target
+      Expenses:Personal:Snacks                 $ 17.13
+      Liabilities:Credit Card:Northwoods
+
+  2024-04-28 * Target
+      Expenses:Personal:Household              $ 18.38
+      Liabilities:Credit Card:RipCo
+
+  2024-04-28 * Purchase
+      Assets:Investments:Brokerage              43.776 VTSAX @ $ 122.5897752193
+      Assets:Investments:Brokerage
 
   2024-05-01 * Income
       Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
 
-  2024-05-01 ! Rent
-      Expenses:Housing:Rent                 $ 1,445.50
+  2024-05-01 * Rent
+      Expenses:Housing:Rent                 $ 1,378.50
       Assets:Checking:Park City
+
+  2024-05-01 * Comed
+      Expenses:Housing:Utilities               $ 52.00
+      Assets:Checking:Park City
+
+  2024-05-01 * Peoples Gas Delivery
+      Expenses:Housing:Utilities               $ 80.00
+      Assets:Checking:Park City
+
+  2024-05-01 * Xfinity
+      Expenses:Housing:Utilities               $ 70.00
+      Assets:Checking:Park City
+
+  2024-05-01 * Spectrum
+      Expenses:RE:Cottage:Utilities            $ 71.99
+      Assets:Checking:Park City
+
+  2024-05-01 * Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 179.00
+      Assets:Checking:Park City
+
+  2024-05-01 * Chase
+      Liabilities:RE:Cottage:Mortgage         $ 641.82
+      Expenses:RE:Cottage:Interest            $ 999.44
+      Expenses:RE:Cottage:Escrow              $ 615.17
+      Assets:Savings:UFB                   $ -2,256.43
+
+  2024-05-01 * Transfer
+      Liabilities:Credit Card:Covantage     $ 2,032.68
+      Liabilities:Credit Card:RipCo            $ 18.38
+      Assets:Savings:UFB
 
   2024-06-01 * Income
       Assets:Checking:Park City               $ 383.75
@@ -7107,23 +7220,6 @@
   2024-07-01 * Income
       Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
-
-  2024-04-26 * 7/11
-      Expenses:Food:Snacks                      $ 8.21
-      Liabilities:Credit Card:Park City
-
-  2024-04-26 * Divison on the Rocks
-      Expenses:Food:Drinks                     $ 25.20
-      Expenses:Food:Drinks                     $ 12.36
-      Liabilities:Credit Card:Park City
-
-  2024-04-26 * Amazon
-      Expenses:Personal:Household              $ 11.90
-      Liabilities:Credit Card:Park City
-
-  2024-04-26 * Transfer
-      Liabilities:Credit Card:Park City       $ 186.74
-      Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -7155,41 +7251,41 @@
 #+end_src
 #+results:
 #+begin_example
-        $ 217,408.17
+        $ 204,839.61
            1.0 COTTA
-       453.872 FSPSX
-       701.374 FXAIX
+       457.134 FSPSX
+       706.454 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
-       793.319 VTSAX  Assets
-          $ 2,134.46    Checking
-            $ 104.46      Covantage
-          $ 2,030.00      Park City
-          $ 6,425.21
-       453.872 FSPSX
-       701.374 FXAIX
+       837.095 VTSAX  Assets
+            $ 298.60    Checking
+             $ 80.48      Covantage
+            $ 218.12      Park City
+       457.134 FSPSX
+       706.454 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
-       793.319 VTSAX    Investments
-          $ 1,058.72
-       453.872 FSPSX
-       592.749 FXAIX      401K
-          $ 5,366.49      Brokerage
+       837.095 VTSAX    Investments
+       457.134 FSPSX
+       597.829 FXAIX      401K
+        43.776 VTSAX      Brokerage
        108.625 FXAIX      HSA
        598.381 VTIAX
        793.319 VTSAX      IRA
        3,742.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-        $ 208,848.50    Savings:UFB
-       $ -342,664.06  Liabilities:RE:Cottage:Mortgage
+        $ 204,541.01    Savings:UFB
+       $ -342,348.49  Liabilities
+           $ -326.25    Credit Card:Northwoods
+       $ -342,022.24    RE:Cottage:Mortgage
 --------------------
-       $ -125,255.89
+       $ -137,508.88
            1.0 COTTA
-       453.872 FSPSX
-       701.374 FXAIX
+       457.134 FSPSX
+       706.454 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
-       793.319 VTSAX
+       837.095 VTSAX
 #+end_example
 *** Value
 #+begin_src ledger :noweb yes :cmdline bal ^Assets ^Liabilities --cleared --market :exports results
@@ -7199,21 +7295,23 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,026,080.97  Assets
-          $ 2,134.46    Checking
-            $ 104.46      Covantage
-          $ 2,030.00      Park City
-        $ 365,098.01    Investments
-        $ 127,573.26      401K
-          $ 5,366.49      Brokerage
-         $ 19,136.47      HSA
-        $ 115,729.80      IRA
+      $ 1,018,674.25  Assets
+            $ 298.60    Checking
+             $ 80.48      Covantage
+            $ 218.12      Park City
+        $ 363,834.64    Investments
+        $ 126,956.01      401K
+          $ 5,314.41      Brokerage
+         $ 19,048.48      HSA
+        $ 115,223.75      IRA
          $ 97,292.00      RSU
         $ 450,000.00    RE:Cottage
-        $ 208,848.50    Savings:UFB
-       $ -342,664.06  Liabilities:RE:Cottage:Mortgage
+        $ 204,541.01    Savings:UFB
+       $ -342,348.49  Liabilities
+           $ -326.25    Credit Card:Northwoods
+       $ -342,022.24    RE:Cottage:Mortgage
 --------------------
-        $ 683,416.91
+        $ 676,325.76
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7223,23 +7321,26 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 38,631.64  Expenses
-            $ 809.45    Food
+         $ 41,013.32  Expenses
+            $ 850.54    Food
             $ 136.40      Drinks
-             $ 82.21      Fast Food
-             $ 35.37      Groceries
+             $ 87.07      Fast Food
+             $ 63.72      Groceries
             $ 288.80      Restaurants
-            $ 266.67      Snacks
+            $ 274.55      Snacks
+            $ 121.26    Gifts
           $ 1,288.75    Housing
           $ 1,153.75      Rent
             $ 135.00      Utilities
-            $ 507.76    Personal
+          $ 2,727.09    Personal
              $ 57.90      Clothes
              $ 30.00      Communication
             $ 239.17      Electronics
             $ 147.20      Entertainment
-             $ 13.59      Health
-             $ 19.90      Household
+             $ 11.44      Fast Food
+          $ 2,185.44      Health
+             $ 26.38      Household
+             $ 29.56      Snacks
          $ 23,980.63    RE
          $ 21,348.34      Condo
            $ -116.39        HOA
@@ -7262,7 +7363,7 @@
              $ 17.80      Public
              $ 76.14      Ride Share
 --------------------
-         $ 38,631.64
+         $ 41,013.32
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -7329,8 +7430,8 @@ December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
-April 2024           $ 26,826.46
-May 2024             $ -383.75
+April 2024           $ 29,208.14
+May 2024             $ 3,062.35
 June 2024            $ -383.75
 July 2024            $ -383.75
 #+end_example
