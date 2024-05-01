@@ -47,10 +47,10 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 04/30/2024 00:00:00 VTSAX $122.5900
-  P 04/30/2024 00:00:00 VTIAX $31.8300
-  P 04/30/2024 00:00:00 FSPSX $48.6900
-  P 04/30/2024 00:00:00 FXAIX $177.1600
+  P 04/30/2024 00:00:00 VTSAX $123.0100
+  P 04/30/2024 00:00:00 VTIAX $32.0400
+  P 04/30/2024 00:00:00 FSPSX $48.9300
+  P 04/30/2024 00:00:00 FXAIX $177.7300
   P 04/30/2024 00:00:00 CONDO $250,000.00
   P 04/30/2024 00:00:00 COTTA $450,000.00
   P 04/30/2024 00:00:00 STRIP $26.00
@@ -7227,6 +7227,14 @@
       Expenses:Personal:Hygeine                $ 54.00
       Liabilities:Credit Card:Northwoods
 
+  2024-04-30 * 7/11
+      Expenses:Food:Snacks                      $ 5.95
+      Liabilities:Credit Card:Northwoods
+
+  2024-04-30 * Taco Bell
+      Expenses:Food:Fast Food                  $ 11.65
+      Liabilities:Credit Card:Northwoods
+
   2024-05-01 * Income
       Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
@@ -7325,11 +7333,11 @@
        3,742.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
         $ 204,541.01    Savings:UFB
-       $ -342,582.57  Liabilities
-           $ -560.33    Credit Card:Northwoods
+       $ -342,600.17  Liabilities
+           $ -577.93    Credit Card:Northwoods
        $ -342,022.24    RE:Cottage:Mortgage
 --------------------
-       $ -138,041.56
+       $ -138,059.16
            1.0 COTTA
        457.134 FSPSX
        706.454 FXAIX
@@ -7345,20 +7353,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,020,912.20  Assets
-        $ 366,371.19    Investments
-        $ 128,169.24      401K
-          $ 5,366.50      Brokerage
-         $ 19,244.00      HSA
-        $ 116,299.44      IRA
+      $ 1,021,901.83  Assets
+        $ 367,360.82    Investments
+        $ 128,619.71      401K
+          $ 5,384.89      Brokerage
+         $ 19,305.92      HSA
+        $ 116,758.30      IRA
          $ 97,292.00      RSU
         $ 450,000.00    RE:Cottage
         $ 204,541.01    Savings:UFB
-       $ -342,582.57  Liabilities
-           $ -560.33    Credit Card:Northwoods
+       $ -342,600.17  Liabilities
+           $ -577.93    Credit Card:Northwoods
        $ -342,022.24    RE:Cottage:Mortgage
 --------------------
-        $ 678,329.63
+        $ 679,301.66
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7368,13 +7376,13 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 41,546.00  Expenses
-            $ 888.88    Food
+         $ 41,563.60  Expenses
+            $ 906.48    Food
             $ 156.40      Drinks
-             $ 87.95      Fast Food
+             $ 99.60      Fast Food
              $ 63.72      Groceries
             $ 288.80      Restaurants
-            $ 292.01      Snacks
+            $ 297.96      Snacks
             $ 121.26    Gifts
           $ 1,288.75    Housing
           $ 1,153.75      Rent
@@ -7413,7 +7421,7 @@
              $ 17.80      Public
              $ 76.14      Ride Share
 --------------------
-         $ 41,546.00
+         $ 41,563.60
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -7480,7 +7488,7 @@ December 2023        $ 7,470.83
 January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
-April 2024           $ 29,740.82
+April 2024           $ 29,758.42
 May 2024             $ 3,062.35
 June 2024            $ -383.75
 July 2024            $ -383.75
