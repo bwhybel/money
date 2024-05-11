@@ -7488,6 +7488,30 @@
       Expenses:RE:Cottage:Escrow              $ 615.17
       Assets:Savings:UFB
 
+  2024-05-11 * Transfer
+      Assets:Checking:RipCo                   $ 199.17
+      Assets:Checking:Covantage
+
+  2024-05-11 * Speedway
+      Expenses:Food:Snacks                      $ 2.19
+      Liabilities:Credit Card:Covantage
+
+  2024-05-11 * Walgreens
+      Expenses:Food:Snacks                      $ 8.69
+      Liabilities:Credit Card:Covantage
+
+  2024-05-11 * Jewel
+      Expenses:Food:Snacks                     $ 13.51
+      Liabilities:Credit Card:Covantage
+
+  2024-05-11 * Transfer
+      Liabilities:Credit Card:Covantage        $ 24.39
+      Assets:Checking:Covantage
+
+  2024-05-11 * Transfer
+      Liabilities:Credit Card:Northwoods        $ 7.42
+      Assets:Checking:Covantage
+
   2024-06-01 * Income
       Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
@@ -7526,17 +7550,17 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 31,792.68
+         $ 31,760.87
            1.0 COTTA
        460.293 FSPSX
        711.412 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 31,447.68    Checking
-            $ 631.85      Covantage
+         $ 31,415.87    Checking
+            $ 400.87      Covantage
           $ 1,015.00      Park City
-         $ 29,800.83      RipCo
+         $ 30,000.00      RipCo
             $ 345.00
        460.293 FSPSX
        711.412 FXAIX
@@ -7551,11 +7575,9 @@
        793.319 VTSAX      IRA
        3,742.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-       $ -163,569.48  Liabilities
-             $ -7.42    Credit Card:Northwoods
-       $ -163,562.06    RE:Cottage:Mortgage
+       $ -163,562.06  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -131,776.80
+       $ -131,801.19
            1.0 COTTA
        460.293 FSPSX
        711.412 FXAIX
@@ -7571,22 +7593,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 850,179.75  Assets
-         $ 31,447.68    Checking
-            $ 631.85      Covantage
+        $ 850,147.94  Assets
+         $ 31,415.87    Checking
+            $ 400.87      Covantage
           $ 1,015.00      Park City
-         $ 29,800.83      RipCo
+         $ 30,000.00      RipCo
         $ 368,732.07    Investments
         $ 132,299.49      401K
          $ 20,027.85      HSA
         $ 119,112.73      IRA
          $ 97,292.00      RSU
         $ 450,000.00    RE:Cottage
-       $ -163,569.48  Liabilities
-             $ -7.42    Credit Card:Northwoods
-       $ -163,562.06    RE:Cottage:Mortgage
+       $ -163,562.06  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 686,610.27
+        $ 686,585.88
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7596,13 +7616,13 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 8,654.54  Expenses
-            $ 218.45    Food
+          $ 8,678.93  Expenses
+            $ 242.84    Food
              $ 34.40      Drinks
              $ 13.39      Fast Food
              $ 27.64      Groceries
              $ 50.00      Restaurants
-             $ 93.02      Snacks
+            $ 117.41      Snacks
           $ 1,196.75    Housing
             $ 994.75      Rent
             $ 202.00      Utilities
@@ -7631,7 +7651,7 @@
             $ 132.52      Driving:Gas
             $ 478.77      Insurance
 --------------------
-          $ 8,654.54
+          $ 8,678.93
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -7707,7 +7727,7 @@ January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
-May 2024             $ 6,507.31
+May 2024             $ 6,531.70
 June 2024            $ -383.75
 July 2024            $ -383.75
 #+end_example
