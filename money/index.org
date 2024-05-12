@@ -7536,6 +7536,10 @@
       Expenses:Food:Fast Food                   $ 1.76
       Liabilities:Credit Card:Covantage
 
+  2024-05-11 * Annette's
+      Expenses:Food:Fast Food                  $ 40.00
+      Assets:Checking:Covantage
+
   2024-06-01 * Income
       Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
@@ -7574,15 +7578,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 31,935.26
+         $ 31,895.26
            1.0 COTTA
        460.293 FSPSX
        711.412 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 31,590.26    Checking
-            $ 575.26      Covantage
+         $ 31,550.26    Checking
+            $ 535.26      Covantage
           $ 1,015.00      Park City
          $ 30,000.00      RipCo
             $ 345.00
@@ -7603,7 +7607,7 @@
            $ -318.34    Credit Card:Covantage
        $ -163,562.06    RE:Cottage:Mortgage
 --------------------
-       $ -131,945.14
+       $ -131,985.14
            1.0 COTTA
        460.293 FSPSX
        711.412 FXAIX
@@ -7619,9 +7623,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 850,322.33  Assets
-         $ 31,590.26    Checking
-            $ 575.26      Covantage
+        $ 850,282.33  Assets
+         $ 31,550.26    Checking
+            $ 535.26      Covantage
           $ 1,015.00      Park City
          $ 30,000.00      RipCo
         $ 368,732.07    Investments
@@ -7634,7 +7638,7 @@
            $ -318.34    Credit Card:Covantage
        $ -163,562.06    RE:Cottage:Mortgage
 --------------------
-        $ 686,441.93
+        $ 686,401.93
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7644,10 +7648,10 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 8,822.88  Expenses
-            $ 266.60    Food
+          $ 8,862.88  Expenses
+            $ 306.60    Food
              $ 34.40      Drinks
-             $ 24.50      Fast Food
+             $ 64.50      Fast Food
              $ 27.64      Groceries
              $ 50.00      Restaurants
             $ 130.06      Snacks
@@ -7679,7 +7683,7 @@
             $ 132.52      Driving:Gas
             $ 478.77      Insurance
 --------------------
-          $ 8,822.88
+          $ 8,862.88
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -7755,7 +7759,7 @@ January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
-May 2024             $ 6,675.65
+May 2024             $ 6,715.65
 June 2024            $ -383.75
 July 2024            $ -383.75
 #+end_example
