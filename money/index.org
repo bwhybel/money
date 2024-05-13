@@ -47,13 +47,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 05/12/2024 00:00:00 VTSAX $125.4800
-  P 05/12/2024 00:00:00 VTIAX $32.7000
-  P 05/12/2024 00:00:00 FSPSX $50.1300
-  P 05/12/2024 00:00:00 FXAIX $181.2000
-  P 05/12/2024 00:00:00 CONDO $250,000.00
-  P 05/12/2024 00:00:00 COTTA $450,000.00
-  P 05/12/2024 00:00:00 STRIP $26.00
+  P 05/13/2024 00:00:00 VTSAX $125.4800
+  P 05/13/2024 00:00:00 VTIAX $32.7000
+  P 05/13/2024 00:00:00 FSPSX $50.1300
+  P 05/13/2024 00:00:00 FXAIX $181.2000
+  P 05/13/2024 00:00:00 CONDO $250,000.00
+  P 05/13/2024 00:00:00 COTTA $450,000.00
+  P 05/13/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -7522,6 +7522,7 @@
 
   2024-05-11 * Jewel
       Expenses:Food:Snacks                      $ 4.79
+      Expenses:Food:Snacks                     $ 19.38
       Liabilities:Credit Card:Covantage
 
   2024-05-11 * Walgreens
@@ -7532,12 +7533,29 @@
       Expenses:Food:Fast Food                   $ 9.35
       Liabilities:Credit Card:Covantage
 
+  2024-05-11 * McDonald's
+      Expenses:Food:Fast Food                   $ 6.51
+      Liabilities:Credit Card:Covantage
+
   2024-05-11 * Dunkin Donuts
       Expenses:Food:Fast Food                   $ 1.76
       Liabilities:Credit Card:Covantage
 
   2024-05-11 * Annette's
       Expenses:Food:Fast Food                  $ 40.00
+      Assets:Checking:Covantage
+
+  2024-05-12 * Insurance
+      Assets:Checking:Covantage               $ 200.61
+      Expenses:RE:Condo:Insurance
+
+  2024-05-12 * 7/11
+      Expenses:Food:Snacks                      $ 3.42
+      Expenses:Food:Snacks                      $ 5.15
+      Liabilities:Credit Card:Covantage
+
+  2024-05-13 * Transfer
+      Liabilities:Credit Card:Covantage       $ 352.80
       Assets:Checking:Covantage
 
   2024-06-01 * Income
@@ -7578,15 +7596,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 31,895.26
+         $ 31,743.07
            1.0 COTTA
        460.293 FSPSX
        711.412 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 31,550.26    Checking
-            $ 535.26      Covantage
+         $ 31,398.07    Checking
+            $ 383.07      Covantage
           $ 1,015.00      Park City
          $ 30,000.00      RipCo
             $ 345.00
@@ -7603,11 +7621,9 @@
        793.319 VTSAX      IRA
        3,742.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-       $ -163,880.40  Liabilities
-           $ -318.34    Credit Card:Covantage
-       $ -163,562.06    RE:Cottage:Mortgage
+       $ -163,562.06  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -131,985.14
+       $ -131,818.99
            1.0 COTTA
        460.293 FSPSX
        711.412 FXAIX
@@ -7623,9 +7639,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 850,282.33  Assets
-         $ 31,550.26    Checking
-            $ 535.26      Covantage
+        $ 850,130.14  Assets
+         $ 31,398.07    Checking
+            $ 383.07      Covantage
           $ 1,015.00      Park City
          $ 30,000.00      RipCo
         $ 368,732.07    Investments
@@ -7634,11 +7650,9 @@
         $ 119,112.73      IRA
          $ 97,292.00      RSU
         $ 450,000.00    RE:Cottage
-       $ -163,880.40  Liabilities
-           $ -318.34    Credit Card:Covantage
-       $ -163,562.06    RE:Cottage:Mortgage
+       $ -163,562.06  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 686,401.93
+        $ 686,568.08
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7648,13 +7662,13 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 8,862.88  Expenses
-            $ 306.60    Food
+          $ 8,696.73  Expenses
+            $ 341.06    Food
              $ 34.40      Drinks
-             $ 64.50      Fast Food
+             $ 71.01      Fast Food
              $ 27.64      Groceries
              $ 50.00      Restaurants
-            $ 130.06      Snacks
+            $ 158.01      Snacks
           $ 1,196.75    Housing
             $ 994.75      Rent
             $ 202.00      Utilities
@@ -7667,12 +7681,14 @@
              $ 10.20      Household
              $ 51.20      Hygeine
              $ 12.93      Snacks
-          $ 3,561.50    RE:Cottage
-             $ 80.00      Cleaning
-          $ 1,230.34      Escrow
-          $ 1,924.09      Interest
-             $ 76.08      Repairs
-            $ 250.99      Utilities
+          $ 3,360.89    RE
+           $ -200.61      Condo:Insurance
+          $ 3,561.50      Cottage
+             $ 80.00        Cleaning
+          $ 1,230.34        Escrow
+          $ 1,924.09        Interest
+             $ 76.08        Repairs
+            $ 250.99        Utilities
           $ 2,147.23    Taxes
           $ 1,269.50      Federal
             $ 101.01      Medicare
@@ -7683,7 +7699,7 @@
             $ 132.52      Driving:Gas
             $ 478.77      Insurance
 --------------------
-          $ 8,862.88
+          $ 8,696.73
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -7759,7 +7775,7 @@ January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
-May 2024             $ 6,715.65
+May 2024             $ 6,549.50
 June 2024            $ -383.75
 July 2024            $ -383.75
 #+end_example
