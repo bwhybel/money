@@ -29,8 +29,11 @@
     }
     response = requests.request("GET", url, headers=headers, params=querystring)
     csv_text = response.text.split('\r\n')
-    headers = csv_text[0].split(',')
-    values = csv_text[1].split(',')
+    try:
+      headers = csv_text[0].split(',')
+      values = csv_text[1].split(',')
+    except:
+      return ""
 
     index = -1
     for i, header in enumerate(headers):
@@ -47,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 05/13/2024 00:00:00 VTSAX $125.4800
-  P 05/13/2024 00:00:00 VTIAX $32.7000
-  P 05/13/2024 00:00:00 FSPSX $50.1300
-  P 05/13/2024 00:00:00 FXAIX $181.2000
-  P 05/13/2024 00:00:00 CONDO $250,000.00
-  P 05/13/2024 00:00:00 COTTA $450,000.00
-  P 05/13/2024 00:00:00 STRIP $26.00
+  P 05/14/2024 00:00:00 VTSAX $125.6200
+  P 05/14/2024 00:00:00 VTIAX $32.7900
+  P 05/14/2024 00:00:00 FSPSX $50.2700
+  P 05/14/2024 00:00:00 FXAIX $181.5200
+  P 05/14/2024 00:00:00 CONDO $250,000.00
+  P 05/14/2024 00:00:00 COTTA $450,000.00
+  P 05/14/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -7449,10 +7452,6 @@
       Expenses:Food:Snacks                      $ 2.03
       Liabilities:Credit Card:Northwoods
 
-  2024-05-10 * Shell
-      Expenses:Food:Snacks                      $ 5.39
-      Liabilities:Credit Card:Northwoods
-
   2024-05-10 * Brooke Janicki
       Expenses:RE:Cottage:Cleaning             $ 80.00
       Assets:Checking:Covantage
@@ -7472,7 +7471,7 @@
       Income:Stripe:Paycheck               $ -7,058.08
       Income:Stripe:Wireless                  $ -50.00
       Income:Stripe:HSA                      $ -100.00
-      Assets:Investments:HSA                  $ 345.00
+      Assets:Investments:HSA                     1.901 FXAIX @ $ 181.4834297738
       Assets:Investments:401K                    4.958 FXAIX @ $ 181.5066559096
       Assets:Investments:401K                    3.159 FSPSX @ $ 50.27223805
 
@@ -7505,7 +7504,7 @@
       Liabilities:Credit Card:Covantage
 
   2024-05-11 * Transfer
-      Liabilities:Credit Card:Northwoods        $ 7.42
+      Liabilities:Credit Card:Northwoods        $ 2.03
       Assets:Checking:Covantage
 
   2024-05-11 * Fleet Feet
@@ -7554,8 +7553,16 @@
       Expenses:Food:Snacks                      $ 5.15
       Liabilities:Credit Card:Covantage
 
+  2024-05-13 * Azure
+      Expenses:Personal:Electronics            $ 13.34
+      Liabilities:Credit Card:Covantage
+
   2024-05-13 * Transfer
-      Liabilities:Credit Card:Covantage       $ 352.80
+      Liabilities:Credit Card:Covantage       $ 366.14
+      Assets:Checking:Covantage
+
+  2024-05-12 * 7/11
+      Expenses:Food:Snacks                      $ 5.66
       Assets:Checking:Covantage
 
   2024-06-01 * Income
@@ -7596,37 +7603,35 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 31,743.07
+         $ 31,384.46
            1.0 COTTA
        460.293 FSPSX
-       711.412 FXAIX
+       713.313 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 31,398.07    Checking
-            $ 383.07      Covantage
+         $ 31,384.46    Checking
+            $ 369.46      Covantage
           $ 1,015.00      Park City
          $ 30,000.00      RipCo
-            $ 345.00
        460.293 FSPSX
-       711.412 FXAIX
+       713.313 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
        793.319 VTSAX    Investments
        460.293 FSPSX
        602.787 FXAIX      401K
-            $ 345.00
-       108.625 FXAIX      HSA
+       110.526 FXAIX      HSA
        598.381 VTIAX
        793.319 VTSAX      IRA
        3,742.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
        $ -163,562.06  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -131,818.99
+       $ -132,177.60
            1.0 COTTA
        460.293 FSPSX
-       711.412 FXAIX
+       713.313 FXAIX
        3,742.0 STRIP
        598.381 VTIAX
        793.319 VTSAX
@@ -7639,20 +7644,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 850,130.14  Assets
-         $ 31,398.07    Checking
-            $ 383.07      Covantage
+        $ 850,573.61  Assets
+         $ 31,384.46    Checking
+            $ 369.46      Covantage
           $ 1,015.00      Park City
          $ 30,000.00      RipCo
-        $ 368,732.07    Investments
-        $ 132,299.49      401K
-         $ 20,027.85      HSA
-        $ 119,112.73      IRA
+        $ 369,189.15    Investments
+        $ 132,556.83      401K
+         $ 20,062.68      HSA
+        $ 119,277.65      IRA
          $ 97,292.00      RSU
         $ 450,000.00    RE:Cottage
        $ -163,562.06  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 686,568.08
+        $ 687,011.55
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7662,20 +7667,21 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 8,696.73  Expenses
-            $ 341.06    Food
+          $ 8,710.34  Expenses
+            $ 341.33    Food
              $ 34.40      Drinks
              $ 71.01      Fast Food
              $ 27.64      Groceries
              $ 50.00      Restaurants
-            $ 158.01      Snacks
+            $ 158.28      Snacks
           $ 1,196.75    Housing
             $ 994.75      Rent
             $ 202.00      Utilities
-            $ 841.87    Personal
+            $ 855.21    Personal
             $ 425.00      Boat
              $ 41.03      Clothes
              $ 30.00      Communication
+             $ 13.34      Electronics
              $ 20.00      Fast Food
             $ 251.51      Health
              $ 10.20      Household
@@ -7699,7 +7705,7 @@
             $ 132.52      Driving:Gas
             $ 478.77      Insurance
 --------------------
-          $ 8,696.73
+          $ 8,710.34
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -7775,7 +7781,7 @@ January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
-May 2024             $ 6,549.50
+May 2024             $ 6,563.11
 June 2024            $ -383.75
 July 2024            $ -383.75
 #+end_example
