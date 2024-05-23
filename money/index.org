@@ -7729,6 +7729,10 @@
       Assets:Checking:Northwoods              $ 467.13
       Assets:Savings:Northwoods
 
+  2024-05-23 * Chicago Department of Finance
+      Expenses:Transportation:Driving         $ 100.00
+      Assets:Checking:Covantage
+
   2024-05-30 * Transfers
       Assets:Checking:Covantage               $ 727.78
       Assets:Checking:Northwoods
@@ -7771,15 +7775,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 32,254.31
+         $ 32,154.31
            1.0 COTTA
        460.293 FSPSX
        713.313 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 32,254.31    Checking
-          $ 1,292.94      Covantage
+         $ 32,154.31    Checking
+          $ 1,192.94      Covantage
           $ 1,015.00      Park City
          $ 29,946.37      RipCo
        460.293 FSPSX
@@ -7801,7 +7805,7 @@
            $ -103.96      RipCo
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-       $ -131,394.67
+       $ -131,494.67
            1.0 COTTA
        460.293 FSPSX
        713.313 FXAIX
@@ -7817,9 +7821,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 886,600.35  Assets
-         $ 32,254.31    Checking
-          $ 1,292.94      Covantage
+        $ 886,500.35  Assets
+         $ 32,154.31    Checking
+          $ 1,192.94      Covantage
           $ 1,015.00      Park City
          $ 29,946.37      RipCo
         $ 404,346.04    Investments
@@ -7835,7 +7839,7 @@
            $ -103.96      RipCo
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-        $ 722,951.37
+        $ 722,851.37
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7845,7 +7849,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 23,324.54  Expenses
+         $ 23,424.54  Expenses
             $ 613.59    Food
              $ 52.40      Drinks
             $ 221.26      Fast Food
@@ -7880,12 +7884,13 @@
             $ 746.06      Medicare
           $ 2,205.13      Social Security
             $ 344.82      State
-            $ 814.82    Transportation
+            $ 914.82    Transportation
             $ 203.53      Biking
-            $ 132.52      Driving:Gas
+            $ 232.52      Driving
+            $ 132.52        Gas
             $ 478.77      Insurance
 --------------------
-         $ 23,324.54
+         $ 23,424.54
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -7961,7 +7966,7 @@ January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
-May 2024             $ 6,747.31
+May 2024             $ 6,847.31
 June 2024            $ -383.75
 July 2024            $ -383.75
 #+end_example
