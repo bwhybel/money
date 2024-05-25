@@ -50,10 +50,10 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 05/24/2024 00:00:00 VTSAX $127.6200
-  P 05/24/2024 00:00:00 VTIAX $33.0700
-  P 05/24/2024 00:00:00 FSPSX $50.6100
-  P 05/24/2024 00:00:00 FXAIX $184.5900
+  P 05/24/2024 00:00:00 VTSAX $126.5400
+  P 05/24/2024 00:00:00 VTIAX $32.8900
+  P 05/24/2024 00:00:00 FSPSX $50.3300
+  P 05/24/2024 00:00:00 FXAIX $183.2300
   P 05/24/2024 00:00:00 CONDO $250,000.00
   P 05/24/2024 00:00:00 COTTA $450,000.00
   P 05/24/2024 00:00:00 STRIP $26.00
@@ -7791,9 +7791,13 @@
       Expenses:Transportation:Driving:Tolls    $ 20.00
       Liabilities:Credit Card:Northwoods
 
-  2024-05-30 * Transfer
+  2024-05-24 * Transfer
       Assets:Checking:Covantage               $ 727.78
       Assets:Checking:Northwoods
+
+  2024-05-24 * Lake Avenue Restaurant
+      Expenses:Food:Restaurants                $ 20.85
+      Assets:Checking:Covantage
 
   2024-06-01 * Income
       Assets:Checking:Park City               $ 383.75
@@ -7833,15 +7837,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 36,476.08
+         $ 36,455.23
            1.0 COTTA
        460.293 FSPSX
        713.313 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 35,417.36    Checking
-          $ 3,387.36      Covantage
+         $ 35,396.51    Checking
+          $ 3,366.51      Covantage
           $ 2,030.00      Park City
          $ 30,000.00      RipCo
           $ 1,058.72
@@ -7862,7 +7866,7 @@
             $ -60.57    Credit Card:Northwoods
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-       $ -126,709.05
+       $ -126,729.90
            1.0 COTTA
        460.293 FSPSX
        713.313 FXAIX
@@ -7878,22 +7882,22 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 889,821.79  Assets
-         $ 35,417.36    Checking
-          $ 3,387.36      Covantage
+        $ 887,737.46  Assets
+         $ 35,396.51    Checking
+          $ 3,366.51      Covantage
           $ 2,030.00      Park City
          $ 30,000.00      RipCo
-        $ 404,404.43    Investments
-        $ 135,622.60      401K
-         $ 20,401.99      HSA
-        $ 121,031.83      IRA
+        $ 402,340.95    Investments
+        $ 134,673.93      401K
+         $ 20,251.68      HSA
+        $ 120,067.34      IRA
         $ 127,348.00      RSU
         $ 450,000.00    RE:Cottage
        $ -163,185.13  Liabilities
             $ -60.57    Credit Card:Northwoods
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-        $ 726,636.66
+        $ 724,552.33
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7903,12 +7907,12 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 25,742.00  Expenses
-            $ 628.22    Food
+         $ 25,762.85  Expenses
+            $ 649.07    Food
              $ 52.40      Drinks
             $ 232.90      Fast Food
              $ 48.75      Groceries
-             $ 50.00      Restaurants
+             $ 70.85      Restaurants
             $ 244.17      Snacks
           $ 1,196.75    Housing
             $ 994.75      Rent
@@ -7946,7 +7950,7 @@
              $ 20.00        Tolls
             $ 478.77      Insurance
 --------------------
-         $ 25,742.00
+         $ 25,762.85
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8022,7 +8026,7 @@ January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
-May 2024             $ 7,415.82
+May 2024             $ 7,436.67
 June 2024            $ -383.75
 July 2024            $ -383.75
 #+end_example
