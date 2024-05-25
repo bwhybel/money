@@ -7800,6 +7800,14 @@
       Expenses:Food:Restaurants                $ 20.85
       Assets:Checking:Covantage
 
+  2024-05-25 * Whiskey Nick's
+      Expenses:Food:Drinks                     $ 22.67
+      Assets:Checking:Covantage
+
+  2024-05-25 * Whiskey Nick's
+      Expenses:Personal:Electronics            $ 10.55
+      Assets:Checking:Covantage
+
   2024-06-01 * Income
       Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
@@ -7887,15 +7895,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 33,380.52
+         $ 33,347.30
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 33,380.52    Checking
-          $ 3,366.51      Covantage
+         $ 33,347.30    Checking
+          $ 3,333.29      Covantage
              $ 14.01      Park City
          $ 30,000.00      RipCo
        463.427 FSPSX
@@ -7914,7 +7922,7 @@
             $ -60.57    Credit Card:Northwoods
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-       $ -129,804.61
+       $ -129,837.83
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
@@ -7930,9 +7938,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 885,714.09  Assets
-         $ 33,380.52    Checking
-          $ 3,366.51      Covantage
+        $ 885,680.87  Assets
+         $ 33,347.30    Checking
+          $ 3,333.29      Covantage
              $ 14.01      Park City
          $ 30,000.00      RipCo
         $ 402,333.57    Investments
@@ -7945,7 +7953,7 @@
             $ -60.57    Credit Card:Northwoods
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-        $ 722,528.96
+        $ 722,495.74
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7955,9 +7963,9 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 25,762.85  Expenses
-            $ 649.07    Food
-             $ 52.40      Drinks
+         $ 25,796.07  Expenses
+            $ 671.74    Food
+             $ 75.07      Drinks
             $ 232.90      Fast Food
              $ 48.75      Groceries
              $ 70.85      Restaurants
@@ -7965,11 +7973,11 @@
           $ 1,196.75    Housing
             $ 994.75      Rent
             $ 202.00      Utilities
-          $ 1,131.52    Personal
+          $ 1,142.07    Personal
             $ 425.00      Boat
              $ 41.03      Clothes
              $ 30.00      Communication
-            $ 224.87      Electronics
+            $ 235.42      Electronics
              $ 32.79      Entertainment
              $ 20.00      Fast Food
             $ 283.50      Health
@@ -7998,7 +8006,7 @@
              $ 20.00        Tolls
             $ 478.77      Insurance
 --------------------
-         $ 25,762.85
+         $ 25,796.07
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8074,7 +8082,7 @@ January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
-May 2024             $ 7,436.67
+May 2024             $ 7,469.89
 June 2024            $ 1,632.24
 July 2024            $ -383.75
 #+end_example
