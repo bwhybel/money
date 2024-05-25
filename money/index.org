@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 05/24/2024 00:00:00 VTSAX $126.5400
-  P 05/24/2024 00:00:00 VTIAX $32.8900
-  P 05/24/2024 00:00:00 FSPSX $50.3300
-  P 05/24/2024 00:00:00 FXAIX $183.2300
-  P 05/24/2024 00:00:00 CONDO $250,000.00
-  P 05/24/2024 00:00:00 COTTA $450,000.00
-  P 05/24/2024 00:00:00 STRIP $26.00
+  P 05/25/2024 00:00:00 VTSAX $126.5400
+  P 05/25/2024 00:00:00 VTIAX $32.8900
+  P 05/25/2024 00:00:00 FSPSX $50.3300
+  P 05/25/2024 00:00:00 FXAIX $183.2300
+  P 05/25/2024 00:00:00 CONDO $250,000.00
+  P 05/25/2024 00:00:00 COTTA $450,000.00
+  P 05/25/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -7753,7 +7753,8 @@
       Expenses:Taxes:Medicare                 $ 102.34
       Expenses:Taxes:Federal                $ 1,291.57
       Expenses:Taxes:State                    $ 349.37
-      Assets:Investments:401K               $ 1,058.72
+      Assets:Investments:401K                    4.877 FXAIX @ $ 184.521222
+      Assets:Investments:401K                    3.134 FSPSX @ $ 50.673261
 
   2024-05-24 * Z&Z
       Expenses:RE:Cottage:Lawncare             $ 40.00
@@ -7803,9 +7804,58 @@
       Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
 
+  2024-06-01 * Rent
+      Expenses:Housing:Rent                 $ 1,600.00
+      Expenses:Housing:Utilities              $ -67.00
+      Assets:Checking:Park City
+
+  2024-06-01 * Xfinity
+      Expenses:Housing:Utilities               $ 70.00
+      Assets:Checking:Park City
+
+  2024-06-01 * Comed
+      Expenses:Housing:Utilities               $ 80.00
+      Assets:Checking:Park City
+
+  2024-06-01 * Peoples Gas
+      Expenses:Housing:Utilities               $ 52.00
+      Assets:Checking:Park City
+
+  2024-06-01 * WPS
+      Expenses:RE:Cottage:Utilities           $ 179.00
+      Assets:Checking:Park City
+
+  2024-06-01 * Spectrum
+      Expenses:RE:Cottage:Utilities            $ 71.99
+      Assets:Checking:Park City
+
+  2024-06-01 * Visible
+      Expenses:Personal:Communication          $ 30.00
+      Liabilities:Credit Card:Park City
+
+  2024-06-01 * Transfer
+      Liabilities:Credit Card:Park City        $ 30.00
+      Assets:Checking:Park City
+
+  2024-06-01 ! Transfer
+      Liabilities:Credit Card:Northwoods       $ 14.01
+      Assets:Checking:Park City
+
+  2024-06-10 ! Escrow Transfer
+      Assets:Checking:Covantage             $ 4,790.02
+      Expenses:RE:Cottage:Escrow
+
   2024-07-01 * Income
       Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
+
+  2024-07-05 ! M5 Land
+      Expenses:RE:Cottage:Lawncare          $ 5,265.00
+      Assets:Checking:Covantage
+
+  2024-07-23 ! Traveler's
+      Expenses:RE:Cottage:Insurance         $ 1,437.00
+      Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -7837,26 +7887,24 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 36,455.23
+         $ 33,380.52
            1.0 COTTA
-       460.293 FSPSX
-       713.313 FXAIX
+       463.427 FSPSX
+       718.190 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 35,396.51    Checking
+         $ 33,380.52    Checking
           $ 3,366.51      Covantage
-          $ 2,030.00      Park City
+             $ 14.01      Park City
          $ 30,000.00      RipCo
-          $ 1,058.72
-       460.293 FSPSX
-       713.313 FXAIX
+       463.427 FSPSX
+       718.190 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX    Investments
-          $ 1,058.72
-       460.293 FSPSX
-       602.787 FXAIX      401K
+       463.427 FSPSX
+       607.664 FXAIX      401K
        110.526 FXAIX      HSA
        598.381 VTIAX
        793.319 VTSAX      IRA
@@ -7866,10 +7914,10 @@
             $ -60.57    Credit Card:Northwoods
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-       $ -126,729.90
+       $ -129,804.61
            1.0 COTTA
-       460.293 FSPSX
-       713.313 FXAIX
+       463.427 FSPSX
+       718.190 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX
@@ -7882,13 +7930,13 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 887,737.46  Assets
-         $ 35,396.51    Checking
+        $ 885,714.09  Assets
+         $ 33,380.52    Checking
           $ 3,366.51      Covantage
-          $ 2,030.00      Park City
+             $ 14.01      Park City
          $ 30,000.00      RipCo
-        $ 402,340.95    Investments
-        $ 134,673.93      401K
+        $ 402,333.57    Investments
+        $ 134,666.56      401K
          $ 20,251.68      HSA
         $ 120,067.34      IRA
         $ 127,348.00      RSU
@@ -7897,7 +7945,7 @@
             $ -60.57    Credit Card:Northwoods
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-        $ 724,552.33
+        $ 722,528.96
 #+end_example
 ** Spending
 *** This Month Spending
@@ -8027,6 +8075,6 @@ February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,436.67
-June 2024            $ -383.75
+June 2024            $ 1,632.24
 July 2024            $ -383.75
 #+end_example
