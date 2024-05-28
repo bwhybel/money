@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 05/25/2024 00:00:00 VTSAX $126.5400
-  P 05/25/2024 00:00:00 VTIAX $32.8900
-  P 05/25/2024 00:00:00 FSPSX $50.3300
-  P 05/25/2024 00:00:00 FXAIX $183.2300
-  P 05/25/2024 00:00:00 CONDO $250,000.00
-  P 05/25/2024 00:00:00 COTTA $450,000.00
-  P 05/25/2024 00:00:00 STRIP $26.00
+  P 05/28/2024 00:00:00 VTSAX $127.4500
+  P 05/28/2024 00:00:00 VTIAX $33.0800
+  P 05/28/2024 00:00:00 FSPSX $50.6700
+  P 05/28/2024 00:00:00 FXAIX $184.5200
+  P 05/28/2024 00:00:00 CONDO $250,000.00
+  P 05/28/2024 00:00:00 COTTA $450,000.00
+  P 05/28/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -7760,7 +7760,7 @@
       Expenses:RE:Cottage:Lawncare             $ 40.00
       Assets:Checking:Covantage
 
-  2024-05-24 * Transfer
+  2024-05-24 ! Transfer
       Assets:Checking:Covantage             $ 2,342.41
       Assets:Checking:RipCo
 
@@ -7792,7 +7792,7 @@
       Expenses:Transportation:Driving:Tolls    $ 20.00
       Liabilities:Credit Card:Northwoods
 
-  2024-05-24 * Transfer
+  2024-05-24 ! Transfer
       Assets:Checking:Covantage               $ 727.78
       Assets:Checking:Northwoods
 
@@ -7806,6 +7806,35 @@
 
   2024-05-25 * Whiskey Nick's
       Expenses:Personal:Electronics            $ 10.55
+      Assets:Checking:Covantage
+
+  2024-05-27 * Target
+      Expenses:Personal:Hygeine                $ 83.35
+      Assets:Checking:Covantage
+
+  2024-05-27 * Shell
+      Expenses:Food:Snacks                      $ 4.22
+      Assets:Checking:Covantage
+
+  2024-05-27 * McDonald's
+      Expenses:Food:Fast Food                   $ 1.76
+      Assets:Checking:Covantage
+
+  2024-05-27 * Popeye's
+      Expenses:Food:Fast Food                   $ 5.58
+      Assets:Checking:Covantage
+
+  2024-05-27 * IGA Gas Depot
+      Expenses:Transportation:Driving:Gas      $ 25.94
+      Assets:Checking:Covantage
+
+  2024-05-27 * Kwik Trip
+      Expenses:Food:Drinks                     $ 30.12
+      Expenses:Transportation:Driving:Gas      $ 27.29
+      Assets:Checking:Covantage
+
+  2024-05-27 * Schaefer's IGA
+      Expenses:Food:Groceries                   $ 8.84
       Assets:Checking:Covantage
 
   2024-06-01 * Income
@@ -7895,17 +7924,18 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 33,347.30
+         $ 33,160.20
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 33,347.30    Checking
-          $ 3,333.29      Covantage
+         $ 33,160.20    Checking
+             $ 76.00      Covantage
+            $ 727.78      Northwoods
              $ 14.01      Park City
-         $ 30,000.00      RipCo
+         $ 32,342.41      RipCo
        463.427 FSPSX
        718.190 FXAIX
        4,898.0 STRIP
@@ -7922,7 +7952,7 @@
             $ -60.57    Credit Card:Northwoods
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-       $ -129,837.83
+       $ -130,024.93
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
@@ -7938,22 +7968,23 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 885,680.87  Assets
-         $ 33,347.30    Checking
-          $ 3,333.29      Covantage
+        $ 887,413.41  Assets
+         $ 33,160.20    Checking
+             $ 76.00      Covantage
+            $ 727.78      Northwoods
              $ 14.01      Park City
-         $ 30,000.00      RipCo
-        $ 402,333.57    Investments
-        $ 134,666.56      401K
-         $ 20,251.68      HSA
-        $ 120,067.34      IRA
+         $ 32,342.41      RipCo
+        $ 404,253.21    Investments
+        $ 135,608.01      401K
+         $ 20,394.26      HSA
+        $ 120,902.95      IRA
         $ 127,348.00      RSU
         $ 450,000.00    RE:Cottage
        $ -163,185.13  Liabilities
             $ -60.57    Credit Card:Northwoods
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-        $ 722,495.74
+        $ 724,228.28
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7963,17 +7994,17 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 25,796.07  Expenses
-            $ 671.74    Food
-             $ 75.07      Drinks
-            $ 232.90      Fast Food
-             $ 48.75      Groceries
+         $ 25,983.17  Expenses
+            $ 722.26    Food
+            $ 105.19      Drinks
+            $ 240.24      Fast Food
+             $ 57.59      Groceries
              $ 70.85      Restaurants
-            $ 244.17      Snacks
+            $ 248.39      Snacks
           $ 1,196.75    Housing
             $ 994.75      Rent
             $ 202.00      Utilities
-          $ 1,142.07    Personal
+          $ 1,225.42    Personal
             $ 425.00      Boat
              $ 41.03      Clothes
              $ 30.00      Communication
@@ -7982,7 +8013,7 @@
              $ 20.00      Fast Food
             $ 283.50      Health
              $ 10.20      Household
-             $ 51.20      Hygeine
+            $ 134.55      Hygeine
              $ 12.93      Snacks
           $ 3,463.39    RE
            $ -200.61      Condo:Insurance
@@ -7999,14 +8030,14 @@
             $ 849.05      Medicare
           $ 2,207.92      Social Security
             $ 694.19      State
-            $ 995.94    Transportation
+          $ 1,049.17    Transportation
             $ 203.53      Biking
-            $ 313.64      Driving
-            $ 193.64        Gas
+            $ 366.87      Driving
+            $ 246.87        Gas
              $ 20.00        Tolls
             $ 478.77      Insurance
 --------------------
-         $ 25,796.07
+         $ 25,983.17
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8082,7 +8113,7 @@ January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
-May 2024             $ 7,469.89
+May 2024             $ 7,656.99
 June 2024            $ 1,632.24
 July 2024            $ -383.75
 #+end_example
