@@ -7760,7 +7760,7 @@
       Expenses:RE:Cottage:Lawncare             $ 40.00
       Assets:Checking:Covantage
 
-  2024-05-24 ! Transfer
+  2024-05-24 * Transfer
       Assets:Checking:Covantage             $ 2,342.41
       Assets:Checking:RipCo
 
@@ -7792,7 +7792,7 @@
       Expenses:Transportation:Driving:Tolls    $ 20.00
       Liabilities:Credit Card:Northwoods
 
-  2024-05-24 ! Transfer
+  2024-05-24 * Transfer
       Assets:Checking:Covantage               $ 727.78
       Assets:Checking:Northwoods
 
@@ -7882,8 +7882,16 @@
       Liabilities:Credit Card:Northwoods       $ 14.01
       Assets:Checking:Park City
 
+  2024-06-01 ! Transfer
+      Liabilities:Credit Card:Northwoods       $ 46.56
+      Assets:Checking:Covantage
+
+  2024-06-01 ! Transfer
+      Assets:Checking:Northwoods            $ 3,000.00
+      Assets:Checking:Covantage
+
   2024-06-10 ! Escrow Transfer
-      Assets:Checking:Covantage             $ 4,790.02
+      Assets:Checking:Northwoods            $ 4,790.02
       Expenses:RE:Cottage:Escrow
 
   2024-07-01 * Income
@@ -7892,11 +7900,11 @@
 
   2024-07-05 ! M5 Land
       Expenses:RE:Cottage:Lawncare          $ 5,265.00
-      Assets:Checking:Covantage
+      Assets:Checking:Northwoods
 
   2024-07-23 ! Traveler's
       Expenses:RE:Cottage:Insurance         $ 1,437.00
-      Assets:Checking:Covantage
+      Assets:Checking:Northwoods
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -7936,10 +7944,9 @@
        598.381 VTIAX
        793.319 VTSAX  Assets
          $ 33,148.49    Checking
-             $ 64.29      Covantage
-            $ 727.78      Northwoods
+          $ 3,134.48      Covantage
              $ 14.01      Park City
-         $ 32,342.41      RipCo
+         $ 30,000.00      RipCo
        463.427 FSPSX
        718.190 FXAIX
        4,898.0 STRIP
@@ -7974,10 +7981,9 @@
 #+begin_example
         $ 887,401.70  Assets
          $ 33,148.49    Checking
-             $ 64.29      Covantage
-            $ 727.78      Northwoods
+          $ 3,134.48      Covantage
              $ 14.01      Park City
-         $ 32,342.41      RipCo
+         $ 30,000.00      RipCo
         $ 404,253.21    Investments
         $ 135,608.01      401K
          $ 20,394.26      HSA
