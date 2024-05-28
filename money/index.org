@@ -7837,6 +7837,10 @@
       Expenses:Food:Groceries                   $ 8.84
       Assets:Checking:Covantage
 
+  2024-05-28 * 7/11
+      Expenses:Food:Snacks                     $ 11.71
+      Assets:Checking:Covantage
+
   2024-06-01 * Income
       Assets:Checking:Park City               $ 383.75
       Expenses:Housing:Rent
@@ -7924,15 +7928,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 33,160.20
+         $ 33,148.49
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 33,160.20    Checking
-             $ 76.00      Covantage
+         $ 33,148.49    Checking
+             $ 64.29      Covantage
             $ 727.78      Northwoods
              $ 14.01      Park City
          $ 32,342.41      RipCo
@@ -7952,7 +7956,7 @@
             $ -60.57    Credit Card:Northwoods
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-       $ -130,024.93
+       $ -130,036.64
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
@@ -7968,9 +7972,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 887,413.41  Assets
-         $ 33,160.20    Checking
-             $ 76.00      Covantage
+        $ 887,401.70  Assets
+         $ 33,148.49    Checking
+             $ 64.29      Covantage
             $ 727.78      Northwoods
              $ 14.01      Park City
          $ 32,342.41      RipCo
@@ -7984,7 +7988,7 @@
             $ -60.57    Credit Card:Northwoods
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-        $ 724,228.28
+        $ 724,216.57
 #+end_example
 ** Spending
 *** This Month Spending
@@ -7994,13 +7998,13 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 25,983.17  Expenses
-            $ 722.26    Food
+         $ 25,994.88  Expenses
+            $ 733.97    Food
             $ 105.19      Drinks
             $ 240.24      Fast Food
              $ 57.59      Groceries
              $ 70.85      Restaurants
-            $ 248.39      Snacks
+            $ 260.10      Snacks
           $ 1,196.75    Housing
             $ 994.75      Rent
             $ 202.00      Utilities
@@ -8037,7 +8041,7 @@
              $ 20.00        Tolls
             $ 478.77      Insurance
 --------------------
-         $ 25,983.17
+         $ 25,994.88
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8113,7 +8117,7 @@ January 2024         $ 8,968.31
 February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
-May 2024             $ 7,656.99
+May 2024             $ 7,668.70
 June 2024            $ 1,632.24
 July 2024            $ -383.75
 #+end_example
