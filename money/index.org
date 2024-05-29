@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 05/28/2024 00:00:00 VTSAX $127.4500
-  P 05/28/2024 00:00:00 VTIAX $33.0800
-  P 05/28/2024 00:00:00 FSPSX $50.6700
-  P 05/28/2024 00:00:00 FXAIX $184.5200
-  P 05/28/2024 00:00:00 CONDO $250,000.00
-  P 05/28/2024 00:00:00 COTTA $450,000.00
-  P 05/28/2024 00:00:00 STRIP $26.00
+  P 05/29/2024 00:00:00 VTSAX $127.4500
+  P 05/29/2024 00:00:00 VTIAX $33.0800
+  P 05/29/2024 00:00:00 FSPSX $50.6700
+  P 05/29/2024 00:00:00 FXAIX $184.5200
+  P 05/29/2024 00:00:00 CONDO $250,000.00
+  P 05/29/2024 00:00:00 COTTA $450,000.00
+  P 05/29/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -7882,7 +7882,7 @@
       Liabilities:Credit Card:Northwoods       $ 14.01
       Assets:Checking:Park City
 
-  2024-06-01 ! Transfer
+  2024-06-01 * Transfer
       Liabilities:Credit Card:Northwoods       $ 46.56
       Assets:Checking:Covantage
 
@@ -7936,15 +7936,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 33,148.49
+         $ 33,101.93
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 33,148.49    Checking
-          $ 3,134.48      Covantage
+         $ 33,101.93    Checking
+          $ 3,087.92      Covantage
              $ 14.01      Park City
          $ 30,000.00      RipCo
        463.427 FSPSX
@@ -7959,8 +7959,8 @@
        793.319 VTSAX      IRA
        4,898.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-       $ -163,185.13  Liabilities
-            $ -60.57    Credit Card:Northwoods
+       $ -163,138.57  Liabilities
+            $ -14.01    Credit Card:Northwoods
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
        $ -130,036.64
@@ -7979,9 +7979,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 887,401.70  Assets
-         $ 33,148.49    Checking
-          $ 3,134.48      Covantage
+        $ 887,355.14  Assets
+         $ 33,101.93    Checking
+          $ 3,087.92      Covantage
              $ 14.01      Park City
          $ 30,000.00      RipCo
         $ 404,253.21    Investments
@@ -7990,8 +7990,8 @@
         $ 120,902.95      IRA
         $ 127,348.00      RSU
         $ 450,000.00    RE:Cottage
-       $ -163,185.13  Liabilities
-            $ -60.57    Credit Card:Northwoods
+       $ -163,138.57  Liabilities
+            $ -14.01    Credit Card:Northwoods
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
         $ 724,216.57
