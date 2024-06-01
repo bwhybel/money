@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 05/31/2024 00:00:00 VTSAX $126.3700
-  P 05/31/2024 00:00:00 VTIAX $32.5600
-  P 05/31/2024 00:00:00 FSPSX $49.9100
-  P 05/31/2024 00:00:00 FXAIX $183.2100
-  P 05/31/2024 00:00:00 CONDO $250,000.00
-  P 05/31/2024 00:00:00 COTTA $450,000.00
-  P 05/31/2024 00:00:00 STRIP $26.00
+  P 06/01/2024 00:00:00 VTSAX $125.8000
+  P 06/01/2024 00:00:00 VTIAX $32.7100
+  P 06/01/2024 00:00:00 FSPSX $50.2400
+  P 06/01/2024 00:00:00 FXAIX $182.1300
+  P 06/01/2024 00:00:00 CONDO $250,000.00
+  P 06/01/2024 00:00:00 COTTA $450,000.00
+  P 06/01/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -7886,6 +7886,11 @@
       Liabilities:Credit Card:Northwoods       $ 46.56
       Assets:Checking:Covantage
 
+  2024-06-01 * Interest Income
+      Assets:Checking:Covantage               $ 429.82
+      Assets:Checking:Covantage                 $ 2.81
+      Income:Extra
+
   2024-06-01 * Transfer
       Assets:Checking:Northwoods            $ 3,000.00
       Assets:Checking:Covantage
@@ -7936,15 +7941,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 33,087.92
+         $ 33,520.55
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 33,087.92    Checking
-             $ 87.92      Covantage
+         $ 33,520.55    Checking
+            $ 520.55      Covantage
           $ 3,000.00      Northwoods
          $ 30,000.00      RipCo
        463.427 FSPSX
@@ -7961,7 +7966,7 @@
            1.0 COTTA    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -130,036.64
+       $ -129,604.01
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
@@ -7977,24 +7982,38 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 884,880.16  Assets
-         $ 33,087.92    Checking
-             $ 87.92      Covantage
+        $ 884,327.64  Assets
+         $ 33,520.55    Checking
+            $ 520.55      Covantage
           $ 3,000.00      Northwoods
          $ 30,000.00      RipCo
-        $ 401,792.24    Investments
-        $ 134,459.76      401K
-         $ 20,249.47      HSA
-        $ 119,735.01      IRA
+        $ 400,807.09    Investments
+        $ 133,956.42      401K
+         $ 20,130.10      HSA
+        $ 119,372.57      IRA
         $ 127,348.00      RSU
         $ 450,000.00    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 721,755.60
+        $ 721,203.08
 #+end_example
 ** Spending
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
+  <<opening_balance>>
+  <<transactions>>
+#+end_src
+#+results:
+:           $ 1,632.24  Expenses
+:           $ 1,351.25    Housing
+:           $ 1,216.25      Rent
+:             $ 135.00      Utilities
+:              $ 30.00    Personal:Communication
+:             $ 250.99    RE:Cottage:Utilities
+: --------------------
+:           $ 1,632.24
+*** Last Month Spending
+#+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
   <<opening_balance>>
   <<transactions>>
 #+end_src
@@ -8044,60 +8063,6 @@
             $ 478.77      Insurance
 --------------------
          $ 25,994.88
-#+end_example
-*** Last Month Spending
-#+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
-  <<opening_balance>>
-  <<transactions>>
-#+end_src
-#+results:
-#+begin_example
-         $ 41,563.60  Expenses
-            $ 906.48    Food
-            $ 156.40      Drinks
-             $ 99.60      Fast Food
-             $ 63.72      Groceries
-            $ 288.80      Restaurants
-            $ 297.96      Snacks
-            $ 121.26    Gifts
-          $ 1,288.75    Housing
-          $ 1,153.75      Rent
-            $ 135.00      Utilities
-            $ 715.58    Personal
-             $ 57.90      Clothes
-             $ 30.00      Communication
-            $ 239.17      Electronics
-            $ 147.20      Entertainment
-             $ 11.44      Fast Food
-            $ 119.93      Health
-             $ 26.38      Household
-             $ 54.00      Hygeine
-             $ 29.56      Snacks
-         $ 23,980.63    RE
-         $ 21,348.34      Condo
-           $ -116.39        HOA
-            $ 223.83        Interest
-         $ 15,736.80        Sale
-          $ 5,504.10        Taxes
-          $ 2,632.29      Cottage
-            $ 120.00        Cleaning
-          $ 1,727.24        Lakefront
-            $ 407.20        Repairs
-            $ 377.85        Utilities
-         $ 11,805.18    Taxes
-          $ 9,960.91      Federal
-            $ 758.73      Illinois
-            $ 205.75      Medicare
-            $ 879.79      Social Security
-          $ 2,745.72    Transportation
-          $ 2,202.36      Biking
-            $ 449.42      Driving
-            $ 137.42        Gas
-            $ 312.00        Repairs
-             $ 17.80      Public
-             $ 76.14      Ride Share
---------------------
-         $ 41,563.60
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not ^Expenses:Taxes --cleared -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
