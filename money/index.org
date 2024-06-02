@@ -7938,6 +7938,14 @@
   2024-07-23 ! Traveler's
       Expenses:RE:Cottage:Insurance         $ 1,437.00
       Assets:Checking:Northwoods
+
+  2024-06-01 * 7/11
+      Expenses:Food:Snacks                      $ 2.55
+      Assets:Checking:Covantage
+
+  2024-06-01 * Taco Bell
+      Expenses:Food:Fast Food                  $ 15.11
+      Assets:Checking:Covantage
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -7969,15 +7977,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 33,017.67
+         $ 33,000.01
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 33,017.67    Checking
-             $ 17.67      Covantage
+         $ 33,000.01    Checking
+              $ 0.01      Covantage
           $ 3,000.00      Northwoods
          $ 30,000.00      RipCo
        463.427 FSPSX
@@ -7994,7 +8002,7 @@
            1.0 COTTA    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -130,106.89
+       $ -130,124.55
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
@@ -8010,9 +8018,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 883,824.76  Assets
-         $ 33,017.67    Checking
-             $ 17.67      Covantage
+        $ 883,807.10  Assets
+         $ 33,000.01    Checking
+              $ 0.01      Covantage
           $ 3,000.00      Northwoods
          $ 30,000.00      RipCo
         $ 400,807.09    Investments
@@ -8023,7 +8031,7 @@
         $ 450,000.00    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 720,700.20
+        $ 720,682.54
 #+end_example
 ** Spending
 *** This Month Spending
@@ -8033,18 +8041,18 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 1,702.51  Expenses
-             $ 70.27    Food
-              $ 8.95      Fast Food
+          $ 1,720.17  Expenses
+             $ 87.93    Food
+             $ 24.06      Fast Food
              $ 35.74      Groceries
-             $ 25.58      Snacks
+             $ 28.13      Snacks
           $ 1,351.25    Housing
           $ 1,216.25      Rent
             $ 135.00      Utilities
              $ 30.00    Personal:Communication
             $ 250.99    RE:Cottage:Utilities
 --------------------
-          $ 1,702.51
+          $ 1,720.17
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8119,6 +8127,6 @@ February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
-June 2024            $ 1,702.51
+June 2024            $ 1,720.17
 July 2024            $ -383.75
 #+end_example
