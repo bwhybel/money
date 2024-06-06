@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 06/02/2024 00:00:00 VTSAX $125.8000
-  P 06/02/2024 00:00:00 VTIAX $32.7100
-  P 06/02/2024 00:00:00 FSPSX $50.2400
-  P 06/02/2024 00:00:00 FXAIX $182.1300
-  P 06/02/2024 00:00:00 CONDO $250,000.00
-  P 06/02/2024 00:00:00 COTTA $450,000.00
-  P 06/02/2024 00:00:00 STRIP $26.00
+  P 06/06/2024 00:00:00 VTSAX $126.7800
+  P 06/06/2024 00:00:00 VTIAX $32.8400
+  P 06/06/2024 00:00:00 FSPSX $50.8700
+  P 06/06/2024 00:00:00 FXAIX $184.1200
+  P 06/06/2024 00:00:00 CONDO $250,000.00
+  P 06/06/2024 00:00:00 COTTA $450,000.00
+  P 06/06/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -7886,12 +7886,12 @@
       Liabilities:Credit Card:Northwoods       $ 46.56
       Assets:Checking:Covantage
 
-  2024-06-01 ! Interest Income
+  2024-06-01 * Interest Income
       Assets:Checking:Covantage                 $ 2.81
       Income:Extra
 
-  2024-06-01 ! Interest Income
-      Assets:Checking:Northwoods              $ 429.82
+  2024-06-01 * Interest Income
+      Assets:Checking:Northwoods               $ 94.82
       Income:Extra
 
   2024-06-01 * Transfer
@@ -7950,6 +7950,39 @@
       Expenses:Food:Fast Food                  $ 10.93
       Assets:Checking:Northwoods
 
+  2024-06-04 * Interest
+      Assets:Checking:Covantage                $ 87.00
+      Income:Extra
+
+  2024-06-04 * Walgreens
+      Expenses:Food:Snacks                      $ 2.17
+      Expenses:Food:Snacks                      $ 3.26
+      Expenses:Food:Snacks                      $ 6.45
+      Expenses:Food:Snacks                      $ 3.26
+      Assets:Checking:Covantage
+
+  2024-06-04 * Stripe Workplace
+      Expenses:Food:Snacks                      $ 0.50
+      Expenses:Food:Snacks                      $ 0.50
+      Assets:Checking:Covantage
+
+  2024-06-04 * MTA
+      Expenses:Transportation:Public            $ 2.90
+      Assets:Checking:Covantage
+
+  2024-06-05 * MTA
+      Expenses:Transportation:Public            $ 2.90
+      Expenses:Transportation:Public            $ 2.90
+      Assets:Checking:Covantage
+
+  2024-06-05 * Chick-fil-a
+      Expenses:Food:Fast Food                   $ 2.67
+      Assets:Checking:Covantage
+
+  2024-06-05 * Tin Building
+      Expenses:Food:Restaurants                $ 16.88
+      Assets:Checking:Covantage
+
   2024-06-10 ! Escrow Transfer
       Assets:Checking:Northwoods            $ 4,790.02
       Expenses:RE:Cottage:Escrow
@@ -7996,16 +8029,16 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 32,971.01
+         $ 33,111.25
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 32,971.01    Checking
-              $ 0.02      Covantage
-          $ 2,970.99      Northwoods
+         $ 33,111.25    Checking
+             $ 45.44      Covantage
+          $ 3,065.81      Northwoods
          $ 30,000.00      RipCo
        463.427 FSPSX
        718.190 FXAIX
@@ -8021,7 +8054,7 @@
            1.0 COTTA    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -130,153.55
+       $ -130,013.31
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
@@ -8037,20 +8070,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 883,778.10  Assets
-         $ 32,971.01    Checking
-              $ 0.02      Covantage
-          $ 2,970.99      Northwoods
+        $ 886,494.74  Assets
+         $ 33,111.25    Checking
+             $ 45.44      Covantage
+          $ 3,065.81      Northwoods
          $ 30,000.00      RipCo
-        $ 400,807.09    Investments
-        $ 133,956.42      401K
-         $ 20,130.10      HSA
-        $ 119,372.57      IRA
+        $ 403,383.49    Investments
+        $ 135,457.63      401K
+         $ 20,350.05      HSA
+        $ 120,227.81      IRA
         $ 127,348.00      RSU
         $ 450,000.00    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 720,653.54
+        $ 723,370.18
 #+end_example
 ** Spending
 *** This Month Spending
@@ -8060,18 +8093,20 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 1,749.18  Expenses
-            $ 116.94    Food
-             $ 34.99      Fast Food
+          $ 1,793.57  Expenses
+            $ 152.63    Food
+             $ 37.66      Fast Food
              $ 35.74      Groceries
-             $ 46.21      Snacks
+             $ 16.88      Restaurants
+             $ 62.35      Snacks
           $ 1,351.25    Housing
           $ 1,216.25      Rent
             $ 135.00      Utilities
              $ 30.00    Personal:Communication
             $ 250.99    RE:Cottage:Utilities
+              $ 8.70    Transportation:Public
 --------------------
-          $ 1,749.18
+          $ 1,793.57
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8146,6 +8181,6 @@ February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
-June 2024            $ 1,749.18
+June 2024            $ 1,793.57
 July 2024            $ -383.75
 #+end_example
