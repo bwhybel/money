@@ -7991,7 +7991,7 @@
       Income:Stripe:Paycheck               $ -6,352.27
       Income:Stripe:Paycheck                 $ -705.81
       Income:Stripe:Wireless                  $ -50.00
-      Income:Stripe:Wellness                 $ -500.00
+      Expenses:Transportation:Biking         $ -500.00
       Expenses:Taxes:Medicare                 $ 107.04
       Expenses:Taxes:Federal                $ 1,369.34
       Expenses:Taxes:Illinois                 $ 365.41
@@ -8001,6 +8001,18 @@
       Assets:Checking:RipCo                 $ 3,077.57
       Assets:Checking:Park City               $ 885.00
       Assets:Checking:Covantage               $ 500.00
+
+  2024-06-07 * Brooke Janicki
+      Expenses:RE:Cottage:Cleaning            $ 120.00
+      Assets:Checking:Covantage
+
+  2024-06-07 * Jewel
+      Expenses:Food:Snacks                      $ 1.86
+      Assets:Checking:Covantage
+
+  2024-06-07 * PayRange
+      Expenses:Personal:Household              $ 10.00
+      Assets:Checking:Covantage
 
   2024-06-10 ! Escrow Transfer
       Assets:Checking:Northwoods            $ 4,790.02
@@ -8048,15 +8060,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 38,974.99
+         $ 38,843.13
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 37,571.27    Checking
-            $ 542.89      Covantage
+         $ 37,439.41    Checking
+            $ 411.03      Covantage
           $ 3,065.81      Northwoods
             $ 885.00      Park City
          $ 33,077.57      RipCo
@@ -8077,7 +8089,7 @@
            1.0 COTTA    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -124,149.57
+       $ -124,281.43
            1.0 COTTA
        463.427 FSPSX
        718.190 FXAIX
@@ -8093,9 +8105,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 895,479.49  Assets
-         $ 37,571.27    Checking
-            $ 542.89      Covantage
+        $ 895,347.63  Assets
+         $ 37,439.41    Checking
+            $ 411.03      Covantage
           $ 3,065.81      Northwoods
             $ 885.00      Park City
          $ 33,077.57      RipCo
@@ -8107,7 +8119,7 @@
         $ 450,000.00    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 732,354.93
+        $ 732,223.07
 #+end_example
 ** Spending
 *** This Month Spending
@@ -8117,24 +8129,30 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 3,637.91  Expenses
-            $ 155.18    Food
+          $ 3,269.77  Expenses
+            $ 157.04    Food
              $ 37.66      Fast Food
              $ 35.74      Groceries
              $ 16.88      Restaurants
-             $ 64.90      Snacks
+             $ 66.76      Snacks
           $ 1,351.25    Housing
           $ 1,216.25      Rent
             $ 135.00      Utilities
-             $ 30.00    Personal:Communication
-            $ 250.99    RE:Cottage:Utilities
+             $ 40.00    Personal
+             $ 30.00      Communication
+             $ 10.00      Household
+            $ 370.99    RE:Cottage
+            $ 120.00      Cleaning
+            $ 250.99      Utilities
           $ 1,841.79    Taxes
           $ 1,369.34      Federal
             $ 365.41      Illinois
             $ 107.04      Medicare
-              $ 8.70    Transportation:Public
+           $ -491.30    Transportation
+           $ -500.00      Biking
+              $ 8.70      Public
 --------------------
-          $ 3,637.91
+          $ 3,269.77
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8209,6 +8227,6 @@ February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
-June 2024            $ 1,796.12
+June 2024            $ 1,427.98
 July 2024            $ -383.75
 #+end_example
