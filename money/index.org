@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 06/11/2024 00:00:00 VTSAX $127.9900
-  P 06/11/2024 00:00:00 VTIAX $32.8900
-  P 06/11/2024 00:00:00 FSPSX $50.8300
-  P 06/11/2024 00:00:00 FXAIX $186.1000
-  P 06/11/2024 00:00:00 CONDO $250,000.00
-  P 06/11/2024 00:00:00 COTTA $450,000.00
-  P 06/11/2024 00:00:00 STRIP $26.00
+  P 06/15/2024 00:00:00 VTSAX $129.9700
+  P 06/15/2024 00:00:00 VTIAX $32.6600
+  P 06/15/2024 00:00:00 FSPSX $50.1500
+  P 06/15/2024 00:00:00 FXAIX $189.1400
+  P 06/15/2024 00:00:00 CONDO $250,000.00
+  P 06/15/2024 00:00:00 COTTA $450,000.00
+  P 06/15/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -8059,13 +8059,54 @@
       Assets:Checking:Northwoods              $ 921.16
       Income:RE:Cottage:Rent
 
+  2024-06-13 * GoDaddy
+      Expenses:Personal:Communication         $ 109.81
+      Liabilities:Credit Card:RipCo
+
   2024-06-14 * Transfer
       Assets:Checking:Northwoods            $ 3,077.57
       Assets:Checking:RipCo
 
+  2024-06-14 * GasBuddy
+      Expenses:Transportation:Driving:Gas      $ 21.77
+      Assets:Checking:Covantage
+
+  2024-06-14 * Schaefer's IGA
+      Expenses:Food:Snacks                      $ 9.33
+      Assets:Checking:Covantage
+
+  2024-06-14 * Utilities
+      Expenses:Personal:Health                $ 100.00
+      Assets:Checking:Covantage
+
+  2024-06-14 * Amazon
+      Expenses:Personal:Household              $ 41.61
+      Assets:Checking:Covantage
+
+  2024-06-14 * Azure
+      Expenses:Personal:Electronics            $ 13.78
+      Assets:Checking:Covantage
+
   2024-06-20 ! Escrow Transfer
       Assets:Checking:Northwoods            $ 4,790.02
       Expenses:RE:Cottage:Escrow
+
+  2024-06-24 ! VRBO
+      Assets:Checking:Northwoods            $ 1,104.49
+      Income:RE:Cottage:Rent
+
+  2024-06-30 ! VRBO
+      Assets:Checking:Northwoods            $ 1,700.30
+      Income:RE:Cottage:Rent
+
+  2024-07-01 ! Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 179.00
+      Assets:Checking:Northwoods
+
+  2024-07-01 ! Chase
+      Liabilities:RE:Cottage:Mortgage         $ 300.32
+      Expenses:RE:Cottage:Interest            $ 475.78
+      Assets:Checking:Northwoods
 
   2024-07-01 * Income
       Assets:Checking:Park City               $ 383.75
@@ -8075,9 +8116,94 @@
       Expenses:RE:Cottage:Lawncare          $ 5,265.00
       Assets:Checking:Northwoods
 
+  2024-07-19 ! VRBO
+      Assets:Checking:Northwoods            $ 1,471.11
+      Income:RE:Cottage:Rent
+
   2024-07-23 ! Traveler's
       Expenses:RE:Cottage:Insurance         $ 1,437.00
       Assets:Checking:Northwoods
+
+  2024-07-25 ! VRBO
+      Assets:Checking:Northwoods              $ 921.18
+      Income:RE:Cottage:Rent
+
+  2024-08-01 ! Spectrum
+      Expenses:RE:Cottage:Utilities            $ 71.99
+      Assets:Checking:Northwoods
+
+  2024-08-01 ! Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 179.00
+      Assets:Checking:Northwoods
+
+  2024-08-01 ! Chase
+      Liabilities:RE:Cottage:Mortgage         $ 301.20
+      Expenses:RE:Cottage:Interest            $ 474.90
+      Assets:Checking:Northwoods             $ -776.10
+
+  2024-08-12 ! VRBO
+      Assets:Checking:Northwoods            $ 1,196.18
+      Income:RE:Cottage:Rent
+
+  2024-09-01 ! Spectrum
+      Expenses:RE:Cottage:Utilities            $ 71.99
+      Assets:Checking:Northwoods
+
+  2024-09-01 ! Spectrum
+      Expenses:RE:Cottage:Utilities            $ 71.99
+      Assets:Checking:Northwoods
+
+  2024-09-01 ! Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 179.00
+      Assets:Checking:Northwoods
+
+  2024-09-01 ! Chase
+      Liabilities:RE:Cottage:Mortgage         $ 302.07
+      Expenses:RE:Cottage:Interest            $ 474.03
+      Assets:Checking:Northwoods             $ -776.10
+
+  2024-09-03 ! VRBO
+      Assets:Checking:Northwoods            $ 3,029.34
+      Income:RE:Cottage:Rent
+
+  2024-10-01 ! Spectrum
+      Expenses:RE:Cottage:Utilities            $ 71.99
+      Assets:Checking:Northwoods
+
+  2024-10-01 ! Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 179.00
+      Assets:Checking:Northwoods
+
+  2024-10-01 ! Chase
+      Liabilities:RE:Cottage:Mortgage         $ 302.96
+      Expenses:RE:Cottage:Interest            $ 473.14
+      Assets:Checking:Northwoods             $ -776.10
+
+  2024-11-01 ! Spectrum
+      Expenses:RE:Cottage:Utilities            $ 71.99
+      Assets:Checking:Northwoods
+
+  2024-11-01 ! Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 179.00
+      Assets:Checking:Northwoods
+
+  2024-11-01 ! Chase
+      Liabilities:RE:Cottage:Mortgage         $ 303.84
+      Expenses:RE:Cottage:Interest            $ 472.26
+      Assets:Checking:Northwoods             $ -776.10
+
+  2024-12-01 ! Spectrum
+      Expenses:RE:Cottage:Utilities            $ 71.99
+      Assets:Checking:Northwoods
+
+  2024-12-01 ! Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 179.00
+      Assets:Checking:Northwoods
+
+  2024-12-01 ! Chase
+      Liabilities:RE:Cottage:Mortgage         $ 304.73
+      Expenses:RE:Cottage:Interest            $ 471.37
+      Assets:Checking:Northwoods             $ -776.10
 #+end_src
 ** Initial Balance
 #+name: opening_balance
@@ -8109,15 +8235,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 38,186.56
+         $ 38,000.07
            1.0 COTTA
        466.551 FSPSX
        724.875 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 38,186.56    Checking
-            $ 237.02      Covantage
+         $ 38,000.07    Checking
+             $ 50.53      Covantage
           $ 7,064.54      Northwoods
             $ 885.00      Park City
          $ 30,000.00      RipCo
@@ -8133,9 +8259,11 @@
        793.319 VTSAX      IRA
        4,898.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-       $ -163,124.56  Liabilities:RE:Cottage:Mortgage
+       $ -163,234.37  Liabilities
+           $ -109.81    Credit Card:RipCo
+       $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-       $ -124,938.00
+       $ -125,234.30
            1.0 COTTA
        466.551 FSPSX
        724.875 FXAIX
@@ -8151,21 +8279,23 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 895,366.23  Assets
-         $ 38,186.56    Checking
-            $ 237.02      Covantage
+        $ 898,499.25  Assets
+         $ 38,000.07    Checking
+             $ 50.53      Covantage
           $ 7,064.54      Northwoods
             $ 885.00      Park City
          $ 30,000.00      RipCo
-        $ 407,179.67    Investments
-        $ 137,701.04      401K
-         $ 20,912.99      HSA
-        $ 121,217.65      IRA
+        $ 410,499.18    Investments
+        $ 139,245.78      401K
+         $ 21,254.61      HSA
+        $ 122,650.79      IRA
         $ 127,348.00      RSU
         $ 450,000.00    RE:Cottage
-       $ -163,124.56  Liabilities:RE:Cottage:Mortgage
+       $ -163,234.37  Liabilities
+           $ -109.81    Credit Card:RipCo
+       $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-        $ 732,241.67
+        $ 735,264.88
 #+end_example
 ** Spending
 *** This Month Spending
@@ -8175,20 +8305,22 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 3,443.78  Expenses
-            $ 325.31    Food
+          $ 3,740.08  Expenses
+            $ 334.64    Food
             $ 155.46      Drinks
              $ 37.66      Fast Food
              $ 35.74      Groceries
              $ 16.88      Restaurants
-             $ 79.57      Snacks
+             $ 88.90      Snacks
              $ 72.74    Gifts
           $ 1,284.25    Housing
           $ 1,216.25      Rent
              $ 68.00      Utilities
-             $ 40.00    Personal
-             $ 30.00      Communication
-             $ 10.00      Household
+            $ 305.20    Personal
+            $ 139.81      Communication
+             $ 13.78      Electronics
+            $ 100.00      Health
+             $ 51.61      Household
             $ 370.99    RE:Cottage
             $ 120.00      Cleaning
             $ 250.99      Utilities
@@ -8196,11 +8328,12 @@
           $ 1,369.34      Federal
             $ 365.41      Illinois
             $ 107.04      Medicare
-           $ -491.30    Transportation
+           $ -469.53    Transportation
            $ -500.00      Biking
+             $ 21.77      Driving:Gas
               $ 8.70      Public
 --------------------
-          $ 3,443.78
+          $ 3,740.08
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8275,6 +8408,6 @@ February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
-June 2024            $ 1,601.99
+June 2024            $ 1,898.29
 July 2024            $ -383.75
 #+end_example
