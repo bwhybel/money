@@ -8064,7 +8064,7 @@
       Liabilities:Credit Card:RipCo
 
   2024-06-14 * Transfer
-      Assets:Checking:Northwoods            $ 3,077.57
+      Assets:Checking:Northwoods            $ 3,072.59
       Assets:Checking:RipCo
 
   2024-06-14 * GasBuddy
@@ -8086,6 +8086,30 @@
   2024-06-14 * Azure
       Expenses:Personal:Electronics            $ 13.78
       Assets:Checking:Covantage
+
+  2024-06-15 * Goodwill
+      Expenses:Food:Snacks                      $ 8.00
+      Assets:Checking:Northwoods
+
+  2024-06-15 * Walmart
+      Expenses:Personal:Household              $ 51.56
+      Assets:Checking:Northwoods
+
+  2024-06-15 * Culver's
+      Expenses:Food:Fast Food                  $ 11.54
+      Assets:Checking:Covantage
+
+  2024-06-15 * Dollar Tree
+      Expenses:Food:Snacks                      $ 2.65
+      Assets:Checking:Covantage
+
+  2024-06-15 * Dollar General
+      Expenses:Food:Snacks                      $ 6.82
+      Assets:Checking:Covantage
+
+  2024-06-15 * Transfer
+      Assets:Checking:Covantage                 $ 4.98
+      Assets:Checking:RipCo
 
   2024-06-20 ! Escrow Transfer
       Assets:Checking:Northwoods            $ 4,790.02
@@ -8235,16 +8259,16 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 38,000.07
+         $ 37,919.50
            1.0 COTTA
        466.551 FSPSX
        724.875 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 38,000.07    Checking
-             $ 50.53      Covantage
-          $ 7,064.54      Northwoods
+         $ 37,919.50    Checking
+             $ 34.50      Covantage
+          $ 7,000.00      Northwoods
             $ 885.00      Park City
          $ 30,000.00      RipCo
        466.551 FSPSX
@@ -8263,7 +8287,7 @@
            $ -109.81    Credit Card:RipCo
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-       $ -125,234.30
+       $ -125,314.87
            1.0 COTTA
        466.551 FSPSX
        724.875 FXAIX
@@ -8279,10 +8303,10 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 898,499.25  Assets
-         $ 38,000.07    Checking
-             $ 50.53      Covantage
-          $ 7,064.54      Northwoods
+        $ 898,418.68  Assets
+         $ 37,919.50    Checking
+             $ 34.50      Covantage
+          $ 7,000.00      Northwoods
             $ 885.00      Park City
          $ 30,000.00      RipCo
         $ 410,499.18    Investments
@@ -8295,7 +8319,7 @@
            $ -109.81    Credit Card:RipCo
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-        $ 735,264.88
+        $ 735,184.31
 #+end_example
 ** Spending
 *** This Month Spending
@@ -8305,22 +8329,22 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 3,740.08  Expenses
-            $ 334.64    Food
+          $ 3,820.65  Expenses
+            $ 363.65    Food
             $ 155.46      Drinks
-             $ 37.66      Fast Food
+             $ 49.20      Fast Food
              $ 35.74      Groceries
              $ 16.88      Restaurants
-             $ 88.90      Snacks
+            $ 106.37      Snacks
              $ 72.74    Gifts
           $ 1,284.25    Housing
           $ 1,216.25      Rent
              $ 68.00      Utilities
-            $ 305.20    Personal
+            $ 356.76    Personal
             $ 139.81      Communication
              $ 13.78      Electronics
             $ 100.00      Health
-             $ 51.61      Household
+            $ 103.17      Household
             $ 370.99    RE:Cottage
             $ 120.00      Cleaning
             $ 250.99      Utilities
@@ -8333,7 +8357,7 @@
              $ 21.77      Driving:Gas
               $ 8.70      Public
 --------------------
-          $ 3,740.08
+          $ 3,820.65
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8408,6 +8432,6 @@ February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
-June 2024            $ 1,898.29
+June 2024            $ 1,978.86
 July 2024            $ -383.75
 #+end_example
