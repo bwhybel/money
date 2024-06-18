@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 06/15/2024 00:00:00 VTSAX $129.9700
-  P 06/15/2024 00:00:00 VTIAX $32.6600
-  P 06/15/2024 00:00:00 FSPSX $50.1500
-  P 06/15/2024 00:00:00 FXAIX $189.1400
-  P 06/15/2024 00:00:00 CONDO $250,000.00
-  P 06/15/2024 00:00:00 COTTA $450,000.00
-  P 06/15/2024 00:00:00 STRIP $26.00
+  P 06/17/2024 00:00:00 VTSAX $129.7700
+  P 06/17/2024 00:00:00 VTIAX $32.4500
+  P 06/17/2024 00:00:00 FSPSX $49.6200
+  P 06/17/2024 00:00:00 FXAIX $189.1100
+  P 06/17/2024 00:00:00 CONDO $250,000.00
+  P 06/17/2024 00:00:00 COTTA $450,000.00
+  P 06/17/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -8064,7 +8064,7 @@
       Liabilities:Credit Card:RipCo
 
   2024-06-14 * Transfer
-      Assets:Checking:Northwoods            $ 3,072.59
+      Assets:Checking:Covantage             $ 3,072.59
       Assets:Checking:RipCo
 
   2024-06-14 * GasBuddy
@@ -8085,6 +8085,10 @@
 
   2024-06-14 * Azure
       Expenses:Personal:Electronics            $ 13.78
+      Assets:Checking:Covantage
+
+  2024-06-14 * GasBuddy
+      Expenses:Transportation:Driving:Gas      $ 34.25
       Assets:Checking:Covantage
 
   2024-06-15 * Goodwill
@@ -8111,13 +8115,49 @@
       Assets:Checking:Covantage                 $ 4.98
       Assets:Checking:RipCo
 
-  2024-06-15 * Schaefer's
+  2024-06-15 * Schaefer's IGA
       Expenses:Food:Groceries                  $ 11.91
-      Expenses:Transportation:Driving:Gas      $ 34.25
+      Expenses:Food:Groceries                   $ 6.46
       Assets:Checking:Covantage
 
-  2024-06-20 ! Escrow Transfer
-      Assets:Checking:Northwoods            $ 4,790.02
+  2024-06-17 * Transfer
+      Assets:Checking:Northwoods            $ 2,500.00
+      Assets:Checking:Covantage
+
+  2024-06-17 * 7/11
+      Expenses:Food:Snacks                      $ 4.90
+      Assets:Checking:Covantage
+
+  2024-06-17 * 7/11
+      Expenses:Food:Snacks                     $ 10.12
+      Assets:Checking:Covantage
+
+  2024-06-17 * Amazon Go
+      Expenses:Food:Snacks                      $ 7.58
+      Assets:Checking:Covantage
+
+  2024-06-17 * Shell
+      Expenses:Food:Snacks                      $ 2.97
+      Assets:Checking:Covantage
+
+  2024-06-17 * Dunkin Donuts
+      Expenses:Food:Fast Food                   $ 1.78
+      Assets:Checking:Covantage
+
+  2024-06-17 * Chick-fil-a
+      Expenses:Food:Fast Food                   $ 2.20
+      Assets:Checking:Covantage
+
+  2024-06-17 * Taco Bell
+      Expenses:Food:Fast Food                   $ 2.77
+      Assets:Checking:Covantage
+
+  2024-06-17 * GasBuddy
+      Expenses:Transportation:Driving:Gas      $ 24.16
+      Assets:Checking:Covantage
+
+  2024-06-20 * Escrow Transfer
+      Assets:Checking:Capital One           $ 4,790.02
       Expenses:RE:Cottage:Escrow
 
   2024-06-24 ! VRBO
@@ -8264,16 +8304,17 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 37,873.34
+         $ 42,600.42
            1.0 COTTA
        466.551 FSPSX
        724.875 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 37,873.34    Checking
-            $ -11.66      Covantage
-          $ 7,000.00      Northwoods
+         $ 42,600.42    Checking
+          $ 4,790.02      Capital One
+            $ 497.99      Covantage
+          $ 6,427.41      Northwoods
             $ 885.00      Park City
          $ 30,000.00      RipCo
        466.551 FSPSX
@@ -8292,7 +8333,7 @@
            $ -109.81    Credit Card:RipCo
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-       $ -125,361.03
+       $ -120,633.95
            1.0 COTTA
        466.551 FSPSX
        724.875 FXAIX
@@ -8308,23 +8349,24 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 898,372.52  Assets
-         $ 37,873.34    Checking
-            $ -11.66      Covantage
-          $ 7,000.00      Northwoods
+        $ 902,546.26  Assets
+         $ 42,600.42    Checking
+          $ 4,790.02      Capital One
+            $ 497.99      Covantage
+          $ 6,427.41      Northwoods
             $ 885.00      Park City
          $ 30,000.00      RipCo
-        $ 410,499.18    Investments
-        $ 139,245.78      401K
-         $ 21,254.61      HSA
-        $ 122,650.79      IRA
+        $ 409,945.84    Investments
+        $ 138,980.14      401K
+         $ 21,251.24      HSA
+        $ 122,366.47      IRA
         $ 127,348.00      RSU
         $ 450,000.00    RE:Cottage
        $ -163,234.37  Liabilities
            $ -109.81    Credit Card:RipCo
        $ -163,124.56    RE:Cottage:Mortgage
 --------------------
-        $ 735,138.15
+        $ 739,311.89
 #+end_example
 ** Spending
 *** This Month Spending
@@ -8334,13 +8376,13 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 3,866.81  Expenses
-            $ 375.56    Food
+           $ -860.27  Expenses
+            $ 414.34    Food
             $ 155.46      Drinks
-             $ 49.20      Fast Food
-             $ 47.65      Groceries
+             $ 55.95      Fast Food
+             $ 54.11      Groceries
              $ 16.88      Restaurants
-            $ 106.37      Snacks
+            $ 131.94      Snacks
              $ 72.74    Gifts
           $ 1,284.25    Housing
           $ 1,216.25      Rent
@@ -8350,19 +8392,20 @@
              $ 13.78      Electronics
             $ 100.00      Health
             $ 103.17      Household
-            $ 370.99    RE:Cottage
+         $ -4,419.03    RE:Cottage
             $ 120.00      Cleaning
+         $ -4,790.02      Escrow
             $ 250.99      Utilities
           $ 1,841.79    Taxes
           $ 1,369.34      Federal
             $ 365.41      Illinois
             $ 107.04      Medicare
-           $ -435.28    Transportation
+           $ -411.12    Transportation
            $ -500.00      Biking
-             $ 56.02      Driving:Gas
+             $ 80.18      Driving:Gas
               $ 8.70      Public
 --------------------
-          $ 3,866.81
+           $ -860.27
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8437,6 +8480,6 @@ February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
-June 2024            $ 2,025.02
+June 2024            $ -2,702.06
 July 2024            $ -383.75
 #+end_example
