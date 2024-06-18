@@ -8156,9 +8156,13 @@
       Expenses:Transportation:Driving:Gas      $ 24.16
       Assets:Checking:Covantage
 
-  2024-06-20 * Escrow Transfer
+  2024-06-17 * Escrow Transfer
       Assets:Checking:Capital One           $ 4,790.02
       Expenses:RE:Cottage:Escrow
+
+  2024-06-20 * Transfer
+      Assets:Checking:Northwoods            $ 4,790.02
+      Assets:Checking:Capital One
 
   2024-06-24 ! VRBO
       Assets:Checking:Northwoods            $ 1,104.49
@@ -8312,9 +8316,8 @@
        598.381 VTIAX
        793.319 VTSAX  Assets
          $ 42,600.42    Checking
-          $ 4,790.02      Capital One
             $ 497.99      Covantage
-          $ 6,427.41      Northwoods
+         $ 11,217.43      Northwoods
             $ 885.00      Park City
          $ 30,000.00      RipCo
        466.551 FSPSX
@@ -8351,9 +8354,8 @@
 #+begin_example
         $ 902,546.26  Assets
          $ 42,600.42    Checking
-          $ 4,790.02      Capital One
             $ 497.99      Covantage
-          $ 6,427.41      Northwoods
+         $ 11,217.43      Northwoods
             $ 885.00      Park City
          $ 30,000.00      RipCo
         $ 409,945.84    Investments
