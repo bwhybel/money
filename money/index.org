@@ -8180,10 +8180,24 @@
       Expenses:Food:Fast Food                   $ 8.95
       Assets:Checking:Covantage
 
+  2024-06-20 * IRS
+      Expenses:Taxes:Federal                $ 5,500.00
+      Assets:Checking:RipCo
+
   2024-06-21 * Transfer
       Assets:Checking:Northwoods              $ 282.57
       Liabilities:Credit Card:RipCo           $ 109.81
       Assets:Checking:Covantage
+
+  2024-06-21 * Stripe
+      Income:Stripe:Paycheck               $ -7,058.08
+      Assets:Checking:Covantage               $ 500.00
+      Assets:Checking:Park City               $ 885.00
+      Assets:Checking:RipCo                 $ 2,817.23
+      Expenses:Taxes:Medicare                 $ 163.86  ;; Estimated
+      Expenses:Taxes:Federal                $ 1,283.90  ;; Estimated
+      Expenses:Taxes:State                    $ 349.37
+      Assets:Investments:401K               $ 1,058.72
 
   2024-06-24 * Transfer
       Assets:Checking:Northwoods            $ 4,790.02
@@ -8333,23 +8347,25 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 42,448.41
+         $ 42,209.36
            1.0 COTTA
        466.551 FSPSX
        724.875 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 42,448.41    Checking
-             $ 63.41      Covantage
+         $ 41,150.64    Checking
+            $ 563.41      Covantage
          $ 11,500.00      Northwoods
-            $ 885.00      Park City
-         $ 30,000.00      RipCo
+          $ 1,770.00      Park City
+         $ 27,317.23      RipCo
+          $ 1,058.72
        466.551 FSPSX
        724.875 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX    Investments
+          $ 1,058.72
        466.551 FSPSX
        612.500 FXAIX      401K
        112.375 FXAIX      HSA
@@ -8359,7 +8375,7 @@
            1.0 COTTA    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -120,676.15
+       $ -120,915.20
            1.0 COTTA
        466.551 FSPSX
        724.875 FXAIX
@@ -8375,21 +8391,21 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 904,353.57  Assets
-         $ 42,448.41    Checking
-             $ 63.41      Covantage
+        $ 904,114.52  Assets
+         $ 41,150.64    Checking
+            $ 563.41      Covantage
          $ 11,500.00      Northwoods
-            $ 885.00      Park City
-         $ 30,000.00      RipCo
-        $ 411,905.16    Investments
-        $ 139,913.17      401K
+          $ 1,770.00      Park City
+         $ 27,317.23      RipCo
+        $ 412,963.88    Investments
+        $ 140,971.89      401K
          $ 21,416.43      HSA
         $ 123,227.56      IRA
         $ 127,348.00      RSU
         $ 450,000.00    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 741,229.01
+        $ 740,989.96
 #+end_example
 ** Spending
 *** This Month Spending
@@ -8399,7 +8415,7 @@
 #+end_src
 #+results:
 #+begin_example
-           $ -818.07  Expenses
+          $ 6,479.06  Expenses
             $ 456.54    Food
             $ 155.46      Drinks
              $ 84.77      Fast Food
@@ -8419,16 +8435,17 @@
             $ 120.00      Cleaning
          $ -4,790.02      Escrow
             $ 250.99      Utilities
-          $ 1,841.79    Taxes
-          $ 1,369.34      Federal
+          $ 9,138.92    Taxes
+          $ 8,153.24      Federal
             $ 365.41      Illinois
-            $ 107.04      Medicare
+            $ 270.90      Medicare
+            $ 349.37      State
            $ -411.12    Transportation
            $ -500.00      Biking
              $ 80.18      Driving:Gas
               $ 8.70      Public
 --------------------
-           $ -818.07
+          $ 6,479.06
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
