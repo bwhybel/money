@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 06/20/2024 00:00:00 VTSAX $131.0900
-  P 06/20/2024 00:00:00 VTIAX $32.7000
-  P 06/20/2024 00:00:00 FSPSX $49.9400
-  P 06/20/2024 00:00:00 FXAIX $191.0700
-  P 06/20/2024 00:00:00 CONDO $250,000.00
-  P 06/20/2024 00:00:00 COTTA $450,000.00
-  P 06/20/2024 00:00:00 STRIP $26.00
+  P 06/21/2024 00:00:00 VTSAX $131.0900
+  P 06/21/2024 00:00:00 VTIAX $32.7000
+  P 06/21/2024 00:00:00 FSPSX $49.9400
+  P 06/21/2024 00:00:00 FXAIX $191.0700
+  P 06/21/2024 00:00:00 CONDO $250,000.00
+  P 06/21/2024 00:00:00 COTTA $450,000.00
+  P 06/21/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -8214,10 +8214,21 @@
       Assets:Checking:Covantage               $ 500.00
       Assets:Checking:Park City               $ 885.00
       Assets:Checking:RipCo                 $ 2,817.23
-      Expenses:Taxes:Medicare                 $ 163.86  ;; Estimated
-      Expenses:Taxes:Federal                $ 1,283.90  ;; Estimated
+      Expenses:Taxes:Medicare                 $ 156.19
+      Expenses:Taxes:Federal                $ 1,291.57
       Expenses:Taxes:State                    $ 349.37
       Assets:Investments:401K               $ 1,058.72
+
+  2024-06-21 * Taco Bell
+      Expenses:Food:Fast Food                  $ 18.22
+      Assets:Checking:Covantage
+
+  2024-06-21 * SWAQ
+      Income:SWAQ:Paycheck                    $ -49.50
+      Expenses:Taxes:Medicare                   $ 0.72
+      Expenses:Taxes:Social Security            $ 3.07
+      Expenses:Taxes:Illinois                   $ 2.45
+      Assets:Checking:Covantage                $ 43.26
 
   2024-06-24 * Transfer
       Assets:Checking:Northwoods            $ 4,790.02
@@ -8367,15 +8378,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 42,164.20
+         $ 42,189.24
            1.0 COTTA
        466.551 FSPSX
        724.875 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 41,105.48    Checking
-            $ 518.25      Covantage
+         $ 41,130.52    Checking
+            $ 543.29      Covantage
          $ 11,500.00      Northwoods
           $ 1,770.00      Park City
          $ 27,317.23      RipCo
@@ -8395,7 +8406,7 @@
            1.0 COTTA    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -120,960.36
+       $ -120,935.32
            1.0 COTTA
        466.551 FSPSX
        724.875 FXAIX
@@ -8411,9 +8422,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 904,876.87  Assets
-         $ 41,105.48    Checking
-            $ 518.25      Covantage
+        $ 904,901.91  Assets
+         $ 41,130.52    Checking
+            $ 543.29      Covantage
          $ 11,500.00      Northwoods
           $ 1,770.00      Park City
          $ 27,317.23      RipCo
@@ -8425,7 +8436,7 @@
         $ 450,000.00    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 741,752.31
+        $ 741,777.35
 #+end_example
 ** Spending
 *** This Month Spending
@@ -8435,10 +8446,10 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 6,524.22  Expenses
-            $ 501.70    Food
+          $ 6,548.68  Expenses
+            $ 519.92    Food
             $ 155.46      Drinks
-             $ 95.31      Fast Food
+            $ 113.53      Fast Food
              $ 54.11      Groceries
              $ 16.88      Restaurants
             $ 179.94      Snacks
@@ -8455,17 +8466,18 @@
             $ 120.00      Cleaning
          $ -4,790.02      Escrow
             $ 250.99      Utilities
-          $ 9,138.92    Taxes
-          $ 8,153.24      Federal
-            $ 365.41      Illinois
-            $ 270.90      Medicare
+          $ 9,145.16    Taxes
+          $ 8,160.91      Federal
+            $ 367.86      Illinois
+            $ 263.95      Medicare
+              $ 3.07      Social Security
             $ 349.37      State
            $ -411.12    Transportation
            $ -500.00      Biking
              $ 80.18      Driving:Gas
               $ 8.70      Public
 --------------------
-          $ 6,524.22
+          $ 6,548.68
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8540,6 +8552,6 @@ February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
-June 2024            $ -2,614.70
+June 2024            $ -2,596.48
 July 2024            $ -383.75
 #+end_example
