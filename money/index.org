@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 06/19/2024 00:00:00 VTSAX $130.7800
-  P 06/19/2024 00:00:00 VTIAX $32.5500
-  P 06/19/2024 00:00:00 FSPSX $49.6900
-  P 06/19/2024 00:00:00 FXAIX $190.5800
-  P 06/19/2024 00:00:00 CONDO $250,000.00
-  P 06/19/2024 00:00:00 COTTA $450,000.00
-  P 06/19/2024 00:00:00 STRIP $26.00
+  P 06/20/2024 00:00:00 VTSAX $131.0900
+  P 06/20/2024 00:00:00 VTIAX $32.7000
+  P 06/20/2024 00:00:00 FSPSX $49.9400
+  P 06/20/2024 00:00:00 FXAIX $191.0700
+  P 06/20/2024 00:00:00 CONDO $250,000.00
+  P 06/20/2024 00:00:00 COTTA $450,000.00
+  P 06/20/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -8180,9 +8180,29 @@
       Expenses:Food:Fast Food                   $ 8.95
       Assets:Checking:Covantage
 
+  2024-06-19 * Panera Bread
+      Expenses:Food:Fast Food                   $ 4.03
+      Assets:Checking:Covantage
+
+  2024-06-19 * McDonald's
+      Expenses:Food:Fast Food                   $ 6.51
+      Assets:Checking:Covantage
+
+  2024-06-19 * HomeGoods
+      Expenses:Food:Snacks                      $ 7.03
+      Assets:Checking:Covantage
+
+  2024-06-20 * Jewel
+      Expenses:Food:Snacks                     $ 16.64
+      Assets:Checking:Covantage
+
   2024-06-20 * IRS
       Expenses:Taxes:Federal                $ 5,500.00
       Assets:Checking:RipCo
+
+  2024-06-20 * 7/11
+      Expenses:Food:Snacks                     $ 10.95
+      Assets:Checking:Covantage
 
   2024-06-21 * Transfer
       Assets:Checking:Northwoods              $ 282.57
@@ -8347,15 +8367,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 42,209.36
+         $ 42,164.20
            1.0 COTTA
        466.551 FSPSX
        724.875 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 41,150.64    Checking
-            $ 563.41      Covantage
+         $ 41,105.48    Checking
+            $ 518.25      Covantage
          $ 11,500.00      Northwoods
           $ 1,770.00      Park City
          $ 27,317.23      RipCo
@@ -8375,7 +8395,7 @@
            1.0 COTTA    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -120,915.20
+       $ -120,960.36
            1.0 COTTA
        466.551 FSPSX
        724.875 FXAIX
@@ -8391,21 +8411,21 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 904,114.52  Assets
-         $ 41,150.64    Checking
-            $ 563.41      Covantage
+        $ 904,876.87  Assets
+         $ 41,105.48    Checking
+            $ 518.25      Covantage
          $ 11,500.00      Northwoods
           $ 1,770.00      Park City
          $ 27,317.23      RipCo
-        $ 412,963.88    Investments
-        $ 140,971.89      401K
-         $ 21,416.43      HSA
-        $ 123,227.56      IRA
+        $ 413,771.39    Investments
+        $ 141,388.65      401K
+         $ 21,471.49      HSA
+        $ 123,563.25      IRA
         $ 127,348.00      RSU
         $ 450,000.00    RE:Cottage
        $ -163,124.56  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 740,989.96
+        $ 741,752.31
 #+end_example
 ** Spending
 *** This Month Spending
@@ -8415,13 +8435,13 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 6,479.06  Expenses
-            $ 456.54    Food
+          $ 6,524.22  Expenses
+            $ 501.70    Food
             $ 155.46      Drinks
-             $ 84.77      Fast Food
+             $ 95.31      Fast Food
              $ 54.11      Groceries
              $ 16.88      Restaurants
-            $ 145.32      Snacks
+            $ 179.94      Snacks
              $ 72.74    Gifts
           $ 1,284.25    Housing
           $ 1,216.25      Rent
@@ -8445,7 +8465,7 @@
              $ 80.18      Driving:Gas
               $ 8.70      Public
 --------------------
-          $ 6,479.06
+          $ 6,524.22
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8520,6 +8540,6 @@ February 2024        $ 6,099.50
 March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
-June 2024            $ -2,659.86
+June 2024            $ -2,614.70
 July 2024            $ -383.75
 #+end_example
