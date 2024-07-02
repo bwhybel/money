@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 07/01/2024 00:00:00 VTSAX $130.6385
-  P 07/01/2024 00:00:00 VTIAX $32.3700
-  P 07/01/2024 00:00:00 FSPSX $49.8000
-  P 07/01/2024 00:00:00 FXAIX $190.9500
-  P 07/01/2024 00:00:00 CONDO $250,000.00
-  P 07/01/2024 00:00:00 COTTA $450,000.00
-  P 07/01/2024 00:00:00 STRIP $26.00
+  P 07/02/2024 00:00:00 VTSAX $130.2500
+  P 07/02/2024 00:00:00 VTIAX $32.4300
+  P 07/02/2024 00:00:00 FSPSX $49.9600
+  P 07/02/2024 00:00:00 FXAIX $190.2000
+  P 07/02/2024 00:00:00 CONDO $250,000.00
+  P 07/02/2024 00:00:00 COTTA $450,000.00
+  P 07/02/2024 00:00:00 STRIP $26.00
 #+end_src
 ** Transactions
 #+name: transactions
@@ -8385,6 +8385,23 @@
       Liabilities:Credit Card:Covantage        $ 52.24
       Assets:Checking:Covantage
 
+  2024-07-01 * Chick-fil-a
+      Expenses:Food:Fast Food                   $ 8.85
+      Assets:Checking:Covantage
+
+  2024-07-01 * 7/11
+      Expenses:Food:Fast Food                   $ 7.09
+      Assets:Checking:Covantage
+
+  2024-07-01 * GasBuddy
+      Expenses:Transportation:Driving:Gas      $ 29.29
+      Expenses:Transportation:Driving:Gas      $ 37.72
+      Assets:Checking:Covantage
+
+  2024-07-02 * Brooke Janicki
+      Expenses:RE:Cottage:Cleaning             $ 80.00
+      Assets:Checking:Northwoods
+
   2024-07-05 ! M5 Land
       Expenses:RE:Cottage:Lawncare          $ 5,265.00
       Assets:Checking:Northwoods
@@ -8394,7 +8411,7 @@
       Income:RE:Cottage:Rent
 
   2024-07-23 ! Traveler's
-      Expenses:RE:Cottage:Insurance         $ 1,437.00
+      Expenses:RE:Cottage:Insurance         $ 1,685.00
       Assets:Checking:Northwoods
 
   2024-07-25 ! VRBO
@@ -8504,16 +8521,16 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 40,869.55
+         $ 40,706.60
            1.0 COTTA
        469.750 FSPSX
        729.604 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 40,869.55    Checking
-            $ 249.62      Covantage
-         $ 13,217.70      Northwoods
+         $ 40,706.60    Checking
+            $ 166.67      Covantage
+         $ 13,137.70      Northwoods
              $ 85.00      Park City
          $ 27,317.23      RipCo
        469.750 FSPSX
@@ -8530,7 +8547,7 @@
            1.0 COTTA    RE:Cottage
        $ -162,824.24  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -121,954.69
+       $ -122,117.64
            1.0 COTTA
        469.750 FSPSX
        729.604 FXAIX
@@ -8546,21 +8563,21 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 903,936.58  Assets
-         $ 40,869.55    Checking
-            $ 249.62      Covantage
-         $ 13,217.70      Northwoods
+        $ 903,029.29  Assets
+         $ 40,706.60    Checking
+            $ 166.67      Covantage
+         $ 13,137.70      Northwoods
              $ 85.00      Park City
          $ 27,317.23      RipCo
-        $ 413,067.03    Investments
-        $ 141,253.43      401K
-         $ 21,458.01      HSA
-        $ 123,007.60      IRA
+        $ 412,322.69    Investments
+        $ 140,865.67      401K
+         $ 21,373.73      HSA
+        $ 122,735.30      IRA
         $ 127,348.00      RSU
         $ 450,000.00    RE:Cottage
        $ -162,824.24  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 741,112.34
+        $ 740,205.05
 #+end_example
 ** Spending
 *** This Month Spending
@@ -8570,19 +8587,21 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 2,053.59  Expenses
-             $ 25.57    Food
-              $ 4.46      Fast Food
+          $ 2,216.54  Expenses
+             $ 41.51    Food
+             $ 20.40      Fast Food
              $ 21.11      Snacks
           $ 1,271.25    Housing
           $ 1,149.25      Rent
             $ 122.00      Utilities
              $ 30.00    Personal:Communication
-            $ 726.77    RE:Cottage
+            $ 806.77    RE:Cottage
+             $ 80.00      Cleaning
             $ 475.78      Interest
             $ 250.99      Utilities
+             $ 67.01    Transportation:Driving:Gas
 --------------------
-          $ 2,053.59
+          $ 2,216.54
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8647,5 +8666,5 @@ March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
-July 2024            $ 2,053.59
+July 2024            $ 2,216.54
 #+end_example
