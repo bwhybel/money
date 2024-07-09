@@ -43,20 +43,20 @@
       return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), stock, values[index]) + "\n"
   return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "CONDO", "250,000.00") + "\n"
   return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "COTTA", "450,000.00") + "\n"
-  return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "STRIP", "26.00") + "\n"
+  return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "STRIP", "27.51") + "\n"
   return_string = return_string + "#+end_src"
   return return_string
 #+end_src
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 07/07/2024 00:00:00 VTSAX $131.8300
-  P 07/07/2024 00:00:00 VTIAX $32.8800
-  P 07/07/2024 00:00:00 FSPSX $50.5800
-  P 07/07/2024 00:00:00 FXAIX $192.2485
-  P 07/07/2024 00:00:00 CONDO $250,000.00
-  P 07/07/2024 00:00:00 COTTA $450,000.00
-  P 07/07/2024 00:00:00 STRIP $26.00
+  P 07/09/2024 00:00:00 VTSAX $132.4400
+  P 07/09/2024 00:00:00 VTIAX $33.1100
+  P 07/09/2024 00:00:00 FSPSX $51.0100
+  P 07/09/2024 00:00:00 FXAIX $193.3300
+  P 07/09/2024 00:00:00 CONDO $250,000.00
+  P 07/09/2024 00:00:00 COTTA $450,000.00
+  P 07/09/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -8428,7 +8428,8 @@
       Expenses:Taxes:Medicare                 $ 165.88
       Expenses:Taxes:Federal                $ 1,291.57
       Expenses:Taxes:State                    $ 349.37
-      Assets:Investments:401K               $ 1,058.72
+      Assets:Investments:401K                     4.65 FXAIX @ $ 193.529032
+      Assets:Investments:401K                     3.13 FSPSX @ $ 50.7380192
 
   2024-07-05 * Utilities
       Assets:Checking:Covantage                $ 67.00
@@ -8443,6 +8444,7 @@
 
   2024-07-05 * Dividend
       Assets:Investments:401K                    1.994 FXAIX
+      Assets:Investments:HSA                     0.363 FXAIX
       Income:Extra
 
   2024-07-06 * 7/11
@@ -8455,12 +8457,13 @@
 
   2024-07-06 * GasBuddy
       Expenses:Transportation:Driving:Gas      $ 38.60
+      Expenses:Transportation:Driving:Gas      $ 33.20
       Assets:Checking:Covantage
 
   2024-07-06 * Kwik Trip
       Expenses:Food:Snacks                      $ 3.58
       Expenses:Food:Snacks                      $ 2.72
-      Income:Extra                              $ 1.11
+      Income:Extra                             $ -1.11
       Liabilities:Credit Card:RipCo
 
   2024-07-07 * 7/11
@@ -8478,6 +8481,10 @@
   2024-07-07 * Transfer
       Assets:Checking:Covantage               $ 117.36
       Assets:Checking:RipCo
+
+  2024-07-07 * Transfer
+      Liabilities:Credit Card:Northwoods       $ 20.00
+      Assets:Checking:Covantage
 
   2024-07-07 * Aldi
       Expenses:Food:Groceries                  $ 33.06
@@ -8498,8 +8505,16 @@
       Assets:Checking:Covantage
 
   2024-07-08 * Transfer
-      Liabilities:Credit Card:RipCo             $ 7.41
+      Liabilities:Credit Card:RipCo             $ 5.19
       Assets:Checking:RipCo
+
+  2024-07-09 * Drinks
+      Expenses:Food:Drinks                     $ 22.00
+      Assets:Checking:Covantage
+
+  2024-07-09 * Electronics
+      Expenses:Personal:Communication         $ 137.00
+      Assets:Checking:Covantage
 
   2024-07-19 ! VRBO
       Assets:Checking:Northwoods            $ 1,471.11
@@ -8616,40 +8631,36 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 45,497.96
+         $ 44,229.26
            1.0 COTTA
-       469.750 FSPSX
-       731.598 FXAIX
+       472.880 FSPSX
+       736.611 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 44,439.24    Checking
-            $ 473.35      Covantage
+         $ 44,229.26    Checking
+            $ 261.15      Covantage
          $ 12,995.89      Northwoods
             $ 970.00      Park City
-         $ 30,000.00      RipCo
-          $ 1,058.72
-       469.750 FSPSX
-       731.598 FXAIX
+         $ 30,002.22      RipCo
+       472.880 FSPSX
+       736.611 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX    Investments
-          $ 1,058.72
-       469.750 FSPSX
-       619.223 FXAIX      401K
-       112.375 FXAIX      HSA
+       472.880 FSPSX
+       623.873 FXAIX      401K
+       112.738 FXAIX      HSA
        598.381 VTIAX
        793.319 VTSAX      IRA
        4,898.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-       $ -162,844.24  Liabilities
-            $ -20.00    Credit Card:Northwoods
-       $ -162,824.24    RE:Cottage:Mortgage
+       $ -162,824.24  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -117,346.28
+       $ -118,594.98
            1.0 COTTA
-       469.750 FSPSX
-       731.598 FXAIX
+       472.880 FSPSX
+       736.611 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX
@@ -8662,23 +8673,21 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 911,512.54  Assets
-         $ 44,439.24    Checking
-            $ 473.35      Covantage
+        $ 920,383.42  Assets
+         $ 44,229.26    Checking
+            $ 261.15      Covantage
          $ 12,995.89      Northwoods
             $ 970.00      Park City
-         $ 30,000.00      RipCo
-        $ 417,073.30    Investments
-        $ 143,863.37      401K
-         $ 21,603.93      HSA
-        $ 124,258.01      IRA
-        $ 127,348.00      RSU
+         $ 30,002.22      RipCo
+        $ 426,154.16    Investments
+        $ 144,734.98      401K
+         $ 21,795.64      HSA
+        $ 124,879.56      IRA
+        $ 134,743.98      RSU
         $ 450,000.00    RE:Cottage
-       $ -162,844.24  Liabilities
-            $ -20.00    Credit Card:Northwoods
-       $ -162,824.24    RE:Cottage:Mortgage
+       $ -162,824.24  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 748,668.30
+        $ 757,559.18
 #+end_example
 ** Spending
 *** This Month Spending
@@ -8688,9 +8697,9 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,547.15  Expenses
-            $ 208.36    Food
-             $ 28.78      Drinks
+          $ 4,739.35  Expenses
+            $ 230.36    Food
+             $ 50.78      Drinks
              $ 31.22      Fast Food
             $ 105.17      Groceries
              $ 43.19      Snacks
@@ -8698,8 +8707,8 @@
           $ 1,204.25    Housing
           $ 1,149.25      Rent
              $ 55.00      Utilities
-             $ 37.00    Personal
-             $ 30.00      Communication
+            $ 174.00    Personal
+            $ 167.00      Communication
               $ 7.00      Health
             $ 959.44    RE:Cottage
              $ 80.00      Cleaning
@@ -8712,11 +8721,11 @@
             $ 166.53      Medicare
               $ 2.79      Social Security
             $ 349.37      State
-            $ 125.61    Transportation:Driving
-            $ 105.61      Gas
+            $ 158.81    Transportation:Driving
+            $ 138.81      Gas
              $ 20.00      Tolls
 --------------------
-          $ 4,547.15
+          $ 4,739.35
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8781,5 +8790,5 @@ March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
-July 2024            $ 2,734.66
+July 2024            $ 2,926.86
 #+end_example
