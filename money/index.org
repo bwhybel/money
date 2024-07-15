@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 07/09/2024 00:00:00 VTSAX $132.4400
-  P 07/09/2024 00:00:00 VTIAX $33.1100
-  P 07/09/2024 00:00:00 FSPSX $51.0100
-  P 07/09/2024 00:00:00 FXAIX $193.3300
-  P 07/09/2024 00:00:00 CONDO $250,000.00
-  P 07/09/2024 00:00:00 COTTA $450,000.00
-  P 07/09/2024 00:00:00 STRIP $27.51
+  P 07/15/2024 00:00:00 VTSAX $133.3000
+  P 07/15/2024 00:00:00 VTIAX $33.4500
+  P 07/15/2024 00:00:00 FSPSX $51.4100
+  P 07/15/2024 00:00:00 FXAIX $193.9700
+  P 07/15/2024 00:00:00 CONDO $250,000.00
+  P 07/15/2024 00:00:00 COTTA $450,000.00
+  P 07/15/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -8516,6 +8516,55 @@
       Expenses:Personal:Communication         $ 137.00
       Assets:Checking:Covantage
 
+  2024-07-13 * Mariano's
+      Expenses:Food:Groceries                  $ 11.21
+      Assets:Checking:Covantage
+
+  2024-07-13 * Chick-fil-a
+      Expenses:Food:Fast Food                   $ 9.13
+      Assets:Checking:Covantage
+
+  2024-07-13 * Aldi
+      Expenses:Food:Groceries                  $ 17.67
+      Expenses:Food:Groceries                  $ 31.24
+      Assets:Checking:Covantage
+
+  2024-07-13 * Home Depot
+      Expenses:Personal:Household               $ 4.38
+      Assets:Checking:Covantage
+
+  2024-07-13 * Dollar Tree
+      Expenses:Personal:Household               $ 6.96
+      Assets:Checking:Covantage
+
+  2024-07-13 * Target
+      Expenses:Personal:Household               $ 8.15
+      Assets:Checking:Covantage
+
+  2024-07-13 * 7/11
+      Expenses:Food:Snacks                      $ 1.31
+      Assets:Checking:Covantage
+
+  2024-07-15 * Sure Dry
+      Expenses:RE:Cottage:Repairs               $ 9.99
+      Assets:Checking:Northwoods
+
+  2024-07-15 * Azure
+      Expenses:Personal:Electronics            $ 13.34
+      Liabilities:Credit Card:Covantage
+
+  2024-07-15 * Amazon
+      Expenses:Personal:Clothes               $ 202.82
+      Liabilities:Credit Card:RipCo
+
+  2024-07-15 * Amazon
+      Expenses:Personal:Electronics           $ 154.34
+      Liabilities:Credit Card:RipCo
+
+  2024-07-18 * Transfer
+      Assets:Checking:Covantage                $ 85.00
+      Assets:Checking:Park City
+
   2024-07-19 ! VRBO
       Assets:Checking:Northwoods            $ 1,471.11
       Income:RE:Cottage:Rent
@@ -8631,17 +8680,17 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 44,229.26
+         $ 44,129.22
            1.0 COTTA
        472.880 FSPSX
        736.611 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 44,229.26    Checking
-            $ 261.15      Covantage
-         $ 12,995.89      Northwoods
-            $ 970.00      Park City
+         $ 44,129.22    Checking
+            $ 256.10      Covantage
+         $ 12,985.90      Northwoods
+            $ 885.00      Park City
          $ 30,002.22      RipCo
        472.880 FSPSX
        736.611 FXAIX
@@ -8655,9 +8704,13 @@
        793.319 VTSAX      IRA
        4,898.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-       $ -162,824.24  Liabilities:RE:Cottage:Mortgage
+       $ -163,194.74  Liabilities
+           $ -370.50    Credit Card
+            $ -13.34      Covantage
+           $ -357.16      RipCo
+       $ -162,824.24    RE:Cottage:Mortgage
 --------------------
-       $ -118,594.98
+       $ -119,065.52
            1.0 COTTA
        472.880 FSPSX
        736.611 FXAIX
@@ -8673,21 +8726,25 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 920,383.42  Assets
-         $ 44,229.26    Checking
-            $ 261.15      Covantage
-         $ 12,995.89      Northwoods
-            $ 970.00      Park City
+        $ 921,829.66  Assets
+         $ 44,129.22    Checking
+            $ 256.10      Covantage
+         $ 12,985.90      Northwoods
+            $ 885.00      Park City
          $ 30,002.22      RipCo
-        $ 426,154.16    Investments
-        $ 144,734.98      401K
-         $ 21,795.64      HSA
-        $ 124,879.56      IRA
+        $ 427,700.44    Investments
+        $ 145,323.41      401K
+         $ 21,867.79      HSA
+        $ 125,765.27      IRA
         $ 134,743.98      RSU
         $ 450,000.00    RE:Cottage
-       $ -162,824.24  Liabilities:RE:Cottage:Mortgage
+       $ -163,194.74  Liabilities
+           $ -370.50    Credit Card
+            $ -13.34      Covantage
+           $ -357.16      RipCo
+       $ -162,824.24    RE:Cottage:Mortgage
 --------------------
-        $ 757,559.18
+        $ 758,634.92
 #+end_example
 ** Spending
 *** This Month Spending
@@ -8697,23 +8754,26 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,739.35  Expenses
-            $ 230.36    Food
+          $ 5,209.89  Expenses
+            $ 300.92    Food
              $ 50.78      Drinks
-             $ 31.22      Fast Food
-            $ 105.17      Groceries
-             $ 43.19      Snacks
+             $ 40.35      Fast Food
+            $ 165.29      Groceries
+             $ 44.50      Snacks
             $ 200.00    Gifts
           $ 1,204.25    Housing
           $ 1,149.25      Rent
              $ 55.00      Utilities
-            $ 174.00    Personal
+            $ 563.99    Personal
+            $ 202.82      Clothes
             $ 167.00      Communication
+            $ 167.68      Electronics
               $ 7.00      Health
-            $ 959.44    RE:Cottage
+             $ 19.49      Household
+            $ 969.43    RE:Cottage
              $ 80.00      Cleaning
             $ 475.78      Interest
-             $ 10.86      Repairs
+             $ 20.85      Repairs
             $ 392.80      Utilities
           $ 1,812.49    Taxes
           $ 1,291.57      Federal
@@ -8725,7 +8785,7 @@
             $ 138.81      Gas
              $ 20.00      Tolls
 --------------------
-          $ 4,739.35
+          $ 5,209.89
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8790,5 +8850,5 @@ March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
-July 2024            $ 2,926.86
+July 2024            $ 3,397.40
 #+end_example
