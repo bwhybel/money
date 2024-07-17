@@ -8768,7 +8768,7 @@
 #+end_example
 ** Spending
 *** Savings Rate
-#+begin_src python :var tr=transactions :exports results
+#+begin_src python :var tr=transactions :exports none
   import re
 
   def extract_amount(line):
