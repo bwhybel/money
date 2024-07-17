@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 07/15/2024 00:00:00 VTSAX $133.3000
-  P 07/15/2024 00:00:00 VTIAX $33.4500
-  P 07/15/2024 00:00:00 FSPSX $51.4100
-  P 07/15/2024 00:00:00 FXAIX $193.9700
-  P 07/15/2024 00:00:00 CONDO $250,000.00
-  P 07/15/2024 00:00:00 COTTA $450,000.00
-  P 07/15/2024 00:00:00 STRIP $27.51
+  P 07/17/2024 00:00:00 VTSAX $134.6500
+  P 07/17/2024 00:00:00 VTIAX $33.5000
+  P 07/17/2024 00:00:00 FSPSX $51.5400
+  P 07/17/2024 00:00:00 FXAIX $195.6100
+  P 07/17/2024 00:00:00 CONDO $250,000.00
+  P 07/17/2024 00:00:00 COTTA $450,000.00
+  P 07/17/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -8652,7 +8652,7 @@
 #+end_src
 ** Initial Balance
 #+name: opening_balance
-#+begin_src ledger :eval never
+#+begin_src ledger :exports none
   2023-04-01 * Initial Balance
       Assets:Checking:Northwoods            $ 9,495.85
       Assets:Checking:RipCo                 $ 3,250.00
@@ -8671,6 +8671,54 @@
       Liabilities:RE:Cottage:Mortgage    $ -352,049.77
       Equity:OpeningBalance
 #+end_src
+
+#+RESULTS: opening_balance
+#+begin_example
+         $ 31,746.77
+           1.0 CONDO
+           1.0 COTTA
+       354.536 FSPSX
+       521.688 FXAIX
+          58.0 STRIP
+       528.079 VTIAX
+       675.302 VTSAX  Assets
+         $ 12,745.85    Checking
+          $ 9,495.85      Northwoods
+          $ 3,250.00      RipCo
+       354.536 FSPSX
+       521.688 FXAIX
+          58.0 STRIP
+       528.079 VTIAX
+       675.302 VTSAX    Investments
+       354.536 FSPSX
+       441.706 FXAIX      401K
+        79.982 FXAIX      HSA
+       528.079 VTIAX
+       675.302 VTSAX      IRA
+          58.0 STRIP      RSU
+           1.0 CONDO
+           1.0 COTTA    RE
+           1.0 CONDO      Condo
+           1.0 COTTA      Cottage
+         $ 19,000.92    Savings
+          $ 5,000.00      Northwoods
+          $ 1,999.99      RipCo
+         $ 12,000.93      UFB
+        $ 457,440.20
+          -1.0 CONDO
+          -1.0 COTTA
+      -354.536 FSPSX
+      -521.688 FXAIX
+         -58.0 STRIP
+      -528.079 VTIAX
+      -675.302 VTSAX  Equity:OpeningBalance
+       $ -489,186.97  Liabilities:RE
+       $ -137,137.20    Condo:Mortgage
+       $ -352,049.77    Cottage:Mortgage
+--------------------
+                   0
+#+end_example
+
 * Money
 ** Net Worth
 *** Assets
@@ -8726,16 +8774,16 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 921,829.66  Assets
+        $ 924,200.08  Assets
          $ 44,129.22    Checking
             $ 256.10      Covantage
          $ 12,985.90      Northwoods
             $ 885.00      Park City
          $ 30,002.22      RipCo
-        $ 427,700.44    Investments
-        $ 145,323.41      401K
-         $ 21,867.79      HSA
-        $ 125,765.27      IRA
+        $ 430,070.86    Investments
+        $ 146,408.03      401K
+         $ 22,052.68      HSA
+        $ 126,866.17      IRA
         $ 134,743.98      RSU
         $ 450,000.00    RE:Cottage
        $ -163,194.74  Liabilities
@@ -8744,7 +8792,7 @@
            $ -357.16      RipCo
        $ -162,824.24    RE:Cottage:Mortgage
 --------------------
-        $ 758,634.92
+        $ 761,005.34
 #+end_example
 ** Spending
 *** This Month Spending
