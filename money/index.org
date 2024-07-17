@@ -8768,20 +8768,16 @@
 #+end_example
 ** Spending
 *** Savings Rate
-#+begin_src python :var tr=transactions :noweb yes :exports results :results verbatim
+#+begin_src python :var tr=transactions :exports results
   import re
 
-  ledger_output = tr
-
-  # Define a function to extract amounts from ledger lines
   def extract_amount(line):
       match = re.search(r'\$ ([\d,.-]+)', line)
       if match:
 	  return float(match.group(1).replace(',', ''))
       return 0.0
 
-  # Parse the ledger output
-  lines = ledger_output.strip().split('\n')
+  lines = tr.strip().split('\n')
   expenses = 0.0
   income = 0.0
   taxes = 0.0
@@ -8796,18 +8792,28 @@
 	  elif line.strip().endswith('Taxes'):
 	      taxes = amount
 
-  # Calculate take-home income and savings rate excluding taxes
   take_home_income = income - taxes
   non_tax_expenses = expenses - taxes
   savings_rate = ((income - expenses) / income) * 100
   savings_rate_excluding_taxes = ((take_home_income - non_tax_expenses) / take_home_income) * 100
 
 
-  return f"Savings Rate: {savings_rate:.2f}%\nSavings Rate (excluding taxes): {savings_rate_excluding_taxes:.2f}%"
+  return f"hi\n\n\n\n\nn\n\n\n\nSavings Rate: {savings_rate:.2f}%\nSavings Rate (excluding taxes): {savings_rate_excluding_taxes:.2f}%"
 #+end_src
 #+results:
-: Savings Rate: 40.00%
-: Savings Rate (excluding taxes): 60.89%
+#+begin_example
+hi
+
+
+
+
+n
+
+
+
+Savings Rate: 40.00%
+Savings Rate (excluding taxes): 60.89%
+#+end_example
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
