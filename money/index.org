@@ -8768,7 +8768,7 @@
 #+end_example
 ** Spending
 *** Savings Rate
-#+begin_src python :var tr=transactions :exports none
+#+begin_src python :exports results :var tr=transactions
   import re
 
   def extract_amount(line):
@@ -8798,22 +8798,11 @@
   savings_rate_excluding_taxes = ((take_home_income - non_tax_expenses) / take_home_income) * 100
 
 
-  return f"hi\n\n\n\n\nn\n\n\n\nSavings Rate: {savings_rate:.2f}%\nSavings Rate (excluding taxes): {savings_rate_excluding_taxes:.2f}%"
+  return f"Savings Rate: {savings_rate:.2f}%\nSavings Rate (excluding taxes): {savings_rate_excluding_taxes:.2f}%"
 #+end_src
 #+results:
-#+begin_example
-hi
-
-
-
-
-n
-
-
-
-Savings Rate: 40.00%
-Savings Rate (excluding taxes): 60.89%
-#+end_example
+: Savings Rate: 40.00%
+: Savings Rate (excluding taxes): 60.89%
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
