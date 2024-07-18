@@ -8559,6 +8559,8 @@
 
   2024-07-15 * Amazon
       Expenses:Personal:Electronics           $ 154.34
+      Expenses:Personal:Electroncis           $ -54.01
+      Expenses:Personal:Electroncis           $ -77.16
       Liabilities:Credit Card:RipCo
 
   2024-07-15 * Homegood
@@ -8612,6 +8614,11 @@
   2024-07-18 * 7/11
       Expenses:Food:Snacks                      $ 7.14
       Assets:Checking:Covantage
+
+  2024-07-18 * Amazon
+      Expenses:Personal:Health                 $ 15.33
+      Expenses:Personal:Health                 $ 27.67
+      Liabilities:Credit Card:RipCo
 
   2024-07-19 * VRBO
       Assets:Checking:Northwoods            $ 1,471.11
@@ -8700,12 +8707,12 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 335,790.52  Expenses
+        $ 335,702.35  Expenses
          $ 11,912.85    Food
              $ 55.26    Foods
           $ 2,456.75    Gifts
          $ 24,159.58    Housing
-         $ 14,506.91    Personal
+         $ 14,418.74    Personal
          $ 78,879.95    RE
         $ 191,986.19    Taxes
           $ 9,500.20    Transportation
@@ -8716,7 +8723,7 @@
          $ -3,278.70    SWAQ
        $ -508,706.96    Stripe
 --------------------
-       $ -223,670.91
+       $ -223,759.08
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -8772,13 +8779,13 @@
        793.319 VTSAX      IRA
        4,898.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-       $ -163,194.74  Liabilities
-           $ -370.50    Credit Card
+       $ -163,106.57  Liabilities
+           $ -282.33    Credit Card
             $ -13.34      Covantage
-           $ -357.16      RipCo
+           $ -268.99      RipCo
        $ -162,824.24    RE:Cottage:Mortgage
 --------------------
-       $ -122,953.96
+       $ -122,865.79
            1.0 COTTA
        472.880 FSPSX
        736.611 FXAIX
@@ -8806,13 +8813,13 @@
         $ 127,899.97      IRA
         $ 134,743.98      RSU
         $ 450,000.00    RE:Cottage
-       $ -163,194.74  Liabilities
-           $ -370.50    Credit Card
+       $ -163,106.57  Liabilities
+           $ -282.33    Credit Card
             $ -13.34      Covantage
-           $ -357.16      RipCo
+           $ -268.99      RipCo
        $ -162,824.24    RE:Cottage:Mortgage
 --------------------
-        $ 759,132.94
+        $ 759,221.11
 #+end_example
 ** Spending
 *** Savings Rate
@@ -8849,8 +8856,8 @@
   return f"Gross Savings Rate: {gross_savings_rate:.2f}%\nNet Savings Rate: {net_savings_rate:.2f}%"
 #+end_src
 #+results:
-: Gross Savings Rate: 39.98%
-: Net Savings Rate: 60.87%
+: Gross Savings Rate: 40.00%
+: Net Savings Rate: 60.89%
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
@@ -8858,7 +8865,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 10,569.44  Expenses
+         $ 10,481.27  Expenses
             $ 375.47    Food
              $ 50.78      Drinks
              $ 68.22      Fast Food
@@ -8868,11 +8875,12 @@
           $ 1,204.25    Housing
           $ 1,149.25      Rent
              $ 55.00      Utilities
-            $ 583.99    Personal
+            $ 495.82    Personal
             $ 202.82      Clothes
             $ 167.00      Communication
+           $ -131.17      Electroncis
             $ 187.68      Electronics
-              $ 7.00      Health
+             $ 50.00      Health
              $ 19.49      Household
           $ 6,234.43    RE:Cottage
              $ 80.00      Cleaning
@@ -8890,7 +8898,7 @@
             $ 138.81      Gas
              $ 20.00      Tolls
 --------------------
-         $ 10,569.44
+         $ 10,481.27
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8955,5 +8963,5 @@ March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
-July 2024            $ 8,756.95
+July 2024            $ 8,668.78
 #+end_example
