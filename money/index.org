@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 07/17/2024 00:00:00 VTSAX $135.8400
-  P 07/17/2024 00:00:00 VTIAX $33.6500
-  P 07/17/2024 00:00:00 FSPSX $51.6700
-  P 07/17/2024 00:00:00 FXAIX $196.8600
-  P 07/17/2024 00:00:00 CONDO $250,000.00
-  P 07/17/2024 00:00:00 COTTA $450,000.00
-  P 07/17/2024 00:00:00 STRIP $27.51
+  P 07/18/2024 00:00:00 VTSAX $135.8400
+  P 07/18/2024 00:00:00 VTIAX $33.6500
+  P 07/18/2024 00:00:00 FSPSX $51.6700
+  P 07/18/2024 00:00:00 FXAIX $196.8600
+  P 07/18/2024 00:00:00 CONDO $250,000.00
+  P 07/18/2024 00:00:00 COTTA $450,000.00
+  P 07/18/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -8609,6 +8609,10 @@
       Assets:Checking:Covantage                $ 85.00
       Assets:Checking:Park City
 
+  2024-07-18 * 7/11
+      Expenses:Food:Snacks                      $ 7.14
+      Assets:Checking:Covantage
+
   2024-07-19 * VRBO
       Assets:Checking:Northwoods            $ 1,471.11
       Income:RE:Cottage:Rent
@@ -8696,8 +8700,8 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 335,783.38  Expenses
-         $ 11,905.71    Food
+        $ 335,790.52  Expenses
+         $ 11,912.85    Food
              $ 55.26    Foods
           $ 2,456.75    Gifts
          $ 24,159.58    Housing
@@ -8712,7 +8716,7 @@
          $ -3,278.70    SWAQ
        $ -508,706.96    Stripe
 --------------------
-       $ -223,678.05
+       $ -223,670.91
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -8744,15 +8748,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 40,247.92
+         $ 40,240.78
            1.0 COTTA
        472.880 FSPSX
        736.611 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 40,247.92    Checking
-            $ 168.69      Covantage
+         $ 40,240.78    Checking
+            $ 161.55      Covantage
           $ 9,192.01      Northwoods
             $ 885.00      Park City
          $ 30,002.22      RipCo
@@ -8774,7 +8778,7 @@
            $ -357.16      RipCo
        $ -162,824.24    RE:Cottage:Mortgage
 --------------------
-       $ -122,946.82
+       $ -122,953.96
            1.0 COTTA
        472.880 FSPSX
        736.611 FXAIX
@@ -8790,9 +8794,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 922,334.82  Assets
-         $ 40,247.92    Checking
-            $ 168.69      Covantage
+        $ 922,327.68  Assets
+         $ 40,240.78    Checking
+            $ 161.55      Covantage
           $ 9,192.01      Northwoods
             $ 885.00      Park City
          $ 30,002.22      RipCo
@@ -8808,7 +8812,7 @@
            $ -357.16      RipCo
        $ -162,824.24    RE:Cottage:Mortgage
 --------------------
-        $ 759,140.08
+        $ 759,132.94
 #+end_example
 ** Spending
 *** Savings Rate
@@ -8854,12 +8858,12 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 10,562.30  Expenses
-            $ 368.33    Food
+         $ 10,569.44  Expenses
+            $ 375.47    Food
              $ 50.78      Drinks
              $ 68.22      Fast Food
             $ 175.95      Groceries
-             $ 73.38      Snacks
+             $ 80.52      Snacks
             $ 200.00    Gifts
           $ 1,204.25    Housing
           $ 1,149.25      Rent
@@ -8886,7 +8890,7 @@
             $ 138.81      Gas
              $ 20.00      Tolls
 --------------------
-         $ 10,562.30
+         $ 10,569.44
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -8951,5 +8955,5 @@ March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
-July 2024            $ 8,749.81
+July 2024            $ 8,756.95
 #+end_example
