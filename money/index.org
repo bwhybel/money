@@ -60,7 +60,7 @@
 #+end_src
 ** Transactions
 #+name: transactions
-#+begin_src ledger :export none :cmdline bal ^Expenses ^Income and not ^Income:Extra --depth 2
+#+begin_src ledger :export none :cmdline bal ^Expenses ^Income and not ^Income:Extra --depth 2 --period "this year"
   2023-03-31 * Stripe
       Income:Stripe:RSU                   $ -93,946.71
       Expenses:Taxes:Federal               $ 20,692.80
@@ -8707,23 +8707,21 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 335,702.35  Expenses
-         $ 11,912.85    Food
-             $ 55.26    Foods
-          $ 2,456.75    Gifts
-         $ 24,159.58    Housing
-         $ 14,418.74    Personal
-         $ 78,879.95    RE
-        $ 191,986.19    Taxes
-          $ 9,500.20    Transportation
-          $ 2,332.83    Travel
-       $ -559,461.43  Income
-         $ -6,000.00    CPS
-        $ -41,475.77    RE
-         $ -3,278.70    SWAQ
-       $ -508,706.96    Stripe
+        $ 151,593.87  Expenses
+          $ 4,892.88    Food
+            $ 494.00    Gifts
+          $ 8,344.95    Housing
+          $ 5,383.60    Personal
+         $ 44,563.59    RE
+         $ 81,925.15    Taxes
+          $ 4,727.80    Transportation
+          $ 1,261.90    Travel
+       $ -231,184.70  Income
+        $ -14,759.09    RE
+           $ -139.50    SWAQ
+       $ -216,286.11    Stripe
 --------------------
-       $ -223,759.08
+        $ -79,590.83
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -8853,11 +8851,26 @@
   gross_savings_rate = ((income - expenses) / income) * 100
   net_savings_rate = ((take_home_income - non_tax_expenses) / take_home_income) * 100
 
-  return f"Gross Savings Rate: {gross_savings_rate:.2f}%\nNet Savings Rate: {net_savings_rate:.2f}%"
+
+  return f""".
+                       ${income:,.2f} - ${expenses:,.2f}
+  Gross Savings Rate: ------------------------ = {gross_savings_rate:,.2f}%
+                           ${income:,.2f}
+
+                       ${take_home_income:,.2f} - ${non_tax_expenses:,.2f}
+    Net Savings Rate: ------------------------ = {net_savings_rate:,.2f}%
+                           ${take_home_income:,.2f}
+  """
 #+end_src
 #+results:
-: Gross Savings Rate: 40.00%
-: Net Savings Rate: 60.89%
+: .
+:                      $231,184.70 - $151,593.87
+: Gross Savings Rate: ------------------------ = 34.43%
+:                          $231,184.70
+:
+:                      $149,259.55 - $69,668.72
+:   Net Savings Rate: ------------------------ = 53.32%
+:                          $149,259.55
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
