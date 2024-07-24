@@ -8749,6 +8749,14 @@
       Assets:Checking:Northwoods            $ 2,368.64
       Assets:Checking:Covantage
 
+  2024-07-25 * Geico
+      Assets:Checking:Covantage               $ 283.62
+      Expenses:Transportation:Insurance
+
+  2024-07-25 * Transfer
+      Assets:Checking:Northwoods              $ 283.62
+      Assets:Checking:Covantage
+
   2024-08-01 ! Spectrum
       Expenses:RE:Cottage:Utilities            $ 71.99
       Assets:Checking:Northwoods
@@ -8831,21 +8839,21 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 148,914.80  Expenses
+        $ 148,631.18  Expenses
           $ 5,037.77    Food
             $ 494.00    Gifts
           $ 8,344.95    Housing
           $ 5,422.54    Personal
          $ 39,887.51    RE
          $ 83,774.84    Taxes
-          $ 4,691.29    Transportation
+          $ 4,407.67    Transportation
           $ 1,261.90    Travel
        $ -234,167.26  Income
         $ -10,533.57    RE
            $ -139.50    SWAQ
        $ -223,494.19    Stripe
 --------------------
-        $ -85,252.46
+        $ -85,536.08
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -8877,15 +8885,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 44,057.41
+         $ 44,341.03
            1.0 COTTA
        476.015 FSPSX
        743.102 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 44,057.41    Checking
-         $ 12,287.41      Northwoods
+         $ 44,341.03    Checking
+         $ 12,571.03      Northwoods
           $ 1,770.00      Park City
          $ 30,000.00      RipCo
        476.015 FSPSX
@@ -8902,7 +8910,7 @@
            1.0 COTTA    RE:Cottage
        $ -162,824.24  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -118,766.83
+       $ -118,483.21
            1.0 COTTA
        476.015 FSPSX
        743.102 FXAIX
@@ -8918,9 +8926,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 922,423.30  Assets
-         $ 44,057.41    Checking
-         $ 12,287.41      Northwoods
+        $ 922,706.92  Assets
+         $ 44,341.03    Checking
+         $ 12,571.03      Northwoods
           $ 1,770.00      Park City
          $ 30,000.00      RipCo
         $ 428,365.89    Investments
@@ -8931,7 +8939,7 @@
         $ 450,000.00    RE:Cottage
        $ -162,824.24  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 759,599.06
+        $ 759,882.68
 #+end_example
 ** Spending
 *** Savings Rate
@@ -8978,12 +8986,12 @@
 #+end_src
 #+results:
 : .
-:                      $234,167.26 - $148,914.80
-: Gross Savings Rate: ------------------------ = 36.41%
+:                      $234,167.26 - $148,631.18
+: Gross Savings Rate: ------------------------ = 36.53%
 :                          $234,167.26
 :
-:                      $150,392.42 - $65,139.96
-:   Net Savings Rate: ------------------------ = 56.69%
+:                      $150,392.42 - $64,856.34
+:   Net Savings Rate: ------------------------ = 56.88%
 :                          $150,392.42
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -8992,7 +9000,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 13,107.85  Expenses
+         $ 12,824.23  Expenses
             $ 520.36    Food
              $ 50.78      Drinks
             $ 110.10      Fast Food
@@ -9023,14 +9031,14 @@
             $ 343.84      Medicare
               $ 2.79      Social Security
             $ 349.37      State
-            $ 122.30    Transportation
+           $ -161.32    Transportation
            $ -250.00      Biking
             $ 257.75      Driving
             $ 237.75        Gas
              $ 20.00        Tolls
-            $ 114.55      Insurance
+           $ -169.07      Insurance
 --------------------
-         $ 13,107.85
+         $ 12,824.23
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -9095,5 +9103,5 @@ March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
-July 2024            $ 9,445.67
+July 2024            $ 9,162.05
 #+end_example
