@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 07/23/2024 00:00:00 VTSAX $131.8800
-  P 07/23/2024 00:00:00 VTIAX $32.9000
-  P 07/23/2024 00:00:00 FSPSX $50.6500
-  P 07/23/2024 00:00:00 FXAIX $191.2400
-  P 07/23/2024 00:00:00 CONDO $250,000.00
-  P 07/23/2024 00:00:00 COTTA $450,000.00
-  P 07/23/2024 00:00:00 STRIP $27.51
+  P 07/24/2024 00:00:00 VTSAX $133.3400
+  P 07/24/2024 00:00:00 VTIAX $33.1700
+  P 07/24/2024 00:00:00 FSPSX $51.1400
+  P 07/24/2024 00:00:00 FXAIX $193.3100
+  P 07/24/2024 00:00:00 CONDO $250,000.00
+  P 07/24/2024 00:00:00 COTTA $450,000.00
+  P 07/24/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -8620,6 +8620,11 @@
       Expenses:Personal:Health                 $ 27.67
       Liabilities:Credit Card:RipCo
 
+  2024-07-18 * Transfer
+      Liabilities:Credit Card:RipCo           $ 241.32
+      Liabilities:Credit Card:RipCo            $ 27.67
+      Assets:Checking:RipCo
+
   2024-07-19 * VRBO
       Assets:Checking:Northwoods            $ 1,471.11
       Income:RE:Cottage:Rent
@@ -8639,13 +8644,110 @@
       Assets:Checking:Park City               $ 885.00
       Assets:Checking:Covantage               $ 500.00
 
-  2024-07-23 ! Traveler's
-      Expenses:RE:Cottage:Insurance         $ 1,685.00
+  2024-07-19 * Transfer
+      Liabilities:Credit Card:Covantage        $ 13.34
+      Assets:Checking:Covantage
+
+  2024-07-19 * Wendy's
+      Expenses:Food:Fast Food                   $ 5.50
+      Assets:Checking:Covantage
+
+  2024-07-19 * Walgreens
+      Expenses:Food:Snacks                      $ 5.54
+      Assets:Checking:Covantage
+
+  2024-07-19 * Family Dollar
+      Expenses:Food:Snacks                      $ 9.50
+      Assets:Checking:Covantage
+
+  2024-07-21 * McDonald's
+      Expenses:Food:Fast Food                  $ 13.69
+      Liabilities:Credit Card:RipCo
+
+  2024-07-21 * Lena Fast Stop
+      Expenses:Food:Snacks                      $ 4.38
+      Assets:Checking:Covantage
+
+  2024-07-21 * Goodwill
+      Expenses:Personal:Household              $ 18.00
+      Assets:Checking:Covantage
+
+  2024-07-21 * Taco Bell
+      Expenses:Food:Fast Food                   $ 8.33
+      Assets:Checking:Covantage
+
+  2024-07-21 * Culver's
+      Expenses:Food:Fast Food                  $ 14.36
+      Assets:Checking:Covantage
+
+  2024-07-21 * IGA Gas
+      Expenses:Transportation:Driving:Gas      $ 18.96
+      Assets:Checking:Covantage
+
+  2024-07-21 * 7/11
+      Expenses:Food:Snacks                      $ 7.09
+      Assets:Checking:Covantage
+
+  2024-07-21 * L&M Supply
+      Expenses:RE:Cottage:Repairs             $ 542.67
+      Assets:Checking:Covantage
+
+  2024-07-21 * GasBuddy
+      Expenses:Transportation:Driving:Gas      $ 40.83
+      Assets:Checking:Covantage
+
+  2024-07-22 * True Value
+      Expenses:RE:Cottage:Repairs               $ 7.03
+      Assets:Checking:Covantage
+
+  2024-07-23 * Dollar General
+      Expenses:Food:Snacks                     $ 11.26
+      Liabilities:Credit Card:RipCo
+
+  2024-07-23 * 7/11
+      Expenses:Food:Snacks                      $ 6.99
+      Expenses:Food:Snacks                      $ 5.64
+      Liabilities:Credit Card:RipCo
+
+  2024-07-23 * BP
+      Expenses:Transportation:Driving:Gas      $ 39.15
+      Liabilities:Credit Card:RipCo
+
+  2024-07-23 * Transfer
+      Assets:Checking:Covantage             $ 2,552.90
+      Assets:Checking:RipCo
+
+  2024-07-23 * HomeGoods
+      Expenses:Food:Snacks                     $ 12.61
+      Liabilities:Credit Card:RipCo
+
+  2024-07-23 * Amazon
+      Expenses:Personal:Clothes                $ 20.94
+      Liabilities:Credit Card:RipCo
+
+  2024-07-24 * Transfer
+      Liabilities:Credit Card:RipCo           $ 110.28
+      Assets:Checking:Covantage
+
+  2024-07-24 * Home Insurance
+      Expenses:RE:Cottage:Insurance            $ 79.87
       Assets:Checking:Northwoods
 
-  2024-07-25 ! VRBO
+  2024-07-24 * Car Insurance
+      Expenses:Transportation:Insurance       $ 114.55
+      Assets:Checking:Northwoods
+
+  2024-07-25 * Cafe BabaReeba
+      Expenses:Food:Restaurants                $ 40.00
+      Assets:Checking:Covantage
+
+  2024-07-25 * VRBO
       Assets:Checking:Northwoods              $ 921.18
       Income:RE:Cottage:Rent
+
+  2024-07-25 * Transfer
+      Assets:Checking:Northwoods            $ 2,368.64
+      Assets:Checking:Covantage
 
   2024-08-01 ! Spectrum
       Expenses:RE:Cottage:Utilities            $ 71.99
@@ -8726,106 +8828,24 @@
       Liabilities:RE:Cottage:Mortgage         $ 304.73
       Expenses:RE:Cottage:Interest            $ 471.37
       Assets:Checking:Northwoods             $ -776.10
-
-  2024-07-18 * Transfer
-      Liabilities:Credit Card:RipCo           $ 241.32
-      Liabilities:Credit Card:RipCo            $ 27.67
-      Assets:Checking:RipCo
-
-  2024-07-21 * McDonald's
-      Expenses:Food:Fast Food                  $ 13.69
-      Liabilities:Credit Card:RipCo
-
-  2024-07-23 * Dollar General
-      Expenses:Food:Snacks                     $ 11.26
-      Liabilities:Credit Card:RipCo
-
-  2024-07-23 * 7/11
-      Expenses:Food:Snacks                      $ 6.99
-      Expenses:Food:Snacks                      $ 5.64
-      Liabilities:Credit Card:RipCo
-
-  2024-07-23 * BP
-      Expenses:Transportation:Driving:Gas      $ 39.15
-      Liabilities:Credit Card:RipCo
-
-  2024-07-19 * Transfer
-      Liabilities:Credit Card:Covantage        $ 13.34
-      Assets:Checking:Covantage
-
-  2024-07-19 * Wendy's
-      Expenses:Food:Fast Food                   $ 5.50
-      Assets:Checking:Covantage
-
-  2024-07-19 * Walgreens
-      Expenses:Food:Snacks                      $ 5.54
-      Assets:Checking:Covantage
-
-  2024-07-19 * Family Dollar
-      Expenses:Food:Snacks                      $ 9.50
-      Assets:Checking:Covantage
-
-  2024-07-21 * Lena Fast Stop
-      Expenses:Food:Snacks                      $ 4.38
-      Assets:Checking:Covantage
-
-  2024-07-21 * Goodwill
-      Expenses:Personal:Household              $ 18.00
-      Assets:Checking:Covantage
-
-  2024-07-21 * Taco Bell
-      Expenses:Food:Fast Food                   $ 8.33
-      Assets:Checking:Covantage
-
-  2024-07-21 * Culver's
-      Expenses:Food:Fast Food                  $ 14.36
-      Assets:Checking:Covantage
-
-  2024-07-21 * IGA Gas
-      Expenses:Transportation:Driving:Gas      $ 18.96
-      Assets:Checking:Covantage
-
-  2024-07-21 * 7/11
-      Expenses:Food:Snacks                      $ 7.09
-      Assets:Checking:Covantage
-
-  2024-07-21 * L&M Supply
-      Expenses:RE:Cottage:Repairs             $ 542.67
-      Assets:Checking:Covantage
-
-  2024-07-21 * GasBuddy
-      Expenses:Transportation:Driving:Gas      $ 40.83
-      Assets:Checking:Covantage
-
-  2024-07-22 * True Value
-      Expenses:RE:Cottage:Repairs               $ 7.03
-      Assets:Checking:Covantage
-
-  2024-07-23 * Transfer
-      Assets:Checking:Covantage             $ 2,552.90
-      Assets:Checking:RipCo
-
-  2024-07-23 * Transfer
-      Assets:Checking:Northwoods            $ 2,500.00
-      Assets:Checking:Covantage
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 148,646.83  Expenses
-          $ 4,985.16    Food
+        $ 148,914.80  Expenses
+          $ 5,037.77    Food
             $ 494.00    Gifts
           $ 8,344.95    Housing
-          $ 5,401.60    Personal
-         $ 39,807.64    RE
+          $ 5,422.54    Personal
+         $ 39,887.51    RE
          $ 83,774.84    Taxes
-          $ 4,576.74    Transportation
+          $ 4,691.29    Transportation
           $ 1,261.90    Travel
-       $ -233,246.08  Income
-         $ -9,612.39    RE
+       $ -234,167.26  Income
+        $ -10,533.57    RE
            $ -139.50    SWAQ
        $ -223,494.19    Stripe
 --------------------
-        $ -84,599.25
+        $ -85,252.46
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -8857,16 +8877,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 43,480.93
+         $ 44,057.41
            1.0 COTTA
        476.015 FSPSX
        743.102 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 43,480.93    Checking
-             $ 18.92      Covantage
-         $ 11,692.01      Northwoods
+         $ 44,057.41    Checking
+         $ 12,287.41      Northwoods
           $ 1,770.00      Park City
          $ 30,000.00      RipCo
        476.015 FSPSX
@@ -8881,11 +8900,9 @@
        793.319 VTSAX      IRA
        4,898.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-       $ -162,900.97  Liabilities
-            $ -76.73    Credit Card:RipCo
-       $ -162,824.24    RE:Cottage:Mortgage
+       $ -162,824.24  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -119,420.04
+       $ -118,766.83
            1.0 COTTA
        476.015 FSPSX
        743.102 FXAIX
@@ -8901,23 +8918,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 918,755.54  Assets
-         $ 43,480.93    Checking
-             $ 18.92      Covantage
-         $ 11,692.01      Northwoods
+        $ 922,423.30  Assets
+         $ 44,057.41    Checking
+         $ 12,287.41      Northwoods
           $ 1,770.00      Park City
          $ 30,000.00      RipCo
-        $ 425,274.61    Investments
-        $ 144,319.61      401K
-         $ 21,901.38      HSA
-        $ 124,309.64      IRA
+        $ 428,365.89    Investments
+        $ 145,854.01      401K
+         $ 22,138.44      HSA
+        $ 125,629.45      IRA
         $ 134,743.98      RSU
         $ 450,000.00    RE:Cottage
-       $ -162,900.97  Liabilities
-            $ -76.73    Credit Card:RipCo
-       $ -162,824.24    RE:Cottage:Mortgage
+       $ -162,824.24  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 755,854.57
+        $ 759,599.06
 #+end_example
 ** Spending
 *** Savings Rate
@@ -8964,13 +8978,13 @@
 #+end_src
 #+results:
 : .
-:                      $233,246.08 - $148,646.83
-: Gross Savings Rate: ------------------------ = 36.27%
-:                          $233,246.08
+:                      $234,167.26 - $148,914.80
+: Gross Savings Rate: ------------------------ = 36.41%
+:                          $234,167.26
 :
-:                      $149,471.24 - $64,871.99
-:   Net Savings Rate: ------------------------ = 56.60%
-:                          $149,471.24
+:                      $150,392.42 - $65,139.96
+:   Net Savings Rate: ------------------------ = 56.69%
+:                          $150,392.42
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
@@ -8978,25 +8992,27 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 12,839.88  Expenses
-            $ 467.75    Food
+         $ 13,107.85  Expenses
+            $ 520.36    Food
              $ 50.78      Drinks
             $ 110.10      Fast Food
             $ 175.95      Groceries
-            $ 130.92      Snacks
+             $ 40.00      Restaurants
+            $ 143.53      Snacks
             $ 200.00    Gifts
           $ 1,204.25    Housing
           $ 1,149.25      Rent
              $ 55.00      Utilities
-            $ 513.82    Personal
-            $ 202.82      Clothes
+            $ 534.76    Personal
+            $ 223.76      Clothes
             $ 167.00      Communication
            $ -131.17      Electroncis
             $ 187.68      Electronics
              $ 50.00      Health
              $ 37.49      Household
-          $ 6,784.13    RE:Cottage
+          $ 6,864.00    RE:Cottage
              $ 80.00      Cleaning
+             $ 79.87      Insurance
             $ 475.78      Interest
           $ 5,265.00      Lawncare
             $ 570.55      Repairs
@@ -9007,13 +9023,14 @@
             $ 343.84      Medicare
               $ 2.79      Social Security
             $ 349.37      State
-              $ 7.75    Transportation
+            $ 122.30    Transportation
            $ -250.00      Biking
             $ 257.75      Driving
             $ 237.75        Gas
              $ 20.00        Tolls
+            $ 114.55      Insurance
 --------------------
-         $ 12,839.88
+         $ 13,107.85
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -9078,5 +9095,5 @@ March 2024           $ 5,467.73
 April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
-July 2024            $ 9,177.70
+July 2024            $ 9,445.67
 #+end_example
