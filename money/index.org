@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 07/24/2024 00:00:00 VTSAX $133.3400
-  P 07/24/2024 00:00:00 VTIAX $33.1700
-  P 07/24/2024 00:00:00 FSPSX $51.1400
-  P 07/24/2024 00:00:00 FXAIX $193.3100
-  P 07/24/2024 00:00:00 CONDO $250,000.00
-  P 07/24/2024 00:00:00 COTTA $450,000.00
-  P 07/24/2024 00:00:00 STRIP $27.51
+  P 07/25/2024 00:00:00 VTSAX $130.1600
+  P 07/25/2024 00:00:00 VTIAX $32.6200
+  P 07/25/2024 00:00:00 FSPSX $50.3500
+  P 07/25/2024 00:00:00 FXAIX $188.5500
+  P 07/25/2024 00:00:00 CONDO $250,000.00
+  P 07/25/2024 00:00:00 COTTA $450,000.00
+  P 07/25/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -8753,10 +8753,6 @@
       Assets:Checking:Covantage               $ 283.62
       Expenses:Transportation:Insurance
 
-  2024-07-25 * Transfer
-      Assets:Checking:Northwoods              $ 283.62
-      Assets:Checking:Covantage
-
   2024-08-01 ! Spectrum
       Expenses:RE:Cottage:Utilities            $ 71.99
       Assets:Checking:Northwoods
@@ -8893,7 +8889,8 @@
        598.381 VTIAX
        793.319 VTSAX  Assets
          $ 44,341.03    Checking
-         $ 12,571.03      Northwoods
+            $ 283.62      Covantage
+         $ 12,287.41      Northwoods
           $ 1,770.00      Park City
          $ 30,000.00      RipCo
        476.015 FSPSX
@@ -8926,20 +8923,21 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 922,706.92  Assets
+        $ 915,941.84  Assets
          $ 44,341.03    Checking
-         $ 12,571.03      Northwoods
+            $ 283.62      Covantage
+         $ 12,287.41      Northwoods
           $ 1,770.00      Park City
          $ 30,000.00      RipCo
-        $ 428,365.89    Investments
-        $ 145,854.01      401K
-         $ 22,138.44      HSA
-        $ 125,629.45      IRA
+        $ 421,600.81    Investments
+        $ 142,485.93      401K
+         $ 21,593.31      HSA
+        $ 122,777.59      IRA
         $ 134,743.98      RSU
         $ 450,000.00    RE:Cottage
        $ -162,824.24  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 759,882.68
+        $ 753,117.60
 #+end_example
 ** Spending
 *** Savings Rate
