@@ -8876,7 +8876,7 @@
       Assets:Investments:401K                    4.844 FXAIX @ $ 185.778282
       Assets:Investments:401K                    3.234 FSPSX @ $ 49.1063698
 
-  2024-08-02 ! Rent
+  2024-08-02 * Rent
       Assets:Checking:Covantage               $ 487.00
       Expenses:Housing:Rent                  $ -425.00
       Expenses:Housing:Utilities              $ -62.00
@@ -8900,6 +8900,27 @@
   2024-08-03 * Dollar Tree
       Expenses:Food:Groceries                   $ 5.98
       Liabilities:Credit Card:RipCo
+
+  2024-08-03 * Transfer
+      Assets:Checking:Covantage               $ 800.43
+      Assets:Checking:Park City
+
+  2024-08-03 * Transfer
+      Assets:Checking:Covantage             $ 1,500.00
+      Assets:Checking:Covantage               $ 823.72
+      Assets:Checking:RipCo
+
+  2024-08-03 * Conway's
+      Expenses:RE:Cottage:Repairs               $ 3.68
+      Liabilities:Credit Card:RipCo
+
+  2024-08-03 * Transfer
+      Liabilities:Credit Card:RipCo           $ 743.84
+      Assets:Checking:RipCo
+
+  2024-08-04 * Transfer
+      Assets:Checking:Northwoods            $ 3,742.68
+      Assets:Checking:Covantage
 
   2024-08-12 ! VRBO
       Assets:Checking:Northwoods            $ 1,196.18
@@ -8970,12 +8991,12 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 154,016.49  Expenses
+        $ 153,533.17  Expenses
           $ 5,159.37    Food
             $ 494.00    Gifts
-         $ 10,019.95    Housing
+          $ 9,532.95    Housing
           $ 6,081.73    Personal
-         $ 40,786.38    RE
+         $ 40,790.06    RE
          $ 85,581.64    Taxes
           $ 4,631.52    Transportation
           $ 1,261.90    Travel
@@ -8984,7 +9005,7 @@
            $ -139.50    SWAQ
        $ -230,552.27    Stripe
 --------------------
-        $ -87,208.85
+        $ -87,692.17
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -9016,18 +9037,17 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 45,402.20
+         $ 45,145.36
            1.0 COTTA
        479.249 FSPSX
        747.946 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 45,402.20    Checking
-            $ 276.89      Covantage
-         $ 11,257.32      Northwoods
-            $ 800.43      Park City
-         $ 33,067.56      RipCo
+         $ 45,145.36    Checking
+            $ 145.36      Covantage
+         $ 15,000.00      Northwoods
+         $ 30,000.00      RipCo
        479.249 FSPSX
        747.946 FXAIX
        4,898.0 STRIP
@@ -9040,11 +9060,9 @@
        793.319 VTSAX      IRA
        4,898.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-       $ -163,263.20  Liabilities
-           $ -740.16    Credit Card:RipCo
-       $ -162,523.04    RE:Cottage:Mortgage
+       $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -117,861.00
+       $ -117,377.68
            1.0 COTTA
        479.249 FSPSX
        747.946 FXAIX
@@ -9060,23 +9078,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 918,786.02  Assets
-         $ 45,402.20    Checking
-            $ 276.89      Covantage
-         $ 11,257.32      Northwoods
-            $ 800.43      Park City
-         $ 33,067.56      RipCo
+        $ 918,529.18  Assets
+         $ 45,145.36    Checking
+            $ 145.36      Covantage
+         $ 15,000.00      Northwoods
+         $ 30,000.00      RipCo
         $ 423,383.82    Investments
         $ 143,845.63      401K
          $ 21,675.77      HSA
         $ 123,118.45      IRA
         $ 134,743.98      RSU
         $ 450,000.00    RE:Cottage
-       $ -163,263.20  Liabilities
-           $ -740.16    Credit Card:RipCo
-       $ -162,523.04    RE:Cottage:Mortgage
+       $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 755,522.82
+        $ 756,006.14
 #+end_example
 ** Spending
 *** Savings Rate
@@ -9122,12 +9137,12 @@
 #+end_src
 #+results:
 : .
-: 	                     $241,225.34 - $154,016.49
-: 	Gross Savings Rate: --------------------------- = 36.15%
+: 	                     $241,225.34 - $153,533.17
+: 	Gross Savings Rate: --------------------------- = 36.35%
 : 	                             $241,225.34
 :
-: 	                     $155,643.70 - $68,434.85
-: 	  Net Savings Rate: -------------------------- = 56.03%
+: 	                     $155,643.70 - $67,951.53
+: 	  Net Savings Rate: -------------------------- = 56.34%
 : 	                             $155,643.70
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -9136,21 +9151,21 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,711.82  Expenses
+          $ 4,228.50  Expenses
              $ 19.13    Food
               $ 7.39      Fast Food
               $ 5.98      Groceries
               $ 5.76      Snacks
-          $ 1,675.00    Housing
-          $ 1,533.00      Rent
-            $ 142.00      Utilities
+          $ 1,188.00    Housing
+          $ 1,108.00      Rent
+             $ 80.00      Utilities
             $ 257.43    Personal
             $ 227.43      Boat
              $ 30.00      Communication
-            $ 838.89    RE:Cottage
+            $ 842.57    RE:Cottage
             $ 474.90      Interest
              $ 50.00      Lawncare
-             $ 60.00      Repairs
+             $ 63.68      Repairs
             $ 253.99      Utilities
           $ 1,806.80    Taxes
           $ 1,291.55      Federal
@@ -9158,7 +9173,7 @@
             $ 349.37      State
             $ 114.57    Transportation:Insurance
 --------------------
-          $ 4,711.82
+          $ 4,228.50
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -9231,5 +9246,5 @@ April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
 July 2024            $ 9,835.54
-August 2024          $ 2,905.02
+August 2024          $ 2,421.70
 #+end_example
