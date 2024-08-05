@@ -52,7 +52,7 @@
 #+begin_src ledger :eval never
   P 08/05/2024 00:00:00 VTSAX $130.6500
   P 08/05/2024 00:00:00 VTIAX $32.5400
-  P 08/05/2024 00:00:00 FSPSX $49.1100
+  P 08/05/2024 00:00:00 FSPSX $49.9900
   P 08/05/2024 00:00:00 FXAIX $189.2700
   P 08/05/2024 00:00:00 CONDO $250,000.00
   P 08/05/2024 00:00:00 COTTA $450,000.00
@@ -8931,6 +8931,10 @@
       Assets:Checking:Capital One              $ 94.12
       Assets:Checking:Covantage
 
+  2024-08-05 * State Farm
+      Expenses:RE:Cottage:Insurance            $ 79.83
+      Assets:Checking:Northwoods
+
   2024-08-12 ! VRBO
       Assets:Checking:Northwoods            $ 1,196.18
       Income:RE:Cottage:Rent
@@ -9000,12 +9004,12 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 153,584.41  Expenses
+        $ 153,664.24  Expenses
           $ 5,159.37    Food
             $ 494.00    Gifts
           $ 9,532.95    Housing
           $ 6,081.73    Personal
-         $ 40,790.06    RE
+         $ 40,869.89    RE
          $ 85,581.64    Taxes
           $ 4,682.76    Transportation
           $ 1,261.90    Travel
@@ -9014,7 +9018,7 @@
            $ -139.50    SWAQ
        $ -230,552.27    Stripe
 --------------------
-        $ -87,640.93
+        $ -87,561.10
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -9046,16 +9050,16 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 45,094.12
+         $ 45,014.29
            1.0 COTTA
        479.249 FSPSX
        747.946 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 45,094.12    Checking
+         $ 45,014.29    Checking
              $ 94.12      Capital One
-         $ 15,000.00      Northwoods
+         $ 14,920.17      Northwoods
          $ 30,000.00      RipCo
        479.249 FSPSX
        747.946 FXAIX
@@ -9071,7 +9075,7 @@
            1.0 COTTA    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -117,428.92
+       $ -117,508.75
            1.0 COTTA
        479.249 FSPSX
        747.946 FXAIX
@@ -9087,20 +9091,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 918,056.20  Assets
-         $ 45,094.12    Checking
+        $ 918,398.11  Assets
+         $ 45,014.29    Checking
              $ 94.12      Capital One
-         $ 15,000.00      Northwoods
+         $ 14,920.17      Northwoods
          $ 30,000.00      RipCo
-        $ 422,962.08    Investments
-        $ 143,423.89      401K
+        $ 423,383.82    Investments
+        $ 143,845.63      401K
          $ 21,675.77      HSA
         $ 123,118.45      IRA
         $ 134,743.98      RSU
         $ 450,000.00    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 755,533.16
+        $ 755,875.07
 #+end_example
 ** Spending
 *** Savings Rate
@@ -9146,12 +9150,12 @@
 #+end_src
 #+results:
 : .
-:                      $241,225.34 - $153,584.41
-: Gross Savings Rate: --------------------------- = 36.33%
+:                      $241,225.34 - $153,664.24
+: Gross Savings Rate: --------------------------- = 36.30%
 :                              $241,225.34
 :
-:                      $155,643.70 - $68,002.77
-:   Net Savings Rate: -------------------------- = 56.31%
+:                      $155,643.70 - $68,082.60
+:   Net Savings Rate: -------------------------- = 56.26%
 :                              $155,643.70
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -9160,7 +9164,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,279.74  Expenses
+          $ 4,359.57  Expenses
              $ 19.13    Food
               $ 7.39      Fast Food
               $ 5.98      Groceries
@@ -9171,7 +9175,8 @@
             $ 257.43    Personal
             $ 227.43      Boat
              $ 30.00      Communication
-            $ 842.57    RE:Cottage
+            $ 922.40    RE:Cottage
+             $ 79.83      Insurance
             $ 474.90      Interest
              $ 50.00      Lawncare
              $ 63.68      Repairs
@@ -9184,7 +9189,7 @@
              $ 51.24      Driving:Gas
             $ 114.57      Insurance
 --------------------
-          $ 4,279.74
+          $ 4,359.57
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -9257,5 +9262,5 @@ April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
 July 2024            $ 9,835.54
-August 2024          $ 2,472.94
+August 2024          $ 2,552.77
 #+end_example
