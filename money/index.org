@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 08/05/2024 00:00:00 VTSAX $130.6500
-  P 08/05/2024 00:00:00 VTIAX $32.5400
-  P 08/05/2024 00:00:00 FSPSX $49.9900
-  P 08/05/2024 00:00:00 FXAIX $189.2700
-  P 08/05/2024 00:00:00 CONDO $250,000.00
-  P 08/05/2024 00:00:00 COTTA $450,000.00
-  P 08/05/2024 00:00:00 STRIP $27.51
+  P 08/06/2024 00:00:00 VTSAX $128.0200
+  P 08/06/2024 00:00:00 VTIAX $31.9800
+  P 08/06/2024 00:00:00 FSPSX $49.1100
+  P 08/06/2024 00:00:00 FXAIX $185.7900
+  P 08/06/2024 00:00:00 CONDO $250,000.00
+  P 08/06/2024 00:00:00 COTTA $450,000.00
+  P 08/06/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -9091,20 +9091,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 918,398.11  Assets
+        $ 912,952.00  Assets
          $ 45,014.29    Checking
              $ 94.12      Capital One
          $ 14,920.17      Northwoods
          $ 30,000.00      RipCo
-        $ 423,383.82    Investments
-        $ 143,845.63      401K
-         $ 21,675.77      HSA
-        $ 123,118.45      IRA
+        $ 417,937.71    Investments
+        $ 141,219.58      401K
+         $ 21,277.23      HSA
+        $ 120,696.92      IRA
         $ 134,743.98      RSU
         $ 450,000.00    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 755,875.07
+        $ 750,428.96
 #+end_example
 ** Spending
 *** Savings Rate
