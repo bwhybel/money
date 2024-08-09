@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 08/07/2024 00:00:00 VTSAX $125.5000
-  P 08/07/2024 00:00:00 VTIAX $31.3700
-  P 08/07/2024 00:00:00 FSPSX $48.1900
-  P 08/07/2024 00:00:00 FXAIX $182.1000
-  P 08/07/2024 00:00:00 CONDO $250,000.00
-  P 08/07/2024 00:00:00 COTTA $450,000.00
-  P 08/07/2024 00:00:00 STRIP $27.51
+  P 08/08/2024 00:00:00 VTSAX $124.5000
+  P 08/08/2024 00:00:00 VTIAX $31.4900
+  P 08/08/2024 00:00:00 FSPSX $48.3900
+  P 08/08/2024 00:00:00 FXAIX $180.7000
+  P 08/08/2024 00:00:00 CONDO $250,000.00
+  P 08/08/2024 00:00:00 COTTA $450,000.00
+  P 08/08/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -8984,7 +8984,7 @@
       Assets:Investments:RSU                     1,353 STRIPE @ $ 27.51
 
   2024-09-01 ! Spectrum
-      Expenses:RE:Cottage:Utilities            $ 71.99
+      Expenses:RE:Cottage:Utilities            $ 74.99
       Assets:Checking:Northwoods
 
   2024-09-01 ! Wisconsin Public Service
@@ -9001,7 +9001,7 @@
       Income:RE:Cottage:Rent
 
   2024-10-01 ! Spectrum
-      Expenses:RE:Cottage:Utilities            $ 71.99
+      Expenses:RE:Cottage:Utilities            $ 74.99
       Assets:Checking:Northwoods
 
   2024-10-01 ! Wisconsin Public Service
@@ -9014,7 +9014,7 @@
       Assets:Checking:Northwoods             $ -776.10
 
   2024-11-01 ! Spectrum
-      Expenses:RE:Cottage:Utilities            $ 71.99
+      Expenses:RE:Cottage:Utilities            $ 74.99
       Assets:Checking:Northwoods
 
   2024-11-01 ! Wisconsin Public Service
@@ -9027,7 +9027,7 @@
       Assets:Checking:Northwoods             $ -776.10
 
   2024-12-01 ! Spectrum
-      Expenses:RE:Cottage:Utilities            $ 71.99
+      Expenses:RE:Cottage:Utilities            $ 74.99
       Assets:Checking:Northwoods
 
   2024-12-01 ! Wisconsin Public Service
@@ -9129,21 +9129,21 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 907,193.21  Assets
+        $ 905,520.42  Assets
          $ 44,820.51    Checking
             $ 200.34      Capital One
           $ 3,542.68      Covantage
          $ 11,077.49      Northwoods
          $ 30,000.00      RipCo
-        $ 412,372.70    Investments
-        $ 138,441.34      401K
-         $ 20,854.64      HSA
-        $ 118,332.75      IRA
+        $ 410,699.91    Investments
+        $ 137,650.40      401K
+         $ 20,694.31      HSA
+        $ 117,611.23      IRA
         $ 134,743.98      RSU
         $ 450,000.00    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 744,670.17
+        $ 742,997.38
 #+end_example
 ** Spending
 *** Savings Rate
