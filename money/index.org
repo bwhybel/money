@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 08/13/2024 00:00:00 VTSAX $127.9700
-  P 08/13/2024 00:00:00 VTIAX $32.1400
-  P 08/13/2024 00:00:00 FSPSX $49.3000
-  P 08/13/2024 00:00:00 FXAIX $185.7500
-  P 08/13/2024 00:00:00 CONDO $250,000.00
-  P 08/13/2024 00:00:00 COTTA $450,000.00
-  P 08/13/2024 00:00:00 STRIP $27.51
+  P 08/15/2024 00:00:00 VTSAX $130.0100
+  P 08/15/2024 00:00:00 VTIAX $32.6300
+  P 08/15/2024 00:00:00 FSPSX $50.1100
+  P 08/15/2024 00:00:00 FXAIX $188.9100
+  P 08/15/2024 00:00:00 CONDO $250,000.00
+  P 08/15/2024 00:00:00 COTTA $450,000.00
+  P 08/15/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -9045,12 +9045,28 @@
       Expenses:Personal:Household             $ -24.19
       Assets:Checking:Capital One
 
+  2024-08-14 * Home Depot
+      Expenses:Personal:Household              $ 13.65
+      Assets:Checking:Capital One
+
   2024-08-13 * Mariano's
       Expenses:Food:Groceries                  $ 13.23
       Assets:Checking:Capital One
 
   2024-08-13 * Amazon
       Expenses:Personal:Household               $ 6.05
+      Assets:Checking:Capital One
+
+  2024-08-14 * Walgreens
+      Expenses:Food:Snacks                      $ 2.41
+      Assets:Checking:Capital One
+
+  2024-08-14 * Mariano's
+      Expenses:Food:Groceries                   $ 7.69
+      Assets:Checking:Capital One
+
+  2024-08-14 * Corcoran's
+      Expenses:Food:Restaurants                $ 30.24
       Assets:Checking:Capital One
 
   2024-08-15 ! Stripe
@@ -9118,11 +9134,11 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 154,054.75  Expenses
-          $ 5,256.18    Food
+        $ 154,108.74  Expenses
+          $ 5,296.52    Food
             $ 494.00    Gifts
           $ 9,532.95    Housing
-          $ 6,228.91    Personal
+          $ 6,242.56    Personal
          $ 40,969.89    RE
          $ 85,581.64    Taxes
           $ 4,729.28    Transportation
@@ -9132,7 +9148,7 @@
            $ -139.50    SWAQ
        $ -230,552.27    Stripe
 --------------------
-        $ -88,366.77
+        $ -88,312.78
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -9164,15 +9180,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 45,784.23
+         $ 45,730.24
            1.0 COTTA
        479.249 FSPSX
        747.946 FXAIX
        4,898.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 45,784.23    Checking
-             $ 67.88      Capital One
+         $ 45,730.24    Checking
+             $ 13.89      Capital One
          $ 15,716.35      Northwoods
          $ 30,000.00      RipCo
        479.249 FSPSX
@@ -9189,7 +9205,7 @@
            1.0 COTTA    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -116,738.81
+       $ -116,792.80
            1.0 COTTA
        479.249 FSPSX
        747.946 FXAIX
@@ -9205,20 +9221,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 913,839.15  Assets
-         $ 45,784.23    Checking
-             $ 67.88      Capital One
+        $ 918,448.44  Assets
+         $ 45,730.24    Checking
+             $ 13.89      Capital One
          $ 15,716.35      Northwoods
          $ 30,000.00      RipCo
-        $ 418,054.92    Investments
-        $ 141,285.30      401K
-         $ 21,272.65      HSA
-        $ 120,753.00      IRA
+        $ 422,718.20    Investments
+        $ 143,675.11      401K
+         $ 21,634.54      HSA
+        $ 122,664.58      IRA
         $ 134,743.98      RSU
         $ 450,000.00    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 751,316.11
+        $ 755,925.40
 #+end_example
 ** Spending
 *** Savings Rate
@@ -9264,12 +9280,12 @@
 #+end_src
 #+results:
 : .
-:                      $242,421.52 - $154,054.75
-: Gross Savings Rate: --------------------------- = 36.45%
+:                      $242,421.52 - $154,108.74
+: Gross Savings Rate: --------------------------- = 36.43%
 :                              $242,421.52
 :
-:                      $156,839.88 - $68,473.11
-:   Net Savings Rate: -------------------------- = 56.34%
+:                      $156,839.88 - $68,527.10
+:   Net Savings Rate: -------------------------- = 56.31%
 :                              $156,839.88
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -9278,19 +9294,20 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,750.08  Expenses
-            $ 115.94    Food
+          $ 4,804.07  Expenses
+            $ 156.28    Food
              $ 48.96      Fast Food
-             $ 31.92      Groceries
-             $ 35.06      Snacks
+             $ 39.61      Groceries
+             $ 30.24      Restaurants
+             $ 37.47      Snacks
           $ 1,188.00    Housing
           $ 1,108.00      Rent
              $ 80.00      Utilities
-            $ 404.61    Personal
+            $ 418.26    Personal
             $ 227.43      Boat
              $ 30.00      Communication
             $ 117.70      Electronics
-             $ 29.48      Household
+             $ 43.13      Household
           $ 1,022.40    RE:Cottage
             $ 100.00      Cleaning
              $ 79.83      Insurance
@@ -9307,7 +9324,7 @@
              $ 51.24      Driving:Gas
             $ 114.57      Insurance
 --------------------
-          $ 4,750.08
+          $ 4,804.07
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -9380,5 +9397,5 @@ April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
 July 2024            $ 9,835.54
-August 2024          $ 2,943.28
+August 2024          $ 2,997.27
 #+end_example
