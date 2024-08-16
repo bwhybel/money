@@ -50,10 +50,10 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 08/15/2024 00:00:00 VTSAX $130.0100
-  P 08/15/2024 00:00:00 VTIAX $32.6300
-  P 08/15/2024 00:00:00 FSPSX $50.1100
-  P 08/15/2024 00:00:00 FXAIX $188.9100
+  P 08/15/2024 00:00:00 VTSAX $130.4400
+  P 08/15/2024 00:00:00 VTIAX $32.6700
+  P 08/15/2024 00:00:00 FSPSX $50.2800
+  P 08/15/2024 00:00:00 FXAIX $189.6400
   P 08/15/2024 00:00:00 CONDO $250,000.00
   P 08/15/2024 00:00:00 COTTA $450,000.00
   P 08/15/2024 00:00:00 STRIP $27.51
@@ -9069,12 +9069,12 @@
       Expenses:Food:Restaurants                $ 30.24
       Assets:Checking:Capital One
 
-  2024-08-15 ! Stripe
+  2024-08-15 * Stripe
       Income:Stripe:RSU                   $ -52,654.14
-      Expenses:Taxes:Federal               $ 11,589.36
+      Expenses:Taxes:Federal               $ 11,644.38
       Expenses:Taxes:Illinois               $ 2,606.38
       Expenses:Taxes:Medicare               $ 1,237.37
-      Assets:Investments:RSU                     1,353 STRIPE @ $ 27.51
+      Assets:Investments:RSU                     1,351 STRIP @ $ 27.51
 
   2024-09-01 ! Spectrum
       Expenses:RE:Cottage:Utilities            $ 74.99
@@ -9134,21 +9134,21 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 154,108.74  Expenses
+        $ 169,596.87  Expenses
           $ 5,296.52    Food
             $ 494.00    Gifts
           $ 9,532.95    Housing
           $ 6,242.56    Personal
          $ 40,969.89    RE
-         $ 85,581.64    Taxes
+        $ 101,069.77    Taxes
           $ 4,729.28    Transportation
           $ 1,261.90    Travel
-       $ -242,421.52  Income
+       $ -295,075.66  Income
         $ -11,729.75    RE
            $ -139.50    SWAQ
-       $ -230,552.27    Stripe
+       $ -283,206.41    Stripe
 --------------------
-        $ -88,312.78
+       $ -125,478.79
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -9184,7 +9184,7 @@
            1.0 COTTA
        479.249 FSPSX
        747.946 FXAIX
-       4,898.0 STRIP
+       6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
          $ 45,730.24    Checking
@@ -9193,7 +9193,7 @@
          $ 30,000.00      RipCo
        479.249 FSPSX
        747.946 FXAIX
-       4,898.0 STRIP
+       6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX    Investments
        479.249 FSPSX
@@ -9201,7 +9201,7 @@
        114.523 FXAIX      HSA
        598.381 VTIAX
        793.319 VTSAX      IRA
-       4,898.0 STRIP      RSU
+       6,249.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
@@ -9209,7 +9209,7 @@
            1.0 COTTA
        479.249 FSPSX
        747.946 FXAIX
-       4,898.0 STRIP
+       6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX
 #+end_example
@@ -9221,20 +9221,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 918,448.44  Assets
+        $ 956,606.99  Assets
          $ 45,730.24    Checking
              $ 13.89      Capital One
          $ 15,716.35      Northwoods
          $ 30,000.00      RipCo
-        $ 422,718.20    Investments
-        $ 143,675.11      401K
-         $ 21,634.54      HSA
-        $ 122,664.58      IRA
-        $ 134,743.98      RSU
+        $ 460,876.75    Investments
+        $ 144,218.98      401K
+         $ 21,718.14      HSA
+        $ 123,029.64      IRA
+        $ 171,909.99      RSU
         $ 450,000.00    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 755,925.40
+        $ 794,083.95
 #+end_example
 ** Spending
 *** Savings Rate
@@ -9280,13 +9280,13 @@
 #+end_src
 #+results:
 : .
-:                      $242,421.52 - $154,108.74
-: Gross Savings Rate: --------------------------- = 36.43%
-:                              $242,421.52
+:                      $295,075.66 - $169,596.87
+: Gross Savings Rate: --------------------------- = 42.52%
+:                              $295,075.66
 :
-:                      $156,839.88 - $68,527.10
-:   Net Savings Rate: -------------------------- = 56.31%
-:                              $156,839.88
+:                      $194,005.89 - $68,527.10
+:   Net Savings Rate: -------------------------- = 64.68%
+:                              $194,005.89
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
@@ -9294,7 +9294,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,804.07  Expenses
+         $ 20,292.20  Expenses
             $ 156.28    Food
              $ 48.96      Fast Food
              $ 39.61      Groceries
@@ -9315,16 +9315,17 @@
              $ 50.00      Lawncare
              $ 63.68      Repairs
             $ 253.99      Utilities
-          $ 1,806.80    Taxes
-          $ 1,291.55      Federal
-            $ 165.88      Medicare
+         $ 17,294.93    Taxes
+         $ 12,935.93      Federal
+          $ 2,606.38      Illinois
+          $ 1,403.25      Medicare
             $ 349.37      State
             $ 212.33    Transportation
              $ 46.52      Biking
              $ 51.24      Driving:Gas
             $ 114.57      Insurance
 --------------------
-          $ 4,804.07
+         $ 20,292.20
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
