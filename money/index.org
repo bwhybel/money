@@ -9178,6 +9178,10 @@
       Expenses:Food:Snacks                      $ 1.10
       Assets:Checking:Capital One
 
+  2024-08-17 * Transfer
+      Assets:Checking:Northwoods               $ 61.00
+      Assets:Checking:Covantage
+
   2024-09-01 ! Spectrum
       Expenses:RE:Cottage:Utilities            $ 74.99
       Assets:Checking:Northwoods
@@ -9291,8 +9295,8 @@
        793.319 VTSAX  Assets
          $ 49,809.64    Checking
              $ 32.68      Capital One
-             $ 61.22      Covantage
-         $ 18,815.74      Northwoods
+              $ 0.22      Covantage
+         $ 18,876.74      Northwoods
             $ 900.00      Park City
          $ 30,000.00      RipCo
             $ 345.00
@@ -9330,8 +9334,8 @@
         $ 966,706.27  Assets
          $ 49,809.64    Checking
              $ 32.68      Capital One
-             $ 61.22      Covantage
-         $ 18,815.74      Northwoods
+              $ 0.22      Covantage
+         $ 18,876.74      Northwoods
             $ 900.00      Park City
          $ 30,000.00      RipCo
         $ 466,896.63    Investments
