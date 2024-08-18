@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 08/15/2024 00:00:00 VTSAX $130.4400
-  P 08/15/2024 00:00:00 VTIAX $32.6700
-  P 08/15/2024 00:00:00 FSPSX $50.2800
-  P 08/15/2024 00:00:00 FXAIX $189.6400
-  P 08/15/2024 00:00:00 CONDO $250,000.00
-  P 08/15/2024 00:00:00 COTTA $450,000.00
-  P 08/15/2024 00:00:00 STRIP $27.51
+  P 08/17/2024 00:00:00 VTSAX $132.6600
+  P 08/17/2024 00:00:00 VTIAX $33.0500
+  P 08/17/2024 00:00:00 FSPSX $50.9000
+  P 08/17/2024 00:00:00 FXAIX $192.7600
+  P 08/17/2024 00:00:00 CONDO $250,000.00
+  P 08/17/2024 00:00:00 COTTA $450,000.00
+  P 08/17/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -9045,9 +9045,9 @@
       Expenses:Personal:Household             $ -24.19
       Assets:Checking:Capital One
 
-  2024-08-14 * Home Depot
-      Expenses:Personal:Household              $ 13.65
-      Assets:Checking:Capital One
+  2024-08-12 * Azure
+      Expenses:Personal:Electronics            $ 13.78
+      Assets:Checking:Covantage
 
   2024-08-13 * Mariano's
       Expenses:Food:Groceries                  $ 13.23
@@ -9055,6 +9055,10 @@
 
   2024-08-13 * Amazon
       Expenses:Personal:Household               $ 6.05
+      Assets:Checking:Capital One
+
+  2024-08-14 * Home Depot
+      Expenses:Personal:Household              $ 13.65
       Assets:Checking:Capital One
 
   2024-08-14 * Walgreens
@@ -9069,12 +9073,110 @@
       Expenses:Food:Restaurants                $ 30.24
       Assets:Checking:Capital One
 
+  2024-08-14 * Home Depot
+      Expenses:Personal:Household              $ 10.81
+      Assets:Checking:Capital One
+
   2024-08-15 * Stripe
       Income:Stripe:RSU                   $ -52,654.14
       Expenses:Taxes:Federal               $ 11,644.38
       Expenses:Taxes:Illinois               $ 2,606.38
       Expenses:Taxes:Medicare               $ 1,237.37
       Assets:Investments:RSU                     1,351 STRIP @ $ 27.51
+
+  2024-08-15 * 7/11
+      Expenses:Food:Snacks                      $ 1.10
+      Assets:Checking:Capital One
+
+  2024-08-16 * 7/11
+      Expenses:Food:Snacks                      $ 5.10
+      Assets:Checking:Capital One
+
+  2024-08-16 * Stripe
+      Income:Stripe:Paycheck               $ -4,940.66
+      Income:Stripe:Paycheck               $ -2,117.43
+      Income:Stripe:Wireless                  $ -50.00
+      Expenses:Transportation:Biking         $ -250.00
+      Expenses:Taxes:Medicare                 $ 167.60
+      Expenses:Taxes:Federal                $ 1,309.34
+      Expenses:Taxes:Illinois                 $ 353.04
+      Assets:Investments:HSA                  $ 345.00
+      Income:Stripe:HSA                      $ -100.00
+      Assets:Investments:401K                    4.659 FXAIX @ $ 193.1551835158
+      Assets:Investments:401K                    3.095 FSPSX @ $ 51.3117932149
+      Assets:Checking:RipCo                 $ 3,099.39
+      Assets:Checking:Park City               $ 900.00
+      Assets:Checking:Covantage               $ 225.00
+
+  2024-08-16 * Transfer
+      Assets:Checking:Covantage             $ 1,549.69
+      Assets:Checking:Capital One           $ 1,549.70
+      Assets:Checking:RipCo
+
+  2024-08-16 * Transfer
+      Assets:Checking:Northwoods            $ 3,099.39
+      Assets:Checking:Covantage            $ -1,549.69
+      Assets:Checking:Capital One          $ -1,549.70
+
+  2024-08-16 * Dollar Tree
+      Expenses:Personal:Household              $ 11.00
+      Assets:Checking:Capital One
+
+  2024-08-16 * 7/11
+      Expenses:Food:Snacks                      $ 1.97
+      Assets:Checking:Capital One
+
+  2024-08-16 * Transfer
+      Assets:Checking:Capital One              $ 50.00
+      Assets:Checking:Covantage
+
+  2024-08-16 * Transfer
+      Assets:Checking:Capital One             $ 100.00
+      Assets:Checking:Covantage
+
+  2024-08-16 * Fresh Thyme
+      Expenses:Food:Groceries                  $ 10.59
+      Assets:Checking:Capital One
+
+  2024-08-16 * McDonald's
+      Expenses:Food:Fast Food                   $ 1.76
+      Assets:Checking:Capital One
+
+  2024-08-16 * Wendy's
+      Expenses:Food:Snacks                      $ 1.12
+      Assets:Checking:Capital One
+
+  2024-08-16 * Popeye's
+      Expenses:Food:Fast Food                   $ 6.68
+      Assets:Checking:Capital One
+
+  2024-08-17 * Home Depot
+      Expenses:Personal:Household              $ 14.18
+      Assets:Checking:Capital One
+
+  2024-08-17 * Dollar Tree
+      Expenses:Personal:Household              $ 14.81
+      Assets:Checking:Capital One
+
+  2024-08-17 * McDonald's
+      Expenses:Food:Fast Food                  $ 15.04
+      Assets:Checking:Capital One
+
+  2024-08-17 * Chick-fil-a
+      Expenses:Food:Fast Food                  $ 14.15
+      Assets:Checking:Capital One
+
+  2024-08-17 * Jewel
+      Expenses:Food:Snacks                      $ 3.26
+      Assets:Checking:Capital One
+
+  2024-08-17 * Target
+      Expenses:Food:Groceries                  $ 18.54
+      Assets:Checking:Capital One
+
+  2024-08-17 * 7/11
+      Expenses:Food:Snacks                      $ 1.10
+      Assets:Checking:Capital One
 
   2024-09-01 ! Spectrum
       Expenses:RE:Cottage:Utilities            $ 74.99
@@ -9134,21 +9236,21 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 169,596.87  Expenses
-          $ 5,296.52    Food
+        $ 171,321.84  Expenses
+          $ 5,376.93    Food
             $ 494.00    Gifts
           $ 9,532.95    Housing
-          $ 6,242.56    Personal
+          $ 6,307.14    Personal
          $ 40,969.89    RE
-        $ 101,069.77    Taxes
-          $ 4,729.28    Transportation
+        $ 102,899.75    Taxes
+          $ 4,479.28    Transportation
           $ 1,261.90    Travel
-       $ -295,075.66  Income
+       $ -302,283.75  Income
         $ -11,729.75    RE
            $ -139.50    SWAQ
-       $ -283,206.41    Stripe
+       $ -290,414.50    Stripe
 --------------------
-       $ -125,478.79
+       $ -130,961.91
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -9180,24 +9282,28 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 45,730.24
+         $ 50,154.64
            1.0 COTTA
-       479.249 FSPSX
-       747.946 FXAIX
+       482.344 FSPSX
+       752.605 FXAIX
        6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 45,730.24    Checking
-             $ 13.89      Capital One
-         $ 15,716.35      Northwoods
+         $ 49,809.64    Checking
+             $ 32.68      Capital One
+             $ 61.22      Covantage
+         $ 18,815.74      Northwoods
+            $ 900.00      Park City
          $ 30,000.00      RipCo
-       479.249 FSPSX
-       747.946 FXAIX
+            $ 345.00
+       482.344 FSPSX
+       752.605 FXAIX
        6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX    Investments
-       479.249 FSPSX
-       633.423 FXAIX      401K
+       482.344 FSPSX
+       638.082 FXAIX      401K
+            $ 345.00
        114.523 FXAIX      HSA
        598.381 VTIAX
        793.319 VTSAX      IRA
@@ -9205,10 +9311,10 @@
            1.0 COTTA    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -116,792.80
+       $ -112,368.40
            1.0 COTTA
-       479.249 FSPSX
-       747.946 FXAIX
+       482.344 FSPSX
+       752.605 FXAIX
        6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX
@@ -9221,20 +9327,22 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 956,606.99  Assets
-         $ 45,730.24    Checking
-             $ 13.89      Capital One
-         $ 15,716.35      Northwoods
+        $ 966,706.27  Assets
+         $ 49,809.64    Checking
+             $ 32.68      Capital One
+             $ 61.22      Covantage
+         $ 18,815.74      Northwoods
+            $ 900.00      Park City
          $ 30,000.00      RipCo
-        $ 460,876.75    Investments
-        $ 144,218.98      401K
-         $ 21,718.14      HSA
-        $ 123,029.64      IRA
+        $ 466,896.63    Investments
+        $ 147,548.00      401K
+         $ 22,420.45      HSA
+        $ 125,018.19      IRA
         $ 171,909.99      RSU
         $ 450,000.00    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 794,083.95
+        $ 804,183.23
 #+end_example
 ** Spending
 *** Savings Rate
@@ -9280,13 +9388,13 @@
 #+end_src
 #+results:
 : .
-:                      $295,075.66 - $169,596.87
-: Gross Savings Rate: --------------------------- = 42.52%
-:                              $295,075.66
+:                      $302,283.75 - $171,321.84
+: Gross Savings Rate: --------------------------- = 43.32%
+:                              $302,283.75
 :
-:                      $194,005.89 - $68,527.10
-:   Net Savings Rate: -------------------------- = 64.68%
-:                              $194,005.89
+:                      $199,384.00 - $68,422.09
+:   Net Savings Rate: -------------------------- = 65.68%
+:                              $199,384.00
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
@@ -9294,20 +9402,20 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 20,292.20  Expenses
-            $ 156.28    Food
-             $ 48.96      Fast Food
-             $ 39.61      Groceries
+         $ 22,017.17  Expenses
+            $ 236.69    Food
+             $ 86.59      Fast Food
+             $ 68.74      Groceries
              $ 30.24      Restaurants
-             $ 37.47      Snacks
+             $ 51.12      Snacks
           $ 1,188.00    Housing
           $ 1,108.00      Rent
              $ 80.00      Utilities
-            $ 418.26    Personal
+            $ 482.84    Personal
             $ 227.43      Boat
              $ 30.00      Communication
-            $ 117.70      Electronics
-             $ 43.13      Household
+            $ 131.48      Electronics
+             $ 93.93      Household
           $ 1,022.40    RE:Cottage
             $ 100.00      Cleaning
              $ 79.83      Insurance
@@ -9315,17 +9423,17 @@
              $ 50.00      Lawncare
              $ 63.68      Repairs
             $ 253.99      Utilities
-         $ 17,294.93    Taxes
-         $ 12,935.93      Federal
-          $ 2,606.38      Illinois
-          $ 1,403.25      Medicare
+         $ 19,124.91    Taxes
+         $ 14,245.27      Federal
+          $ 2,959.42      Illinois
+          $ 1,570.85      Medicare
             $ 349.37      State
-            $ 212.33    Transportation
-             $ 46.52      Biking
+            $ -37.67    Transportation
+           $ -203.48      Biking
              $ 51.24      Driving:Gas
             $ 114.57      Insurance
 --------------------
-         $ 20,292.20
+         $ 22,017.17
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -9398,5 +9506,5 @@ April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
 July 2024            $ 9,835.54
-August 2024          $ 2,997.27
+August 2024          $ 2,892.26
 #+end_example
