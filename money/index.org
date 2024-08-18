@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 08/17/2024 00:00:00 VTSAX $132.6600
-  P 08/17/2024 00:00:00 VTIAX $33.0500
-  P 08/17/2024 00:00:00 FSPSX $50.9000
-  P 08/17/2024 00:00:00 FXAIX $192.7600
-  P 08/17/2024 00:00:00 CONDO $250,000.00
-  P 08/17/2024 00:00:00 COTTA $450,000.00
-  P 08/17/2024 00:00:00 STRIP $27.51
+  P 08/18/2024 00:00:00 VTSAX $132.6600
+  P 08/18/2024 00:00:00 VTIAX $33.0500
+  P 08/18/2024 00:00:00 FSPSX $50.9000
+  P 08/18/2024 00:00:00 FXAIX $192.7600
+  P 08/18/2024 00:00:00 CONDO $250,000.00
+  P 08/18/2024 00:00:00 COTTA $450,000.00
+  P 08/18/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -9182,6 +9182,10 @@
       Assets:Checking:Northwoods               $ 61.00
       Assets:Checking:Covantage
 
+  2024-08-18 * Mariano's
+      Expenses:Food:Groceries                  $ 26.14
+      Assets:Checking:Capital One
+
   2024-09-01 ! Spectrum
       Expenses:RE:Cottage:Utilities            $ 74.99
       Assets:Checking:Northwoods
@@ -9240,8 +9244,8 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 171,321.84  Expenses
-          $ 5,376.93    Food
+        $ 171,347.98  Expenses
+          $ 5,403.07    Food
             $ 494.00    Gifts
           $ 9,532.95    Housing
           $ 6,307.14    Personal
@@ -9254,7 +9258,7 @@
            $ -139.50    SWAQ
        $ -290,414.50    Stripe
 --------------------
-       $ -130,961.91
+       $ -130,935.77
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -9286,15 +9290,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 50,154.64
+         $ 50,128.50
            1.0 COTTA
        482.344 FSPSX
        752.605 FXAIX
        6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 49,809.64    Checking
-             $ 32.68      Capital One
+         $ 49,783.50    Checking
+              $ 6.54      Capital One
               $ 0.22      Covantage
          $ 18,876.74      Northwoods
             $ 900.00      Park City
@@ -9315,7 +9319,7 @@
            1.0 COTTA    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -112,368.40
+       $ -112,394.54
            1.0 COTTA
        482.344 FSPSX
        752.605 FXAIX
@@ -9331,9 +9335,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 966,706.27  Assets
-         $ 49,809.64    Checking
-             $ 32.68      Capital One
+        $ 966,680.13  Assets
+         $ 49,783.50    Checking
+              $ 6.54      Capital One
               $ 0.22      Covantage
          $ 18,876.74      Northwoods
             $ 900.00      Park City
@@ -9346,7 +9350,7 @@
         $ 450,000.00    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 804,183.23
+        $ 804,157.09
 #+end_example
 ** Spending
 *** Savings Rate
@@ -9392,12 +9396,12 @@
 #+end_src
 #+results:
 : .
-:                      $302,283.75 - $171,321.84
+:                      $302,283.75 - $171,347.98
 : Gross Savings Rate: --------------------------- = 43.32%
 :                              $302,283.75
 :
-:                      $199,384.00 - $68,422.09
-:   Net Savings Rate: -------------------------- = 65.68%
+:                      $199,384.00 - $68,448.23
+:   Net Savings Rate: -------------------------- = 65.67%
 :                              $199,384.00
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -9406,10 +9410,10 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 22,017.17  Expenses
-            $ 236.69    Food
+         $ 22,043.31  Expenses
+            $ 262.83    Food
              $ 86.59      Fast Food
-             $ 68.74      Groceries
+             $ 94.88      Groceries
              $ 30.24      Restaurants
              $ 51.12      Snacks
           $ 1,188.00    Housing
@@ -9437,7 +9441,7 @@
              $ 51.24      Driving:Gas
             $ 114.57      Insurance
 --------------------
-         $ 22,017.17
+         $ 22,043.31
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -9510,5 +9514,5 @@ April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
 July 2024            $ 9,835.54
-August 2024          $ 2,892.26
+August 2024          $ 2,918.40
 #+end_example
