@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 08/18/2024 00:00:00 VTSAX $132.6600
-  P 08/18/2024 00:00:00 VTIAX $33.0500
-  P 08/18/2024 00:00:00 FSPSX $50.9000
-  P 08/18/2024 00:00:00 FXAIX $192.7600
-  P 08/18/2024 00:00:00 CONDO $250,000.00
-  P 08/18/2024 00:00:00 COTTA $450,000.00
-  P 08/18/2024 00:00:00 STRIP $27.51
+  P 08/22/2024 00:00:00 VTSAX $133.8800
+  P 08/22/2024 00:00:00 VTIAX $33.5000
+  P 08/22/2024 00:00:00 FSPSX $51.7400
+  P 08/22/2024 00:00:00 FXAIX $194.6800
+  P 08/22/2024 00:00:00 CONDO $250,000.00
+  P 08/22/2024 00:00:00 COTTA $450,000.00
+  P 08/22/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -9028,7 +9028,7 @@
       Expenses:Food:Fast Food                   $ 5.55
       Assets:Checking:Capital One
 
-  2024-08-12 * McDonald's
+  2024-08-12 * Goodwill
       Expenses:Personal:Electronics             $ 7.00
       Assets:Checking:Capital One
 
@@ -9090,6 +9090,7 @@
 
   2024-08-16 * 7/11
       Expenses:Food:Snacks                      $ 5.10
+      Expenses:Food:Snacks                      $ 5.97
       Assets:Checking:Capital One
 
   2024-08-16 * Stripe
@@ -9110,13 +9111,7 @@
 
   2024-08-16 * Transfer
       Assets:Checking:Covantage             $ 1,549.69
-      Assets:Checking:Capital One           $ 1,549.70
       Assets:Checking:RipCo
-
-  2024-08-16 * Transfer
-      Assets:Checking:Northwoods            $ 3,099.39
-      Assets:Checking:Covantage            $ -1,549.69
-      Assets:Checking:Capital One          $ -1,549.70
 
   2024-08-16 * Dollar Tree
       Expenses:Personal:Household              $ 11.00
@@ -9143,12 +9138,16 @@
       Assets:Checking:Capital One
 
   2024-08-16 * Wendy's
-      Expenses:Food:Snacks                      $ 1.12
+      Expenses:Food:Fast Food                   $ 1.12
       Assets:Checking:Capital One
 
   2024-08-16 * Popeye's
       Expenses:Food:Fast Food                   $ 6.68
       Assets:Checking:Capital One
+
+  2024-08-16 * Brooke Janicki
+      Expenses:RE:Cottage:Cleaning            $ 100.00
+      Assets:Checking:Northwoods
 
   2024-08-17 * Home Depot
       Expenses:Personal:Household              $ 14.18
@@ -9178,12 +9177,62 @@
       Expenses:Food:Snacks                      $ 1.10
       Assets:Checking:Capital One
 
-  2024-08-17 * Transfer
-      Assets:Checking:Northwoods               $ 61.00
-      Assets:Checking:Covantage
-
   2024-08-18 * Mariano's
       Expenses:Food:Groceries                  $ 26.14
+      Assets:Checking:Capital One
+
+  2024-08-19 * Transfer
+      Assets:Checking:Capital One              $ 50.00
+      Assets:Checking:Covantage
+
+  2024-08-19 * Aldi
+      Expenses:Food:Groceries                  $ 20.93
+      Assets:Checking:Capital One
+
+  2024-08-20 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.59
+      Assets:Checking:Capital One
+
+  2024-08-21 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.59
+      Assets:Checking:Capital One
+
+  2024-08-21 * Fresh Thyme
+      Expenses:Food:Snacks                      $ 4.65
+      Assets:Checking:Capital One
+
+  2024-08-21 * Lyft
+      Expenses:Transportation:Biking            $ 4.36
+      Expenses:Transportation:Biking            $ 7.80
+      Assets:Checking:Capital One
+
+  2024-08-21 * Walgreens
+      Expenses:Food:Snacks                      $ 1.31
+      Assets:Checking:Capital One
+
+  2024-08-22 * Expensify
+      Assets:Checking:Covantage               $ 110.24
+      Expenses:Personal:Electronics
+
+  2024-08-22 * Transfer
+      Assets:Checking:Capital One              $ 71.22
+      Assets:Checking:Covantage
+
+  2024-08-22 * Wendy's
+      Expenses:Food:Fast Food                   $ 8.94
+      Assets:Checking:Capital One
+
+  2024-08-22 * Chick-fil-a
+      Expenses:Food:Fast Food                  $ 11.84
+      Assets:Checking:Capital One
+
+  2024-08-22 * Jewel
+      Expenses:Food:Snacks                     $ 12.11
+      Assets:Checking:Capital One
+
+  2024-08-22 * Fees to Emily
+      Expenses:Personal:Household               $ 5.32
+      Expenses:Personal:Household               $ 0.87
       Assets:Checking:Capital One
 
   2024-09-01 ! Spectrum
@@ -9244,21 +9293,21 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 171,347.98  Expenses
-          $ 5,403.07    Food
+        $ 171,433.02  Expenses
+          $ 5,480.00    Food
             $ 494.00    Gifts
           $ 9,532.95    Housing
-          $ 6,307.14    Personal
-         $ 40,969.89    RE
+          $ 6,203.09    Personal
+         $ 41,069.89    RE
         $ 102,899.75    Taxes
-          $ 4,479.28    Transportation
+          $ 4,491.44    Transportation
           $ 1,261.90    Travel
        $ -302,283.75  Income
         $ -11,729.75    RE
            $ -139.50    SWAQ
        $ -290,414.50    Stripe
 --------------------
-       $ -130,935.77
+       $ -130,850.73
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -9290,19 +9339,19 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 50,128.50
+         $ 50,043.46
            1.0 COTTA
        482.344 FSPSX
        752.605 FXAIX
        6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 49,783.50    Checking
-              $ 6.54      Capital One
-              $ 0.22      Covantage
-         $ 18,876.74      Northwoods
+         $ 49,698.46    Checking
+             $ 32.48      Capital One
+          $ 1,599.93      Covantage
+         $ 15,616.35      Northwoods
             $ 900.00      Park City
-         $ 30,000.00      RipCo
+         $ 31,549.70      RipCo
             $ 345.00
        482.344 FSPSX
        752.605 FXAIX
@@ -9319,7 +9368,7 @@
            1.0 COTTA    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -112,394.54
+       $ -112,479.58
            1.0 COTTA
        482.344 FSPSX
        752.605 FXAIX
@@ -9335,22 +9384,22 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 966,680.13  Assets
-         $ 49,783.50    Checking
-              $ 6.54      Capital One
-              $ 0.22      Covantage
-         $ 18,876.74      Northwoods
+        $ 969,682.38  Assets
+         $ 49,698.46    Checking
+             $ 32.48      Capital One
+          $ 1,599.93      Covantage
+         $ 15,616.35      Northwoods
             $ 900.00      Park City
-         $ 30,000.00      RipCo
-        $ 466,896.63    Investments
-        $ 147,548.00      401K
-         $ 22,420.45      HSA
-        $ 125,018.19      IRA
+         $ 31,549.70      RipCo
+        $ 469,983.92    Investments
+        $ 149,178.28      401K
+         $ 22,640.34      HSA
+        $ 126,255.31      IRA
         $ 171,909.99      RSU
         $ 450,000.00    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 804,157.09
+        $ 807,159.34
 #+end_example
 ** Spending
 *** Savings Rate
@@ -9396,12 +9445,12 @@
 #+end_src
 #+results:
 : .
-:                      $302,283.75 - $171,347.98
-: Gross Savings Rate: --------------------------- = 43.32%
+:                      $302,283.75 - $171,433.02
+: Gross Savings Rate: --------------------------- = 43.29%
 :                              $302,283.75
 :
-:                      $199,384.00 - $68,448.23
-:   Net Savings Rate: -------------------------- = 65.67%
+:                      $199,384.00 - $68,533.27
+:   Net Savings Rate: -------------------------- = 65.63%
 :                              $199,384.00
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -9410,22 +9459,22 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 22,043.31  Expenses
-            $ 262.83    Food
-             $ 86.59      Fast Food
-             $ 94.88      Groceries
+         $ 22,128.35  Expenses
+            $ 339.76    Food
+            $ 119.67      Fast Food
+            $ 115.81      Groceries
              $ 30.24      Restaurants
-             $ 51.12      Snacks
+             $ 74.04      Snacks
           $ 1,188.00    Housing
           $ 1,108.00      Rent
              $ 80.00      Utilities
-            $ 482.84    Personal
+            $ 378.79    Personal
             $ 227.43      Boat
              $ 30.00      Communication
-            $ 131.48      Electronics
-             $ 93.93      Household
-          $ 1,022.40    RE:Cottage
-            $ 100.00      Cleaning
+             $ 21.24      Electronics
+            $ 100.12      Household
+          $ 1,122.40    RE:Cottage
+            $ 200.00      Cleaning
              $ 79.83      Insurance
             $ 474.90      Interest
              $ 50.00      Lawncare
@@ -9436,12 +9485,12 @@
           $ 2,959.42      Illinois
           $ 1,570.85      Medicare
             $ 349.37      State
-            $ -37.67    Transportation
-           $ -203.48      Biking
+            $ -25.51    Transportation
+           $ -191.32      Biking
              $ 51.24      Driving:Gas
             $ 114.57      Insurance
 --------------------
-         $ 22,043.31
+         $ 22,128.35
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -9514,5 +9563,5 @@ April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
 July 2024            $ 9,835.54
-August 2024          $ 2,918.40
+August 2024          $ 3,003.44
 #+end_example
