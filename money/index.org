@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 08/22/2024 00:00:00 VTSAX $133.8800
-  P 08/22/2024 00:00:00 VTIAX $33.5000
-  P 08/22/2024 00:00:00 FSPSX $51.7400
-  P 08/22/2024 00:00:00 FXAIX $194.6800
-  P 08/22/2024 00:00:00 CONDO $250,000.00
-  P 08/22/2024 00:00:00 COTTA $450,000.00
-  P 08/22/2024 00:00:00 STRIP $27.51
+  P 08/27/2024 00:00:00 VTSAX $135.1600
+  P 08/27/2024 00:00:00 VTIAX $34.0200
+  P 08/27/2024 00:00:00 FSPSX $52.7700
+  P 08/27/2024 00:00:00 FXAIX $196.0000
+  P 08/27/2024 00:00:00 CONDO $250,000.00
+  P 08/27/2024 00:00:00 COTTA $450,000.00
+  P 08/27/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -2397,14 +2397,6 @@
       Expenses:Personal:Household              $ 37.71
       Assets:Checking:Covantage
 
-  2023-08-10 * Dollar Tree
-      Expenses:Personal:Household               $ 8.27
-      Assets:Checking:Capital One
-
-  2023-08-10 * Aldi
-      Expenses:Food:Groceries                  $ 16.27
-      Assets:Checking:Capital One
-
   2023-08-11 * Noodles & Co
       Expenses:Personal:Household              $ 11.18
       Assets:Checking:Covantage
@@ -2416,14 +2408,6 @@
   2023-08-11 * Divvy Bikes
       Expenses:Transportation:Biking            $ 2.35
       Assets:Checking:Covantage
-
-  2023-08-11 * McDonald's
-      Expenses:Food:Fast Food                   $ 6.51
-      Assets:Checking:Capital One
-
-  2023-08-11 * Wendy's
-      Expenses:Food:Fast Food                   $ 4.68
-      Assets:Checking:Capital One
 
   2023-08-13 * Venmo
       Expenses:Food:Snacks                     $ 55.00
@@ -5336,7 +5320,6 @@
       Expenses:Food:Snacks                      $ 4.54
       Liabilities:Credit Card:RipCo
 
-
   2024-01-24 * Popeye's
       Expenses:Food:Fast Food                  $ 10.82
       Liabilities:Credit Card:RipCo
@@ -5353,6 +5336,7 @@
   2024-01-25 * Transfer
       Liabilities:Credit Card:Covantage     $ 1,575.43
       Assets:Checking:Covantage
+
 
   2024-01-25 * Lincoln Park Auto
       Expenses:Transportation:Driving:Repairs  $ 158.58
@@ -8955,58 +8939,40 @@
       Expenses:Transportation:Biking           $ 35.10
       Assets:Checking:Capital One
 
-  2024-08-06 * 7/11
+  2024-08-07 * Transfer
+      Assets:Checking:Capital One             $ 200.00
+      Assets:Checking:Covantage
+
+  2024-08-07 * 7/11
       Expenses:Food:Snacks                     $ 10.89
       Expenses:Food:Snacks                      $ 4.90
       Assets:Checking:Capital One
 
-  2024-08-06 * Dollar Tree
+  2024-08-07 * Dollar Tree
       Expenses:Food:Snacks                      $ 2.56
-      Assets:Checking:Capital One
-
-  2024-08-06 * Jewel
-      Expenses:Food:Snacks                      $ 3.06
       Assets:Checking:Capital One
 
   2024-08-07 * Brooke Janicki
       Expenses:RE:Cottage:Cleaning            $ 100.00
       Assets:Checking:Northwoods
 
-  2024-08-07 * Transfer
-      Assets:Checking:Capital One             $ 200.00
-      Assets:Checking:Covantage
-
-  2024-08-07 * Panera Bread
+  2024-08-08 * Panera Bread
       Expenses:Food:Fast Food                   $ 3.69
       Assets:Checking:Capital One
 
-  2024-08-07 * Taco Bell
-      Expenses:Food:Fast Food                   $ 9.45
-      Assets:Checking:Capital One
-
-  2024-08-07 * Tracfone
+  2024-08-08 * Tracfone
       Expenses:Transportation:Biking           $ 11.42
       Assets:Checking:Capital One
 
-  2024-08-09 * Amazon
-      Expenses:Personal:Household               $ 9.91
+  2024-08-09 * Jewel
+      Expenses:Food:Snacks                      $ 3.06
       Assets:Checking:Capital One
 
-  2024-08-09 * Target
-      Expenses:Food:Snacks                      $ 1.64
+  2024-08-09 * Taco Bell
+      Expenses:Food:Fast Food                   $ 9.45
       Assets:Checking:Capital One
 
-  2024-08-09 * Dunkin Donuts
-      Expenses:Food:Fast Food                   $ 5.01
-      Assets:Checking:Capital One
-
-  2024-08-09 * Transfer
-      Assets:Checking:Northwoods            $ 2,500.00
-      Assets:Checking:Northwoods              $ 942.68
-      Assets:Checking:Capital One             $ 100.00
-      Assets:Checking:Covantage
-
-  2024-08-09 * Best Buy
+  2024-08-10 * Best Buy
       Expenses:Personal:Electronics           $ 110.24
       Expenses:Personal:Electronics            $ 26.45
       Expenses:Personal:Electronics           $ -25.99
@@ -9016,21 +8982,39 @@
       Expenses:Food:Snacks                      $ 3.70
       Assets:Checking:Capital One
 
-  2024-08-12 * VRBO
-      Assets:Checking:Northwoods            $ 1,196.18
-      Income:RE:Cottage:Rent
-
-  2024-08-12 * McDonald's
-      Expenses:Food:Fast Food                   $ 8.74
+  2024-08-10 * Amazon
+      Expenses:Personal:Household               $ 9.91
       Assets:Checking:Capital One
 
-  2024-08-12 * McDonald's
-      Expenses:Food:Fast Food                   $ 5.55
+  2024-08-10 * Dollar Tree
+      Expenses:Personal:Household               $ 8.27
       Assets:Checking:Capital One
 
-  2024-08-12 * Goodwill
-      Expenses:Personal:Electronics             $ 7.00
+  2024-08-11 * Aldi
+      Expenses:Food:Groceries                  $ 16.27
       Assets:Checking:Capital One
+
+  2024-08-11 * McDonald's
+      Expenses:Food:Fast Food                   $ 6.51
+      Assets:Checking:Capital One
+
+  2024-08-11 * Wendy's
+      Expenses:Food:Fast Food                   $ 4.68
+      Assets:Checking:Capital One
+
+  2024-08-11 * Target
+      Expenses:Food:Snacks                      $ 1.64
+      Assets:Checking:Capital One
+
+  2024-08-11 * Dunkin Donuts
+      Expenses:Food:Fast Food                   $ 5.01
+      Assets:Checking:Capital One
+
+  2024-08-12 * Transfer
+      Assets:Checking:Northwoods            $ 2,500.00
+      Assets:Checking:Northwoods              $ 942.68
+      Assets:Checking:Capital One             $ 100.00
+      Assets:Checking:Covantage
 
   2024-08-12 * Chick-fil-a
       Expenses:Food:Fast Food                   $ 9.13
@@ -9038,6 +9022,22 @@
 
   2024-08-12 * 7/11
       Expenses:Food:Snacks                      $ 2.55
+      Assets:Checking:Capital One
+
+  2024-08-12 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.55
+      Assets:Checking:Capital One
+
+  2024-08-12 * McDonald's
+      Expenses:Food:Fast Food                   $ 8.74
+      Assets:Checking:Capital One
+
+  2024-08-12 * VRBO
+      Assets:Checking:Northwoods            $ 1,196.18
+      Income:RE:Cottage:Rent
+
+  2024-08-12 * Goodwill
+      Expenses:Personal:Electronics             $ 7.00
       Assets:Checking:Capital One
 
   2024-08-12 * Home Depot
@@ -9053,24 +9053,20 @@
       Expenses:Food:Groceries                  $ 13.23
       Assets:Checking:Capital One
 
-  2024-08-13 * Amazon
-      Expenses:Personal:Household               $ 6.05
-      Assets:Checking:Capital One
-
   2024-08-14 * Home Depot
       Expenses:Personal:Household              $ 13.65
-      Assets:Checking:Capital One
-
-  2024-08-14 * Walgreens
-      Expenses:Food:Snacks                      $ 2.41
       Assets:Checking:Capital One
 
   2024-08-14 * Mariano's
       Expenses:Food:Groceries                   $ 7.69
       Assets:Checking:Capital One
 
-  2024-08-14 * Corcoran's
-      Expenses:Food:Restaurants                $ 30.24
+  2024-08-14 * Amazon
+      Expenses:Personal:Household               $ 6.05
+      Assets:Checking:Capital One
+
+  2024-08-14 * Walgreens
+      Expenses:Food:Snacks                      $ 2.41
       Assets:Checking:Capital One
 
   2024-08-14 * Home Depot
@@ -9084,14 +9080,34 @@
       Expenses:Taxes:Medicare               $ 1,237.37
       Assets:Investments:RSU                     1,351 STRIP @ $ 27.51
 
-  2024-08-15 * 7/11
-      Expenses:Food:Snacks                      $ 1.10
+  2024-08-16 * Transfer
+      Assets:Checking:Capital One              $ 49.13
+      Assets:Checking:Covantage               $ -50.00
+      Expenses:Personal:Household
+
+  2024-08-16 * Dollar Tree
+      Expenses:Personal:Household              $ 11.00
       Assets:Checking:Capital One
 
   2024-08-16 * 7/11
-      Expenses:Food:Snacks                      $ 5.10
-      Expenses:Food:Snacks                      $ 5.97
+      Expenses:Food:Snacks                      $ 1.10
       Assets:Checking:Capital One
+
+  2024-08-16 * Transfer
+      Assets:Checking:Capital One           $ 1,549.70
+      Assets:Checking:RipCo
+
+  2024-08-16 * Fresh Thyme
+      Expenses:Food:Groceries                  $ 10.59
+      Assets:Checking:Capital One
+
+  2024-08-16 * Corcoran's
+      Expenses:Food:Restaurants                $ 30.24
+      Assets:Checking:Capital One
+
+  2024-08-16 * Transfer
+      Assets:Checking:Capital One             $ 100.00
+      Assets:Checking:Covantage
 
   2024-08-16 * Stripe
       Income:Stripe:Paycheck               $ -4,940.66
@@ -9113,127 +9129,186 @@
       Assets:Checking:Covantage             $ 1,549.69
       Assets:Checking:RipCo
 
-  2024-08-16 * Dollar Tree
-      Expenses:Personal:Household              $ 11.00
-      Assets:Checking:Capital One
-
-  2024-08-16 * 7/11
-      Expenses:Food:Snacks                      $ 1.97
-      Assets:Checking:Capital One
-
-  2024-08-16 * Transfer
-      Assets:Checking:Capital One              $ 50.00
-      Assets:Checking:Covantage
-
-  2024-08-16 * Transfer
-      Assets:Checking:Capital One             $ 100.00
-      Assets:Checking:Covantage
-
-  2024-08-16 * Fresh Thyme
-      Expenses:Food:Groceries                  $ 10.59
-      Assets:Checking:Capital One
-
-  2024-08-16 * McDonald's
-      Expenses:Food:Fast Food                   $ 1.76
-      Assets:Checking:Capital One
-
-  2024-08-16 * Wendy's
-      Expenses:Food:Fast Food                   $ 1.12
-      Assets:Checking:Capital One
-
-  2024-08-16 * Popeye's
-      Expenses:Food:Fast Food                   $ 6.68
-      Assets:Checking:Capital One
-
-  2024-08-16 * Brooke Janicki
-      Expenses:RE:Cottage:Cleaning            $ 100.00
-      Assets:Checking:Northwoods
-
   2024-08-17 * Home Depot
       Expenses:Personal:Household              $ 14.18
-      Assets:Checking:Capital One
-
-  2024-08-17 * Dollar Tree
-      Expenses:Personal:Household              $ 14.81
-      Assets:Checking:Capital One
-
-  2024-08-17 * McDonald's
-      Expenses:Food:Fast Food                  $ 15.04
-      Assets:Checking:Capital One
-
-  2024-08-17 * Chick-fil-a
-      Expenses:Food:Fast Food                  $ 14.15
-      Assets:Checking:Capital One
-
-  2024-08-17 * Jewel
-      Expenses:Food:Snacks                      $ 3.26
-      Assets:Checking:Capital One
-
-  2024-08-17 * Target
-      Expenses:Food:Groceries                  $ 18.54
       Assets:Checking:Capital One
 
   2024-08-17 * 7/11
       Expenses:Food:Snacks                      $ 1.10
       Assets:Checking:Capital One
 
-  2024-08-18 * Mariano's
+  2024-08-17 * Dollar Tree
+      Expenses:Personal:Household              $ 14.81
+      Assets:Checking:Capital One
+
+  2024-08-17 * Mariano's
       Expenses:Food:Groceries                  $ 26.14
       Assets:Checking:Capital One
 
-  2024-08-19 * Transfer
-      Assets:Checking:Capital One              $ 50.00
-      Assets:Checking:Covantage
+  2024-08-17 * 7/11
+      Expenses:Food:Snacks                      $ 1.10
+      Assets:Checking:Capital One
+
+  2024-08-17 * McDonald's
+      Expenses:Food:Fast Food                   $ 1.76
+      Assets:Checking:Capital One
+
+  2024-08-17 * Wendy's
+      Expenses:Food:Fast Food                   $ 1.12
+      Assets:Checking:Capital One
+
+  2024-08-17 * Popeye's
+      Expenses:Food:Fast Food                   $ 6.68
+      Assets:Checking:Capital One
+
+  2024-08-17 * 7/11
+      Expenses:Food:Snacks                      $ 5.97
+      Assets:Checking:Capital One
+
+  2024-08-17 * Transfer
+      Assets:Checking:Capital One              $ 49.13
+      Assets:Checking:Covantage               $ -50.00
+      Expenses:Personal:Household
+
+  2024-08-17 * 7/11
+      Expenses:Food:Snacks                      $ 5.10
+      Assets:Checking:Capital One
+
+  2024-08-17 * Brooke Janicki
+      Expenses:RE:Cottage:Cleaning            $ 100.00
+      Assets:Checking:Northwoods
+
+  2024-08-17 * McDonald's
+      Expenses:Food:Fast Food                  $ 15.04
+      Assets:Checking:Capital One
+
+  2024-08-17 * Target
+      Expenses:Food:Groceries                  $ 18.54
+      Assets:Checking:Capital One
 
   2024-08-19 * Aldi
       Expenses:Food:Groceries                  $ 20.93
+      Assets:Checking:Capital One
+
+  2024-08-19 * Chick-fil-a
+      Expenses:Food:Fast Food                  $ 14.15
+      Assets:Checking:Capital One
+
+  2024-08-19 * Jewel
+      Expenses:Food:Snacks                      $ 3.26
       Assets:Checking:Capital One
 
   2024-08-20 * McDonald's
       Expenses:Food:Fast Food                   $ 5.59
       Assets:Checking:Capital One
 
-  2024-08-21 * McDonald's
-      Expenses:Food:Fast Food                   $ 5.59
+  2024-08-20 * Transfer
+      Assets:Checking:RipCo                 $ 1,549.70
       Assets:Checking:Capital One
+
+  2024-08-21 * Transfer
+      Assets:Checking:Capital One              $ 65.90
+      Assets:Checking:Covantage               $ -71.22
+      Expenses:Personal:Household
 
   2024-08-21 * Fresh Thyme
       Expenses:Food:Snacks                      $ 4.65
       Assets:Checking:Capital One
 
+  2024-08-21 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.59
+      Assets:Checking:Capital One
+
   2024-08-21 * Lyft
-      Expenses:Transportation:Biking            $ 4.36
       Expenses:Transportation:Biking            $ 7.80
+      Expenses:Transportation:Biking            $ 4.36
       Assets:Checking:Capital One
 
   2024-08-21 * Walgreens
       Expenses:Food:Snacks                      $ 1.31
       Assets:Checking:Capital One
 
-  2024-08-22 * Expensify
-      Assets:Checking:Covantage               $ 110.24
-      Expenses:Personal:Electronics
+  2024-08-21 * Transfer
+      Assets:Checking:Capital One           $ 1,000.00
+      Assets:Checking:RipCo
 
-  2024-08-22 * Transfer
-      Assets:Checking:Capital One              $ 71.22
-      Assets:Checking:Covantage
-
-  2024-08-22 * Wendy's
-      Expenses:Food:Fast Food                   $ 8.94
-      Assets:Checking:Capital One
-
-  2024-08-22 * Chick-fil-a
-      Expenses:Food:Fast Food                  $ 11.84
+  2024-08-22 * Home Depot
+      Expenses:Personal:Household              $ 20.68
       Assets:Checking:Capital One
 
   2024-08-22 * Jewel
       Expenses:Food:Snacks                     $ 12.11
       Assets:Checking:Capital One
 
-  2024-08-22 * Fees to Emily
-      Expenses:Personal:Household               $ 5.32
-      Expenses:Personal:Household               $ 0.87
+  2024-08-22 * Wendy's
+      Expenses:Food:Fast Food                   $ 8.94
       Assets:Checking:Capital One
+
+  2024-08-22 * Lyft
+      Expenses:Transportation:Biking            $ 1.00
+      Assets:Checking:Capital One
+
+  2024-08-22 * 7/11
+      Expenses:Food:Snacks                      $ 2.55
+      Assets:Checking:Capital One
+
+  2024-08-22 * Transfer
+      Assets:Checking:Capital One              $ 73.69
+      Assets:Checking:Covantage               $ -75.00
+      Expenses:Personal:Household
+
+  2024-08-22 * Burger King
+      Expenses:Food:Snacks                      $ 4.54
+      Assets:Checking:Capital One
+
+  2024-08-22 * Expensify
+      Assets:Checking:Covantage               $ 110.24
+      Expenses:Personal:Electronics
+
+  2024-08-22 * Chick-fil-a
+      Expenses:Food:Fast Food                  $ 11.84
+      Assets:Checking:Capital One
+
+  2024-08-22 * Burger King
+      Expenses:Food:Fast Food                   $ 6.65
+      Assets:Checking:Capital One
+
+  2024-08-24 * Lyft
+      Expenses:Transportation:Biking            $ 3.62
+      Assets:Checking:Capital One
+
+  2024-08-25 * Transfer
+      Assets:Checking:Capital One              $ 49.13
+      Assets:Checking:Covantage               $ -50.00
+      Expenses:Personal:Household
+
+  2024-08-25 * McDonald's
+      Expenses:Food:Fast Food                   $ 8.63
+      Assets:Checking:Capital One
+
+  2024-08-25 * Lyft
+      Expenses:Transportation:Biking           $ 14.65
+      Assets:Checking:Capital One
+
+  2024-08-26 * Tapster
+      Expenses:Food:Drinks                      $ 9.57
+      Assets:Checking:Capital One
+
+  2024-08-26 * Chick-fil-a
+      Expenses:Food:Fast Food                  $ 14.15
+      Assets:Checking:Capital One
+
+  2024-08-26 * Lottie's
+      Expenses:Food:Drinks                     $ 26.16
+      Assets:Checking:Capital One
+
+  2024-08-26 * Lyft
+      Expenses:Transportation:Biking            $ 5.89
+      Assets:Checking:Capital One
+
+  2024-08-26 * Transfer
+      Assets:Checking:Northwoods            $ 1,549.69
+      Assets:Checking:Covantage
 
   2024-09-01 ! Spectrum
       Expenses:RE:Cottage:Utilities            $ 74.99
@@ -9293,21 +9368,21 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 171,433.02  Expenses
-          $ 5,480.00    Food
+        $ 171,589.02  Expenses
+          $ 5,578.84    Food
             $ 494.00    Gifts
           $ 9,532.95    Housing
-          $ 6,203.09    Personal
+          $ 6,235.09    Personal
          $ 41,069.89    RE
         $ 102,899.75    Taxes
-          $ 4,491.44    Transportation
+          $ 4,516.60    Transportation
           $ 1,261.90    Travel
        $ -302,283.75  Income
         $ -11,729.75    RE
            $ -139.50    SWAQ
        $ -290,414.50    Stripe
 --------------------
-       $ -130,850.73
+       $ -130,694.73
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -9339,19 +9414,19 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 50,043.46
+         $ 49,923.19
            1.0 COTTA
        482.344 FSPSX
        752.605 FXAIX
        6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 49,698.46    Checking
-             $ 32.48      Capital One
-          $ 1,599.93      Covantage
-         $ 15,616.35      Northwoods
+         $ 49,578.19    Checking
+          $ 1,037.21      Capital One
+            $ -74.76      Covantage
+         $ 17,166.04      Northwoods
             $ 900.00      Park City
-         $ 31,549.70      RipCo
+         $ 30,549.70      RipCo
             $ 345.00
        482.344 FSPSX
        752.605 FXAIX
@@ -9368,7 +9443,7 @@
            1.0 COTTA    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -112,479.58
+       $ -112,599.85
            1.0 COTTA
        482.344 FSPSX
        752.605 FXAIX
@@ -9384,22 +9459,22 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 969,682.38  Assets
-         $ 49,698.46    Checking
-             $ 32.48      Capital One
-          $ 1,599.93      Covantage
-         $ 15,616.35      Northwoods
+        $ 972,378.97  Assets
+         $ 49,578.19    Checking
+          $ 1,037.21      Capital One
+            $ -74.76      Covantage
+         $ 17,166.04      Northwoods
             $ 900.00      Park City
-         $ 31,549.70      RipCo
-        $ 469,983.92    Investments
-        $ 149,178.28      401K
-         $ 22,640.34      HSA
-        $ 126,255.31      IRA
+         $ 30,549.70      RipCo
+        $ 472,800.78    Investments
+        $ 150,517.36      401K
+         $ 22,791.51      HSA
+        $ 127,581.92      IRA
         $ 171,909.99      RSU
         $ 450,000.00    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 807,159.34
+        $ 809,855.93
 #+end_example
 ** Spending
 *** Savings Rate
@@ -9445,12 +9520,12 @@
 #+end_src
 #+results:
 : .
-:                      $302,283.75 - $171,433.02
-: Gross Savings Rate: --------------------------- = 43.29%
+:                      $302,283.75 - $171,589.02
+: Gross Savings Rate: --------------------------- = 43.24%
 :                              $302,283.75
 :
-:                      $199,384.00 - $68,533.27
-:   Net Savings Rate: -------------------------- = 65.63%
+:                      $199,384.00 - $68,689.27
+:   Net Savings Rate: -------------------------- = 65.55%
 :                              $199,384.00
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -9459,20 +9534,21 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 22,128.35  Expenses
-            $ 339.76    Food
-            $ 119.67      Fast Food
-            $ 115.81      Groceries
+         $ 22,284.35  Expenses
+            $ 438.60    Food
+             $ 35.73      Drinks
+            $ 160.29      Fast Food
+            $ 132.08      Groceries
              $ 30.24      Restaurants
-             $ 74.04      Snacks
+             $ 80.26      Snacks
           $ 1,188.00    Housing
           $ 1,108.00      Rent
              $ 80.00      Utilities
-            $ 378.79    Personal
+            $ 410.79    Personal
             $ 227.43      Boat
              $ 30.00      Communication
              $ 21.24      Electronics
-            $ 100.12      Household
+            $ 132.12      Household
           $ 1,122.40    RE:Cottage
             $ 200.00      Cleaning
              $ 79.83      Insurance
@@ -9485,12 +9561,12 @@
           $ 2,959.42      Illinois
           $ 1,570.85      Medicare
             $ 349.37      State
-            $ -25.51    Transportation
-           $ -191.32      Biking
+             $ -0.35    Transportation
+           $ -166.16      Biking
              $ 51.24      Driving:Gas
             $ 114.57      Insurance
 --------------------
-         $ 22,128.35
+         $ 22,284.35
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -9551,7 +9627,7 @@ April 2023           $ 5,455.64
 May 2023             $ 8,591.06
 June 2023            $ 9,673.92
 July 2023            $ 8,234.24
-August 2023          $ 7,371.76
+August 2023          $ 7,336.03
 September 2023       $ 11,002.49
 October 2023         $ 9,834.46
 November 2023        $ 6,448.77
@@ -9563,5 +9639,5 @@ April 2024           $ 29,758.42
 May 2024             $ 7,668.70
 June 2024            $ -2,268.37
 July 2024            $ 9,835.54
-August 2024          $ 3,003.44
+August 2024          $ 3,159.44
 #+end_example
