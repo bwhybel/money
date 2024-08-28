@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 08/27/2024 00:00:00 VTSAX $135.1600
-  P 08/27/2024 00:00:00 VTIAX $34.0200
-  P 08/27/2024 00:00:00 FSPSX $52.7700
-  P 08/27/2024 00:00:00 FXAIX $196.0000
-  P 08/27/2024 00:00:00 CONDO $250,000.00
-  P 08/27/2024 00:00:00 COTTA $450,000.00
-  P 08/27/2024 00:00:00 STRIP $27.51
+  P 08/28/2024 00:00:00 VTSAX $134.8800
+  P 08/28/2024 00:00:00 VTIAX $34.0300
+  P 08/28/2024 00:00:00 FSPSX $52.8400
+  P 08/28/2024 00:00:00 FXAIX $195.7200
+  P 08/28/2024 00:00:00 CONDO $250,000.00
+  P 08/28/2024 00:00:00 COTTA $450,000.00
+  P 08/28/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -9310,6 +9310,10 @@
       Assets:Checking:Northwoods            $ 1,549.69
       Assets:Checking:Covantage
 
+  2024-08-28 * Transfer
+      Assets:Checking:Capital One             $ 549.70
+      Assets:Checking:RipCo
+
   2024-09-01 ! Spectrum
       Expenses:RE:Cottage:Utilities            $ 74.99
       Assets:Checking:Northwoods
@@ -9422,11 +9426,11 @@
        598.381 VTIAX
        793.319 VTSAX  Assets
          $ 49,578.19    Checking
-          $ 1,037.21      Capital One
+          $ 1,586.91      Capital One
             $ -74.76      Covantage
          $ 17,166.04      Northwoods
             $ 900.00      Park City
-         $ 30,549.70      RipCo
+         $ 30,000.00      RipCo
             $ 345.00
        482.344 FSPSX
        752.605 FXAIX
@@ -9459,22 +9463,22 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 972,378.97  Assets
+        $ 971,985.86  Assets
          $ 49,578.19    Checking
-          $ 1,037.21      Capital One
+          $ 1,586.91      Capital One
             $ -74.76      Covantage
          $ 17,166.04      Northwoods
             $ 900.00      Park City
-         $ 30,549.70      RipCo
-        $ 472,800.78    Investments
-        $ 150,517.36      401K
-         $ 22,791.51      HSA
-        $ 127,581.92      IRA
+         $ 30,000.00      RipCo
+        $ 472,407.67    Investments
+        $ 150,372.47      401K
+         $ 22,759.44      HSA
+        $ 127,365.77      IRA
         $ 171,909.99      RSU
         $ 450,000.00    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 809,855.93
+        $ 809,462.82
 #+end_example
 ** Spending
 *** Savings Rate
@@ -9520,13 +9524,13 @@
 #+end_src
 #+results:
 : .
-:                      $302,283.75 - $171,589.02
-: Gross Savings Rate: --------------------------- = 43.24%
-:                              $302,283.75
+: 	                     $302,283.75 - $171,589.02
+: 	Gross Savings Rate: --------------------------- = 43.24%
+: 	                             $302,283.75
 :
-:                      $199,384.00 - $68,689.27
-:   Net Savings Rate: -------------------------- = 65.55%
-:                              $199,384.00
+: 	                     $199,384.00 - $68,689.27
+: 	  Net Savings Rate: -------------------------- = 65.55%
+: 	                             $199,384.00
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
