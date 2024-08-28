@@ -50,10 +50,10 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 08/28/2024 00:00:00 VTSAX $134.8800
-  P 08/28/2024 00:00:00 VTIAX $34.0300
-  P 08/28/2024 00:00:00 FSPSX $52.8400
-  P 08/28/2024 00:00:00 FXAIX $195.7200
+  P 08/28/2024 00:00:00 VTSAX $134.7500
+  P 08/28/2024 00:00:00 VTIAX $33.8900
+  P 08/28/2024 00:00:00 FSPSX $52.5400
+  P 08/28/2024 00:00:00 FXAIX $195.3900
   P 08/28/2024 00:00:00 CONDO $250,000.00
   P 08/28/2024 00:00:00 COTTA $450,000.00
   P 08/28/2024 00:00:00 STRIP $27.51
@@ -9117,7 +9117,7 @@
       Expenses:Taxes:Medicare                 $ 167.60
       Expenses:Taxes:Federal                $ 1,309.34
       Expenses:Taxes:Illinois                 $ 353.04
-      Assets:Investments:HSA                  $ 345.00
+      Assets:Investments:HSA                     1.763 FXAIX @ $ 195.689166
       Income:Stripe:HSA                      $ -100.00
       Assets:Investments:401K                    4.659 FXAIX @ $ 193.1551835158
       Assets:Investments:401K                    3.095 FSPSX @ $ 51.3117932149
@@ -9418,10 +9418,10 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 49,923.19
+         $ 49,578.19
            1.0 COTTA
        482.344 FSPSX
-       752.605 FXAIX
+       754.368 FXAIX
        6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
@@ -9431,26 +9431,24 @@
          $ 17,166.04      Northwoods
             $ 900.00      Park City
          $ 30,000.00      RipCo
-            $ 345.00
        482.344 FSPSX
-       752.605 FXAIX
+       754.368 FXAIX
        6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX    Investments
        482.344 FSPSX
        638.082 FXAIX      401K
-            $ 345.00
-       114.523 FXAIX      HSA
+       116.286 FXAIX      HSA
        598.381 VTIAX
        793.319 VTSAX      IRA
        6,249.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -112,599.85
+       $ -112,944.85
            1.0 COTTA
        482.344 FSPSX
-       752.605 FXAIX
+       754.368 FXAIX
        6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX
@@ -9463,22 +9461,22 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 971,985.86  Assets
+        $ 971,405.36  Assets
          $ 49,578.19    Checking
           $ 1,586.91      Capital One
             $ -74.76      Covantage
          $ 17,166.04      Northwoods
             $ 900.00      Park City
          $ 30,000.00      RipCo
-        $ 472,407.67    Investments
-        $ 150,372.47      401K
-         $ 22,759.44      HSA
-        $ 127,365.77      IRA
+        $ 471,827.17    Investments
+        $ 150,017.20      401K
+         $ 22,721.12      HSA
+        $ 127,178.87      IRA
         $ 171,909.99      RSU
         $ 450,000.00    RE:Cottage
        $ -162,523.04  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 809,462.82
+        $ 808,882.32
 #+end_example
 ** Spending
 *** Savings Rate
