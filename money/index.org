@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 09/12/2024 00:00:00 VTSAX $131.5900
-  P 09/12/2024 00:00:00 VTIAX $33.0200
-  P 09/12/2024 00:00:00 FSPSX $51.1200
-  P 09/12/2024 00:00:00 FXAIX $191.3000
-  P 09/12/2024 00:00:00 CONDO $250,000.00
-  P 09/12/2024 00:00:00 COTTA $450,000.00
-  P 09/12/2024 00:00:00 STRIP $27.51
+  P 09/15/2024 00:00:00 VTSAX $133.9600
+  P 09/15/2024 00:00:00 VTIAX $33.5100
+  P 09/15/2024 00:00:00 FSPSX $51.8700
+  P 09/15/2024 00:00:00 FXAIX $194.8000
+  P 09/15/2024 00:00:00 CONDO $250,000.00
+  P 09/15/2024 00:00:00 COTTA $450,000.00
+  P 09/15/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -9564,6 +9564,82 @@
       Expenses:Personal:Health                $ 169.00
       Assets:Checking:Capital One
 
+  2024-09-11 * Votis Tree
+      Expenses:RE:Cottage:Repairs             $ 300.00
+      Assets:Checking:Capital One
+
+  2024-09-12 * Transfer
+      Assets:Checking:Chase                   $ 100.00
+      Assets:Checking:Capital One
+
+  2024-09-12 * Transfer
+      Assets:Savings:Chase                  $ 5,000.00
+      Assets:Checking:RipCo
+
+  2024-09-12 * Transfer
+      Assets:Investments:Chase              $ 5,000.00
+      Assets:Checking:RipCo
+
+  2024-09-12 * Transfer
+      Assets:Savings:Chase                  $ 5,000.00
+      Assets:Checking:Northwoods
+
+  2024-09-12 * IRS
+      Expenses:Taxes:Federal                $ 6,000.00
+      Assets:Checking:RipCo
+
+  2024-09-12 * Adams Mobile Marine
+      Expenses:Personal:Boat                  $ 316.50
+      Assets:Checking:Covantage
+
+  2024-09-13 * 7/11
+      Expenses:Food:Snacks                     $ 40.00
+      Assets:Checking:Chase
+
+  2024-09-13 * Stripe
+      Income:Stripe:Paycheck               $ -6,352.27
+      Income:Stripe:Paycheck                 $ -705.81
+      Income:Stripe:Wireless                  $ -50.00
+      Expenses:Transportation:Biking         $ -250.00
+      Expenses:Taxes:Medicare                 $ 167.61
+      Expenses:Taxes:Federal                $ 1,309.34
+      Expenses:Taxes:Illinois                 $ 353.04
+      Assets:Investments:HSA                  $ 345.00
+      Income:Stripe:HSA                      $ -100.00
+      Assets:Investments:401K                    4.594 FXAIX @ $ 195.8881149325
+      Assets:Investments:401K                    3.054 FSPSX @ $ 52.0006548788474
+      Assets:Checking:RipCo                 $ 3,099.37
+      Assets:Checking:Park City               $ 900.00
+      Assets:Checking:Covantage               $ 225.00
+
+  2024-09-14 * Dollar Tree
+      Expenses:Food:Snacks                     $ 15.77
+      Assets:Checking:Capital One
+
+  2024-09-14 * McDonald's
+      Expenses:Food:Fast Food                   $ 4.85
+      Assets:Checking:Capital One
+
+  2024-09-14 * Google Play
+      Expenses:Personal:Electronics            $ 15.00
+      Assets:Checking:Capital One
+
+  2024-09-15 * Transfer
+      Assets:Savings:Chase                  $ 5,000.00
+      Assets:Investments:Chase
+
+  2024-09-15 * Xurro
+      Expenses:Gifts                           $ 64.97
+      Assets:Checking:Capital One
+
+  2024-09-15 * Lyft
+      Expenses:Transportation:Biking           $ 35.35
+      Assets:Checking:Capital One
+
+  2024-09-15 * Spectrum
+      Expenses:RE:Cottage:Utilities            $ 10.00
+      Assets:Checking:Park City
+
   2024-10-01 ! Spectrum
       Expenses:RE:Cottage:Utilities            $ 74.99
       Assets:Checking:Northwoods
@@ -9602,52 +9678,24 @@
       Liabilities:RE:Cottage:Mortgage         $ 304.73
       Expenses:RE:Cottage:Interest            $ 471.37
       Assets:Checking:Northwoods             $ -776.10
-
-  2024-09-11 * Votis Tree
-      Expenses:RE:Cottage:Repairs             $ 300.00
-      Assets:Checking:Capital One
-
-  2024-09-12 * Transfer
-      Assets:Checking:Chase                   $ 100.00
-      Assets:Checking:Capital One
-
-  2024-09-12 * Transfer
-      Assets:Savings:Chase                  $ 5,000.00
-      Assets:Checking:RipCo
-
-  2024-09-12 * Transfer
-      Assets:Investments:Chase              $ 5,000.00
-      Assets:Checking:RipCo
-
-  2024-09-12 * Transfer
-      Assets:Savings:Chase                  $ 5,000.00
-      Assets:Checking:Northwoods
-
-  2024-09-12 * IRS
-      Expenses:Taxes:Federal                $ 6,000.00
-      Assets:Checking:RipCo
-
-  2024-09-12 * Adams Mobile Marine
-      Expenses:Personal:Boat                  $ 316.50
-      Assets:Checking:Covantage
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 182,816.03  Expenses
-          $ 5,966.39    Food
-            $ 494.00    Gifts
+        $ 184,581.96  Expenses
+          $ 6,027.01    Food
+            $ 558.97    Gifts
          $ 10,575.91    Housing
-          $ 6,898.91    Personal
-         $ 42,177.74    RE
-        $ 110,706.55    Taxes
-          $ 4,734.63    Transportation
+          $ 6,913.91    Personal
+         $ 42,187.74    RE
+        $ 112,536.54    Taxes
+          $ 4,519.98    Transportation
           $ 1,261.90    Travel
-       $ -312,384.96  Income
+       $ -319,593.04  Income
         $ -14,772.89    RE
            $ -139.50    SWAQ
-       $ -297,472.57    Stripe
+       $ -304,680.65    Stripe
 --------------------
-       $ -129,568.93
+       $ -135,011.08
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -9679,41 +9727,41 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 47,091.60
+         $ 51,475.03
            1.0 COTTA
-       485.343 FSPSX
-       758.947 FXAIX
+       488.397 FSPSX
+       763.541 FXAIX
        6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-         $ 32,091.60    Checking
-          $ 2,973.47      Capital One
-            $ 100.00      Chase
-            $ 231.32      Covantage
+         $ 36,130.03    Checking
+          $ 2,837.53      Capital One
+             $ 60.00      Chase
+            $ 456.32      Covantage
          $ 14,099.26      Northwoods
-            $ 120.00      Park City
-         $ 14,567.55      RipCo
-          $ 5,000.00
-       485.343 FSPSX
-       758.947 FXAIX
+          $ 1,010.00      Park City
+         $ 17,666.92      RipCo
+            $ 345.00
+       488.397 FSPSX
+       763.541 FXAIX
        6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX    Investments
-       485.343 FSPSX
-       642.661 FXAIX      401K
-          $ 5,000.00      Chase
+       488.397 FSPSX
+       647.255 FXAIX      401K
+            $ 345.00
        116.286 FXAIX      HSA
        598.381 VTIAX
        793.319 VTSAX      IRA
        6,249.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-         $ 10,000.00    Savings:Chase
+         $ 15,000.00    Savings:Chase
        $ -162,220.97  Liabilities:RE:Cottage:Mortgage
 --------------------
-       $ -115,129.37
+       $ -110,745.94
            1.0 COTTA
-       485.343 FSPSX
-       758.947 FXAIX
+       488.397 FSPSX
+       763.541 FXAIX
        6,249.0 STRIP
        598.381 VTIAX
        793.319 VTSAX
@@ -9726,25 +9774,24 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 963,150.27  Assets
-         $ 32,091.60    Checking
-          $ 2,973.47      Capital One
-            $ 100.00      Chase
-            $ 231.32      Covantage
+        $ 973,780.72  Assets
+         $ 36,130.03    Checking
+          $ 2,837.53      Capital One
+             $ 60.00      Chase
+            $ 456.32      Covantage
          $ 14,099.26      Northwoods
-            $ 120.00      Park City
-         $ 14,567.55      RipCo
-        $ 471,058.67    Investments
-        $ 147,751.78      401K
-          $ 5,000.00      Chase
-         $ 22,245.51      HSA
-        $ 124,151.39      IRA
+          $ 1,010.00      Park City
+         $ 17,666.92      RipCo
+        $ 472,650.69    Investments
+        $ 151,418.43      401K
+         $ 22,997.51      HSA
+        $ 126,324.76      IRA
         $ 171,909.99      RSU
         $ 450,000.00    RE:Cottage
-         $ 10,000.00    Savings:Chase
+         $ 15,000.00    Savings:Chase
        $ -162,220.97  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 800,929.30
+        $ 811,559.75
 #+end_example
 ** Spending
 *** Savings Rate
@@ -9790,13 +9837,13 @@
 #+end_src
 #+results:
 : .
-:                      $312,384.96 - $182,816.03
-: Gross Savings Rate: --------------------------- = 41.48%
-:                              $312,384.96
+:                      $319,593.04 - $184,581.96
+: Gross Savings Rate: --------------------------- = 42.24%
+:                              $319,593.04
 :
-:                      $201,678.41 - $72,109.48
-:   Net Savings Rate: -------------------------- = 64.25%
-:                              $201,678.41
+:                      $207,056.50 - $72,045.42
+:   Net Savings Rate: -------------------------- = 65.20%
+:                              $207,056.50
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
@@ -9804,35 +9851,40 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 9,302.88  Expenses
-            $ 340.00    Food
+         $ 11,068.81  Expenses
+            $ 400.62    Food
             $ 100.84      Drinks
-             $ 77.79      Fast Food
+             $ 82.64      Fast Food
              $ 63.52      Groceries
-             $ 97.85      Snacks
+            $ 153.62      Snacks
+             $ 64.97    Gifts
           $ 1,042.96    Housing
             $ 840.96      Rent
             $ 202.00      Utilities
-            $ 594.04    Personal
+            $ 609.04    Personal
             $ 316.50      Boat
              $ 30.00      Communication
+             $ 15.00      Electronics
              $ 24.00      Entertainment
             $ 169.00      Health
              $ 54.54      Household
-          $ 1,107.85    RE:Cottage
+          $ 1,117.85    RE:Cottage
              $ 79.83      Insurance
             $ 474.03      Interest
             $ 300.00      Repairs
-            $ 253.99      Utilities
-          $ 6,000.00    Taxes:Federal
-            $ 218.03    Transportation
-             $ 10.79      Biking
+            $ 263.99      Utilities
+          $ 7,829.99    Taxes
+          $ 7,309.34      Federal
+            $ 353.04      Illinois
+            $ 167.61      Medicare
+              $ 3.38    Transportation
+           $ -203.86      Biking
              $ 80.32      Driving
              $ 52.89        Gas
             $ 114.57      Insurance
              $ 12.35      Parking
 --------------------
-          $ 9,302.88
+         $ 11,068.81
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -9899,5 +9951,5 @@ May 2024             $ 7,668.70
 June 2024            $ -2,268.37
 July 2024            $ 9,835.54
 August 2024          $ 3,276.77
-September 2024       $ 3,302.88
+September 2024       $ 3,238.82
 #+end_example
