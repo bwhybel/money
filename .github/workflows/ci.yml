@@ -12,6 +12,9 @@ jobs:
       - name: Check out
         uses: actions/checkout@v1
 
+      - name: Update Packages
+        run: sudo apt update
+
       - name: Install Emacs
         run: sudo apt install emacs-nox --yes || sudo apt-get install --fix-missing emacs-nox --yes
 
