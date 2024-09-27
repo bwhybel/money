@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 09/25/2024 00:00:00 VTSAX $137.3200
-  P 09/25/2024 00:00:00 VTIAX $34.0400
-  P 09/25/2024 00:00:00 FSPSX $52.6700
-  P 09/25/2024 00:00:00 FXAIX $199.1700
-  P 09/25/2024 00:00:00 CONDO $250,000.00
-  P 09/25/2024 00:00:00 COTTA $450,000.00
-  P 09/25/2024 00:00:00 STRIP $27.51
+  P 09/27/2024 00:00:00 VTSAX $137.2400
+  P 09/27/2024 00:00:00 VTIAX $34.2500
+  P 09/27/2024 00:00:00 FSPSX $52.7100
+  P 09/27/2024 00:00:00 FXAIX $199.3000
+  P 09/27/2024 00:00:00 CONDO $250,000.00
+  P 09/27/2024 00:00:00 COTTA $450,000.00
+  P 09/27/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -9864,12 +9864,23 @@
       Assets:Checking:Capital One
 
   2024-09-26 * Transfer
-      Liabilities:RE:Cottage:Mortgage       $ 2,500.00
+      Liabilities:RE:Cottage:Mortgage       $ 2,558.71
       Assets:Checking:Capital One
 
   2024-09-26 * Transfer
       Liabilities:RE:Cottage:Mortgage       $ 1,321.63
       Assets:Checking:RipCo
+
+  2024-09-27 * Stripe
+      Assets:Checking:Northwoods              $ 600.00
+      Assets:Checking:Park City               $ 950.00
+      Assets:Checking:Chase                   $ 225.00
+      Liabilities:RE:Cottage:Mortgage       $ 2,417.55
+      Assets:Investments:401K               $ 1,058.72
+      Expenses:Taxes:Medicare                 $ 165.88
+      Expenses:Taxes:Federal                $ 1,291.55
+      Expenses:Taxes:State                    $ 349.37
+      Income:Stripe:Paycheck               $ -7,058.07
 
   2024-10-01 ! Spectrum
       Expenses:RE:Cottage:Utilities            $ 74.99
@@ -9916,21 +9927,21 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 186,655.21  Expenses
+        $ 188,462.01  Expenses
           $ 6,359.36    Food
             $ 600.85    Gifts
          $ 10,775.91    Housing
           $ 7,936.33    Personal
          $ 42,267.74    RE
-        $ 112,536.54    Taxes
+        $ 114,343.34    Taxes
           $ 4,916.58    Transportation
           $ 1,261.90    Travel
-       $ -320,560.06  Income
+       $ -327,618.13  Income
         $ -15,739.91    RE
            $ -139.50    SWAQ
-       $ -304,680.65    Stripe
+       $ -311,738.72    Stripe
 --------------------
-       $ -133,904.85
+       $ -139,156.12
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -9962,22 +9973,24 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 1,668.71
+          $ 4,443.72
            1.0 COTTA
        488.397 FSPSX
        765.300 FXAIX
        4,536.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-          $ 1,668.71    Checking
-             $ 58.71      Capital One
-            $ 600.00      Northwoods
-          $ 1,010.00      Park City
+          $ 3,385.00    Checking
+            $ 225.00      Chase
+          $ 1,200.00      Northwoods
+          $ 1,960.00      Park City
+          $ 1,058.72
        488.397 FSPSX
        765.300 FXAIX
        4,536.0 STRIP
        598.381 VTIAX
        793.319 VTSAX    Investments
+          $ 1,058.72
        488.397 FSPSX
        647.255 FXAIX      401K
        118.045 FXAIX      HSA
@@ -9985,9 +9998,9 @@
        793.319 VTSAX      IRA
        4,536.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-        $ -66,741.23  Liabilities:RE:Cottage:Mortgage
+        $ -64,264.97  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ -65,072.52
+        $ -59,821.25
            1.0 COTTA
        488.397 FSPSX
        765.300 FXAIX
@@ -10003,20 +10016,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 883,910.20  Assets
-          $ 1,668.71    Checking
-             $ 58.71      Capital One
-            $ 600.00      Northwoods
-          $ 1,010.00      Park City
-        $ 432,241.49    Investments
-        $ 154,637.65      401K
-         $ 23,511.02      HSA
-        $ 129,307.45      IRA
+        $ 886,866.42  Assets
+          $ 3,385.00    Checking
+            $ 225.00      Chase
+          $ 1,200.00      Northwoods
+          $ 1,960.00      Park City
+        $ 433,481.42    Investments
+        $ 155,800.05      401K
+         $ 23,526.37      HSA
+        $ 129,369.65      IRA
         $ 124,785.36      RSU
         $ 450,000.00    RE:Cottage
-        $ -66,741.23  Liabilities:RE:Cottage:Mortgage
+        $ -64,264.97  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 817,168.97
+        $ 822,601.45
 #+end_example
 ** Spending
 *** Savings Rate
@@ -10062,13 +10075,13 @@
 #+end_src
 #+results:
 : .
-:                      $320,560.06 - $186,655.21
-: Gross Savings Rate: --------------------------- = 41.77%
-:                              $320,560.06
+:                      $327,618.13 - $188,462.01
+: Gross Savings Rate: --------------------------- = 42.48%
+:                              $327,618.13
 :
-:                      $208,023.52 - $74,118.67
-:   Net Savings Rate: -------------------------- = 64.37%
-:                              $208,023.52
+:                      $213,274.79 - $74,118.67
+:   Net Savings Rate: -------------------------- = 65.25%
+:                              $213,274.79
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
@@ -10076,7 +10089,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 13,142.06  Expenses
+         $ 14,948.86  Expenses
             $ 732.97    Food
             $ 153.84      Drinks
             $ 196.13      Fast Food
@@ -10100,10 +10113,11 @@
             $ 474.03      Interest
             $ 300.00      Repairs
             $ 263.99      Utilities
-          $ 7,829.99    Taxes
-          $ 7,309.34      Federal
+          $ 9,636.79    Taxes
+          $ 8,600.89      Federal
             $ 353.04      Illinois
-            $ 167.61      Medicare
+            $ 333.49      Medicare
+            $ 349.37      State
             $ 399.98    Transportation
             $ 192.74      Biking
              $ 80.32      Driving
@@ -10111,7 +10125,7 @@
             $ 114.57      Insurance
              $ 12.35      Parking
 --------------------
-         $ 13,142.06
+         $ 14,948.86
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
