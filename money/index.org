@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 09/27/2024 00:00:00 VTSAX $137.2400
-  P 09/27/2024 00:00:00 VTIAX $34.2500
-  P 09/27/2024 00:00:00 FSPSX $52.7100
-  P 09/27/2024 00:00:00 FXAIX $199.3000
-  P 09/27/2024 00:00:00 CONDO $250,000.00
-  P 09/27/2024 00:00:00 COTTA $450,000.00
-  P 09/27/2024 00:00:00 STRIP $27.51
+  P 10/01/2024 00:00:00 VTSAX $137.3200
+  P 10/01/2024 00:00:00 VTIAX $34.9000
+  P 10/01/2024 00:00:00 FSPSX $53.5600
+  P 10/01/2024 00:00:00 FXAIX $199.8700
+  P 10/01/2024 00:00:00 CONDO $250,000.00
+  P 10/01/2024 00:00:00 COTTA $450,000.00
+  P 10/01/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -9876,11 +9876,20 @@
       Assets:Checking:Park City               $ 950.00
       Assets:Checking:Chase                   $ 225.00
       Liabilities:RE:Cottage:Mortgage       $ 2,417.55
-      Assets:Investments:401K               $ 1,058.72
+      Assets:Investments:401K                    4.502 FXAIX @ $ 199.8911594847
+      Assets:Investments:401K                    2.965 FSPSX @ $ 53.5615514334
       Expenses:Taxes:Medicare                 $ 165.88
       Expenses:Taxes:Federal                $ 1,291.55
       Expenses:Taxes:State                    $ 349.37
       Income:Stripe:Paycheck               $ -7,058.07
+
+  2024-09-28 * Transfer
+      Assets:Checking:Capital One              $ 40.00
+      Assets:Checking:Chase
+
+  2024-09-29 * Lyft
+      Expenses:Transportation:Biking           $ 29.91
+      Assets:Checking:Capital One
 
   2024-10-01 ! Spectrum
       Expenses:RE:Cottage:Utilities            $ 74.99
@@ -9924,24 +9933,40 @@
       Liabilities:RE:Cottage:Mortgage         $ 304.73
       Expenses:RE:Cottage:Interest            $ 471.37
       Assets:Checking:Northwoods             $ -776.10
+
+  2024-09-29 * Armitage Ale House
+      Expenses:Food:Restaurants               $ 120.00
+      Assets:Checking:Chase
+
+  2024-09-29 * Jewel
+      Expenses:Food:Groceries                  $ 47.32
+      Assets:Checking:Chase
+
+  2024-09-29 * 7/11
+      Expenses:Food:Snacks                      $ 5.81
+      Assets:Checking:Chase
+
+  2024-09-29 * Taco Bell
+      Expenses:Food:Fast Food                   $ 7.82
+      Assets:Checking:Chase
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 188,462.01  Expenses
-          $ 6,359.36    Food
+        $ 188,672.87  Expenses
+          $ 6,540.31    Food
             $ 600.85    Gifts
          $ 10,775.91    Housing
           $ 7,936.33    Personal
          $ 42,267.74    RE
         $ 114,343.34    Taxes
-          $ 4,916.58    Transportation
+          $ 4,946.49    Transportation
           $ 1,261.90    Travel
        $ -327,618.13  Income
         $ -15,739.91    RE
            $ -139.50    SWAQ
        $ -311,738.72    Stripe
 --------------------
-       $ -139,156.12
+       $ -138,945.26
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -9973,26 +9998,25 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,443.72
+          $ 3,174.14
            1.0 COTTA
-       488.397 FSPSX
-       765.300 FXAIX
+       491.362 FSPSX
+       769.802 FXAIX
        4,536.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-          $ 3,385.00    Checking
-            $ 225.00      Chase
+          $ 3,174.14    Checking
+             $ 10.09      Capital One
+              $ 4.05      Chase
           $ 1,200.00      Northwoods
           $ 1,960.00      Park City
-          $ 1,058.72
-       488.397 FSPSX
-       765.300 FXAIX
+       491.362 FSPSX
+       769.802 FXAIX
        4,536.0 STRIP
        598.381 VTIAX
        793.319 VTSAX    Investments
-          $ 1,058.72
-       488.397 FSPSX
-       647.255 FXAIX      401K
+       491.362 FSPSX
+       651.757 FXAIX      401K
        118.045 FXAIX      HSA
        598.381 VTIAX
        793.319 VTSAX      IRA
@@ -10000,10 +10024,10 @@
            1.0 COTTA    RE:Cottage
         $ -64,264.97  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ -59,821.25
+        $ -61,090.83
            1.0 COTTA
-       488.397 FSPSX
-       765.300 FXAIX
+       491.362 FSPSX
+       769.802 FXAIX
        4,536.0 STRIP
        598.381 VTIAX
        793.319 VTSAX
@@ -10016,20 +10040,21 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 886,866.42  Assets
-          $ 3,385.00    Checking
-            $ 225.00      Chase
+        $ 887,959.24  Assets
+          $ 3,174.14    Checking
+             $ 10.09      Capital One
+              $ 4.05      Chase
           $ 1,200.00      Northwoods
           $ 1,960.00      Park City
-        $ 433,481.42    Investments
-        $ 155,800.05      401K
-         $ 23,526.37      HSA
-        $ 129,369.65      IRA
+        $ 434,785.10    Investments
+        $ 156,584.02      401K
+         $ 23,593.65      HSA
+        $ 129,822.06      IRA
         $ 124,785.36      RSU
         $ 450,000.00    RE:Cottage
         $ -64,264.97  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 822,601.45
+        $ 823,694.27
 #+end_example
 ** Spending
 *** Savings Rate
@@ -10075,12 +10100,12 @@
 #+end_src
 #+results:
 : .
-:                      $327,618.13 - $188,462.01
-: Gross Savings Rate: --------------------------- = 42.48%
+:                      $327,618.13 - $188,672.87
+: Gross Savings Rate: --------------------------- = 42.41%
 :                              $327,618.13
 :
-:                      $213,274.79 - $74,118.67
-:   Net Savings Rate: -------------------------- = 65.25%
+:                      $213,274.79 - $74,329.53
+:   Net Savings Rate: -------------------------- = 65.15%
 :                              $213,274.79
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -10088,14 +10113,20 @@
   <<transactions>>
 #+end_src
 #+results:
+*** Last Month Spending
+#+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
+  <<opening_balance>>
+  <<transactions>>
+#+end_src
+#+results:
 #+begin_example
-         $ 14,948.86  Expenses
-            $ 732.97    Food
+         $ 15,159.72  Expenses
+            $ 913.92    Food
             $ 153.84      Drinks
-            $ 196.13      Fast Food
-            $ 100.09      Groceries
-             $ 40.00      Restaurants
-            $ 242.91      Snacks
+            $ 203.95      Fast Food
+            $ 147.41      Groceries
+            $ 160.00      Restaurants
+            $ 248.72      Snacks
             $ 106.85    Gifts
           $ 1,242.96    Housing
           $ 1,040.96      Rent
@@ -10118,55 +10149,14 @@
             $ 353.04      Illinois
             $ 333.49      Medicare
             $ 349.37      State
-            $ 399.98    Transportation
-            $ 192.74      Biking
+            $ 429.89    Transportation
+            $ 222.65      Biking
              $ 80.32      Driving
              $ 52.89        Gas
             $ 114.57      Insurance
              $ 12.35      Parking
 --------------------
-         $ 14,948.86
-#+end_example
-*** Last Month Spending
-#+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
-  <<opening_balance>>
-  <<transactions>>
-#+end_src
-#+results:
-#+begin_example
-         $ 24,208.48  Expenses
-            $ 486.15    Food
-             $ 35.73      Drinks
-            $ 182.06      Fast Food
-            $ 132.08      Groceries
-             $ 48.24      Restaurants
-             $ 88.04      Snacks
-          $ 1,188.00    Housing
-          $ 1,108.00      Rent
-             $ 80.00      Utilities
-            $ 480.57    Personal
-            $ 227.43      Boat
-             $ 30.00      Communication
-             $ 91.02      Electronics
-            $ 132.12      Household
-          $ 1,122.40    RE:Cottage
-            $ 200.00      Cleaning
-             $ 79.83      Insurance
-            $ 474.90      Interest
-             $ 50.00      Lawncare
-             $ 63.68      Repairs
-            $ 253.99      Utilities
-         $ 20,931.71    Taxes
-         $ 15,536.82      Federal
-          $ 2,959.42      Illinois
-          $ 1,736.73      Medicare
-            $ 698.74      State
-             $ -0.35    Transportation
-           $ -166.16      Biking
-             $ 51.24      Driving:Gas
-            $ 114.57      Insurance
---------------------
-         $ 24,208.48
+         $ 15,159.72
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not ^Expenses:Taxes --cleared -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -10192,5 +10182,5 @@ May 2024             $ 7,668.70
 June 2024            $ -2,268.37
 July 2024            $ 9,835.54
 August 2024          $ 3,276.77
-September 2024       $ 5,312.07
+September 2024       $ 5,522.93
 #+end_example
