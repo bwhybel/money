@@ -10040,6 +10040,10 @@
       Expenses:RE:Cottage:Utilities           $ 176.53
       Assets:Checking:Chase
 
+  2024-10-02 * Sure Dry
+      Expenses:RE:Cottage:Repairs               $ 9.99
+      Assets:Checking:Chase
+
   2024-10-02 * Transfer
       Assets:Checking:Capital One              $ 47.59
       Assets:Checking:Chase
@@ -10059,6 +10063,10 @@
   2024-10-02 * Income
       Assets:Checking:Covantage                 $ 0.04
       Income:Extra
+
+  2024-10-02 * 7/11
+      Expenses:Food:Snacks                      $ 8.86
+      Assets:Checking:Capital One
 
   2024-11-01 ! Spectrum
       Expenses:RE:Cottage:Utilities            $ 74.99
@@ -10088,12 +10096,12 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 191,393.32  Expenses
-          $ 6,594.57    Food
+        $ 191,412.17  Expenses
+          $ 6,603.43    Food
             $ 600.85    Gifts
          $ 12,466.44    Housing
           $ 7,986.33    Personal
-         $ 43,037.11    RE
+         $ 43,047.10    RE
         $ 114,343.34    Taxes
           $ 5,102.78    Transportation
           $ 1,261.90    Travel
@@ -10102,7 +10110,7 @@
            $ -139.50    SWAQ
        $ -311,738.72    Stripe
 --------------------
-       $ -136,224.81
+       $ -136,205.96
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -10134,16 +10142,15 @@
 #+end_src
 #+results:
 #+begin_example
-             $ 43.44
+             $ 24.59
            1.0 COTTA
        491.362 FSPSX
        769.802 FXAIX
        4,536.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-             $ 43.44    Checking
-             $ 33.42      Capital One
-              $ 9.99      Chase
+             $ 24.59    Checking
+             $ 24.56      Capital One
               $ 0.03      Covantage
        491.362 FSPSX
        769.802 FXAIX
@@ -10159,7 +10166,7 @@
            1.0 COTTA    RE:Cottage
         $ -63,542.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ -63,499.47
+        $ -63,518.32
            1.0 COTTA
        491.362 FSPSX
        769.802 FXAIX
@@ -10175,10 +10182,9 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 885,786.49  Assets
-             $ 43.44    Checking
-             $ 33.42      Capital One
-              $ 9.99      Chase
+        $ 885,767.64  Assets
+             $ 24.59    Checking
+             $ 24.56      Capital One
               $ 0.03      Covantage
         $ 435,743.05    Investments
         $ 157,065.91      401K
@@ -10188,7 +10194,7 @@
         $ 450,000.00    RE:Cottage
         $ -63,542.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 822,243.58
+        $ 822,224.73
 #+end_example
 ** Spending
 *** Savings Rate
@@ -10234,12 +10240,12 @@
 #+end_src
 #+results:
 : .
-:                      $327,618.13 - $191,393.32
-: Gross Savings Rate: --------------------------- = 41.58%
+:                      $327,618.13 - $191,412.17
+: Gross Savings Rate: --------------------------- = 41.57%
 :                              $327,618.13
 :
-:                      $213,274.79 - $77,049.98
-:   Net Savings Rate: -------------------------- = 63.87%
+:                      $213,274.79 - $77,068.83
+:   Net Savings Rate: -------------------------- = 63.86%
 :                              $213,274.79
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -10248,24 +10254,24 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 2,688.95  Expenses
-             $ 42.76    Food
+          $ 2,707.80  Expenses
+             $ 51.62    Food
              $ 17.84      Fast Food
-             $ 24.92      Snacks
+             $ 33.78      Snacks
           $ 1,690.53    Housing
           $ 1,533.00      Rent
             $ 157.53      Utilities
              $ 30.00    Personal:Communication
-            $ 769.37    RE:Cottage
+            $ 779.36    RE:Cottage
              $ 79.83      Insurance
             $ 325.03      Interest
-              $ 9.99      Repairs
+             $ 19.98      Repairs
             $ 354.52      Utilities
             $ 156.29    Transportation
             $ 114.57      Insurance
              $ 41.72      Parking
 --------------------
-          $ 2,688.95
+          $ 2,707.80
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -10337,5 +10343,5 @@ June 2024            $ -2,268.37
 July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,554.43
-October 2024         $ 2,688.95
+October 2024         $ 2,707.80
 #+end_example
