@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 10/06/2024 00:00:00 VTSAX $136.3100
-  P 10/06/2024 00:00:00 VTIAX $34.4800
-  P 10/06/2024 00:00:00 FSPSX $52.4200
-  P 10/06/2024 00:00:00 FXAIX $197.9338
-  P 10/06/2024 00:00:00 CONDO $250,000.00
-  P 10/06/2024 00:00:00 COTTA $450,000.00
-  P 10/06/2024 00:00:00 STRIP $27.51
+  P 10/07/2024 00:00:00 VTSAX $136.3100
+  P 10/07/2024 00:00:00 VTIAX $34.4800
+  P 10/07/2024 00:00:00 FSPSX $52.6400
+  P 10/07/2024 00:00:00 FXAIX $197.9338
+  P 10/07/2024 00:00:00 CONDO $250,000.00
+  P 10/07/2024 00:00:00 COTTA $450,000.00
+  P 10/07/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -9964,8 +9964,9 @@
       Assets:Checking:Northwoods             $ -776.10
 
   2024-10-01 * Stripe
-      Liabilities:RE:Cottage:Mortgage      $ 47,029.59
+      Liabilities:RE:Cottage:Mortgage      $ 47,029.63
       Assets:Checking:RipCo                    $ 95.04
+      Assets:Checking:Covantage                $ -0.04
       Assets:Investments:RSU                    -1,713 STRIP @ $ 27.51
 
   2024-10-01 * 7/11
@@ -10141,14 +10142,34 @@
   2024-10-06 * iPhone
       Expenses:Personal:Electronics            $ 45.04
       Assets:Checking:RipCo
+
+  2024-10-06 * Dollar Tree
+      Expenses:Personal:Household               $ 8.27
+      Assets:Checking:Capital One
+
+  2024-10-06 * Burger King
+      Expenses:Food:Fast Food                   $ 1.33
+      Assets:Checking:Capital One
+
+  2024-10-06 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.54
+      Assets:Checking:Capital One
+
+  2024-10-06 * 7/11
+      Expenses:Food:Snacks                      $ 2.55
+      Assets:Checking:Capital One
+
+  2024-10-07 * Panera Bread
+      Expenses:Food:Fast Food                   $ 3.69
+      Assets:Checking:Capital One
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 191,506.15  Expenses
-          $ 6,618.17    Food
+        $ 191,527.53  Expenses
+          $ 6,631.28    Food
             $ 600.85    Gifts
          $ 12,434.01    Housing
-          $ 8,043.25    Personal
+          $ 8,051.52    Personal
          $ 43,047.10    RE
         $ 114,343.34    Taxes
           $ 5,157.53    Transportation
@@ -10158,7 +10179,7 @@
            $ -139.50    SWAQ
        $ -311,738.72    Stripe
 --------------------
-       $ -136,111.98
+       $ -136,090.60
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -10190,16 +10211,14 @@
 #+end_src
 #+results:
 #+begin_example
-             $ 25.66
+              $ 4.24
            1.0 COTTA
        491.362 FSPSX
        769.802 FXAIX
        4,536.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-             $ 25.66    Checking
-             $ 25.62      Capital One
-              $ 0.04      Covantage
+              $ 4.24    Checking:Capital One
        491.362 FSPSX
        769.802 FXAIX
        4,536.0 STRIP
@@ -10212,9 +10231,9 @@
        793.319 VTSAX      IRA
        4,536.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-        $ -63,637.95  Liabilities:RE:Cottage:Mortgage
+        $ -63,637.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ -63,612.29
+        $ -63,633.67
            1.0 COTTA
        491.362 FSPSX
        769.802 FXAIX
@@ -10230,19 +10249,17 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 881,707.54  Assets
-             $ 25.66    Checking
-             $ 25.62      Capital One
-              $ 0.04      Covantage
-        $ 431,681.88    Investments
-        $ 154,761.94      401K
+        $ 881,794.22  Assets
+              $ 4.24    Checking:Capital One
+        $ 431,789.98    Investments
+        $ 154,870.04      401K
          $ 23,365.10      HSA
         $ 128,769.49      IRA
         $ 124,785.36      RSU
         $ 450,000.00    RE:Cottage
-        $ -63,637.95  Liabilities:RE:Cottage:Mortgage
+        $ -63,637.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 818,069.59
+        $ 818,156.31
 #+end_example
 ** Spending
 *** Savings Rate
@@ -10288,12 +10305,12 @@
 #+end_src
 #+results:
 : .
-:                      $327,618.13 - $191,506.15
-: Gross Savings Rate: --------------------------- = 41.55%
+:                      $327,618.13 - $191,527.53
+: Gross Savings Rate: --------------------------- = 41.54%
 :                              $327,618.13
 :
-:                      $213,274.79 - $77,162.81
-:   Net Savings Rate: -------------------------- = 63.82%
+:                      $213,274.79 - $77,184.19
+:   Net Savings Rate: -------------------------- = 63.81%
 :                              $213,274.79
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -10302,19 +10319,19 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 2,881.78  Expenses
-            $ 146.36    Food
+          $ 2,903.16  Expenses
+            $ 159.47    Food
              $ 15.42      Fast Foo
-             $ 54.76      Fast Food
+             $ 65.32      Fast Food
              $ 14.28      Groceries
-             $ 61.90      Snacks
+             $ 64.45      Snacks
           $ 1,658.10    Housing
           $ 1,533.00      Rent
             $ 125.10      Utilities
-             $ 86.92    Personal
+             $ 95.19    Personal
              $ 30.00      Communication
              $ 45.04      Electronics
-             $ 11.88      Household
+             $ 20.15      Household
             $ 779.36    RE:Cottage
              $ 79.83      Insurance
             $ 325.03      Interest
@@ -10325,7 +10342,7 @@
             $ 114.57      Insurance
              $ 41.72      Parking
 --------------------
-          $ 2,881.78
+          $ 2,903.16
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -10397,5 +10414,5 @@ June 2024            $ -2,268.37
 July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,474.43
-October 2024         $ 2,881.78
+October 2024         $ 2,903.16
 #+end_example
