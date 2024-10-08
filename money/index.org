@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 10/07/2024 00:00:00 VTSAX $136.3100
-  P 10/07/2024 00:00:00 VTIAX $34.4800
-  P 10/07/2024 00:00:00 FSPSX $52.6400
-  P 10/07/2024 00:00:00 FXAIX $197.9338
-  P 10/07/2024 00:00:00 CONDO $250,000.00
-  P 10/07/2024 00:00:00 COTTA $450,000.00
-  P 10/07/2024 00:00:00 STRIP $27.51
+  P 10/08/2024 00:00:00 VTSAX $137.6500
+  P 10/08/2024 00:00:00 VTIAX $34.7200
+  P 10/08/2024 00:00:00 FSPSX $52.6400
+  P 10/08/2024 00:00:00 FXAIX $199.7500
+  P 10/08/2024 00:00:00 CONDO $250,000.00
+  P 10/08/2024 00:00:00 COTTA $450,000.00
+  P 10/08/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -10162,11 +10162,15 @@
   2024-10-07 * Panera Bread
       Expenses:Food:Fast Food                   $ 3.69
       Assets:Checking:Capital One
+
+  2024-10-07 * 7/11
+      Expenses:Food:Snacks                      $ 4.24
+      Assets:Checking:Capital One
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 191,527.53  Expenses
-          $ 6,631.28    Food
+        $ 191,531.77  Expenses
+          $ 6,635.52    Food
             $ 600.85    Gifts
          $ 12,434.01    Housing
           $ 8,051.52    Personal
@@ -10179,7 +10183,7 @@
            $ -139.50    SWAQ
        $ -311,738.72    Stripe
 --------------------
-       $ -136,090.60
+       $ -136,086.36
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -10211,14 +10215,12 @@
 #+end_src
 #+results:
 #+begin_example
-              $ 4.24
            1.0 COTTA
        491.362 FSPSX
        769.802 FXAIX
        4,536.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-              $ 4.24    Checking:Capital One
        491.362 FSPSX
        769.802 FXAIX
        4,536.0 STRIP
@@ -10233,7 +10235,7 @@
            1.0 COTTA    RE:Cottage
         $ -63,637.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ -63,633.67
+        $ -63,637.91
            1.0 COTTA
        491.362 FSPSX
        769.802 FXAIX
@@ -10249,17 +10251,16 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 881,794.22  Assets
-              $ 4.24    Checking:Capital One
-        $ 431,789.98    Investments
-        $ 154,870.04      401K
-         $ 23,365.10      HSA
-        $ 128,769.49      IRA
+        $ 884,394.75  Assets
+        $ 434,394.75    Investments
+        $ 156,053.76      401K
+         $ 23,579.49      HSA
+        $ 129,976.15      IRA
         $ 124,785.36      RSU
         $ 450,000.00    RE:Cottage
         $ -63,637.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 818,156.31
+        $ 820,756.84
 #+end_example
 ** Spending
 *** Savings Rate
@@ -10305,11 +10306,11 @@
 #+end_src
 #+results:
 : .
-:                      $327,618.13 - $191,527.53
+:                      $327,618.13 - $191,531.77
 : Gross Savings Rate: --------------------------- = 41.54%
 :                              $327,618.13
 :
-:                      $213,274.79 - $77,184.19
+:                      $213,274.79 - $77,188.43
 :   Net Savings Rate: -------------------------- = 63.81%
 :                              $213,274.79
 *** This Month Spending
@@ -10319,12 +10320,12 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 2,903.16  Expenses
-            $ 159.47    Food
+          $ 2,907.40  Expenses
+            $ 163.71    Food
              $ 15.42      Fast Foo
              $ 65.32      Fast Food
              $ 14.28      Groceries
-             $ 64.45      Snacks
+             $ 68.69      Snacks
           $ 1,658.10    Housing
           $ 1,533.00      Rent
             $ 125.10      Utilities
@@ -10342,7 +10343,7 @@
             $ 114.57      Insurance
              $ 41.72      Parking
 --------------------
-          $ 2,903.16
+          $ 2,907.40
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -10414,5 +10415,5 @@ June 2024            $ -2,268.37
 July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,474.43
-October 2024         $ 2,903.16
+October 2024         $ 2,907.40
 #+end_example
