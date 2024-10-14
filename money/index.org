@@ -10177,7 +10177,8 @@
       Expenses:Taxes:Illinois                 $ 353.04
       Assets:Investments:HSA                  $ 345.00
       Income:Stripe:HSA                      $ -100.00
-      Assets:Investments:401K               $ 1,058.72
+      Assets:Investments:401K                    4.455 FXAIX @ $ 202.00
+      Assets:Investments:401K                    3.025 FSPSX @ $ 52.4991735537
       Assets:Checking:Chase                   $ 449.39
       Liabilities:RE:Cottage:Mortgage       $ 2,000.00
       Assets:Checking:Park City               $ 950.00
@@ -10187,24 +10188,45 @@
   2024-10-11 * Orange Theory
       Expenses:Personal:Fitness               $ 208.63
       Assets:Checking:Capital One
+
+  2024-10-13 * Chick-fil-a
+      Expenses:Food:Fast Food                  $ 14.15
+      Assets:Checking:Capital One
+
+  2024-10-13 * Transfer
+      Assets:Checking:Capital One             $ 406.22
+      Assets:Checking:Chase
+
+  2024-10-14 * Family Dollar
+      Expenses:Food:Snacks                     $ 13.38
+      Assets:Checking:Capital One
+
+  2024-10-14 * Schaefer's IGA
+      Expenses:Food:Snacks                      $ 9.90
+      Assets:Checking:Capital One
+
+  2024-10-14 * Kwik Trip
+      Expenses:Transportation:Driving:Gas      $ 32.05
+      Expenses:Food:Snacks                     $ 11.12
+      Assets:Checking:Chase
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 193,320.37  Expenses
-          $ 6,635.52    Food
+        $ 193,400.97  Expenses
+          $ 6,684.07    Food
             $ 600.85    Gifts
          $ 12,434.01    Housing
           $ 8,260.15    Personal
          $ 43,047.10    RE
         $ 116,173.31    Taxes
-          $ 4,907.53    Transportation
+          $ 4,939.58    Transportation
           $ 1,261.90    Travel
        $ -334,826.21  Income
         $ -15,739.91    RE
            $ -139.50    SWAQ
        $ -318,946.80    Stripe
 --------------------
-       $ -141,505.84
+       $ -141,425.24
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -10236,27 +10258,25 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 3,419.48
+          $ 2,280.16
            1.0 COTTA
-       491.362 FSPSX
-       769.802 FXAIX
+       494.387 FSPSX
+       774.257 FXAIX
        4,536.0 STRIP
        598.381 VTIAX
        793.319 VTSAX  Assets
-          $ 2,015.76    Checking
-             $ 16.37      Capital One
-            $ 449.39      Chase
+          $ 1,935.16    Checking
+            $ 385.16      Capital One
             $ 600.00      Northwoods
             $ 950.00      Park City
-          $ 1,403.72
-       491.362 FSPSX
-       769.802 FXAIX
+            $ 345.00
+       494.387 FSPSX
+       774.257 FXAIX
        4,536.0 STRIP
        598.381 VTIAX
        793.319 VTSAX    Investments
-          $ 1,058.72
-       491.362 FSPSX
-       651.757 FXAIX      401K
+       494.387 FSPSX
+       656.212 FXAIX      401K
             $ 345.00
        118.045 FXAIX      HSA
        598.381 VTIAX
@@ -10265,10 +10285,10 @@
            1.0 COTTA    RE:Cottage
         $ -61,637.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ -58,218.43
+        $ -59,357.75
            1.0 COTTA
-       491.362 FSPSX
-       769.802 FXAIX
+       494.387 FSPSX
+       774.257 FXAIX
        4,536.0 STRIP
        598.381 VTIAX
        793.319 VTSAX
@@ -10281,21 +10301,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 889,182.71  Assets
-          $ 2,015.76    Checking
-             $ 16.37      Capital One
-            $ 449.39      Chase
+        $ 889,811.56  Assets
+          $ 1,935.16    Checking
+            $ 385.16      Capital One
             $ 600.00      Northwoods
             $ 950.00      Park City
-        $ 437,166.95    Investments
-        $ 157,897.08      401K
-         $ 24,093.29      HSA
+        $ 437,876.40    Investments
+        $ 158,509.73      401K
+         $ 24,190.09      HSA
         $ 130,391.22      IRA
         $ 124,785.36      RSU
         $ 450,000.00    RE:Cottage
         $ -61,637.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 827,544.80
+        $ 828,173.65
 #+end_example
 ** Spending
 *** Savings Rate
@@ -10341,13 +10360,13 @@
 #+end_src
 #+results:
 : .
-:                      $334,826.21 - $193,320.37
-: Gross Savings Rate: --------------------------- = 42.26%
-:                              $334,826.21
+: 	                     $334,826.21 - $193,400.97
+: 	Gross Savings Rate: --------------------------- = 42.24%
+: 	                             $334,826.21
 :
-:                      $218,652.90 - $77,147.06
-:   Net Savings Rate: -------------------------- = 64.72%
-:                              $218,652.90
+: 	                     $218,652.90 - $77,227.66
+: 	  Net Savings Rate: -------------------------- = 64.68%
+: 	                             $218,652.90
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
@@ -10355,12 +10374,12 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,696.00  Expenses
-            $ 163.71    Food
+          $ 4,776.60  Expenses
+            $ 212.26    Food
              $ 15.42      Fast Foo
-             $ 65.32      Fast Food
+             $ 79.47      Fast Food
              $ 14.28      Groceries
-             $ 68.69      Snacks
+            $ 103.09      Snacks
           $ 1,658.10    Housing
           $ 1,533.00      Rent
             $ 125.10      Utilities
@@ -10378,12 +10397,13 @@
           $ 1,309.34      Federal
             $ 353.04      Illinois
             $ 167.59      Medicare
-            $ -38.96    Transportation
+             $ -6.91    Transportation
            $ -195.25      Biking
+             $ 32.05      Driving:Gas
             $ 114.57      Insurance
              $ 41.72      Parking
 --------------------
-          $ 4,696.00
+          $ 4,776.60
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -10455,5 +10475,5 @@ June 2024            $ -2,268.37
 July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,474.43
-October 2024         $ 2,866.03
+October 2024         $ 2,946.63
 #+end_example
