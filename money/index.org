@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 10/11/2024 00:00:00 VTSAX $138.4900
-  P 10/11/2024 00:00:00 VTIAX $34.3000
-  P 10/11/2024 00:00:00 FSPSX $52.3400
-  P 10/11/2024 00:00:00 FXAIX $201.1800
-  P 10/11/2024 00:00:00 CONDO $250,000.00
-  P 10/11/2024 00:00:00 COTTA $450,000.00
-  P 10/11/2024 00:00:00 STRIP $27.51
+  P 10/15/2024 00:00:00 VTSAX $139.2700
+  P 10/15/2024 00:00:00 VTIAX $34.4400
+  P 10/15/2024 00:00:00 FSPSX $52.5000
+  P 10/15/2024 00:00:00 FXAIX $202.0200
+  P 10/15/2024 00:00:00 CONDO $250,000.00
+  P 10/15/2024 00:00:00 COTTA $450,000.00
+  P 10/15/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -8204,6 +8204,11 @@
       Expenses:Food:Snacks                     $ 10.95
       Assets:Checking:Covantage
 
+  2024-06-20 * Dividend
+      Assets:Investments:IRA                     4.758 VTIAX
+      Assets:Investments:IRA                     2.802 VTSAX
+      Income:Extra
+
   2024-06-21 * Transfer
       Assets:Checking:Northwoods              $ 282.57
       Liabilities:Credit Card:RipCo           $ 109.81
@@ -9757,6 +9762,11 @@
       Expenses:Food:Groceries                  $ 18.35
       Assets:Checking:Chase
 
+  2024-09-20 * Dividend
+      Assets:Investments:IRA                     2.547 VTIAX
+      Assets:Investments:IRA                     2.438 VTSAX
+      Income:Extra
+
   2024-09-21 * CVS
       Expenses:Gifts                           $ 41.88
       Assets:Checking:Capital One
@@ -10037,6 +10047,10 @@
       Expenses:RE:Cottage:Utilities           $ 176.53
       Assets:Checking:Chase
 
+  2024-10-01 * Income
+      Assets:Checking:RipCo                     $ 0.21
+      Income:Extra
+
   2024-10-02 * Sure Dry
       Expenses:RE:Cottage:Repairs               $ 9.99
       Assets:Checking:Chase
@@ -10115,6 +10129,11 @@
       Assets:Checking:Capital One              $ 32.43
       Expenses:Housing:Utilities
 
+  2024-10-04 * Dividends
+      Assets:Investments:401K                    2.095 FXAIX
+      Assets:Investments:HSA                     0.379 FXAIX
+      Income:Extra
+
   2024-10-05 * Chipotle
       Expenses:Food:Fast Foo                   $ 15.42
       Assets:Checking:Capital One
@@ -10175,7 +10194,7 @@
       Expenses:Taxes:Medicare                 $ 167.59
       Expenses:Taxes:Federal                $ 1,309.34
       Expenses:Taxes:Illinois                 $ 353.04
-      Assets:Investments:HSA                  $ 345.00
+      Assets:Investments:HSA                     1.695 FXAIX @ $ 203.5398230088
       Income:Stripe:HSA                      $ -100.00
       Assets:Investments:401K                    4.455 FXAIX @ $ 202.00
       Assets:Investments:401K                    3.025 FSPSX @ $ 52.4991735537
@@ -10189,6 +10208,14 @@
       Expenses:Personal:Fitness               $ 208.63
       Assets:Checking:Capital One
 
+  2024-10-12 * Subway
+      Expenses:Food:Fast Food                   $ 0.84
+      Liabilities:Credit Card:RipCo
+
+  2024-10-12 * Chicago Park District
+      Expenses:Personal:Health                 $ 37.29
+      Liabilities:Credit Card:RipCo
+
   2024-10-13 * Chick-fil-a
       Expenses:Food:Fast Food                  $ 14.15
       Assets:Checking:Capital One
@@ -10196,6 +10223,26 @@
   2024-10-13 * Transfer
       Assets:Checking:Capital One             $ 406.22
       Assets:Checking:Chase
+
+  2024-10-13 * BP
+      Expenses:Food:Snacks                      $ 5.12
+      Liabilities:Credit Card:RipCo
+
+  2024-10-13 * Culver's
+      Expenses:Food:Fast Food                  $ 11.54
+      Liabilities:Credit Card:RipCo
+
+  2024-10-13 * Wal-mart
+      Expenses:Food:Groceries                  $ 27.60
+      Liabilities:Credit Card:RipCo
+
+  2024-10-13 * Family Dollar
+      Expenses:Food:Snacks                     $ 16.38
+      Liabilities:Credit Card:RipCo
+
+  2024-10-13 * Forest County Potawatami
+      Expenses:Personal:Health                  $ 7.00
+      Liabilities:Credit Card:RipCo
 
   2024-10-14 * Family Dollar
       Expenses:Food:Snacks                     $ 13.38
@@ -10209,24 +10256,93 @@
       Expenses:Transportation:Driving:Gas      $ 32.05
       Expenses:Food:Snacks                     $ 11.12
       Assets:Checking:Chase
+
+  2024-10-14 * Shell
+      Expenses:Transportation:Driving:Gas      $ 33.55
+      Assets:Checking:Capital One
+
+  2024-10-14 * Kwik Trip
+      Expenses:Transportation:Driving:Gas      $ 30.12
+      Expenses:Food:Drinks                     $ 25.79
+      Assets:Checking:Capital One
+
+  2024-10-14 * Kwik Trip
+      Expenses:Food:Snacks                      $ 9.09
+      Assets:Checking:Capital One
+
+  2024-10-14 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.28
+      Assets:Checking:Capital One
+
+  2024-10-14 * Shell
+      Expenses:Food:Snacks                     $ 15.68
+      Assets:Checking:Capital One
+
+  2024-10-14 * Hot Chocolate Run
+      Expenses:Personal:Health                 $ 92.28
+      Liabilities:Credit Card:Northwoods
+
+  2024-10-15 * Panera Bread
+      Expenses:Food:Fast Food                   $ 3.69
+      Assets:Checking:Capital One
+
+  2024-10-15 * Azure
+      Expenses:Personal:Electronics            $ 13.97
+      Liabilities:Credit Card:Covantage
+
+  2024-10-15 * i-Pass
+      Expenses:Transportation:Driving:Tolls    $ 20.00
+      Liabilities:Credit Card:Northwoods
+
+  2024-10-15 * Family Dollar
+      Expenses:Food:Snacks                      $ 8.15
+      Liabilities:Credit Card:Northwoods
+
+  2024-10-15 * BP
+      Expenses:Transportation:Driving:Gas      $ 13.34
+      Expenses:Food:Snacks                      $ 9.08
+      Liabilities:Credit Card:Northwoods
+
+  2024-10-15 * Schaefer's
+      Expenses:Food:Snacks                     $ 15.30
+      Expenses:Food:Snacks                      $ 2.19
+      Liabilities:Credit Card:Northwoods
+
+  2024-10-16 * Transfer
+      Assets:Checking:RipCo                    $ 42.92
+      Assets:Checking:RipCo                   $ 105.56
+      Assets:Checking:Covantage                $ 13.97
+      Assets:Checking:Capital One
+
+  2024-10-16 * Amazon
+      Expenses:Personal:Household              $ 42.92
+      Liabilities:Credit Card:RipCo
+
+  2024-10-16 * PayOff
+      Liabilities:Credit Card:RipCo           $ 148.69
+      Assets:Checking:RipCo
+
+  2024-10-16 * PayOff
+      Liabilities:Credit Card:Covantage        $ 13.97
+      Assets:Checking:Covantage
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 193,400.97  Expenses
-          $ 6,684.07    Food
+        $ 193,847.17  Expenses
+          $ 6,839.80    Food
             $ 600.85    Gifts
          $ 12,434.01    Housing
-          $ 8,260.15    Personal
+          $ 8,453.61    Personal
          $ 43,047.10    RE
         $ 116,173.31    Taxes
-          $ 4,939.58    Transportation
+          $ 5,036.59    Transportation
           $ 1,261.90    Travel
        $ -334,826.21  Income
         $ -15,739.91    RE
            $ -139.50    SWAQ
        $ -318,946.80    Stripe
 --------------------
-       $ -141,425.24
+       $ -140,979.04
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -10258,40 +10374,40 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 2,280.16
+          $ 1,649.51
            1.0 COTTA
        494.387 FSPSX
-       774.257 FXAIX
+       778.426 FXAIX
        4,536.0 STRIP
-       598.381 VTIAX
-       793.319 VTSAX  Assets
-          $ 1,935.16    Checking
-            $ 385.16      Capital One
+       605.686 VTIAX
+       798.559 VTSAX  Assets
+          $ 1,649.51    Checking
+             $ 99.51      Capital One
             $ 600.00      Northwoods
             $ 950.00      Park City
-            $ 345.00
        494.387 FSPSX
-       774.257 FXAIX
+       778.426 FXAIX
        4,536.0 STRIP
-       598.381 VTIAX
-       793.319 VTSAX    Investments
+       605.686 VTIAX
+       798.559 VTSAX    Investments
        494.387 FSPSX
-       656.212 FXAIX      401K
-            $ 345.00
-       118.045 FXAIX      HSA
-       598.381 VTIAX
-       793.319 VTSAX      IRA
+       658.307 FXAIX      401K
+       120.119 FXAIX      HSA
+       605.686 VTIAX
+       798.559 VTSAX      IRA
        4,536.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-        $ -61,637.91  Liabilities:RE:Cottage:Mortgage
+        $ -61,798.25  Liabilities
+           $ -160.34    Credit Card:Northwoods
+        $ -61,637.91    RE:Cottage:Mortgage
 --------------------
-        $ -59,357.75
+        $ -60,148.74
            1.0 COTTA
        494.387 FSPSX
-       774.257 FXAIX
+       778.426 FXAIX
        4,536.0 STRIP
-       598.381 VTIAX
-       793.319 VTSAX
+       605.686 VTIAX
+       798.559 VTSAX
 #+end_example
 *** Value
 #+begin_src ledger :noweb yes :cmdline bal ^Assets ^Liabilities --cleared --market :exports results
@@ -10301,20 +10417,22 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 889,811.56  Assets
-          $ 1,935.16    Checking
-            $ 385.16      Capital One
+        $ 891,722.95  Assets
+          $ 1,649.51    Checking
+             $ 99.51      Capital One
             $ 600.00      Northwoods
             $ 950.00      Park City
-        $ 437,876.40    Investments
-        $ 158,509.73      401K
-         $ 24,190.09      HSA
-        $ 130,391.22      IRA
+        $ 440,073.44    Investments
+        $ 158,946.50      401K
+         $ 24,266.44      HSA
+        $ 132,075.14      IRA
         $ 124,785.36      RSU
         $ 450,000.00    RE:Cottage
-        $ -61,637.91  Liabilities:RE:Cottage:Mortgage
+        $ -61,798.25  Liabilities
+           $ -160.34    Credit Card:Northwoods
+        $ -61,637.91    RE:Cottage:Mortgage
 --------------------
-        $ 828,173.65
+        $ 829,924.70
 #+end_example
 ** Spending
 *** Savings Rate
@@ -10360,13 +10478,13 @@
 #+end_src
 #+results:
 : .
-: 	                     $334,826.21 - $193,400.97
-: 	Gross Savings Rate: --------------------------- = 42.24%
-: 	                             $334,826.21
+:                      $334,826.21 - $193,847.17
+: Gross Savings Rate: --------------------------- = 42.11%
+:                              $334,826.21
 :
-: 	                     $218,652.90 - $77,227.66
-: 	  Net Savings Rate: -------------------------- = 64.68%
-: 	                             $218,652.90
+:                      $218,652.90 - $77,673.86
+:   Net Savings Rate: -------------------------- = 64.48%
+:                              $218,652.90
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
@@ -10374,20 +10492,22 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,776.60  Expenses
-            $ 212.26    Food
+          $ 5,222.80  Expenses
+            $ 367.99    Food
+             $ 25.79      Drinks
              $ 15.42      Fast Foo
-             $ 79.47      Fast Food
-             $ 14.28      Groceries
-            $ 103.09      Snacks
+            $ 100.82      Fast Food
+             $ 41.88      Groceries
+            $ 184.08      Snacks
           $ 1,658.10    Housing
           $ 1,533.00      Rent
             $ 125.10      Utilities
-            $ 303.82    Personal
+            $ 497.28    Personal
              $ 30.00      Communication
-             $ 45.04      Electronics
+             $ 59.01      Electronics
             $ 208.63      Fitness
-             $ 20.15      Household
+            $ 136.57      Health
+             $ 63.07      Household
             $ 779.36    RE:Cottage
              $ 79.83      Insurance
             $ 325.03      Interest
@@ -10397,13 +10517,15 @@
           $ 1,309.34      Federal
             $ 353.04      Illinois
             $ 167.59      Medicare
-             $ -6.91    Transportation
+             $ 90.10    Transportation
            $ -195.25      Biking
-             $ 32.05      Driving:Gas
+            $ 129.06      Driving
+            $ 109.06        Gas
+             $ 20.00        Tolls
             $ 114.57      Insurance
              $ 41.72      Parking
 --------------------
-          $ 4,776.60
+          $ 5,222.80
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -10475,5 +10597,5 @@ June 2024            $ -2,268.37
 July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,474.43
-October 2024         $ 2,946.63
+October 2024         $ 3,392.83
 #+end_example
