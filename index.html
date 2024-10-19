@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Brendan's Money</title>
-<meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,9 +29,8 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -39,22 +38,22 @@
   }
   pre.src {
     position: relative;
-    overflow: auto;
+    overflow: visible;
+    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    top: -8px;
-    right: 12px;
+    background-color: white;
+    top: -10px;
+    right: 10px;
     padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
+    border: 1px solid black;
   }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
+  pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -189,33 +188,80 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
 </style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
 <body>
-<div id="content" class="content">
-<div id="outline-container-org1b9d983" class="outline-2">
-<h2 id="org1b9d983">Money</h2>
-<div class="outline-text-2" id="text-org1b9d983">
+<div id="content">
+<div id="outline-container-org32c5406" class="outline-2">
+<h2 id="org32c5406">Money</h2>
+<div class="outline-text-2" id="text-org32c5406">
 </div>
-<div id="outline-container-org144a7c6" class="outline-3">
-<h3 id="org144a7c6">Net Worth</h3>
-<div class="outline-text-3" id="text-org144a7c6">
+<div id="outline-container-org84fbbe7" class="outline-3">
+<h3 id="org84fbbe7">Net Worth</h3>
+<div class="outline-text-3" id="text-org84fbbe7">
 </div>
-<div id="outline-container-org0a3e71f" class="outline-4">
-<h4 id="org0a3e71f">Assets</h4>
-<div class="outline-text-4" id="text-org0a3e71f">
-<pre class="example" id="orgaaf3ef2">
-          $ 1,649.51
+<div id="outline-container-orgd6003df" class="outline-4">
+<h4 id="orgd6003df">Assets</h4>
+<div class="outline-text-4" id="text-orgd6003df">
+<pre class="example">
+          $ 1,125.17
            1.0 COTTA
        494.387 FSPSX
        778.426 FXAIX
        4,536.0 STRIP
        605.686 VTIAX
        798.559 VTSAX  Assets
-          $ 1,649.51    Checking
-             $ 99.51      Capital One
-            $ 600.00      Northwoods
+          $ 1,125.17    Checking
+             $ 49.51      Capital One
+            $ 125.66      Northwoods
             $ 950.00      Park City
        494.387 FSPSX
        778.426 FXAIX
@@ -229,11 +275,9 @@
        798.559 VTSAX      IRA
        4,536.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-        $ -61,798.25  Liabilities
-           $ -160.34    Credit Card:Northwoods
-        $ -61,637.91    RE:Cottage:Mortgage
+        $ -61,637.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ -60,148.74
+        $ -60,512.74
            1.0 COTTA
        494.387 FSPSX
        778.426 FXAIX
@@ -243,61 +287,60 @@
 </pre>
 </div>
 </div>
-<div id="outline-container-org64062c8" class="outline-4">
-<h4 id="org64062c8">Value</h4>
-<div class="outline-text-4" id="text-org64062c8">
-<pre class="example" id="orgc30f552">
-        $ 891,722.95  Assets
-          $ 1,649.51    Checking
-             $ 99.51      Capital One
-            $ 600.00      Northwoods
+<div id="outline-container-org7283805" class="outline-4">
+<h4 id="org7283805">Value</h4>
+<div class="outline-text-4" id="text-org7283805">
+<pre class="example">
+        $ 892,080.85  Assets
+          $ 1,125.17    Checking
+             $ 49.51      Capital One
+            $ 125.66      Northwoods
             $ 950.00      Park City
-        $ 440,073.44    Investments
-        $ 158,946.50      401K
-         $ 24,266.44      HSA
-        $ 132,075.14      IRA
+        $ 440,955.68    Investments
+        $ 159,303.28      401K
+         $ 24,379.35      HSA
+        $ 132,487.68      IRA
         $ 124,785.36      RSU
         $ 450,000.00    RE:Cottage
-        $ -61,798.25  Liabilities
-           $ -160.34    Credit Card:Northwoods
-        $ -61,637.91    RE:Cottage:Mortgage
+        $ -61,637.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 829,924.70
+        $ 830,442.94
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org6a92f74" class="outline-3">
-<h3 id="org6a92f74">Spending</h3>
-<div class="outline-text-3" id="text-org6a92f74">
+<div id="outline-container-org4edbf32" class="outline-3">
+<h3 id="org4edbf32">Spending</h3>
+<div class="outline-text-3" id="text-org4edbf32">
 </div>
-<div id="outline-container-orgea7a3dd" class="outline-4">
-<h4 id="orgea7a3dd">Savings Rate</h4>
-<div class="outline-text-4" id="text-orgea7a3dd">
+<div id="outline-container-orgec33754" class="outline-4">
+<h4 id="orgec33754">Savings Rate</h4>
+<div class="outline-text-4" id="text-orgec33754">
 <pre class="example">
 .
-                     $334,826.21 - $193,847.17
-Gross Savings Rate: --------------------------- = 42.11%
+                     $334,826.21 - $194,211.17
+Gross Savings Rate: --------------------------- = 42.00%
                              $334,826.21
 
-                     $218,652.90 - $77,673.86
-  Net Savings Rate: -------------------------- = 64.48%
+                     $218,652.90 - $78,037.86
+  Net Savings Rate: -------------------------- = 64.31%
                              $218,652.90
 </pre>
 </div>
 </div>
-<div id="outline-container-org6105ebe" class="outline-4">
-<h4 id="org6105ebe">This Month Spending</h4>
-<div class="outline-text-4" id="text-org6105ebe">
-<pre class="example" id="orgfbe6e30">
-          $ 5,222.80  Expenses
-            $ 367.99    Food
+<div id="outline-container-org226725a" class="outline-4">
+<h4 id="org226725a">This Month Spending</h4>
+<div class="outline-text-4" id="text-org226725a">
+<pre class="example">
+          $ 5,586.80  Expenses
+            $ 417.99    Food
              $ 25.79      Drinks
              $ 15.42      Fast Foo
-            $ 100.82      Fast Food
+            $ 150.82      Fast Food
              $ 41.88      Groceries
             $ 184.08      Snacks
-          $ 1,658.10    Housing
+          $ 1,669.10    Housing
+             $ 11.00      Insurance
           $ 1,533.00      Rent
             $ 125.10      Utilities
             $ 497.28    Personal
@@ -306,10 +349,10 @@ Gross Savings Rate: --------------------------- = 42.11%
             $ 208.63      Fitness
             $ 136.57      Health
              $ 63.07      Household
-            $ 779.36    RE:Cottage
+          $ 1,082.36    RE:Cottage
              $ 79.83      Insurance
             $ 325.03      Interest
-             $ 19.98      Repairs
+            $ 322.98      Repairs
             $ 354.52      Utilities
           $ 1,829.97    Taxes
           $ 1,309.34      Federal
@@ -323,14 +366,14 @@ Gross Savings Rate: --------------------------- = 42.11%
             $ 114.57      Insurance
              $ 41.72      Parking
 --------------------
-          $ 5,222.80
+          $ 5,586.80
 </pre>
 </div>
 </div>
-<div id="outline-container-org4a189c9" class="outline-4">
-<h4 id="org4a189c9">Last Month Spending</h4>
-<div class="outline-text-4" id="text-org4a189c9">
-<pre class="example" id="orgd806342">
+<div id="outline-container-orge0996f8" class="outline-4">
+<h4 id="orge0996f8">Last Month Spending</h4>
+<div class="outline-text-4" id="text-orge0996f8">
+<pre class="example">
          $ 15,111.22  Expenses
             $ 845.42    Food
             $ 113.84      Drinks
@@ -371,10 +414,10 @@ Gross Savings Rate: --------------------------- = 42.11%
 </pre>
 </div>
 </div>
-<div id="outline-container-org4cc6ec2" class="outline-4">
-<h4 id="org4cc6ec2">Monthly Spending</h4>
-<div class="outline-text-4" id="text-org4cc6ec2">
-<pre class="example" id="org79ac996">
+<div id="outline-container-org9f1d0dd" class="outline-4">
+<h4 id="org9f1d0dd">Monthly Spending</h4>
+<div class="outline-text-4" id="text-org9f1d0dd">
+<pre class="example">
 April 2023           $ 5,455.64
 May 2023             $ 8,591.06
 June 2023            $ 9,673.92
@@ -393,7 +436,7 @@ June 2024            $ -2,268.37
 July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,474.43
-October 2024         $ 3,392.83
+October 2024         $ 3,756.83
 </pre>
 </div>
 </div>
