@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 10/15/2024 00:00:00 VTSAX $139.2700
-  P 10/15/2024 00:00:00 VTIAX $34.4400
-  P 10/15/2024 00:00:00 FSPSX $52.5000
-  P 10/15/2024 00:00:00 FXAIX $202.0200
-  P 10/15/2024 00:00:00 CONDO $250,000.00
-  P 10/15/2024 00:00:00 COTTA $450,000.00
-  P 10/15/2024 00:00:00 STRIP $27.51
+  P 10/19/2024 00:00:00 VTSAX $140.0900
+  P 10/19/2024 00:00:00 VTIAX $34.0400
+  P 10/19/2024 00:00:00 FSPSX $51.9700
+  P 10/19/2024 00:00:00 FXAIX $202.9600
+  P 10/19/2024 00:00:00 CONDO $250,000.00
+  P 10/19/2024 00:00:00 COTTA $450,000.00
+  P 10/19/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -10325,15 +10325,31 @@
   2024-10-16 * PayOff
       Liabilities:Credit Card:Covantage        $ 13.97
       Assets:Checking:Covantage
+
+  2024-10-17 * Frasier's Plumbing
+      Expenses:RE:Cottage:Repairs             $ 303.00
+      Assets:Checking:Northwoods
+
+  2024-10-18 * State Farm
+      Expenses:Housing:Insurance               $ 11.00
+      Assets:Checking:Northwoods
+
+  2024-10-19 * Chipotle
+      Expenses:Food:Fast Food                  $ 50.00
+      Assets:Checking:Capital One
+
+  2024-10-19 * Transfer
+      Liabilities:Credit Card:Northwoods      $ 160.34
+      Assets:Checking:Northwoods
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 193,847.17  Expenses
-          $ 6,839.80    Food
+        $ 194,211.17  Expenses
+          $ 6,889.80    Food
             $ 600.85    Gifts
-         $ 12,434.01    Housing
+         $ 12,445.01    Housing
           $ 8,453.61    Personal
-         $ 43,047.10    RE
+         $ 43,350.10    RE
         $ 116,173.31    Taxes
           $ 5,036.59    Transportation
           $ 1,261.90    Travel
@@ -10342,7 +10358,7 @@
            $ -139.50    SWAQ
        $ -318,946.80    Stripe
 --------------------
-       $ -140,979.04
+       $ -140,615.04
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -10374,16 +10390,16 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 1,649.51
+          $ 1,125.17
            1.0 COTTA
        494.387 FSPSX
        778.426 FXAIX
        4,536.0 STRIP
        605.686 VTIAX
        798.559 VTSAX  Assets
-          $ 1,649.51    Checking
-             $ 99.51      Capital One
-            $ 600.00      Northwoods
+          $ 1,125.17    Checking
+             $ 49.51      Capital One
+            $ 125.66      Northwoods
             $ 950.00      Park City
        494.387 FSPSX
        778.426 FXAIX
@@ -10397,11 +10413,9 @@
        798.559 VTSAX      IRA
        4,536.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-        $ -61,798.25  Liabilities
-           $ -160.34    Credit Card:Northwoods
-        $ -61,637.91    RE:Cottage:Mortgage
+        $ -61,637.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ -60,148.74
+        $ -60,512.74
            1.0 COTTA
        494.387 FSPSX
        778.426 FXAIX
@@ -10417,22 +10431,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 891,722.95  Assets
-          $ 1,649.51    Checking
-             $ 99.51      Capital One
-            $ 600.00      Northwoods
+        $ 892,080.85  Assets
+          $ 1,125.17    Checking
+             $ 49.51      Capital One
+            $ 125.66      Northwoods
             $ 950.00      Park City
-        $ 440,073.44    Investments
-        $ 158,946.50      401K
-         $ 24,266.44      HSA
-        $ 132,075.14      IRA
+        $ 440,955.68    Investments
+        $ 159,303.28      401K
+         $ 24,379.35      HSA
+        $ 132,487.68      IRA
         $ 124,785.36      RSU
         $ 450,000.00    RE:Cottage
-        $ -61,798.25  Liabilities
-           $ -160.34    Credit Card:Northwoods
-        $ -61,637.91    RE:Cottage:Mortgage
+        $ -61,637.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 829,924.70
+        $ 830,442.94
 #+end_example
 ** Spending
 *** Savings Rate
@@ -10478,12 +10490,12 @@
 #+end_src
 #+results:
 : .
-:                      $334,826.21 - $193,847.17
-: Gross Savings Rate: --------------------------- = 42.11%
+:                      $334,826.21 - $194,211.17
+: Gross Savings Rate: --------------------------- = 42.00%
 :                              $334,826.21
 :
-:                      $218,652.90 - $77,673.86
-:   Net Savings Rate: -------------------------- = 64.48%
+:                      $218,652.90 - $78,037.86
+:   Net Savings Rate: -------------------------- = 64.31%
 :                              $218,652.90
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -10492,14 +10504,15 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 5,222.80  Expenses
-            $ 367.99    Food
+          $ 5,586.80  Expenses
+            $ 417.99    Food
              $ 25.79      Drinks
              $ 15.42      Fast Foo
-            $ 100.82      Fast Food
+            $ 150.82      Fast Food
              $ 41.88      Groceries
             $ 184.08      Snacks
-          $ 1,658.10    Housing
+          $ 1,669.10    Housing
+             $ 11.00      Insurance
           $ 1,533.00      Rent
             $ 125.10      Utilities
             $ 497.28    Personal
@@ -10508,10 +10521,10 @@
             $ 208.63      Fitness
             $ 136.57      Health
              $ 63.07      Household
-            $ 779.36    RE:Cottage
+          $ 1,082.36    RE:Cottage
              $ 79.83      Insurance
             $ 325.03      Interest
-             $ 19.98      Repairs
+            $ 322.98      Repairs
             $ 354.52      Utilities
           $ 1,829.97    Taxes
           $ 1,309.34      Federal
@@ -10525,7 +10538,7 @@
             $ 114.57      Insurance
              $ 41.72      Parking
 --------------------
-          $ 5,222.80
+          $ 5,586.80
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -10597,5 +10610,5 @@ June 2024            $ -2,268.37
 July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,474.43
-October 2024         $ 3,392.83
+October 2024         $ 3,756.83
 #+end_example
