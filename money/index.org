@@ -9869,7 +9869,7 @@
       Assets:Checking:Capital One
 
   2024-09-26 * Transfer
-      Liabilities:RE:Cottage:Mortgage       $ 2,558.71
+      Liabilities:RE:Cottage:Mortgage       $ 2,508.71
       Assets:Checking:Capital One
 
   2024-09-26 * Transfer
@@ -10341,14 +10341,19 @@
   2024-10-19 * Transfer
       Liabilities:Credit Card:Northwoods      $ 160.34
       Assets:Checking:Northwoods
+
+  2024-10-19 * Transfer
+      Liabilities:RE:Cottage:Mortgage          $ 47.00
+      Expenses:Personal:Fees                    $ 3.00
+      Assets:Checking:Capital One
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 194,211.17  Expenses
+        $ 194,214.17  Expenses
           $ 6,889.80    Food
             $ 600.85    Gifts
          $ 12,445.01    Housing
-          $ 8,453.61    Personal
+          $ 8,456.61    Personal
          $ 43,350.10    RE
         $ 116,173.31    Taxes
           $ 5,036.59    Transportation
@@ -10358,7 +10363,7 @@
            $ -139.50    SWAQ
        $ -318,946.80    Stripe
 --------------------
-       $ -140,615.04
+       $ -140,612.04
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -10413,9 +10418,9 @@
        798.559 VTSAX      IRA
        4,536.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-        $ -61,637.91  Liabilities:RE:Cottage:Mortgage
+        $ -61,640.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ -60,512.74
+        $ -60,515.74
            1.0 COTTA
        494.387 FSPSX
        778.426 FXAIX
@@ -10442,9 +10447,9 @@
         $ 132,487.68      IRA
         $ 124,785.36      RSU
         $ 450,000.00    RE:Cottage
-        $ -61,637.91  Liabilities:RE:Cottage:Mortgage
+        $ -61,640.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 830,442.94
+        $ 830,439.94
 #+end_example
 ** Spending
 *** Savings Rate
@@ -10490,11 +10495,11 @@
 #+end_src
 #+results:
 : .
-:                      $334,826.21 - $194,211.17
+:                      $334,826.21 - $194,214.17
 : Gross Savings Rate: --------------------------- = 42.00%
 :                              $334,826.21
 :
-:                      $218,652.90 - $78,037.86
+:                      $218,652.90 - $78,040.86
 :   Net Savings Rate: -------------------------- = 64.31%
 :                              $218,652.90
 *** This Month Spending
@@ -10504,7 +10509,7 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 5,586.80  Expenses
+          $ 5,589.80  Expenses
             $ 417.99    Food
              $ 25.79      Drinks
              $ 15.42      Fast Foo
@@ -10515,9 +10520,10 @@
              $ 11.00      Insurance
           $ 1,533.00      Rent
             $ 125.10      Utilities
-            $ 497.28    Personal
+            $ 500.28    Personal
              $ 30.00      Communication
              $ 59.01      Electronics
+              $ 3.00      Fees
             $ 208.63      Fitness
             $ 136.57      Health
              $ 63.07      Household
@@ -10538,7 +10544,7 @@
             $ 114.57      Insurance
              $ 41.72      Parking
 --------------------
-          $ 5,586.80
+          $ 5,589.80
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -10610,5 +10616,5 @@ June 2024            $ -2,268.37
 July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,474.43
-October 2024         $ 3,756.83
+October 2024         $ 3,759.83
 #+end_example
