@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 10/19/2024 00:00:00 VTSAX $140.0900
-  P 10/19/2024 00:00:00 VTIAX $34.0400
-  P 10/19/2024 00:00:00 FSPSX $51.9700
-  P 10/19/2024 00:00:00 FXAIX $202.9600
-  P 10/19/2024 00:00:00 CONDO $250,000.00
-  P 10/19/2024 00:00:00 COTTA $450,000.00
-  P 10/19/2024 00:00:00 STRIP $27.51
+  P 10/25/2024 00:00:00 VTSAX $139.1000
+  P 10/25/2024 00:00:00 VTIAX $33.5900
+  P 10/25/2024 00:00:00 FSPSX $51.1600
+  P 10/25/2024 00:00:00 FXAIX $201.8800
+  P 10/25/2024 00:00:00 CONDO $250,000.00
+  P 10/25/2024 00:00:00 COTTA $450,000.00
+  P 10/25/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -10346,24 +10346,88 @@
       Liabilities:RE:Cottage:Mortgage          $ 47.00
       Expenses:Personal:Fees                    $ 3.00
       Assets:Checking:Capital One
+
+  2024-10-20 * Lyft
+      Expenses:Transportation:Biking           $ 20.85
+      Assets:Checking:Capital One
+
+  2024-10-22 * Transfer
+      Assets:Checking:Capital One              $ 50.00
+      Assets:Checking:Bank of America          $ 50.00
+      Assets:Checking:Northwoods
+
+  2024-10-23 * Mariano's
+      Expenses:Food:Snacks                      $ 2.06
+      Assets:Checking:Capital One
+
+  2024-10-23 * 7/11
+      Expenses:Food:Snacks                      $ 5.27
+      Assets:Checking:Capital One
+
+  2024-10-23 * Jewel
+      Expenses:Food:Snacks                      $ 9.18
+      Assets:Checking:Capital One
+
+  2024-10-23 * Jewel
+      Expenses:Food:Snacks                      $ 4.26
+      Assets:Checking:Capital One
+
+  2024-10-23 * Panera Bread
+      Expenses:Food:Fast Food                   $ 7.89
+      Assets:Checking:Capital One
+
+  2024-10-24 * Dollar Tree
+      Expenses:Food:Snacks                      $ 7.98
+      Assets:Checking:Capital One
+
+  2024-10-24 * 7/11
+      Expenses:Food:Snacks                      $ 7.75
+      Assets:Checking:Capital One
+
+  2024-10-25 * Stripe
+      Assets:Checking:Northwoods              $ 600.00
+      Assets:Checking:Park City               $ 950.00
+      Assets:Checking:Capital One           $ 2,642.54
+      Assets:Investments:401K               $ 1,058.72
+      Expenses:Taxes:Medicare                 $ 165.88
+      Expenses:Taxes:Federal                $ 1,291.56
+      Expenses:Taxes:State                    $ 349.37
+      Income:Stripe:Paycheck               $ -7,058.07
+
+  2024-10-25 * Venmo
+      Expenses:Food:Snacks                     $ 90.00
+      Assets:Checking:Capital One
+
+  2024-10-25 * 7/11
+      Expenses:Food:Snacks                      $ 6.32
+      Assets:Checking:Capital One
+
+  2024-10-25 * 7/11
+      Expenses:Food:Snacks                      $ 2.75
+      Assets:Checking:Capital One
+
+  2024-10-25 * Jewel
+      Expenses:Food:Snacks                      $ 4.87
+      Expenses:Food:Snacks                      $ 4.87
+      Assets:Checking:Capital One
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 194,214.17  Expenses
-          $ 6,889.80    Food
+        $ 196,195.03  Expenses
+          $ 7,043.00    Food
             $ 600.85    Gifts
          $ 12,445.01    Housing
           $ 8,456.61    Personal
          $ 43,350.10    RE
-        $ 116,173.31    Taxes
-          $ 5,036.59    Transportation
+        $ 117,980.12    Taxes
+          $ 5,057.44    Transportation
           $ 1,261.90    Travel
-       $ -334,826.21  Income
+       $ -341,884.28  Income
         $ -15,739.91    RE
            $ -139.50    SWAQ
-       $ -318,946.80    Stripe
+       $ -326,004.87    Stripe
 --------------------
-       $ -140,612.04
+       $ -145,689.25
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -10395,22 +10459,25 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 1,125.17
+          $ 6,202.38
            1.0 COTTA
        494.387 FSPSX
        778.426 FXAIX
        4,536.0 STRIP
        605.686 VTIAX
        798.559 VTSAX  Assets
-          $ 1,125.17    Checking
-             $ 49.51      Capital One
-            $ 125.66      Northwoods
-            $ 950.00      Park City
+          $ 5,143.66    Checking
+             $ 50.00      Bank of America
+          $ 2,568.00      Capital One
+            $ 625.66      Northwoods
+          $ 1,900.00      Park City
+          $ 1,058.72
        494.387 FSPSX
        778.426 FXAIX
        4,536.0 STRIP
        605.686 VTIAX
        798.559 VTSAX    Investments
+          $ 1,058.72
        494.387 FSPSX
        658.307 FXAIX      401K
        120.119 FXAIX      HSA
@@ -10420,7 +10487,7 @@
            1.0 COTTA    RE:Cottage
         $ -61,640.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ -60,515.74
+        $ -55,438.53
            1.0 COTTA
        494.387 FSPSX
        778.426 FXAIX
@@ -10436,20 +10503,21 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 892,080.85  Assets
-          $ 1,125.17    Checking
-             $ 49.51      Capital One
-            $ 125.66      Northwoods
-            $ 950.00      Park City
-        $ 440,955.68    Investments
-        $ 159,303.28      401K
-         $ 24,379.35      HSA
-        $ 132,487.68      IRA
+        $ 894,853.77  Assets
+          $ 5,143.66    Checking
+             $ 50.00      Bank of America
+          $ 2,568.00      Capital One
+            $ 625.66      Northwoods
+          $ 1,900.00      Park City
+        $ 439,710.11    Investments
+        $ 159,250.58      401K
+         $ 24,249.62      HSA
+        $ 131,424.55      IRA
         $ 124,785.36      RSU
         $ 450,000.00    RE:Cottage
         $ -61,640.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 830,439.94
+        $ 833,212.86
 #+end_example
 ** Spending
 *** Savings Rate
@@ -10471,11 +10539,11 @@
     if line.strip().startswith('$'):
       amount = extract_amount(line)
       if line.strip().endswith('Expenses'):
-        expenses = amount
+	expenses = amount
       elif line.strip().endswith('Income'):
-        income = amount * -1
+	income = amount * -1
       elif line.strip().endswith('Taxes'):
-        taxes = amount
+	taxes = amount
 
   take_home_income = income - taxes
   non_tax_expenses = expenses - taxes
@@ -10484,24 +10552,24 @@
   net_savings_rate = ((take_home_income - non_tax_expenses) / take_home_income) * 100
 
   return f""".
-                       ${income:,.2f} - ${expenses:,.2f}
+		       ${income:,.2f} - ${expenses:,.2f}
   Gross Savings Rate: --------------------------- = {gross_savings_rate:,.2f}%
-                               ${income:,.2f}
+			       ${income:,.2f}
 
-                       ${take_home_income:,.2f} - ${non_tax_expenses:,.2f}
+		       ${take_home_income:,.2f} - ${non_tax_expenses:,.2f}
     Net Savings Rate: -------------------------- = {net_savings_rate:,.2f}%
-                               ${take_home_income:,.2f}
+			       ${take_home_income:,.2f}
   """
 #+end_src
 #+results:
 : .
-:                      $334,826.21 - $194,214.17
-: Gross Savings Rate: --------------------------- = 42.00%
-:                              $334,826.21
+: 		     $341,884.28 - $196,195.03
+: Gross Savings Rate: --------------------------- = 42.61%
+: 			     $341,884.28
 :
-:                      $218,652.90 - $78,040.86
-:   Net Savings Rate: -------------------------- = 64.31%
-:                              $218,652.90
+: 		     $223,904.16 - $78,214.91
+:   Net Savings Rate: -------------------------- = 65.07%
+: 			     $223,904.16
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
@@ -10509,13 +10577,13 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 5,589.80  Expenses
-            $ 417.99    Food
+          $ 7,570.66  Expenses
+            $ 571.19    Food
              $ 25.79      Drinks
              $ 15.42      Fast Foo
-            $ 150.82      Fast Food
+            $ 158.71      Fast Food
              $ 41.88      Groceries
-            $ 184.08      Snacks
+            $ 329.39      Snacks
           $ 1,669.10    Housing
              $ 11.00      Insurance
           $ 1,533.00      Rent
@@ -10532,19 +10600,20 @@
             $ 325.03      Interest
             $ 322.98      Repairs
             $ 354.52      Utilities
-          $ 1,829.97    Taxes
-          $ 1,309.34      Federal
+          $ 3,636.78    Taxes
+          $ 2,600.90      Federal
             $ 353.04      Illinois
-            $ 167.59      Medicare
-             $ 90.10    Transportation
-           $ -195.25      Biking
+            $ 333.47      Medicare
+            $ 349.37      State
+            $ 110.95    Transportation
+           $ -174.40      Biking
             $ 129.06      Driving
             $ 109.06        Gas
              $ 20.00        Tolls
             $ 114.57      Insurance
              $ 41.72      Parking
 --------------------
-          $ 5,589.80
+          $ 7,570.66
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -10616,5 +10685,5 @@ June 2024            $ -2,268.37
 July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,474.43
-October 2024         $ 3,759.83
+October 2024         $ 3,933.88
 #+end_example
