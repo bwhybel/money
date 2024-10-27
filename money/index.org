@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 10/25/2024 00:00:00 VTSAX $139.1000
-  P 10/25/2024 00:00:00 VTIAX $33.5900
-  P 10/25/2024 00:00:00 FSPSX $51.1600
-  P 10/25/2024 00:00:00 FXAIX $201.8800
-  P 10/25/2024 00:00:00 CONDO $250,000.00
-  P 10/25/2024 00:00:00 COTTA $450,000.00
-  P 10/25/2024 00:00:00 STRIP $27.51
+  P 10/27/2024 00:00:00 VTSAX $139.1000
+  P 10/27/2024 00:00:00 VTIAX $33.5900
+  P 10/27/2024 00:00:00 FSPSX $51.1600
+  P 10/27/2024 00:00:00 FXAIX $201.8800
+  P 10/27/2024 00:00:00 CONDO $250,000.00
+  P 10/27/2024 00:00:00 COTTA $450,000.00
+  P 10/27/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -10388,7 +10388,8 @@
       Assets:Checking:Northwoods              $ 600.00
       Assets:Checking:Park City               $ 950.00
       Assets:Checking:Capital One           $ 2,642.54
-      Assets:Investments:401K               $ 1,058.72
+      Assets:Investments:401K                    4.459 FXAIX @ $ 201.8187934514
+      Assets:Investments:401K                    3.114 FSPSX @ $ 50.9987154785
       Expenses:Taxes:Medicare                 $ 165.88
       Expenses:Taxes:Federal                $ 1,291.56
       Expenses:Taxes:State                    $ 349.37
@@ -10410,24 +10411,36 @@
       Expenses:Food:Snacks                      $ 4.87
       Expenses:Food:Snacks                      $ 4.87
       Assets:Checking:Capital One
+
+  2024-10-26 * HomeGoods
+      Expenses:Food:Snacks                      $ 7.03
+      Assets:Checking:Capital One
+
+  2024-10-26 * Divvy Bikes
+      Expenses:Transportation:Biking           $ 40.37
+      Assets:Checking:Capital One
+
+  2024-10-27 * Transfer
+      Assets:Checking:Capital One              $ 50.00
+      Assets:Checking:Bank of America
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 196,195.03  Expenses
-          $ 7,043.00    Food
+        $ 196,242.43  Expenses
+          $ 7,050.03    Food
             $ 600.85    Gifts
          $ 12,445.01    Housing
           $ 8,456.61    Personal
          $ 43,350.10    RE
         $ 117,980.12    Taxes
-          $ 5,057.44    Transportation
+          $ 5,097.81    Transportation
           $ 1,261.90    Travel
        $ -341,884.28  Income
         $ -15,739.91    RE
            $ -139.50    SWAQ
        $ -326,004.87    Stripe
 --------------------
-       $ -145,689.25
+       $ -145,641.85
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -10459,27 +10472,24 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 6,202.38
+          $ 5,096.26
            1.0 COTTA
-       494.387 FSPSX
-       778.426 FXAIX
+       497.501 FSPSX
+       782.885 FXAIX
        4,536.0 STRIP
        605.686 VTIAX
        798.559 VTSAX  Assets
-          $ 5,143.66    Checking
-             $ 50.00      Bank of America
-          $ 2,568.00      Capital One
+          $ 5,096.26    Checking
+          $ 2,570.60      Capital One
             $ 625.66      Northwoods
           $ 1,900.00      Park City
-          $ 1,058.72
-       494.387 FSPSX
-       778.426 FXAIX
+       497.501 FSPSX
+       782.885 FXAIX
        4,536.0 STRIP
        605.686 VTIAX
        798.559 VTSAX    Investments
-          $ 1,058.72
-       494.387 FSPSX
-       658.307 FXAIX      401K
+       497.501 FSPSX
+       662.766 FXAIX      401K
        120.119 FXAIX      HSA
        605.686 VTIAX
        798.559 VTSAX      IRA
@@ -10487,10 +10497,10 @@
            1.0 COTTA    RE:Cottage
         $ -61,640.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ -55,438.53
+        $ -56,544.65
            1.0 COTTA
-       494.387 FSPSX
-       778.426 FXAIX
+       497.501 FSPSX
+       782.885 FXAIX
        4,536.0 STRIP
        605.686 VTIAX
        798.559 VTSAX
@@ -10503,21 +10513,20 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 894,853.77  Assets
-          $ 5,143.66    Checking
-             $ 50.00      Bank of America
-          $ 2,568.00      Capital One
+        $ 894,807.14  Assets
+          $ 5,096.26    Checking
+          $ 2,570.60      Capital One
             $ 625.66      Northwoods
           $ 1,900.00      Park City
-        $ 439,710.11    Investments
-        $ 159,250.58      401K
+        $ 439,710.88    Investments
+        $ 159,251.35      401K
          $ 24,249.62      HSA
         $ 131,424.55      IRA
         $ 124,785.36      RSU
         $ 450,000.00    RE:Cottage
         $ -61,640.91  Liabilities:RE:Cottage:Mortgage
 --------------------
-        $ 833,212.86
+        $ 833,166.23
 #+end_example
 ** Spending
 *** Savings Rate
@@ -10563,12 +10572,12 @@
 #+end_src
 #+results:
 : .
-: 		     $341,884.28 - $196,195.03
-: Gross Savings Rate: --------------------------- = 42.61%
+: 		     $341,884.28 - $196,242.43
+: Gross Savings Rate: --------------------------- = 42.60%
 : 			     $341,884.28
 :
-: 		     $223,904.16 - $78,214.91
-:   Net Savings Rate: -------------------------- = 65.07%
+: 		     $223,904.16 - $78,262.31
+:   Net Savings Rate: -------------------------- = 65.05%
 : 			     $223,904.16
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -10577,13 +10586,13 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 7,570.66  Expenses
-            $ 571.19    Food
+          $ 7,618.06  Expenses
+            $ 578.22    Food
              $ 25.79      Drinks
              $ 15.42      Fast Foo
             $ 158.71      Fast Food
              $ 41.88      Groceries
-            $ 329.39      Snacks
+            $ 336.42      Snacks
           $ 1,669.10    Housing
              $ 11.00      Insurance
           $ 1,533.00      Rent
@@ -10605,15 +10614,15 @@
             $ 353.04      Illinois
             $ 333.47      Medicare
             $ 349.37      State
-            $ 110.95    Transportation
-           $ -174.40      Biking
+            $ 151.32    Transportation
+           $ -134.03      Biking
             $ 129.06      Driving
             $ 109.06        Gas
              $ 20.00        Tolls
             $ 114.57      Insurance
              $ 41.72      Parking
 --------------------
-          $ 7,570.66
+          $ 7,618.06
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -10685,5 +10694,5 @@ June 2024            $ -2,268.37
 July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,474.43
-October 2024         $ 3,933.88
+October 2024         $ 3,981.28
 #+end_example
