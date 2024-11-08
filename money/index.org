@@ -10538,9 +10538,113 @@
       Expenses:Housing:Rent                 $ 1,500.00
       Assets:Checking:Park City
 
+  2024-11-02 * CVS
+      Expenses:Food:Snacks                      $ 3.27
+      Liabilities:Credit Card:Apple
+
+  2024-11-02 * Dunkin Donuts
+      Expenses:Food:Fast Food                   $ 2.11
+      Liabilities:Credit Card:Apple
+
+  2024-11-02 * 7/11
+      Expenses:Food:Snacks                      $ 4.30
+      Liabilities:Credit Card:Apple
+
+  2024-11-02 * Best Buy
+      Expenses:Gifts                          $ 165.35
+      Liabilities:Credit Card:Apple
+
+  2024-11-03 * Divvy Bikes
+      Expenses:Transportation:Biking           $ 33.49
+      Liabilities:Credit Card:Apple
+
+  2024-11-03 * 7/11
+      Expenses:Food:Snacks                     $ 10.21
+      Expenses:Food:Snacks                      $ 6.32
+      Expenses:Food:Snacks                      $ 4.30
+      Liabilities:Credit Card:Apple
+
+  2024-11-03 * PayRange
+      Expenses:Personal:Household              $ 50.00
+      Liabilities:Credit Card:Apple
+
+  2024-11-03 * McDonalds
+      Expenses:Food:Fast Food                   $ 5.54
+      Liabilities:Credit Card:Apple
+
   2024-11-04 * Transfer
       Liabilities:Credit Card:Northwoods       $ 21.09
       Assets:Checking:Northwoods
+
+  2024-11-04 * USA Swimming
+      Expenses:Personal:Learning               $ 18.00
+      Liabilities:Credit Card:Apple
+
+  2024-11-04 * Vertex Endodontics
+      Expenses:Personal:Health                $ 357.69
+      Liabilities:Credit Card:Apple
+
+  2024-11-04 * Walgreens Pharmacy
+      Expenses:Personal:Health                 $ 29.15
+      Expenses:Food:Snacks                      $ 3.05
+      Liabilities:Credit Card:Apple
+
+  2024-11-04 * Aldi
+      Expenses:Food:Snacks                     $ 10.61
+      Liabilities:Credit Card:Apple
+
+  2024-11-05 * Burger King
+      Expenses:Food:Fast Food                   $ 5.59
+      Liabilities:Credit Card:Apple
+
+  2024-11-05 * McDonalds
+      Expenses:Food:Fast Food                   $ 5.54
+      Liabilities:Credit Card:Apple
+
+  2024-11-05 * Dollar Tree
+      Expenses:Food:Snacks                      $ 2.66
+      Liabilities:Credit Card:Apple
+
+  2024-11-05 * 7/11
+      Expenses:Food:Snacks                      $ 4.30
+      Expenses:Food:Snacks                      $ 4.30
+      Liabilities:Credit Card:Apple
+
+  2024-11-05 * Taco Bell
+      Expenses:Food:Fast Food                   $ 8.00
+      Liabilities:Credit Card:Apple
+
+  2024-11-06 * Wendy's
+      Expenses:Food:Fast Food                   $ 5.81
+      Liabilities:Credit Card:Apple
+
+  2024-11-06 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.40
+      Expenses:Food:Fast Food                  $ 13.70
+      Liabilities:Credit Card:Apple
+
+  2024-11-06 * Trader Joe's
+      Expenses:Food:Groceries                  $ 12.52
+      Liabilities:Credit Card:Apple
+
+  2024-11-06 * Jewel
+      Expenses:Food:Groceries                  $ 22.95
+      Expenses:Food:Groceries                   $ 4.87
+      Liabilities:Credit Card:Apple
+
+  2024-11-07 * 7/11
+      Expenses:Food:Snacks                      $ 4.18
+      Expenses:Food:Snacks                      $ 6.88
+      Liabilities:Credit Card:Apple
+
+  2024-11-07 * Jewel
+      Expenses:Food:Snacks                      $ 5.54
+      Expenses:Food:Snacks                      $ 7.39
+      Liabilities:Credit Card:Apple
+
+  2024-11-07 * Dollar Tree
+      Expenses:Food:Snacks                      $ 7.37
+      Liabilities:Credit Card:Apple
 
   2024-11-08 * Stripe
       Assets:Checking:Park City               $ 950.00
@@ -10568,21 +10672,21 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 200,566.18  Expenses
-          $ 7,258.48    Food
-            $ 600.85    Gifts
+        $ 201,396.57  Expenses
+          $ 7,435.19    Food
+            $ 766.20    Gifts
          $ 13,997.01    Housing
-          $ 8,565.30    Personal
+          $ 9,020.14    Personal
          $ 44,110.16    RE
         $ 119,810.10    Taxes
-          $ 4,962.38    Transportation
+          $ 4,995.87    Transportation
           $ 1,261.90    Travel
        $ -349,201.68  Income
         $ -15,739.91    RE
            $ -139.50    SWAQ
        $ -333,322.27    Stripe
 --------------------
-       $ -148,635.50
+       $ -147,805.11
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -10640,9 +10744,11 @@
        798.559 VTSAX      IRA
        4,536.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-        $ -59,500.00  Liabilities:RE:Cottage:Mortgage
+        $ -60,330.39  Liabilities
+           $ -830.39    Credit Card:Apple
+        $ -59,500.00    RE:Cottage:Mortgage
 --------------------
-        $ -53,551.00
+        $ -54,381.39
            1.0 COTTA
        497.501 FSPSX
        782.885 FXAIX
@@ -10669,9 +10775,11 @@
         $ 134,204.11      IRA
         $ 124,785.36      RSU
         $ 450,000.00    RE:Cottage
-        $ -59,500.00  Liabilities:RE:Cottage:Mortgage
+        $ -60,330.39  Liabilities
+           $ -830.39    Credit Card:Apple
+        $ -59,500.00    RE:Cottage:Mortgage
 --------------------
-        $ 841,851.58
+        $ 841,021.19
 #+end_example
 ** Spending
 *** Savings Rate
@@ -10717,12 +10825,12 @@
 #+end_src
 #+results:
 : .
-: 		     $349,201.68 - $200,566.18
-: Gross Savings Rate: --------------------------- = 42.56%
+: 		     $349,201.68 - $201,396.57
+: Gross Savings Rate: --------------------------- = 42.33%
 : 			     $349,201.68
 :
-: 		     $229,391.58 - $80,756.08
-:   Net Savings Rate: -------------------------- = 64.80%
+: 		     $229,391.58 - $81,586.47
+:   Net Savings Rate: -------------------------- = 64.43%
 : 			     $229,391.58
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -10731,17 +10839,21 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 3,696.08  Expenses
-            $ 122.62    Food
-             $ 31.46      Fast Food
-             $ 62.63      Groceries
-             $ 28.53      Snacks
+          $ 4,526.47  Expenses
+            $ 299.33    Food
+             $ 83.15      Fast Food
+            $ 102.97      Groceries
+            $ 113.21      Snacks
+            $ 165.35    Gifts
           $ 1,552.00    Housing
           $ 1,500.00      Rent
              $ 52.00      Utilities
-             $ 51.09    Personal
+            $ 505.93    Personal
              $ 30.00      Communication
              $ 21.09      Electronics
+            $ 386.84      Health
+             $ 50.00      Household
+             $ 18.00      Learning
             $ 275.82    RE:Cottage
              $ 79.83      Insurance
             $ 195.99      Utilities
@@ -10749,11 +10861,11 @@
           $ 1,309.34      Federal
             $ 167.60      Medicare
             $ 353.04      State
-           $ -135.43    Transportation
-           $ -250.00      Biking
+           $ -101.94    Transportation
+           $ -216.51      Biking
             $ 114.57      Insurance
 --------------------
-          $ 3,696.08
+          $ 4,526.47
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -10827,5 +10939,5 @@ July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,474.43
 October 2024         $ 4,608.95
-November 2024        $ 1,866.10
+November 2024        $ 2,696.49
 #+end_example
