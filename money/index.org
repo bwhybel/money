@@ -10652,9 +10652,10 @@
       Assets:Checking:Bank of America       $ 3,891.01
       Expenses:Taxes:Medicare                 $ 167.60
       Expenses:Taxes:Federal                $ 1,309.34
-      Assets:Investments:HSA                  $ 345.00
+      Assets:Investments:HSA                     1.654 FXAIX @ $ 208.5852478839
       Income:Stripe:HSA                      $ -100.00
-      Assets:Investments:401K                 $ 251.41
+      Assets:Investments:401K                    1.205 FXAIX @ $ 208.487804878
+      Assets:Investments:401K                    0.747 FSPSX @ $ 50.4819277108
       Expenses:Taxes:State                    $ 353.04
       Income:Stripe:Wireless                  $ -50.00
       Expenses:Transportation:Biking         $ -250.00
