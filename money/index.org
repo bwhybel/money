@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 11/26/2024 00:00:00 VTSAX $144.3800
-  P 11/26/2024 00:00:00 VTIAX $32.7000
-  P 11/26/2024 00:00:00 FSPSX $49.4600
-  P 11/26/2024 00:00:00 FXAIX $207.6700
-  P 11/26/2024 00:00:00 CONDO $250,000.00
-  P 11/26/2024 00:00:00 COTTA $450,000.00
-  P 11/26/2024 00:00:00 STRIP $27.51
+  P 11/27/2024 00:00:00 VTSAX $145.0100
+  P 11/27/2024 00:00:00 VTIAX $32.8300
+  P 11/27/2024 00:00:00 FSPSX $49.7600
+  P 11/27/2024 00:00:00 FXAIX $208.3000
+  P 11/27/2024 00:00:00 CONDO $250,000.00
+  P 11/27/2024 00:00:00 COTTA $450,000.00
+  P 11/27/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -10795,6 +10795,10 @@
       Expenses:Food:Snacks                      $ 3.31
       Assets:Checking:Bank of America
 
+  2024-11-24 * VRBO
+      Assets:Checking:Northwoods              $ 879.98
+      Income:RE:Cottage:Rent
+
   2024-11-25 * Transfer
       Assets:Checking:Bank of America      $ 40,000.00
       Liabilities:RE:Cottage:HELOC
@@ -10835,25 +10839,58 @@
   2024-11-25 * McDonald's
       Expenses:Food:Fast Food                   $ 7.41
       Assets:Checking:Bank of America
+
+  2024-11-26 * Lululemon
+      Expenses:Gifts                           $ 73.31
+      Assets:Checking:Bank of America
+
+  2024-11-26 * Ray-bans
+      Expenses:Gifts                          $ 143.55
+      Assets:Checking:Bank of America
+
+  2024-11-26 * Lime
+      Expenses:Transportation:Biking            $ 3.01
+      Assets:Checking:Bank of America
+
+  2024-11-26 * Starbucks
+      Expenses:Food:Fast Food                   $ 4.37
+      Assets:Checking:Bank of America
+
+  2024-11-26 * Etsy
+      Expenses:Gifts                           $ 77.72
+      Expenses:Gifts                           $ 44.09
+      Assets:Checking:Bank of America
+
+  2024-11-26 * Beck's
+      Expenses:Food:Restaurants                $ 37.41
+      Assets:Checking:Bank of America
+
+  2024-11-26 * Transfer
+      Assets:Checking:Covantage                $ 95.64
+      Assets:Checking:Northwoods
+
+  2024-11-26 * Transfer
+      Assets:Checking:Covantage               $ 450.00
+      Assets:Checking:Northwoods
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 219,876.29  Expenses
-          $ 7,591.13    Food
-            $ 858.45    Gifts
+        $ 220,259.75  Expenses
+          $ 7,632.91    Food
+          $ 1,197.12    Gifts
          $ 15,150.65    Housing
           $ 8,794.80    Personal
          $ 44,110.16    RE
         $ 137,105.05    Taxes
-          $ 5,004.15    Transportation
+          $ 5,007.16    Transportation
           $ 1,261.90    Travel
-       $ -409,568.93  Income
+       $ -410,448.91  Income
            $ -600.00    CPS
-        $ -15,739.91    RE
+        $ -16,619.89    RE
            $ -139.50    SWAQ
        $ -393,089.52    Stripe
 --------------------
-       $ -189,692.64
+       $ -190,189.16
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -10885,16 +10922,17 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 50,319.09
+         $ 50,815.61
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
        5,889.0 STRIP
        605.686 VTIAX
        798.559 VTSAX  Assets
-         $ 49,319.09    Checking
-         $ 46,785.00      Bank of America
-            $ 615.66      Northwoods
+         $ 49,815.61    Checking
+         $ 46,401.54      Bank of America
+            $ 545.64      Covantage
+            $ 950.00      Northwoods
           $ 1,918.43      Park City
           $ 1,000.00    Escrow
        498.248 FSPSX
@@ -10915,7 +10953,7 @@
         $ -40,000.00      HELOC
         $ -59,500.00      Mortgage
 --------------------
-        $ -50,011.30
+        $ -49,514.78
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
@@ -10931,16 +10969,17 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 985,208.78  Assets
-         $ 49,319.09    Checking
-         $ 46,785.00      Bank of America
-            $ 615.66      Northwoods
+        $ 986,931.51  Assets
+         $ 49,815.61    Checking
+         $ 46,401.54      Bank of America
+            $ 545.64      Covantage
+            $ 950.00      Northwoods
           $ 1,918.43      Park City
           $ 1,000.00    Escrow
-        $ 484,889.69    Investments
-        $ 162,492.82      401K
-         $ 25,288.60      HSA
-        $ 135,101.88      IRA
+        $ 486,115.90    Investments
+        $ 163,060.49      401K
+         $ 25,365.32      HSA
+        $ 135,683.71      IRA
         $ 162,006.39      RSU
         $ 450,000.00    RE:Cottage
        $ -100,330.39  Liabilities
@@ -10949,7 +10988,7 @@
         $ -40,000.00      HELOC
         $ -59,500.00      Mortgage
 --------------------
-        $ 884,878.39
+        $ 886,601.12
 #+end_example
 ** Spending
 *** Savings Rate
@@ -10995,13 +11034,13 @@
 #+end_src
 #+results:
 : .
-: 	                     $409,568.93 - $219,876.29
-: 	Gross Savings Rate: --------------------------- = 46.32%
-: 	                             $409,568.93
+: 	                     $410,448.91 - $220,259.75
+: 	Gross Savings Rate: --------------------------- = 46.34%
+: 	                             $410,448.91
 :
-: 	                     $272,463.88 - $82,771.24
-: 	  Net Savings Rate: -------------------------- = 69.62%
-: 	                             $272,463.88
+: 	                     $273,343.86 - $83,154.70
+: 	  Net Savings Rate: -------------------------- = 69.58%
+: 	                             $273,343.86
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
@@ -11009,14 +11048,14 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 23,006.19  Expenses
-            $ 455.27    Food
+         $ 23,389.65  Expenses
+            $ 497.05    Food
              $ 15.72      Drinks
-            $ 128.99      Fast Food
+            $ 133.36      Fast Food
             $ 115.61      Groceries
-              $ 7.42      Restaurants
+             $ 44.83      Restaurants
             $ 187.53      Snacks
-            $ 257.60    Gifts
+            $ 596.27    Gifts
           $ 2,705.64    Housing
               $ 8.64      Insurance
             $ 960.00      Misc
@@ -11038,11 +11077,11 @@
           $ 2,609.11      Illinois
           $ 1,572.13      Medicare
             $ 702.42      State
-            $ -93.66    Transportation
-           $ -208.23      Biking
+            $ -90.65    Transportation
+           $ -205.22      Biking
             $ 114.57      Insurance
 --------------------
-         $ 23,006.19
+         $ 23,389.65
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -11116,5 +11155,5 @@ July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,474.43
 October 2024         $ 4,608.95
-November 2024        $ 3,881.26
+November 2024        $ 4,264.72
 #+end_example
