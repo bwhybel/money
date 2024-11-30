@@ -41,7 +41,7 @@
         index = i
     if index != -1:
       return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), stock, values[index]) + "\n"
-  return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "CONDO", "250,000.00") + "\n"
+  return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "CONDO", "600,000.00") + "\n"
   return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "COTTA", "450,000.00") + "\n"
   return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "STRIP", "27.51") + "\n"
   return_string = return_string + "#+end_src"
@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 11/27/2024 00:00:00 VTSAX $145.0100
-  P 11/27/2024 00:00:00 VTIAX $32.8300
-  P 11/27/2024 00:00:00 FSPSX $49.7600
-  P 11/27/2024 00:00:00 FXAIX $208.3000
-  P 11/27/2024 00:00:00 CONDO $250,000.00
-  P 11/27/2024 00:00:00 COTTA $450,000.00
-  P 11/27/2024 00:00:00 STRIP $27.51
+  P 11/29/2024 00:00:00 VTSAX $145.1400
+  P 11/29/2024 00:00:00 VTIAX $32.7700
+  P 11/29/2024 00:00:00 FSPSX $49.6900
+  P 11/29/2024 00:00:00 FXAIX $208.7200
+  P 11/29/2024 00:00:00 CONDO $600,000.00
+  P 11/29/2024 00:00:00 COTTA $450,000.00
+  P 11/29/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -10872,14 +10872,60 @@
   2024-11-26 * Transfer
       Assets:Checking:Covantage               $ 450.00
       Assets:Checking:Northwoods
+
+  2024-11-27 * AMC
+      Expenses:Personal:Entertainment          $ 29.03
+      Assets:Checking:Bank of America
+
+  2024-11-27 * AMC
+      Expenses:Personal:Entertainment          $ 29.03
+      Assets:Checking:Bank of America
+
+  2024-12-16 ! Closing
+      Assets:RE:Condo                              1.0 CONDO @ $ 565,000.00
+      Liabilities:RE:Condo:Mortgage      $ -536,750.00
+      Expenses:RE:Condo:Sale                  $ 150.00  ;; Application Fee
+      Expenses:RE:Condo:Sale                $ 1,490.00  ;; Lender Fee
+      Expenses:RE:Condo:Sale                  $ 350.00  ;; Condo Questionairre Fee
+      Expenses:RE:Condo:Sale                   $ 25.00  ;; Credit Report
+      Expenses:RE:Condo:Sale                   $ 75.00  ;; Credit Tech and Verification Fee
+      Expenses:RE:Condo:Sale                   $ 29.95  ;; Insurance Certificate
+      Expenses:RE:Condo:Sale                   $ 68.00  ;; Tax Servicing Fee
+      Expenses:RE:Condo:Sale                  $ 250.00  ;; Chain of Title
+      Expenses:RE:Condo:Sale                   $ 50.00  ;; Closing Protection Letter
+      Expenses:RE:Condo:Sale                   $ 35.00  ;; Courier Fee
+      Expenses:RE:Condo:Sale                   $ 50.00  ;; Electronic Document Delivery
+      Expenses:RE:Condo:Sale                   $ 50.00  ;; ILAPLD
+      Expenses:RE:Condo:Sale                  $ 740.00  ;; Lender's Insurance
+      Expenses:RE:Condo:Sale                  $ 575.00  ;; Lender's Title
+      Expenses:RE:Condo:Sale                   $ 25.00  ;; Recording Service Fee
+      Expenses:RE:Condo:Sale                $ 2,150.00  ;; Settlement Fee
+      Expenses:RE:Condo:Sale                    $ 3.00  ;; State of IL Policy Fee
+      Expenses:RE:Condo:Sale                   $ 50.00  ;; Wire Transfer Fee
+      Expenses:RE:Condo:Sale                  $ 214.00  ;; Recording Fees
+      Expenses:RE:Condo:Sale                $ 4,288.00  ;; Taxes
+      Expenses:RE:Condo:Escrow                $ 600.00
+      Expenses:RE:Condo:Interest            $ 1,823.52
+      Expenses:RE:Condo:Escrow                $ 150.00
+      Expenses:RE:Condo:Taxes               $ 7,736.16
+      Expenses:RE:Condo:Sale                 $ -350.00
+      Expenses:RE:Condo:Sale                  $ 750.00  ;; Attorney Fee
+      Expenses:RE:Condo:Taxes             $ -10,000.00
+      Assets:Checking:Bank of America     $ -15,950.00
+      Assets:Escrow                        $ -1,000.00
+      Assets:Checking:Bank of America     $ -22,677.63
+
+  2025-01-01 ! Visible
+      Expenses:Personal:Communication          $ 30.00
+      Liabilities:Credit Card:Park City
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 220,259.75  Expenses
+        $ 220,317.81  Expenses
           $ 7,632.91    Food
           $ 1,197.12    Gifts
          $ 15,150.65    Housing
-          $ 8,794.80    Personal
+          $ 8,852.86    Personal
          $ 44,110.16    RE
         $ 137,105.05    Taxes
           $ 5,007.16    Transportation
@@ -10890,7 +10936,7 @@
            $ -139.50    SWAQ
        $ -393,089.52    Stripe
 --------------------
-       $ -190,189.16
+       $ -190,131.10
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -10922,15 +10968,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 50,815.61
+         $ 50,757.55
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
        5,889.0 STRIP
        605.686 VTIAX
        798.559 VTSAX  Assets
-         $ 49,815.61    Checking
-         $ 46,401.54      Bank of America
+         $ 49,757.55    Checking
+         $ 46,343.48      Bank of America
             $ 545.64      Covantage
             $ 950.00      Northwoods
           $ 1,918.43      Park City
@@ -10953,7 +10999,7 @@
         $ -40,000.00      HELOC
         $ -59,500.00      Mortgage
 --------------------
-        $ -49,514.78
+        $ -49,572.84
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
@@ -10969,17 +11015,17 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 986,931.51  Assets
-         $ 49,815.61    Checking
-         $ 46,401.54      Bank of America
+        $ 987,235.98  Assets
+         $ 49,757.55    Checking
+         $ 46,343.48      Bank of America
             $ 545.64      Covantage
             $ 950.00      Northwoods
           $ 1,918.43      Park City
           $ 1,000.00    Escrow
-        $ 486,115.90    Investments
-        $ 163,060.49      401K
-         $ 25,365.32      HSA
-        $ 135,683.71      IRA
+        $ 486,478.43    Investments
+        $ 163,304.40      401K
+         $ 25,416.46      HSA
+        $ 135,751.18      IRA
         $ 162,006.39      RSU
         $ 450,000.00    RE:Cottage
        $ -100,330.39  Liabilities
@@ -10988,7 +11034,7 @@
         $ -40,000.00      HELOC
         $ -59,500.00      Mortgage
 --------------------
-        $ 886,601.12
+        $ 886,905.59
 #+end_example
 ** Spending
 *** Savings Rate
@@ -11034,12 +11080,12 @@
 #+end_src
 #+results:
 : .
-: 	                     $410,448.91 - $220,259.75
-: 	Gross Savings Rate: --------------------------- = 46.34%
+: 	                     $410,448.91 - $220,317.81
+: 	Gross Savings Rate: --------------------------- = 46.32%
 : 	                             $410,448.91
 :
-: 	                     $273,343.86 - $83,154.70
-: 	  Net Savings Rate: -------------------------- = 69.58%
+: 	                     $273,343.86 - $83,212.76
+: 	  Net Savings Rate: -------------------------- = 69.56%
 : 	                             $273,343.86
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -11048,7 +11094,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 23,389.65  Expenses
+         $ 23,447.71  Expenses
             $ 497.05    Food
              $ 15.72      Drinks
             $ 133.36      Fast Food
@@ -11061,10 +11107,11 @@
             $ 960.00      Misc
           $ 1,500.00      Rent
             $ 237.00      Utilities
-            $ 280.59    Personal
+            $ 338.65    Personal
            $ -497.60      Clothes
              $ 30.00      Communication
              $ 21.09      Electronics
+             $ 58.06      Entertainment
              $ 12.00      Fees
             $ 641.71      Health
              $ 55.39      Household
@@ -11081,7 +11128,7 @@
            $ -205.22      Biking
             $ 114.57      Insurance
 --------------------
-         $ 23,389.65
+         $ 23,447.71
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -11155,5 +11202,5 @@ July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,474.43
 October 2024         $ 4,608.95
-November 2024        $ 4,264.72
+November 2024        $ 4,322.78
 #+end_example
