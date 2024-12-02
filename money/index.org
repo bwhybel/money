@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 11/29/2024 00:00:00 VTSAX $145.1400
-  P 11/29/2024 00:00:00 VTIAX $32.7700
-  P 11/29/2024 00:00:00 FSPSX $49.6900
-  P 11/29/2024 00:00:00 FXAIX $208.7200
-  P 11/29/2024 00:00:00 CONDO $600,000.00
-  P 11/29/2024 00:00:00 COTTA $450,000.00
-  P 11/29/2024 00:00:00 STRIP $27.51
+  P 12/02/2024 00:00:00 VTSAX $145.1400
+  P 12/02/2024 00:00:00 VTIAX $32.7700
+  P 12/02/2024 00:00:00 FSPSX $49.6900
+  P 12/02/2024 00:00:00 FXAIX $208.7200
+  P 12/02/2024 00:00:00 CONDO $600,000.00
+  P 12/02/2024 00:00:00 COTTA $450,000.00
+  P 12/02/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -10671,13 +10671,102 @@
       Expenses:Food:Snacks                      $ 4.20
       Assets:Checking:Bank of America
 
+  2024-11-08 * Maps Fitness
+      Expenses:Personal:Health                 $ 46.80
+      Expenses:Personal:Health                 $ 48.50
+      Liabilities:Credit Card:Apple
+
+  2024-11-08 * 7/11
+      Expenses:Food:Snacks                      $ 2.55
+      Liabilities:Credit Card:Apple
+
+  2024-11-08 * Jewel
+      Expenses:Food:Snacks                      $ 4.09
+      Liabilities:Credit Card:Apple
+
+  2024-11-08 * 7/11
+      Expenses:Food:Snacks                      $ 2.65
+      Liabilities:Credit Card:Apple
+
+  2024-11-08 * Walgreens
+      Expenses:Food:Snacks                      $ 7.95
+      Liabilities:Credit Card:Apple
+
+  2024-11-08 * 7/11
+      Expenses:Food:Snacks                      $ 4.30
+      Liabilities:Credit Card:Apple
+
+  2024-11-09 * Shell
+      Expenses:Food:Snacks                      $ 6.69
+      Liabilities:Credit Card:Apple
+
+  2024-11-09 * Apple Store
+      Expenses:Personal:Electronics            $ 51.15
+      Liabilities:Credit Card:Apple
+
+  2024-11-09 * Subway
+      Expenses:Food:Fast Food                   $ 0.84
+      Liabilities:Credit Card:Apple
+
+  2024-11-10 * Divvy Bikes
+      Expenses:Transportation:Biking           $ 31.88
+      Liabilities:Credit Card:Apple
+
+  2024-11-10 * Dunkin Donuts
+      Expenses:Food:Fast Food                   $ 1.87
+      Liabilities:Credit Card:Apple
+
+  2024-11-10 * McDonald's
+      Expenses:Food:Fast Food                   $ 6.51
+      Liabilities:Credit Card:Apple
+
+  2024-11-10 * 7/11
+      Expenses:Food:Snacks                      $ 6.88
+      Liabilities:Credit Card:Apple
+
+  2024-11-11 * Jewel
+      Expenses:Food:Snacks                      $ 4.87
+      Expenses:Food:Snacks                      $ 2.05
+      Liabilities:Credit Card:Apple
+
+  2024-11-11 * Aldi
+      Expenses:Food:Snacks                      $ 2.75
+      Liabilities:Credit Card:Apple
+
+  2024-11-11 * One Hour Tees
+      Expenses:Personal:Clothes               $ 497.60
+      Liabilities:Credit Card:Apple
+
+  2024-11-11 * Cnn Newstand
+      Expenses:Food:Snacks                     $ 11.00
+      Expenses:Food:Snacks                      $ 5.00
+      Liabilities:Credit Card:Apple
+
+  2024-11-11 * McDonald's
+      Expenses:Food:Fast Food                  $ 19.19
+      Liabilities:Credit Card:Apple
+
   2024-11-12 * One Hour Tees
       Assets:Checking:Bank of America         $ 497.60
       Expenses:Personal:Clothes
 
+  2024-11-12 * Taxi
+      Expenses:Transportation:Ride Share       $ 25.30
+      Liabilities:Credit Card:Apple
+
+  2024-11-12 * Hampton Inn
+      Expenses:Food:Snacks                      $ 8.00
+      Expenses:Food:Snacks                      $ 0.50
+      Expenses:Food:Snacks                      $ 0.50
+      Liabilities:Credit Card:Apple
+
   2024-11-13 * Stripe Soda
       Expenses:Food:Snacks                      $ 0.50
       Assets:Checking:Bank of America
+
+  2024-11-13 * Apple
+      Expenses:Personal:Electronics            $ 13.70
+      Liabilities:Credit Card:Apple
 
   2024-11-14 * Comed
       Expenses:Housing:Utilities               $ 35.00
@@ -10691,6 +10780,26 @@
       Expenses:Food:Restaurants                $ 13.42
       Assets:Checking:Bank of America
 
+  2024-11-14 * Auntie Annes
+      Expenses:Food:Fast Food                  $ 10.05
+      Liabilities:Credit Card:Apple
+
+  2024-11-14 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.54
+      Liabilities:Credit Card:Apple
+
+  2024-11-14 * BP
+      Expenses:Transportation:Driving:Gas      $ 26.00
+      Liabilities:Credit Card:Apple
+
+  2024-11-14 * Burger King
+      Expenses:Food:Fast Food                   $ 4.67
+      Liabilities:Credit Card:Apple
+
+  2024-11-14 * Target
+      Expenses:Food:Groceries                  $ 37.82
+      Liabilities:Credit Card:Apple
+
   2024-11-15 * Bank of America
       Assets:Checking:Bank of America         $ 300.00
       Income:Extra
@@ -10701,6 +10810,46 @@
       Expenses:Taxes:Illinois               $ 2,609.11
       Expenses:Taxes:Medicare               $ 1,238.67
       Assets:Investments:RSU                     1,353 STRIP @ $ 27.51
+
+  2024-11-15 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.50
+      Liabilities:Credit Card:Apple
+
+  2024-11-15 * 7/11
+      Expenses:Food:Snacks                     $ 12.05
+      Liabilities:Credit Card:Apple
+
+  2024-11-15 * NFHS Network
+      Expenses:Personal:Electronics             $ 6.33
+      Liabilities:Credit Card:Apple
+
+  2024-11-15 * Azure
+      Expenses:Personal:Electronics            $ 13.78
+      Liabilities:Credit Card:Covantage
+
+  2024-11-16 * Taco Bell
+      Expenses:Food:Fast Food                  $ 16.01
+      Liabilities:Credit Card:Apple
+
+  2024-11-16 * 7/11
+      Expenses:Food:Snacks                      $ 7.95
+      Liabilities:Credit Card:Apple
+
+  2024-11-16 * Aritzia
+      Expenses:Gifts                          $ 124.84
+      Liabilities:Credit Card:Apple
+
+  2024-11-17 * Divvy
+      Expenses:Transportation:Biking           $ 28.57
+      Liabilities:Credit Card:Apple
+
+  2024-11-17 * Taco Bell
+      Expenses:Food:Fast Food                   $ 5.45
+      Liabilities:Credit Card:Apple
+
+  2024-11-17 * Jewel
+      Expenses:Food:Snacks                      $ 5.34
+      Liabilities:Credit Card:Apple
 
   2024-11-18 * Lady Warriors
       Assets:Checking:Bank of America         $ 600.00
@@ -10799,6 +10948,10 @@
       Assets:Checking:Northwoods              $ 879.98
       Income:RE:Cottage:Rent
 
+  2024-11-24 * Apple
+      Expenses:Personal:Electronics             $ 7.37
+      Liabilities:Credit Card:Northwoods
+
   2024-11-25 * Transfer
       Assets:Checking:Bank of America      $ 40,000.00
       Liabilities:RE:Cottage:HELOC
@@ -10881,6 +11034,32 @@
       Expenses:Personal:Entertainment          $ 29.03
       Assets:Checking:Bank of America
 
+  2024-11-29 * Spectrum
+      Expenses:RE:Cottage:Utilities            $ 64.95
+      Assets:Checking:Northwoods
+
+  2024-11-29 * Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 141.00
+      Assets:Checking:Northwoods
+
+  2024-11-29 * State Farm
+      Expenses:RE:Cottage:Insurance            $ 79.83
+      Assets:Checking:Northwoods
+
+  2024-11-29 * Chase
+      Liabilities:RE:Cottage:Mortgage         $ 112.19
+      Expenses:RE:Cottage:Interest            $ 173.54
+      Assets:Checking:Northwoods
+
+  2024-11-30 * Mariano's
+      Expenses:Food:Snacks                      $ 4.94
+      Expenses:Food:Snacks                     $ 10.09
+      Liabilities:Credit Card:Covantage
+
+  2024-11-30 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.54
+      Liabilities:Credit Card:Covantage
+
   2024-12-16 ! Closing
       Assets:RE:Condo                              1.0 CONDO @ $ 565,000.00
       Liabilities:RE:Condo:Mortgage      $ -536,750.00
@@ -10907,10 +11086,10 @@
       Expenses:RE:Condo:Escrow                $ 600.00
       Expenses:RE:Condo:Interest            $ 1,823.52
       Expenses:RE:Condo:Escrow                $ 150.00
-      Expenses:RE:Condo:Taxes               $ 7,736.16
+      Expenses:RE:Condo:Escrow              $ 7,736.16
       Expenses:RE:Condo:Sale                 $ -350.00
       Expenses:RE:Condo:Sale                  $ 750.00  ;; Attorney Fee
-      Expenses:RE:Condo:Taxes             $ -10,000.00
+      Expenses:RE:Condo:Escrow            $ -10,000.00
       Assets:Checking:Bank of America     $ -15,950.00
       Assets:Escrow                        $ -1,000.00
       Assets:Checking:Bank of America     $ -22,677.63
@@ -10918,17 +11097,18 @@
   2025-01-01 ! Visible
       Expenses:Personal:Communication          $ 30.00
       Liabilities:Credit Card:Park City
+
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 220,317.81  Expenses
-          $ 7,632.91    Food
-          $ 1,197.12    Gifts
+        $ 221,928.09  Expenses
+          $ 7,862.05    Food
+          $ 1,321.96    Gifts
          $ 15,150.65    Housing
-          $ 8,852.86    Personal
-         $ 44,110.16    RE
+          $ 9,538.09    Personal
+         $ 44,569.48    RE
         $ 137,105.05    Taxes
-          $ 5,007.16    Transportation
+          $ 5,118.91    Transportation
           $ 1,261.90    Travel
        $ -410,448.91  Income
            $ -600.00    CPS
@@ -10936,7 +11116,7 @@
            $ -139.50    SWAQ
        $ -393,089.52    Stripe
 --------------------
-       $ -190,131.10
+       $ -188,520.82
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -10968,17 +11148,17 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 50,757.55
+         $ 50,186.04
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
        5,889.0 STRIP
        605.686 VTIAX
        798.559 VTSAX  Assets
-         $ 49,757.55    Checking
+         $ 49,186.04    Checking
          $ 46,343.48      Bank of America
             $ 545.64      Covantage
-            $ 950.00      Northwoods
+            $ 378.49      Northwoods
           $ 1,918.43      Park City
           $ 1,000.00    Escrow
        498.248 FSPSX
@@ -10993,13 +11173,16 @@
        798.559 VTSAX      IRA
        5,889.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-       $ -100,330.39  Liabilities
-           $ -830.39    Credit Card:Apple
-        $ -99,500.00    RE:Cottage
+       $ -101,369.16  Liabilities
+         $ -1,981.35    Credit Card
+         $ -1,939.63      Apple
+            $ -34.35      Covantage
+             $ -7.37      Northwoods
+        $ -99,387.81    RE:Cottage
         $ -40,000.00      HELOC
-        $ -59,500.00      Mortgage
+        $ -59,387.81      Mortgage
 --------------------
-        $ -49,572.84
+        $ -51,183.12
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
@@ -11015,11 +11198,11 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 987,235.98  Assets
-         $ 49,757.55    Checking
+        $ 986,664.47  Assets
+         $ 49,186.04    Checking
          $ 46,343.48      Bank of America
             $ 545.64      Covantage
-            $ 950.00      Northwoods
+            $ 378.49      Northwoods
           $ 1,918.43      Park City
           $ 1,000.00    Escrow
         $ 486,478.43    Investments
@@ -11028,13 +11211,16 @@
         $ 135,751.18      IRA
         $ 162,006.39      RSU
         $ 450,000.00    RE:Cottage
-       $ -100,330.39  Liabilities
-           $ -830.39    Credit Card:Apple
-        $ -99,500.00    RE:Cottage
+       $ -101,369.16  Liabilities
+         $ -1,981.35    Credit Card
+         $ -1,939.63      Apple
+            $ -34.35      Covantage
+             $ -7.37      Northwoods
+        $ -99,387.81    RE:Cottage
         $ -40,000.00      HELOC
-        $ -59,500.00      Mortgage
+        $ -59,387.81      Mortgage
 --------------------
-        $ 886,905.59
+        $ 885,295.31
 #+end_example
 ** Spending
 *** Savings Rate
@@ -11080,12 +11266,12 @@
 #+end_src
 #+results:
 : .
-: 	                     $410,448.91 - $220,317.81
-: 	Gross Savings Rate: --------------------------- = 46.32%
+: 	                     $410,448.91 - $221,928.09
+: 	Gross Savings Rate: --------------------------- = 45.93%
 : 	                             $410,448.91
 :
-: 	                     $273,343.86 - $83,212.76
-: 	  Net Savings Rate: -------------------------- = 69.56%
+: 	                     $273,343.86 - $84,823.04
+: 	  Net Savings Rate: -------------------------- = 68.97%
 : 	                             $273,343.86
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -11093,43 +11279,6 @@
   <<transactions>>
 #+end_src
 #+results:
-#+begin_example
-         $ 23,447.71  Expenses
-            $ 497.05    Food
-             $ 15.72      Drinks
-            $ 133.36      Fast Food
-            $ 115.61      Groceries
-             $ 44.83      Restaurants
-            $ 187.53      Snacks
-            $ 596.27    Gifts
-          $ 2,705.64    Housing
-              $ 8.64      Insurance
-            $ 960.00      Misc
-          $ 1,500.00      Rent
-            $ 237.00      Utilities
-            $ 338.65    Personal
-           $ -497.60      Clothes
-             $ 30.00      Communication
-             $ 21.09      Electronics
-             $ 58.06      Entertainment
-             $ 12.00      Fees
-            $ 641.71      Health
-             $ 55.39      Household
-             $ 18.00      Learning
-            $ 275.82    RE:Cottage
-             $ 79.83      Insurance
-            $ 195.99      Utilities
-         $ 19,124.93    Taxes
-         $ 14,241.27      Federal
-          $ 2,609.11      Illinois
-          $ 1,572.13      Medicare
-            $ 702.42      State
-            $ -90.65    Transportation
-           $ -205.22      Biking
-            $ 114.57      Insurance
---------------------
-         $ 23,447.71
-#+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
   <<opening_balance>>
@@ -11137,44 +11286,43 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 8,245.73  Expenses
-            $ 664.05    Food
-             $ 25.79      Drinks
-             $ 15.42      Fast Foo
-            $ 208.13      Fast Food
-             $ 41.88      Groceries
-            $ 372.83      Snacks
-          $ 1,669.10    Housing
-             $ 11.00      Insurance
-          $ 1,533.00      Rent
-            $ 125.10      Utilities
-            $ 557.88    Personal
+         $ 25,057.99  Expenses
+            $ 726.19    Food
+             $ 15.72      Drinks
+            $ 214.53      Fast Food
+            $ 153.43      Groceries
+             $ 44.83      Restaurants
+            $ 297.68      Snacks
+            $ 721.11    Gifts
+          $ 2,705.64    Housing
+              $ 8.64      Insurance
+            $ 960.00      Misc
+          $ 1,500.00      Rent
+            $ 237.00      Utilities
+          $ 1,023.88    Personal
              $ 30.00      Communication
-             $ 59.01      Electronics
-              $ 3.00      Fees
-            $ 208.63      Fitness
-            $ 136.57      Health
-             $ 63.07      Household
-             $ 57.60      Hygeine
-          $ 1,566.60    RE:Cottage
-             $ 79.83      Insurance
-            $ 504.82      Interest
-            $ 627.43      Repairs
-            $ 354.52      Utilities
-          $ 3,636.78    Taxes
-          $ 2,600.90      Federal
-            $ 353.04      Illinois
-            $ 333.47      Medicare
-            $ 349.37      State
-            $ 151.32    Transportation
-           $ -134.03      Biking
-            $ 129.06      Driving
-            $ 109.06        Gas
-             $ 20.00        Tolls
+            $ 113.42      Electronics
+             $ 58.06      Entertainment
+             $ 12.00      Fees
+            $ 737.01      Health
+             $ 55.39      Household
+             $ 18.00      Learning
+            $ 735.14    RE:Cottage
+            $ 159.66      Insurance
+            $ 173.54      Interest
+            $ 401.94      Utilities
+         $ 19,124.93    Taxes
+         $ 14,241.27      Federal
+          $ 2,609.11      Illinois
+          $ 1,572.13      Medicare
+            $ 702.42      State
+             $ 21.10    Transportation
+           $ -144.77      Biking
+             $ 26.00      Driving:Gas
             $ 114.57      Insurance
-             $ 41.72      Parking
+             $ 25.30      Ride Share
 --------------------
-          $ 8,245.73
+         $ 25,057.99
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not ^Expenses:Taxes --cleared -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -11202,5 +11350,5 @@ July 2024            $ 9,835.54
 August 2024          $ 3,276.77
 September 2024       $ 5,474.43
 October 2024         $ 4,608.95
-November 2024        $ 4,322.78
+November 2024        $ 5,933.06
 #+end_example
