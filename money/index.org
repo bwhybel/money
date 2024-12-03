@@ -11148,9 +11148,45 @@
       Liabilities:Credit Card:Apple         $ 1,929.96
       Assets:Checking:Bank of America
 
+  2024-12-03 * Wendy's
+      Expenses:Food:Fast Food                   $ 7.56
+      Liabilities:Credit Card:Covantage
+
+  2024-12-03 * Dollar Tree
+      Expenses:Food:Snacks                      $ 6.42
+      Liabilities:Credit Card:Covantage
+
+  2024-12-03 * McDonald's
+      Expenses:Food:Fast Food                   $ 2.13
+      Liabilities:Credit Card:Covantage
+
+  2024-12-03 * Racetrac
+      Expenses:Transportation:Driving:Gas      $ 19.93
+      Liabilities:Credit Card:Covantage
+
+  2024-12-03 * Airbnb
+      Expenses:Travel:Lodging                  $ 61.64
+      Liabilities:Credit Card:Covantage
+
+  2024-12-03 * Truck Plaza
+      Expenses:Transportation:Driving:Gas      $ 39.18
+      Liabilities:Credit Card:Covantage
+
+  2024-12-03 * Village Beach Market
+      Expenses:Food:Groceries                   $ 9.09
+      Liabilities:Credit Card:Covantage
+
   2024-12-04 * Transfer
       Liabilities:Credit Card:Northwoods        $ 7.37
       Assets:Checking:Northwoods
+
+  2024-12-04 * CVS
+      Expenses:Food:Snacks                      $ 5.24
+      Liabilities:Credit Card:Covantage
+
+  2024-12-04 * Craigslist
+      Expenses:RE:Condo:Sale                    $ 5.00
+      Liabilities:Credit Card:Covantage
 
   2024-12-13 * Closing
       Assets:RE:Condo                              1.0 CONDO @ $ 565,000.00
@@ -11192,22 +11228,22 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 236,722.13  Expenses
-          $ 8,018.16    Food
+        $ 236,878.32  Expenses
+          $ 8,048.60    Food
           $ 1,917.28    Gifts
          $ 16,888.18    Housing
           $ 9,821.44    Personal
-         $ 56,397.11    RE
+         $ 56,402.11    RE
         $ 137,105.05    Taxes
-          $ 5,313.01    Transportation
-          $ 1,261.90    Travel
+          $ 5,372.12    Transportation
+          $ 1,323.54    Travel
        $ -410,448.91  Income
            $ -600.00    CPS
         $ -16,619.89    RE
            $ -139.50    SWAQ
        $ -393,089.52    Stripe
 --------------------
-       $ -173,726.78
+       $ -173,570.59
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -11267,15 +11303,15 @@
            1.0 COTTA    RE
            1.0 CONDO      Condo
            1.0 COTTA      Cottage
-       $ -636,340.69  Liabilities
-           $ -202.88    Credit Card:Covantage
+       $ -636,496.88  Liabilities
+           $ -359.07    Credit Card:Covantage
        $ -636,137.81    RE
        $ -536,750.00      Condo:Mortgage
         $ -99,387.81      Cottage
         $ -40,000.00        HELOC
         $ -59,387.81        Mortgage
 --------------------
-       $ -630,925.91
+       $ -631,082.10
            1.0 CONDO
            1.0 COTTA
        498.248 FSPSX
@@ -11306,15 +11342,15 @@
       $ 1,050,000.00    RE
         $ 600,000.00      Condo
         $ 450,000.00      Cottage
-       $ -636,340.69  Liabilities
-           $ -202.88    Credit Card:Covantage
+       $ -636,496.88  Liabilities
+           $ -359.07    Credit Card:Covantage
        $ -636,137.81    RE
        $ -536,750.00      Condo:Mortgage
         $ -99,387.81      Cottage
         $ -40,000.00        HELOC
         $ -59,387.81        Mortgage
 --------------------
-        $ 907,602.87
+        $ 907,446.68
 #+end_example
 ** Spending
 *** Savings Rate
@@ -11360,12 +11396,12 @@
 #+end_src
 #+results:
 : .
-: 	                     $410,448.91 - $236,722.13
-: 	Gross Savings Rate: --------------------------- = 42.33%
+: 	                     $410,448.91 - $236,878.32
+: 	Gross Savings Rate: --------------------------- = 42.29%
 : 	                             $410,448.91
 :
-: 	                     $273,343.86 - $99,617.08
-: 	  Net Savings Rate: -------------------------- = 63.56%
+: 	                     $273,343.86 - $99,773.27
+: 	  Net Savings Rate: -------------------------- = 63.50%
 : 	                             $273,343.86
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -11374,11 +11410,11 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 14,015.81  Expenses
-            $ 139.97    Food
-             $ 14.15      Fast Food
-             $ 90.83      Groceries
-             $ 34.99      Snacks
+         $ 14,172.00  Expenses
+            $ 170.41    Food
+             $ 23.84      Fast Food
+             $ 99.92      Groceries
+             $ 46.65      Snacks
           $ 1,737.53    Housing
           $ 1,500.00      Rent
             $ 237.53      Utilities
@@ -11386,17 +11422,18 @@
              $ 30.00      Communication
              $ 41.58      Electronics
              $ 45.00      Housing
-         $ 11,827.63    RE
-         $ 11,377.63      Condo
+         $ 11,832.63    RE
+         $ 11,382.63      Condo
          $ -1,513.84        Escrow
           $ 1,823.52        Interest
-         $ 11,067.95        Sale
+         $ 11,072.95        Sale
             $ 450.00      Cottage:Lakefront
-            $ 194.10    Transportation
-             $ 70.89      Driving:Gas
+            $ 253.21    Transportation
+            $ 130.00      Driving:Gas
             $ 123.21      Insurance
+             $ 61.64    Travel:Lodging
 --------------------
-         $ 14,015.81
+         $ 14,172.00
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -11470,5 +11507,5 @@ August 2024          $ 3,276.77
 September 2024       $ 5,474.43
 October 2024         $ 4,608.95
 November 2024        $ 6,711.29
-December 2024        $ 14,015.81
+December 2024        $ 14,172.00
 #+end_example
