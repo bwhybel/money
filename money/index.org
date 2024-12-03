@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 12/02/2024 00:00:00 VTSAX $145.8900
-  P 12/02/2024 00:00:00 VTIAX $33.0800
-  P 12/02/2024 00:00:00 FSPSX $50.3500
-  P 12/02/2024 00:00:00 FXAIX $209.9100
-  P 12/02/2024 00:00:00 CONDO $600,000.00
-  P 12/02/2024 00:00:00 COTTA $450,000.00
-  P 12/02/2024 00:00:00 STRIP $27.51
+  P 12/03/2024 00:00:00 VTSAX $145.8900
+  P 12/03/2024 00:00:00 VTIAX $33.0800
+  P 12/03/2024 00:00:00 FSPSX $50.3500
+  P 12/03/2024 00:00:00 FXAIX $209.9100
+  P 12/03/2024 00:00:00 CONDO $600,000.00
+  P 12/03/2024 00:00:00 COTTA $450,000.00
+  P 12/03/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -11090,7 +11090,60 @@
       Expenses:Housing:Rent                 $ 1,500.00
       Assets:Checking:Park City
 
-  2024-12-16 ! Closing
+  2024-12-02 * Publix
+      Expenses:Food:Groceries                  $ 90.83
+      Liabilities:Credit Card:Covantage
+
+  2024-12-02 * Gas Station
+      Expenses:Food:Snacks                      $ 2.50
+      Expenses:Food:Snacks                      $ 5.94
+      Expenses:Food:Snacks                      $ 5.74
+      Liabilities:Credit Card:Covantage
+
+  2024-12-02 * McDonald's
+      Expenses:Food:Snacks                     $ 10.05
+      Expenses:Food:Snacks                      $ 8.21
+      Liabilities:Credit Card:Covantage
+
+  2024-12-02 * Gas Station
+      Expenses:Transportation:Driving:Gas      $ 22.21
+      Expenses:Transportation:Driving:Gas      $ 23.05
+      Liabilities:Credit Card:Covantage
+
+  2024-12-02 * ComEd
+      Expenses:Housing:Utilities               $ 87.53
+      Assets:Checking:Park City
+
+  2024-12-02 * Xfinity
+      Expenses:Housing:Utilities               $ 70.00
+      Assets:Checking:Park City
+
+  2024-12-02 * People's Gas
+      Expenses:Housing:Utilities               $ 80.00
+      Assets:Checking:Park City
+
+  2024-12-02 * State Farm
+      Expenses:Transportation:Insurance       $ 123.21
+      Assets:Checking:Park City
+
+  2024-12-02 * Visible
+      Expenses:Personal:Communication          $ 30.00
+      Assets:Checking:Park City
+
+  2024-12-03 * Dan's Docks
+      Expenses:RE:Cottage:Lakefront           $ 450.00
+      Assets:Checking:Covantage
+
+  2024-12-03 * GasBuddy
+      Expenses:Transportation:Driving:Gas      $ 39.05
+      Expenses:Transportation:Driving:Gas     $ -13.42
+      Assets:Checking:Covantage
+
+  2024-12-04 * Transfer
+      Liabilities:Credit Card:Northwoods        $ 7.37
+      Assets:Checking:Northwoods
+
+  2024-12-13 ! Closing
       Assets:RE:Condo                              1.0 CONDO @ $ 565,000.00
       Liabilities:RE:Condo:Mortgage      $ -536,750.00
       Expenses:RE:Condo:Sale                  $ 150.00  ;; Application Fee
@@ -11130,14 +11183,14 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 224,268.02  Expenses
-          $ 7,894.89    Food
+        $ 225,302.92  Expenses
+          $ 8,018.16    Food
           $ 1,917.28    Gifts
-         $ 16,650.65    Housing
-          $ 9,749.86    Personal
-         $ 44,569.48    RE
+         $ 16,888.18    Housing
+          $ 9,779.86    Personal
+         $ 45,019.48    RE
         $ 137,105.05    Taxes
-          $ 5,118.91    Transportation
+          $ 5,313.01    Transportation
           $ 1,261.90    Travel
        $ -410,448.91  Income
            $ -600.00    CPS
@@ -11145,7 +11198,7 @@
            $ -139.50    SWAQ
        $ -393,089.52    Stripe
 --------------------
-       $ -186,180.89
+       $ -185,145.99
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -11177,18 +11230,18 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 47,846.11
+         $ 46,972.37
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
        5,889.0 STRIP
        605.686 VTIAX
        798.559 VTSAX  Assets
-         $ 46,846.11    Checking
+         $ 45,972.37    Checking
          $ 45,503.55      Bank of America
-            $ 545.64      Covantage
-            $ 378.49      Northwoods
-            $ 418.43      Park City
+             $ 70.01      Covantage
+            $ 371.12      Northwoods
+             $ 27.69      Park City
           $ 1,000.00    Escrow
        498.248 FSPSX
        785.564 FXAIX
@@ -11202,16 +11255,15 @@
        798.559 VTSAX      IRA
        5,889.0 STRIP      RSU
            1.0 COTTA    RE:Cottage
-       $ -101,369.16  Liabilities
-         $ -1,981.35    Credit Card
+       $ -101,530.32  Liabilities
+         $ -2,142.51    Credit Card
          $ -1,939.63      Apple
-            $ -34.35      Covantage
-             $ -7.37      Northwoods
+           $ -202.88      Covantage
         $ -99,387.81    RE:Cottage
         $ -40,000.00      HELOC
         $ -59,387.81      Mortgage
 --------------------
-        $ -53,523.05
+        $ -54,557.95
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
@@ -11227,12 +11279,12 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 986,374.89  Assets
-         $ 46,846.11    Checking
+        $ 985,501.15  Assets
+         $ 45,972.37    Checking
          $ 45,503.55      Bank of America
-            $ 545.64      Covantage
-            $ 378.49      Northwoods
-            $ 418.43      Park City
+             $ 70.01      Covantage
+            $ 371.12      Northwoods
+             $ 27.69      Park City
           $ 1,000.00    Escrow
         $ 488,528.78    Investments
         $ 164,423.16      401K
@@ -11240,16 +11292,15 @@
         $ 136,537.87      IRA
         $ 162,006.39      RSU
         $ 450,000.00    RE:Cottage
-       $ -101,369.16  Liabilities
-         $ -1,981.35    Credit Card
+       $ -101,530.32  Liabilities
+         $ -2,142.51    Credit Card
          $ -1,939.63      Apple
-            $ -34.35      Covantage
-             $ -7.37      Northwoods
+           $ -202.88      Covantage
         $ -99,387.81    RE:Cottage
         $ -40,000.00      HELOC
         $ -59,387.81      Mortgage
 --------------------
-        $ 885,005.73
+        $ 883,970.83
 #+end_example
 ** Spending
 *** Savings Rate
@@ -11295,12 +11346,12 @@
 #+end_src
 #+results:
 : .
-: 	                     $410,448.91 - $224,268.02
-: 	Gross Savings Rate: --------------------------- = 45.36%
+: 	                     $410,448.91 - $225,302.92
+: 	Gross Savings Rate: --------------------------- = 45.11%
 : 	                             $410,448.91
 :
-: 	                     $273,343.86 - $87,162.97
-: 	  Net Savings Rate: -------------------------- = 68.11%
+: 	                     $273,343.86 - $88,197.87
+: 	  Net Savings Rate: -------------------------- = 67.73%
 : 	                             $273,343.86
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -11308,14 +11359,25 @@
   <<transactions>>
 #+end_src
 #+results:
-:           $ 1,561.70  Expenses
-:              $ 16.70    Food
-:              $ 14.15      Fast Food
-:               $ 2.55      Snacks
-:           $ 1,500.00    Housing:Rent
-:              $ 45.00    Personal:Housing
-: --------------------
-:           $ 1,561.70
+#+begin_example
+          $ 2,596.60  Expenses
+            $ 139.97    Food
+             $ 14.15      Fast Food
+             $ 90.83      Groceries
+             $ 34.99      Snacks
+          $ 1,737.53    Housing
+          $ 1,500.00      Rent
+            $ 237.53      Utilities
+             $ 75.00    Personal
+             $ 30.00      Communication
+             $ 45.00      Housing
+            $ 450.00    RE:Cottage:Lakefront
+            $ 194.10    Transportation
+             $ 70.89      Driving:Gas
+            $ 123.21      Insurance
+--------------------
+          $ 2,596.60
+#+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
   <<opening_balance>>
@@ -11388,5 +11450,5 @@ August 2024          $ 3,276.77
 September 2024       $ 5,474.43
 October 2024         $ 4,608.95
 November 2024        $ 6,711.29
-December 2024        $ 1,561.70
+December 2024        $ 2,596.60
 #+end_example
