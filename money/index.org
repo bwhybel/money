@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 12/03/2024 00:00:00 VTSAX $145.8900
-  P 12/03/2024 00:00:00 VTIAX $33.0800
-  P 12/03/2024 00:00:00 FSPSX $50.3500
-  P 12/03/2024 00:00:00 FXAIX $209.9100
-  P 12/03/2024 00:00:00 CONDO $600,000.00
-  P 12/03/2024 00:00:00 COTTA $450,000.00
-  P 12/03/2024 00:00:00 STRIP $27.51
+  P 12/04/2024 00:00:00 VTSAX $146.2100
+  P 12/04/2024 00:00:00 VTIAX $33.2000
+  P 12/04/2024 00:00:00 FSPSX $50.5100
+  P 12/04/2024 00:00:00 FXAIX $210.4500
+  P 12/04/2024 00:00:00 CONDO $600,000.00
+  P 12/04/2024 00:00:00 COTTA $450,000.00
+  P 12/04/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -11188,7 +11188,48 @@
       Expenses:RE:Condo:Sale                    $ 5.00
       Liabilities:Credit Card:Covantage
 
-  2024-12-13 * Closing
+  2024-12-04 * Walmart
+      Expenses:Personal:Household              $ 12.36
+      Liabilities:Credit Card:Covantage
+
+  2024-12-04 * Indian River
+      Expenses:Personal:Health                 $ 18.73
+      Liabilities:Credit Card:Covantage
+
+  2024-12-04 * Chick-fil-a
+      Expenses:Food:Snacks                      $ 8.00
+      Liabilities:Credit Card:Covantage
+
+  2024-12-04 * CVS
+      Expenses:Food:Snacks                      $ 6.22
+      Liabilities:Credit Card:Covantage
+
+  2024-12-04 * Interest
+      Assets:Checking:Covantage                 $ 0.02
+      Income:Extra
+
+  2024-12-04 * Transfer
+      Liabilities:Credit Card:Covantage        $ 70.03
+      Assets:Checking:Covantage
+
+  2024-12-04 * Transfer
+      Liabilities:Credit Card:Covantage       $ 334.35
+      Assets:Checking:Bank of America
+
+  2024-12-06 ! Stripe
+      Income:Stripe:Paycheck               $ -7,058.08
+      Income:Stripe:HSA                      $ -100.00
+      Expenses:Transportation:Biking         $ -250.00
+      Income:Stripe:Wireless                  $ -50.00
+      Assets:Investments:HSA                  $ 345.00
+      Assets:Checking:Park City               $ 950.00
+      Assets:Checking:Northwoods              $ 300.00
+      Assets:Checking:Bank of America       $ 4,033.10
+      Expenses:Taxes:Medicare                 $ 167.60
+      Expenses:Taxes:Federal                $ 1,309.34
+      Expenses:Taxes:State                    $ 353.04
+
+  2024-12-13 ! Closing
       Assets:RE:Condo                              1.0 CONDO @ $ 565,000.00
       Liabilities:RE:Condo:Mortgage      $ -536,750.00
       Expenses:RE:Condo:Sale                  $ 150.00  ;; Application Fee
@@ -11222,18 +11263,20 @@
       Assets:Escrow                        $ -1,000.00
       Assets:Checking:Bank of America     $ -22,677.63
 
-  2025-01-01 ! Visible
-      Expenses:Personal:Communication          $ 30.00
-      Liabilities:Credit Card:Park City
+  2023-12-13 ! CPS
+      Income:CPS:Paycheck                  $ -6,000.00
+      Expenses:Taxes:Federal                $ 1,728.08
+      Assets:Checking:Covantage             $ 4,271.92
+
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 236,878.32  Expenses
-          $ 8,048.60    Food
+        $ 225,546.00  Expenses
+          $ 8,062.82    Food
           $ 1,917.28    Gifts
          $ 16,888.18    Housing
-          $ 9,821.44    Personal
-         $ 56,402.11    RE
+          $ 9,852.53    Personal
+         $ 45,024.48    RE
         $ 137,105.05    Taxes
           $ 5,372.12    Transportation
           $ 1,323.54    Travel
@@ -11243,7 +11286,7 @@
            $ -139.50    SWAQ
        $ -393,089.52    Stripe
 --------------------
-       $ -173,570.59
+       $ -184,902.91
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -11275,19 +11318,18 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 5,414.78
-           1.0 CONDO
+         $ 44,638.05
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
        5,889.0 STRIP
        605.686 VTIAX
        798.559 VTSAX  Assets
-          $ 5,414.78    Checking
-          $ 4,945.96      Bank of America
-             $ 70.01      Covantage
+         $ 43,638.05    Checking
+         $ 43,239.24      Bank of America
             $ 371.12      Northwoods
              $ 27.69      Park City
+          $ 1,000.00    Escrow
        498.248 FSPSX
        785.564 FXAIX
        5,889.0 STRIP
@@ -11299,20 +11341,12 @@
        605.686 VTIAX
        798.559 VTSAX      IRA
        5,889.0 STRIP      RSU
-           1.0 CONDO
-           1.0 COTTA    RE
-           1.0 CONDO      Condo
-           1.0 COTTA      Cottage
-       $ -636,496.88  Liabilities
-           $ -359.07    Credit Card:Covantage
-       $ -636,137.81    RE
-       $ -536,750.00      Condo:Mortgage
-        $ -99,387.81      Cottage
-        $ -40,000.00        HELOC
-        $ -59,387.81        Mortgage
+           1.0 COTTA    RE:Cottage
+        $ -99,387.81  Liabilities:RE:Cottage
+        $ -40,000.00    HELOC
+        $ -59,387.81    Mortgage
 --------------------
-       $ -631,082.10
-           1.0 CONDO
+        $ -54,749.76
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
@@ -11328,29 +11362,23 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,543,943.56  Assets
-          $ 5,414.78    Checking
-          $ 4,945.96      Bank of America
-             $ 70.01      Covantage
+        $ 983,998.98  Assets
+         $ 43,638.05    Checking
+         $ 43,239.24      Bank of America
             $ 371.12      Northwoods
              $ 27.69      Park City
-        $ 488,528.78    Investments
-        $ 164,423.16      401K
-         $ 25,561.37      HSA
-        $ 136,537.87      IRA
+          $ 1,000.00    Escrow
+        $ 489,360.93    Investments
+        $ 164,861.32      401K
+         $ 25,627.13      HSA
+        $ 136,866.09      IRA
         $ 162,006.39      RSU
-      $ 1,050,000.00    RE
-        $ 600,000.00      Condo
-        $ 450,000.00      Cottage
-       $ -636,496.88  Liabilities
-           $ -359.07    Credit Card:Covantage
-       $ -636,137.81    RE
-       $ -536,750.00      Condo:Mortgage
-        $ -99,387.81      Cottage
-        $ -40,000.00        HELOC
-        $ -59,387.81        Mortgage
+        $ 450,000.00    RE:Cottage
+        $ -99,387.81  Liabilities:RE:Cottage
+        $ -40,000.00    HELOC
+        $ -59,387.81    Mortgage
 --------------------
-        $ 907,446.68
+        $ 884,611.17
 #+end_example
 ** Spending
 *** Savings Rate
@@ -11396,12 +11424,12 @@
 #+end_src
 #+results:
 : .
-: 	                     $410,448.91 - $236,878.32
-: 	Gross Savings Rate: --------------------------- = 42.29%
+: 	                     $410,448.91 - $225,546.00
+: 	Gross Savings Rate: --------------------------- = 45.05%
 : 	                             $410,448.91
 :
-: 	                     $273,343.86 - $99,773.27
-: 	  Net Savings Rate: -------------------------- = 63.50%
+: 	                     $273,343.86 - $88,440.95
+: 	  Net Savings Rate: -------------------------- = 67.64%
 : 	                             $273,343.86
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
@@ -11410,30 +11438,29 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 14,172.00  Expenses
-            $ 170.41    Food
+          $ 2,839.68  Expenses
+            $ 184.63    Food
              $ 23.84      Fast Food
              $ 99.92      Groceries
-             $ 46.65      Snacks
+             $ 60.87      Snacks
           $ 1,737.53    Housing
           $ 1,500.00      Rent
             $ 237.53      Utilities
-            $ 116.58    Personal
+            $ 147.67    Personal
              $ 30.00      Communication
              $ 41.58      Electronics
+             $ 18.73      Health
+             $ 12.36      Household
              $ 45.00      Housing
-         $ 11,832.63    RE
-         $ 11,382.63      Condo
-         $ -1,513.84        Escrow
-          $ 1,823.52        Interest
-         $ 11,072.95        Sale
+            $ 455.00    RE
+              $ 5.00      Condo:Sale
             $ 450.00      Cottage:Lakefront
             $ 253.21    Transportation
             $ 130.00      Driving:Gas
             $ 123.21      Insurance
              $ 61.64    Travel:Lodging
 --------------------
-         $ 14,172.00
+          $ 2,839.68
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -11507,5 +11534,5 @@ August 2024          $ 3,276.77
 September 2024       $ 5,474.43
 October 2024         $ 4,608.95
 November 2024        $ 6,711.29
-December 2024        $ 14,172.00
+December 2024        $ 2,839.68
 #+end_example
