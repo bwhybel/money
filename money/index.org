@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 12/04/2024 00:00:00 VTSAX $146.2100
-  P 12/04/2024 00:00:00 VTIAX $33.2000
-  P 12/04/2024 00:00:00 FSPSX $50.5100
-  P 12/04/2024 00:00:00 FXAIX $210.4500
-  P 12/04/2024 00:00:00 CONDO $600,000.00
-  P 12/04/2024 00:00:00 COTTA $450,000.00
-  P 12/04/2024 00:00:00 STRIP $27.51
+  P 12/05/2024 00:00:00 VTSAX $146.2300
+  P 12/05/2024 00:00:00 VTIAX $33.3700
+  P 12/05/2024 00:00:00 FSPSX $50.8600
+  P 12/05/2024 00:00:00 FXAIX $210.5500
+  P 12/05/2024 00:00:00 CONDO $600,000.00
+  P 12/05/2024 00:00:00 COTTA $450,000.00
+  P 12/05/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -11214,6 +11214,16 @@
 
   2024-12-04 * Transfer
       Liabilities:Credit Card:Covantage       $ 334.35
+      Assets:Checking:Covantage                $ 10.00
+      Assets:Checking:Bank of America
+
+  2024-12-04 * CVS
+      Expenses:Food:Snacks                      $ 2.13
+      Expenses:Food:Snacks                      $ 6.31
+      Assets:Checking:Bank of America
+
+  2024-12-04 * Dollar Tree
+      Expenses:Food:Snacks                      $ 8.18
       Assets:Checking:Bank of America
 
   2024-12-06 ! Stripe
@@ -11228,6 +11238,11 @@
       Expenses:Taxes:Medicare                 $ 167.60
       Expenses:Taxes:Federal                $ 1,309.34
       Expenses:Taxes:State                    $ 353.04
+
+  2024-12-13 ! CPS
+      Income:CPS:Paycheck                  $ -6,000.00
+      Expenses:Taxes:Federal                $ 1,728.08
+      Assets:Checking:Covantage             $ 4,271.92
 
   2024-12-13 ! Closing
       Assets:RE:Condo                              1.0 CONDO @ $ 565,000.00
@@ -11263,16 +11278,11 @@
       Assets:Escrow                        $ -1,000.00
       Assets:Checking:Bank of America     $ -22,677.63
 
-  2023-12-13 ! CPS
-      Income:CPS:Paycheck                  $ -6,000.00
-      Expenses:Taxes:Federal                $ 1,728.08
-      Assets:Checking:Covantage             $ 4,271.92
-
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 225,546.00  Expenses
-          $ 8,062.82    Food
+        $ 225,562.62  Expenses
+          $ 8,079.44    Food
           $ 1,917.28    Gifts
          $ 16,888.18    Housing
           $ 9,852.53    Personal
@@ -11286,7 +11296,7 @@
            $ -139.50    SWAQ
        $ -393,089.52    Stripe
 --------------------
-       $ -184,902.91
+       $ -184,886.29
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -11318,15 +11328,16 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 44,638.05
+         $ 44,621.43
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
        5,889.0 STRIP
        605.686 VTIAX
        798.559 VTSAX  Assets
-         $ 43,638.05    Checking
-         $ 43,239.24      Bank of America
+         $ 43,621.43    Checking
+         $ 43,212.62      Bank of America
+             $ 10.00      Covantage
             $ 371.12      Northwoods
              $ 27.69      Park City
           $ 1,000.00    Escrow
@@ -11346,7 +11357,7 @@
         $ -40,000.00    HELOC
         $ -59,387.81    Mortgage
 --------------------
-        $ -54,749.76
+        $ -54,766.38
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
@@ -11362,23 +11373,24 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 983,998.98  Assets
-         $ 43,638.05    Checking
-         $ 43,239.24      Bank of America
+        $ 984,354.24  Assets
+         $ 43,621.43    Checking
+         $ 43,212.62      Bank of America
+             $ 10.00      Covantage
             $ 371.12      Northwoods
              $ 27.69      Park City
           $ 1,000.00    Escrow
-        $ 489,360.93    Investments
-        $ 164,861.32      401K
-         $ 25,627.13      HSA
-        $ 136,866.09      IRA
+        $ 489,732.81    Investments
+        $ 165,102.09      401K
+         $ 25,639.31      HSA
+        $ 136,985.02      IRA
         $ 162,006.39      RSU
         $ 450,000.00    RE:Cottage
         $ -99,387.81  Liabilities:RE:Cottage
         $ -40,000.00    HELOC
         $ -59,387.81    Mortgage
 --------------------
-        $ 884,611.17
+        $ 884,966.43
 #+end_example
 ** Spending
 *** Savings Rate
@@ -11424,11 +11436,11 @@
 #+end_src
 #+results:
 : .
-: 	                     $410,448.91 - $225,546.00
-: 	Gross Savings Rate: --------------------------- = 45.05%
+: 	                     $410,448.91 - $225,562.62
+: 	Gross Savings Rate: --------------------------- = 45.04%
 : 	                             $410,448.91
 :
-: 	                     $273,343.86 - $88,440.95
+: 	                     $273,343.86 - $88,457.57
 : 	  Net Savings Rate: -------------------------- = 67.64%
 : 	                             $273,343.86
 *** This Month Spending
@@ -11438,11 +11450,11 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 2,839.68  Expenses
-            $ 184.63    Food
+          $ 2,856.30  Expenses
+            $ 201.25    Food
              $ 23.84      Fast Food
              $ 99.92      Groceries
-             $ 60.87      Snacks
+             $ 77.49      Snacks
           $ 1,737.53    Housing
           $ 1,500.00      Rent
             $ 237.53      Utilities
@@ -11460,7 +11472,7 @@
             $ 123.21      Insurance
              $ 61.64    Travel:Lodging
 --------------------
-          $ 2,839.68
+          $ 2,856.30
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -11534,5 +11546,5 @@ August 2024          $ 3,276.77
 September 2024       $ 5,474.43
 October 2024         $ 4,608.95
 November 2024        $ 6,711.29
-December 2024        $ 2,839.68
+December 2024        $ 2,856.30
 #+end_example
