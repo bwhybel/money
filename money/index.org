@@ -50,10 +50,10 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 12/06/2024 00:00:00 VTSAX $147.2300
-  P 12/06/2024 00:00:00 VTIAX $33.4000
-  P 12/06/2024 00:00:00 FSPSX $50.8600
-  P 12/06/2024 00:00:00 FXAIX $211.8300
+  P 12/06/2024 00:00:00 VTSAX $146.8000
+  P 12/06/2024 00:00:00 VTIAX $33.5400
+  P 12/06/2024 00:00:00 FSPSX $51.1500
+  P 12/06/2024 00:00:00 FXAIX $211.4500
   P 12/06/2024 00:00:00 CONDO $600,000.00
   P 12/06/2024 00:00:00 COTTA $450,000.00
   P 12/06/2024 00:00:00 STRIP $27.51
@@ -11268,6 +11268,10 @@
       Expenses:Personal:Learning               $ 14.88
       Assets:Checking:Bank of America
 
+  2024-12-06 * McDonald's  ;; The Last Fast Food Meal Who Ever Lived
+      Expenses:Food:Fast Food                  $ 10.57
+      Assets:Checking:Bank of America
+
   2024-12-13 ! CPS
       Income:CPS:Paycheck                  $ -6,000.00
       Expenses:Taxes:Federal                $ 1,728.08
@@ -11316,8 +11320,8 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 227,235.72  Expenses
-          $ 8,123.09    Food
+        $ 227,246.29  Expenses
+          $ 8,133.66    Food
           $ 1,917.28    Gifts
          $ 16,888.18    Housing
           $ 9,867.41    Personal
@@ -11331,7 +11335,7 @@
            $ -139.50    SWAQ
        $ -400,297.60    Stripe
 --------------------
-       $ -190,421.27
+       $ -190,410.70
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -11363,15 +11367,15 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 50,156.41
+         $ 50,145.84
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
        5,889.0 STRIP
        605.686 VTIAX
        798.559 VTSAX  Assets
-         $ 48,811.41    Checking
-         $ 47,152.60      Bank of America
+         $ 48,800.84    Checking
+         $ 47,142.03      Bank of America
              $ 10.00      Covantage
             $ 671.12      Northwoods
             $ 977.69      Park City
@@ -11394,7 +11398,7 @@
         $ -40,000.00    HELOC
         $ -59,387.81    Mortgage
 --------------------
-        $ -49,231.40
+        $ -49,241.97
            1.0 COTTA
        498.248 FSPSX
        785.564 FXAIX
@@ -11410,24 +11414,24 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-        $ 991,711.47  Assets
-         $ 48,811.41    Checking
-         $ 47,152.60      Bank of America
+        $ 991,288.29  Assets
+         $ 48,800.84    Checking
+         $ 47,142.03      Bank of America
              $ 10.00      Covantage
             $ 671.12      Northwoods
             $ 977.69      Park City
           $ 1,000.00    Escrow
-        $ 491,900.06    Investments
-        $ 165,951.74      401K
-         $ 26,140.17      HSA
-        $ 137,801.75      IRA
+        $ 491,487.45    Investments
+        $ 165,843.99      401K
+         $ 26,093.90      HSA
+        $ 137,543.17      IRA
         $ 162,006.39      RSU
         $ 450,000.00    RE:Cottage
         $ -99,387.81  Liabilities:RE:Cottage
         $ -40,000.00    HELOC
         $ -59,387.81    Mortgage
 --------------------
-        $ 892,323.66
+        $ 891,900.48
 #+end_example
 ** Spending
 *** Savings Rate
@@ -11473,11 +11477,11 @@
 #+end_src
 #+results:
 : .
-: 	                     $417,656.99 - $227,235.72
+: 	                     $417,656.99 - $227,246.29
 : 	Gross Savings Rate: --------------------------- = 45.59%
 : 	                             $417,656.99
 :
-: 	                     $278,721.96 - $88,300.69
+: 	                     $278,721.96 - $88,311.26
 : 	  Net Savings Rate: -------------------------- = 68.32%
 : 	                             $278,721.96
 *** This Month Spending
@@ -11487,9 +11491,9 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 4,529.40  Expenses
-            $ 244.90    Food
-             $ 43.04      Fast Food
+          $ 4,539.97  Expenses
+            $ 255.47    Food
+             $ 53.61      Fast Food
              $ 99.92      Groceries
             $ 101.94      Snacks
           $ 1,737.53    Housing
@@ -11515,7 +11519,7 @@
             $ 123.21      Insurance
              $ 61.64    Travel:Lodging
 --------------------
-          $ 4,529.40
+          $ 4,539.97
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -11589,5 +11593,5 @@ August 2024          $ 3,276.77
 September 2024       $ 5,474.43
 October 2024         $ 4,608.95
 November 2024        $ 6,711.29
-December 2024        $ 2,699.42
+December 2024        $ 2,709.99
 #+end_example
