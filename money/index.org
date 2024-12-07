@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 12/06/2024 00:00:00 VTSAX $146.8000
-  P 12/06/2024 00:00:00 VTIAX $33.5400
-  P 12/06/2024 00:00:00 FSPSX $51.1500
-  P 12/06/2024 00:00:00 FXAIX $211.4500
-  P 12/06/2024 00:00:00 CONDO $600,000.00
-  P 12/06/2024 00:00:00 COTTA $450,000.00
-  P 12/06/2024 00:00:00 STRIP $27.51
+  P 12/07/2024 00:00:00 VTSAX $146.8000
+  P 12/07/2024 00:00:00 VTIAX $33.5400
+  P 12/07/2024 00:00:00 FSPSX $51.1500
+  P 12/07/2024 00:00:00 FXAIX $211.4500
+  P 12/07/2024 00:00:00 CONDO $600,000.00
+  P 12/07/2024 00:00:00 COTTA $450,000.00
+  P 12/07/2024 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -10894,7 +10894,7 @@
       Assets:Checking:Bank of America
 
   2024-11-20 * Transfer
-      Assets:Escrow                         $ 1,000.00
+      Assets:RE:Condo:Escrow                $ 1,000.00
       Expenses:Personal:Fees                   $ 12.00
       Assets:Checking:Bank of America
 
@@ -11248,8 +11248,8 @@
       Expenses:Taxes:Federal                $ 1,309.34
       Expenses:Taxes:State                    $ 353.04
 
-  2024-12-06 ! Transfer
-      Assets:Escrow                        $ 15,950.00
+  2024-12-06 * Transfer
+      Assets:RE:Condo:Escrow               $ 15,950.00
       Assets:Checking:Bank of America
 
   2024-12-06 * Dollar Tree
@@ -11277,6 +11277,10 @@
       Expenses:Taxes:Federal                $ 1,728.08
       Assets:Checking:Covantage             $ 4,271.92
 
+  2024-12-13 ! State Farm
+      Expenses:RE:Condo:Insurance           $ 1,120.00
+      Assets:Checking:Bank of America
+
   2024-12-13 ! Closing
       Assets:RE:Condo                              1.0 CONDO @ $ 565,000.00
       Liabilities:RE:Condo:Mortgage      $ -536,750.00
@@ -11292,23 +11296,23 @@
       Expenses:RE:Condo:Sale                   $ 35.00  ;; Courier Fee
       Expenses:RE:Condo:Sale                   $ 50.00  ;; Electronic Document Delivery
       Expenses:RE:Condo:Sale                   $ 50.00  ;; ILAPLD
-      Expenses:RE:Condo:Sale                  $ 740.00  ;; Lender's Insurance
-      Expenses:RE:Condo:Sale                  $ 575.00  ;; Lender's Title
+      Expenses:RE:Condo:Sale                  $ 555.00  ;; Lender's Endorsements
+      Expenses:RE:Condo:Sale                  $ 575.00  ;; Lender's Title Insurance
       Expenses:RE:Condo:Sale                   $ 25.00  ;; Recording Service Fee
       Expenses:RE:Condo:Sale                $ 2,150.00  ;; Settlement Fee
       Expenses:RE:Condo:Sale                    $ 3.00  ;; State of IL Policy Fee
+      Expenses:RE:Condo:Sale                  $ 150.00  ;; Title Update Fee
       Expenses:RE:Condo:Sale                   $ 50.00  ;; Wire Transfer Fee
       Expenses:RE:Condo:Sale                  $ 214.00  ;; Recording Fees
-      Expenses:RE:Condo:Sale                $ 4,288.00  ;; Taxes
-      Expenses:RE:Condo:Escrow                $ 600.00
-      Expenses:RE:Condo:Interest            $ 1,823.52
-      Expenses:RE:Condo:Escrow                $ 150.00
-      Expenses:RE:Condo:Escrow              $ 7,736.16
-      Expenses:RE:Condo:Sale                 $ -350.00
+      Expenses:RE:Condo:Taxes               $ 4,237.50  ;; Taxes
       Expenses:RE:Condo:Sale                  $ 750.00  ;; Attorney Fee
-      Expenses:RE:Condo:Escrow            $ -10,000.00
-      Assets:Escrow                       $ -16,950.00
-      Assets:Checking:Bank of America     $ -22,677.63
+      Expenses:RE:Condo:Interest            $ 1,990.82  ;; Prepaid Interest
+      Assets:RE:Condo:Escrow                  $ 417.99  ;; Escrow Insurance
+      Assets:RE:Condo:Escrow                $ 7,736.16  ;; Escrow Taxes
+      Expenses:RE:Condo:Sale                 $ -975.31
+      Expenses:RE:Condo:Taxes             $ -10,000.00
+      Assets:RE:Condo:Escrow              $ -16,950.00
+      Assets:Checking:Bank of America
 
   2024-12-20 ! Stripe
       Assets:Checking:Northwoods              $ 300.00
@@ -11374,12 +11378,11 @@
        5,889.0 STRIP
        605.686 VTIAX
        798.559 VTSAX  Assets
-         $ 48,800.84    Checking
-         $ 47,142.03      Bank of America
+         $ 32,850.84    Checking
+         $ 31,192.03      Bank of America
              $ 10.00      Covantage
             $ 671.12      Northwoods
             $ 977.69      Park City
-          $ 1,000.00    Escrow
             $ 345.00
        498.248 FSPSX
        785.564 FXAIX
@@ -11393,7 +11396,11 @@
        605.686 VTIAX
        798.559 VTSAX      IRA
        5,889.0 STRIP      RSU
-           1.0 COTTA    RE:Cottage
+         $ 16,950.00
+           1.0 COTTA    RE
+         $ 16,950.00      Condo
+         $ 16,950.00        Escrow
+           1.0 COTTA      Cottage
         $ -99,387.81  Liabilities:RE:Cottage
         $ -40,000.00    HELOC
         $ -59,387.81    Mortgage
@@ -11415,18 +11422,20 @@
 #+RESULTS:
 #+begin_example
         $ 991,288.29  Assets
-         $ 48,800.84    Checking
-         $ 47,142.03      Bank of America
+         $ 32,850.84    Checking
+         $ 31,192.03      Bank of America
              $ 10.00      Covantage
             $ 671.12      Northwoods
             $ 977.69      Park City
-          $ 1,000.00    Escrow
         $ 491,487.45    Investments
         $ 165,843.99      401K
          $ 26,093.90      HSA
         $ 137,543.17      IRA
         $ 162,006.39      RSU
-        $ 450,000.00    RE:Cottage
+        $ 466,950.00    RE
+         $ 16,950.00      Condo
+         $ 16,950.00        Escrow
+        $ 450,000.00      Cottage
         $ -99,387.81  Liabilities:RE:Cottage
         $ -40,000.00    HELOC
         $ -59,387.81    Mortgage
