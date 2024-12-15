@@ -11334,10 +11334,23 @@
       Expenses:Food:Snacks                     $ 14.32
       Assets:Checking:Bank of America
 
+  2024-12-10 * Stripe
+      Expenses:Food:Snacks                      $ 0.50
+      Liabilities:Credit Card:Covantage
+
   2024-12-11 * Pilot
       Expenses:Transportation:Driving:Gas      $ 30.00
       Expenses:Transportation:Driving:Gas      $ 20.00
       Assets:Checking:Bank of America
+
+  2024-12-11 * MTA
+      Expenses:Transportation:Public            $ 2.90
+      Expenses:Transportation:Public            $ 2.90
+      Liabilities:Credit Card:Covantage
+
+  2024-12-11 * 7/11
+      Expenses:Food:Snacks                      $ 7.31
+      Liabilities:Credit Card:Covantage
 
   2024-12-12 * Bowery Bay
       Expenses:Food:Snacks                      $ 7.61
@@ -11366,10 +11379,17 @@
       Expenses:RE:Condo:Sale                   $ 15.00
       Assets:Checking:Bank of America
 
-  2024-12-13 ! CPS
-      Income:CPS:Paycheck                  $ -6,000.00
-      Expenses:Taxes:Federal                $ 1,728.08
-      Assets:Checking:Covantage             $ 4,271.92
+  2024-12-13 * CPS
+      Income:CPS:Paycheck                  $ -6,136.00
+      Expenses:Taxes:Federal                $ 1,070.27
+      Expenses:Taxes:Medicare                  $ 88.97
+      Expenses:Taxes:Illinois                 $ 303.73
+      Expenses:Taxes:Social Security          $ 380.43
+      Assets:Checking:Covantage             $ 4,292.60
+
+  2024-12-13 * Brooke Janicki
+      Expenses:RE:Cottage:Cleaning            $ 120.00
+      Assets:Checking:Covantage
 
   2024-12-13 * Closing
       Assets:RE:Condo                              1.0 CONDO @ $ 565,000.00
@@ -11411,6 +11431,34 @@
       Expenses:RE:Condo:Sale                    $ 3.00  ;; State of IL Policy Fee
       Expenses:RE:Condo:Sale                   $ 50.00  ;; Wire Transfer Fee
 
+  2024-12-13 * Popeye's
+      Expenses:Food:Snacks                     $ 12.95
+      Liabilities:Credit Card:Covantage
+
+  2024-12-13 * Divvy Bikes
+      Expenses:Transportation:Biking          $ 109.00
+      Expenses:Transportation:Biking            $ 9.48
+      Expenses:Transportation:Biking            $ 2.63
+      Expenses:Transportation:Biking          $ 272.50
+      Assets:Checking:Bank of America
+
+  2024-12-13 * McDonald's
+      Expenses:Food:Fast Food                   $ 8.52
+      Expenses:Food:Fast Food                   $ 1.76
+      Assets:Checking:Bank of America
+
+  2024-12-14 * Transfer
+      Liabilities:Credit Card:Covantage        $ 26.56
+      Assets:Checking:Covantage
+
+  2024-12-14 * 7/11
+      Expenses:Transportation:Driving:Gas      $ 31.22
+      Assets:Checking:Bank of America
+
+  2024-12-14 * Mariano's
+      Expenses:Personal:Household              $ 40.26
+      Assets:Checking:Bank of America
+
   2024-12-20 ! Stripe
       Assets:Checking:Northwoods              $ 300.00
       Assets:Checking:Bank of America       $ 4,951.27
@@ -11421,22 +11469,22 @@
 #+end_src
 #+RESULTS: transactions
 #+begin_example
-        $ 230,711.94  Expenses
-          $ 8,270.93    Food
+        $ 233,177.27  Expenses
+          $ 8,301.97    Food
           $ 1,917.28    Gifts
          $ 16,888.18    Housing
-          $ 9,919.88    Personal
-         $ 48,125.25    RE
-        $ 138,935.03    Taxes
-          $ 5,331.85    Transportation
+          $ 9,960.14    Personal
+         $ 48,245.25    RE
+        $ 140,778.43    Taxes
+          $ 5,762.48    Transportation
           $ 1,323.54    Travel
-       $ -417,656.99  Income
-           $ -600.00    CPS
+       $ -423,792.99  Income
+         $ -6,736.00    CPS
         $ -16,619.89    RE
            $ -139.50    SWAQ
        $ -400,297.60    Stripe
 --------------------
-       $ -186,945.05
+       $ -190,615.72
 #+end_example
 ** Initial Balance
 #+name: opening_balance
@@ -11468,7 +11516,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 15,930.19
+         $ 19,600.86
            1.0 CONDO
            1.0 COTTA
        498.248 FSPSX
@@ -11477,10 +11525,10 @@
        605.686 VTIAX
        798.559 VTSAX  Assets
           $ 1,610.08    Check
-          $ 5,958.96    Checking
-            $ 800.15      Bank of America
+          $ 9,629.63    Checking
+            $ 324.78      Bank of America
           $ 3,500.00      Capital One
-             $ 10.00      Covantage
+          $ 4,156.04      Covantage
             $ 671.12      Northwoods
             $ 977.69      Park City
             $ 345.00
@@ -11509,7 +11557,7 @@
         $ -37,500.00      HELOC
         $ -59,387.81      Mortgage
 --------------------
-       $ -617,707.62
+       $ -614,036.95
            1.0 CONDO
            1.0 COTTA
        498.248 FSPSX
@@ -11526,12 +11574,12 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,555,367.23  Assets
+      $ 1,559,037.90  Assets
           $ 1,610.08    Check
-          $ 5,958.96    Checking
-            $ 800.15      Bank of America
+          $ 9,629.63    Checking
+            $ 324.78      Bank of America
           $ 3,500.00      Capital One
-             $ 10.00      Covantage
+          $ 4,156.04      Covantage
             $ 671.12      Northwoods
             $ 977.69      Park City
         $ 489,782.04    Investments
@@ -11549,7 +11597,7 @@
         $ -37,500.00      HELOC
         $ -59,387.81      Mortgage
 --------------------
-        $ 921,729.42
+        $ 925,400.09
 #+end_example
 ** Spending
 *** Savings Rate
@@ -11595,13 +11643,13 @@
 #+end_src
 #+results:
 : .
-: 	                     $417,656.99 - $230,711.94
-: 	Gross Savings Rate: --------------------------- = 44.76%
-: 	                             $417,656.99
+: 	                     $423,792.99 - $233,177.27
+: 	Gross Savings Rate: --------------------------- = 44.98%
+: 	                             $423,792.99
 :
-: 	                     $278,721.96 - $91,776.91
-: 	  Net Savings Rate: -------------------------- = 67.07%
-: 	                             $278,721.96
+: 	                     $283,014.56 - $92,398.84
+: 	  Net Savings Rate: -------------------------- = 67.35%
+: 	                             $283,014.56
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
@@ -11609,44 +11657,49 @@
 #+end_src
 #+results:
 #+begin_example
-          $ 8,005.62  Expenses
-            $ 392.74    Food
-             $ 65.42      Fast Food
+         $ 10,470.95  Expenses
+            $ 423.78    Food
+             $ 75.70      Fast Food
             $ 114.78      Groceries
              $ 45.00      Restaurants
-            $ 167.54      Snacks
+            $ 188.30      Snacks
           $ 1,737.53    Housing
           $ 1,500.00      Rent
             $ 237.53      Utilities
-            $ 215.02    Personal
+            $ 255.28    Personal
              $ 30.00      Communication
              $ 48.10      Electronics
              $ 45.95      Entertainment
              $ 18.73      Health
-             $ 12.36      Household
+             $ 52.62      Household
              $ 45.00      Housing
              $ 14.88      Learning
-          $ 3,555.77    RE
+          $ 3,675.77    RE
           $ 3,105.77      Condo
             $ 166.49        HOA
           $ 1,120.00        Insurance
           $ 1,990.82        Interest
           $ 6,273.64        Sale
          $ -6,445.18        Taxes
-            $ 450.00      Cottage:Lakefront
-          $ 1,829.98    Taxes
-          $ 1,309.34      Federal
-            $ 167.60      Medicare
+            $ 570.00      Cottage
+            $ 120.00        Cleaning
+            $ 450.00        Lakefront
+          $ 3,673.38    Taxes
+          $ 2,379.61      Federal
+            $ 303.73      Illinois
+            $ 256.57      Medicare
+            $ 380.43      Social Security
             $ 353.04      State
-            $ 212.94    Transportation
-           $ -250.00      Biking
-            $ 339.73      Driving
-            $ 331.72        Gas
+            $ 643.57    Transportation
+            $ 143.61      Biking
+            $ 370.95      Driving
+            $ 362.94        Gas
               $ 8.01        Repairs
             $ 123.21      Insurance
+              $ 5.80      Public
              $ 61.64    Travel:Lodging
 --------------------
-          $ 8,005.62
+         $ 10,470.95
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -11720,5 +11773,5 @@ August 2024          $ 3,276.77
 September 2024       $ 5,474.43
 October 2024         $ 4,608.95
 November 2024        $ 6,711.29
-December 2024        $ 6,175.64
+December 2024        $ 6,797.57
 #+end_example
