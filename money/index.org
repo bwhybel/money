@@ -42,7 +42,7 @@
     if index != -1:
       return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), stock, values[index]) + "\n"
   return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "CONDO", "600,000.00") + "\n"
-  return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "COTTA", "450,000.00") + "\n"
+  return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "COTTA", "455,000.00") + "\n"
   return_string = return_string + "  P {} 00:00:00 {} ${}".format(date.today().strftime("%m/%d/%Y"), "STRIP", "27.51") + "\n"
   return_string = return_string + "#+end_src"
   return return_string
@@ -50,13 +50,13 @@
 #+RESULTS:
 #+name: prices
 #+begin_src ledger :eval never
-  P 12/19/2024 00:00:00 VTSAX $141.2900
-  P 12/19/2024 00:00:00 VTIAX $32.2200
-  P 12/19/2024 00:00:00 FSPSX $48.8600
-  P 12/19/2024 00:00:00 FXAIX $204.5000
-  P 12/19/2024 00:00:00 CONDO $600,000.00
-  P 12/19/2024 00:00:00 COTTA $450,000.00
-  P 12/19/2024 00:00:00 STRIP $27.51
+  P 01/02/2025 00:00:00 VTSAX $141.0300
+  P 01/02/2025 00:00:00 VTIAX $31.6900
+  P 01/02/2025 00:00:00 FSPSX $47.5400
+  P 01/02/2025 00:00:00 FXAIX $204.1900
+  P 01/02/2025 00:00:00 CONDO $600,000.00
+  P 01/02/2025 00:00:00 COTTA $455,000.00
+  P 01/02/2025 00:00:00 STRIP $27.51
 #+end_src
 ** Transactions
 #+name: transactions
@@ -11523,18 +11523,6 @@
       Expenses:Food:Fast Food                   $ 4.37
       Liabilities:Credit Card:Covantage
 
-  2024-12-17 * Taco Bell
-      Expenses:Food:Fast Food                  $ 10.77
-      Liabilities:Credit Card:Covantage
-
-  2024-12-17 * Wendy's
-      Expenses:Food:Fast Food                   $ 5.81
-      Liabilities:Credit Card:Covantage
-
-  2024-12-17 * Aldi
-      Expenses:Food:Groceries                  $ 25.00
-      Liabilities:Credit Card:Covantage
-
   2024-12-18 * Wendy's
       Expenses:Food:Fast Food                   $ 8.05
       Expenses:Food:Fast Food                   $ 2.67
@@ -11545,69 +11533,389 @@
       Expenses:Food:Snacks                      $ 4.88
       Liabilities:Credit Card:Covantage
 
-  2024-12-18 * McDonald's
-      Expenses:Food:Fast Food                   $ 5.96
-      Liabilities:Credit Card:Covantage
-
-  2024-12-18 * REI
-      Expenses:Gifts                           $ 23.15
-      Liabilities:Credit Card:Covantage
-
-  2024-12-18 * Home Depot
-      Expenses:Personal:Household              $ 69.94
-      Expenses:Personal:Household             $ 153.78
-      Expenses:Food:Fast Food                   $ 7.22
+  2024-12-18 * Wendy's
+      Expenses:Food:Fast Food                   $ 5.81
       Liabilities:Credit Card:Covantage
 
   2024-12-18 * Dollar Tree
       Expenses:Personal:Household              $ 20.74
       Liabilities:Credit Card:Covantage
 
+  2024-12-18 * Sure-Dry
+      Expenses:RE:Cottage:Repairs               $ 9.99
+      Liabilities:Credit Card:Covantage
+
+  2024-12-18 * Aldi
+      Expenses:Food:Groceries                  $ 25.00
+      Liabilities:Credit Card:Covantage
+
   2024-12-18 * Popeye's
       Expenses:Food:Fast Food                   $ 6.95
       Liabilities:Credit Card:Covantage
 
-  2024-12-18 * Sure-Dry
-      Expenses:RE:Cottage:Repairs               $ 9.99
+  2024-12-18 * Home Depot
+      Expenses:Food:Fast Food                   $ 7.22
+      Liabilities:Credit Card:Covantage
+
+  2024-12-18 * Taco Bell
+      Expenses:Food:Fast Food                  $ 10.77
+      Liabilities:Credit Card:Covantage
+
+  2024-12-18 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.96
+      Liabilities:Credit Card:Covantage
+
+  2024-12-18 * Home Depot
+      Expenses:Personal:Household              $ 69.94
+      Expenses:Personal:Household             $ 153.78
+      Liabilities:Credit Card:Covantage
+
+  2024-12-20 * Subway
+      Expenses:Food:Fast Food                   $ 0.88
+      Liabilities:Credit Card:Covantage
+
+  2024-12-20 * Sure-Dry
       Expenses:RE:Cottage:Repairs               $ 9.99
       Liabilities:Credit Card:Covantage
 
   2024-12-20 * Stripe
       Assets:Checking:Northwoods              $ 300.00
       Assets:Checking:Park City             $ 4,941.25
-      Expenses:Taxes:Medicare                 $ 165.86
-      Expenses:Taxes:Federal                $ 1,291.58
-      Expenses:Taxes:State                    $ 349.38
-      Income:Stripe:Paycheck
-
-  2024-12-20 * Forest County
-      Expenses:RE:Cottage:Taxes             $ 2,572.90
-      Expenses:RE:Cottage:Taxes               $ 781.20
-      Assets:Checking:Capital One
+      Expenses:Taxes:Medicare                 $ 166.62
+      Expenses:Taxes:Federal                $ 1,299.25
+      Expenses:Taxes:State                    $ 350.96
+      Income:Stripe:Paycheck               $ -7,058.08
 
   2024-12-20 * Transfer
       Assets:Checking:Capital One           $ 1,610.08
       Assets:Check
+
+  2024-12-20 * Apex Plumbing
+      Expenses:RE:Condo:Repairs               $ 890.00
+      Assets:Checking:Capital One
+
+  2024-12-20 * Javier Gonzalez
+      Expenses:RE:Condo:Repairs               $ 139.00
+      Assets:Checking:Capital One
+
+  2024-12-20 * Katie Weibel
+      Liabilities:RE:Cottage:HELOC            $ 500.00
+      Assets:Checking:Capital One
+
+  2024-12-22 * Vern Goer's Greenhouse
+      Expenses:Gifts                          $ 200.00
+      Liabilities:Credit Card:Covantage
+
+  2024-12-22 * Trader Joe's
+      Expenses:Food:Groceries                  $ 12.25
+      Liabilities:Credit Card:Covantage
+
+  2024-12-22 * Mariano's
+      Expenses:Food:Groceries                  $ 35.43
+      Liabilities:Credit Card:Covantage
+
+  2024-12-22 * All-Temp Furnace
+      Expenses:RE:Condo:Repairs               $ 139.95
+      Liabilities:Credit Card:Covantage
+
+  2024-12-22 * Shell
+      Expenses:Transportation:Driving:Gas      $ 37.49
+      Liabilities:Credit Card:Covantage
+
+  2024-12-22 * Burger King
+      Expenses:Food:Fast Food                   $ 8.37
+      Liabilities:Credit Card:Covantage
+
+  2024-12-22 * Sure-Dry
+      Expenses:RE:Cottage:Repairs               $ 9.99
+      Liabilities:Credit Card:Covantage
+
+  2024-12-22 * 7/11
+      Expenses:Food:Snacks                      $ 4.08
+      Liabilities:Credit Card:Covantage
+
+  2024-12-22 * Starbucks
+      Expenses:Food:Fast Food                   $ 4.41
+      Liabilities:Credit Card:Covantage
+
+  2024-12-22 * U-Tec
+      Expenses:Personal:Electronics           $ 239.22
+      Liabilities:Credit Card:Covantage
+
+  2024-12-22 * Buona Beef
+      Expenses:Food:Fast Food                   $ 6.59
+      Liabilities:Credit Card:Covantage
+
+  2024-12-23 * Mariano's
+      Expenses:Food:Snacks                      $ 6.60
+      Liabilities:Credit Card:Covantage
+
+  2024-12-23 * Wendy's
+      Expenses:Food:Fast Food                   $ 5.81
+      Liabilities:Credit Card:Covantage
+
+  2024-12-23 * Starbucks
+      Expenses:Food:Fast Food                   $ 4.37
+      Liabilities:Credit Card:Covantage
+
+  2024-12-23 * Wendy's
+      Expenses:Food:Fast Food                   $ 2.65
+      Liabilities:Credit Card:Covantage
+
+  2024-12-23 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.54
+      Liabilities:Credit Card:Covantage
+
+  2024-12-23 * Transfer
+      Assets:Checking:Covantage             $ 2,866.64
+      Income:Extra                             $ -0.10
+      Assets:Checking:Capital One
+
+  2024-12-23 * Taco Bell
+      Expenses:Food:Fast Food                   $ 7.82
+      Liabilities:Credit Card:Covantage
+
+  2024-12-23 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 14.65
+      Expenses:RE:Condo:Repairs                $ 10.44
+      Liabilities:Credit Card:Covantage
+
+  2024-12-23 * Wendy's
+      Expenses:Food:Fast Food                   $ 2.67
+      Expenses:Food:Fast Food                   $ 3.34
+      Liabilities:Credit Card:Covantage
+
+  2024-12-24 * REI
+      Expenses:Gifts                           $ 23.15
+      Liabilities:Credit Card:Covantage
+
+  2024-12-24 * Cafe Baba Reeba
+      Expenses:Food:Restaurants                $ 23.69
+      Liabilities:Credit Card:Covantage
+
+  2024-12-24 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 28.80
+      Liabilities:Credit Card:Covantage
+
+  2024-12-24 * VRBO
+      Assets:Checking:Northwoods              $ 646.21
+      Income:RE:Cottage:Rent
+
+  2024-12-25 * Chick-fil-a
+      Expenses:Food:Fast Food                   $ 9.13
+      Liabilities:Credit Card:Covantage
+
+  2024-12-25 * New City Moving
+      Expenses:Personal:Household             $ 605.00
+      Liabilities:Credit Card:Covantage
+
+  2024-12-25 * Wendy's
+      Expenses:Food:Fast Food                   $ 2.67
+      Liabilities:Credit Card:Covantage
+
+  2024-12-26 * Second City
+      Assets:Checking:Covantage                $ 31.00
+      Expenses:Food:Drinks
+
+  2024-12-26 * New City Moving
+      Assets:Checking:Covantage               $ 275.00
+      Expenses:Personal:Household
+
+  2024-12-26 * Wendy's
+      Expenses:Food:Fast Food                   $ 6.35
+      Liabilities:Credit Card:Covantage
+
+  2024-12-26 * Home Depot
+      Expenses:RE:Condo:Repairs               $ 189.52
+      Expenses:RE:Condo:Repairs                $ 38.78
+      Liabilities:Credit Card:Covantage
+
+  2024-12-26 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.54
+      Liabilities:Credit Card:Covantage
+
+  2024-12-26 * 7/11
+      Expenses:Transportation:Driving:Gas      $ 31.05
+      Liabilities:Credit Card:Covantage
+
+  2024-12-27 * Costco
+      Expenses:Food:Snacks                      $ 1.65
+      Expenses:Personal:Household              $ 60.63
+      Expenses:Food:Groceries                  $ 65.00
+      Liabilities:Credit Card:Covantage
+
+  2024-12-27 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.54
+      Liabilities:Credit Card:Covantage
+
+  2024-12-28 * Village Tap
+      Assets:Checking:Capital One              $ 80.00
+      Assets:Checking:Covantage               $ 130.00
+      Expenses:Food:Drinks
+
+  2024-12-29 * Target
+      Expenses:Personal:Household              $ 45.20
+      Liabilities:Credit Card:Covantage
+
+  2024-12-29 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 12.79
+      Expenses:RE:Condo:Repairs                $ 21.38
+      Expenses:RE:Condo:Repairs                $ 88.37
+      Liabilities:Credit Card:Covantage
+
+  2024-12-29 * Starbucks
+      Expenses:Food:Fast Food                   $ 4.37
+      Liabilities:Credit Card:Covantage
+
+  2024-12-29 * Costco Gas
+      Expenses:Transportation:Driving:Gas      $ 34.64
+      Liabilities:Credit Card:Covantage
+
+  2024-12-29 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 6.67
+      Liabilities:Credit Card:Covantage
+
+  2024-12-29 * Venmo
+      Expenses:Transportation:Ride Share       $ 12.36
+      Liabilities:Credit Card:Covantage
+
+  2024-12-30 * RJ Grunts
+      Expenses:Food:Restaurants                $ 23.00
+      Assets:Checking:Covantage
+
+  2024-12-30 * Kass
+      Expenses:Housing:Rent                   $ 150.00
+      Assets:Checking:Park City
+
+  2024-12-30 * Target
+      Expenses:Personal:Household              $ 35.27
+      Expenses:Personal:Household              $ 34.71
+      Liabilities:Credit Card:Covantage
+
+  2024-12-30 * Chick-fil-a
+      Expenses:Food:Fast Food                   $ 9.13
+      Liabilities:Credit Card:Covantage
+
+  2024-12-30 * Village Tap
+      Expenses:Food:Drinks                    $ 198.05
+      Liabilities:Credit Card:Covantage
+
+  2024-12-30 * Dollar Tree
+      Expenses:Food:Snacks                      $ 8.27
+      Liabilities:Credit Card:Covantage
+
+  2024-12-30 * Divvy Bikes
+      Expenses:Transportation:Biking            $ 8.22
+      Liabilities:Credit Card:Covantage
+
+  2024-12-30 * Four Moon Tavern
+      Expenses:Food:Drinks                    $ 110.00
+      Liabilities:Credit Card:Covantage
+
+  2024-12-30 * Amazon
+      Expenses:Personal:Electronics           $ 369.32
+      Liabilities:Credit Card:Covantage
+
+  2024-12-30 * Dollar Tree
+      Expenses:Food:Snacks                      $ 4.04
+      Liabilities:Credit Card:Covantage
+
+  2024-12-31 * Interest
+      Assets:Checking:Covantage                 $ 0.29
+      Income:Extra
+
+  2024-12-31 * Target
+      Expenses:Personal:Household              $ 13.84
+      Expenses:Personal:Household              $ 61.71
+      Liabilities:Credit Card:Covantage
+
+  2024-12-31 * O'Reilly
+      Expenses:Transportation:Driving:Repairs   $ 7.69
+      Liabilities:Credit Card:Covantage
+
+  2024-12-31 * Dee's Mandarin
+      Expenses:Food:Restaurants                $ 81.75
+      Liabilities:Credit Card:Covantage
+
+  2024-12-31 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 54.49
+      Liabilities:Credit Card:Covantage
+
+  2024-12-31 * Sir Grout
+      Expenses:RE:Condo:Repairs             $ 1,589.03
+      Liabilities:Credit Card:Covantage
+
+  2024-12-31 * Sapphire Cleaning
+      Expenses:Personal:Household             $ 180.00
+      Liabilities:Credit Card:Covantage
+
+  2024-12-31 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.54
+      Liabilities:Credit Card:Covantage
+
+  2024-12-31 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 34.05
+      Liabilities:Credit Card:Covantage
+
+  2024-12-31 * State Farm
+      Expenses:RE:Cottage:Insurance            $ 79.83
+      Assets:Checking:Northwoods
+
+  2024-12-31 * Wisconsin Public Service
+      Expenses:RE:Cottage:Utilities           $ 141.00
+      Assets:Checking:Northwoods
+
+  2024-12-31 * Spectrum
+      Expenses:RE:Cottage:Utilities            $ 64.99
+      Assets:Checking:Northwoods
+
+  2025-01-01 * Visible
+      Expenses:Personal:Communication          $ 30.00
+      Assets:Checking:Park City
+
+  2025-01-01 * McDonald's
+      Expenses:Food:Fast Food                   $ 5.54
+      Liabilities:Credit Card:Covantage
+
+  2025-01-01 * Lose It
+      Expenses:Personal:Health                 $ 49.99
+      Liabilities:Credit Card:Covantage
+
+  2025-01-01 * Home Depot
+      Expenses:RE:Condo:Repairs                $ 12.76
+      Liabilities:Credit Card:Covantage
+
+  2025-01-01 * Wendy's
+      Expenses:Food:Fast Food                   $ 2.67
+      Liabilities:Credit Card:Covantage
+
+  2025-01-02 * Mac Mini
+      Expenses:Personal:Electronics            $ 41.58
+      Assets:Checking:Covantage
+
+  2025-01-02 * Transfer
+      Liabilities:Credit Card:Covantage     $ 5,211.23
+      Assets:Checking:Covantage
+
+  2025-01-03 * Stripe
+      Assets:Checking:Northwoods              $ 300.00
+      Assets:Checking:Park City             $ 3,529.69
+      Assets:Investments:401K                 $ 800.00
+      Expenses:Taxes:Medicare                 $ 166.62
+      Expenses:Taxes:Social Security          $ 500.00
+      Expenses:Taxes:Federal                $ 1,299.25
+      Expenses:Taxes:State                    $ 350.96
+      Income:Stripe:Paycheck
 #+end_src
 #+RESULTS: transactions
-#+begin_example
-        $ 240,280.51  Expenses
-          $ 8,651.34    Food
-          $ 1,940.43    Gifts
-         $ 16,888.18    Housing
-         $ 11,507.21    Personal
-         $ 51,619.33    RE
-        $ 142,585.25    Taxes
-          $ 5,765.23    Transportation
-          $ 1,323.54    Travel
-       $ -430,841.06  Income
-         $ -6,736.00    CPS
-        $ -16,619.89    RE
-           $ -139.50    SWAQ
-       $ -407,345.67    Stripe
---------------------
-       $ -190,560.55
-#+end_example
+:           $ 2,459.37  Expenses
+:               $ 8.21    Food
+:             $ 121.57    Personal
+:              $ 12.76    RE
+:           $ 2,316.83    Taxes
+:          $ -6,946.52  Income:Stripe
+: --------------------
+:          $ -4,487.15
 ** Initial Balance
 #+name: opening_balance
 #+begin_src ledger :eval never
@@ -11638,7 +11946,7 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 20,103.69
+         $ 21,979.45
            1.0 CONDO
            1.0 COTTA
        498.248 FSPSX
@@ -11646,16 +11954,18 @@
        5,889.0 STRIP
        605.686 VTIAX
        798.559 VTSAX  Assets
-         $ 12,087.54    Checking
-          $ 1,041.44      Capital One
-          $ 4,156.04      Covantage
-            $ 971.12      Northwoods
-          $ 5,918.94      Park City
+         $ 13,163.30    Checking
+             $ 80.00      Capital One
+          $ 2,183.16      Covantage
+          $ 1,631.51      Northwoods
+          $ 9,268.63      Park City
+            $ 800.00
        498.248 FSPSX
        787.201 FXAIX
        5,889.0 STRIP
        605.686 VTIAX
        798.559 VTSAX    Investments
+            $ 800.00
        498.248 FSPSX
        663.791 FXAIX      401K
        123.410 FXAIX      HSA
@@ -11669,15 +11979,15 @@
            1.0 CONDO      Condo
           $ 8,016.15        Escrow
            1.0 COTTA      Cottage
-       $ -634,540.81  Liabilities
-           $ -903.00    Credit Card:Covantage
-       $ -633,637.81    RE
+       $ -633,767.33  Liabilities
+           $ -629.52    Credit Card:Covantage
+       $ -633,137.81    RE
        $ -536,750.00      Condo:Mortgage
-        $ -96,887.81      Cottage
-        $ -37,500.00        HELOC
+        $ -96,387.81      Cottage
+        $ -37,000.00        HELOC
         $ -59,387.81        Mortgage
 --------------------
-       $ -614,437.12
+       $ -611,787.88
            1.0 CONDO
            1.0 COTTA
        498.248 FSPSX
@@ -11694,30 +12004,30 @@
 #+end_src
 #+RESULTS:
 #+begin_example
-      $ 1,549,780.69  Assets
-         $ 12,087.54    Checking
-          $ 1,041.44      Capital One
-          $ 4,156.04      Covantage
-            $ 971.12      Northwoods
-          $ 5,918.94      Park City
-        $ 479,677.00    Investments
-        $ 160,089.66      401K
-         $ 25,237.35      HSA
-        $ 132,343.60      IRA
+      $ 1,555,226.09  Assets
+         $ 13,163.30    Checking
+             $ 80.00      Capital One
+          $ 2,183.16      Covantage
+          $ 1,631.51      Northwoods
+          $ 9,268.63      Park City
+        $ 479,046.64    Investments
+        $ 160,026.19      401K
+         $ 25,199.09      HSA
+        $ 131,814.97      IRA
         $ 162,006.39      RSU
-      $ 1,058,016.15    RE
+      $ 1,063,016.15    RE
         $ 608,016.15      Condo
           $ 8,016.15        Escrow
-        $ 450,000.00      Cottage
-       $ -634,540.81  Liabilities
-           $ -903.00    Credit Card:Covantage
-       $ -633,637.81    RE
+        $ 455,000.00      Cottage
+       $ -633,767.33  Liabilities
+           $ -629.52    Credit Card:Covantage
+       $ -633,137.81    RE
        $ -536,750.00      Condo:Mortgage
-        $ -96,887.81      Cottage
-        $ -37,500.00        HELOC
+        $ -96,387.81      Cottage
+        $ -37,000.00        HELOC
         $ -59,387.81        Mortgage
 --------------------
-        $ 915,239.88
+        $ 921,458.76
 #+end_example
 ** Spending
 *** Savings Rate
@@ -11738,11 +12048,12 @@
   for line in lines:
     if line.strip().startswith('$'):
       amount = extract_amount(line)
-      if line.strip().endswith('Expenses'):
+      line_text = line.strip()
+      if line_text.endswith('Expenses'):
         expenses = amount
-      elif line.strip().endswith('Income'):
+      elif line_text.endswith('Income') or 'Income' in line_text:
         income = amount * -1
-      elif line.strip().endswith('Taxes'):
+      elif 'Taxes' in line_text:
         taxes = amount
 
   take_home_income = income - taxes
@@ -11763,13 +12074,13 @@
 #+end_src
 #+results:
 : .
-: 	                     $430,841.06 - $240,280.51
-: 	Gross Savings Rate: --------------------------- = 44.23%
-: 	                             $430,841.06
+: 	                     $6,946.52 - $2,459.37
+: 	Gross Savings Rate: --------------------------- = 64.60%
+: 	                             $6,946.52
 :
-: 	                     $288,255.81 - $97,695.26
-: 	  Net Savings Rate: -------------------------- = 66.11%
-: 	                             $288,255.81
+: 	                     $4,629.69 - $142.54
+: 	  Net Savings Rate: -------------------------- = 96.92%
+: 	                             $4,629.69
 *** This Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "this month" :noweb yes :exports results
   <<opening_balance>>
@@ -11777,53 +12088,20 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 17,574.19  Expenses
-            $ 773.15    Food
-            $ 226.03      Drinks
-            $ 158.69      Fast Food
-            $ 139.78      Groceries
-             $ 45.00      Restaurants
-            $ 203.65      Snacks
-             $ 23.15    Gifts
-          $ 1,737.53    Housing
-          $ 1,500.00      Rent
-            $ 237.53      Utilities
-          $ 1,802.35    Personal
+          $ 2,459.37  Expenses
+              $ 8.21    Food:Fast Food
+            $ 121.57    Personal
              $ 30.00      Communication
-            $ 127.58      Electronics
-             $ 45.95      Entertainment
-             $ 18.73      Health
-          $ 1,520.21      Household
-             $ 45.00      Housing
-             $ 14.88      Learning
-          $ 7,049.85    RE
-          $ 3,105.77      Condo
-            $ 166.49        HOA
-          $ 1,120.00        Insurance
-          $ 1,990.82        Interest
-          $ 6,273.64        Sale
-         $ -6,445.18        Taxes
-          $ 3,944.08      Cottage
-            $ 120.00        Cleaning
-            $ 450.00        Lakefront
-             $ 19.98        Repairs
-          $ 3,354.10        Taxes
-          $ 5,480.20    Taxes
-          $ 3,671.19      Federal
-            $ 303.73      Illinois
-            $ 422.43      Medicare
-            $ 380.43      Social Security
-            $ 702.42      State
-            $ 646.32    Transportation
-            $ 146.36      Biking
-            $ 370.95      Driving
-            $ 362.94        Gas
-              $ 8.01        Repairs
-            $ 123.21      Insurance
-              $ 5.80      Public
-             $ 61.64    Travel:Lodging
+             $ 41.58      Electronics
+             $ 49.99      Health
+             $ 12.76    RE:Condo:Repairs
+          $ 2,316.83    Taxes
+          $ 1,299.25      Federal
+            $ 166.62      Medicare
+            $ 500.00      Social Security
+            $ 350.96      State
 --------------------
-         $ 17,574.19
+          $ 2,459.37
 #+end_example
 *** Last Month Spending
 #+begin_src ledger :cmdline bal ^Expenses --cleared --period "last month" :noweb yes :exports results
@@ -11832,43 +12110,56 @@
 #+end_src
 #+results:
 #+begin_example
-         $ 25,836.22  Expenses
-            $ 742.33    Food
-             $ 15.72      Drinks
-            $ 223.89      Fast Food
-            $ 153.43      Groceries
-             $ 44.83      Restaurants
-            $ 304.46      Snacks
-          $ 1,316.43    Gifts
-          $ 2,705.64    Housing
-              $ 8.64      Insurance
-            $ 960.00      Misc
-          $ 1,500.00      Rent
-            $ 237.00      Utilities
-          $ 1,190.65    Personal
+         $ 20,068.71  Expenses
+          $ 1,206.68    Food
+            $ 293.08      Drinks
+            $ 259.41      Fast Food
+            $ 252.46      Groceries
+            $ 173.44      Restaurants
+            $ 228.29      Snacks
+            $ 223.15    Gifts
+          $ 1,887.53    Housing
+          $ 1,650.00      Rent
+            $ 237.53      Utilities
+          $ 3,172.25    Personal
              $ 30.00      Communication
-            $ 113.42      Electronics
-             $ 29.03      Entertainment
-             $ 12.00      Fees
-            $ 737.01      Health
-            $ 251.19      Household
-             $ 18.00      Learning
-            $ 735.14    RE:Cottage
-            $ 159.66      Insurance
-            $ 173.54      Interest
-            $ 401.94      Utilities
-         $ 19,124.93    Taxes
-         $ 14,241.27      Federal
-          $ 2,609.11      Illinois
-          $ 1,572.13      Medicare
-            $ 702.42      State
-             $ 21.10    Transportation
-           $ -144.77      Biking
-             $ 26.00      Driving:Gas
-            $ 114.57      Insurance
-             $ 25.30      Ride Share
+            $ 736.12      Electronics
+             $ 45.95      Entertainment
+             $ 18.73      Health
+          $ 2,281.57      Household
+             $ 45.00      Housing
+             $ 14.88      Learning
+          $ 7,242.81    RE
+          $ 6,357.02      Condo
+            $ 166.49        HOA
+          $ 1,120.00        Insurance
+          $ 1,990.82        Interest
+          $ 3,251.25        Repairs
+          $ 6,273.64        Sale
+         $ -6,445.18        Taxes
+            $ 885.79      Cottage
+            $ 120.00        Cleaning
+             $ 79.83        Insurance
+            $ 450.00        Lakefront
+             $ 29.97        Repairs
+            $ 205.99        Utilities
+          $ 5,490.21    Taxes
+          $ 3,678.86      Federal
+            $ 303.73      Illinois
+            $ 423.19      Medicare
+            $ 380.43      Social Security
+            $ 704.00      State
+            $ 784.44    Transportation
+            $ 161.25      Biking
+            $ 481.82      Driving
+            $ 466.12        Gas
+             $ 15.70        Repairs
+            $ 123.21      Insurance
+              $ 5.80      Public
+             $ 12.36      Ride Share
+             $ 61.64    Travel:Lodging
 --------------------
-         $ 25,836.22
+         $ 20,068.71
 #+end_example
 *** Monthly Spending
 #+begin_src ledger :cmdline reg ^Expenses and not ^Expenses:Taxes --cleared -MnA --sort date --format "%-20(format_date(date, '%B %Y')) %(amount)\n" :noweb yes :exports results
@@ -11897,5 +12188,6 @@ August 2024          $ 3,276.77
 September 2024       $ 5,474.43
 October 2024         $ 4,608.95
 November 2024        $ 6,711.29
-December 2024        $ 12,093.99
+December 2024        $ 14,578.50
+January 2025         $ 142.54
 #+end_example
